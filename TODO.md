@@ -1,7 +1,7 @@
 # TODO
-
+- implement policy network
+- implement heuristic using the policy network
 - define new queues / heuristics
 	- similarity to conjecture
-- implement policy network
 - implement the reinforce algorithm
 - extract proof state features
