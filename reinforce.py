@@ -37,15 +37,15 @@ if __name__ == "__main__":
         type=float,
         help="Discounting factor.")
     parser.add_argument(
-        "--units_in_layer",
-        default=100,
-        type=int,
-        help="Size of hidden layer.")
-    parser.add_argument(
         "--hidden_layers",
         default=100,
         type=int,
         help="Number of hidden layers.")
+    parser.add_argument(
+        "--units_in_hidden_layer",
+        default=100,
+        type=int,
+        help="Size of hidden layer.")
     parser.add_argument(
         "--learning_rate",
         default=0.001,
@@ -55,7 +55,12 @@ if __name__ == "__main__":
 
 
 env = Environment(args.problems_dir, args.inferences_per_step)
-policy_network = PolicyNetwork(args.hidden_layers, args.units_in_layer)
+policy_network = PolicyNetwork(
+    num_features=env.num_state_features,
+    num_actions=env.num_actions,
+    num_hidden_layers=args.hidden_layers,
+    num_units=args.units_in_hidden_layer,
+    learning_rate=args.learning_rate)
 
 while True:
     batch_states, batch_actions, batch_returns = [], [], []
