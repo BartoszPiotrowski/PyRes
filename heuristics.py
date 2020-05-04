@@ -4,7 +4,7 @@
 # Module heuristics.py
 
 """
-This module implements heuristic evaluation functions for clauses. 
+This module implements heuristic evaluation functions for clauses.
 The purpose of heuristic evaluation is selection of clauses during the
 resolution process.
 
@@ -31,7 +31,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program ; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston,
-MA  02111-1307 USA 
+MA  02111-1307 USA
 
 The original copyright holder can be contacted as
 
@@ -45,6 +45,8 @@ Email: schulz@eprover.org
 import unittest
 from lexer import Lexer
 import clauses
+from policy_model import PolicyModel
+import numpy as np
 
 
 class ClauseEvaluationFunction(object):
@@ -55,31 +57,31 @@ class ClauseEvaluationFunction(object):
     to be able to store information, either from initialization, or
     from previous calls.
     """
-        
+
     def __init__(self): # pragma: nocover
         """
         Initialize the evaluaton function.
         """
         self.name = "Virtual Base"
-        
+
     def __repr__(self): # pragma: nocover
         """
         Return a string representation of the clause.
         """
         return "ClauseEvalFun(%s)"%(self.name,)
 
-    def __call__(self, clause): 
+    def __call__(self, clause):
         """
         Provide this as a callable function.
         """
         return self.hEval(clause)
-   
+
     def hEval(self, clause): # pragma: nocover
         """
         This needs to be overloaded...
         """
         assert False and "Virtual base class is not callable"
-        
+
 
 class FIFOEvaluation(ClauseEvaluationFunction):
     """
@@ -103,7 +105,7 @@ class FIFOEvaluation(ClauseEvaluationFunction):
 
 class SymbolCountEvaluation(ClauseEvaluationFunction):
     """
-    Implement a standard symbol counting heuristic. 
+    Implement a standard symbol counting heuristic.
     """
     def __init__(self, fweight=2, vweight=1):
         """
@@ -132,7 +134,7 @@ class EvalStructure(object):
         """
         Initialize ths structure. The argument is a list of pairs,
         where each pair consists of a function and its relative weight
-        count.         
+        count.
         """
         assert len(eval_descriptor)
         self.eval_funs = [pair[0] for pair in eval_descriptor]
@@ -156,20 +158,45 @@ class EvalStructure(object):
             self.current_count = self.eval_vec[self.current]
         self.current_count = self.current_count - 1
         return self.current
-            
+
+
+class EvalStructureByPolicyModel(EvalStructure):
+    """
+    Chooses evaluation function using a neural net.
+    """
+    def __init__(self, eval_functions, policy_model_path):
+        """
+        Initialize ths structure. The first argument is a list of evaluation
+        functions, the second argument is a path to a neural model deciding
+        which evaluation function to use in the current proof state.
+        """
+        assert len(eval_functions)
+        self.eval_funs = eval_functions
+        self.model = PolicyModel()
+        self.model.load(policy_model_path)
+
+
+    def nextEval(self, proof_state_vector):
+        """
+        Return the index of the next evaluation function of the scheme.
+        """
+        probabilities = self.model.predict(proof_state_vector)
+        self.current = np.random.choice(len(self.eval_funs), p=probabilities)
+        return self.current
+
 
 FIFOEval        = EvalStructure([(FIFOEvaluation(),1)])
 """
 Strict first-in/first out evaluation. This is obviously fair
 (i.e. every clause will be picked eventuall), but not a good search
-strategy. 
+strategy.
 """
 
 SymbolCountEval = EvalStructure([(SymbolCountEvaluation(2,1),1)])
 """
 Strict symbol counting (a smaller clause is always better than a
 larger clause). This is only fair if subsumption or a similar
-mechanism is employed, otherwise there can e.g. be an infinite set of 
+mechanism is employed, otherwise there can e.g. be an infinite set of
 clauses p(X1), p(X2), p(X3),.... that are all smaller than q(f(X)), so
 that the latter is never selected.
 """
@@ -191,6 +218,9 @@ PickGiven2      = EvalStructure([(SymbolCountEvaluation(2,1),2),
 See above, but now with a pick-given ration of 2 for easier testing.
 """
 
+PolicyModelHeuristic = lambda policy_model_path: EvalStructureByPolicyModel(
+                                [SymbolCountEvaluation(2,1), FIFOEvaluation()],
+                                policy_model_path)
 
 GivenClauseHeuristics = {
     "FIFO"       : FIFOEval,
@@ -232,7 +262,7 @@ cnf(c8,axiom,(c=d|h(i(a))!=h(i(e)))).
         self.c6 = clauses.parseClause(lexer)
         self.c7 = clauses.parseClause(lexer)
         self.c8 = clauses.parseClause(lexer)
-        
+
 
     def testFIFO(self):
         """
@@ -283,7 +313,7 @@ cnf(c8,axiom,(c=d|h(i(a))!=h(i(e)))).
         """
         eval_funs = EvalStructure([(SymbolCountEvaluation(2,1),2),
                                    (FIFOEvaluation(),1)])
-        
+
         evals = eval_funs.evaluate(self.c1)
         self.assertEqual(len(evals), 2)
         self.assertEqual(eval_funs.nextEval(),0)
@@ -292,6 +322,20 @@ cnf(c8,axiom,(c=d|h(i(a))!=h(i(e)))).
         self.assertEqual(eval_funs.nextEval(),0)
         self.assertEqual(eval_funs.nextEval(),0)
         self.assertEqual(eval_funs.nextEval(),1)
+
+    def testEvalStructureByPolicyModel(self):
+        """
+        Test composite evaluations by a policy model.
+        """
+        eval_funs = EvalStructureByPolicyModel(
+                        [SymbolCountEvaluation(2,1), FIFOEvaluation()],
+                        'tmp/policy_model.pt')
+
+        evals = eval_funs.evaluate(self.c1)
+        next_eval = eval_funs.nextEval([1,2,3,4])
+        self.assertEqual(len(evals), 2)
+        self.assertTrue(next_eval < 2)
+
 
 if __name__ == '__main__':
     unittest.main()
