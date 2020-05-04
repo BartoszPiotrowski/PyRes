@@ -6,7 +6,7 @@ on proof state characterization.
 
 import numpy as np
 from rl_environment import Environment
-from policy_network import PolicyNetwork
+from policy_model import PolicyModel
 
 
 if __name__ == "__main__":
@@ -21,7 +21,8 @@ if __name__ == "__main__":
         "--inferences_per_step",
         default=10,
         type=int,
-        help="Number of processed clauses treated as one step in environment.")
+        help="Number of processed clauses treated as a one agent's step in "
+             "the environment.")
     parser.add_argument(
         "--batch_size",
         default=50,
@@ -55,7 +56,7 @@ if __name__ == "__main__":
 
 
 env = Environment(args.problems_dir, args.inferences_per_step)
-policy_network = PolicyNetwork(
+policy_model = PolicyModel(
     num_features=env.num_state_features,
     num_actions=env.num_actions,
     num_hidden_layers=args.hidden_layers,
@@ -69,7 +70,7 @@ while True:
         # TODO 'done' == one problem tried, right?
         # TODO maybe parallel processing
         while not done:
-            action_distr = policy_network.predict(state)
+            action_distr = policy_model.predict(state)
             action = np.random.choice(range(env.actions), p=action_distr)
             state, reward, done = env.step(action)
             states.append(state)
@@ -89,4 +90,4 @@ while True:
         batch_actions.extend(actions)
         batch_returns.extend(returns)
 
-    policy_network.train(batch_states, batch_actions, batch_returns)
+    policy_model.train(batch_states, batch_actions, batch_returns)
