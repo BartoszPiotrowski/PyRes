@@ -67,7 +67,7 @@ import getopt
 from lexer import Token,Lexer
 from derivations import enableDerivationOutput,disableDerivationOutput
 from clausesets import ClauseSet
-from heuristics import GivenClauseHeuristics
+from heuristics import GivenClauseHeuristics,PolicyModelHeuristic
 from saturation import SearchParams,ProofState
 from litselection import LiteralSelectors
 
@@ -93,6 +93,8 @@ def processOptions(opts):
             except KeyError:
                 print("Unknown clause evaluation function", optarg)
                 sys.exit(1)
+        elif opt=="-P" or opt == "--policy-model-path":
+            params.heuristics = PolicyModelHeuristic(optarg)
         elif opt=="-n" or opt == "--neg-lit-selection":
             try:
                 params.literal_selection = LiteralSelectors[optarg]
@@ -104,12 +106,13 @@ def processOptions(opts):
 if __name__ == '__main__':
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                                       "htfbH:n:",
+                                       "htfbH:P:n:",
                                        ["help",
                                         "delete-tautologies",
                                         "forward-subsumption",
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
+                                        "policy-model-path=",
                                         "neg-lit-selection="])
     except getopt.GetoptError as err:
         print(sys.argv[0],":", err)

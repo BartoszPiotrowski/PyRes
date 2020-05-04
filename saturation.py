@@ -111,7 +111,8 @@ class ProofState(object):
     In addition to the clause sets, this data structure also maintains
     a number of counters for statistics on the proof search.
     """
-    def __init__(self, params, clauses, silent=False, indexed=False):
+    def __init__(self, params, clauses, silent=False, indexed=False,
+                 proof_state_vector=False):
         """
         Initialize the proof state with a set of clauses.
         """
@@ -132,13 +133,20 @@ class ProofState(object):
         self.forward_subsumed     = 0
         self.backward_subsumed    = 0
         self.silent               = silent
+        if type(params.heuristics) == heuristics.EvalStructureByPolicyModel:
+            self.proof_state_vector = [1,2,3,4]
+        else:
+            self.proof_state_vector = None
 
     def processClause(self):
         """
         Pick a clause from unprocessed and process it. If the empty
         clause is found, return it. Otherwise return None.
         """
-        given_clause = self.unprocessed.extractBest()
+        if not self.proof_state_vector:
+            given_clause = self.unprocessed.extractBest()
+        else:
+            given_clause = self.unprocessed.extractBest(self.proof_state_vector)
         given_clause = given_clause.freshVarCopy()
         if not self.silent:
             print("#")

@@ -45,7 +45,6 @@ Email: schulz@eprover.org
 import unittest
 from lexer import Lexer
 import clauses
-from policy_model import PolicyModel
 import numpy as np
 
 
@@ -170,6 +169,7 @@ class EvalStructureByPolicyModel(EvalStructure):
         functions, the second argument is a path to a neural model deciding
         which evaluation function to use in the current proof state.
         """
+        from policy_model import PolicyModel
         assert len(eval_functions)
         self.eval_funs = eval_functions
         self.model = PolicyModel()

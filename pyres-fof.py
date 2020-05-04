@@ -98,7 +98,7 @@ from derivations import enableDerivationOutput,disableDerivationOutput,Derivable
 from clausesets import ClauseSet
 from clauses import firstLit, varSizeLit, eqResVarSizeLit
 from fofspec import FOFSpec
-from heuristics import GivenClauseHeuristics
+from heuristics import GivenClauseHeuristics,PolicyModelHeuristic
 from saturation import SearchParams,ProofState
 from litselection import LiteralSelectors
 
@@ -148,6 +148,8 @@ def processOptions(opts):
                 print("Unknown literal selection function", optarg)
                 print("Supported:", LiteralSelectors.keys())
                 sys.exit(1)
+        elif opt=="-P" or opt == "--policy-model-path":
+            params.heuristics = PolicyModelHeuristic(optarg)
         elif opt=="-S" or opt=="--suppress-eq-axioms":
             suppressEqAxioms = True
 
@@ -170,7 +172,7 @@ if __name__ == '__main__':
 
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                                       "hsVpitfbH:n:S",
+                                       "hsVpitfbH:P:n:S",
                                        ["help",
                                         "silent",
                                         "version",
@@ -180,6 +182,7 @@ if __name__ == '__main__':
                                         "forward-subsumption",
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
+                                        "policy-model-path=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])
     except getopt.GetoptError as err:
