@@ -45,9 +45,11 @@ class PolicyModel:
         self.optimizer.zero_grad()
         self.optimizer.step()
 
-    def predict(self, batch_states):
-        batch_states = torch.Tensor(batch_states)
-        return self.model(batch_states)
+    def predict(self, state): # input: a proof state vector
+        batch_states = torch.Tensor([state])
+        pred_tensor = self.model(batch_states)
+        pred_numpy = pred_tensor.detach().numpy()[0]
+        return pred_numpy
 
     def save(self, path):
         dirpath = os.path.dirname(path)
@@ -77,17 +79,18 @@ class PolicyModel:
 
 if __name__=='__main__':
     policy_model = PolicyModel(num_features=4,
-                                   num_actions=3,
+                                   num_actions=2,
                                    num_hidden_layers=1,
                                    num_units=64,
                                    learning_rate=0.01)
-    batch_states = torch.Tensor([[1,2,3,4],[5,6,7,8]])
+    #batch_states = torch.Tensor([[1,2,3,4],[5,6,7,8]])
+    state = [5,6,7,8]
     print(policy_model.model)
     #print(list(policy_model.model.parameters()))
-    print(policy_model.predict(batch_states))
-    policy_model.save('tmp/saved_model.pt')
+    print(policy_model.predict(state))
+    policy_model.save('tmp/policy_model.pt')
 
     policy_model = PolicyModel()
-    policy_model.load('tmp/saved_model.pt')
-    print(policy_model.predict(batch_states))
+    policy_model.load('tmp/policy_model.pt')
+    print(policy_model.predict(state))
 

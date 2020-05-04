@@ -40,6 +40,7 @@ from literals import parseLiteral
 from clauses import Clause, parseClause
 from heuristics import PickGiven2
 from indexing import ResolutionIndex, SubsumptionIndex
+import numpy as np
 
 class ClauseSet(object):
     """
@@ -139,6 +140,10 @@ class ClauseSet(object):
             self.addClause(clause)
             count = count+1
         return count
+
+    def avgNumOfLits(self):
+        lens = [len(c) for c in self.clauses]
+        return np.mean(lens)
 
 
 class HeuristicClauseSet(ClauseSet):
@@ -245,6 +250,7 @@ class IndexedClauseSet(ClauseSet):
         Overwrite the original function with one based on indexing.
         """
         return self.sub_index.getSubsumedCandidates(queryclause)
+
 
 
 class TestClauseSets(unittest.TestCase):

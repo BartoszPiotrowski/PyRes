@@ -138,18 +138,31 @@ class ProofState(object):
         else:
             self.proof_state_vector = None
 
+    def proofStateVector(self):
+        """
+        Returns a numerical vector of various statistics related to the proof
+        state which can be used for training some machine learning model.
+        """
+        statistics = []
+        # default statistics
+        statistics.append(self.initial_clause_count)
+        statistics.append(self.proc_clause_count)
+        #statistics.append(self.factor_count)
+        statistics.append(self.resolvent_count)
+        #statistics.append(self.tautologies_deleted)
+        #statistics.append(self.forward_subsumed)
+        #statistics.append(self.backward_subsumed)
+        # additional statistics
+        statistics.append(self.processed.avgNumOfLits()) # mean size of a clause
+        return statistics
+
     def processClause(self):
         """
         Pick a clause from unprocessed and process it. If the empty
         clause is found, return it. Otherwise return None.
         """
-        if not self.proof_state_vector:
-            given_clause = self.unprocessed.extractBest()
-        else:
-            given_clause = self.unprocessed.extractBest(self.proof_state_vector)
+        given_clause = self.unprocessed.extractBest(self.proof_state_vector)
         given_clause = given_clause.freshVarCopy()
-        if not self.silent:
-            print("#")
         if given_clause.isEmpty():
             # We have found an explicit contradiction
             return given_clause
@@ -197,6 +210,9 @@ class ProofState(object):
 
         for c in new:
             self.unprocessed.addClause(c)
+
+        self.proof_state_vector = self.proofStateVector()
+
         return None
 
     def saturate(self):
@@ -206,6 +222,11 @@ class ProofState(object):
         return None.
         """
         while self.unprocessed:
+            print() # TODO remove
+            print(self.processed)
+            print()
+            print(self.proof_state_vector)
+            print()
             res = self.processClause()
             if res != None:
                 return res
@@ -224,14 +245,14 @@ class ProofState(object):
 # Resolvents computed: %d
 # Tautologies deleted: %d
 # Forward subsumed   : %d
-# Backward subsumed  : %d""" \
-    %(self.initial_clause_count,
-      self.proc_clause_count,
-      self.factor_count,
-      self.resolvent_count,
-      self.tautologies_deleted,
-      self.forward_subsumed,
-      self.backward_subsumed)
+# Backward subsumed  : %d
+""" %(self.initial_clause_count,
+    self.proc_clause_count,
+    self.factor_count,
+    self.resolvent_count,
+    self.tautologies_deleted,
+    self.forward_subsumed,
+    self.backward_subsumed)
 
 
 class TestProver(unittest.TestCase):
@@ -364,7 +385,7 @@ cnf(not_p, axiom, ~p(a)).
         else:
             self.assertEqual(res, None)
             if res != None: # pragma: nocover
-                print("# Bug: Should not have  found a proof!")
+                print("# Bug: Should not have found a proof!")
             else:
                 print("# No proof found")
 
