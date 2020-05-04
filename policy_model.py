@@ -7,7 +7,7 @@ import os
 from utils import read_lines, write_lines
 
 
-class PolicyNetwork:
+class PolicyModel:
     def __init__(self, learning_rate=0.001, **model_shape):
         if model_shape:
             self.model_shape = model_shape
@@ -76,18 +76,18 @@ class PolicyNetwork:
 
 
 if __name__=='__main__':
-    policy_network = PolicyNetwork(num_features=4,
+    policy_model = PolicyModel(num_features=4,
                                    num_actions=3,
                                    num_hidden_layers=1,
                                    num_units=64,
                                    learning_rate=0.01)
     batch_states = torch.Tensor([[1,2,3,4],[5,6,7,8]])
-    print(policy_network.model)
-    #print(list(policy_network.model.parameters()))
-    print(policy_network.predict(batch_states))
-    policy_network.save('tmp/saved_model.pt')
+    print(policy_model.model)
+    #print(list(policy_model.model.parameters()))
+    print(policy_model.predict(batch_states))
+    policy_model.save('tmp/saved_model.pt')
 
-    policy_network = PolicyNetwork()
-    policy_network.load('tmp/saved_model.pt')
-    print(policy_network.predict(batch_states))
+    policy_model = PolicyModel()
+    policy_model.load('tmp/saved_model.pt')
+    print(policy_model.predict(batch_states))
 
