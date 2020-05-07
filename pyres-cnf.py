@@ -93,7 +93,7 @@ def processOptions(opts):
             except KeyError:
                 print("Unknown clause evaluation function", optarg)
                 sys.exit(1)
-        elif opt=="-P" or opt == "--policy-model-path":
+        elif opt=="-P" or opt == "--policy-model":
             params.heuristics = PolicyModelHeuristic(optarg)
         elif opt=="-n" or opt == "--neg-lit-selection":
             try:
@@ -112,7 +112,7 @@ if __name__ == '__main__':
                                         "forward-subsumption",
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
-                                        "policy-model-path=",
+                                        "policy-model=",
                                         "neg-lit-selection="])
     except getopt.GetoptError as err:
         print(sys.argv[0],":", err)

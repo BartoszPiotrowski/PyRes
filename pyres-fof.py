@@ -148,7 +148,7 @@ def processOptions(opts):
                 print("Unknown literal selection function", optarg)
                 print("Supported:", LiteralSelectors.keys())
                 sys.exit(1)
-        elif opt=="-P" or opt == "--policy-model-path":
+        elif opt=="-P" or opt == "--policy-model":
             params.heuristics = PolicyModelHeuristic(optarg)
         elif opt=="-S" or opt=="--suppress-eq-axioms":
             suppressEqAxioms = True
@@ -182,7 +182,7 @@ if __name__ == '__main__':
                                         "forward-subsumption",
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
-                                        "policy-model-path=",
+                                        "policy-model=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])
     except getopt.GetoptError as err:
