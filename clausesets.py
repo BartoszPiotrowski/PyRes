@@ -194,11 +194,8 @@ class HeuristicClauseSet(ClauseSet):
         Extract and return the next "best" clause according to the
         evaluation scheme.
         """
-        if not proof_state_vector:
-            return self.extractBestByEval(self.eval_functions.nextEval())
-        else:
-            return self.extractBestByEval(
-                self.eval_functions.nextEval(proof_state_vector))
+        return self.extractBestByEval(
+            self.eval_functions.nextEval(proof_state_vector))
 
 
 
