@@ -8,3 +8,8 @@
 - implement policy network
 - implement the reinforce algorithm
 - implement heuristic using the policy network
+
+# IDEAS
+- normalization of the proof state vector
+- reward based on whether the chosen queue picked a clause which ended up in
+  the proof
