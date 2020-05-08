@@ -117,6 +117,7 @@ class ProofState(object):
         """
         self.params = params
         self.unprocessed = HeuristicClauseSet(params.heuristics)
+        self.num_eval_functions = len(self.unprocessed.eval_functions.eval_funs)
 
         if indexed:
             self.processed   = IndexedClauseSet()
@@ -135,6 +136,7 @@ class ProofState(object):
         self.proof_state_vector = [0,0,0,0] # TODO
         self.update_proof_state_vector = \
             (type(params.heuristics) == heuristics.EvalStructureByPolicyModel)
+        self.given_clause = None
 
     def proofStateVector(self):
         """
@@ -154,13 +156,17 @@ class ProofState(object):
         statistics.append(self.processed.avgNumOfLits()) # mean size of a clause
         return statistics
 
-    def processClause(self):
+    def processClause(self, heuristic_index=None):
         """
         Pick a clause from unprocessed and process it. If the empty
         clause is found, return it. Otherwise return None.
         """
-        given_clause = self.unprocessed.extractBest(self.proof_state_vector)
+        if heuristic_index==None:
+            given_clause = self.unprocessed.extractBest(self.proof_state_vector)
+        else:
+            given_clause = self.unprocessed.extractBestByEval(heuristic_index)
         given_clause = given_clause.freshVarCopy()
+        self.given_clause = given_clause
         if given_clause.isEmpty():
             # We have found an explicit contradiction
             return given_clause

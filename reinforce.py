@@ -52,10 +52,16 @@ if __name__ == "__main__":
         default=0.001,
         type=float,
         help="Learning rate.")
+    parser.add-argument(
+        "--pyres_options",
+        default='-tfb -nsmallest',
+        type=str,
+        help="String of options as for pyres-fof.py except of "
+             "--given-clause-heuristic parameter (-H).")
     args = parser.parse_args()
 
 
-env = Environment(args.problems_dir, args.inferences_per_step)
+env = Environment(**vars(args))
 policy_model = PolicyModel(
     num_features=env.num_state_features,
     num_actions=env.num_actions,
@@ -76,7 +82,7 @@ while True:
             states.append(state)
             rewards.append(reward)
             actions.append(action)
-            # TODO controll if there is no mess because of removing next_state
+            # TODO controll if there is no mess because of removing the next_state
 
         returns = []
         sum_of_rewards = 0

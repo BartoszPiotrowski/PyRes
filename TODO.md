@@ -3,6 +3,7 @@
 - define new queues / heuristics
 	- similarity to conjecture
 - extract more proof state features
+- investigate why some problems from ALG cannot be parsed in a finite time
 
 # DONE
 - implement policy network
