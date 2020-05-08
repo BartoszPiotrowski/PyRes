@@ -15,7 +15,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--problems_dir",
+        "problems_dir",
         type=str)
     parser.add_argument(
         "--inferences_per_step",
@@ -24,8 +24,13 @@ if __name__ == "__main__":
         help="Number of processed clauses treated as a one agent's step in "
              "the environment.")
     parser.add_argument(
+        "--step_limit",
+        default=100,
+        type=int,
+        help="Maximum number of (RL) steps per problem.")
+    parser.add_argument(
         "--batch_size",
-        default=50,
+        default=10,
         type=int)
     parser.add_argument(
         "--episodes", # 1 episode == 1 proof attempt for 1 problem
@@ -52,7 +57,7 @@ if __name__ == "__main__":
         default=0.001,
         type=float,
         help="Learning rate.")
-    parser.add-argument(
+    parser.add_argument(
         "--pyres_options",
         default='-tfb -nsmallest',
         type=str,
@@ -61,39 +66,39 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
 
-env = Environment(**vars(args))
-policy_model = PolicyModel(
-    num_features=env.num_state_features,
-    num_actions=env.num_actions,
-    num_hidden_layers=args.hidden_layers,
-    num_units=args.units_in_hidden_layer,
-    learning_rate=args.learning_rate)
+    env = Environment(**vars(args))
+    policy_model = PolicyModel(
+        num_features=env.num_state_features,
+        num_actions=env.num_actions,
+        num_hidden_layers=args.hidden_layers,
+        num_units=args.units_in_hidden_layer,
+        learning_rate=args.learning_rate)
 
-while True:
-    batch_states, batch_actions, batch_returns = [], [], []
-    for _ in range(batch_size):
-        states, actions, rewards, done = [], [], [], False
-        # TODO 'done' == one problem tried, right?
-        # TODO maybe parallel processing
-        while not done:
-            action_distr = policy_model.predict(state)
-            action = np.random.choice(range(env.actions), p=action_distr)
-            state, reward, done = env.step(action)
-            states.append(state)
-            rewards.append(reward)
-            actions.append(action)
-            # TODO controll if there is no mess because of removing the next_state
+    while env.episode < args.episodes:
+        batch_states, batch_actions, batch_returns = [], [], []
+        for _ in range(args.batch_size):
+            states, actions, rewards, done = [], [], [], False
+            # TODO parallel processing (learning from multiple problems at once)
+            state = env.state()
+            while not done:
+                action_distr = policy_model.predict(state)
+                action = np.random.choice(range(env.num_actions), p=action_distr)
+                state, reward, done = env.step(action)
+                states.append(state)
+                rewards.append(reward)
+                actions.append(action)
 
-        returns = []
-        sum_of_rewards = 0
-        rewards.reverse()
-        for r in rewards:
-            sum_of_rewards = args.gamma * sum_of_rewards + r
-            returns.append(sum_of_rewards)
-        returns.reverse()
+            returns = []
+            sum_of_rewards = 0
+            rewards.reverse()
+            for r in rewards:
+                sum_of_rewards = args.gamma * sum_of_rewards + r
+                returns.append(sum_of_rewards)
+            returns.reverse()
 
-        batch_states.extend(states)
-        batch_actions.extend(actions)
-        batch_returns.extend(returns)
+            batch_states.extend(states)
+            batch_actions.extend(actions)
+            batch_returns.extend(returns)
 
-    policy_model.train(batch_states, batch_actions, batch_returns)
+        print('Training')
+        policy_model.train(batch_states, batch_actions, batch_returns)

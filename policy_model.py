@@ -39,11 +39,16 @@ class PolicyModel:
         batch_actions = torch.Tensor(batch_actions)
         batch_returns = torch.Tensor(batch_returns)
         predicted_actions = self.model(batch_states)
+        print(1)
         # TODO use returns, add logarithm
         self.loss(predicted_actions, batch_actions)
+        print(2)
         self.loss.backward()
+        print(3)
         self.optimizer.zero_grad()
+        print(4)
         self.optimizer.step()
+        print(5)
 
     def predict(self, state): # input: a proof state vector
         batch_states = torch.Tensor([state])
