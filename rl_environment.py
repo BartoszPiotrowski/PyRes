@@ -11,6 +11,7 @@ class Environment:
                  inferences_per_step=10,
                  pyres_options=None):
         self.pyres_options = processPyresOptions(pyres_options)
+        self.inferences_per_step = inferences_per_step
         self.problems = glob(problems_dir + '/*.p')
         shuffle(self.problems)
         self.current_problem_index = -1
@@ -45,23 +46,21 @@ class Environment:
 
     def step(self, action):
         state = self.proof_state.proof_state_vector
-        res = self.proof_state.processClause(action)
-        if res != None:
-            print(self.current_problem_path, 'SOLVED')
-            print()
-            done = True
-            reward = 1
-            self.load_next_problem()
-        else:
-            reward = 0
-            done = False
+        for _ in range(self.inferences_per_step):
+            res = self.proof_state.processClause(action)
+            if res != None: # empty clause found
+                print(f'Problem {self.current_problem_path} solved.')
+                print(self.proof_state.statisticsStr())
+                reward, done = 1, True
+                self.load_next_problem()
+                return state, reward, done
+        reward, done = 0, False
         return state, reward, done
 
 
 if __name__=='__main__':
-    env = Environment(problems_dir='problems/ALG_solved',
+    env = Environment(problems_dir='EXAMPLES/ALG',
                       pyres_options='-tfb -nsmallest')
     while env.epoch < 3:
-        print('epoch', env.epoch)
         i = choice(range(env.num_actions))
         env.step(i)
