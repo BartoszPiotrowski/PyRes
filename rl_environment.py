@@ -66,6 +66,7 @@ class Environment:
                 self.load_next_problem()
                 return state, reward, done
             elif self.current_problem_step >= self.step_limit:
+                # TODO move it to reinforce.py (?)
                 print(f'Step limit reached. Problem not solved.')
                 print(self.proof_state.statisticsStr())
                 self.load_next_problem()

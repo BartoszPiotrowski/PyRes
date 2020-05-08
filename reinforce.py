@@ -54,7 +54,7 @@ if __name__ == "__main__":
         help="Size of hidden layer.")
     parser.add_argument(
         "--learning_rate",
-        default=0.001,
+        default=0.01,
         type=float,
         help="Learning rate.")
     parser.add_argument(
@@ -81,8 +81,8 @@ if __name__ == "__main__":
             # TODO parallel processing (learning from multiple problems at once)
             state = env.state()
             while not done:
-                action_distr = policy_model.predict(state)
-                action = np.random.choice(range(env.num_actions), p=action_distr)
+                action_probs = policy_model.predict(state)
+                action = np.random.choice(range(env.num_actions), p=action_probs)
                 state, reward, done = env.step(action)
                 states.append(state)
                 rewards.append(reward)

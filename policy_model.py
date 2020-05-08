@@ -12,7 +12,6 @@ class PolicyModel:
         if model_shape:
             self.model_shape = model_shape
             self.define_layers(**model_shape)
-            self.loss = nn.MSELoss()
             self.learning_rate = learning_rate
             self.optimizer = optim.SGD(self.model.parameters(),
                                        lr=self.learning_rate)
@@ -34,21 +33,24 @@ class PolicyModel:
             nn.Softmax(dim=1)
         )
 
-    def train(self, batch_states, batch_actions, batch_returns):
-        batch_states = torch.Tensor(batch_states)
-        batch_actions = torch.Tensor(batch_actions)
-        batch_returns = torch.Tensor(batch_returns)
-        predicted_actions = self.model(batch_states)
-        print(1)
-        # TODO use returns, add logarithm
-        self.loss(predicted_actions, batch_actions)
-        print(2)
-        self.loss.backward()
-        print(3)
-        self.optimizer.zero_grad()
-        print(4)
+    def train(self, states, actions, returns):
+        states = torch.tensor(states, dtype=torch.float)
+        actions = torch.tensor(actions, dtype=torch.long)
+        returns = torch.tensor(returns, dtype=torch.float)
+        actions_probs = self.model(states)
+        selected_actions_probs = actions_probs[np.arange(len(actions)), actions]
+        selected_actions_probs_log = torch.log(selected_actions_probs)
+        loss = - torch.mean(returns * selected_actions_probs_log)
+        self.optimizer.zero_grad() # TODO right place?
+        loss.backward()
         self.optimizer.step()
-        print(5)
+
+#        # test if loss decreases
+#        actions_probs = self.model(states)
+#        selected_actions_probs = actions_probs[np.arange(len(actions)), actions]
+#        selected_actions_probs_log = torch.log(selected_actions_probs)
+#        loss = - torch.mean(returns * selected_actions_probs_log)
+#        print(loss)
 
     def predict(self, state): # input: a proof state vector
         batch_states = torch.Tensor([state])
@@ -83,6 +85,7 @@ class PolicyModel:
 
 
 if __name__=='__main__':
+    # TEST
     policy_model = PolicyModel(num_features=4,
                                    num_actions=2,
                                    num_hidden_layers=1,
