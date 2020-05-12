@@ -17,7 +17,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "problems_dir",
-        type=str)
+        type=str,
+        help="Directory with training problems.")
     parser.add_argument(
         "--inferences_per_step",
         default=10,
@@ -28,7 +29,7 @@ if __name__ == "__main__":
         "--step_limit",
         default=100,
         type=int,
-        help="Maximum number of (RL) steps per problem.")
+        help="Maximum number of (RL) steps per problem during training.")
     parser.add_argument(
         "--batch_size",
         default=10,
@@ -44,7 +45,7 @@ if __name__ == "__main__":
         "--evaluate_each",
         default=20,
         type=int,
-        help="After this number of episodes generated, run evaluation of the "
+        help="After this number of training batches run evaluation with the "
              "current policy model.")
     parser.add_argument(
         "--gamma",
@@ -94,9 +95,10 @@ if __name__ == "__main__":
         learning_rate=args.learning_rate,
         save_path=args.save_path)
 
+    losses = []
     while env.episode < args.episodes:
         batch_states, batch_actions, batch_returns = [], [], []
-        for _ in range(args.batch_size):
+        for i in range(args.batch_size):
             states, actions, rewards, done = [], [], [], False
             state = env.state()
             while not done:
@@ -106,12 +108,6 @@ if __name__ == "__main__":
                 states.append(state)
                 rewards.append(reward)
                 actions.append(action)
-            if env.episode % args.evaluate_each:
-                print()
-                print(f'Global step: {env.global_step}. Evaluating...')
-                saved_policy_model = policy_model.save()
-                evaluate(args.problems_dir, args.pyres_options,
-                         args.eval_timeout, saved_policy_model)
 
             returns = []
             sum_of_rewards = 0
@@ -125,4 +121,14 @@ if __name__ == "__main__":
             batch_actions.extend(actions)
             batch_returns.extend(returns)
 
-        policy_model.train(batch_states, batch_actions, batch_returns)
+        loss = policy_model.train(batch_states, batch_actions, batch_returns)
+        losses.append(loss)
+        if i % args.evaluate_each:
+            print()
+            print(f'Global step                         : {env.global_step}.')
+            print(f'Average policy model loss           : {np.mean(losses):.3f}.')
+            print('Evaluating policy model on training problems...')
+            saved_policy_model = policy_model.save()
+            evaluate(args.problems_dir, args.pyres_options,
+                     args.eval_timeout, saved_policy_model)
+

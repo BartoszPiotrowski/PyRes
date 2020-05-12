@@ -45,6 +45,7 @@ class PolicyModel:
         self.optimizer.zero_grad() # TODO right place?
         loss.backward()
         self.optimizer.step()
+        return loss.item()
 
 #        # test if loss decreases
 #        actions_probs = self.model(states)
