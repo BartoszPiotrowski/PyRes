@@ -1,12 +1,13 @@
 """
-Reinforce algorithm for learning queue (action) selection conditioned
-on proof state characterization.
+Reinforce algorithm for learning a queue (action) selection conditioned
+on a proof state characterization.
 """
 
 
 import numpy as np
 from rl_environment import Environment
 from policy_model import PolicyModel
+from evaluate import evaluate
 
 
 if __name__ == "__main__":
@@ -31,12 +32,20 @@ if __name__ == "__main__":
     parser.add_argument(
         "--batch_size",
         default=10,
-        type=int)
+        type=int,
+        help="Number of episodes forming one training batch of trajectories.")
     parser.add_argument(
-        "--episodes", # 1 episode == 1 proof attempt for 1 problem
+        "--episodes",
         default=100,
         type=int,
-        help="Number of episodes to train on.")
+        help="Number of episodes to train on. "
+             "(1 episode == 1 proof attempt for 1 problem.)")
+    parser.add_argument(
+        "--evaluate_each",
+        default=20,
+        type=int,
+        help="After this number of episodes generated, run evaluation of the "
+             "current policy model.")
     parser.add_argument(
         "--gamma",
         default=1.0,
@@ -63,6 +72,16 @@ if __name__ == "__main__":
         type=str,
         help="String of options as for pyres-fof.py except of "
              "--given-clause-heuristic parameter (-H).")
+    parser.add_argument(
+        "--eval_timeout",
+        default=10,
+        type=float,
+        help="Timeout for running PyRes with trained policy for one problem.")
+    parser.add_argument(
+        "--save_path",
+        default='policy_model.pt',
+        type=str,
+        help="Path for saving a trained policy model.")
     args = parser.parse_args()
 
 
@@ -72,13 +91,13 @@ if __name__ == "__main__":
         num_actions=env.num_actions,
         num_hidden_layers=args.hidden_layers,
         num_units=args.units_in_hidden_layer,
-        learning_rate=args.learning_rate)
+        learning_rate=args.learning_rate,
+        save_path=args.save_path)
 
     while env.episode < args.episodes:
         batch_states, batch_actions, batch_returns = [], [], []
         for _ in range(args.batch_size):
             states, actions, rewards, done = [], [], [], False
-            # TODO parallel processing (learning from multiple problems at once)
             state = env.state()
             while not done:
                 action_probs = policy_model.predict(state)
@@ -87,6 +106,12 @@ if __name__ == "__main__":
                 states.append(state)
                 rewards.append(reward)
                 actions.append(action)
+            if env.episode % args.evaluate_each:
+                print()
+                print(f'Global step: {env.global_step}. Evaluating...')
+                saved_policy_model = policy_model.save()
+                evaluate(args.problems_dir, args.pyres_options,
+                         args.eval_timeout, saved_policy_model)
 
             returns = []
             sum_of_rewards = 0
@@ -100,5 +125,4 @@ if __name__ == "__main__":
             batch_actions.extend(actions)
             batch_returns.extend(returns)
 
-        print('Training')
         policy_model.train(batch_states, batch_actions, batch_returns)

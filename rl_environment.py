@@ -41,7 +41,7 @@ class Environment:
             self.epoch += 1
         self.current_problem_path = \
             self.problems[self.current_problem_index]
-        print(f'Current training problem: {self.current_problem_path} ...')
+        #print(f'Current training problem: {self.current_problem_path} ...')
         problem = FOFSpec()
         problem.parse(self.current_problem_path)
         if not self.pyres_options['suppressEqAxioms']:
@@ -60,15 +60,15 @@ class Environment:
         for _ in range(self.inferences_per_step):
             res = self.proof_state.processClause(action)
             if res != None: # empty clause found
-                print(f'Solved!')
-                print(self.proof_state.statisticsStr())
+                #print(f'Solved!')
+                #print(self.proof_state.statisticsStr())
                 reward, done = 1, True
                 self.load_next_problem()
                 return state, reward, done
             elif self.current_problem_step >= self.step_limit:
                 # TODO move it to reinforce.py (?)
-                print(f'Step limit reached. Problem not solved.')
-                print(self.proof_state.statisticsStr())
+                #print(f'Step limit reached. Problem not solved.')
+                #print(self.proof_state.statisticsStr())
                 self.load_next_problem()
         reward, done = 0, False
         return state, reward, done

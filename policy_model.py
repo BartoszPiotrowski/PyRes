@@ -8,7 +8,8 @@ from utils import read_lines, write_lines
 
 
 class PolicyModel:
-    def __init__(self, learning_rate=0.001, **model_shape):
+    def __init__(self, learning_rate=0.001, save_path=None, **model_shape):
+        self.save_path=save_path
         if model_shape:
             self.model_shape = model_shape
             self.define_layers(**model_shape)
@@ -58,12 +59,15 @@ class PolicyModel:
         pred_numpy = pred_tensor.detach().numpy()[0]
         return pred_numpy
 
-    def save(self, path):
+    def save(self, path=None):
+        if path == None:
+            path = self.save_path
         dirpath = os.path.dirname(path)
-        if not os.path.exists(dirpath):
+        if not os.path.exists(dirpath) and dirpath:
             os.makedirs(dirpath)
         torch.save(self.model.state_dict(), path)
         self.save_layers_definitions(path + '.meta')
+        return path
 
 
     def save_layers_definitions(self, path):

@@ -21,9 +21,9 @@ def stats_from_output(output):
             processed.append(int(l.split(' ')[-1]))
     assert len(success) == len(time) == len(processed)
 
-    print(f'Successful runs: {sum(success)}')
-    print(f'Average user time: {np.mean(time):.2}')
-    print(f'Average number of processed clauses: {np.mean(processed):.2}')
+    print(f'Successful runs                     : {sum(success):}')
+    print(f'Average user time                   : {np.mean(time):.2f}')
+    print(f'Average number of processed clauses : {np.mean(processed):.0f}')
 
 
 

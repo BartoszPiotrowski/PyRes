@@ -181,8 +181,6 @@ class EvalStructureByPolicyModel(EvalStructure):
         Return the index of the next evaluation function of the scheme.
         """
         probabilities = self.model.predict(proof_state_vector)
-        print(proof_state_vector)
-        print(probabilities)
         self.current = np.random.choice(len(self.eval_funs), p=probabilities)
         return self.current
 

@@ -4,6 +4,7 @@
 	- similarity to conjecture
 - extract more proof state features
 - investigate why some problems from ALG cannot be parsed in a finite time
+- parallel processing -- multiple problems (= episodes) run at once
 
 # DONE
 - implement policy network
