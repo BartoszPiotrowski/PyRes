@@ -8,6 +8,7 @@ import numpy as np
 from rl_environment import Environment
 from policy_model import PolicyModel
 from evaluate import evaluate
+from returns import compute_returns
 
 
 if __name__ == "__main__":
@@ -43,7 +44,7 @@ if __name__ == "__main__":
              "(1 episode == 1 proof attempt for 1 problem.)")
     parser.add_argument(
         "--evaluate_each",
-        default=20,
+        default=10,
         type=int,
         help="After this number of training batches run evaluation with the "
              "current policy model.")
@@ -54,7 +55,7 @@ if __name__ == "__main__":
         help="Discounting factor.")
     parser.add_argument(
         "--hidden_layers",
-        default=100,
+        default=2,
         type=int,
         help="Number of hidden layers.")
     parser.add_argument(
@@ -87,6 +88,8 @@ if __name__ == "__main__":
 
 
     env = Environment(**vars(args))
+    print(env.num_state_features)
+
     policy_model = PolicyModel(
         num_features=env.num_state_features,
         num_actions=env.num_actions,
@@ -109,13 +112,7 @@ if __name__ == "__main__":
                 rewards.append(reward)
                 actions.append(action)
 
-            returns = []
-            sum_of_rewards = 0
-            rewards.reverse()
-            for r in rewards:
-                sum_of_rewards = args.gamma * sum_of_rewards + r
-                returns.append(sum_of_rewards)
-            returns.reverse()
+            returns = compute_returns(rewards, args.gamma)
 
             batch_states.extend(states)
             batch_actions.extend(actions)
@@ -125,8 +122,8 @@ if __name__ == "__main__":
         losses.append(loss)
         if i % args.evaluate_each:
             print()
-            print(f'Global step                         : {env.global_step}.')
-            print(f'Average policy model loss           : {np.mean(losses):.3f}.')
+            print(f'Global step                         : {env.global_step}')
+            print(f'Average policy model loss           : {np.mean(losses):.3f}')
             print('Evaluating policy model on training problems...')
             saved_policy_model = policy_model.save()
             evaluate(args.problems_dir, args.pyres_options,

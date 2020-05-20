@@ -143,7 +143,7 @@ class ClauseSet(object):
 
     def avgNumOfLits(self):
         lens = [len(c) for c in self.clauses]
-        return np.mean(lens)
+        return np.mean(lens) if lens else 0.0
 
 
 class HeuristicClauseSet(ClauseSet):

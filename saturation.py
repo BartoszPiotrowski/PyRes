@@ -133,7 +133,7 @@ class ProofState(object):
         self.forward_subsumed     = 0
         self.backward_subsumed    = 0
         self.silent               = silent
-        self.proof_state_vector = [0,0,0,0] # TODO
+        self.proof_state_vector = self.proofStateVector()
         self.update_proof_state_vector = \
             (type(params.heuristics) == heuristics.EvalStructureByPolicyModel)
         self.given_clause = None
@@ -147,11 +147,11 @@ class ProofState(object):
         # default statistics
         statistics.append(self.initial_clause_count)
         statistics.append(self.proc_clause_count)
-        #statistics.append(self.factor_count)
+        statistics.append(self.factor_count)
         statistics.append(self.resolvent_count)
-        #statistics.append(self.tautologies_deleted)
-        #statistics.append(self.forward_subsumed)
-        #statistics.append(self.backward_subsumed)
+        statistics.append(self.tautologies_deleted)
+        statistics.append(self.forward_subsumed)
+        statistics.append(self.backward_subsumed)
         # additional statistics
         statistics.append(self.processed.avgNumOfLits()) # mean size of a clause
         return statistics
