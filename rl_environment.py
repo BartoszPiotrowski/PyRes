@@ -57,7 +57,7 @@ class Environment:
                         break
                 except:
                     print('Error while processing a clause; problem '
-                          '{self.problem_path}')
+                          f'{self.problem_path}')
                     reward, done = 0, True
                     break
             else:
