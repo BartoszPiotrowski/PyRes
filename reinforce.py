@@ -41,7 +41,7 @@ if __name__ == "__main__":
         help="Number of episodes forming one training batch of trajectories.")
     parser.add_argument(
         "--episodes",
-        default=100,
+        default=1000,
         type=int,
         help="Number of episodes to train on. "
              "(1 episode == 1 proof attempt for 1 problem.)")
@@ -117,16 +117,17 @@ if __name__ == "__main__":
 
 
     def generate_episodes(env, policy_model, problems):
-        with Parallel(n_jobs=problems.batch_size) as parallel:
+        with Parallel(n_jobs=len(problems)) as parallel:
             trajectories_batch = parallel(
                 delayed(generate_1_episode)(env, policy_model, problem) \
-            for problem in problems.next_batch())
+            for problem in problems)
         return trajectories_batch
 
     losses = []
     last_eval_epoch = -1
     while problems.processed < args.episodes:
-        trajectories_batch = generate_episodes(env, policy_model, problems)
+        problems_batch = problems.next_batch()
+        trajectories_batch = generate_episodes(env, policy_model, problems_batch)
         trajectories_chain = chain(*trajectories_batch)
         states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
         returns_batch = compute_returns(rewards_batch, args.gamma)

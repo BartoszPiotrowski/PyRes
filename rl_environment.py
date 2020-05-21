@@ -48,11 +48,17 @@ class Environment:
             reward, done = 0, True
         else:
             for _ in range(self.inferences_per_step):
-                res = self.proof_state.processClause(action)
-                if res != None: # empty clause found = proof found
-                    #print(f'Solved!')
-                    #print(self.proof_state.statisticsStr())
-                    reward, done = 1, True
+                try:
+                    res = self.proof_state.processClause(action)
+                    if res != None: # empty clause found = proof found
+                        #print(f'Solved!')
+                        #print(self.proof_state.statisticsStr())
+                        reward, done = 1, True
+                        break
+                except:
+                    print('Error while processing a clause; problem '
+                          '{self.problem_path}')
+                    reward, done = 0, True
                     break
             else:
                 reward, done = 0, False
