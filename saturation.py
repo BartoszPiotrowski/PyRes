@@ -166,6 +166,8 @@ class ProofState(object):
             given_clause = self.unprocessed.extractBest(self.proof_state_vector)
         else:
             given_clause = self.unprocessed.extractBestByEval(heuristic_index)
+            #print(heuristic_index) TODO
+            #print(given_clause)
         given_clause = given_clause.freshVarCopy()
         self.given_clause = given_clause
         if given_clause.isEmpty():
