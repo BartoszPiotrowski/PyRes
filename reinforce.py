@@ -22,7 +22,7 @@ if __name__ == "__main__":
         help="Directory with training problems.")
     parser.add_argument(
         "--inferences_per_step",
-        default=10,
+        default=100,
         type=int,
         help="Number of processed clauses treated as a one agent's step in "
              "the environment.")
@@ -88,7 +88,6 @@ if __name__ == "__main__":
 
 
     env = Environment(**vars(args))
-    print(env.num_state_features)
 
     policy_model = PolicyModel(
         num_features=env.num_state_features,
