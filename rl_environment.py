@@ -1,3 +1,4 @@
+import os
 from glob import glob
 from random import shuffle, choice
 from fofspec import FOFSpec
@@ -7,70 +8,54 @@ from process_pyres_options import processPyresOptions
 
 class Environment:
     def __init__(self,
-                 problems_dir=None,
-                 inferences_per_step=10,
+                 inferences_per_step=100,
                  step_limit=100,
                  pyres_options=None,
                  **kwargs):
         self.pyres_options = processPyresOptions(pyres_options)
         self.inferences_per_step = inferences_per_step
         self.step_limit = step_limit
-        self.problems = glob(problems_dir + '/*.p')
-        shuffle(self.problems)
-        self.current_problem_index = -1
-        self.current_problem_path = None
-        self.current_problem = None
+        self.problem = None
+        self.problem_path = None
         self.proof_state = None
-        self.global_step = 0
-        self.current_problem_step = 0
-        self.epoch = 0 # 1 epoch = every problem from the list tried one time
-        self.episode = 0 # 1 episode = one proof attempt for one problem
+        self.steps_done = 0
         self.done = False
-        self.load_next_problem()
+        self.load_problem(glob(kwargs['problems_dir'] + '/*.p')[0])
+        # the above is just to initialize what is below (temporary solution)
         self.num_actions = self.proof_state.num_eval_functions
         self.num_state_features = len(self.proof_state.proof_state_vector)
 
 
-    def load_next_problem(self):
-        self.episode += 1
-        self.current_problem_index += 1
-        self.current_problem_step = 0
-        if not self.current_problem_index < len(self.problems):
-            self.current_problem_index = 0
-            shuffle(self.problems)
-            self.epoch += 1
-        self.current_problem_path = \
-            self.problems[self.current_problem_index]
-        #print(f'Current training problem: {self.current_problem_path} ...')
+    def load_problem(self, problem_path):
+        self.problem_path = problem_path
+        #print(f'Current training problem: {self.problem_path} ...')
         problem = FOFSpec()
-        problem.parse(self.current_problem_path)
+        problem.parse(self.problem_path)
         if not self.pyres_options['suppressEqAxioms']:
             problem.addEqAxioms()
-        self.current_problem = problem.clausify()
+        self.problem = problem.clausify()
         self.proof_state = ProofState(self.pyres_options['main'],
-                                      self.current_problem, True,
+                                      self.problem, True,
                                       self.pyres_options['indexed'])
-        self.done = False
 
 
     def step(self, action):
-        self.global_step += 1
-        self.current_problem_step += 1
+        self.steps_done += 1
         state = self.state()
-        for _ in range(self.inferences_per_step):
-            res = self.proof_state.processClause(action)
-            if res != None: # empty clause found
-                #print(f'Solved!')
-                #print(self.proof_state.statisticsStr())
-                reward, done = 1, True
-                self.load_next_problem()
-                return state, reward, done
-            elif self.current_problem_step >= self.step_limit:
-                # TODO move it to reinforce.py (?)
-                #print(f'Step limit reached. Problem not solved.')
-                #print(self.proof_state.statisticsStr())
-                self.load_next_problem()
-        reward, done = 0, False
+        if self.steps_done > self.step_limit:
+            #print(f'Step limit reached. Problem not solved.')
+            #print(self.proof_state.statisticsStr())
+            reward, done = 0, True
+        else:
+            for _ in range(self.inferences_per_step):
+                res = self.proof_state.processClause(action)
+                if res != None: # empty clause found = proof found
+                    #print(f'Solved!')
+                    #print(self.proof_state.statisticsStr())
+                    reward, done = 1, True
+                    break
+            else:
+                reward, done = 0, False
         return state, reward, done
 
 
@@ -78,9 +63,11 @@ class Environment:
         return self.proof_state.proof_state_vector
 
 
+
+
 if __name__=='__main__':
-    env = Environment(problems_dir='EXAMPLES/ALG',
-                      pyres_options='-tfb -nsmallest')
-    while env.epoch < 3:
+    env = Environment(pyres_options='-tfb -nsmallest')
+    env.load_problem('EXAMPLES/ALG/ALG171+1.p')
+    for _ in range(3):
         i = choice(range(env.num_actions))
         env.step(i)

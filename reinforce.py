@@ -5,10 +5,13 @@ on a proof state characterization.
 
 
 import numpy as np
+from itertools import chain
+from joblib import Parallel, delayed
 from rl_environment import Environment
 from policy_model import PolicyModel
 from evaluate import evaluate
 from returns import compute_returns
+from problems import Problems
 
 
 if __name__ == "__main__":
@@ -88,6 +91,7 @@ if __name__ == "__main__":
 
 
     env = Environment(**vars(args))
+    problems = Problems(**vars(args))
 
     policy_model = PolicyModel(
         num_features=env.num_state_features,
@@ -97,34 +101,51 @@ if __name__ == "__main__":
         learning_rate=args.learning_rate,
         save_path=args.save_path)
 
+    def generate_1_episode(env, policy_model, problem):
+        #print(f"Generating episode with problem {problem}")
+        env.load_problem(problem)
+        states, actions, rewards, done = [], [], [], False
+        state = env.state()
+        while not done:
+            action_probs = policy_model.predict(state)
+            action = np.random.choice(range(env.num_actions), p=action_probs)
+            state, reward, done = env.step(action)
+            states.append(state)
+            rewards.append(reward)
+            actions.append(action)
+        return zip(states, actions, rewards)
+
+
+    def generate_episodes(env, policy_model, problems):
+        with Parallel(n_jobs=problems.batch_size) as parallel:
+            trajectories_batch = parallel(
+                delayed(generate_1_episode)(env, policy_model, problem) \
+            for problem in problems.next_batch())
+        return trajectories_batch
+
     losses = []
-    while env.episode < args.episodes:
-        batch_states, batch_actions, batch_returns = [], [], []
-        for i in range(args.batch_size):
-            states, actions, rewards, done = [], [], [], False
-            state = env.state()
-            while not done:
-                action_probs = policy_model.predict(state)
-                action = np.random.choice(range(env.num_actions), p=action_probs)
-                state, reward, done = env.step(action)
-                states.append(state)
-                rewards.append(reward)
-                actions.append(action)
-
-            returns = compute_returns(rewards, args.gamma)
-
-            batch_states.extend(states)
-            batch_actions.extend(actions)
-            batch_returns.extend(returns)
-
-        loss = policy_model.train(batch_states, batch_actions, batch_returns)
+    last_eval_epoch = -1
+    while problems.processed < args.episodes:
+        trajectories_batch = generate_episodes(env, policy_model, problems)
+        trajectories_chain = chain(*trajectories_batch)
+        states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
+        returns_batch = compute_returns(rewards_batch, args.gamma)
+        loss = policy_model.train(states_batch, actions_batch, returns_batch)
         losses.append(loss)
-        if i % args.evaluate_each:
-            print()
-            print(f'Global step                         : {env.global_step}')
-            print(f'Average policy model loss           : {np.mean(losses):.3f}')
-            print('Evaluating policy model on training problems...')
+        print(f'generated episodes: {problems.processed:4d}    '
+              f'epoch: {problems.epoch:3d}    '
+              f'avg policy loss: {np.mean(losses):.3f}')
+        if problems.epoch - last_eval_epoch >= args.evaluate_each:
+            last_eval_epoch = problems.epoch
+            print('\nEvaluating policy model on training problems...')
             saved_policy_model = policy_model.save()
             evaluate(args.problems_dir, args.pyres_options,
                      args.eval_timeout, saved_policy_model)
+            print()
+
+
+
+
+
+
 
