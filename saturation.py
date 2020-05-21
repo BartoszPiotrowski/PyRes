@@ -111,7 +111,8 @@ class ProofState(object):
     In addition to the clause sets, this data structure also maintains
     a number of counters for statistics on the proof search.
     """
-    def __init__(self, params, clauses, silent=False, indexed=False):
+    def __init__(self, params, clauses, silent=False, indexed=False,
+                update_proof_state_vector=False):
         """
         Initialize the proof state with a set of clauses.
         """
@@ -134,7 +135,7 @@ class ProofState(object):
         self.backward_subsumed    = 0
         self.silent               = silent
         self.proof_state_vector = self.proofStateVector()
-        self.update_proof_state_vector = \
+        self.update_proof_state_vector = update_proof_state_vector or \
             (type(params.heuristics) == heuristics.EvalStructureByPolicyModel)
         self.given_clause = None
 

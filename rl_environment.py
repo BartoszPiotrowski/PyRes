@@ -36,7 +36,7 @@ class Environment:
         self.problem = problem.clausify()
         self.proof_state = ProofState(self.pyres_options['main'],
                                       self.problem, True,
-                                      self.pyres_options['indexed'])
+                                      self.pyres_options['indexed'], True)
 
 
     def step(self, action):
@@ -61,8 +61,6 @@ class Environment:
 
     def state(self):
         return self.proof_state.proof_state_vector
-
-
 
 
 if __name__=='__main__':
