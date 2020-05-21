@@ -41,7 +41,7 @@ if __name__ == "__main__":
         help="Number of episodes forming one training batch of trajectories.")
     parser.add_argument(
         "--episodes",
-        default=1000,
+        default=10000,
         type=int,
         help="Number of episodes to train on. "
              "(1 episode == 1 proof attempt for 1 problem.)")
@@ -53,7 +53,7 @@ if __name__ == "__main__":
              "current policy model.")
     parser.add_argument(
         "--gamma",
-        default=1.0,
+        default=0.99,
         type=float,
         help="Discounting factor.")
     parser.add_argument(
