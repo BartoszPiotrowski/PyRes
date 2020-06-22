@@ -1,3 +1,4 @@
+#!/bin/python3
 """
 Reinforce algorithm for learning a queue (action) selection conditioned
 on a proof state characterization.
@@ -24,7 +25,7 @@ if __name__ == "__main__":
         help="Text file with a list of training problems.")
     parser.add_argument(
         "--inferences_per_step",
-        default=100,
+        default=10,
         type=int,
         help="Number of processed clauses treated as a one agent's step in "
              "the environment.")
@@ -35,7 +36,7 @@ if __name__ == "__main__":
         help="Maximum number of (RL) steps per problem during training.")
     parser.add_argument(
         "--batch_size",
-        default=10,
+        default=16,
         type=int,
         help="Number of episodes forming one training batch of trajectories.")
     parser.add_argument(
@@ -86,7 +87,15 @@ if __name__ == "__main__":
         default='policy_model.pt',
         type=str,
         help="Path for saving a trained policy model.")
+    parser.add_argument(
+        "--n_jobs",
+        default=0,
+        type=int,
+        help="Number of parallel jobs to run.")
     args = parser.parse_args()
+
+    if not args.n_jobs:
+        args.n_jobs = args.batch_size
 
     env = Environment(**vars(args))
     problems = Problems(**vars(args))
@@ -99,27 +108,30 @@ if __name__ == "__main__":
         learning_rate=args.learning_rate,
         save_path=args.save_path)
 
+
+    def generate_episodes(env, policy_model, problems):
+        with Parallel(n_jobs=args.n_jobs) as parallel:
+            trajectories_batch = parallel(
+                delayed(generate_1_episode)(env, policy_model, problem) \
+            for problem in problems)
+        return trajectories_batch
+
+
     def generate_1_episode(env, policy_model, problem):
+        #print(f"Generating episode with problem {problem}")
         env.load_problem(problem)
-        print(f"Generating episode with problem {problem}")
         states, actions, rewards, done = [], [], [], False
         state = env.state()
         while not done:
             action_probs = policy_model.predict(state)
             action = np.random.choice(range(env.num_actions), p=action_probs)
             state, reward, done = env.step(action)
+            print(action_probs, reward)
             states.append(state)
             rewards.append(reward)
             actions.append(action)
         return zip(states, actions, rewards)
 
-
-    def generate_episodes(env, policy_model, problems):
-        with Parallel(n_jobs=len(problems)) as parallel:
-            trajectories_batch = parallel(
-                delayed(generate_1_episode)(env, policy_model, problem) \
-            for problem in problems)
-        return trajectories_batch
 
     losses = []
     last_eval_epoch = -1
