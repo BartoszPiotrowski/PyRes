@@ -1,0 +1,262 @@
+1000
+111
+222
+333
+111
+Generating 100 episodes in parallel...
+Generating episode with problem Problems/NLP/NLP025+1.p
+Error while processing a clause; problem Problems/NLP/NLP025+1.p
+Generating episode with problem Problems/SYN/SYN069+1.p
+Generating episode with problem Problems/GEO/GEO245+1.p
+Generating episode with problem Problems/KRS/KRS060+1.p
+Error while processing a clause; problem Problems/KRS/KRS060+1.p
+Generating episode with problem Problems/SYN/SYN941+1.p
+Generating episode with problem Problems/SYN/SYN925+1.p
+Generating episode with problem Problems/GEO/GEO211+2.p
+Generating episode with problem Problems/SWB/SWB027+4.p
+Error while processing a clause; problem Problems/SWB/SWB027+4.p
+Generating episode with problem Problems/SWB/SWB023+4.p
+Error while processing a clause; problem Problems/SWB/SWB023+4.p
+Generating episode with problem Problems/MGT/MGT014+1.p
+Generating episode with problem Problems/SYN/SYN405+1.p
+Generating episode with problem Problems/KRS/KRS050+1.p
+Error while processing a clause; problem Problems/KRS/KRS050+1.p
+Generating episode with problem Problems/NLP/NLP151+1.p
+Error while processing a clause; problem Problems/NLP/NLP151+1.p
+Generating episode with problem Problems/SYN/SYN936+1.p
+Generating episode with problem Problems/KRS/KRS168+1.p
+Generating episode with problem Problems/GEO/GEO229+1.p
+Error while processing a clause; problem Problems/GEO/GEO229+1.p
+Generating episode with problem Problems/KRS/KRS099+1.p
+Generating episode with problem Problems/SYN/SYN066+1.p
+Generating episode with problem Problems/SYN/SYN403+1.p
+Generating episode with problem Problems/SYN/SYN373+1.p
+Generating episode with problem Problems/SYN/SYN327+1.p
+Generating episode with problem Problems/LAT/LAT388+1.p
+Generating episode with problem Problems/NUM/NUM458+2.p
+Generating episode with problem Problems/GEO/GEO232+1.p
+Generating episode with problem Problems/NLP/NLP050+1.p
+Error while processing a clause; problem Problems/NLP/NLP050+1.p
+Generating episode with problem Problems/LCL/LCL650+1.001.p
+Generating episode with problem Problems/CSR/CSR054+1.p
+Generating episode with problem Problems/SYN/SYN947+1.p
+Generating episode with problem Problems/KRS/KRS076+1.p
+Generating episode with problem Problems/GEO/GEO207+2.p
+Generating episode with problem Problems/LCL/LCL637+1.001.p
+Error while processing a clause; problem Problems/LCL/LCL637+1.001.p
+Generating episode with problem Problems/SYN/SYN721+1.p
+Generating episode with problem Problems/NUM/NUM484+1.p
+Generating episode with problem Problems/SYN/SYN972+1.p
+Generating episode with problem Problems/SET/SET625+3.p
+Generating episode with problem Problems/SYN/SYN357+1.p
+Generating episode with problem Problems/NLP/NLP087+1.p
+Error while processing a clause; problem Problems/NLP/NLP087+1.p
+Generating episode with problem Problems/KRS/KRS023+1.p
+Error while processing a clause; problem Problems/KRS/KRS023+1.p
+Generating episode with problem Problems/SYN/SYN365+1.p
+Generating episode with problem Problems/KRS/KRS152+1.p
+Generating episode with problem Problems/ALG/ALG175+1.p
+Error while processing a clause; problem Problems/ALG/ALG175+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/SYO/SYO609+1.p
+Error while processing a clause; problem Problems/SYO/SYO609+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/SEU/SEU217+3.p
+Error while processing a clause; problem Problems/SEU/SEU217+3.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/NLP/NLP064+1.p
+Error while processing a clause; problem Problems/NLP/NLP064+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/SWV/SWV482+1.p
+Error while processing a clause; problem Problems/SWV/SWV482+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 107, in get
+    if not self._poll(timeout):
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+Generating episode with problem Problems/KRS/KRS150+1.p
+Error while processing a clause; problem Problems/KRS/KRS150+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/KLE/KLE181+1.p
+Error while processing a clause; problem Problems/KLE/KLE181+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/GEO/GEO186+3.p
+Error while processing a clause; problem Problems/GEO/GEO186+3.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/LCL/LCL659+1.020.p
+Error while processing a clause; problem Problems/LCL/LCL659+1.020.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/KRS/KRS108+1.p
+Error while processing a clause; problem Problems/KRS/KRS108+1.p
+Generating episode with problem Problems/NLP/NLP191+1.p
+Error while processing a clause; problem Problems/NLP/NLP191+1.p
+Generating episode with problem Problems/NLP/NLP205+1.p
+Error while processing a clause; problem Problems/NLP/NLP205+1.p
+Generating episode with problem Problems/NLP/NLP211+1.p
+Error while processing a clause; problem Problems/NLP/NLP211+1.p
+Generating episode with problem Problems/NLP/NLP079+1.p
+Error while processing a clause; problem Problems/NLP/NLP079+1.p
+Generating episode with problem Problems/NLP/NLP012+1.p
+Error while processing a clause; problem Problems/NLP/NLP012+1.p
+Generating episode with problem Problems/NUM/NUM456+6.p
+Error while processing a clause; problem Problems/NUM/NUM456+6.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/LCL/LCL671+1.001.p
+Error while processing a clause; problem Problems/LCL/LCL671+1.001.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/SWW/SWW103+1.p
+Error while processing a clause; problem Problems/SWW/SWW103+1.p
+Generating episode with problem Problems/CSR/CSR036+1.p
+Error while processing a clause; problem Problems/CSR/CSR036+1.p
+Generating episode with problem Problems/LCL/LCL671+1.005.p
+Error while processing a clause; problem Problems/LCL/LCL671+1.005.p
+Generating episode with problem Problems/SYN/SYN036+2.p
+Error while processing a clause; problem Problems/SYN/SYN036+2.p
+Generating episode with problem Problems/LCL/LCL687+1.001.p
+Error while processing a clause; problem Problems/LCL/LCL687+1.001.p
+Generating episode with problem Problems/COM/COM003+2.p
+Error while processing a clause; problem Problems/COM/COM003+2.p
+Generating episode with problem Problems/NUM/NUM484+3.p
+Error while processing a clause; problem Problems/NUM/NUM484+3.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/COM/COM013+4.p
+Error while processing a clause; problem Problems/COM/COM013+4.p
+Generating episode with problem Problems/SWV/SWV482+2.p
+Error while processing a clause; problem Problems/SWV/SWV482+2.p
+Generating episode with problem Problems/SYN/SYN550+1.p
+Error while processing a clause; problem Problems/SYN/SYN550+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/NLP/NLP250+1.p
+Error while processing a clause; problem Problems/NLP/NLP250+1.p
+Generating episode with problem Problems/SYN/SYN453+1.p
+Error while processing a clause; problem Problems/SYN/SYN453+1.p
+Generating episode with problem Problems/ALG/ALG171+1.p
+Error while processing a clause; problem Problems/ALG/ALG171+1.p
+Generating episode with problem Problems/NLP/NLP194+1.p
+Error while processing a clause; problem Problems/NLP/NLP194+1.p
+Generating episode with problem Problems/NUM/NUM518+3.p
+Error while processing a clause; problem Problems/NUM/NUM518+3.p
+Generating episode with problem Problems/SWV/SWV070+1.p
+Error while processing a clause; problem Problems/SWV/SWV070+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/RNG/RNG125+4.p
+Error while processing a clause; problem Problems/RNG/RNG125+4.p
+Generating episode with problem Problems/NLP/NLP221+1.p
+Error while processing a clause; problem Problems/NLP/NLP221+1.p
+Traceback (most recent call last):
+  File "/home/bartosz/envs/pytorch-gpu/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 404, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 102, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+
+Generating episode with problem Problems/KRS/KRS051+1.p
+Error while processing a clause; problem Problems/KRS/KRS051+1.p
+Generating episode with problem Problems/REL/REL010+2.p
+Error while processing a clause; problem Problems/REL/REL010+2.p
+Generating episode with problem Problems/NUM/NUM455+6.p
+Error while processing a clause; problem Problems/NUM/NUM455+6.p
+Generating episode with problem Problems/SYN/SYN534+1.p
+Error while processing a clause; problem Problems/SYN/SYN534+1.p

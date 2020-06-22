@@ -2,9 +2,9 @@ import os
 import numpy as np
 
 
-def evaluate(problems_dir, pyres_options, timeout, policy_model):
+def evaluate(problems_list, pyres_options, timeout, policy_model):
     output = os.popen('./evaluate.sh ' + \
-     ' '.join([problems_dir, policy_model, str(timeout), pyres_options])).read()
+     ' '.join([problems_list, policy_model, str(timeout), pyres_options])).read()
     stats_from_output(output)
 
 def stats_from_output(output):

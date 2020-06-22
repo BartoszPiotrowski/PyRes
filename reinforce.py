@@ -13,16 +13,15 @@ from evaluate import evaluate
 from returns import compute_returns
 from problems import Problems
 
-
 if __name__ == "__main__":
     np.random.seed(42)
 
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "problems_dir",
+        "problems_list",
         type=str,
-        help="Directory with training problems.")
+        help="Text file with a list of training problems.")
     parser.add_argument(
         "--inferences_per_step",
         default=100,
@@ -89,7 +88,6 @@ if __name__ == "__main__":
         help="Path for saving a trained policy model.")
     args = parser.parse_args()
 
-
     env = Environment(**vars(args))
     problems = Problems(**vars(args))
 
@@ -102,8 +100,8 @@ if __name__ == "__main__":
         save_path=args.save_path)
 
     def generate_1_episode(env, policy_model, problem):
-        #print(f"Generating episode with problem {problem}")
         env.load_problem(problem)
+        print(f"Generating episode with problem {problem}")
         states, actions, rewards, done = [], [], [], False
         state = env.state()
         while not done:
@@ -127,6 +125,7 @@ if __name__ == "__main__":
     last_eval_epoch = -1
     while problems.processed < args.episodes:
         problems_batch = problems.next_batch()
+        print(f"Generating {len(problems_batch)} episodes in parallel...")
         trajectories_batch = generate_episodes(env, policy_model, problems_batch)
         trajectories_chain = chain(*trajectories_batch)
         states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
@@ -140,7 +139,7 @@ if __name__ == "__main__":
             last_eval_epoch = problems.epoch
             print('\nEvaluating policy model on training problems...')
             saved_policy_model = policy_model.save()
-            evaluate(args.problems_dir, args.pyres_options,
+            evaluate(args.problems_list, args.pyres_options,
                      args.eval_timeout, saved_policy_model)
             print()
 

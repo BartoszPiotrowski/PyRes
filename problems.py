@@ -1,13 +1,12 @@
 import numpy as np
-from glob import glob
-
+from utils import read_lines
 
 class Problems:
-    def __init__(self, problems_dir=None, batch_size=None, **kwargs):
+    def __init__(self, problems_list=None, batch_size=None, **kwargs):
         self.epoch = 0
         self.processed = 0
         self.batch_size = batch_size
-        self.problems = glob(problems_dir + '/*.p')
+        self.problems = read_lines(problems_list)
         self._permutation = np.random.permutation(len(self.problems))
 
     def next_batch(self):

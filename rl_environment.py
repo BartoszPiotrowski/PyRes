@@ -4,6 +4,7 @@ from random import shuffle, choice
 from fofspec import FOFSpec
 from saturation import ProofState
 from process_pyres_options import processPyresOptions
+from utils import read_lines
 
 
 class Environment:
@@ -20,7 +21,7 @@ class Environment:
         self.proof_state = None
         self.steps_done = 0
         self.done = False
-        self.load_problem(glob(kwargs['problems_dir'] + '/*.p')[0])
+        self.load_problem('Problems/PUZ/PUZ001+1.p')
         # the above is just to initialize what is below (temporary solution)
         self.num_actions = self.proof_state.num_eval_functions
         self.num_state_features = len(self.proof_state.proof_state_vector)
@@ -71,7 +72,7 @@ class Environment:
 
 if __name__=='__main__':
     env = Environment(pyres_options='-tfb -nsmallest')
-    env.load_problem('EXAMPLES/ALG/ALG171+1.p')
+    env.load_problem('Problems/ALG/ALG171+1.p')
     for _ in range(3):
         i = choice(range(env.num_actions))
         env.step(i)
