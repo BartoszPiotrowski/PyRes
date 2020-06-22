@@ -5,17 +5,20 @@ from fofspec import FOFSpec
 from saturation import ProofState
 from process_pyres_options import processPyresOptions
 from utils import read_lines
+from time import time
 
 
 class Environment:
     def __init__(self,
                  inferences_per_step=100,
                  step_limit=100,
+                 time_limit=10,
                  pyres_options=None,
                  **kwargs):
         self.pyres_options = processPyresOptions(pyres_options)
         self.inferences_per_step = inferences_per_step
         self.step_limit = step_limit
+        self.time_limit = time_limit
         self.problem = None
         self.problem_path = None
         self.proof_state = None
@@ -28,6 +31,7 @@ class Environment:
 
 
     def load_problem(self, problem_path):
+        self.time = time()
         self.problem_path = problem_path
         #print(f'Current training problem: {self.problem_path} ...')
         problem = FOFSpec()
@@ -44,16 +48,20 @@ class Environment:
         self.steps_done += 1
         state = self.state()
         if self.steps_done > self.step_limit:
-            #print(f'Step limit reached. Problem not solved.')
-            #print(self.proof_state.statisticsStr())
+            print(f'Step limit reached. Problem not solved.')
+            print(self.proof_state.statisticsStr())
+            reward, done = 0, True
+        elif self.time - time() > self.time_limit:
+            print(f'Time limit reached. Problem not solved.')
+            print(self.proof_state.statisticsStr())
             reward, done = 0, True
         else:
             for _ in range(self.inferences_per_step):
                 try:
                     res = self.proof_state.processClause(action)
+                    print(self.proof_state.statisticsStr())
                     if res != None: # empty clause found = proof found
                         #print(f'Solved!')
-                        #print(self.proof_state.statisticsStr())
                         reward, done = 1, True
                         break
                 except:

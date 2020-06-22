@@ -5,6 +5,7 @@ on a proof state characterization.
 """
 
 
+from sys import getsizeof
 import numpy as np
 from itertools import chain
 from joblib import Parallel, delayed
@@ -13,6 +14,7 @@ from policy_model import PolicyModel
 from evaluate import evaluate
 from returns import compute_returns
 from problems import Problems
+from utils import humanbytes
 
 if __name__ == "__main__":
     np.random.seed(42)
@@ -32,6 +34,11 @@ if __name__ == "__main__":
     parser.add_argument(
         "--step_limit",
         default=100,
+        type=int,
+        help="Maximum number of (RL) steps per problem during training.")
+    parser.add_argument(
+        "--time_limit",
+        default=10,
         type=int,
         help="Maximum number of (RL) steps per problem during training.")
     parser.add_argument(
@@ -123,13 +130,16 @@ if __name__ == "__main__":
         states, actions, rewards, done = [], [], [], False
         state = env.state()
         while not done:
+            print(111)
             action_probs = policy_model.predict(state)
             action = np.random.choice(range(env.num_actions), p=action_probs)
             state, reward, done = env.step(action)
-            print(action_probs, reward)
             states.append(state)
             rewards.append(reward)
             actions.append(action)
+            print(env.problem_path, env.steps_done)
+        print(222)
+        print(humanbytes(getsizeof(states)))
         return zip(states, actions, rewards)
 
 
