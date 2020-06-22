@@ -14,7 +14,7 @@ from policy_model import PolicyModel
 from evaluate import evaluate
 from returns import compute_returns
 from problems import Problems
-from utils import humanbytes
+from utils import humanbytes, with_timeout
 
 if __name__ == "__main__":
     np.random.seed(42)
@@ -116,46 +116,54 @@ if __name__ == "__main__":
         save_path=args.save_path)
 
 
-    def generate_episodes(env, policy_model, problems):
-        with Parallel(n_jobs=args.n_jobs) as parallel:
+    def generate_episodes(env, policy_model, problems, n_jobs):
+        with Parallel(n_jobs=n_jobs) as parallel:
             trajectories_batch = parallel(
                 delayed(generate_1_episode)(env, policy_model, problem) \
             for problem in problems)
         return trajectories_batch
 
 
+    @with_timeout(args.time_limit)
     def generate_1_episode(env, policy_model, problem):
-        #print(f"Generating episode with problem {problem}")
-        env.load_problem(problem)
-        states, actions, rewards, done = [], [], [], False
-        state = env.state()
-        while not done:
-            print(111)
-            action_probs = policy_model.predict(state)
-            action = np.random.choice(range(env.num_actions), p=action_probs)
-            state, reward, done = env.step(action)
-            states.append(state)
-            rewards.append(reward)
-            actions.append(action)
-            print(env.problem_path, env.steps_done)
-        print(222)
-        print(humanbytes(getsizeof(states)))
-        return zip(states, actions, rewards)
-
+        try:
+            #print(f"Generating episode with problem {problem}")
+            env.load_problem(problem)
+            states, actions, rewards, done = [], [], [], False
+            state = env.state()
+            while not done:
+                action_probs = policy_model.predict(state)
+                action = np.random.choice(range(env.num_actions), p=action_probs)
+                state, reward, done = env.step(action)
+                states.append(state)
+                rewards.append(reward)
+                actions.append(action)
+                #print(env.problem_path, env.steps_done, done)
+            #print(humanbytes(getsizeof(states)))
+            return zip(states, actions, rewards)
+        except:
+            return
 
     losses = []
     last_eval_epoch = -1
-    while problems.processed < args.episodes:
+    generated_episodes = 0
+    while generated_episodes < args.episodes:
         problems_batch = problems.next_batch()
-        print(f"Generating {len(problems_batch)} episodes in parallel...")
-        trajectories_batch = generate_episodes(env, policy_model, problems_batch)
+        #print(f"Generating {len(problems_batch)} episodes with "
+        #      f"{args.n_jobs} parallel jobs.")
+        trajectories_batch = generate_episodes(env, policy_model,
+                                               problems_batch, args.n_jobs)
+        generated_episodes += len(trajectories_batch)
+        trajectories_batch = [tb for tb in trajectories_batch if tb]
         trajectories_chain = chain(*trajectories_batch)
         states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
         returns_batch = compute_returns(rewards_batch, args.gamma)
         loss = policy_model.train(states_batch, actions_batch, returns_batch)
         losses.append(loss)
-        print(f'generated episodes: {problems.processed:4d}    '
+        print(f'episodes total: {problems.processed:3d}    '
+              f'episodes batch: {len(trajectories_batch):3d}    '
               f'epoch: {problems.epoch:3d}    '
+              f'avg reward: {np.mean(rewards_batch):.3f}    '
               f'avg policy loss: {np.mean(losses):.3f}')
         if problems.epoch - last_eval_epoch >= args.evaluate_each:
             last_eval_epoch = problems.epoch

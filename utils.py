@@ -1,7 +1,8 @@
 import os
 import pickle
 import gzip
-
+import multiprocessing
+import functools
 
 def read_lines(filename):
     with open(filename, encoding ='utf-8') as f:
@@ -43,3 +44,18 @@ def humanbytes(B):
         return '{0:.2f} GB'.format(B / GB)
     elif TB <= B:
         return '{0:.2f} TB'.format(B / TB)
+
+
+
+def with_timeout(timeout):
+    def decorator(decorated):
+        @functools.wraps(decorated)
+        def inner(*args, **kwargs):
+            pool = multiprocessing.pool.ThreadPool(1)
+            async_result = pool.apply_async(decorated, args, kwargs)
+            try:
+                return async_result.get(timeout)
+            except multiprocessing.TimeoutError:
+                return
+        return inner
+    return decorator
