@@ -1,4 +1,7 @@
 # TODO
+- clipping of the inf loss
+- decrease the temperature with time
+- avoid running out of memory
 - integrate the reinforce algorithm with the saturation algorithm
 - define new queues / heuristics
 	- similarity to conjecture
