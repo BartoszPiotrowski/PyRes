@@ -46,7 +46,6 @@ def humanbytes(B):
         return '{0:.2f} TB'.format(B / TB)
 
 
-
 def with_timeout(timeout):
     def decorator(decorated):
         @functools.wraps(decorated)
@@ -59,3 +58,10 @@ def with_timeout(timeout):
                 return
         return inner
     return decorator
+
+
+def apply_temperature(probs, t):
+    assert 1 <= t
+    probs = [p if p > 0 else 0.00001 for p in probs]
+    denom = sum([p ** (1/t) for p in probs])
+    return [p ** (1/t) / denom for p in probs]

@@ -14,7 +14,7 @@ from policy_model import PolicyModel
 from evaluate import evaluate
 from returns import compute_returns
 from problems import Problems
-from utils import humanbytes, with_timeout
+from utils import humanbytes, with_timeout, apply_temperature
 
 if __name__ == "__main__":
     np.random.seed(42)
@@ -79,6 +79,16 @@ if __name__ == "__main__":
         type=float,
         help="Learning rate.")
     parser.add_argument(
+        "--temperature",
+        default=1.1,
+        type=float,
+        help="""
+        Float larger or equal than 1. When temperature = 1, action selection is
+        governed by probabilities given by the policy model; values larger than
+        1 make the selection more random (values > 10 make the selection almost
+        uniform)
+        """)
+    parser.add_argument(
         "--pyres_options",
         default='-tfb -nsmallest',
         type=str,
@@ -133,6 +143,7 @@ if __name__ == "__main__":
             state = env.state()
             while not done:
                 action_probs = policy_model.predict(state)
+                action_probs = apply_temperature(action_probs, args.temperature)
                 action = np.random.choice(range(env.num_actions), p=action_probs)
                 state, reward, done = env.step(action)
                 states.append(state)
@@ -159,6 +170,7 @@ if __name__ == "__main__":
         states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
         returns_batch = compute_returns(rewards_batch, args.gamma)
         loss = policy_model.train(states_batch, actions_batch, returns_batch)
+        print(loss)
         losses.append(loss)
         print(
               f'epoch: {problems.epoch:2d}    '
