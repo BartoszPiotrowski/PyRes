@@ -160,11 +160,13 @@ if __name__ == "__main__":
         returns_batch = compute_returns(rewards_batch, args.gamma)
         loss = policy_model.train(states_batch, actions_batch, returns_batch)
         losses.append(loss)
-        print(f'episodes total: {problems.processed:3d}    '
+        print(
+              f'epoch: {problems.epoch:2d}    '
+              f'episodes total: {problems.processed:4d}    '
               f'episodes batch: {len(trajectories_batch):3d}    '
-              f'epoch: {problems.epoch:3d}    '
-              f'avg reward: {np.mean(rewards_batch):.3f}    '
-              f'avg policy loss: {np.mean(losses):.3f}')
+              f'avg reward: {np.mean(rewards_batch):.2f}    '
+              f'avg policy loss: {np.mean(losses):.2f}'
+        )
         if problems.epoch - last_eval_epoch >= args.evaluate_each:
             last_eval_epoch = problems.epoch
             print('\nEvaluating policy model on training problems...')
@@ -172,10 +174,5 @@ if __name__ == "__main__":
             evaluate(args.problems_list, args.pyres_options,
                      args.eval_timeout, saved_policy_model)
             print()
-
-
-
-
-
 
 
