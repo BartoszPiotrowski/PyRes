@@ -8,6 +8,6 @@ grep 'SZS status Theorem' BENCHMARKS/pyres-fof-proofs/* -l | \
 	xargs realpath --relative-to=$TPTP > BENCHMARKS/B3
 
 
-#shuf BENCHMARKS/B3 | head -100 > BENCHMARKS/B3_100
-#shuf BENCHMARKS/B3 | head -10 > BENCHMARKS/B3_10
+shuf BENCHMARKS/B3 | head -100 > BENCHMARKS/B3_100
+shuf BENCHMARKS/B3 | head -10 > BENCHMARKS/B3_10
 
