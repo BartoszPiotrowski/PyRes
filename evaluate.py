@@ -7,6 +7,7 @@ def evaluate(problems_list, pyres_options, timeout, policy_model):
      ' '.join([problems_list, policy_model, str(timeout), pyres_options])).read()
     stats_from_output(output)
 
+
 def stats_from_output(output):
     lines = output.split('\n')
     success, time, processed = [], [], []
@@ -21,11 +22,9 @@ def stats_from_output(output):
             processed.append(int(l.split(' ')[-1]))
     assert len(success) == len(time) == len(processed)
 
-    print(f'Problems solved                     : {sum(success):}')
+    print(f'Problems solved                     : {sum(success)} / {len(success)}')
     print(f'Average user time                   : {np.mean(time):.2f}')
     print(f'Average number of processed clauses : {np.mean(processed):.0f}')
-
-
 
 
 if __name__=='__main__':

@@ -5,11 +5,13 @@ import torch.nn.functional as F
 import numpy as np
 import os
 from utils import read_lines, write_lines
+from normalizer import Normalizer
 
 
 class PolicyModel:
-    def __init__(self, learning_rate=0.001, save_path=None, **model_shape):
+    def __init__(self, learning_rate=0.001, normalizer=None, save_path=None, **model_shape):
         self.save_path=save_path
+        self.normalizer = normalizer
         if model_shape:
             self.model_shape = model_shape
             self.define_layers(**model_shape)
@@ -35,6 +37,7 @@ class PolicyModel:
         )
 
     def train(self, states, actions, returns):
+        states = self.normalizer.normalize(states)
         states = torch.tensor(states, dtype=torch.float)
         actions = torch.tensor(actions, dtype=torch.long)
         returns = torch.tensor(returns, dtype=torch.float)
@@ -57,7 +60,7 @@ class PolicyModel:
 #        print(loss)
 
     def predict(self, state): # input: a proof state vector
-        batch_states = torch.Tensor([state])
+        batch_states = torch.Tensor(self.normalizer.normalize([state]))
         pred_tensor = self.model(batch_states)
         pred_numpy = pred_tensor.detach().numpy()[0]
         return pred_numpy
@@ -70,6 +73,7 @@ class PolicyModel:
             os.makedirs(dirpath)
         torch.save(self.model.state_dict(), path)
         self.save_layers_definitions(path + '.meta')
+        self.normalizer.save(path + '.norm')
         return path
 
 
@@ -86,6 +90,7 @@ class PolicyModel:
 
 
     def load(self, path): # we load a model for prediction only
+        self.normalizer = Normalizer(load_from_file=path + '.norm')
         self.load_layers_definitions(path + '.meta')
         self.model.load_state_dict(torch.load(path))
         self.model.eval()

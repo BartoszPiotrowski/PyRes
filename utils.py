@@ -4,6 +4,7 @@ import gzip
 import multiprocessing
 import functools
 
+
 def read_lines(filename):
     with open(filename, encoding ='utf-8') as f:
         return f.read().splitlines()
@@ -13,10 +14,18 @@ def write_lines(list_of_lines, filename):
     with open(filename, encoding ='utf-8', mode='wt') as f:
         f.write('\n'.join(list_of_lines) + '\n')
 
+def write_line(line, filename):
+    with open(filename, encoding ='utf-8', mode='wt') as f:
+        f.write(line + '\n')
+
 
 def append_lines(list_of_lines, filename):
     with open(filename, encoding ='utf-8', mode='a') as f:
         f.write('\n'.join(list_of_lines) + '\n')
+
+def append_line(line, filename):
+    with open(filename, encoding ='utf-8', mode='a') as f:
+        f.write(line + '\n')
 
 def save_obj(obj, filename):
     with gzip.open(filename, 'wb') as f:
@@ -65,3 +74,7 @@ def apply_temperature(probs, t):
     probs = [p if p > 0 else 0.00001 for p in probs]
     denom = sum([p ** (1/t) for p in probs])
     return [p ** (1/t) / denom for p in probs]
+
+
+
+

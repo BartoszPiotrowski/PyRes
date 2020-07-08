@@ -14,7 +14,9 @@ from policy_model import PolicyModel
 from evaluate import evaluate
 from returns import compute_returns
 from problems import Problems
-from utils import humanbytes, with_timeout, apply_temperature
+from normalizer import Normalizer
+from utils import humanbytes, with_timeout, apply_temperature, append_line
+
 
 if __name__ == "__main__":
     np.random.seed(42)
@@ -95,6 +97,14 @@ if __name__ == "__main__":
         help="String of options as for pyres-fof.py except of "
              "--given-clause-heuristic parameter (-H).")
     parser.add_argument(
+        "--sample_states",
+        type=str,
+        help="A CSV file with sample of states; necessary for normalization.")
+    parser.add_argument(
+        "--normalization_mode",
+        type=str,
+        help="One of the following options: min_max, z_score")
+    parser.add_argument(
         "--eval_timeout",
         default=10,
         type=float,
@@ -116,8 +126,10 @@ if __name__ == "__main__":
 
     env = Environment(**vars(args))
     problems = Problems(**vars(args))
+    normalizer = Normalizer(args.sample_states, args.normalization_mode)
 
     policy_model = PolicyModel(
+        normalizer=normalizer,
         num_features=env.num_state_features,
         num_actions=env.num_actions,
         num_hidden_layers=args.hidden_layers,
@@ -136,24 +148,23 @@ if __name__ == "__main__":
 
     @with_timeout(args.time_limit)
     def generate_1_episode(env, policy_model, problem):
-        try:
-            #print(f"Generating episode with problem {problem}")
-            env.load_problem(problem)
-            states, actions, rewards, done = [], [], [], False
-            state = env.state()
-            while not done:
-                action_probs = policy_model.predict(state)
-                action_probs = apply_temperature(action_probs, args.temperature)
-                action = np.random.choice(range(env.num_actions), p=action_probs)
-                state, reward, done = env.step(action)
-                states.append(state)
-                rewards.append(reward)
-                actions.append(action)
-                #print(env.problem_path, env.steps_done, done)
-            #print(humanbytes(getsizeof(states)))
-            return zip(states, actions, rewards)
-        except:
-            return
+        #print(f"Generating episode with problem {problem}")
+        env.load_problem(problem)
+        states, actions, rewards, done = [], [], [], False
+        state = env.state()
+        while not done:
+            action_probs = policy_model.predict(state)
+            action_probs = apply_temperature(action_probs, args.temperature)
+            action = np.random.choice(range(env.num_actions), p=action_probs)
+            state, reward, done = env.step(action)
+            append_line(' '.join([str(i) for i in state]), 'states.txt')
+            states.append(state)
+            rewards.append(reward)
+            actions.append(action)
+            #print(env.problem_path, env.steps_done, done)
+        #print(humanbytes(getsizeof(states)))
+        return zip(states, actions, rewards)
+
 
     losses = []
     last_eval_epoch = -1
@@ -164,20 +175,29 @@ if __name__ == "__main__":
         #      f"{args.n_jobs} parallel jobs.")
         trajectories_batch = generate_episodes(env, policy_model,
                                                problems_batch, args.n_jobs)
-        generated_episodes += len(trajectories_batch)
         trajectories_batch = [tb for tb in trajectories_batch if tb]
+        generated_episodes += len(trajectories_batch)
         trajectories_chain = chain(*trajectories_batch)
         states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
         returns_batch = compute_returns(rewards_batch, args.gamma)
         loss = policy_model.train(states_batch, actions_batch, returns_batch)
-        print(loss)
+        #print(states_batch)
+        #print(actions_batch)
+        #print(returns_batch)
+        #print(loss)
         losses.append(loss)
+        actions_freq = [sum([a==i for i in actions_batch]) / len(actions_batch) \
+                        for a in range(env.num_actions)]
+        actions_freq_str = ', '.join(
+            [f"{a}: {actions_freq[a]:.2f}" for a in range(len(actions_freq))]
+        )
         print(
               f'epoch: {problems.epoch:2d}    '
-              f'episodes total: {problems.processed:4d}    '
-              f'episodes batch: {len(trajectories_batch):3d}    '
+              f'episodes: {generated_episodes:4d}    '
+              #f'episodes batch: {len(trajectories_batch):3d}    '
+              f'actions freqs: [{actions_freq_str}]    '
               f'avg reward: {np.mean(rewards_batch):.2f}    '
-              f'avg policy loss: {np.mean(losses):.2f}'
+              f'avg policy loss: {np.mean(losses):.2f}   '
         )
         if problems.epoch - last_eval_epoch >= args.evaluate_each:
             last_eval_epoch = problems.epoch
@@ -186,5 +206,4 @@ if __name__ == "__main__":
             evaluate(args.problems_list, args.pyres_options,
                      args.eval_timeout, saved_policy_model)
             print()
-
 
