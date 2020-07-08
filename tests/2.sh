@@ -1,5 +1,6 @@
 python3 reinforce.py \
 	BENCHMARKS/B3_100 \
+	--learning_rate 0.1 \
 	--step_limit 10 \
 	--batch_size 10 \
 	--inferences_per_step 10 \
