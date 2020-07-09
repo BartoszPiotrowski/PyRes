@@ -61,6 +61,9 @@ class PolicyModel:
 
     def predict(self, state): # input: a proof state vector
         batch_states = torch.Tensor(self.normalizer.normalize([state]))
+        # when you use the line below, loss goes do down, but the reward too
+        # and action 1 is much more frequent
+        #batch_states = torch.Tensor([state])
         pred_tensor = self.model(batch_states)
         pred_numpy = pred_tensor.detach().numpy()[0]
         return pred_numpy

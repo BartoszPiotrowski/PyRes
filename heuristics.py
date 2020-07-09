@@ -175,13 +175,35 @@ class EvalStructureByPolicyModel(EvalStructure):
         self.model = PolicyModel()
         self.model.load(policy_model_path)
 
-
     def nextEval(self, proof_state_vector):
         """
         Return the index of the next evaluation function of the scheme.
         """
         probabilities = self.model.predict(proof_state_vector)
         self.current = np.random.choice(len(self.eval_funs), p=probabilities)
+        return self.current
+
+
+class EvalStructureBySampling(EvalStructure):
+    """
+    Chooses evaluation function by sampling according to provided probabilities.
+    """
+    def __init__(self, eval_functions, probabilities):
+        """
+        Initialize ths structure. The first argument is a list of evaluation
+        functions, the second argument is a list of probabilities for choosing
+        the evaluation functions.
+        """
+        assert len(eval_functions)
+        assert sum(probabilities) == 1
+        self.eval_funs = eval_functions
+        self.probabilities = probabilities
+
+    def nextEval(self, *args):
+        """
+        Return the index of the next evaluation function of the scheme.
+        """
+        self.current = np.random.choice(len(self.eval_funs), p=self.probabilities)
         return self.current
 
 
@@ -221,6 +243,10 @@ See above, but now with a pick-given ration of 2 for easier testing.
 PolicyModelHeuristic = lambda policy_model_path: EvalStructureByPolicyModel(
                                 [SymbolCountEvaluation(2,1), FIFOEvaluation()],
                                 policy_model_path)
+
+RandomHeuristic = lambda probabilities: EvalStructureBySampling(
+                                [SymbolCountEvaluation(2,1), FIFOEvaluation()],
+                                probabilities)
 
 GivenClauseHeuristics = {
     "FIFO"       : FIFOEval,
@@ -323,16 +349,28 @@ cnf(c8,axiom,(c=d|h(i(a))!=h(i(e)))).
         self.assertEqual(eval_funs.nextEval(),0)
         self.assertEqual(eval_funs.nextEval(),1)
 
-    def testEvalStructureByPolicyModel(self):
+#    def testEvalStructureByPolicyModel(self):
+#        """
+#        Test composite evaluations by a policy model.
+#        """
+#        eval_funs = EvalStructureByPolicyModel(
+#                        [SymbolCountEvaluation(2,1), FIFOEvaluation()],
+#                        'tmp/policy_model.pt')
+#        evals = eval_funs.evaluate(self.c1)
+#        next_eval = eval_funs.nextEval([1,2,3,4])
+#        self.assertEqual(len(evals), 2)
+#        self.assertTrue(next_eval < 2)
+
+    def testEvalStructureBySampling(self):
         """
         Test composite evaluations by a policy model.
         """
-        eval_funs = EvalStructureByPolicyModel(
+        eval_funs = EvalStructureBySampling(
                         [SymbolCountEvaluation(2,1), FIFOEvaluation()],
-                        'tmp/policy_model.pt')
+                        [0.3, 0.7])
 
         evals = eval_funs.evaluate(self.c1)
-        next_eval = eval_funs.nextEval([1,2,3,4])
+        next_eval = eval_funs.nextEval()
         self.assertEqual(len(evals), 2)
         self.assertTrue(next_eval < 2)
 

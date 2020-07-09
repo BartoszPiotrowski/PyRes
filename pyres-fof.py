@@ -98,7 +98,8 @@ from derivations import enableDerivationOutput,disableDerivationOutput,Derivable
 from clausesets import ClauseSet
 from clauses import firstLit, varSizeLit, eqResVarSizeLit
 from fofspec import FOFSpec
-from heuristics import GivenClauseHeuristics,PolicyModelHeuristic
+from heuristics import GivenClauseHeuristics
+from heuristics import PolicyModelHeuristic,RandomHeuristic
 from saturation import SearchParams,ProofState
 from litselection import LiteralSelectors
 
@@ -150,6 +151,9 @@ def processOptions(opts):
                 sys.exit(1)
         elif opt=="-P" or opt == "--policy-model":
             params.heuristics = PolicyModelHeuristic(optarg)
+        elif opt=="-R" or opt == "--random-heuristic":
+            probabilities = [float(p) for p in optarg.split(',')]
+            params.heuristics = RandomHeuristic(probabilities)
         elif opt=="-S" or opt=="--suppress-eq-axioms":
             suppressEqAxioms = True
 
@@ -172,7 +176,7 @@ if __name__ == '__main__':
 
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                                       "hsVpitfbH:P:n:S",
+                                       "hsVpitfbH:P:R:n:S",
                                        ["help",
                                         "silent",
                                         "version",
@@ -183,6 +187,7 @@ if __name__ == '__main__':
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
                                         "policy-model=",
+                                        "random-heuristic=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])
     except getopt.GetoptError as err:

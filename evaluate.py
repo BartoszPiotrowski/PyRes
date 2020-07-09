@@ -1,26 +1,45 @@
 import os
 import numpy as np
+from tempfile import mkdtemp
+from glob import glob
+from utils import read_lines
 
 
 def evaluate(problems_list, pyres_options, timeout, policy_model):
-    output = os.popen('./evaluate.sh ' + \
-     ' '.join([problems_list, policy_model, str(timeout), pyres_options])).read()
-    stats_from_output(output)
+    proof_dir = mkdtemp()
+    os.popen('./evaluate.sh ' + \
+    ' '.join([problems_list, policy_model, str(timeout), proof_dir,
+              pyres_options])).read()
+    outputs = glob(proof_dir + '/*')
+    stats_from_output(outputs)
+    # TODO remove proof_dir
 
 
-def stats_from_output(output):
-    lines = output.split('\n')
+def evaluate_random(problems_list, pyres_options, timeout, probabilities):
+    proof_dir = mkdtemp()
+    probabilities = ','.join([str(p) for p in probabilities])
+    os.popen('./evaluate_random.sh ' + \
+    ' '.join([problems_list, probabilities, str(timeout), proof_dir,
+              pyres_options])).read()
+    outputs = glob(proof_dir + '/*')
+    stats_from_output(outputs)
+
+
+def stats_from_output(outputs):
     success, time, processed = [], [], []
-    for l in lines:
-        if 'SZS status' in l:
-            if 'SZS status Theorem' in l:
-                success.append(1)
-            else: success.append(0)
-        if 'User time' in l:
-            time.append(float(l.split(' ')[-2]))
-        if 'Processed clauses' in l:
-            processed.append(int(l.split(' ')[-1]))
-    assert len(success) == len(time) == len(processed)
+    for o in outputs:
+        lines = read_lines(o)
+        if 'SZS status Theorem' in ' '.join(lines):
+            success.append(1)
+            for l in lines:
+                if 'User time' in l:
+                    time.append(float(l.split(' ')[-2]))
+                if 'Processed clauses' in l:
+                    processed.append(int(l.split(' ')[-1]))
+        else:
+            success.append(0)
+    assert len(time) == len(processed)
+    assert len(outputs) == len(success)
 
     print(f'Problems solved                     : {sum(success)} / {len(success)}')
     print(f'Average user time                   : {np.mean(time):.2f}')

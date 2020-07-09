@@ -92,7 +92,7 @@ if __name__ == "__main__":
         """)
     parser.add_argument(
         "--pyres_options",
-        default='-tfb -nsmallest',
+        default='-tifbp -nlargest',
         type=str,
         help="String of options as for pyres-fof.py except of "
              "--given-clause-heuristic parameter (-H).")
