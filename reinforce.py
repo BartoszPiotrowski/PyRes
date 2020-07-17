@@ -217,9 +217,9 @@ if __name__ == "__main__":
         if problems.epoch + problems.epoch_finished - last_eval_epoch \
                                                 >= args.evaluate_each:
             last_eval_epoch = problems.epoch
-            print(f'Saving policy model to {policy_model.save_path}')
+            print(f'\nSaving policy model to {policy_model.save_path}')
             saved_policy_model = policy_model.save()
-            print(f'\nEvaluating policy model on training problems '
+            print(f'Evaluating policy model on training problems '
                   f'(mode: {args.policy_eval_mode})...')
             evaluate(args.problems_list, args.pyres_options,
                      args.eval_timeout, saved_policy_model,
