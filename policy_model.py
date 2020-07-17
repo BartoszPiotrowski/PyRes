@@ -48,7 +48,8 @@ class PolicyModel:
         actions_probs = self.model(states)
         selected_actions_probs = actions_probs[np.arange(len(actions)), actions]
         selected_actions_probs_log = torch.log(selected_actions_probs)
-        loss = - torch.mean(returns * selected_actions_probs_log)
+        #loss = - torch.mean(returns * selected_actions_probs_log)
+        loss = torch.mean(returns * selected_actions_probs_log)
         # TODO clipping of the loss
         #print(loss.item())
         self.optimizer.zero_grad() # TODO right place?
