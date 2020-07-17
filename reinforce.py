@@ -15,7 +15,7 @@ from evaluate import evaluate
 from returns import compute_returns
 from problems import Problems
 from normalizer import Normalizer
-from utils import humanbytes, with_timeout, apply_temperature, append_line
+from utils import humanbytes, with_timeout, append_line
 
 
 if __name__ == "__main__":
@@ -101,6 +101,18 @@ if __name__ == "__main__":
         type=str,
         help="A CSV file with sample of states; necessary for normalization.")
     parser.add_argument(
+        "--policy_train_mode",
+        type=str,
+        default='stochastic',
+        help="Policy during training; one of the following options: "
+             "stochastic, semi-deterministic, deterministic.")
+    parser.add_argument(
+        "--policy_eval_mode",
+        type=str,
+        default='stochastic',
+        help="Policy during evaluation; one of the following options: "
+             "stochastic, semi-deterministic, deterministic.")
+    parser.add_argument(
         "--normalization_mode",
         type=str,
         help="One of the following options: min_max, z_score")
@@ -130,6 +142,8 @@ if __name__ == "__main__":
 
     policy_model = PolicyModel(
         normalizer=normalizer,
+        policy_mode=args.policy_train_mode,
+        temperature=args.temperature,
         num_features=env.num_state_features,
         num_actions=env.num_actions,
         num_hidden_layers=args.hidden_layers,
@@ -138,24 +152,23 @@ if __name__ == "__main__":
         save_path=args.save_path)
 
 
-    def generate_episodes(env, policy_model, problems, n_jobs):
+    def generate_episodes(env, policy_model, problems, policy_mode, n_jobs):
         with Parallel(n_jobs=n_jobs) as parallel:
             trajectories_batch = parallel(
-                delayed(generate_1_episode)(env, policy_model, problem) \
-            for problem in problems)
+                delayed(generate_1_episode)(
+                    env, policy_model, problem, policy_mode
+                ) for problem in problems)
         return trajectories_batch
 
 
     @with_timeout(args.time_limit)
-    def generate_1_episode(env, policy_model, problem):
+    def generate_1_episode(env, policy_model, problem, policy_mode):
         #print(f"Generating episode with problem {problem}")
         env.load_problem(problem)
         states, actions, rewards, done = [], [], [], False
         state = env.state()
         while not done:
-            action_probs = policy_model.predict(state)
-            action_probs = apply_temperature(action_probs, args.temperature)
-            action = np.random.choice(range(env.num_actions), p=action_probs)
+            action = policy_model.predict(state)
             state, reward, done = env.step(action)
             append_line(' '.join([str(i) for i in state]), 'states.txt')
             states.append(state)
@@ -174,7 +187,9 @@ if __name__ == "__main__":
         #print(f"Generating {len(problems_batch)} episodes with "
         #      f"{args.n_jobs} parallel jobs.")
         trajectories_batch = generate_episodes(env, policy_model,
-                                               problems_batch, args.n_jobs)
+                                               problems_batch,
+                                               args.policy_train_mode,
+                                               args.n_jobs)
         trajectories_batch = [tb for tb in trajectories_batch if tb]
         generated_episodes += len(trajectories_batch)
         trajectories_chain = chain(*trajectories_batch)
@@ -196,14 +211,18 @@ if __name__ == "__main__":
               f'episodes: {generated_episodes:4d}    '
               #f'episodes batch: {len(trajectories_batch):3d}    '
               f'actions freqs: [{actions_freq_str}]    '
-              f'avg reward: {np.mean(rewards_batch):.2f}    '
               f'avg policy loss: {np.mean(losses):.2f}   '
+              f'avg reward: {np.mean(rewards_batch):.2f}    '
         )
-        if problems.epoch - last_eval_epoch >= args.evaluate_each:
+        if problems.epoch + problems.epoch_finished - last_eval_epoch \
+                                                >= args.evaluate_each:
             last_eval_epoch = problems.epoch
-            print('\nEvaluating policy model on training problems...')
+            print(f'Saving policy model to {policy_model.save_path}')
             saved_policy_model = policy_model.save()
+            print(f'\nEvaluating policy model on training problems '
+                  f'(mode: {args.policy_eval_mode})...')
             evaluate(args.problems_list, args.pyres_options,
-                     args.eval_timeout, saved_policy_model)
+                     args.eval_timeout, saved_policy_model,
+                     args.policy_eval_mode)
             print()
 

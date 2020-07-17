@@ -4,18 +4,22 @@ import torch.optim as optim
 import torch.nn.functional as F
 import numpy as np
 import os
-from utils import read_lines, write_lines
+from utils import read_lines, write_lines, apply_temperature
 from normalizer import Normalizer
 
 
 class PolicyModel:
-    def __init__(self, learning_rate=0.001, normalizer=None, save_path=None, **model_shape):
+    def __init__(self, learning_rate=0.01, temperature=1, policy_mode=None,
+                 normalizer=None, save_path=None, **model_shape):
+        self.policy_mode=policy_mode
+        self.temperature=temperature
         self.save_path=save_path
         self.normalizer = normalizer
         if model_shape:
             self.model_shape = model_shape
             self.define_layers(**model_shape)
             self.learning_rate = learning_rate
+            self.temperature = temperature
             self.optimizer = optim.SGD(self.model.parameters(),
                                        lr=self.learning_rate)
 
@@ -59,14 +63,32 @@ class PolicyModel:
 #        loss = - torch.mean(returns * selected_actions_probs_log)
 #        print(loss)
 
+
     def predict(self, state): # input: a proof state vector
         batch_states = torch.Tensor(self.normalizer.normalize([state]))
         # when you use the line below, loss goes do down, but the reward too
         # and action 1 is much more frequent
         #batch_states = torch.Tensor([state])
-        pred_tensor = self.model(batch_states)
-        pred_numpy = pred_tensor.detach().numpy()[0]
-        return pred_numpy
+        probs_tensor = self.model(batch_states)
+        probs_numpy = probs_tensor.detach().numpy()[0]
+        action = self.probs_to_action(probs_numpy)
+        return action
+
+
+    def probs_to_action(self, probs):
+        probs = apply_temperature(probs, self.temperature)
+        if self.policy_mode == 'stochastic':
+            action = np.random.choice(range(len(probs)), p=probs)
+        elif self.policy_mode == 'semi-deterministic':
+            probs_5 = np.multiply(5, probs)
+            probs_5_softmax = np.exp(probs_5) / sum(np.exp(probs_5))
+            action = np.random.choice(range(len(probs)), p=probs_5_softmax)
+        elif self.policy_mode == 'deterministic':
+            action = np.argmax(probs)
+        else:
+            raise ValueError
+        return action
+
 
     def save(self, path=None):
         if path == None:

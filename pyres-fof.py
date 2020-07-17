@@ -115,7 +115,8 @@ def processOptions(opts):
     Process the options given
     """
     global silent, indexed, suppressEqAxioms, proofObject
-
+    policy_eval_mode = 'deterministic'
+    policy_model_path = None
     params = SearchParams()
     for opt, optarg in opts:
         if opt == "-h" or opt == "--help":
@@ -150,13 +151,18 @@ def processOptions(opts):
                 print("Supported:", LiteralSelectors.keys())
                 sys.exit(1)
         elif opt=="-P" or opt == "--policy-model":
-            params.heuristics = PolicyModelHeuristic(optarg)
+            policy_model_path = optarg
+        elif opt=="-M" or opt == "--policy-eval-mode":
+            policy_eval_mode = optarg
         elif opt=="-R" or opt == "--random-heuristic":
             probabilities = [float(p) for p in optarg.split(',')]
             params.heuristics = RandomHeuristic(probabilities)
         elif opt=="-S" or opt=="--suppress-eq-axioms":
             suppressEqAxioms = True
 
+        if policy_model_path:
+            params.heuristics = PolicyModelHeuristic(
+                policy_model_path, policy_eval_mode)
     return params
 
 def timeoutHandler(sign, frame):
@@ -176,7 +182,7 @@ if __name__ == '__main__':
 
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                                       "hsVpitfbH:P:R:n:S",
+                                       "hsVpitfbH:P:M:R:n:S",
                                        ["help",
                                         "silent",
                                         "version",
@@ -187,6 +193,7 @@ if __name__ == '__main__':
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
                                         "policy-model=",
+                                        "policy-eval-mode=",
                                         "random-heuristic=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])

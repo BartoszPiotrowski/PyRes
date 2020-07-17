@@ -9,6 +9,7 @@
 - deterministic action selection?
 - negative reward?
 - larger reward for harder proofs?
+- normalizing the reward? (see Pong from pixels)
 
 # DONE
 - implement policy network

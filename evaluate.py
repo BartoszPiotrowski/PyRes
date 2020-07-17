@@ -5,11 +5,12 @@ from glob import glob
 from utils import read_lines
 
 
-def evaluate(problems_list, pyres_options, timeout, policy_model):
+def evaluate(problems_list, pyres_options, timeout, policy_model,
+             policy_eval_mode):
     proof_dir = mkdtemp()
     os.popen('./evaluate.sh ' + \
-    ' '.join([problems_list, policy_model, str(timeout), proof_dir,
-              pyres_options])).read()
+    ' '.join([problems_list, policy_model, policy_eval_mode, str(timeout),
+              proof_dir, pyres_options])).read()
     outputs = glob(proof_dir + '/*')
     stats_from_output(outputs)
     # TODO remove proof_dir
@@ -48,7 +49,12 @@ def stats_from_output(outputs):
 
 if __name__=='__main__':
     # test
-    evaluate('EXAMPLES/ALG', '"-tfb -nsmallest"', '10', 'tmp/policy_model.pt')
+    print('Stochastic mode...')
+    evaluate('BENCHMARKS/B3_100', '"-tfb -nsmallest"', '10', 'policy_model.pt',
+             'stochastic')
+    print('Deterministic mode...')
+    evaluate('BENCHMARKS/B3_100', '"-tfb -nsmallest"', '10', 'policy_model.pt',
+             'deterministic')
     # '" ... "' in the sencond argument is important if the options are
     # separated by whitespaces -- otherwise only the first thing will be passed
 

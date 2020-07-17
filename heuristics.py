@@ -163,7 +163,7 @@ class EvalStructureByPolicyModel(EvalStructure):
     """
     Chooses evaluation function using a neural net.
     """
-    def __init__(self, eval_functions, policy_model_path):
+    def __init__(self, eval_functions, policy_model_path, policy_eval_mode):
         """
         Initialize ths structure. The first argument is a list of evaluation
         functions, the second argument is a path to a neural model deciding
@@ -172,15 +172,15 @@ class EvalStructureByPolicyModel(EvalStructure):
         from policy_model import PolicyModel
         assert len(eval_functions)
         self.eval_funs = eval_functions
-        self.model = PolicyModel()
+        self.model = PolicyModel(policy_mode=policy_eval_mode)
         self.model.load(policy_model_path)
 
     def nextEval(self, proof_state_vector):
         """
         Return the index of the next evaluation function of the scheme.
         """
-        probabilities = self.model.predict(proof_state_vector)
-        self.current = np.random.choice(len(self.eval_funs), p=probabilities)
+        self.current = self.model.predict(proof_state_vector)
+        #self.current = np.random.choice(len(self.eval_funs), p=probabilities)
         return self.current
 
 
@@ -240,9 +240,11 @@ PickGiven2      = EvalStructure([(SymbolCountEvaluation(2,1),2),
 See above, but now with a pick-given ration of 2 for easier testing.
 """
 
-PolicyModelHeuristic = lambda policy_model_path: EvalStructureByPolicyModel(
-                                [SymbolCountEvaluation(2,1), FIFOEvaluation()],
-                                policy_model_path)
+PolicyModelHeuristic = lambda policy_model_path, policy_eval_mode: \
+    EvalStructureByPolicyModel(
+        [SymbolCountEvaluation(2,1), FIFOEvaluation()],
+        policy_model_path, policy_eval_mode
+    )
 
 RandomHeuristic = lambda probabilities: EvalStructureBySampling(
                                 [SymbolCountEvaluation(2,1), FIFOEvaluation()],
