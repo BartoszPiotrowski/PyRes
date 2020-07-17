@@ -77,7 +77,7 @@ if __name__ == "__main__":
         help="Size of hidden layer.")
     parser.add_argument(
         "--learning_rate",
-        default=0.01,
+        default=0.001,
         type=float,
         help="Learning rate.")
     parser.add_argument(
@@ -169,14 +169,16 @@ if __name__ == "__main__":
         state = env.state()
         while not done:
             action = policy_model.predict(state)
-            state, reward, done = env.step(action)
+            next_state, reward, done = env.step(action)
             append_line(' '.join([str(i) for i in state]), 'states.txt')
             states.append(state)
             rewards.append(reward)
             actions.append(action)
+            state = next_state
             #print(env.problem_path, env.steps_done, done)
         #print(humanbytes(getsizeof(states)))
-        return zip(states, actions, rewards)
+        returns = compute_returns(rewards, args.gamma)
+        return zip(states, actions, returns)
 
 
     losses = []
@@ -193,8 +195,7 @@ if __name__ == "__main__":
         trajectories_batch = [tb for tb in trajectories_batch if tb]
         generated_episodes += len(trajectories_batch)
         trajectories_chain = chain(*trajectories_batch)
-        states_batch, actions_batch, rewards_batch = zip(*trajectories_chain)
-        returns_batch = compute_returns(rewards_batch, args.gamma)
+        states_batch, actions_batch, returns_batch = zip(*trajectories_chain)
         loss = policy_model.train(states_batch, actions_batch, returns_batch)
         #print(states_batch)
         #print(actions_batch)
@@ -212,7 +213,7 @@ if __name__ == "__main__":
               #f'episodes batch: {len(trajectories_batch):3d}    '
               f'actions freqs: [{actions_freq_str}]    '
               f'avg policy loss: {np.mean(losses):.2f}   '
-              f'avg reward: {np.mean(rewards_batch):.2f}    '
+              f'avg return: {np.mean(returns_batch):.2f}    '
         )
         if problems.epoch + problems.epoch_finished - last_eval_epoch \
                                                 >= args.evaluate_each:
