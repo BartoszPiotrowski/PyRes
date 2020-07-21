@@ -83,7 +83,8 @@ if __name__ == "__main__":
         help="Number of hidden layers.")
     parser.add_argument(
         "--units_in_hidden_layer",
-        default=128,
+        default=100,
+        # changing it to 128 decreases ./tests/reinforce/1.sh from 84 to 60
         type=int,
         help="Size of hidden layer.")
     parser.add_argument(
