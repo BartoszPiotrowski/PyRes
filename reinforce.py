@@ -66,13 +66,24 @@ if __name__ == "__main__":
         type=float,
         help="Discounting factor.")
     parser.add_argument(
+        "--optimizer",
+        default='Adam',
+        type=str,
+        help="Optimizer for training the policy neural model; Adam or SGD")
+    parser.add_argument(
+        "--activation",
+        default='ReLU',
+        type=str,
+        help="Nonlinear activation function in the policy neural model; "
+             "ReLU or Sigmoid")
+    parser.add_argument(
         "--hidden_layers",
         default=2,
         type=int,
         help="Number of hidden layers.")
     parser.add_argument(
         "--units_in_hidden_layer",
-        default=100,
+        default=128,
         type=int,
         help="Size of hidden layer.")
     parser.add_argument(
@@ -115,6 +126,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--normalization_mode",
         type=str,
+        default='min_max',
         help="One of the following options: min_max, z_score")
     parser.add_argument(
         "--eval_timeout",
@@ -141,8 +153,9 @@ if __name__ == "__main__":
     normalizer = Normalizer(args.sample_states, args.normalization_mode)
 
     policy_model = PolicyModel(
+        optimizer=args.optimizer,
+        activation=args.activation,
         normalizer=normalizer,
-        policy_mode=args.policy_train_mode,
         temperature=args.temperature,
         num_features=env.num_state_features,
         num_actions=env.num_actions,
@@ -150,6 +163,7 @@ if __name__ == "__main__":
         num_units=args.units_in_hidden_layer,
         learning_rate=args.learning_rate,
         save_path=args.save_path)
+    print(policy_model)
 
 
     def generate_episodes(env, policy_model, problems, policy_mode, n_jobs):
@@ -168,9 +182,8 @@ if __name__ == "__main__":
         states, actions, rewards, done = [], [], [], False
         state = env.state()
         while not done:
-            action = policy_model.predict(state)
+            action = policy_model.predict(state, policy_mode)
             next_state, reward, done = env.step(action)
-            append_line(' '.join([str(i) for i in state]), 'states.txt')
             states.append(state)
             rewards.append(reward)
             actions.append(action)

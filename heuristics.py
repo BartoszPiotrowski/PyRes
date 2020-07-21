@@ -172,14 +172,16 @@ class EvalStructureByPolicyModel(EvalStructure):
         from policy_model import PolicyModel
         assert len(eval_functions)
         self.eval_funs = eval_functions
-        self.model = PolicyModel(policy_mode=policy_eval_mode)
+        self.model = PolicyModel()
         self.model.load(policy_model_path)
+        self.policy_eval_mode=policy_eval_mode
 
     def nextEval(self, proof_state_vector):
         """
         Return the index of the next evaluation function of the scheme.
         """
-        self.current = self.model.predict(proof_state_vector)
+        self.current = self.model.predict(proof_state_vector,
+                                          policy_mode=self.policy_eval_mode)
         #self.current = np.random.choice(len(self.eval_funs), p=probabilities)
         return self.current
 
