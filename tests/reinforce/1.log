@@ -1,0 +1,87 @@
+
+Policy model:
+Sequential(
+  (0): Linear(in_features=8, out_features=100, bias=True)
+  (1): ReLU()
+  (2): Linear(in_features=100, out_features=100, bias=True)
+  (3): ReLU()
+  (4): Linear(in_features=100, out_features=100, bias=True)
+  (5): ReLU()
+  (6): Linear(in_features=100, out_features=2, bias=True)
+  (7): Softmax(dim=1)
+)
+
+Optimizer:
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+epoch:  0    episodes:   10    actions freqs: [0: 0.49, 1: 0.51]    avg policy loss: 0.20   avg return: 0.29    
+epoch:  0    episodes:   20    actions freqs: [0: 0.57, 1: 0.43]    avg policy loss: 0.15   avg return: 0.14    
+epoch:  0    episodes:   30    actions freqs: [0: 0.46, 1: 0.54]    avg policy loss: 0.16   avg return: 0.24    
+epoch:  0    episodes:   40    actions freqs: [0: 0.49, 1: 0.51]    avg policy loss: 0.15   avg return: 0.21    
+epoch:  0    episodes:   50    actions freqs: [0: 0.51, 1: 0.49]    avg policy loss: 0.15   avg return: 0.20    
+epoch:  0    episodes:   60    actions freqs: [0: 0.42, 1: 0.58]    avg policy loss: 0.13   avg return: 0.07    
+epoch:  0    episodes:   70    actions freqs: [0: 0.48, 1: 0.52]    avg policy loss: 0.13   avg return: 0.17    
+epoch:  0    episodes:   80    actions freqs: [0: 0.41, 1: 0.59]    avg policy loss: 0.14   avg return: 0.33    
+epoch:  0    episodes:   90    actions freqs: [0: 0.34, 1: 0.66]    avg policy loss: 0.13   avg return: 0.10    
+epoch:  0    episodes:  100    actions freqs: [0: 0.61, 1: 0.39]    avg policy loss: 0.14   avg return: 0.24    
+epoch:  1    episodes:  110    actions freqs: [0: 0.36, 1: 0.64]    avg policy loss: 0.14   avg return: 0.22    
+epoch:  1    episodes:  120    actions freqs: [0: 0.34, 1: 0.66]    avg policy loss: 0.13   avg return: 0.11    
+epoch:  1    episodes:  130    actions freqs: [0: 0.47, 1: 0.53]    avg policy loss: 0.13   avg return: 0.14    
+epoch:  1    episodes:  140    actions freqs: [0: 0.54, 1: 0.46]    avg policy loss: 0.13   avg return: 0.11    
+epoch:  1    episodes:  150    actions freqs: [0: 0.46, 1: 0.54]    avg policy loss: 0.13   avg return: 0.26    
+epoch:  1    episodes:  160    actions freqs: [0: 0.53, 1: 0.47]    avg policy loss: 0.13   avg return: 0.16    
+epoch:  1    episodes:  170    actions freqs: [0: 0.40, 1: 0.60]    avg policy loss: 0.13   avg return: 0.18    
+epoch:  1    episodes:  180    actions freqs: [0: 0.56, 1: 0.44]    avg policy loss: 0.13   avg return: 0.11    
+epoch:  1    episodes:  190    actions freqs: [0: 0.46, 1: 0.54]    avg policy loss: 0.13   avg return: 0.24    
+epoch:  1    episodes:  200    actions freqs: [0: 0.57, 1: 0.43]    avg policy loss: 0.14   avg return: 0.36    
+
+Saving policy model to policy_model.pt
+Evaluating policy model on training problems (mode: stochastic)...
+Problems solved                     : 83 / 100
+Average user time                   : 0.80
+Average number of processed clauses : 27
+
+epoch:  2    episodes:  210    actions freqs: [0: 0.47, 1: 0.53]    avg policy loss: 0.14   avg return: 0.23    
+epoch:  2    episodes:  220    actions freqs: [0: 0.38, 1: 0.62]    avg policy loss: 0.14   avg return: 0.21    
+epoch:  2    episodes:  230    actions freqs: [0: 0.44, 1: 0.56]    avg policy loss: 0.14   avg return: 0.20    
+epoch:  2    episodes:  240    actions freqs: [0: 0.48, 1: 0.52]    avg policy loss: 0.14   avg return: 0.15    
+epoch:  2    episodes:  250    actions freqs: [0: 0.56, 1: 0.44]    avg policy loss: 0.14   avg return: 0.31    
+epoch:  2    episodes:  260    actions freqs: [0: 0.44, 1: 0.56]    avg policy loss: 0.14   avg return: 0.26    
+epoch:  2    episodes:  270    actions freqs: [0: 0.55, 1: 0.45]    avg policy loss: 0.14   avg return: 0.11    
+epoch:  2    episodes:  280    actions freqs: [0: 0.40, 1: 0.60]    avg policy loss: 0.14   avg return: 0.15    
+epoch:  2    episodes:  290    actions freqs: [0: 0.55, 1: 0.45]    avg policy loss: 0.13   avg return: 0.12    
+epoch:  2    episodes:  300    actions freqs: [0: 0.60, 1: 0.40]    avg policy loss: 0.13   avg return: 0.19    
+epoch:  3    episodes:  310    actions freqs: [0: 0.36, 1: 0.64]    avg policy loss: 0.14   avg return: 0.23    
+epoch:  3    episodes:  320    actions freqs: [0: 0.52, 1: 0.48]    avg policy loss: 0.14   avg return: 0.31    
+epoch:  3    episodes:  330    actions freqs: [0: 0.45, 1: 0.55]    avg policy loss: 0.14   avg return: 0.12    
+epoch:  3    episodes:  340    actions freqs: [0: 0.53, 1: 0.47]    avg policy loss: 0.14   avg return: 0.14    
+epoch:  3    episodes:  350    actions freqs: [0: 0.62, 1: 0.38]    avg policy loss: 0.14   avg return: 0.24    
+epoch:  3    episodes:  360    actions freqs: [0: 0.53, 1: 0.47]    avg policy loss: 0.13   avg return: 0.14    
+epoch:  3    episodes:  370    actions freqs: [0: 0.45, 1: 0.55]    avg policy loss: 0.14   avg return: 0.23    
+epoch:  3    episodes:  380    actions freqs: [0: 0.62, 1: 0.38]    avg policy loss: 0.14   avg return: 0.19    
+epoch:  3    episodes:  390    actions freqs: [0: 0.53, 1: 0.47]    avg policy loss: 0.13   avg return: 0.11    
+epoch:  3    episodes:  400    actions freqs: [0: 0.47, 1: 0.53]    avg policy loss: 0.13   avg return: 0.23    
+
+Saving policy model to policy_model.pt
+Evaluating policy model on training problems (mode: stochastic)...
+Problems solved                     : 84 / 100
+Average user time                   : 0.92
+Average number of processed clauses : 30
+
+epoch:  4    episodes:  410    actions freqs: [0: 0.36, 1: 0.64]    avg policy loss: 0.13   avg return: 0.13    
+epoch:  4    episodes:  420    actions freqs: [0: 0.49, 1: 0.51]    avg policy loss: 0.13   avg return: 0.23    
+epoch:  4    episodes:  430    actions freqs: [0: 0.49, 1: 0.51]    avg policy loss: 0.13   avg return: 0.07    
+epoch:  4    episodes:  440    actions freqs: [0: 0.53, 1: 0.47]    avg policy loss: 0.13   avg return: 0.15    
+epoch:  4    episodes:  450    actions freqs: [0: 0.39, 1: 0.61]    avg policy loss: 0.13   avg return: 0.11    
+epoch:  4    episodes:  460    actions freqs: [0: 0.53, 1: 0.47]    avg policy loss: 0.13   avg return: 0.31    
+epoch:  4    episodes:  470    actions freqs: [0: 0.57, 1: 0.43]    avg policy loss: 0.13   avg return: 0.19    
+epoch:  4    episodes:  480    actions freqs: [0: 0.43, 1: 0.57]    avg policy loss: 0.13   avg return: 0.26    
+epoch:  4    episodes:  490    actions freqs: [0: 0.39, 1: 0.61]    avg policy loss: 0.13   avg return: 0.18    
+epoch:  4    episodes:  500    actions freqs: [0: 0.50, 1: 0.50]    avg policy loss: 0.14   avg return: 0.38    
