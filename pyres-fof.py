@@ -132,7 +132,7 @@ def processOptions(opts):
             params.delete_tautologies = True
         elif opt=="-f" or opt == "--forward-subsumption":
             params.forward_subsumption = True
-        elif opt=="-b" or opt == "--backward_subsumption":
+        elif opt=="-b" or opt == "--backward-subsumption":
             params.backward_subsumption = True
         elif opt=="-H" or opt == "--given-clause-heuristic":
             try:
@@ -141,6 +141,8 @@ def processOptions(opts):
                 print("Unknown clause evaluation function", optarg)
                 print("Supported:", GivenClauseHeuristics.keys())
                 sys.exit(1)
+        elif opt=="-a" or opt == "--age-queue-probability":
+            ageQueueProbability = float(optarg)
         elif opt=="-n" or opt == "--neg-lit-selection":
             try:
                 params.literal_selection = LiteralSelectors[optarg]
@@ -150,6 +152,9 @@ def processOptions(opts):
                 sys.exit(1)
         elif opt=="-S" or opt=="--suppress-eq-axioms":
             suppressEqAxioms = True
+
+    if params.heuristics == GivenClauseHeuristics['PickGivenRandom']:
+        params.heuristics = params.heuristics(ageQueueProbability)
 
     return params
 
@@ -170,7 +175,7 @@ if __name__ == '__main__':
 
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                                       "hsVpitfbH:n:S",
+                                       "hsVpitfbH:a:n:S",
                                        ["help",
                                         "silent",
                                         "version",
@@ -180,12 +185,12 @@ if __name__ == '__main__':
                                         "forward-subsumption",
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
+                                        "age-queue-probability=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])
     except getopt.GetoptError as err:
         print(sys.argv[0],":", err)
         sys.exit(1)
-
     params = processOptions(opts)
 
     problem = FOFSpec()

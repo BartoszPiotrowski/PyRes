@@ -207,16 +207,17 @@ PickGiven2      = EvalStructure([(SymbolCountEvaluation(2,1),2),
 See above, but now with a pick-given ration of 2 for easier testing.
 """
 
-PickGivenRandom = lambda prob_age:
-    EvalStructureRandom([(SymbolCountEvaluation(2,1),1 - prob_age),
-                         (FIFOEvaluation(), prob_age)])
+PickGivenRandom = lambda age_queue_prob: \
+    EvalStructureRandom([(SymbolCountEvaluation(2,1),1 - age_queue_prob),
+                         (FIFOEvaluation(), age_queue_prob)])
 
 
 GivenClauseHeuristics = {
     "FIFO"       : FIFOEval,
     "SymbolCount": SymbolCountEval,
     "PickGiven5" : PickGiven5,
-    "PickGiven2" : PickGiven2}
+    "PickGiven2" : PickGiven2,
+    "PickGivenRandom" : PickGivenRandom}
 """
 Table associating name and evaluation function, so that we can select
 the function by name.
