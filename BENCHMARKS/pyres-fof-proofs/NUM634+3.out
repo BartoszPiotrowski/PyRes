@@ -1,0 +1,36 @@
+# cnf(c4122,axiom,$true).
+# cnf(reflexivity,axiom,X196=X196).
+# cnf(c4031,plain,aFunction0(xc)).
+# cnf(c4049,plain,aSet0(xS)).
+# cnf(c4052,plain,isCountable0(xS)).
+# cnf(symmetry,axiom,X198!=X197|X197=X198).
+# cnf(c4054,plain,aSet0(xT)).
+# cnf(c4055,plain,isFinite0(xT)).
+# cnf(c4305,axiom,aSet0(szNzAzT0)).
+# cnf(c4306,axiom,isCountable0(szNzAzT0)).
+# cnf(c4393,axiom,isFinite0(slcrc0)).
+# cnf(transitivity,axiom,X201!=X199|X199!=X200|X201=X200).
+# cnf(c48,plain,xK=sz00).
+# cnf(c49,plain,xK!=sz00).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__3520,plain,(~xK!=sz00),input).
+fof(c47,plain,xK=sz00,inference(fof_simplification,status(thm),[m__3520])).
+cnf(c48,plain,xK=sz00,inference(split_conjunct,status(thm),[c47])).
+fof(m__3462,plain,xK!=sz00,input).
+cnf(c49,plain,xK!=sz00,inference(split_conjunct,status(thm),[m__3462])).
+cnf(c4417,plain,$false,inference(resolution,status(thm),[c49, c48])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4181
+# Processed clauses  : 14
+# Factors computed   : 0
+# Resolvents computed: 5
+# Tautologies deleted: 0
+# Forward subsumed   : 7
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 6.896 s
+# System time        : 0.198 s
+# Total time         : 7.094 s

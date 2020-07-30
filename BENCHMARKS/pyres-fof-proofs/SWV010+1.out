@@ -1,0 +1,100 @@
+# cnf(c3,axiom,party_of_protocol(t)).
+# cnf(c16,axiom,fresh_to_b(an_a_nonce)).
+# cnf(c17,axiom,party_of_protocol(b)).
+# cnf(c28,axiom,party_of_protocol(a)).
+# cnf(c4,axiom,t_holds(key(bt,b))).
+# cnf(c2,axiom,~message(sent(X25,t,triple(X25,X22,encrypt(triple(X26,X24,X23),X21))))|~t_holds(key(X21,X25))|~t_holds(key(X20,X26))|message(sent(t,X26,triple(encrypt(quadruple(X25,X24,generate_key(X24),X23),X20),encrypt(triple(X26,generate_key(X24),X23),X21),X22)))).
+# cnf(c5,axiom,t_holds(key(at,a))).
+# cnf(c18,axiom,b_holds(key(bt,t))).
+# cnf(c26,axiom,a_stored(pair(b,an_a_nonce))).
+# cnf(c29,axiom,a_holds(key(at,t))).
+# cnf(c27,axiom,message(sent(a,b,pair(a,an_a_nonce)))).
+# cnf(c10,axiom,~message(sent(X27,b,pair(encrypt(triple(X27,X28,generate_expiration_time(X29)),bt),encrypt(generate_b_nonce(X29),X28))))|~b_stored(pair(X27,X29))|b_holds(key(X28,X27))).
+# cnf(c15,axiom,~message(sent(X31,b,pair(X31,X30)))|~fresh_to_b(X30)|b_stored(pair(X31,X30))).
+# cnf(c30,plain,~fresh_to_b(an_a_nonce)|b_stored(pair(a,an_a_nonce))).
+# cnf(c31,plain,b_stored(pair(a,an_a_nonce))).
+# cnf(c25,axiom,~message(sent(t,a,triple(encrypt(quadruple(X35,X34,X37,X36),at),X33,X32)))|~a_stored(pair(X35,X34))|a_holds(key(X37,X35))).
+# cnf(c14,axiom,~message(sent(X39,b,pair(X39,X38)))|~fresh_to_b(X38)|message(sent(b,t,triple(b,generate_b_nonce(X38),encrypt(triple(X39,X38,generate_expiration_time(X38)),bt))))).
+# cnf(c24,axiom,~message(sent(t,a,triple(encrypt(quadruple(X43,X42,X45,X44),at),X41,X40)))|~a_stored(pair(X43,X42))|message(sent(a,X43,pair(X41,encrypt(X40,X45))))).
+# cnf(c32,plain,~fresh_to_b(an_a_nonce)|message(sent(b,t,triple(b,generate_b_nonce(an_a_nonce),encrypt(triple(a,an_a_nonce,generate_expiration_time(an_a_nonce)),bt))))).
+# cnf(c33,plain,message(sent(b,t,triple(b,generate_b_nonce(an_a_nonce),encrypt(triple(a,an_a_nonce,generate_expiration_time(an_a_nonce)),bt))))).
+# cnf(c34,plain,~t_holds(key(bt,b))|~t_holds(key(X46,a))|message(sent(t,a,triple(encrypt(quadruple(b,an_a_nonce,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),X46),encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),generate_b_nonce(an_a_nonce))))).
+# cnf(c35,plain,~t_holds(key(bt,b))|message(sent(t,a,triple(encrypt(quadruple(b,an_a_nonce,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),at),encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),generate_b_nonce(an_a_nonce))))).
+# cnf(c36,plain,message(sent(t,a,triple(encrypt(quadruple(b,an_a_nonce,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),at),encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),generate_b_nonce(an_a_nonce))))).
+# cnf(c37,plain,~a_stored(pair(b,an_a_nonce))|message(sent(a,b,pair(encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),encrypt(generate_b_nonce(an_a_nonce),generate_key(an_a_nonce)))))).
+# cnf(c38,plain,~a_stored(pair(b,an_a_nonce))|a_holds(key(generate_key(an_a_nonce),b))).
+# cnf(c40,plain,a_holds(key(generate_key(an_a_nonce),b))).
+# cnf(c39,plain,message(sent(a,b,pair(encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),encrypt(generate_b_nonce(an_a_nonce),generate_key(an_a_nonce)))))).
+# cnf(c41,plain,~b_stored(pair(a,an_a_nonce))|b_holds(key(generate_key(an_a_nonce),a))).
+# cnf(c42,plain,b_holds(key(generate_key(an_a_nonce),a))).
+# SZS status Satisfiable
+# SZS output start Saturation
+fof(nonce_a_is_fresh_to_b,axiom,fresh_to_b(an_a_nonce),input).
+cnf(c16,axiom,fresh_to_b(an_a_nonce),inference(split_conjunct,status(thm),[nonce_a_is_fresh_to_b])).
+fof(a_sent_message_i_to_b,axiom,message(sent(a,b,pair(a,an_a_nonce))),input).
+cnf(c27,axiom,message(sent(a,b,pair(a,an_a_nonce))),inference(split_conjunct,status(thm),[a_sent_message_i_to_b])).
+fof(b_creates_freash_nonces_in_time,axiom,(![U]:(![V]:((message(sent(U,b,pair(U,V)))&fresh_to_b(V))=>(message(sent(b,t,triple(b,generate_b_nonce(V),encrypt(triple(U,V,generate_expiration_time(V)),bt))))&b_stored(pair(U,V)))))),input).
+fof(c11,axiom,(![U]:(![V]:((~message(sent(U,b,pair(U,V)))|~fresh_to_b(V))|(message(sent(b,t,triple(b,generate_b_nonce(V),encrypt(triple(U,V,generate_expiration_time(V)),bt))))&b_stored(pair(U,V)))))),inference(fof_nnf,status(thm),[b_creates_freash_nonces_in_time])).
+fof(c12,axiom,(![X12]:(![X13]:((~message(sent(X12,b,pair(X12,X13)))|~fresh_to_b(X13))|(message(sent(b,t,triple(b,generate_b_nonce(X13),encrypt(triple(X12,X13,generate_expiration_time(X13)),bt))))&b_stored(pair(X12,X13)))))),inference(variable_rename,status(thm),[c11])).
+fof(c13,axiom,(![X12]:(![X13]:(((~message(sent(X12,b,pair(X12,X13)))|~fresh_to_b(X13))|message(sent(b,t,triple(b,generate_b_nonce(X13),encrypt(triple(X12,X13,generate_expiration_time(X13)),bt)))))&((~message(sent(X12,b,pair(X12,X13)))|~fresh_to_b(X13))|b_stored(pair(X12,X13)))))),inference(distribute,status(thm),[c12])).
+cnf(c15,axiom,~message(sent(X31,b,pair(X31,X30)))|~fresh_to_b(X30)|b_stored(pair(X31,X30)),inference(split_conjunct,status(thm),[c13])).
+cnf(c30,plain,~fresh_to_b(an_a_nonce)|b_stored(pair(a,an_a_nonce)),inference(resolution,status(thm),[c15, c27])).
+cnf(c31,plain,b_stored(pair(a,an_a_nonce)),inference(resolution,status(thm),[c30, c16])).
+fof(b_accepts_secure_session_key,axiom,(![V]:(![X]:(![Y]:((message(sent(X,b,pair(encrypt(triple(X,V,generate_expiration_time(Y)),bt),encrypt(generate_b_nonce(Y),V))))&b_stored(pair(X,Y)))=>b_holds(key(V,X)))))),input).
+fof(c6,axiom,(![V]:(![X]:(![Y]:((~message(sent(X,b,pair(encrypt(triple(X,V,generate_expiration_time(Y)),bt),encrypt(generate_b_nonce(Y),V))))|~b_stored(pair(X,Y)))|b_holds(key(V,X)))))),inference(fof_nnf,status(thm),[b_accepts_secure_session_key])).
+fof(c7,axiom,(![V]:(![X]:((![Y]:(~message(sent(X,b,pair(encrypt(triple(X,V,generate_expiration_time(Y)),bt),encrypt(generate_b_nonce(Y),V))))|~b_stored(pair(X,Y))))|b_holds(key(V,X))))),inference(shift_quantors,status(thm),[c6])).
+fof(c9,axiom,(![X9]:(![X10]:(![X11]:((~message(sent(X10,b,pair(encrypt(triple(X10,X9,generate_expiration_time(X11)),bt),encrypt(generate_b_nonce(X11),X9))))|~b_stored(pair(X10,X11)))|b_holds(key(X9,X10)))))),inference(shift_quantors,status(thm),[fof(c8,axiom,(![X9]:(![X10]:((![X11]:(~message(sent(X10,b,pair(encrypt(triple(X10,X9,generate_expiration_time(X11)),bt),encrypt(generate_b_nonce(X11),X9))))|~b_stored(pair(X10,X11))))|b_holds(key(X9,X10))))),inference(variable_rename,status(thm),[c7])).])).
+cnf(c10,axiom,~message(sent(X27,b,pair(encrypt(triple(X27,X28,generate_expiration_time(X29)),bt),encrypt(generate_b_nonce(X29),X28))))|~b_stored(pair(X27,X29))|b_holds(key(X28,X27)),inference(split_conjunct,status(thm),[c9])).
+fof(a_stored_message_i,axiom,a_stored(pair(b,an_a_nonce)),input).
+cnf(c26,axiom,a_stored(pair(b,an_a_nonce)),inference(split_conjunct,status(thm),[a_stored_message_i])).
+fof(a_forwards_secure,axiom,(![U]:(![V]:(![W]:(![X]:(![Y]:(![Z]:((message(sent(t,a,triple(encrypt(quadruple(Y,Z,W,V),at),X,U)))&a_stored(pair(Y,Z)))=>(message(sent(a,Y,pair(X,encrypt(U,W))))&a_holds(key(W,Y)))))))))),input).
+fof(c19,axiom,(![U]:(![V]:(![W]:(![X]:(![Y]:(![Z]:((~message(sent(t,a,triple(encrypt(quadruple(Y,Z,W,V),at),X,U)))|~a_stored(pair(Y,Z)))|(message(sent(a,Y,pair(X,encrypt(U,W))))&a_holds(key(W,Y)))))))))),inference(fof_nnf,status(thm),[a_forwards_secure])).
+fof(c20,axiom,(![U]:(![V]:(![W]:(![X]:(![Y]:((![Z]:(~message(sent(t,a,triple(encrypt(quadruple(Y,Z,W,V),at),X,U)))|~a_stored(pair(Y,Z))))|(message(sent(a,Y,pair(X,encrypt(U,W))))&a_holds(key(W,Y))))))))),inference(shift_quantors,status(thm),[c19])).
+fof(c22,axiom,(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:((~message(sent(t,a,triple(encrypt(quadruple(X18,X19,X16,X15),at),X17,X14)))|~a_stored(pair(X18,X19)))|(message(sent(a,X18,pair(X17,encrypt(X14,X16))))&a_holds(key(X16,X18)))))))))),inference(shift_quantors,status(thm),[fof(c21,axiom,(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:((![X19]:(~message(sent(t,a,triple(encrypt(quadruple(X18,X19,X16,X15),at),X17,X14)))|~a_stored(pair(X18,X19))))|(message(sent(a,X18,pair(X17,encrypt(X14,X16))))&a_holds(key(X16,X18))))))))),inference(variable_rename,status(thm),[c20])).])).
+fof(c23,axiom,(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:(((~message(sent(t,a,triple(encrypt(quadruple(X18,X19,X16,X15),at),X17,X14)))|~a_stored(pair(X18,X19)))|message(sent(a,X18,pair(X17,encrypt(X14,X16)))))&((~message(sent(t,a,triple(encrypt(quadruple(X18,X19,X16,X15),at),X17,X14)))|~a_stored(pair(X18,X19)))|a_holds(key(X16,X18)))))))))),inference(distribute,status(thm),[c22])).
+cnf(c24,axiom,~message(sent(t,a,triple(encrypt(quadruple(X43,X42,X45,X44),at),X41,X40)))|~a_stored(pair(X43,X42))|message(sent(a,X43,pair(X41,encrypt(X40,X45)))),inference(split_conjunct,status(thm),[c23])).
+fof(t_holds_key_bt_for_b,axiom,t_holds(key(bt,b)),input).
+cnf(c4,axiom,t_holds(key(bt,b)),inference(split_conjunct,status(thm),[t_holds_key_bt_for_b])).
+fof(t_holds_key_at_for_a,axiom,t_holds(key(at,a)),input).
+cnf(c5,axiom,t_holds(key(at,a)),inference(split_conjunct,status(thm),[t_holds_key_at_for_a])).
+fof(server_t_generates_key,axiom,(![U]:(![V]:(![W]:(![X]:(![Y]:(![Z]:(![X1]:(((message(sent(U,t,triple(U,V,encrypt(triple(W,X,Y),Z))))&t_holds(key(Z,U)))&t_holds(key(X1,W)))=>message(sent(t,W,triple(encrypt(quadruple(U,X,generate_key(X),Y),X1),encrypt(triple(W,generate_key(X),Y),Z),V))))))))))),input).
+fof(c0,axiom,(![U]:(![V]:(![W]:(![X]:(![Y]:(![Z]:(![X1]:(((~message(sent(U,t,triple(U,V,encrypt(triple(W,X,Y),Z))))|~t_holds(key(Z,U)))|~t_holds(key(X1,W)))|message(sent(t,W,triple(encrypt(quadruple(U,X,generate_key(X),Y),X1),encrypt(triple(W,generate_key(X),Y),Z),V))))))))))),inference(fof_nnf,status(thm),[server_t_generates_key])).
+fof(c1,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(((~message(sent(X2,t,triple(X2,X3,encrypt(triple(X4,X5,X6),X7))))|~t_holds(key(X7,X2)))|~t_holds(key(X8,X4)))|message(sent(t,X4,triple(encrypt(quadruple(X2,X5,generate_key(X5),X6),X8),encrypt(triple(X4,generate_key(X5),X6),X7),X3))))))))))),inference(variable_rename,status(thm),[c0])).
+cnf(c2,axiom,~message(sent(X25,t,triple(X25,X22,encrypt(triple(X26,X24,X23),X21))))|~t_holds(key(X21,X25))|~t_holds(key(X20,X26))|message(sent(t,X26,triple(encrypt(quadruple(X25,X24,generate_key(X24),X23),X20),encrypt(triple(X26,generate_key(X24),X23),X21),X22))),inference(split_conjunct,status(thm),[c1])).
+cnf(c14,axiom,~message(sent(X39,b,pair(X39,X38)))|~fresh_to_b(X38)|message(sent(b,t,triple(b,generate_b_nonce(X38),encrypt(triple(X39,X38,generate_expiration_time(X38)),bt)))),inference(split_conjunct,status(thm),[c13])).
+cnf(c32,plain,~fresh_to_b(an_a_nonce)|message(sent(b,t,triple(b,generate_b_nonce(an_a_nonce),encrypt(triple(a,an_a_nonce,generate_expiration_time(an_a_nonce)),bt)))),inference(resolution,status(thm),[c14, c27])).
+cnf(c33,plain,message(sent(b,t,triple(b,generate_b_nonce(an_a_nonce),encrypt(triple(a,an_a_nonce,generate_expiration_time(an_a_nonce)),bt)))),inference(resolution,status(thm),[c32, c16])).
+cnf(c34,plain,~t_holds(key(bt,b))|~t_holds(key(X46,a))|message(sent(t,a,triple(encrypt(quadruple(b,an_a_nonce,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),X46),encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),generate_b_nonce(an_a_nonce)))),inference(resolution,status(thm),[c33, c2])).
+cnf(c35,plain,~t_holds(key(bt,b))|message(sent(t,a,triple(encrypt(quadruple(b,an_a_nonce,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),at),encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),generate_b_nonce(an_a_nonce)))),inference(resolution,status(thm),[c34, c5])).
+cnf(c36,plain,message(sent(t,a,triple(encrypt(quadruple(b,an_a_nonce,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),at),encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),generate_b_nonce(an_a_nonce)))),inference(resolution,status(thm),[c35, c4])).
+cnf(c37,plain,~a_stored(pair(b,an_a_nonce))|message(sent(a,b,pair(encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),encrypt(generate_b_nonce(an_a_nonce),generate_key(an_a_nonce))))),inference(resolution,status(thm),[c36, c24])).
+cnf(c39,plain,message(sent(a,b,pair(encrypt(triple(a,generate_key(an_a_nonce),generate_expiration_time(an_a_nonce)),bt),encrypt(generate_b_nonce(an_a_nonce),generate_key(an_a_nonce))))),inference(resolution,status(thm),[c37, c26])).
+cnf(c41,plain,~b_stored(pair(a,an_a_nonce))|b_holds(key(generate_key(an_a_nonce),a)),inference(resolution,status(thm),[c39, c10])).
+cnf(c42,plain,b_holds(key(generate_key(an_a_nonce),a)),inference(resolution,status(thm),[c41, c31])).
+cnf(c25,axiom,~message(sent(t,a,triple(encrypt(quadruple(X35,X34,X37,X36),at),X33,X32)))|~a_stored(pair(X35,X34))|a_holds(key(X37,X35)),inference(split_conjunct,status(thm),[c23])).
+cnf(c38,plain,~a_stored(pair(b,an_a_nonce))|a_holds(key(generate_key(an_a_nonce),b)),inference(resolution,status(thm),[c36, c25])).
+cnf(c40,plain,a_holds(key(generate_key(an_a_nonce),b)),inference(resolution,status(thm),[c38, c26])).
+fof(a_holds_key_at_for_t,axiom,a_holds(key(at,t)),input).
+cnf(c29,axiom,a_holds(key(at,t)),inference(split_conjunct,status(thm),[a_holds_key_at_for_t])).
+fof(b_hold_key_bt_for_t,axiom,b_holds(key(bt,t)),input).
+cnf(c18,axiom,b_holds(key(bt,t)),inference(split_conjunct,status(thm),[b_hold_key_bt_for_t])).
+fof(a_is_party_of_protocol,axiom,party_of_protocol(a),input).
+cnf(c28,axiom,party_of_protocol(a),inference(split_conjunct,status(thm),[a_is_party_of_protocol])).
+fof(b_is_party_of_protocol,axiom,party_of_protocol(b),input).
+cnf(c17,axiom,party_of_protocol(b),inference(split_conjunct,status(thm),[b_is_party_of_protocol])).
+fof(t_is_party_of_protocol,axiom,party_of_protocol(t),input).
+cnf(c3,axiom,party_of_protocol(t),inference(split_conjunct,status(thm),[t_is_party_of_protocol])).
+# SZS output end Saturation
+
+# Initial clauses    : 16
+# Processed clauses  : 29
+# Factors computed   : 0
+# Resolvents computed: 13
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 6
+
+# -------- CPU Time ---------
+# User time          : 0.298 s
+# System time        : 0.275 s
+# Total time         : 0.573 s

@@ -1,0 +1,114 @@
+# cnf(c5,negated_conjecture,organization(skolem0001,skolem0004)).
+# cnf(c6,negated_conjecture,organization(skolem0001,skolem0005)).
+# cnf(c10,negated_conjecture,greater(skolem0005,skolem0004)).
+# cnf(c11,negated_conjecture,~greater(skolem0003,skolem0002)).
+# cnf(c7,negated_conjecture,reorganization_free(skolem0001,skolem0004,skolem0005)).
+# cnf(c8,negated_conjecture,survival_chance(skolem0001,skolem0002,skolem0004)).
+# cnf(c9,negated_conjecture,survival_chance(skolem0001,skolem0003,skolem0005)).
+# cnf(c27,axiom,~reorganization_free(X28,X26,X27)|reorganization_free(X28,X26,X26)).
+# cnf(c29,plain,reorganization_free(skolem0001,skolem0004,skolem0004)).
+# cnf(c28,axiom,~reorganization_free(X31,X29,X30)|reorganization_free(X31,X30,X30)).
+# cnf(c16,plain,~organization(X34,X35)|~organization(X34,X36)|~reorganization_free(X34,X35,X36)|~inertia(X34,X33,X35)|~inertia(X34,X32,X36)|~greater(X36,X35)|greater(X32,X33)).
+# cnf(c32,plain,reorganization_free(skolem0001,skolem0005,skolem0005)).
+# cnf(c23,axiom,~organization(X38,X37)|inertia(X38,skolem0006(X38,X37),X37)).
+# cnf(c19,plain,~organization(X39,X43)|~organization(X41,X46)|~reorganization_free(X39,X43,X43)|~reorganization_free(X41,X46,X46)|~inertia(X39,X45,X43)|~inertia(X41,X40,X46)|~survival_chance(X39,X42,X43)|~survival_chance(X41,X44,X46)|~greater(X40,X45)|greater(X44,X42)).
+# cnf(c35,plain,inertia(skolem0001,skolem0006(skolem0001,skolem0004),skolem0004)).
+# cnf(c36,plain,inertia(skolem0001,skolem0006(skolem0001,skolem0005),skolem0005)).
+# cnf(c39,plain,~organization(skolem0001,X48)|~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,X48,skolem0004)|~inertia(skolem0001,X47,X48)|~greater(skolem0004,X48)|greater(skolem0006(skolem0001,skolem0004),X47)).
+# cnf(c41,plain,~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~greater(skolem0004,skolem0004)|greater(skolem0006(skolem0001,skolem0004),skolem0006(skolem0001,skolem0004))).
+# cnf(c43,plain,~organization(skolem0001,skolem0004)|~greater(skolem0004,skolem0004)|greater(skolem0006(skolem0001,skolem0004),skolem0006(skolem0001,skolem0004))).
+# cnf(c37,plain,~organization(X50,X52)|~organization(skolem0001,skolem0004)|~reorganization_free(X50,X52,X52)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~inertia(X50,X51,X52)|~inertia(skolem0001,X53,skolem0004)|~survival_chance(X50,X49,X52)|~greater(X53,X51)|greater(skolem0002,X49)).
+# cnf(c40,plain,~organization(skolem0001,X55)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,X55,skolem0005)|~inertia(skolem0001,X54,X55)|~greater(skolem0005,X55)|greater(skolem0006(skolem0001,skolem0005),X54)).
+# cnf(c47,plain,~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~greater(skolem0005,skolem0005)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0005))).
+# cnf(c48,plain,~organization(skolem0001,skolem0005)|~greater(skolem0005,skolem0005)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0005))).
+# cnf(c44,plain,~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~inertia(skolem0001,X57,skolem0004)|~inertia(skolem0001,X56,skolem0004)|~greater(X56,X57)|greater(skolem0002,skolem0002)).
+# cnf(c49,plain,~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~inertia(skolem0001,X58,skolem0004)|~greater(skolem0006(skolem0001,skolem0004),X58)|greater(skolem0002,skolem0002)).
+# cnf(c38,plain,~organization(X60,X62)|~organization(skolem0001,skolem0005)|~reorganization_free(X60,X62,X62)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(X60,X61,X62)|~inertia(skolem0001,X63,skolem0005)|~survival_chance(X60,X59,X62)|~greater(X63,X61)|greater(skolem0003,X59)).
+# cnf(c51,plain,~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,X65,skolem0005)|~inertia(skolem0001,X64,skolem0005)|~greater(X64,X65)|greater(skolem0003,skolem0003)).
+# cnf(c52,plain,~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,X66,skolem0005)|~greater(skolem0006(skolem0001,skolem0005),X66)|greater(skolem0003,skolem0003)).
+# cnf(c42,plain,~organization(skolem0001,skolem0005)|~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0004)|~greater(skolem0004,skolem0005)|greater(skolem0006(skolem0001,skolem0004),skolem0006(skolem0001,skolem0005))).
+# cnf(c46,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0005)|~greater(skolem0005,skolem0004)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004))).
+# cnf(c53,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~greater(skolem0005,skolem0004)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004))).
+# cnf(c45,plain,~organization(skolem0001,skolem0005)|~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~inertia(skolem0001,X68,skolem0005)|~inertia(skolem0001,X67,skolem0004)|~greater(X67,X68)|greater(skolem0002,skolem0003)).
+# cnf(c54,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004))).
+# cnf(c56,plain,~organization(skolem0001,skolem0004)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004))).
+# cnf(c57,plain,greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004))).
+# cnf(c58,plain,~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,skolem0006(skolem0001,skolem0004),skolem0005)|greater(skolem0003,skolem0003)).
+# cnf(c55,plain,~organization(skolem0001,skolem0005)|~organization(skolem0001,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~inertia(skolem0001,X69,skolem0005)|~greater(skolem0006(skolem0001,skolem0004),X69)|greater(skolem0002,skolem0003)).
+# cnf(c50,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,X71,skolem0004)|~inertia(skolem0001,X70,skolem0005)|~greater(X70,X71)|greater(skolem0003,skolem0002)).
+# cnf(c59,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,X72,skolem0004)|~greater(skolem0006(skolem0001,skolem0005),X72)|greater(skolem0003,skolem0002)).
+# cnf(c60,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,skolem0006(skolem0001,skolem0004),skolem0004)|greater(skolem0003,skolem0002)).
+# cnf(c61,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|greater(skolem0003,skolem0002)).
+# cnf(c62,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|greater(skolem0003,skolem0002)).
+# cnf(c63,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|greater(skolem0003,skolem0002)).
+# cnf(c64,plain,~organization(skolem0001,skolem0004)|greater(skolem0003,skolem0002)).
+# cnf(c65,plain,greater(skolem0003,skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t3_FOL,conjecture,(![X]:(![P1]:(![P2]:(![T1]:(![T2]:((((((organization(X,T1)&organization(X,T2))&reorganization_free(X,T1,T2))&survival_chance(X,P1,T1))&survival_chance(X,P2,T2))&greater(T2,T1))=>greater(P2,P1))))))),input).
+fof(c0,negated_conjecture,(~(![X]:(![P1]:(![P2]:(![T1]:(![T2]:((((((organization(X,T1)&organization(X,T2))&reorganization_free(X,T1,T2))&survival_chance(X,P1,T1))&survival_chance(X,P2,T2))&greater(T2,T1))=>greater(P2,P1)))))))),inference(assume_negation,status(cth),[t3_FOL])).
+fof(c1,negated_conjecture,(?[X]:(?[P1]:(?[P2]:(?[T1]:(?[T2]:((((((organization(X,T1)&organization(X,T2))&reorganization_free(X,T1,T2))&survival_chance(X,P1,T1))&survival_chance(X,P2,T2))&greater(T2,T1))&~greater(P2,P1))))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:(?[P1]:(?[P2]:((?[T1]:(?[T2]:(((((organization(X,T1)&organization(X,T2))&reorganization_free(X,T1,T2))&survival_chance(X,P1,T1))&survival_chance(X,P2,T2))&greater(T2,T1))))&~greater(P2,P1))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:(?[X4]:((?[X5]:(?[X6]:(((((organization(X2,X5)&organization(X2,X6))&reorganization_free(X2,X5,X6))&survival_chance(X2,X3,X5))&survival_chance(X2,X4,X6))&greater(X6,X5))))&~greater(X4,X3))))),inference(variable_rename,status(thm),[c2])).
+fof(c4,negated_conjecture,((((((organization(skolem0001,skolem0004)&organization(skolem0001,skolem0005))&reorganization_free(skolem0001,skolem0004,skolem0005))&survival_chance(skolem0001,skolem0002,skolem0004))&survival_chance(skolem0001,skolem0003,skolem0005))&greater(skolem0005,skolem0004))&~greater(skolem0003,skolem0002)),inference(skolemize,status(esa),[c3])).
+cnf(c11,negated_conjecture,~greater(skolem0003,skolem0002),inference(split_conjunct,status(thm),[c4])).
+cnf(c5,negated_conjecture,organization(skolem0001,skolem0004),inference(split_conjunct,status(thm),[c4])).
+cnf(c6,negated_conjecture,organization(skolem0001,skolem0005),inference(split_conjunct,status(thm),[c4])).
+cnf(c7,negated_conjecture,reorganization_free(skolem0001,skolem0004,skolem0005),inference(split_conjunct,status(thm),[c4])).
+fof(mp4,axiom,(![X]:(![T1]:(![T2]:(reorganization_free(X,T1,T2)=>(reorganization_free(X,T1,T1)&reorganization_free(X,T2,T2)))))),input).
+fof(c24,axiom,(![X]:(![T1]:(![T2]:(~reorganization_free(X,T1,T2)|(reorganization_free(X,T1,T1)&reorganization_free(X,T2,T2)))))),inference(fof_nnf,status(thm),[mp4])).
+fof(c25,axiom,(![X23]:(![X24]:(![X25]:(~reorganization_free(X23,X24,X25)|(reorganization_free(X23,X24,X24)&reorganization_free(X23,X25,X25)))))),inference(variable_rename,status(thm),[c24])).
+fof(c26,axiom,(![X23]:(![X24]:(![X25]:((~reorganization_free(X23,X24,X25)|reorganization_free(X23,X24,X24))&(~reorganization_free(X23,X24,X25)|reorganization_free(X23,X25,X25)))))),inference(distribute,status(thm),[c25])).
+cnf(c27,axiom,~reorganization_free(X28,X26,X27)|reorganization_free(X28,X26,X26),inference(split_conjunct,status(thm),[c26])).
+cnf(c29,plain,reorganization_free(skolem0001,skolem0004,skolem0004),inference(resolution,status(thm),[c27, c7])).
+cnf(c28,axiom,~reorganization_free(X31,X29,X30)|reorganization_free(X31,X30,X30),inference(split_conjunct,status(thm),[c26])).
+cnf(c32,plain,reorganization_free(skolem0001,skolem0005,skolem0005),inference(resolution,status(thm),[c28, c7])).
+fof(mp5,axiom,(![X]:(![T]:(organization(X,T)=>(?[I]:inertia(X,I,T))))),input).
+fof(c20,axiom,(![X]:(![T]:(~organization(X,T)|(?[I]:inertia(X,I,T))))),inference(fof_nnf,status(thm),[mp5])).
+fof(c21,axiom,(![X20]:(![X21]:(~organization(X20,X21)|(?[X22]:inertia(X20,X22,X21))))),inference(variable_rename,status(thm),[c20])).
+fof(c22,axiom,(![X20]:(![X21]:(~organization(X20,X21)|inertia(X20,skolem0006(X20,X21),X21)))),inference(skolemize,status(esa),[c21])).
+cnf(c23,axiom,~organization(X38,X37)|inertia(X38,skolem0006(X38,X37),X37),inference(split_conjunct,status(thm),[c22])).
+cnf(c35,plain,inertia(skolem0001,skolem0006(skolem0001,skolem0004),skolem0004),inference(resolution,status(thm),[c23, c5])).
+cnf(c10,negated_conjecture,greater(skolem0005,skolem0004),inference(split_conjunct,status(thm),[c4])).
+fof(t2_FOL,plain,(![X]:(![I1]:(![I2]:(![T1]:(![T2]:((((((organization(X,T1)&organization(X,T2))&reorganization_free(X,T1,T2))&inertia(X,I1,T1))&inertia(X,I2,T2))&greater(T2,T1))=>greater(I2,I1))))))),input).
+fof(c12,plain,(![X]:(![I1]:(![I2]:(![T1]:(![T2]:((((((~organization(X,T1)|~organization(X,T2))|~reorganization_free(X,T1,T2))|~inertia(X,I1,T1))|~inertia(X,I2,T2))|~greater(T2,T1))|greater(I2,I1))))))),inference(fof_nnf,status(thm),[t2_FOL])).
+fof(c13,plain,(![X]:(![I1]:(![I2]:((![T1]:(![T2]:(((((~organization(X,T1)|~organization(X,T2))|~reorganization_free(X,T1,T2))|~inertia(X,I1,T1))|~inertia(X,I2,T2))|~greater(T2,T1))))|greater(I2,I1))))),inference(shift_quantors,status(thm),[c12])).
+fof(c15,plain,(![X7]:(![X8]:(![X9]:(![X10]:(![X11]:((((((~organization(X7,X10)|~organization(X7,X11))|~reorganization_free(X7,X10,X11))|~inertia(X7,X8,X10))|~inertia(X7,X9,X11))|~greater(X11,X10))|greater(X9,X8))))))),inference(shift_quantors,status(thm),[fof(c14,plain,(![X7]:(![X8]:(![X9]:((![X10]:(![X11]:(((((~organization(X7,X10)|~organization(X7,X11))|~reorganization_free(X7,X10,X11))|~inertia(X7,X8,X10))|~inertia(X7,X9,X11))|~greater(X11,X10))))|greater(X9,X8))))),inference(variable_rename,status(thm),[c13])).])).
+cnf(c16,plain,~organization(X34,X35)|~organization(X34,X36)|~reorganization_free(X34,X35,X36)|~inertia(X34,X33,X35)|~inertia(X34,X32,X36)|~greater(X36,X35)|greater(X32,X33),inference(split_conjunct,status(thm),[c15])).
+cnf(c36,plain,inertia(skolem0001,skolem0006(skolem0001,skolem0005),skolem0005),inference(resolution,status(thm),[c23, c6])).
+cnf(c40,plain,~organization(skolem0001,X55)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,X55,skolem0005)|~inertia(skolem0001,X54,X55)|~greater(skolem0005,X55)|greater(skolem0006(skolem0001,skolem0005),X54),inference(resolution,status(thm),[c36, c16])).
+cnf(c46,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0005)|~greater(skolem0005,skolem0004)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004)),inference(resolution,status(thm),[c40, c35])).
+cnf(c53,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~greater(skolem0005,skolem0004)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004)),inference(resolution,status(thm),[c46, c7])).
+cnf(c54,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004)),inference(resolution,status(thm),[c53, c10])).
+cnf(c56,plain,~organization(skolem0001,skolem0004)|greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004)),inference(resolution,status(thm),[c54, c6])).
+cnf(c57,plain,greater(skolem0006(skolem0001,skolem0005),skolem0006(skolem0001,skolem0004)),inference(resolution,status(thm),[c56, c5])).
+cnf(c8,negated_conjecture,survival_chance(skolem0001,skolem0002,skolem0004),inference(split_conjunct,status(thm),[c4])).
+cnf(c9,negated_conjecture,survival_chance(skolem0001,skolem0003,skolem0005),inference(split_conjunct,status(thm),[c4])).
+fof(t1_FOL,plain,(![X]:(![Y]:(![T1]:(![T2]:(![I1]:(![I2]:(![P1]:(![P2]:(((((((((organization(X,T1)&organization(Y,T2))&reorganization_free(X,T1,T1))&reorganization_free(Y,T2,T2))&inertia(X,I1,T1))&inertia(Y,I2,T2))&survival_chance(X,P1,T1))&survival_chance(Y,P2,T2))&greater(I2,I1))=>greater(P2,P1)))))))))),input).
+fof(c17,plain,(![X]:(![Y]:(![T1]:(![T2]:(![I1]:(![I2]:(![P1]:(![P2]:(((((((((~organization(X,T1)|~organization(Y,T2))|~reorganization_free(X,T1,T1))|~reorganization_free(Y,T2,T2))|~inertia(X,I1,T1))|~inertia(Y,I2,T2))|~survival_chance(X,P1,T1))|~survival_chance(Y,P2,T2))|~greater(I2,I1))|greater(P2,P1)))))))))),inference(fof_nnf,status(thm),[t1_FOL])).
+fof(c18,plain,(![X12]:(![X13]:(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:(((((((((~organization(X12,X14)|~organization(X13,X15))|~reorganization_free(X12,X14,X14))|~reorganization_free(X13,X15,X15))|~inertia(X12,X16,X14))|~inertia(X13,X17,X15))|~survival_chance(X12,X18,X14))|~survival_chance(X13,X19,X15))|~greater(X17,X16))|greater(X19,X18)))))))))),inference(variable_rename,status(thm),[c17])).
+cnf(c19,plain,~organization(X39,X43)|~organization(X41,X46)|~reorganization_free(X39,X43,X43)|~reorganization_free(X41,X46,X46)|~inertia(X39,X45,X43)|~inertia(X41,X40,X46)|~survival_chance(X39,X42,X43)|~survival_chance(X41,X44,X46)|~greater(X40,X45)|greater(X44,X42),inference(split_conjunct,status(thm),[c18])).
+cnf(c38,plain,~organization(X60,X62)|~organization(skolem0001,skolem0005)|~reorganization_free(X60,X62,X62)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(X60,X61,X62)|~inertia(skolem0001,X63,skolem0005)|~survival_chance(X60,X59,X62)|~greater(X63,X61)|greater(skolem0003,X59),inference(resolution,status(thm),[c19, c9])).
+cnf(c50,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,X71,skolem0004)|~inertia(skolem0001,X70,skolem0005)|~greater(X70,X71)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c38, c8])).
+cnf(c59,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,X72,skolem0004)|~greater(skolem0006(skolem0001,skolem0005),X72)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c50, c36])).
+cnf(c60,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|~inertia(skolem0001,skolem0006(skolem0001,skolem0004),skolem0004)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c59, c57])).
+cnf(c61,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|~reorganization_free(skolem0001,skolem0005,skolem0005)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c60, c35])).
+cnf(c62,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|~reorganization_free(skolem0001,skolem0004,skolem0004)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c61, c32])).
+cnf(c63,plain,~organization(skolem0001,skolem0004)|~organization(skolem0001,skolem0005)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c62, c29])).
+cnf(c64,plain,~organization(skolem0001,skolem0004)|greater(skolem0003,skolem0002),inference(resolution,status(thm),[c63, c6])).
+cnf(c65,plain,greater(skolem0003,skolem0002),inference(resolution,status(thm),[c64, c5])).
+cnf(c66,plain,$false,inference(resolution,status(thm),[c65, c11])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 12
+# Processed clauses  : 45
+# Factors computed   : 0
+# Resolvents computed: 38
+# Tautologies deleted: 0
+# Forward subsumed   : 4
+# Backward subsumed  : 13
+
+# -------- CPU Time ---------
+# User time          : 0.412 s
+# System time        : 0.316 s
+# Total time         : 0.728 s

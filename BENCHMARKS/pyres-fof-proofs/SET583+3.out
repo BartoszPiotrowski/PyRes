@@ -1,0 +1,54 @@
+# cnf(reflexivity,axiom,X15=X15).
+# cnf(c10,axiom,subset(X16,X16)).
+# cnf(c6,negated_conjecture,subset(skolem0001,skolem0002)).
+# cnf(c7,negated_conjecture,subset(skolem0002,skolem0001)).
+# cnf(c8,negated_conjecture,skolem0001!=skolem0002).
+# cnf(symmetry,axiom,X18!=X17|X17=X18).
+# cnf(c25,axiom,X20!=X21|subset(X20,X21)).
+# cnf(c26,axiom,X23!=X24|subset(X24,X23)).
+# cnf(transitivity,axiom,X27!=X26|X26!=X28|X27=X28).
+# cnf(c18,axiom,member(skolem0003(X31,X32),X31)|subset(X31,X32)).
+# cnf(c19,axiom,~member(skolem0003(X33,X34),X34)|subset(X33,X34)).
+# cnf(c17,axiom,~subset(X38,X36)|~member(X37,X38)|member(X37,X36)).
+# cnf(c0,plain,X39!=X40|X41!=X42|~subset(X39,X41)|subset(X40,X42)).
+# cnf(c27,axiom,~subset(X44,X43)|~subset(X43,X44)|X44=X43).
+# cnf(c35,plain,X48!=X46|X48!=X47|subset(X46,X47)).
+# cnf(c38,plain,~subset(skolem0002,skolem0001)|skolem0002=skolem0001).
+# cnf(c1,plain,X51!=X52|X53!=X54|~member(X51,X53)|member(X52,X54)).
+# cnf(c44,plain,skolem0002=skolem0001).
+# cnf(c50,plain,skolem0001=skolem0002).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_extensionality,conjecture,(![B]:(![C]:((subset(B,C)&subset(C,B))=>B=C))),input).
+fof(c2,negated_conjecture,(~(![B]:(![C]:((subset(B,C)&subset(C,B))=>B=C)))),inference(assume_negation,status(cth),[prove_extensionality])).
+fof(c3,negated_conjecture,(?[B]:(?[C]:((subset(B,C)&subset(C,B))&B!=C))),inference(fof_nnf,status(thm),[c2])).
+fof(c4,negated_conjecture,(?[X2]:(?[X3]:((subset(X2,X3)&subset(X3,X2))&X2!=X3))),inference(variable_rename,status(thm),[c3])).
+fof(c5,negated_conjecture,((subset(skolem0001,skolem0002)&subset(skolem0002,skolem0001))&skolem0001!=skolem0002),inference(skolemize,status(esa),[c4])).
+cnf(c8,negated_conjecture,skolem0001!=skolem0002,inference(split_conjunct,status(thm),[c5])).
+cnf(symmetry,axiom,X18!=X17|X17=X18,eq_axiom).
+cnf(c7,negated_conjecture,subset(skolem0002,skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,subset(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+fof(equal_defn,axiom,(![B]:(![C]:(B=C<=>(subset(B,C)&subset(C,B))))),input).
+fof(c20,axiom,(![B]:(![C]:((B!=C|(subset(B,C)&subset(C,B)))&((~subset(B,C)|~subset(C,B))|B=C)))),inference(fof_nnf,status(thm),[equal_defn])).
+fof(c21,axiom,((![B]:(![C]:(B!=C|(subset(B,C)&subset(C,B)))))&(![B]:(![C]:((~subset(B,C)|~subset(C,B))|B=C)))),inference(shift_quantors,status(thm),[c20])).
+fof(c23,axiom,(![X11]:(![X12]:(![X13]:(![X14]:((X11!=X12|(subset(X11,X12)&subset(X12,X11)))&((~subset(X13,X14)|~subset(X14,X13))|X13=X14)))))),inference(shift_quantors,status(thm),[fof(c22,axiom,((![X11]:(![X12]:(X11!=X12|(subset(X11,X12)&subset(X12,X11)))))&(![X13]:(![X14]:((~subset(X13,X14)|~subset(X14,X13))|X13=X14)))),inference(variable_rename,status(thm),[c21])).])).
+fof(c24,axiom,(![X11]:(![X12]:(![X13]:(![X14]:(((X11!=X12|subset(X11,X12))&(X11!=X12|subset(X12,X11)))&((~subset(X13,X14)|~subset(X14,X13))|X13=X14)))))),inference(distribute,status(thm),[c23])).
+cnf(c27,axiom,~subset(X44,X43)|~subset(X43,X44)|X44=X43,inference(split_conjunct,status(thm),[c24])).
+cnf(c38,plain,~subset(skolem0002,skolem0001)|skolem0002=skolem0001,inference(resolution,status(thm),[c27, c6])).
+cnf(c44,plain,skolem0002=skolem0001,inference(resolution,status(thm),[c38, c7])).
+cnf(c50,plain,skolem0001=skolem0002,inference(resolution,status(thm),[c44, symmetry])).
+cnf(c55,plain,$false,inference(resolution,status(thm),[c50, c8])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 15
+# Processed clauses  : 19
+# Factors computed   : 0
+# Resolvents computed: 29
+# Tautologies deleted: 1
+# Forward subsumed   : 8
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.257 s
+# System time        : 0.392 s
+# Total time         : 0.649 s

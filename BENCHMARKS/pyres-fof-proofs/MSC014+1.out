@@ -1,0 +1,234 @@
+# cnf(c14,axiom,~equalish(n0,n1)).
+# cnf(c15,axiom,~equalish(n1,n0)).
+# cnf(c16,axiom,equalish(n0,n0)).
+# cnf(c17,axiom,equalish(n1,n1)).
+# cnf(c5,axiom,~f(X20,X21,X23,X16,X17)|~f(X24,X22,X18,X19,X17)|equalish(X20,X24)).
+# cnf(c6,axiom,~f(X29,X30,X32,X25,X26)|~f(X33,X31,X27,X28,X26)|equalish(X30,X31)).
+# cnf(c7,axiom,~f(X38,X39,X41,X34,X35)|~f(X42,X40,X36,X37,X35)|equalish(X41,X36)).
+# cnf(c8,axiom,~f(X47,X48,X50,X43,X44)|~f(X51,X49,X45,X46,X44)|equalish(X43,X46)).
+# cnf(c12,axiom,~equalish(X53,X53)|~equalish(X54,X54)|~equalish(X52,X52)|~equalish(X55,X55)|f(X53,X54,X52,X55,skolem0001(X53,X54,X52,X55))).
+# cnf(c18,plain,~equalish(X56,X56)|~equalish(X57,X57)|~equalish(X58,X58)|f(X56,X57,X58,n0,skolem0001(X56,X57,X58,n0))).
+# cnf(c20,plain,~equalish(X59,X59)|~equalish(X60,X60)|f(X59,X60,n0,n0,skolem0001(X59,X60,n0,n0))).
+# cnf(c19,plain,~equalish(X61,X61)|~equalish(X62,X62)|~equalish(X63,X63)|f(X61,X62,X63,n1,skolem0001(X61,X62,X63,n1))).
+# cnf(c22,plain,~equalish(X64,X64)|f(X64,n0,n0,n0,skolem0001(X64,n0,n0,n0))).
+# cnf(c26,plain,f(n0,n0,n0,n0,skolem0001(n0,n0,n0,n0))).
+# cnf(c27,plain,f(n1,n0,n0,n0,skolem0001(n1,n0,n0,n0))).
+# cnf(c28,plain,~f(X65,X66,X68,X67,skolem0001(n0,n0,n0,n0))|equalish(X68,n0)).
+# cnf(c21,plain,~equalish(X69,X69)|~equalish(X70,X70)|f(X69,X70,n1,n0,skolem0001(X69,X70,n1,n0))).
+# cnf(c29,plain,~f(X74,X71,X72,X73,skolem0001(n0,n0,n0,n0))|equalish(X74,n0)).
+# cnf(c30,plain,~f(X76,X77,X78,X75,skolem0001(n0,n0,n0,n0))|equalish(X77,n0)).
+# cnf(c31,plain,~f(X79,X81,X80,X82,skolem0001(n0,n0,n0,n0))|equalish(X82,n0)).
+# cnf(c23,plain,~equalish(X83,X83)|f(X83,n1,n0,n0,skolem0001(X83,n1,n0,n0))).
+# cnf(c42,plain,f(n0,n1,n0,n0,skolem0001(n0,n1,n0,n0))).
+# cnf(c43,plain,f(n1,n1,n0,n0,skolem0001(n1,n1,n0,n0))).
+# cnf(c32,plain,~f(X84,X85,X87,X86,skolem0001(n1,n0,n0,n0))|equalish(X87,n0)).
+# cnf(c24,plain,~equalish(X88,X88)|~equalish(X89,X89)|f(X88,X89,n0,n1,skolem0001(X88,X89,n0,n1))).
+# cnf(c33,plain,~f(X93,X90,X91,X92,skolem0001(n1,n0,n0,n0))|equalish(X93,n1)).
+# cnf(c34,plain,~f(X95,X96,X97,X94,skolem0001(n1,n0,n0,n0))|equalish(X96,n0)).
+# cnf(c35,plain,~f(X98,X100,X99,X101,skolem0001(n1,n0,n0,n0))|equalish(X101,n0)).
+# cnf(c25,plain,~equalish(X102,X102)|~equalish(X103,X103)|f(X102,X103,n1,n1,skolem0001(X102,X103,n1,n1))).
+# cnf(c44,plain,~f(X105,X106,X107,X104,skolem0001(n0,n1,n0,n0))|equalish(X106,n1)).
+# cnf(c45,plain,~f(X108,X110,X109,X111,skolem0001(n0,n1,n0,n0))|equalish(X111,n0)).
+# cnf(c37,plain,~equalish(X112,X112)|f(X112,n0,n1,n0,skolem0001(X112,n0,n1,n0))).
+# cnf(c62,plain,f(n0,n0,n1,n0,skolem0001(n0,n0,n1,n0))).
+# cnf(c63,plain,f(n1,n0,n1,n0,skolem0001(n1,n0,n1,n0))).
+# cnf(c46,plain,~f(X113,X114,X116,X115,skolem0001(n0,n1,n0,n0))|equalish(X116,n0)).
+# cnf(c47,plain,~f(X120,X117,X118,X119,skolem0001(n0,n1,n0,n0))|equalish(X120,n0)).
+# cnf(c38,plain,~equalish(X121,X121)|f(X121,n1,n1,n0,skolem0001(X121,n1,n1,n0))).
+# cnf(c74,plain,f(n0,n1,n1,n0,skolem0001(n0,n1,n1,n0))).
+# cnf(c75,plain,f(n1,n1,n1,n0,skolem0001(n1,n1,n1,n0))).
+# cnf(c48,plain,~f(X123,X124,X125,X122,skolem0001(n1,n1,n0,n0))|equalish(X124,n1)).
+# cnf(c49,plain,~f(X126,X128,X127,X129,skolem0001(n1,n1,n0,n0))|equalish(X129,n0)).
+# cnf(c50,plain,~f(X130,X131,X133,X132,skolem0001(n1,n1,n0,n0))|equalish(X133,n0)).
+# cnf(c51,plain,~f(X137,X134,X135,X136,skolem0001(n1,n1,n0,n0))|equalish(X137,n1)).
+# cnf(c53,plain,~equalish(X138,X138)|f(X138,n0,n0,n1,skolem0001(X138,n0,n0,n1))).
+# cnf(c88,plain,f(n0,n0,n0,n1,skolem0001(n0,n0,n0,n1))).
+# cnf(c89,plain,f(n1,n0,n0,n1,skolem0001(n1,n0,n0,n1))).
+# cnf(c64,plain,~f(X140,X141,X142,X139,skolem0001(n0,n0,n1,n0))|equalish(X141,n0)).
+# cnf(c65,plain,~f(X143,X145,X144,X146,skolem0001(n0,n0,n1,n0))|equalish(X146,n0)).
+# cnf(c54,plain,~equalish(X147,X147)|f(X147,n1,n0,n1,skolem0001(X147,n1,n0,n1))).
+# cnf(c100,plain,f(n0,n1,n0,n1,skolem0001(n0,n1,n0,n1))).
+# cnf(c101,plain,f(n1,n1,n0,n1,skolem0001(n1,n1,n0,n1))).
+# cnf(c66,plain,~f(X148,X149,X151,X150,skolem0001(n0,n0,n1,n0))|equalish(X151,n1)).
+# cnf(c58,plain,~equalish(X152,X152)|f(X152,n0,n1,n1,skolem0001(X152,n0,n1,n1))).
+# cnf(c111,plain,f(n0,n0,n1,n1,skolem0001(n0,n0,n1,n1))).
+# cnf(c112,plain,f(n1,n0,n1,n1,skolem0001(n1,n0,n1,n1))).
+# cnf(c67,plain,~f(X156,X153,X154,X155,skolem0001(n0,n0,n1,n0))|equalish(X156,n0)).
+# cnf(c68,plain,~f(X158,X159,X160,X157,skolem0001(n1,n0,n1,n0))|equalish(X159,n0)).
+# cnf(c59,plain,~equalish(X161,X161)|f(X161,n1,n1,n1,skolem0001(X161,n1,n1,n1))).
+# cnf(c123,plain,f(n0,n1,n1,n1,skolem0001(n0,n1,n1,n1))).
+# cnf(c124,plain,f(n1,n1,n1,n1,skolem0001(n1,n1,n1,n1))).
+# cnf(c69,plain,~f(X162,X164,X163,X165,skolem0001(n1,n0,n1,n0))|equalish(X165,n0)).
+# cnf(c70,plain,~f(X166,X167,X169,X168,skolem0001(n1,n0,n1,n0))|equalish(X169,n1)).
+# cnf(c71,plain,~f(X173,X170,X171,X172,skolem0001(n1,n0,n1,n0))|equalish(X173,n1)).
+# cnf(c76,plain,~f(X175,X176,X177,X174,skolem0001(n0,n1,n1,n0))|equalish(X176,n1)).
+# cnf(c77,plain,~f(X178,X180,X179,X181,skolem0001(n0,n1,n1,n0))|equalish(X181,n0)).
+# cnf(c78,plain,~f(X182,X183,X185,X184,skolem0001(n0,n1,n1,n0))|equalish(X185,n1)).
+# cnf(c79,plain,~f(X189,X186,X187,X188,skolem0001(n0,n1,n1,n0))|equalish(X189,n0)).
+# cnf(c80,plain,~f(X191,X192,X193,X190,skolem0001(n1,n1,n1,n0))|equalish(X192,n1)).
+# cnf(c81,plain,~f(X194,X196,X195,X197,skolem0001(n1,n1,n1,n0))|equalish(X197,n0)).
+# cnf(c82,plain,~f(X198,X199,X201,X200,skolem0001(n1,n1,n1,n0))|equalish(X201,n1)).
+# cnf(c83,plain,~f(X205,X202,X203,X204,skolem0001(n1,n1,n1,n0))|equalish(X205,n1)).
+# cnf(c90,plain,~f(X207,X208,X209,X206,skolem0001(n0,n0,n0,n1))|equalish(X208,n0)).
+# cnf(c91,plain,~f(X210,X212,X211,X213,skolem0001(n0,n0,n0,n1))|equalish(X213,n1)).
+# cnf(c92,plain,~f(X214,X215,X217,X216,skolem0001(n0,n0,n0,n1))|equalish(X217,n0)).
+# cnf(c93,plain,~f(X221,X218,X219,X220,skolem0001(n0,n0,n0,n1))|equalish(X221,n0)).
+# cnf(c94,plain,~f(X223,X224,X225,X222,skolem0001(n1,n0,n0,n1))|equalish(X224,n0)).
+# cnf(c95,plain,~f(X226,X228,X227,X229,skolem0001(n1,n0,n0,n1))|equalish(X229,n1)).
+# cnf(c96,plain,~f(X230,X231,X233,X232,skolem0001(n1,n0,n0,n1))|equalish(X233,n0)).
+# cnf(c97,plain,~f(X237,X234,X235,X236,skolem0001(n1,n0,n0,n1))|equalish(X237,n1)).
+# cnf(c102,plain,~f(X239,X240,X241,X238,skolem0001(n0,n1,n0,n1))|equalish(X240,n1)).
+# cnf(c103,plain,~f(X242,X244,X243,X245,skolem0001(n0,n1,n0,n1))|equalish(X245,n1)).
+# cnf(c104,plain,~f(X246,X247,X249,X248,skolem0001(n0,n1,n0,n1))|equalish(X249,n0)).
+# cnf(c105,plain,~f(X253,X250,X251,X252,skolem0001(n0,n1,n0,n1))|equalish(X253,n0)).
+# cnf(c106,plain,~f(X255,X256,X257,X254,skolem0001(n1,n1,n0,n1))|equalish(X256,n1)).
+# cnf(c107,plain,~f(X258,X260,X259,X261,skolem0001(n1,n1,n0,n1))|equalish(X261,n1)).
+# cnf(c108,plain,~f(X262,X263,X265,X264,skolem0001(n1,n1,n0,n1))|equalish(X265,n0)).
+# cnf(c109,plain,~f(X269,X266,X267,X268,skolem0001(n1,n1,n0,n1))|equalish(X269,n1)).
+# cnf(c113,plain,~f(X271,X272,X273,X270,skolem0001(n0,n0,n1,n1))|equalish(X272,n0)).
+# cnf(c114,plain,~f(X274,X276,X275,X277,skolem0001(n0,n0,n1,n1))|equalish(X277,n1)).
+# cnf(c115,plain,~f(X278,X279,X281,X280,skolem0001(n0,n0,n1,n1))|equalish(X281,n1)).
+# cnf(c116,plain,~f(X285,X282,X283,X284,skolem0001(n0,n0,n1,n1))|equalish(X285,n0)).
+# cnf(c117,plain,~f(X287,X288,X289,X286,skolem0001(n1,n0,n1,n1))|equalish(X288,n0)).
+# cnf(c118,plain,~f(X290,X292,X291,X293,skolem0001(n1,n0,n1,n1))|equalish(X293,n1)).
+# cnf(c119,plain,~f(X294,X295,X297,X296,skolem0001(n1,n0,n1,n1))|equalish(X297,n1)).
+# cnf(c120,plain,~f(X301,X298,X299,X300,skolem0001(n1,n0,n1,n1))|equalish(X301,n1)).
+# cnf(c125,plain,~f(X303,X304,X305,X302,skolem0001(n0,n1,n1,n1))|equalish(X304,n1)).
+# cnf(c126,plain,~f(X306,X308,X307,X309,skolem0001(n0,n1,n1,n1))|equalish(X309,n1)).
+# cnf(c127,plain,~f(X310,X311,X313,X312,skolem0001(n0,n1,n1,n1))|equalish(X313,n1)).
+# cnf(c128,plain,~f(X317,X314,X315,X316,skolem0001(n0,n1,n1,n1))|equalish(X317,n0)).
+# cnf(c129,plain,~f(X319,X320,X321,X318,skolem0001(n1,n1,n1,n1))|equalish(X320,n1)).
+# cnf(c130,plain,~f(X322,X324,X323,X325,skolem0001(n1,n1,n1,n1))|equalish(X325,n1)).
+# cnf(c131,plain,~f(X326,X327,X329,X328,skolem0001(n1,n1,n1,n1))|equalish(X329,n1)).
+# cnf(c132,plain,~f(X333,X330,X331,X332,skolem0001(n1,n1,n1,n1))|equalish(X333,n1)).
+# SZS status Satisfiable
+# SZS output start Saturation
+fof(inject_f,axiom,(![X1]:(![X2]:(![X3]:(![X4]:(![Y1]:(![Y2]:(![Y3]:(![Y4]:(![Z]:((f(X1,X2,X3,X4,Z)&f(Y1,Y2,Y3,Y4,Z))=>(((equalish(X1,Y1)&equalish(X2,Y2))&equalish(X3,Y3))&equalish(X4,Y4)))))))))))),input).
+fof(c0,axiom,(![X1]:(![X2]:(![X3]:(![X4]:(![Y1]:(![Y2]:(![Y3]:(![Y4]:(![Z]:((~f(X1,X2,X3,X4,Z)|~f(Y1,Y2,Y3,Y4,Z))|(((equalish(X1,Y1)&equalish(X2,Y2))&equalish(X3,Y3))&equalish(X4,Y4)))))))))))),inference(fof_nnf,status(thm),[inject_f])).
+fof(c1,axiom,(![X1]:(![X2]:(![X3]:(![X4]:(![Y1]:(![Y2]:(![Y3]:(![Y4]:((![Z]:(~f(X1,X2,X3,X4,Z)|~f(Y1,Y2,Y3,Y4,Z)))|(((equalish(X1,Y1)&equalish(X2,Y2))&equalish(X3,Y3))&equalish(X4,Y4))))))))))),inference(shift_quantors,status(thm),[c0])).
+fof(c3,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:((~f(X2,X3,X4,X5,X10)|~f(X6,X7,X8,X9,X10))|(((equalish(X2,X6)&equalish(X3,X7))&equalish(X4,X8))&equalish(X5,X9)))))))))))),inference(shift_quantors,status(thm),[fof(c2,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:((![X10]:(~f(X2,X3,X4,X5,X10)|~f(X6,X7,X8,X9,X10)))|(((equalish(X2,X6)&equalish(X3,X7))&equalish(X4,X8))&equalish(X5,X9))))))))))),inference(variable_rename,status(thm),[c1])).])).
+fof(c4,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:(((((~f(X2,X3,X4,X5,X10)|~f(X6,X7,X8,X9,X10))|equalish(X2,X6))&((~f(X2,X3,X4,X5,X10)|~f(X6,X7,X8,X9,X10))|equalish(X3,X7)))&((~f(X2,X3,X4,X5,X10)|~f(X6,X7,X8,X9,X10))|equalish(X4,X8)))&((~f(X2,X3,X4,X5,X10)|~f(X6,X7,X8,X9,X10))|equalish(X5,X9)))))))))))),inference(distribute,status(thm),[c3])).
+cnf(c5,axiom,~f(X20,X21,X23,X16,X17)|~f(X24,X22,X18,X19,X17)|equalish(X20,X24),inference(split_conjunct,status(thm),[c4])).
+fof(n0_and_n1_reflexive,axiom,(equalish(n0,n0)&equalish(n1,n1)),input).
+cnf(c17,axiom,equalish(n1,n1),inference(split_conjunct,status(thm),[n0_and_n1_reflexive])).
+fof(exists_f,axiom,(![X1]:(![X2]:(![X3]:(![X4]:((((equalish(X1,X1)&equalish(X2,X2))&equalish(X3,X3))&equalish(X4,X4))=>(?[Z]:f(X1,X2,X3,X4,Z))))))),input).
+fof(c9,axiom,(![X1]:(![X2]:(![X3]:(![X4]:((((~equalish(X1,X1)|~equalish(X2,X2))|~equalish(X3,X3))|~equalish(X4,X4))|(?[Z]:f(X1,X2,X3,X4,Z))))))),inference(fof_nnf,status(thm),[exists_f])).
+fof(c10,axiom,(![X11]:(![X12]:(![X13]:(![X14]:((((~equalish(X11,X11)|~equalish(X12,X12))|~equalish(X13,X13))|~equalish(X14,X14))|(?[X15]:f(X11,X12,X13,X14,X15))))))),inference(variable_rename,status(thm),[c9])).
+fof(c11,axiom,(![X11]:(![X12]:(![X13]:(![X14]:((((~equalish(X11,X11)|~equalish(X12,X12))|~equalish(X13,X13))|~equalish(X14,X14))|f(X11,X12,X13,X14,skolem0001(X11,X12,X13,X14))))))),inference(skolemize,status(esa),[c10])).
+cnf(c12,axiom,~equalish(X53,X53)|~equalish(X54,X54)|~equalish(X52,X52)|~equalish(X55,X55)|f(X53,X54,X52,X55,skolem0001(X53,X54,X52,X55)),inference(split_conjunct,status(thm),[c11])).
+cnf(c19,plain,~equalish(X61,X61)|~equalish(X62,X62)|~equalish(X63,X63)|f(X61,X62,X63,n1,skolem0001(X61,X62,X63,n1)),inference(resolution,status(thm),[c12, c17])).
+cnf(c25,plain,~equalish(X102,X102)|~equalish(X103,X103)|f(X102,X103,n1,n1,skolem0001(X102,X103,n1,n1)),inference(resolution,status(thm),[c19, c17])).
+cnf(c59,plain,~equalish(X161,X161)|f(X161,n1,n1,n1,skolem0001(X161,n1,n1,n1)),inference(resolution,status(thm),[c25, c17])).
+cnf(c124,plain,f(n1,n1,n1,n1,skolem0001(n1,n1,n1,n1)),inference(resolution,status(thm),[c59, c17])).
+cnf(c132,plain,~f(X333,X330,X331,X332,skolem0001(n1,n1,n1,n1))|equalish(X333,n1),inference(resolution,status(thm),[c124, c5])).
+cnf(c7,axiom,~f(X38,X39,X41,X34,X35)|~f(X42,X40,X36,X37,X35)|equalish(X41,X36),inference(split_conjunct,status(thm),[c4])).
+cnf(c131,plain,~f(X326,X327,X329,X328,skolem0001(n1,n1,n1,n1))|equalish(X329,n1),inference(resolution,status(thm),[c124, c7])).
+cnf(c8,axiom,~f(X47,X48,X50,X43,X44)|~f(X51,X49,X45,X46,X44)|equalish(X43,X46),inference(split_conjunct,status(thm),[c4])).
+cnf(c130,plain,~f(X322,X324,X323,X325,skolem0001(n1,n1,n1,n1))|equalish(X325,n1),inference(resolution,status(thm),[c124, c8])).
+cnf(c6,axiom,~f(X29,X30,X32,X25,X26)|~f(X33,X31,X27,X28,X26)|equalish(X30,X31),inference(split_conjunct,status(thm),[c4])).
+cnf(c129,plain,~f(X319,X320,X321,X318,skolem0001(n1,n1,n1,n1))|equalish(X320,n1),inference(resolution,status(thm),[c124, c6])).
+cnf(c16,axiom,equalish(n0,n0),inference(split_conjunct,status(thm),[n0_and_n1_reflexive])).
+cnf(c123,plain,f(n0,n1,n1,n1,skolem0001(n0,n1,n1,n1)),inference(resolution,status(thm),[c59, c16])).
+cnf(c128,plain,~f(X317,X314,X315,X316,skolem0001(n0,n1,n1,n1))|equalish(X317,n0),inference(resolution,status(thm),[c123, c5])).
+cnf(c127,plain,~f(X310,X311,X313,X312,skolem0001(n0,n1,n1,n1))|equalish(X313,n1),inference(resolution,status(thm),[c123, c7])).
+cnf(c126,plain,~f(X306,X308,X307,X309,skolem0001(n0,n1,n1,n1))|equalish(X309,n1),inference(resolution,status(thm),[c123, c8])).
+cnf(c125,plain,~f(X303,X304,X305,X302,skolem0001(n0,n1,n1,n1))|equalish(X304,n1),inference(resolution,status(thm),[c123, c6])).
+cnf(c58,plain,~equalish(X152,X152)|f(X152,n0,n1,n1,skolem0001(X152,n0,n1,n1)),inference(resolution,status(thm),[c25, c16])).
+cnf(c112,plain,f(n1,n0,n1,n1,skolem0001(n1,n0,n1,n1)),inference(resolution,status(thm),[c58, c17])).
+cnf(c120,plain,~f(X301,X298,X299,X300,skolem0001(n1,n0,n1,n1))|equalish(X301,n1),inference(resolution,status(thm),[c112, c5])).
+cnf(c119,plain,~f(X294,X295,X297,X296,skolem0001(n1,n0,n1,n1))|equalish(X297,n1),inference(resolution,status(thm),[c112, c7])).
+cnf(c118,plain,~f(X290,X292,X291,X293,skolem0001(n1,n0,n1,n1))|equalish(X293,n1),inference(resolution,status(thm),[c112, c8])).
+cnf(c117,plain,~f(X287,X288,X289,X286,skolem0001(n1,n0,n1,n1))|equalish(X288,n0),inference(resolution,status(thm),[c112, c6])).
+cnf(c111,plain,f(n0,n0,n1,n1,skolem0001(n0,n0,n1,n1)),inference(resolution,status(thm),[c58, c16])).
+cnf(c116,plain,~f(X285,X282,X283,X284,skolem0001(n0,n0,n1,n1))|equalish(X285,n0),inference(resolution,status(thm),[c111, c5])).
+cnf(c115,plain,~f(X278,X279,X281,X280,skolem0001(n0,n0,n1,n1))|equalish(X281,n1),inference(resolution,status(thm),[c111, c7])).
+cnf(c114,plain,~f(X274,X276,X275,X277,skolem0001(n0,n0,n1,n1))|equalish(X277,n1),inference(resolution,status(thm),[c111, c8])).
+cnf(c113,plain,~f(X271,X272,X273,X270,skolem0001(n0,n0,n1,n1))|equalish(X272,n0),inference(resolution,status(thm),[c111, c6])).
+cnf(c24,plain,~equalish(X88,X88)|~equalish(X89,X89)|f(X88,X89,n0,n1,skolem0001(X88,X89,n0,n1)),inference(resolution,status(thm),[c19, c16])).
+cnf(c54,plain,~equalish(X147,X147)|f(X147,n1,n0,n1,skolem0001(X147,n1,n0,n1)),inference(resolution,status(thm),[c24, c17])).
+cnf(c101,plain,f(n1,n1,n0,n1,skolem0001(n1,n1,n0,n1)),inference(resolution,status(thm),[c54, c17])).
+cnf(c109,plain,~f(X269,X266,X267,X268,skolem0001(n1,n1,n0,n1))|equalish(X269,n1),inference(resolution,status(thm),[c101, c5])).
+cnf(c108,plain,~f(X262,X263,X265,X264,skolem0001(n1,n1,n0,n1))|equalish(X265,n0),inference(resolution,status(thm),[c101, c7])).
+cnf(c107,plain,~f(X258,X260,X259,X261,skolem0001(n1,n1,n0,n1))|equalish(X261,n1),inference(resolution,status(thm),[c101, c8])).
+cnf(c106,plain,~f(X255,X256,X257,X254,skolem0001(n1,n1,n0,n1))|equalish(X256,n1),inference(resolution,status(thm),[c101, c6])).
+cnf(c100,plain,f(n0,n1,n0,n1,skolem0001(n0,n1,n0,n1)),inference(resolution,status(thm),[c54, c16])).
+cnf(c105,plain,~f(X253,X250,X251,X252,skolem0001(n0,n1,n0,n1))|equalish(X253,n0),inference(resolution,status(thm),[c100, c5])).
+cnf(c104,plain,~f(X246,X247,X249,X248,skolem0001(n0,n1,n0,n1))|equalish(X249,n0),inference(resolution,status(thm),[c100, c7])).
+cnf(c103,plain,~f(X242,X244,X243,X245,skolem0001(n0,n1,n0,n1))|equalish(X245,n1),inference(resolution,status(thm),[c100, c8])).
+cnf(c102,plain,~f(X239,X240,X241,X238,skolem0001(n0,n1,n0,n1))|equalish(X240,n1),inference(resolution,status(thm),[c100, c6])).
+cnf(c53,plain,~equalish(X138,X138)|f(X138,n0,n0,n1,skolem0001(X138,n0,n0,n1)),inference(resolution,status(thm),[c24, c16])).
+cnf(c89,plain,f(n1,n0,n0,n1,skolem0001(n1,n0,n0,n1)),inference(resolution,status(thm),[c53, c17])).
+cnf(c97,plain,~f(X237,X234,X235,X236,skolem0001(n1,n0,n0,n1))|equalish(X237,n1),inference(resolution,status(thm),[c89, c5])).
+cnf(c96,plain,~f(X230,X231,X233,X232,skolem0001(n1,n0,n0,n1))|equalish(X233,n0),inference(resolution,status(thm),[c89, c7])).
+cnf(c95,plain,~f(X226,X228,X227,X229,skolem0001(n1,n0,n0,n1))|equalish(X229,n1),inference(resolution,status(thm),[c89, c8])).
+cnf(c94,plain,~f(X223,X224,X225,X222,skolem0001(n1,n0,n0,n1))|equalish(X224,n0),inference(resolution,status(thm),[c89, c6])).
+cnf(c88,plain,f(n0,n0,n0,n1,skolem0001(n0,n0,n0,n1)),inference(resolution,status(thm),[c53, c16])).
+cnf(c93,plain,~f(X221,X218,X219,X220,skolem0001(n0,n0,n0,n1))|equalish(X221,n0),inference(resolution,status(thm),[c88, c5])).
+cnf(c92,plain,~f(X214,X215,X217,X216,skolem0001(n0,n0,n0,n1))|equalish(X217,n0),inference(resolution,status(thm),[c88, c7])).
+cnf(c91,plain,~f(X210,X212,X211,X213,skolem0001(n0,n0,n0,n1))|equalish(X213,n1),inference(resolution,status(thm),[c88, c8])).
+cnf(c90,plain,~f(X207,X208,X209,X206,skolem0001(n0,n0,n0,n1))|equalish(X208,n0),inference(resolution,status(thm),[c88, c6])).
+cnf(c18,plain,~equalish(X56,X56)|~equalish(X57,X57)|~equalish(X58,X58)|f(X56,X57,X58,n0,skolem0001(X56,X57,X58,n0)),inference(resolution,status(thm),[c12, c16])).
+cnf(c21,plain,~equalish(X69,X69)|~equalish(X70,X70)|f(X69,X70,n1,n0,skolem0001(X69,X70,n1,n0)),inference(resolution,status(thm),[c18, c17])).
+cnf(c38,plain,~equalish(X121,X121)|f(X121,n1,n1,n0,skolem0001(X121,n1,n1,n0)),inference(resolution,status(thm),[c21, c17])).
+cnf(c75,plain,f(n1,n1,n1,n0,skolem0001(n1,n1,n1,n0)),inference(resolution,status(thm),[c38, c17])).
+cnf(c83,plain,~f(X205,X202,X203,X204,skolem0001(n1,n1,n1,n0))|equalish(X205,n1),inference(resolution,status(thm),[c75, c5])).
+cnf(c82,plain,~f(X198,X199,X201,X200,skolem0001(n1,n1,n1,n0))|equalish(X201,n1),inference(resolution,status(thm),[c75, c7])).
+cnf(c81,plain,~f(X194,X196,X195,X197,skolem0001(n1,n1,n1,n0))|equalish(X197,n0),inference(resolution,status(thm),[c75, c8])).
+cnf(c80,plain,~f(X191,X192,X193,X190,skolem0001(n1,n1,n1,n0))|equalish(X192,n1),inference(resolution,status(thm),[c75, c6])).
+cnf(c74,plain,f(n0,n1,n1,n0,skolem0001(n0,n1,n1,n0)),inference(resolution,status(thm),[c38, c16])).
+cnf(c79,plain,~f(X189,X186,X187,X188,skolem0001(n0,n1,n1,n0))|equalish(X189,n0),inference(resolution,status(thm),[c74, c5])).
+cnf(c78,plain,~f(X182,X183,X185,X184,skolem0001(n0,n1,n1,n0))|equalish(X185,n1),inference(resolution,status(thm),[c74, c7])).
+cnf(c77,plain,~f(X178,X180,X179,X181,skolem0001(n0,n1,n1,n0))|equalish(X181,n0),inference(resolution,status(thm),[c74, c8])).
+cnf(c76,plain,~f(X175,X176,X177,X174,skolem0001(n0,n1,n1,n0))|equalish(X176,n1),inference(resolution,status(thm),[c74, c6])).
+cnf(c37,plain,~equalish(X112,X112)|f(X112,n0,n1,n0,skolem0001(X112,n0,n1,n0)),inference(resolution,status(thm),[c21, c16])).
+cnf(c63,plain,f(n1,n0,n1,n0,skolem0001(n1,n0,n1,n0)),inference(resolution,status(thm),[c37, c17])).
+cnf(c71,plain,~f(X173,X170,X171,X172,skolem0001(n1,n0,n1,n0))|equalish(X173,n1),inference(resolution,status(thm),[c63, c5])).
+cnf(c70,plain,~f(X166,X167,X169,X168,skolem0001(n1,n0,n1,n0))|equalish(X169,n1),inference(resolution,status(thm),[c63, c7])).
+cnf(c69,plain,~f(X162,X164,X163,X165,skolem0001(n1,n0,n1,n0))|equalish(X165,n0),inference(resolution,status(thm),[c63, c8])).
+cnf(c68,plain,~f(X158,X159,X160,X157,skolem0001(n1,n0,n1,n0))|equalish(X159,n0),inference(resolution,status(thm),[c63, c6])).
+cnf(c62,plain,f(n0,n0,n1,n0,skolem0001(n0,n0,n1,n0)),inference(resolution,status(thm),[c37, c16])).
+cnf(c67,plain,~f(X156,X153,X154,X155,skolem0001(n0,n0,n1,n0))|equalish(X156,n0),inference(resolution,status(thm),[c62, c5])).
+cnf(c66,plain,~f(X148,X149,X151,X150,skolem0001(n0,n0,n1,n0))|equalish(X151,n1),inference(resolution,status(thm),[c62, c7])).
+cnf(c65,plain,~f(X143,X145,X144,X146,skolem0001(n0,n0,n1,n0))|equalish(X146,n0),inference(resolution,status(thm),[c62, c8])).
+cnf(c64,plain,~f(X140,X141,X142,X139,skolem0001(n0,n0,n1,n0))|equalish(X141,n0),inference(resolution,status(thm),[c62, c6])).
+cnf(c20,plain,~equalish(X59,X59)|~equalish(X60,X60)|f(X59,X60,n0,n0,skolem0001(X59,X60,n0,n0)),inference(resolution,status(thm),[c18, c16])).
+cnf(c23,plain,~equalish(X83,X83)|f(X83,n1,n0,n0,skolem0001(X83,n1,n0,n0)),inference(resolution,status(thm),[c20, c17])).
+cnf(c43,plain,f(n1,n1,n0,n0,skolem0001(n1,n1,n0,n0)),inference(resolution,status(thm),[c23, c17])).
+cnf(c51,plain,~f(X137,X134,X135,X136,skolem0001(n1,n1,n0,n0))|equalish(X137,n1),inference(resolution,status(thm),[c43, c5])).
+cnf(c50,plain,~f(X130,X131,X133,X132,skolem0001(n1,n1,n0,n0))|equalish(X133,n0),inference(resolution,status(thm),[c43, c7])).
+cnf(c49,plain,~f(X126,X128,X127,X129,skolem0001(n1,n1,n0,n0))|equalish(X129,n0),inference(resolution,status(thm),[c43, c8])).
+cnf(c48,plain,~f(X123,X124,X125,X122,skolem0001(n1,n1,n0,n0))|equalish(X124,n1),inference(resolution,status(thm),[c43, c6])).
+cnf(c42,plain,f(n0,n1,n0,n0,skolem0001(n0,n1,n0,n0)),inference(resolution,status(thm),[c23, c16])).
+cnf(c47,plain,~f(X120,X117,X118,X119,skolem0001(n0,n1,n0,n0))|equalish(X120,n0),inference(resolution,status(thm),[c42, c5])).
+cnf(c46,plain,~f(X113,X114,X116,X115,skolem0001(n0,n1,n0,n0))|equalish(X116,n0),inference(resolution,status(thm),[c42, c7])).
+cnf(c45,plain,~f(X108,X110,X109,X111,skolem0001(n0,n1,n0,n0))|equalish(X111,n0),inference(resolution,status(thm),[c42, c8])).
+cnf(c44,plain,~f(X105,X106,X107,X104,skolem0001(n0,n1,n0,n0))|equalish(X106,n1),inference(resolution,status(thm),[c42, c6])).
+cnf(c22,plain,~equalish(X64,X64)|f(X64,n0,n0,n0,skolem0001(X64,n0,n0,n0)),inference(resolution,status(thm),[c20, c16])).
+cnf(c27,plain,f(n1,n0,n0,n0,skolem0001(n1,n0,n0,n0)),inference(resolution,status(thm),[c22, c17])).
+cnf(c35,plain,~f(X98,X100,X99,X101,skolem0001(n1,n0,n0,n0))|equalish(X101,n0),inference(resolution,status(thm),[c27, c8])).
+cnf(c34,plain,~f(X95,X96,X97,X94,skolem0001(n1,n0,n0,n0))|equalish(X96,n0),inference(resolution,status(thm),[c27, c6])).
+cnf(c33,plain,~f(X93,X90,X91,X92,skolem0001(n1,n0,n0,n0))|equalish(X93,n1),inference(resolution,status(thm),[c27, c5])).
+cnf(c32,plain,~f(X84,X85,X87,X86,skolem0001(n1,n0,n0,n0))|equalish(X87,n0),inference(resolution,status(thm),[c27, c7])).
+cnf(c26,plain,f(n0,n0,n0,n0,skolem0001(n0,n0,n0,n0)),inference(resolution,status(thm),[c22, c16])).
+cnf(c31,plain,~f(X79,X81,X80,X82,skolem0001(n0,n0,n0,n0))|equalish(X82,n0),inference(resolution,status(thm),[c26, c8])).
+cnf(c30,plain,~f(X76,X77,X78,X75,skolem0001(n0,n0,n0,n0))|equalish(X77,n0),inference(resolution,status(thm),[c26, c6])).
+cnf(c29,plain,~f(X74,X71,X72,X73,skolem0001(n0,n0,n0,n0))|equalish(X74,n0),inference(resolution,status(thm),[c26, c5])).
+cnf(c28,plain,~f(X65,X66,X68,X67,skolem0001(n0,n0,n0,n0))|equalish(X68,n0),inference(resolution,status(thm),[c26, c7])).
+fof(n0_not_n1,axiom,((~equalish(n0,n1))&(~equalish(n1,n0))),input).
+fof(c13,axiom,(~equalish(n0,n1)&~equalish(n1,n0)),inference(fof_simplification,status(thm),[n0_not_n1])).
+cnf(c15,axiom,~equalish(n1,n0),inference(split_conjunct,status(thm),[c13])).
+cnf(c14,axiom,~equalish(n0,n1),inference(split_conjunct,status(thm),[c13])).
+# SZS output end Saturation
+
+# Initial clauses    : 9
+# Processed clauses  : 103
+# Factors computed   : 0
+# Resolvents computed: 158
+# Tautologies deleted: 0
+# Forward subsumed   : 64
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.525 s
+# System time        : 0.262 s
+# Total time         : 0.787 s

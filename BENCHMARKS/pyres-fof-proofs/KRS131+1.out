@@ -1,0 +1,155 @@
+# cnf(c48,axiom,cowlThing(X22)).
+# cnf(c49,axiom,~cowlNothing(X23)).
+# cnf(c42,axiom,~xsd_string(X24)|~xsd_integer(X24)).
+# cnf(c43,axiom,xsd_integer(X25)|xsd_string(X25)).
+# cnf(c7,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cnotA(skolem0004)|cA(skolem0004)).
+# cnf(c27,axiom,~cNothing(X27)|~rp(X27,X28)).
+# cnf(c19,axiom,~cNothing(skolem0005(X29))|cnotA(X29)).
+# cnf(c18,axiom,rq(X31,skolem0005(X31))|cnotA(X31)).
+# cnf(c23,axiom,~cNothing(X32)|rp(X32,skolem0006(X32))).
+# cnf(c8,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cnotA(skolem0004)|~cA(skolem0004)).
+# cnf(c34,axiom,~cA(X33)|rq(X33,skolem0007(X33))).
+# cnf(c17,axiom,~cnotA(X35)|~rq(X35,X34)|cNothing(X34)).
+# cnf(c36,axiom,~rq(X37,X36)|~cowlThing(X36)|cA(X37)).
+# cnf(c53,plain,~cowlThing(skolem0005(X39))|cA(X39)|cnotA(X39)).
+# cnf(c9,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cnotA(skolem0004)|cA(skolem0004)).
+# cnf(c54,plain,cA(X40)|cnotA(X40)).
+# cnf(c56,plain,cnotA(X41)|rq(X41,skolem0007(X41))).
+# cnf(c57,plain,cnotA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)).
+# cnf(c10,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cnotA(skolem0004)|~cA(skolem0004)).
+# cnf(c64,plain,cnotA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003)).
+# cnf(c66,plain,cnotA(skolem0004)|cowlNothing(skolem0002)|xsd_integer(skolem0003)).
+# cnf(c69,plain,cnotA(skolem0004)|xsd_integer(skolem0003)).
+# cnf(c73,plain,cnotA(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c51,plain,rq(skolem0004,skolem0005(skolem0004))|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cA(skolem0004)).
+# cnf(c58,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)).
+# cnf(c76,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003)).
+# cnf(c77,plain,cA(skolem0004)|cowlNothing(skolem0002)|xsd_integer(skolem0003)).
+# cnf(c80,plain,cA(skolem0004)|xsd_integer(skolem0003)).
+# cnf(c55,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cA(skolem0004)|rq(skolem0004,skolem0005(skolem0004))).
+# cnf(c84,plain,cA(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c83,plain,xsd_integer(skolem0003)|rq(skolem0004,skolem0007(skolem0004))).
+# cnf(c90,plain,rq(skolem0004,skolem0007(skolem0004))|~xsd_string(skolem0003)).
+# cnf(c59,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)).
+# cnf(c92,plain,xsd_integer(skolem0003)|~cnotA(skolem0004)|cNothing(skolem0007(skolem0004))).
+# cnf(c101,plain,xsd_integer(skolem0003)|cNothing(skolem0007(skolem0004))).
+# cnf(c103,plain,cNothing(skolem0007(skolem0004))|~xsd_string(skolem0003)).
+# cnf(c95,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c106,plain,cA(skolem0004)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c109,plain,cA(skolem0004)|xsd_string(skolem0003)).
+# cnf(c119,plain,cA(skolem0004)).
+# cnf(c121,plain,rq(skolem0004,skolem0007(skolem0004))).
+# cnf(c65,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cnotA(skolem0004)).
+# cnf(c123,plain,~cnotA(skolem0004)|cNothing(skolem0007(skolem0004))).
+# cnf(c129,plain,cNothing(skolem0007(skolem0004))|rq(skolem0004,skolem0005(skolem0004))).
+# cnf(c104,plain,xsd_integer(skolem0003)|rp(skolem0007(skolem0004),skolem0006(skolem0007(skolem0004)))).
+# cnf(c136,plain,xsd_integer(skolem0003)|~cNothing(skolem0007(skolem0004))).
+# cnf(c137,plain,xsd_integer(skolem0003)).
+# cnf(c139,plain,~xsd_string(skolem0003)).
+# cnf(c124,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|cnotA(skolem0004)).
+# cnf(c142,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|cnotA(skolem0004)).
+# cnf(c143,plain,xsd_string(skolem0003)|cnotA(skolem0004)).
+# cnf(c146,plain,cnotA(skolem0004)).
+# cnf(c148,plain,cNothing(skolem0007(skolem0004))).
+# cnf(c149,plain,rp(skolem0007(skolem0004),skolem0006(skolem0007(skolem0004)))).
+# cnf(c150,plain,~cNothing(skolem0007(skolem0004))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(axiom_5,axiom,(![X]:(cnotA(X)<=>(![Y]:(rq(X,Y)=>cNothing(Y))))),input).
+fof(c11,axiom,(![X]:((~cnotA(X)|(![Y]:(~rq(X,Y)|cNothing(Y))))&((?[Y]:(rq(X,Y)&~cNothing(Y)))|cnotA(X)))),inference(fof_nnf,status(thm),[axiom_5])).
+fof(c12,axiom,((![X]:(~cnotA(X)|(![Y]:(~rq(X,Y)|cNothing(Y)))))&(![X]:((?[Y]:(rq(X,Y)&~cNothing(Y)))|cnotA(X)))),inference(shift_quantors,status(thm),[c11])).
+fof(c13,axiom,((![X6]:(~cnotA(X6)|(![X7]:(~rq(X6,X7)|cNothing(X7)))))&(![X8]:((?[X9]:(rq(X8,X9)&~cNothing(X9)))|cnotA(X8)))),inference(variable_rename,status(thm),[c12])).
+fof(c15,axiom,(![X6]:(![X7]:(![X8]:((~cnotA(X6)|(~rq(X6,X7)|cNothing(X7)))&((rq(X8,skolem0005(X8))&~cNothing(skolem0005(X8)))|cnotA(X8)))))),inference(shift_quantors,status(thm),[fof(c14,axiom,((![X6]:(~cnotA(X6)|(![X7]:(~rq(X6,X7)|cNothing(X7)))))&(![X8]:((rq(X8,skolem0005(X8))&~cNothing(skolem0005(X8)))|cnotA(X8)))),inference(skolemize,status(esa),[c13])).])).
+fof(c16,axiom,(![X6]:(![X7]:(![X8]:((~cnotA(X6)|(~rq(X6,X7)|cNothing(X7)))&((rq(X8,skolem0005(X8))|cnotA(X8))&(~cNothing(skolem0005(X8))|cnotA(X8))))))),inference(distribute,status(thm),[c15])).
+cnf(c17,axiom,~cnotA(X35)|~rq(X35,X34)|cNothing(X34),inference(split_conjunct,status(thm),[c16])).
+fof(axiom_2,axiom,(![X]:(cA(X)<=>(?[Y]:(rq(X,Y)&cowlThing(Y))))),input).
+fof(c28,axiom,(![X]:((~cA(X)|(?[Y]:(rq(X,Y)&cowlThing(Y))))&((![Y]:(~rq(X,Y)|~cowlThing(Y)))|cA(X)))),inference(fof_nnf,status(thm),[axiom_2])).
+fof(c29,axiom,((![X]:(~cA(X)|(?[Y]:(rq(X,Y)&cowlThing(Y)))))&(![X]:((![Y]:(~rq(X,Y)|~cowlThing(Y)))|cA(X)))),inference(shift_quantors,status(thm),[c28])).
+fof(c30,axiom,((![X14]:(~cA(X14)|(?[X15]:(rq(X14,X15)&cowlThing(X15)))))&(![X16]:((![X17]:(~rq(X16,X17)|~cowlThing(X17)))|cA(X16)))),inference(variable_rename,status(thm),[c29])).
+fof(c32,axiom,(![X14]:(![X16]:(![X17]:((~cA(X14)|(rq(X14,skolem0007(X14))&cowlThing(skolem0007(X14))))&((~rq(X16,X17)|~cowlThing(X17))|cA(X16)))))),inference(shift_quantors,status(thm),[fof(c31,axiom,((![X14]:(~cA(X14)|(rq(X14,skolem0007(X14))&cowlThing(skolem0007(X14)))))&(![X16]:((![X17]:(~rq(X16,X17)|~cowlThing(X17)))|cA(X16)))),inference(skolemize,status(esa),[c30])).])).
+fof(c33,axiom,(![X14]:(![X16]:(![X17]:(((~cA(X14)|rq(X14,skolem0007(X14)))&(~cA(X14)|cowlThing(skolem0007(X14))))&((~rq(X16,X17)|~cowlThing(X17))|cA(X16)))))),inference(distribute,status(thm),[c32])).
+cnf(c34,axiom,~cA(X33)|rq(X33,skolem0007(X33)),inference(split_conjunct,status(thm),[c33])).
+fof(axiom_1,axiom,(![X]:(xsd_string(X)<=>(~xsd_integer(X)))),input).
+fof(c37,axiom,(![X]:(xsd_string(X)<=>~xsd_integer(X))),inference(fof_simplification,status(thm),[axiom_1])).
+fof(c38,axiom,(![X]:((~xsd_string(X)|~xsd_integer(X))&(xsd_integer(X)|xsd_string(X)))),inference(fof_nnf,status(thm),[c37])).
+fof(c39,axiom,((![X]:(~xsd_string(X)|~xsd_integer(X)))&(![X]:(xsd_integer(X)|xsd_string(X)))),inference(shift_quantors,status(thm),[c38])).
+fof(c41,axiom,(![X18]:(![X19]:((~xsd_string(X18)|~xsd_integer(X18))&(xsd_integer(X19)|xsd_string(X19))))),inference(shift_quantors,status(thm),[fof(c40,axiom,((![X18]:(~xsd_string(X18)|~xsd_integer(X18)))&(![X19]:(xsd_integer(X19)|xsd_string(X19)))),inference(variable_rename,status(thm),[c39])).])).
+cnf(c42,axiom,~xsd_string(X24)|~xsd_integer(X24),inference(split_conjunct,status(thm),[c41])).
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c44,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c45,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c44])).
+fof(c47,axiom,(![X20]:(![X21]:(cowlThing(X20)&~cowlNothing(X21)))),inference(shift_quantors,status(thm),[fof(c46,axiom,((![X20]:cowlThing(X20))&(![X21]:~cowlNothing(X21))),inference(variable_rename,status(thm),[c45])).])).
+cnf(c49,axiom,~cowlNothing(X23),inference(split_conjunct,status(thm),[c47])).
+cnf(c48,axiom,cowlThing(X22),inference(split_conjunct,status(thm),[c47])).
+cnf(c43,axiom,xsd_integer(X25)|xsd_string(X25),inference(split_conjunct,status(thm),[c41])).
+fof(the_axiom,conjecture,(((![X]:(cowlThing(X)&(~cowlNothing(X))))&(![X]:(xsd_string(X)<=>(~xsd_integer(X)))))&(![X]:(cnotA(X)<=>(~cA(X))))),input).
+fof(c0,negated_conjecture,(~(((![X]:(cowlThing(X)&(~cowlNothing(X))))&(![X]:(xsd_string(X)<=>(~xsd_integer(X)))))&(![X]:(cnotA(X)<=>(~cA(X)))))),inference(assume_negation,status(cth),[the_axiom])).
+fof(c1,negated_conjecture,(~(((![X]:(cowlThing(X)&~cowlNothing(X)))&(![X]:(xsd_string(X)<=>~xsd_integer(X))))&(![X]:(cnotA(X)<=>~cA(X))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(((?[X]:(~cowlThing(X)|cowlNothing(X)))|(?[X]:((~xsd_string(X)|xsd_integer(X))&(xsd_string(X)|~xsd_integer(X)))))|(?[X]:((~cnotA(X)|cA(X))&(cnotA(X)|~cA(X))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,((((?[X]:~cowlThing(X))|(?[X]:cowlNothing(X)))|(?[X]:((~xsd_string(X)|xsd_integer(X))&(xsd_string(X)|~xsd_integer(X)))))|(?[X]:((~cnotA(X)|cA(X))&(cnotA(X)|~cA(X))))),inference(shift_quantors,status(thm),[c2])).
+fof(c4,negated_conjecture,((((?[X2]:~cowlThing(X2))|(?[X3]:cowlNothing(X3)))|(?[X4]:((~xsd_string(X4)|xsd_integer(X4))&(xsd_string(X4)|~xsd_integer(X4)))))|(?[X5]:((~cnotA(X5)|cA(X5))&(cnotA(X5)|~cA(X5))))),inference(variable_rename,status(thm),[c3])).
+fof(c5,negated_conjecture,(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|((~xsd_string(skolem0003)|xsd_integer(skolem0003))&(xsd_string(skolem0003)|~xsd_integer(skolem0003))))|((~cnotA(skolem0004)|cA(skolem0004))&(cnotA(skolem0004)|~cA(skolem0004)))),inference(skolemize,status(esa),[c4])).
+fof(c6,negated_conjecture,(((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|(~cnotA(skolem0004)|cA(skolem0004)))&(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|(cnotA(skolem0004)|~cA(skolem0004))))&((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|(~cnotA(skolem0004)|cA(skolem0004)))&(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|(cnotA(skolem0004)|~cA(skolem0004))))),inference(distribute,status(thm),[c5])).
+cnf(c7,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cnotA(skolem0004)|cA(skolem0004),inference(split_conjunct,status(thm),[c6])).
+cnf(c18,axiom,rq(X31,skolem0005(X31))|cnotA(X31),inference(split_conjunct,status(thm),[c16])).
+cnf(c36,axiom,~rq(X37,X36)|~cowlThing(X36)|cA(X37),inference(split_conjunct,status(thm),[c33])).
+cnf(c53,plain,~cowlThing(skolem0005(X39))|cA(X39)|cnotA(X39),inference(resolution,status(thm),[c36, c18])).
+cnf(c54,plain,cA(X40)|cnotA(X40),inference(resolution,status(thm),[c53, c48])).
+cnf(c58,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003),inference(resolution,status(thm),[c54, c7])).
+cnf(c76,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003),inference(resolution,status(thm),[c58, c43])).
+cnf(c77,plain,cA(skolem0004)|cowlNothing(skolem0002)|xsd_integer(skolem0003),inference(resolution,status(thm),[c76, c48])).
+cnf(c80,plain,cA(skolem0004)|xsd_integer(skolem0003),inference(resolution,status(thm),[c77, c49])).
+cnf(c84,plain,cA(skolem0004)|~xsd_string(skolem0003),inference(resolution,status(thm),[c80, c42])).
+cnf(c9,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cnotA(skolem0004)|cA(skolem0004),inference(split_conjunct,status(thm),[c6])).
+cnf(c59,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003),inference(resolution,status(thm),[c54, c9])).
+cnf(c95,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c59, c80])).
+cnf(c106,plain,cA(skolem0004)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c95, c48])).
+cnf(c109,plain,cA(skolem0004)|xsd_string(skolem0003),inference(resolution,status(thm),[c106, c49])).
+cnf(c119,plain,cA(skolem0004),inference(resolution,status(thm),[c109, c84])).
+cnf(c121,plain,rq(skolem0004,skolem0007(skolem0004)),inference(resolution,status(thm),[c119, c34])).
+cnf(c123,plain,~cnotA(skolem0004)|cNothing(skolem0007(skolem0004)),inference(resolution,status(thm),[c121, c17])).
+cnf(c8,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cnotA(skolem0004)|~cA(skolem0004),inference(split_conjunct,status(thm),[c6])).
+cnf(c57,plain,cnotA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003),inference(resolution,status(thm),[c54, c8])).
+cnf(c64,plain,cnotA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003),inference(resolution,status(thm),[c57, c43])).
+cnf(c66,plain,cnotA(skolem0004)|cowlNothing(skolem0002)|xsd_integer(skolem0003),inference(resolution,status(thm),[c64, c48])).
+cnf(c69,plain,cnotA(skolem0004)|xsd_integer(skolem0003),inference(resolution,status(thm),[c66, c49])).
+cnf(c83,plain,xsd_integer(skolem0003)|rq(skolem0004,skolem0007(skolem0004)),inference(resolution,status(thm),[c80, c34])).
+cnf(c92,plain,xsd_integer(skolem0003)|~cnotA(skolem0004)|cNothing(skolem0007(skolem0004)),inference(resolution,status(thm),[c83, c17])).
+cnf(c101,plain,xsd_integer(skolem0003)|cNothing(skolem0007(skolem0004)),inference(resolution,status(thm),[c92, c69])).
+fof(axiom_3,axiom,(![X]:(cNothing(X)=>(~(?[Y]:rp(X,Y))))),input).
+fof(c24,axiom,(![X]:(~cNothing(X)|(![Y]:~rp(X,Y)))),inference(fof_nnf,status(thm),[axiom_3])).
+fof(c26,axiom,(![X12]:(![X13]:(~cNothing(X12)|~rp(X12,X13)))),inference(shift_quantors,status(thm),[fof(c25,axiom,(![X12]:(~cNothing(X12)|(![X13]:~rp(X12,X13)))),inference(variable_rename,status(thm),[c24])).])).
+cnf(c27,axiom,~cNothing(X27)|~rp(X27,X28),inference(split_conjunct,status(thm),[c26])).
+fof(axiom_4,axiom,(![X]:(cNothing(X)=>(?[Y0]:rp(X,Y0)))),input).
+fof(c20,axiom,(![X]:(~cNothing(X)|(?[Y0]:rp(X,Y0)))),inference(fof_nnf,status(thm),[axiom_4])).
+fof(c21,axiom,(![X10]:(~cNothing(X10)|(?[X11]:rp(X10,X11)))),inference(variable_rename,status(thm),[c20])).
+fof(c22,axiom,(![X10]:(~cNothing(X10)|rp(X10,skolem0006(X10)))),inference(skolemize,status(esa),[c21])).
+cnf(c23,axiom,~cNothing(X32)|rp(X32,skolem0006(X32)),inference(split_conjunct,status(thm),[c22])).
+cnf(c104,plain,xsd_integer(skolem0003)|rp(skolem0007(skolem0004),skolem0006(skolem0007(skolem0004))),inference(resolution,status(thm),[c101, c23])).
+cnf(c136,plain,xsd_integer(skolem0003)|~cNothing(skolem0007(skolem0004)),inference(resolution,status(thm),[c104, c27])).
+cnf(c137,plain,xsd_integer(skolem0003),inference(resolution,status(thm),[c136, c101])).
+cnf(c139,plain,~xsd_string(skolem0003),inference(resolution,status(thm),[c137, c42])).
+cnf(c10,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cnotA(skolem0004)|~cA(skolem0004),inference(split_conjunct,status(thm),[c6])).
+cnf(c65,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cnotA(skolem0004),inference(resolution,status(thm),[c10, c54])).
+cnf(c124,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|cnotA(skolem0004),inference(resolution,status(thm),[c65, c43])).
+cnf(c142,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|cnotA(skolem0004),inference(resolution,status(thm),[c124, c48])).
+cnf(c143,plain,xsd_string(skolem0003)|cnotA(skolem0004),inference(resolution,status(thm),[c142, c49])).
+cnf(c146,plain,cnotA(skolem0004),inference(resolution,status(thm),[c143, c139])).
+cnf(c148,plain,cNothing(skolem0007(skolem0004)),inference(resolution,status(thm),[c146, c123])).
+cnf(c149,plain,rp(skolem0007(skolem0004),skolem0006(skolem0007(skolem0004))),inference(resolution,status(thm),[c148, c23])).
+cnf(c150,plain,~cNothing(skolem0007(skolem0004)),inference(resolution,status(thm),[c149, c27])).
+cnf(c151,plain,$false,inference(resolution,status(thm),[c150, c148])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 16
+# Processed clauses  : 55
+# Factors computed   : 0
+# Resolvents computed: 102
+# Tautologies deleted: 5
+# Forward subsumed   : 34
+# Backward subsumed  : 34
+
+# -------- CPU Time ---------
+# User time          : 0.237 s
+# System time        : 0.193 s
+# Total time         : 0.430 s

@@ -1,0 +1,65 @@
+# cnf(c6,plain,environment(skolem0001)).
+# cnf(c7,plain,subpopulations(first_movers,efficient_producers,skolem0001,skolem0002)).
+# cnf(c8,plain,greater_or_equal(growth_rate(first_movers,skolem0002),zero)).
+# cnf(c9,plain,greater(zero,growth_rate(efficient_producers,skolem0002))).
+# cnf(c18,axiom,~environment(X16)|~subpopulations(X14,X17,X16,X15)|subpopulations(X17,X14,X16,X15)).
+# cnf(c3,negated_conjecture,~environment(X19)|~subpopulations(first_movers,efficient_producers,X19,X18)|~outcompetes(first_movers,efficient_producers,X18)).
+# cnf(c20,plain,~environment(skolem0001)|~outcompetes(first_movers,efficient_producers,skolem0002)).
+# cnf(c19,plain,~environment(skolem0001)|subpopulations(efficient_producers,first_movers,skolem0001,skolem0002)).
+# cnf(c21,plain,subpopulations(efficient_producers,first_movers,skolem0001,skolem0002)).
+# cnf(c14,plain,~environment(X23)|~subpopulations(X21,X22,X23,X20)|~outcompetes(X22,X21,X20)|greater_or_equal(growth_rate(X22,X20),zero)).
+# cnf(c13,plain,~environment(X27)|~subpopulations(X25,X26,X27,X24)|~greater_or_equal(growth_rate(X26,X24),zero)|~greater(zero,growth_rate(X25,X24))|outcompetes(X26,X25,X24)).
+# cnf(c15,plain,~environment(X31)|~subpopulations(X29,X30,X31,X28)|~outcompetes(X30,X29,X28)|greater(zero,growth_rate(X29,X28))).
+# cnf(c24,plain,~environment(skolem0001)|~outcompetes(efficient_producers,first_movers,skolem0002)|greater_or_equal(growth_rate(efficient_producers,skolem0002),zero)).
+# cnf(c27,plain,~environment(skolem0001)|~outcompetes(efficient_producers,first_movers,skolem0002)|greater(zero,growth_rate(first_movers,skolem0002))).
+# cnf(c25,plain,~environment(X33)|~subpopulations(efficient_producers,X32,X33,skolem0002)|~greater_or_equal(growth_rate(X32,skolem0002),zero)|outcompetes(X32,efficient_producers,skolem0002)).
+# cnf(c28,plain,~environment(X34)|~subpopulations(efficient_producers,first_movers,X34,skolem0002)|outcompetes(first_movers,efficient_producers,skolem0002)).
+# cnf(c29,plain,~environment(skolem0001)|outcompetes(first_movers,efficient_producers,skolem0002)).
+# cnf(c30,plain,outcompetes(first_movers,efficient_producers,skolem0002)).
+# cnf(c31,plain,~environment(skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(a13_star,plain,(?[E]:(?[T]:(((environment(E)&subpopulations(first_movers,efficient_producers,E,T))&greater_or_equal(growth_rate(first_movers,T),zero))&greater(zero,growth_rate(efficient_producers,T))))),input).
+fof(c4,plain,(?[X4]:(?[X5]:(((environment(X4)&subpopulations(first_movers,efficient_producers,X4,X5))&greater_or_equal(growth_rate(first_movers,X5),zero))&greater(zero,growth_rate(efficient_producers,X5))))),inference(variable_rename,status(thm),[a13_star])).
+fof(c5,plain,(((environment(skolem0001)&subpopulations(first_movers,efficient_producers,skolem0001,skolem0002))&greater_or_equal(growth_rate(first_movers,skolem0002),zero))&greater(zero,growth_rate(efficient_producers,skolem0002))),inference(skolemize,status(esa),[c4])).
+cnf(c6,plain,environment(skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,plain,subpopulations(first_movers,efficient_producers,skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+fof(prove_t5_star,conjecture,(?[E]:(?[T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))&outcompetes(first_movers,efficient_producers,T)))),input).
+fof(c0,negated_conjecture,(~(?[E]:(?[T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))&outcompetes(first_movers,efficient_producers,T))))),inference(assume_negation,status(cth),[prove_t5_star])).
+fof(c1,negated_conjecture,(![E]:(![T]:((~environment(E)|~subpopulations(first_movers,efficient_producers,E,T))|~outcompetes(first_movers,efficient_producers,T)))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(![X2]:(![X3]:((~environment(X2)|~subpopulations(first_movers,efficient_producers,X2,X3))|~outcompetes(first_movers,efficient_producers,X3)))),inference(variable_rename,status(thm),[c1])).
+cnf(c3,negated_conjecture,~environment(X19)|~subpopulations(first_movers,efficient_producers,X19,X18)|~outcompetes(first_movers,efficient_producers,X18),inference(split_conjunct,status(thm),[c2])).
+cnf(c20,plain,~environment(skolem0001)|~outcompetes(first_movers,efficient_producers,skolem0002),inference(resolution,status(thm),[c3, c7])).
+fof(mp_symmetry_of_subpopulations,axiom,(![E]:(![S1]:(![S2]:(![T]:((environment(E)&subpopulations(S1,S2,E,T))=>subpopulations(S2,S1,E,T)))))),input).
+fof(c16,axiom,(![E]:(![S1]:(![S2]:(![T]:((~environment(E)|~subpopulations(S1,S2,E,T))|subpopulations(S2,S1,E,T)))))),inference(fof_nnf,status(thm),[mp_symmetry_of_subpopulations])).
+fof(c17,axiom,(![X10]:(![X11]:(![X12]:(![X13]:((~environment(X10)|~subpopulations(X11,X12,X10,X13))|subpopulations(X12,X11,X10,X13)))))),inference(variable_rename,status(thm),[c16])).
+cnf(c18,axiom,~environment(X16)|~subpopulations(X14,X17,X16,X15)|subpopulations(X17,X14,X16,X15),inference(split_conjunct,status(thm),[c17])).
+cnf(c19,plain,~environment(skolem0001)|subpopulations(efficient_producers,first_movers,skolem0001,skolem0002),inference(resolution,status(thm),[c18, c7])).
+cnf(c21,plain,subpopulations(efficient_producers,first_movers,skolem0001,skolem0002),inference(resolution,status(thm),[c19, c6])).
+cnf(c8,plain,greater_or_equal(growth_rate(first_movers,skolem0002),zero),inference(split_conjunct,status(thm),[c5])).
+cnf(c9,plain,greater(zero,growth_rate(efficient_producers,skolem0002)),inference(split_conjunct,status(thm),[c5])).
+fof(d2,plain,(![E]:(![S1]:(![S2]:(![T]:((environment(E)&subpopulations(S1,S2,E,T))=>((greater_or_equal(growth_rate(S2,T),zero)&greater(zero,growth_rate(S1,T)))<=>outcompetes(S2,S1,T))))))),input).
+fof(c10,plain,(![E]:(![S1]:(![S2]:(![T]:((~environment(E)|~subpopulations(S1,S2,E,T))|(((~greater_or_equal(growth_rate(S2,T),zero)|~greater(zero,growth_rate(S1,T)))|outcompetes(S2,S1,T))&(~outcompetes(S2,S1,T)|(greater_or_equal(growth_rate(S2,T),zero)&greater(zero,growth_rate(S1,T)))))))))),inference(fof_nnf,status(thm),[d2])).
+fof(c11,plain,(![X6]:(![X7]:(![X8]:(![X9]:((~environment(X6)|~subpopulations(X7,X8,X6,X9))|(((~greater_or_equal(growth_rate(X8,X9),zero)|~greater(zero,growth_rate(X7,X9)))|outcompetes(X8,X7,X9))&(~outcompetes(X8,X7,X9)|(greater_or_equal(growth_rate(X8,X9),zero)&greater(zero,growth_rate(X7,X9)))))))))),inference(variable_rename,status(thm),[c10])).
+fof(c12,plain,(![X6]:(![X7]:(![X8]:(![X9]:(((~environment(X6)|~subpopulations(X7,X8,X6,X9))|((~greater_or_equal(growth_rate(X8,X9),zero)|~greater(zero,growth_rate(X7,X9)))|outcompetes(X8,X7,X9)))&(((~environment(X6)|~subpopulations(X7,X8,X6,X9))|(~outcompetes(X8,X7,X9)|greater_or_equal(growth_rate(X8,X9),zero)))&((~environment(X6)|~subpopulations(X7,X8,X6,X9))|(~outcompetes(X8,X7,X9)|greater(zero,growth_rate(X7,X9)))))))))),inference(distribute,status(thm),[c11])).
+cnf(c13,plain,~environment(X27)|~subpopulations(X25,X26,X27,X24)|~greater_or_equal(growth_rate(X26,X24),zero)|~greater(zero,growth_rate(X25,X24))|outcompetes(X26,X25,X24),inference(split_conjunct,status(thm),[c12])).
+cnf(c25,plain,~environment(X33)|~subpopulations(efficient_producers,X32,X33,skolem0002)|~greater_or_equal(growth_rate(X32,skolem0002),zero)|outcompetes(X32,efficient_producers,skolem0002),inference(resolution,status(thm),[c13, c9])).
+cnf(c28,plain,~environment(X34)|~subpopulations(efficient_producers,first_movers,X34,skolem0002)|outcompetes(first_movers,efficient_producers,skolem0002),inference(resolution,status(thm),[c25, c8])).
+cnf(c29,plain,~environment(skolem0001)|outcompetes(first_movers,efficient_producers,skolem0002),inference(resolution,status(thm),[c28, c21])).
+cnf(c30,plain,outcompetes(first_movers,efficient_producers,skolem0002),inference(resolution,status(thm),[c29, c6])).
+cnf(c31,plain,~environment(skolem0001),inference(resolution,status(thm),[c30, c20])).
+cnf(c32,plain,$false,inference(resolution,status(thm),[c31, c6])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 9
+# Processed clauses  : 19
+# Factors computed   : 0
+# Resolvents computed: 14
+# Tautologies deleted: 0
+# Forward subsumed   : 3
+# Backward subsumed  : 6
+
+# -------- CPU Time ---------
+# User time          : 0.306 s
+# System time        : 0.307 s
+# Total time         : 0.613 s

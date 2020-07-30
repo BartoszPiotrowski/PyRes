@@ -1,0 +1,115 @@
+# cnf(reflexivity,axiom,X32=X32).
+# cnf(c11,axiom,subset(X33,X33)).
+# cnf(c45,axiom,subset(X35,union(X35,X34))).
+# cnf(symmetry,axiom,X37!=X36|X36=X37).
+# cnf(transitivity,axiom,X40!=X39|X39!=X41|X40=X41).
+# cnf(c23,axiom,symmetric_difference(X45,X44)=symmetric_difference(X44,X45)).
+# cnf(c25,axiom,union(X47,X46)=union(X46,X47)).
+# cnf(c0,plain,X53!=X55|X54!=X52|symmetric_difference(X53,X54)=symmetric_difference(X55,X52)).
+# cnf(c33,axiom,member(skolem0004(X57,X56),X57)|subset(X57,X56)).
+# cnf(c34,axiom,~member(skolem0004(X59,X58),X58)|subset(X59,X58)).
+# cnf(c41,axiom,~member(X63,difference(X61,X62))|member(X63,X61)).
+# cnf(c42,axiom,~member(X66,difference(X64,X65))|~member(X66,X65)).
+# cnf(c1,plain,X68!=X70|X69!=X67|union(X68,X69)=union(X70,X67)).
+# cnf(c18,axiom,X73!=X72|~member(X71,X73)|member(X71,X72)).
+# cnf(c19,axiom,X76!=X75|~member(X74,X75)|member(X74,X76)).
+# cnf(c32,axiom,~subset(X77,X79)|~member(X78,X77)|member(X78,X79)).
+# cnf(c9,negated_conjecture,~subset(difference(skolem0001,skolem0002),symmetric_difference(skolem0001,skolem0002))).
+# cnf(c51,plain,X82!=symmetric_difference(X80,X81)|X82=symmetric_difference(X81,X80)).
+# cnf(c2,plain,X84!=X86|X85!=X83|difference(X84,X85)=difference(X86,X83)).
+# cnf(c53,plain,X92!=union(X91,X93)|X92=union(X93,X91)).
+# cnf(c3,plain,X99!=X101|X100!=X98|~subset(X99,X100)|subset(X101,X98)).
+# cnf(c74,plain,X104!=X102|X104!=X103|subset(X102,X103)).
+# cnf(c78,plain,X105!=X106|subset(X106,X105)).
+# cnf(c80,plain,subset(union(X109,X108),union(X108,X109))).
+# cnf(c82,plain,subset(symmetric_difference(X110,X111),symmetric_difference(X111,X110))).
+# cnf(c4,plain,X113!=X115|X114!=X112|~member(X113,X114)|member(X115,X112)).
+# cnf(c55,plain,X117!=X118|symmetric_difference(X117,X116)=symmetric_difference(X118,X116)).
+# cnf(c61,plain,X122!=X123|union(X122,X121)=union(X123,X121)).
+# cnf(c70,plain,X128!=X127|difference(X128,X126)=difference(X127,X126)).
+# cnf(c20,axiom,~member(skolem0003(X130,X129),X130)|~member(skolem0003(X130,X129),X129)|X130=X129).
+# cnf(c77,plain,union(X134,X135)!=X133|subset(X133,union(X135,X134))).
+# cnf(c79,plain,symmetric_difference(X142,X141)!=X140|subset(X140,symmetric_difference(X141,X142))).
+# cnf(c21,axiom,member(skolem0003(X144,X143),X144)|member(skolem0003(X144,X143),X143)|X144=X143).
+# cnf(c43,axiom,~member(X152,X151)|member(X152,X150)|member(X152,difference(X151,X150))).
+# cnf(c63,plain,X154!=X155|member(skolem0004(X154,X153),X155)|subset(X154,X153)).
+# cnf(c47,axiom,symmetric_difference(X156,X157)=union(difference(X156,X157),difference(X157,X156))).
+# cnf(c64,plain,X160!=X161|member(skolem0004(X161,X162),X160)|subset(X161,X162)).
+# cnf(c65,plain,~subset(X166,X165)|member(skolem0004(X166,X167),X165)|subset(X166,X167)).
+# cnf(c54,plain,X171!=X173|symmetric_difference(X171,union(X170,X172))=symmetric_difference(X173,union(X172,X170))).
+# cnf(c156,plain,member(skolem0004(X176,X174),union(X176,X175))|subset(X176,X174)).
+# cnf(c75,plain,X181!=X179|union(X181,X182)!=X180|subset(X179,X180)).
+# cnf(c173,plain,X183!=X184|subset(X184,union(X185,X183))).
+# cnf(c179,plain,subset(X186,union(X187,X186))).
+# cnf(c56,plain,X190!=X191|symmetric_difference(X190,symmetric_difference(X188,X189))=symmetric_difference(X191,symmetric_difference(X189,X188))).
+# cnf(c174,plain,X194!=X192|subset(X192,union(X194,X193))).
+# cnf(c176,plain,subset(symmetric_difference(X197,X198),union(X199,symmetric_difference(X198,X197)))).
+# cnf(c178,plain,subset(union(X201,X200),union(X202,union(X200,X201)))).
+# cnf(c188,plain,subset(symmetric_difference(X204,X205),union(symmetric_difference(X205,X204),X203))).
+# cnf(c58,plain,member(skolem0004(difference(X206,X207),X208),X206)|subset(difference(X206,X207),X208)).
+# cnf(c200,plain,subset(difference(X209,X210),X209)).
+# cnf(c190,plain,subset(union(X213,X212),union(union(X212,X213),X211))).
+# cnf(c180,plain,member(skolem0004(X215,X214),union(X216,X215))|subset(X215,X214)).
+# cnf(c181,plain,X219!=X221|union(X220,X219)!=X222|subset(X221,X222)).
+# cnf(c59,plain,~member(skolem0004(difference(X225,X223),X224),X223)|subset(difference(X225,X223),X224)).
+# cnf(c225,plain,subset(difference(X227,X227),X226)).
+# cnf(c210,plain,difference(X234,X237)!=X235|X234!=X236|subset(X235,X236)).
+# cnf(c229,plain,X238!=X239|subset(difference(X238,X240),X239)).
+# cnf(c60,plain,X241!=X244|union(X241,union(X242,X243))=union(X244,union(X243,X242))).
+# cnf(c231,plain,subset(difference(symmetric_difference(X248,X247),X249),symmetric_difference(X247,X248))).
+# cnf(c233,plain,subset(difference(union(X250,X251),X252),union(X251,X250))).
+# cnf(c227,plain,difference(X253,X253)!=X254|X256!=X255|subset(X254,X255)).
+# cnf(c62,plain,X259!=X262|union(X259,symmetric_difference(X261,X260))=union(X262,symmetric_difference(X260,X261))).
+# cnf(c86,plain,symmetric_difference(union(X266,X267),X268)=symmetric_difference(union(X267,X266),X268)).
+# cnf(c88,plain,symmetric_difference(symmetric_difference(X270,X269),X271)=symmetric_difference(symmetric_difference(X269,X270),X271)).
+# cnf(c89,plain,union(union(X273,X274),X272)=union(union(X274,X273),X272)).
+# cnf(c66,plain,member(skolem0004(difference(skolem0001,skolem0002),symmetric_difference(skolem0001,skolem0002)),difference(skolem0001,skolem0002))).
+# cnf(c91,plain,union(symmetric_difference(X281,X280),X279)=union(symmetric_difference(X280,X281),X279)).
+# cnf(c92,plain,difference(union(X287,X288),X286)=difference(union(X288,X287),X286)).
+# cnf(c94,plain,difference(symmetric_difference(X291,X290),X289)=difference(symmetric_difference(X290,X291),X289)).
+# cnf(c139,plain,subset(union(difference(X292,X293),difference(X293,X292)),symmetric_difference(X293,X292))).
+# cnf(c69,plain,X295!=X294|difference(X295,union(X297,X296))=difference(X294,union(X296,X297))).
+# cnf(c140,plain,subset(union(difference(X299,X298),difference(X298,X299)),symmetric_difference(X299,X298))).
+# cnf(c144,plain,symmetric_difference(X301,X300)=union(difference(X300,X301),difference(X301,X300))).
+# cnf(c145,plain,union(difference(X303,X302),difference(X302,X303))=symmetric_difference(X303,X302)).
+# cnf(c435,plain,difference(X305,X304)!=X306|subset(X306,symmetric_difference(X304,X305))).
+# cnf(c452,plain,subset(difference(X307,X308),symmetric_difference(X308,X307))).
+# cnf(c71,plain,X310!=X309|difference(X310,symmetric_difference(X311,X312))=difference(X309,symmetric_difference(X312,X311))).
+# cnf(c439,plain,difference(X313,X314)!=X315|subset(X315,symmetric_difference(X313,X314))).
+# cnf(c471,plain,subset(difference(X316,X317),symmetric_difference(X316,X317))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_th58,conjecture,(![B]:(![C]:subset(difference(B,C),symmetric_difference(B,C)))),input).
+fof(c5,negated_conjecture,(~(![B]:(![C]:subset(difference(B,C),symmetric_difference(B,C))))),inference(assume_negation,status(cth),[prove_th58])).
+fof(c6,negated_conjecture,(?[B]:(?[C]:~subset(difference(B,C),symmetric_difference(B,C)))),inference(fof_nnf,status(thm),[c5])).
+fof(c7,negated_conjecture,(?[X2]:(?[X3]:~subset(difference(X2,X3),symmetric_difference(X2,X3)))),inference(variable_rename,status(thm),[c6])).
+fof(c8,negated_conjecture,~subset(difference(skolem0001,skolem0002),symmetric_difference(skolem0001,skolem0002)),inference(skolemize,status(esa),[c7])).
+cnf(c9,negated_conjecture,~subset(difference(skolem0001,skolem0002),symmetric_difference(skolem0001,skolem0002)),inference(split_conjunct,status(thm),[c8])).
+cnf(reflexivity,axiom,X32=X32,eq_axiom).
+fof(subset_of_union,axiom,(![B]:(![C]:subset(B,union(B,C)))),input).
+fof(c44,axiom,(![X28]:(![X29]:subset(X28,union(X28,X29)))),inference(variable_rename,status(thm),[subset_of_union])).
+cnf(c45,axiom,subset(X35,union(X35,X34)),inference(split_conjunct,status(thm),[c44])).
+cnf(c3,plain,X99!=X101|X100!=X98|~subset(X99,X100)|subset(X101,X98),eq_axiom).
+cnf(c75,plain,X181!=X179|union(X181,X182)!=X180|subset(X179,X180),inference(resolution,status(thm),[c3, c45])).
+cnf(symmetry,axiom,X37!=X36|X36=X37,eq_axiom).
+fof(symmetric_difference_defn,axiom,(![B]:(![C]:symmetric_difference(B,C)=union(difference(B,C),difference(C,B)))),input).
+fof(c46,axiom,(![X30]:(![X31]:symmetric_difference(X30,X31)=union(difference(X30,X31),difference(X31,X30)))),inference(variable_rename,status(thm),[symmetric_difference_defn])).
+cnf(c47,axiom,symmetric_difference(X156,X157)=union(difference(X156,X157),difference(X157,X156)),inference(split_conjunct,status(thm),[c46])).
+cnf(c145,plain,union(difference(X303,X302),difference(X302,X303))=symmetric_difference(X303,X302),inference(resolution,status(thm),[c47, symmetry])).
+cnf(c439,plain,difference(X313,X314)!=X315|subset(X315,symmetric_difference(X313,X314)),inference(resolution,status(thm),[c145, c75])).
+cnf(c471,plain,subset(difference(X316,X317),symmetric_difference(X316,X317)),inference(resolution,status(thm),[c439, reflexivity])).
+cnf(c475,plain,$false,inference(resolution,status(thm),[c471, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 24
+# Processed clauses  : 79
+# Factors computed   : 2
+# Resolvents computed: 426
+# Tautologies deleted: 1
+# Forward subsumed   : 30
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.447 s
+# System time        : 0.294 s
+# Total time         : 0.741 s

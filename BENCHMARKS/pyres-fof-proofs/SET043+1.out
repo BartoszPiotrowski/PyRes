@@ -1,0 +1,32 @@
+# cnf(c7,negated_conjecture,~element(X5,skolem0001)|~element(X5,X5)).
+# cnf(c8,negated_conjecture,element(X6,X6)|element(X6,skolem0001)).
+# cnf(c9,plain,element(skolem0001,skolem0001)).
+# cnf(c12,plain,~element(skolem0001,skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel39,conjecture,(~(?[X]:(![Y]:(element(Y,X)<=>(~element(Y,Y)))))),input).
+fof(c0,negated_conjecture,(~(~(?[X]:(![Y]:(element(Y,X)<=>(~element(Y,Y))))))),inference(assume_negation,status(cth),[pel39])).
+fof(c1,negated_conjecture,(~(~(?[X]:(![Y]:(element(Y,X)<=>~element(Y,Y)))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:(![Y]:((~element(Y,X)|~element(Y,Y))&(element(Y,Y)|element(Y,X))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X]:((![Y]:(~element(Y,X)|~element(Y,Y)))&(![Y]:(element(Y,Y)|element(Y,X))))),inference(shift_quantors,status(thm),[c2])).
+fof(c4,negated_conjecture,(?[X2]:((![X3]:(~element(X3,X2)|~element(X3,X3)))&(![X4]:(element(X4,X4)|element(X4,X2))))),inference(variable_rename,status(thm),[c3])).
+fof(c6,negated_conjecture,(![X3]:(![X4]:((~element(X3,skolem0001)|~element(X3,X3))&(element(X4,X4)|element(X4,skolem0001))))),inference(shift_quantors,status(thm),[fof(c5,negated_conjecture,((![X3]:(~element(X3,skolem0001)|~element(X3,X3)))&(![X4]:(element(X4,X4)|element(X4,skolem0001)))),inference(skolemize,status(esa),[c4])).])).
+cnf(c8,negated_conjecture,element(X6,X6)|element(X6,skolem0001),inference(split_conjunct,status(thm),[c6])).
+cnf(c9,plain,element(skolem0001,skolem0001),inference(factor,status(thm),[c8])).
+cnf(c7,negated_conjecture,~element(X5,skolem0001)|~element(X5,X5),inference(split_conjunct,status(thm),[c6])).
+cnf(c12,plain,~element(skolem0001,skolem0001),inference(resolution,status(thm),[c9, c7])).
+cnf(c13,plain,$false,inference(resolution,status(thm),[c12, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 2
+# Processed clauses  : 4
+# Factors computed   : 1
+# Resolvents computed: 6
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.315 s
+# System time        : 0.328 s
+# Total time         : 0.643 s

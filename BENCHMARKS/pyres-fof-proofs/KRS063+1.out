@@ -1,0 +1,85 @@
+# cnf(c63,axiom,cowlThing(X46)).
+# cnf(c64,axiom,~cowlNothing(X47)).
+# cnf(reflexivity,axiom,X48=X48).
+# cnf(c11,axiom,cEuropeanCountry(iUK)).
+# cnf(c12,axiom,cEuropeanCountry(iPT)).
+# cnf(symmetry,axiom,X49!=X50|X50=X49).
+# cnf(c13,axiom,cEuropeanCountry(iNL)).
+# cnf(c15,axiom,~cEuroMP(iKinnock)).
+# cnf(c16,axiom,cPerson(iKinnock)).
+# cnf(c17,axiom,cEuropeanCountry(iFR)).
+# cnf(c18,axiom,cEuropeanCountry(iES)).
+# cnf(transitivity,axiom,X51!=X53|X53!=X52|X51=X52).
+# cnf(c19,axiom,cEuropeanCountry(iBE)).
+# cnf(c10,axiom,rhasEuroMP(iUK,iKinnock)).
+# cnf(c57,axiom,~xsd_string(X55)|~xsd_integer(X55)).
+# cnf(c58,axiom,xsd_integer(X56)|xsd_string(X56)).
+# cnf(c0,plain,X58!=X57|~cEUCountry(X58)|cEUCountry(X57)).
+# cnf(c30,axiom,~rhasEuroMP(X61,X62)|cEUCountry(X61)).
+# cnf(c105,plain,cEUCountry(iUK)).
+# cnf(c24,axiom,~risEuroMPFrom(X63,X64)|rhasEuroMP(X64,X63)).
+# cnf(c1,plain,X66!=X65|~cEuroMP(X66)|cEuroMP(X65)).
+# cnf(c25,axiom,~rhasEuroMP(X69,X68)|risEuroMPFrom(X68,X69)).
+# cnf(c107,plain,risEuroMPFrom(iKinnock,iUK)).
+# cnf(c2,plain,X72!=X71|~cEuropeanCountry(X72)|cEuropeanCountry(X71)).
+# cnf(c46,axiom,X74!=iPT|cEUCountry(X74)).
+# cnf(c110,plain,cEUCountry(iPT)).
+# cnf(c47,axiom,X75!=iBE|cEUCountry(X75)).
+# cnf(c111,plain,cEUCountry(iBE)).
+# cnf(c3,plain,X77!=X76|~cPerson(X77)|cPerson(X76)).
+# cnf(c48,axiom,X79!=iNL|cEUCountry(X79)).
+# cnf(c113,plain,cEUCountry(iNL)).
+# cnf(c49,axiom,X80!=iES|cEUCountry(X80)).
+# cnf(c114,plain,cEUCountry(iES)).
+# cnf(c50,axiom,X83!=iFR|cEUCountry(X83)).
+# cnf(c115,plain,cEUCountry(iFR)).
+# cnf(c51,axiom,X84!=iUK|cEUCountry(X84)).
+# cnf(c37,axiom,~cEuroMP(X89)|risEuroMPFrom(X89,skolem0001(X89))).
+# cnf(c8,plain,X91!=X90|~xsd_integer(X91)|xsd_integer(X90)).
+# cnf(c9,plain,X94!=X93|~xsd_string(X94)|xsd_string(X93)).
+# cnf(c6,plain,X99!=X96|X98!=X97|~rhasEuroMP(X99,X98)|rhasEuroMP(X96,X97)).
+# cnf(c39,axiom,~risEuroMPFrom(X100,X101)|~cowlThing(X101)|cEuroMP(X100)).
+# cnf(c120,plain,~cowlThing(iUK)|cEuroMP(iKinnock)).
+# cnf(c121,plain,cEuroMP(iKinnock)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_10,axiom,(~cEuroMP(iKinnock)),input).
+fof(c14,axiom,~cEuroMP(iKinnock),inference(fof_simplification,status(thm),[axiom_10])).
+cnf(c15,axiom,~cEuroMP(iKinnock),inference(split_conjunct,status(thm),[c14])).
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c59,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c60,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c59])).
+fof(c62,axiom,(![X16]:(![X17]:(cowlThing(X16)&~cowlNothing(X17)))),inference(shift_quantors,status(thm),[fof(c61,axiom,((![X16]:cowlThing(X16))&(![X17]:~cowlNothing(X17))),inference(variable_rename,status(thm),[c60])).])).
+cnf(c63,axiom,cowlThing(X46),inference(split_conjunct,status(thm),[c62])).
+fof(axiom_14,axiom,rhasEuroMP(iUK,iKinnock),input).
+cnf(c10,axiom,rhasEuroMP(iUK,iKinnock),inference(split_conjunct,status(thm),[axiom_14])).
+fof(axiom_5,axiom,(![X]:(![Y]:(risEuroMPFrom(X,Y)<=>rhasEuroMP(Y,X)))),input).
+fof(c20,axiom,(![X]:(![Y]:((~risEuroMPFrom(X,Y)|rhasEuroMP(Y,X))&(~rhasEuroMP(Y,X)|risEuroMPFrom(X,Y))))),inference(fof_nnf,status(thm),[axiom_5])).
+fof(c21,axiom,((![X]:(![Y]:(~risEuroMPFrom(X,Y)|rhasEuroMP(Y,X))))&(![X]:(![Y]:(~rhasEuroMP(Y,X)|risEuroMPFrom(X,Y))))),inference(shift_quantors,status(thm),[c20])).
+fof(c23,axiom,(![X2]:(![X3]:(![X4]:(![X5]:((~risEuroMPFrom(X2,X3)|rhasEuroMP(X3,X2))&(~rhasEuroMP(X5,X4)|risEuroMPFrom(X4,X5))))))),inference(shift_quantors,status(thm),[fof(c22,axiom,((![X2]:(![X3]:(~risEuroMPFrom(X2,X3)|rhasEuroMP(X3,X2))))&(![X4]:(![X5]:(~rhasEuroMP(X5,X4)|risEuroMPFrom(X4,X5))))),inference(variable_rename,status(thm),[c21])).])).
+cnf(c25,axiom,~rhasEuroMP(X69,X68)|risEuroMPFrom(X68,X69),inference(split_conjunct,status(thm),[c23])).
+cnf(c107,plain,risEuroMPFrom(iKinnock,iUK),inference(resolution,status(thm),[c25, c10])).
+fof(axiom_3,axiom,(![X]:(cEuroMP(X)<=>(?[Y]:(risEuroMPFrom(X,Y)&cowlThing(Y))))),input).
+fof(c31,axiom,(![X]:((~cEuroMP(X)|(?[Y]:(risEuroMPFrom(X,Y)&cowlThing(Y))))&((![Y]:(~risEuroMPFrom(X,Y)|~cowlThing(Y)))|cEuroMP(X)))),inference(fof_nnf,status(thm),[axiom_3])).
+fof(c32,axiom,((![X]:(~cEuroMP(X)|(?[Y]:(risEuroMPFrom(X,Y)&cowlThing(Y)))))&(![X]:((![Y]:(~risEuroMPFrom(X,Y)|~cowlThing(Y)))|cEuroMP(X)))),inference(shift_quantors,status(thm),[c31])).
+fof(c33,axiom,((![X8]:(~cEuroMP(X8)|(?[X9]:(risEuroMPFrom(X8,X9)&cowlThing(X9)))))&(![X10]:((![X11]:(~risEuroMPFrom(X10,X11)|~cowlThing(X11)))|cEuroMP(X10)))),inference(variable_rename,status(thm),[c32])).
+fof(c35,axiom,(![X8]:(![X10]:(![X11]:((~cEuroMP(X8)|(risEuroMPFrom(X8,skolem0001(X8))&cowlThing(skolem0001(X8))))&((~risEuroMPFrom(X10,X11)|~cowlThing(X11))|cEuroMP(X10)))))),inference(shift_quantors,status(thm),[fof(c34,axiom,((![X8]:(~cEuroMP(X8)|(risEuroMPFrom(X8,skolem0001(X8))&cowlThing(skolem0001(X8)))))&(![X10]:((![X11]:(~risEuroMPFrom(X10,X11)|~cowlThing(X11)))|cEuroMP(X10)))),inference(skolemize,status(esa),[c33])).])).
+fof(c36,axiom,(![X8]:(![X10]:(![X11]:(((~cEuroMP(X8)|risEuroMPFrom(X8,skolem0001(X8)))&(~cEuroMP(X8)|cowlThing(skolem0001(X8))))&((~risEuroMPFrom(X10,X11)|~cowlThing(X11))|cEuroMP(X10)))))),inference(distribute,status(thm),[c35])).
+cnf(c39,axiom,~risEuroMPFrom(X100,X101)|~cowlThing(X101)|cEuroMP(X100),inference(split_conjunct,status(thm),[c36])).
+cnf(c120,plain,~cowlThing(iUK)|cEuroMP(iKinnock),inference(resolution,status(thm),[c39, c107])).
+cnf(c121,plain,cEuroMP(iKinnock),inference(resolution,status(thm),[c120, c63])).
+cnf(c122,plain,$false,inference(resolution,status(thm),[c121, c15])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 51
+# Processed clauses  : 43
+# Factors computed   : 0
+# Resolvents computed: 23
+# Tautologies deleted: 8
+# Forward subsumed   : 6
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.282 s
+# System time        : 0.292 s
+# Total time         : 0.573 s

@@ -1,0 +1,152 @@
+# cnf(c43,axiom,ir(X21)).
+# cnf(reflexivity,axiom,X22=X22).
+# cnf(c35,axiom,~icext(uri_owl_Nothing,X23)).
+# cnf(symmetry,axiom,X25!=X24|X24=X25).
+# cnf(transitivity,axiom,X29!=X27|X27!=X28|X29=X28).
+# cnf(c6,axiom,iext(uri_owl_equivalentClass,uri_owl_Thing,skolem0001)).
+# cnf(c7,axiom,iext(uri_owl_oneOf,skolem0001,skolem0002)).
+# cnf(c8,axiom,iext(uri_rdf_first,skolem0002,uri_ex_w)).
+# cnf(c9,axiom,iext(uri_rdf_rest,skolem0002,uri_rdf_nil)).
+# cnf(c41,axiom,~ir(X33)|icext(uri_owl_Thing,X33)).
+# cnf(c46,plain,icext(uri_owl_Thing,X34)).
+# cnf(c16,axiom,~iext(uri_owl_equivalentClass,X37,X38)|ic(X37)).
+# cnf(c47,plain,ic(uri_owl_Thing)).
+# cnf(c1,plain,X41!=X40|X42!=X39|~icext(X41,X42)|icext(X40,X39)).
+# cnf(c17,axiom,~iext(uri_owl_equivalentClass,X43,X44)|ic(X44)).
+# cnf(c49,plain,ic(skolem0001)).
+# cnf(c3,plain,X46!=X45|~ic(X46)|ic(X45)).
+# cnf(c48,plain,uri_owl_Thing!=X50|X48!=X49|icext(X50,X49)).
+# cnf(c2,plain,X56!=X52|X53!=X55|X51!=X54|~iext(X56,X53,X51)|iext(X52,X55,X54)).
+# cnf(c51,plain,uri_owl_Thing!=X57|icext(X57,X58)).
+# cnf(c18,axiom,~iext(uri_owl_equivalentClass,X60,X62)|~icext(X60,X61)|icext(X62,X61)).
+# cnf(c57,plain,~icext(uri_owl_Thing,X63)|icext(skolem0001,X63)).
+# cnf(c58,plain,icext(skolem0001,X64)).
+# cnf(c19,axiom,~iext(uri_owl_equivalentClass,X65,X67)|~icext(X67,X66)|icext(X65,X66)).
+# cnf(c59,plain,skolem0001!=X71|X70!=X69|icext(X71,X69)).
+# cnf(c61,plain,skolem0001!=X72|icext(X72,X73)).
+# cnf(c52,plain,uri_rdf_first!=X76|skolem0002!=X77|uri_ex_w!=X75|iext(X76,X77,X75)).
+# cnf(c20,axiom,~ic(X78)|~ic(X79)|~icext(X78,skolem0003(X78,X79))|~icext(X79,skolem0003(X78,X79))|iext(uri_owl_equivalentClass,X78,X79)).
+# cnf(c63,plain,uri_rdf_first!=X81|skolem0002!=X80|iext(X81,X80,uri_ex_w)).
+# cnf(c66,plain,uri_rdf_first!=X82|iext(X82,skolem0002,uri_ex_w)).
+# cnf(c53,plain,uri_owl_equivalentClass!=X84|uri_owl_Thing!=X85|skolem0001!=X83|iext(X84,X85,X83)).
+# cnf(c68,plain,uri_owl_equivalentClass!=X87|uri_owl_Thing!=X86|iext(X87,X86,skolem0001)).
+# cnf(c21,axiom,~ic(X88)|~ic(X89)|icext(X88,skolem0003(X88,X89))|icext(X89,skolem0003(X88,X89))|iext(uri_owl_equivalentClass,X88,X89)).
+# cnf(c69,plain,uri_owl_equivalentClass!=X90|iext(X90,uri_owl_Thing,skolem0001)).
+# cnf(c54,plain,uri_rdf_rest!=X92|skolem0002!=X93|uri_rdf_nil!=X91|iext(X92,X93,X91)).
+# cnf(c73,plain,uri_rdf_rest!=X95|skolem0002!=X94|iext(X95,X94,uri_rdf_nil)).
+# cnf(c74,plain,uri_rdf_rest!=X96|iext(X96,skolem0002,uri_rdf_nil)).
+# cnf(c28,axiom,~iext(uri_rdf_first,X99,X98)|~iext(uri_rdf_rest,X99,uri_rdf_nil)|~iext(uri_owl_oneOf,X97,X99)|ic(X97)).
+# cnf(c55,plain,uri_owl_oneOf!=X102|skolem0001!=X103|skolem0002!=X101|iext(X102,X103,X101)).
+# cnf(c77,plain,uri_owl_oneOf!=X104|skolem0001!=X105|iext(X104,X105,skolem0002)).
+# cnf(c78,plain,uri_owl_oneOf!=X106|iext(X106,skolem0001,skolem0002)).
+# cnf(c29,axiom,~iext(uri_rdf_first,X110,X109)|~iext(uri_rdf_rest,X110,uri_rdf_nil)|~iext(uri_owl_oneOf,X108,X110)|~icext(X108,X107)|X107=X109).
+# cnf(c64,plain,~ic(X111)|~ic(skolem0001)|~icext(X111,skolem0003(X111,skolem0001))|iext(uri_owl_equivalentClass,X111,skolem0001)).
+# cnf(c81,plain,~ic(skolem0001)|iext(uri_owl_equivalentClass,skolem0001,skolem0001)).
+# cnf(c83,plain,iext(uri_owl_equivalentClass,skolem0001,skolem0001)).
+# cnf(c30,axiom,~iext(uri_rdf_first,X115,X114)|~iext(uri_rdf_rest,X115,uri_rdf_nil)|~iext(uri_owl_oneOf,X113,X115)|X112!=X114|icext(X113,X112)).
+# cnf(c88,plain,uri_owl_equivalentClass!=X119|skolem0001!=X120|skolem0001!=X118|iext(X119,X120,X118)).
+# cnf(c31,axiom,~iext(uri_rdf_first,X123,X122)|~iext(uri_rdf_rest,X123,uri_rdf_nil)|~ic(X121)|~icext(X121,skolem0004(X121,X123,X122))|skolem0004(X121,X123,X122)!=X122|iext(uri_owl_oneOf,X121,X123)).
+# cnf(c90,plain,uri_owl_equivalentClass!=X124|skolem0001!=X125|iext(X124,X125,skolem0001)).
+# cnf(c91,plain,uri_owl_equivalentClass!=X126|iext(X126,skolem0001,skolem0001)).
+# cnf(c65,plain,~ic(X127)|~ic(uri_owl_Thing)|~icext(X127,skolem0003(X127,uri_owl_Thing))|iext(uri_owl_equivalentClass,X127,uri_owl_Thing)).
+# cnf(c94,plain,~ic(uri_owl_Thing)|iext(uri_owl_equivalentClass,uri_owl_Thing,uri_owl_Thing)).
+# cnf(c32,axiom,~iext(uri_rdf_first,X130,X129)|~iext(uri_rdf_rest,X130,uri_rdf_nil)|~ic(X128)|icext(X128,skolem0004(X128,X130,X129))|skolem0004(X128,X130,X129)=X129|iext(uri_owl_oneOf,X128,X130)).
+# cnf(c95,plain,iext(uri_owl_equivalentClass,uri_owl_Thing,uri_owl_Thing)).
+# cnf(c93,plain,~ic(skolem0001)|~ic(uri_owl_Thing)|iext(uri_owl_equivalentClass,skolem0001,uri_owl_Thing)).
+# cnf(c102,plain,~ic(skolem0001)|iext(uri_owl_equivalentClass,skolem0001,uri_owl_Thing)).
+# cnf(c103,plain,iext(uri_owl_equivalentClass,skolem0001,uri_owl_Thing)).
+# cnf(c101,plain,uri_owl_equivalentClass!=X138|uri_owl_Thing!=X139|uri_owl_Thing!=X137|iext(X138,X139,X137)).
+# cnf(c109,plain,uri_owl_equivalentClass!=X140|uri_owl_Thing!=X141|iext(X140,X141,uri_owl_Thing)).
+# cnf(c110,plain,uri_owl_equivalentClass!=X142|iext(X142,uri_owl_Thing,uri_owl_Thing)).
+# cnf(c80,plain,~iext(uri_rdf_first,skolem0002,X144)|~iext(uri_rdf_rest,skolem0002,uri_rdf_nil)|~icext(skolem0001,X143)|X143=X144).
+# cnf(c112,plain,~iext(uri_rdf_first,skolem0002,X146)|~icext(skolem0001,X145)|X145=X146).
+# cnf(c113,plain,~icext(skolem0001,X147)|X147=uri_ex_w).
+# cnf(c114,plain,X148=uri_ex_w).
+# cnf(c115,plain,uri_ex_w=X149).
+# cnf(c119,plain,icext(uri_ex_w,X152)).
+# cnf(c137,plain,~ic(X155)|ic(uri_ex_w)).
+# cnf(c147,plain,ic(uri_ex_w)).
+# cnf(c96,plain,~iext(uri_rdf_first,skolem0002,X156)|~ic(X157)|icext(X157,skolem0004(X157,skolem0002,X156))|skolem0004(X157,skolem0002,X156)=X156|iext(uri_owl_oneOf,X157,skolem0002)).
+# cnf(c142,plain,~ic(uri_ex_w)|ic(X158)).
+# cnf(c151,plain,ic(X159)).
+# cnf(c118,plain,iext(uri_ex_w,skolem0001,skolem0002)).
+# cnf(c121,plain,iext(uri_ex_w,uri_owl_Thing,skolem0001)).
+# cnf(c108,plain,uri_owl_equivalentClass!=X161|skolem0001!=X162|uri_owl_Thing!=X160|iext(X161,X162,X160)).
+# cnf(c124,plain,iext(uri_ex_w,uri_owl_Thing,uri_owl_Thing)).
+# cnf(c127,plain,iext(uri_ex_w,skolem0002,uri_rdf_nil)).
+# cnf(c128,plain,iext(uri_ex_w,skolem0001,skolem0001)).
+# cnf(c129,plain,iext(uri_ex_w,skolem0002,uri_ex_w)).
+# cnf(c116,plain,uri_owl_equivalentClass!=X165|iext(X165,uri_ex_w,uri_owl_Thing)).
+# cnf(c161,plain,iext(uri_owl_equivalentClass,uri_ex_w,uri_owl_Thing)).
+# cnf(c162,plain,iext(uri_ex_w,uri_ex_w,uri_owl_Thing)).
+# cnf(c141,plain,X167!=uri_ex_w|X167=X166).
+# cnf(c168,plain,X169=X168).
+# cnf(c173,plain,icext(X171,X170)).
+# cnf(c117,plain,uri_owl_oneOf!=X172|skolem0001!=X173|iext(X172,X173,uri_ex_w)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(owl_class_nothing_ext,axiom,(![X]:(~icext(uri_owl_Nothing,X))),input).
+fof(c33,axiom,(![X]:~icext(uri_owl_Nothing,X)),inference(fof_simplification,status(thm),[owl_class_nothing_ext])).
+fof(c34,axiom,(![X17]:~icext(uri_owl_Nothing,X17)),inference(variable_rename,status(thm),[c33])).
+cnf(c35,axiom,~icext(uri_owl_Nothing,X23),inference(split_conjunct,status(thm),[c34])).
+cnf(reflexivity,axiom,X22=X22,eq_axiom).
+fof(simple_ir,axiom,(![X]:ir(X)),input).
+fof(c42,axiom,(![X20]:ir(X20)),inference(variable_rename,status(thm),[simple_ir])).
+cnf(c43,axiom,ir(X21),inference(split_conjunct,status(thm),[c42])).
+fof(owl_class_thing_ext,axiom,(![X]:(icext(uri_owl_Thing,X)<=>ir(X))),input).
+fof(c36,axiom,(![X]:((~icext(uri_owl_Thing,X)|ir(X))&(~ir(X)|icext(uri_owl_Thing,X)))),inference(fof_nnf,status(thm),[owl_class_thing_ext])).
+fof(c37,axiom,((![X]:(~icext(uri_owl_Thing,X)|ir(X)))&(![X]:(~ir(X)|icext(uri_owl_Thing,X)))),inference(shift_quantors,status(thm),[c36])).
+fof(c39,axiom,(![X18]:(![X19]:((~icext(uri_owl_Thing,X18)|ir(X18))&(~ir(X19)|icext(uri_owl_Thing,X19))))),inference(shift_quantors,status(thm),[fof(c38,axiom,((![X18]:(~icext(uri_owl_Thing,X18)|ir(X18)))&(![X19]:(~ir(X19)|icext(uri_owl_Thing,X19)))),inference(variable_rename,status(thm),[c37])).])).
+cnf(c41,axiom,~ir(X33)|icext(uri_owl_Thing,X33),inference(split_conjunct,status(thm),[c39])).
+cnf(c46,plain,icext(uri_owl_Thing,X34),inference(resolution,status(thm),[c41, c43])).
+cnf(c1,plain,X41!=X40|X42!=X39|~icext(X41,X42)|icext(X40,X39),eq_axiom).
+cnf(c48,plain,uri_owl_Thing!=X50|X48!=X49|icext(X50,X49),inference(resolution,status(thm),[c1, c46])).
+cnf(c51,plain,uri_owl_Thing!=X57|icext(X57,X58),inference(resolution,status(thm),[c48, reflexivity])).
+fof(testcase_premise_fullish_031_Large_Universe,axiom,(?[BNODE_x]:(?[BNODE_l]:(((iext(uri_owl_equivalentClass,uri_owl_Thing,BNODE_x)&iext(uri_owl_oneOf,BNODE_x,BNODE_l))&iext(uri_rdf_first,BNODE_l,uri_ex_w))&iext(uri_rdf_rest,BNODE_l,uri_rdf_nil)))),input).
+fof(c4,axiom,(?[X2]:(?[X3]:(((iext(uri_owl_equivalentClass,uri_owl_Thing,X2)&iext(uri_owl_oneOf,X2,X3))&iext(uri_rdf_first,X3,uri_ex_w))&iext(uri_rdf_rest,X3,uri_rdf_nil)))),inference(variable_rename,status(thm),[testcase_premise_fullish_031_Large_Universe])).
+fof(c5,axiom,(((iext(uri_owl_equivalentClass,uri_owl_Thing,skolem0001)&iext(uri_owl_oneOf,skolem0001,skolem0002))&iext(uri_rdf_first,skolem0002,uri_ex_w))&iext(uri_rdf_rest,skolem0002,uri_rdf_nil)),inference(skolemize,status(esa),[c4])).
+cnf(c6,axiom,iext(uri_owl_equivalentClass,uri_owl_Thing,skolem0001),inference(split_conjunct,status(thm),[c5])).
+fof(owl_eqdis_equivalentclass,axiom,(![C1]:(![C2]:(iext(uri_owl_equivalentClass,C1,C2)<=>((ic(C1)&ic(C2))&(![X]:(icext(C1,X)<=>icext(C2,X))))))),input).
+fof(c10,axiom,(![C1]:(![C2]:((~iext(uri_owl_equivalentClass,C1,C2)|((ic(C1)&ic(C2))&(![X]:((~icext(C1,X)|icext(C2,X))&(~icext(C2,X)|icext(C1,X))))))&(((~ic(C1)|~ic(C2))|(?[X]:((~icext(C1,X)|~icext(C2,X))&(icext(C1,X)|icext(C2,X)))))|iext(uri_owl_equivalentClass,C1,C2))))),inference(fof_nnf,status(thm),[owl_eqdis_equivalentclass])).
+fof(c11,axiom,((![C1]:(![C2]:(~iext(uri_owl_equivalentClass,C1,C2)|((ic(C1)&ic(C2))&((![X]:(~icext(C1,X)|icext(C2,X)))&(![X]:(~icext(C2,X)|icext(C1,X))))))))&(![C1]:(![C2]:(((~ic(C1)|~ic(C2))|(?[X]:((~icext(C1,X)|~icext(C2,X))&(icext(C1,X)|icext(C2,X)))))|iext(uri_owl_equivalentClass,C1,C2))))),inference(shift_quantors,status(thm),[c10])).
+fof(c12,axiom,((![X4]:(![X5]:(~iext(uri_owl_equivalentClass,X4,X5)|((ic(X4)&ic(X5))&((![X6]:(~icext(X4,X6)|icext(X5,X6)))&(![X7]:(~icext(X5,X7)|icext(X4,X7))))))))&(![X8]:(![X9]:(((~ic(X8)|~ic(X9))|(?[X10]:((~icext(X8,X10)|~icext(X9,X10))&(icext(X8,X10)|icext(X9,X10)))))|iext(uri_owl_equivalentClass,X8,X9))))),inference(variable_rename,status(thm),[c11])).
+fof(c14,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:((~iext(uri_owl_equivalentClass,X4,X5)|((ic(X4)&ic(X5))&((~icext(X4,X6)|icext(X5,X6))&(~icext(X5,X7)|icext(X4,X7)))))&(((~ic(X8)|~ic(X9))|((~icext(X8,skolem0003(X8,X9))|~icext(X9,skolem0003(X8,X9)))&(icext(X8,skolem0003(X8,X9))|icext(X9,skolem0003(X8,X9)))))|iext(uri_owl_equivalentClass,X8,X9))))))))),inference(shift_quantors,status(thm),[fof(c13,axiom,((![X4]:(![X5]:(~iext(uri_owl_equivalentClass,X4,X5)|((ic(X4)&ic(X5))&((![X6]:(~icext(X4,X6)|icext(X5,X6)))&(![X7]:(~icext(X5,X7)|icext(X4,X7))))))))&(![X8]:(![X9]:(((~ic(X8)|~ic(X9))|((~icext(X8,skolem0003(X8,X9))|~icext(X9,skolem0003(X8,X9)))&(icext(X8,skolem0003(X8,X9))|icext(X9,skolem0003(X8,X9)))))|iext(uri_owl_equivalentClass,X8,X9))))),inference(skolemize,status(esa),[c12])).])).
+fof(c15,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:((((~iext(uri_owl_equivalentClass,X4,X5)|ic(X4))&(~iext(uri_owl_equivalentClass,X4,X5)|ic(X5)))&((~iext(uri_owl_equivalentClass,X4,X5)|(~icext(X4,X6)|icext(X5,X6)))&(~iext(uri_owl_equivalentClass,X4,X5)|(~icext(X5,X7)|icext(X4,X7)))))&((((~ic(X8)|~ic(X9))|(~icext(X8,skolem0003(X8,X9))|~icext(X9,skolem0003(X8,X9))))|iext(uri_owl_equivalentClass,X8,X9))&(((~ic(X8)|~ic(X9))|(icext(X8,skolem0003(X8,X9))|icext(X9,skolem0003(X8,X9))))|iext(uri_owl_equivalentClass,X8,X9)))))))))),inference(distribute,status(thm),[c14])).
+cnf(c18,axiom,~iext(uri_owl_equivalentClass,X60,X62)|~icext(X60,X61)|icext(X62,X61),inference(split_conjunct,status(thm),[c15])).
+cnf(c57,plain,~icext(uri_owl_Thing,X63)|icext(skolem0001,X63),inference(resolution,status(thm),[c18, c6])).
+cnf(c58,plain,icext(skolem0001,X64),inference(resolution,status(thm),[c57, c46])).
+cnf(c8,axiom,iext(uri_rdf_first,skolem0002,uri_ex_w),inference(split_conjunct,status(thm),[c5])).
+cnf(c9,axiom,iext(uri_rdf_rest,skolem0002,uri_rdf_nil),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,axiom,iext(uri_owl_oneOf,skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+fof(owl_enum_class_001,axiom,(![Z]:(![S1]:(![A1]:((iext(uri_rdf_first,S1,A1)&iext(uri_rdf_rest,S1,uri_rdf_nil))=>(iext(uri_owl_oneOf,Z,S1)<=>(ic(Z)&(![X]:(icext(Z,X)<=>X=A1)))))))),input).
+fof(c22,axiom,(![Z]:(![S1]:(![A1]:((~iext(uri_rdf_first,S1,A1)|~iext(uri_rdf_rest,S1,uri_rdf_nil))|((~iext(uri_owl_oneOf,Z,S1)|(ic(Z)&(![X]:((~icext(Z,X)|X=A1)&(X!=A1|icext(Z,X))))))&((~ic(Z)|(?[X]:((~icext(Z,X)|X!=A1)&(icext(Z,X)|X=A1))))|iext(uri_owl_oneOf,Z,S1))))))),inference(fof_nnf,status(thm),[owl_enum_class_001])).
+fof(c23,axiom,(![Z]:(![S1]:(![A1]:((~iext(uri_rdf_first,S1,A1)|~iext(uri_rdf_rest,S1,uri_rdf_nil))|((~iext(uri_owl_oneOf,Z,S1)|(ic(Z)&((![X]:(~icext(Z,X)|X=A1))&(![X]:(X!=A1|icext(Z,X))))))&((~ic(Z)|(?[X]:((~icext(Z,X)|X!=A1)&(icext(Z,X)|X=A1))))|iext(uri_owl_oneOf,Z,S1))))))),inference(shift_quantors,status(thm),[c22])).
+fof(c24,axiom,(![X11]:(![X12]:(![X13]:((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|((~iext(uri_owl_oneOf,X11,X12)|(ic(X11)&((![X14]:(~icext(X11,X14)|X14=X13))&(![X15]:(X15!=X13|icext(X11,X15))))))&((~ic(X11)|(?[X16]:((~icext(X11,X16)|X16!=X13)&(icext(X11,X16)|X16=X13))))|iext(uri_owl_oneOf,X11,X12))))))),inference(variable_rename,status(thm),[c23])).
+fof(c26,axiom,(![X11]:(![X12]:(![X13]:(![X14]:(![X15]:((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|((~iext(uri_owl_oneOf,X11,X12)|(ic(X11)&((~icext(X11,X14)|X14=X13)&(X15!=X13|icext(X11,X15)))))&((~ic(X11)|((~icext(X11,skolem0004(X11,X12,X13))|skolem0004(X11,X12,X13)!=X13)&(icext(X11,skolem0004(X11,X12,X13))|skolem0004(X11,X12,X13)=X13)))|iext(uri_owl_oneOf,X11,X12))))))))),inference(shift_quantors,status(thm),[fof(c25,axiom,(![X11]:(![X12]:(![X13]:((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|((~iext(uri_owl_oneOf,X11,X12)|(ic(X11)&((![X14]:(~icext(X11,X14)|X14=X13))&(![X15]:(X15!=X13|icext(X11,X15))))))&((~ic(X11)|((~icext(X11,skolem0004(X11,X12,X13))|skolem0004(X11,X12,X13)!=X13)&(icext(X11,skolem0004(X11,X12,X13))|skolem0004(X11,X12,X13)=X13)))|iext(uri_owl_oneOf,X11,X12))))))),inference(skolemize,status(esa),[c24])).])).
+fof(c27,axiom,(![X11]:(![X12]:(![X13]:(![X14]:(![X15]:((((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|(~iext(uri_owl_oneOf,X11,X12)|ic(X11)))&(((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|(~iext(uri_owl_oneOf,X11,X12)|(~icext(X11,X14)|X14=X13)))&((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|(~iext(uri_owl_oneOf,X11,X12)|(X15!=X13|icext(X11,X15))))))&(((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|((~ic(X11)|(~icext(X11,skolem0004(X11,X12,X13))|skolem0004(X11,X12,X13)!=X13))|iext(uri_owl_oneOf,X11,X12)))&((~iext(uri_rdf_first,X12,X13)|~iext(uri_rdf_rest,X12,uri_rdf_nil))|((~ic(X11)|(icext(X11,skolem0004(X11,X12,X13))|skolem0004(X11,X12,X13)=X13))|iext(uri_owl_oneOf,X11,X12)))))))))),inference(distribute,status(thm),[c26])).
+cnf(c29,axiom,~iext(uri_rdf_first,X110,X109)|~iext(uri_rdf_rest,X110,uri_rdf_nil)|~iext(uri_owl_oneOf,X108,X110)|~icext(X108,X107)|X107=X109,inference(split_conjunct,status(thm),[c27])).
+cnf(c80,plain,~iext(uri_rdf_first,skolem0002,X144)|~iext(uri_rdf_rest,skolem0002,uri_rdf_nil)|~icext(skolem0001,X143)|X143=X144,inference(resolution,status(thm),[c29, c7])).
+cnf(c112,plain,~iext(uri_rdf_first,skolem0002,X146)|~icext(skolem0001,X145)|X145=X146,inference(resolution,status(thm),[c80, c9])).
+cnf(c113,plain,~icext(skolem0001,X147)|X147=uri_ex_w,inference(resolution,status(thm),[c112, c8])).
+cnf(c114,plain,X148=uri_ex_w,inference(resolution,status(thm),[c113, c58])).
+cnf(transitivity,axiom,X29!=X27|X27!=X28|X29=X28,eq_axiom).
+cnf(symmetry,axiom,X25!=X24|X24=X25,eq_axiom).
+cnf(c115,plain,uri_ex_w=X149,inference(resolution,status(thm),[c114, symmetry])).
+cnf(c141,plain,X167!=uri_ex_w|X167=X166,inference(resolution,status(thm),[c115, transitivity])).
+cnf(c168,plain,X169=X168,inference(resolution,status(thm),[c141, c114])).
+cnf(c173,plain,icext(X171,X170),inference(resolution,status(thm),[c168, c51])).
+cnf(c193,plain,$false,inference(resolution,status(thm),[c173, c35])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 26
+# Processed clauses  : 85
+# Factors computed   : 0
+# Resolvents computed: 154
+# Tautologies deleted: 6
+# Forward subsumed   : 29
+# Backward subsumed  : 39
+
+# -------- CPU Time ---------
+# User time          : 0.339 s
+# System time        : 0.246 s
+# Total time         : 0.585 s

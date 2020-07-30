@@ -1,0 +1,21 @@
+# cnf(c2,negated_conjecture,~$true).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+fof(truth,conjecture,$true,input).
+fof(c0,negated_conjecture,(~$true),inference(assume_negation,status(cth),[truth])).
+fof(c1,negated_conjecture,~$true,inference(fof_simplification,status(thm),[c0])).
+cnf(c2,negated_conjecture,~$true,inference(split_conjunct,status(thm),[c1])).
+# SZS output end Saturation
+
+# Initial clauses    : 1
+# Processed clauses  : 1
+# Factors computed   : 0
+# Resolvents computed: 0
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.220 s
+# System time        : 0.319 s
+# Total time         : 0.540 s

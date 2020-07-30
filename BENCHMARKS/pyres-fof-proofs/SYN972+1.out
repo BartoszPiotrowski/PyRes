@@ -1,0 +1,26 @@
+# cnf(c5,negated_conjecture,p(skolem0001,X6)).
+# cnf(c6,negated_conjecture,~p(X7,skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,((?[X]:(![Y]:p(X,Y)))=>(![Y]:(?[X]:p(X,Y)))),input).
+fof(c0,negated_conjecture,(~((?[X]:(![Y]:p(X,Y)))=>(![Y]:(?[X]:p(X,Y))))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,((?[X]:(![Y]:p(X,Y)))&(?[Y]:(![X]:~p(X,Y)))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,((?[X2]:(![X3]:p(X2,X3)))&(?[X4]:(![X5]:~p(X5,X4)))),inference(variable_rename,status(thm),[c1])).
+fof(c4,negated_conjecture,(![X3]:(![X5]:(p(skolem0001,X3)&~p(X5,skolem0002)))),inference(shift_quantors,status(thm),[fof(c3,negated_conjecture,((![X3]:p(skolem0001,X3))&(![X5]:~p(X5,skolem0002))),inference(skolemize,status(esa),[c2])).])).
+cnf(c5,negated_conjecture,p(skolem0001,X6),inference(split_conjunct,status(thm),[c4])).
+cnf(c6,negated_conjecture,~p(X7,skolem0002),inference(split_conjunct,status(thm),[c4])).
+cnf(c7,plain,$false,inference(resolution,status(thm),[c6, c5])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 2
+# Processed clauses  : 2
+# Factors computed   : 0
+# Resolvents computed: 1
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.289 s
+# System time        : 0.227 s
+# Total time         : 0.516 s

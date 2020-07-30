@@ -1,0 +1,28 @@
+# cnf(c2,negated_conjecture,a).
+# cnf(c3,negated_conjecture,b).
+# cnf(c4,negated_conjecture,~a|~b).
+# cnf(c6,plain,~a).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,((a&b)=>(a<=>b)),input).
+fof(c0,negated_conjecture,(~((a&b)=>(a<=>b))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,((a&b)&((~a|~b)&(a|b))),inference(fof_nnf,status(thm),[c0])).
+cnf(c2,negated_conjecture,a,inference(split_conjunct,status(thm),[c1])).
+cnf(c3,negated_conjecture,b,inference(split_conjunct,status(thm),[c1])).
+cnf(c4,negated_conjecture,~a|~b,inference(split_conjunct,status(thm),[c1])).
+cnf(c6,plain,~a,inference(resolution,status(thm),[c4, c3])).
+cnf(c7,plain,$false,inference(resolution,status(thm),[c6, c2])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 4
+# Factors computed   : 0
+# Resolvents computed: 2
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.244 s
+# System time        : 0.173 s
+# Total time         : 0.416 s

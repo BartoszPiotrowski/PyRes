@@ -1,0 +1,29 @@
+# cnf(c19,axiom,cowlThing(X8)).
+# cnf(c20,axiom,~cowlNothing(X9)).
+# cnf(c3,axiom,cowlNothing(skolem0001)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c15,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c16,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c15])).
+fof(c18,axiom,(![X6]:(![X7]:(cowlThing(X6)&~cowlNothing(X7)))),inference(shift_quantors,status(thm),[fof(c17,axiom,((![X6]:cowlThing(X6))&(![X7]:~cowlNothing(X7))),inference(variable_rename,status(thm),[c16])).])).
+cnf(c20,axiom,~cowlNothing(X9),inference(split_conjunct,status(thm),[c18])).
+fof(axiom_3,axiom,(?[X]:(rop(ib,X)&cowlNothing(X))),input).
+fof(c0,axiom,(?[X2]:(rop(ib,X2)&cowlNothing(X2))),inference(variable_rename,status(thm),[axiom_3])).
+fof(c1,axiom,(rop(ib,skolem0001)&cowlNothing(skolem0001)),inference(skolemize,status(esa),[c0])).
+cnf(c3,axiom,cowlNothing(skolem0001),inference(split_conjunct,status(thm),[c1])).
+cnf(c21,plain,$false,inference(resolution,status(thm),[c3, c20])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 8
+# Processed clauses  : 3
+# Factors computed   : 0
+# Resolvents computed: 1
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.268 s
+# System time        : 0.198 s
+# Total time         : 0.467 s

@@ -1,0 +1,334 @@
+# cnf(reflexivity,axiom,X27=X27).
+# cnf(c25,axiom,subset(X28,X28)).
+# cnf(c29,axiom,~empty(skolem0004)).
+# cnf(c32,axiom,empty(skolem0005)).
+# cnf(c9,negated_conjecture,in(skolem0001,skolem0002)).
+# cnf(symmetry,axiom,X29!=X30|X30=X29).
+# cnf(c10,negated_conjecture,in(skolem0003,skolem0002)).
+# cnf(c35,axiom,set_union2(X32,X32)=X32).
+# cnf(c57,plain,X33=set_union2(X33,X33)).
+# cnf(transitivity,axiom,X35!=X36|X36!=X37|X35=X37).
+# cnf(c55,axiom,~in(X38,X39)|~in(X39,X38)).
+# cnf(c62,plain,~in(skolem0002,skolem0001)).
+# cnf(c63,plain,~in(skolem0002,skolem0003)).
+# cnf(c41,axiom,empty(X42)|~empty(set_union2(X43,X42))).
+# cnf(c0,plain,X44!=X46|X45!=X47|unordered_pair(X44,X45)=unordered_pair(X46,X47)).
+# cnf(c47,axiom,empty(X49)|~empty(set_union2(X49,X48))).
+# cnf(c3,plain,X50!=X51|~empty(X50)|empty(X51)).
+# cnf(c67,plain,~empty(X53)|empty(set_union2(X53,X53))).
+# cnf(c70,plain,empty(set_union2(skolem0005,skolem0005))).
+# cnf(c1,plain,X54!=X56|X55!=X57|set_union2(X54,X55)=set_union2(X56,X57)).
+# cnf(c49,axiom,set_union2(X60,X59)=set_union2(X59,X60)).
+# cnf(c51,axiom,unordered_pair(X62,X61)=unordered_pair(X61,X62)).
+# cnf(c2,plain,X63!=X65|X64!=X66|~in(X63,X64)|in(X65,X66)).
+# cnf(c17,axiom,~subset(unordered_pair(X71,X72),X73)|in(X71,X73)).
+# cnf(c89,plain,in(X75,unordered_pair(X75,X74))).
+# cnf(c91,plain,~in(unordered_pair(X77,X76),X77)).
+# cnf(c4,plain,X78!=X80|X79!=X81|~subset(X78,X79)|subset(X80,X81)).
+# cnf(c18,axiom,~subset(unordered_pair(X82,X83),X84)|in(X83,X84)).
+# cnf(c93,plain,in(X86,unordered_pair(X85,X86))).
+# cnf(c94,plain,~in(unordered_pair(X87,X88),X88)).
+# cnf(c22,axiom,~subset(X90,X89)|set_union2(X90,X89)=X89).
+# cnf(c11,negated_conjecture,set_union2(unordered_pair(skolem0001,skolem0003),skolem0002)!=skolem0002).
+# cnf(c59,plain,X93!=X92|X93=set_union2(X92,X92)).
+# cnf(c60,plain,X97!=set_union2(X96,X96)|X97=X96).
+# cnf(c19,axiom,~in(X100,X99)|~in(X101,X99)|subset(unordered_pair(X100,X101),X99)).
+# cnf(c79,plain,~empty(set_union2(X104,X105))|empty(set_union2(X105,X104))).
+# cnf(c84,plain,~empty(unordered_pair(X106,X107))|empty(unordered_pair(X107,X106))).
+# cnf(c64,plain,X108!=X110|unordered_pair(X108,X109)=unordered_pair(X110,set_union2(X109,X109))).
+# cnf(c92,plain,X111!=X112|X111!=X113|subset(X112,X113)).
+# cnf(c119,plain,X114!=X115|subset(X115,X114)).
+# cnf(c122,plain,subset(X117,set_union2(X117,X117))).
+# cnf(c123,plain,subset(set_union2(X118,X118),X118)).
+# cnf(c65,plain,X120!=X121|unordered_pair(X120,set_union2(X119,X119))=unordered_pair(X121,X119)).
+# cnf(c121,plain,subset(set_union2(X122,X123),set_union2(X123,X122))).
+# cnf(c125,plain,subset(unordered_pair(X125,X124),unordered_pair(X124,X125))).
+# cnf(c131,plain,set_union2(set_union2(X130,X130),X130)=X130).
+# cnf(c66,plain,X131!=X132|unordered_pair(X131,X133)=unordered_pair(X132,X133)).
+# cnf(c143,plain,subset(X134,set_union2(set_union2(X134,X134),X134))).
+# cnf(c153,plain,X135=set_union2(set_union2(X135,X135),X135)).
+# cnf(c164,plain,subset(set_union2(set_union2(X138,X138),X138),X138)).
+# cnf(c73,plain,empty(set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005)))).
+# cnf(c117,plain,set_union2(X140,X140)!=X141|subset(X141,X140)).
+# cnf(c74,plain,X146!=X144|set_union2(X146,X145)=set_union2(X144,set_union2(X145,X145))).
+# cnf(c118,plain,X148!=X149|subset(X149,set_union2(X148,X148))).
+# cnf(c75,plain,X155!=X153|set_union2(X155,set_union2(X154,X154))=set_union2(X153,X154)).
+# cnf(c170,plain,~empty(X156)|empty(set_union2(set_union2(X156,X156),X156))).
+# cnf(c209,plain,empty(set_union2(set_union2(skolem0005,skolem0005),skolem0005))).
+# cnf(c212,plain,empty(set_union2(skolem0005,set_union2(skolem0005,skolem0005)))).
+# cnf(c76,plain,X158!=X157|set_union2(X158,X159)=set_union2(X157,X159)).
+# cnf(c99,plain,X162=set_union2(set_union2(X162,X162),set_union2(X162,X162))).
+# cnf(c77,plain,X163!=X165|unordered_pair(X163,set_union2(X164,X166))=unordered_pair(X165,set_union2(X166,X164))).
+# cnf(c103,plain,set_union2(set_union2(X168,X168),set_union2(X168,X168))=X168).
+# cnf(c114,plain,unordered_pair(X171,X170)=unordered_pair(X171,set_union2(X170,X170))).
+# cnf(c127,plain,in(X173,set_union2(unordered_pair(X173,X172),unordered_pair(X173,X172)))).
+# cnf(c78,plain,X176!=X174|set_union2(X176,set_union2(X175,X177))=set_union2(X174,set_union2(X177,X175))).
+# cnf(c128,plain,in(X179,set_union2(unordered_pair(X178,X179),unordered_pair(X178,X179)))).
+# cnf(c129,plain,set_union2(X180,set_union2(X180,X180))=set_union2(X180,X180)).
+# cnf(c311,plain,set_union2(X181,set_union2(X181,X181))=X181).
+# cnf(c320,plain,subset(X182,set_union2(X182,set_union2(X182,X182)))).
+# cnf(c332,plain,X183=set_union2(X183,set_union2(X183,X183))).
+# cnf(c80,plain,X186!=set_union2(X184,X185)|X186=set_union2(X185,X184)).
+# cnf(c342,plain,subset(set_union2(X188,set_union2(X188,X188)),X188)).
+# cnf(c82,plain,X193!=X195|unordered_pair(X193,unordered_pair(X194,X196))=unordered_pair(X195,unordered_pair(X196,X194))).
+# cnf(c350,plain,~empty(X201)|empty(set_union2(X201,set_union2(X201,X201)))).
+# cnf(c83,plain,X204!=X202|set_union2(X204,unordered_pair(X203,X205))=set_union2(X202,unordered_pair(X205,X203))).
+# cnf(c135,plain,unordered_pair(X207,set_union2(X206,X206))=unordered_pair(X207,X206)).
+# cnf(c147,plain,set_union2(set_union2(X208,X208),X208)=set_union2(X208,X208)).
+# cnf(c156,plain,unordered_pair(set_union2(X210,X210),X211)=unordered_pair(X210,X211)).
+# cnf(c157,plain,unordered_pair(X212,X213)=unordered_pair(set_union2(X212,X212),X213)).
+# cnf(c85,plain,X216!=unordered_pair(X215,X214)|X216=unordered_pair(X214,X215)).
+# cnf(c176,plain,set_union2(set_union2(set_union2(X221,X221),X221),X221)=X221).
+# cnf(c183,plain,subset(set_union2(set_union2(X222,X222),set_union2(X222,X222)),X222)).
+# cnf(c190,plain,set_union2(X223,X224)=set_union2(X223,set_union2(X224,X224))).
+# cnf(c87,plain,skolem0001!=X225|skolem0002!=X226|in(X225,X226)).
+# cnf(c538,plain,skolem0001!=X228|in(X228,skolem0002)).
+# cnf(c545,plain,in(set_union2(skolem0001,skolem0001),skolem0002)).
+# cnf(c549,plain,~in(skolem0002,set_union2(skolem0001,skolem0001))).
+# cnf(c88,plain,skolem0003!=X229|skolem0002!=X230|in(X229,X230)).
+# cnf(c551,plain,skolem0003!=X231|in(X231,skolem0002)).
+# cnf(c558,plain,in(set_union2(skolem0003,skolem0003),skolem0002)).
+# cnf(c562,plain,~in(skolem0002,set_union2(skolem0003,skolem0003))).
+# cnf(c195,plain,subset(X232,set_union2(set_union2(X232,X232),set_union2(X232,X232)))).
+# cnf(c90,plain,X234!=X233|unordered_pair(X234,X236)!=X235|in(X233,X235)).
+# cnf(c571,plain,X238!=X237|in(X237,unordered_pair(X238,X239))).
+# cnf(c585,plain,in(X242,unordered_pair(set_union2(X242,X242),X243))).
+# cnf(c593,plain,in(set_union2(X244,X244),unordered_pair(X244,X245))).
+# cnf(c598,plain,~in(unordered_pair(set_union2(X247,X247),X246),X247)).
+# cnf(c95,plain,X250!=X248|unordered_pair(X249,X250)!=X251|in(X248,X251)).
+# cnf(c601,plain,~in(unordered_pair(X253,X252),set_union2(X253,X253))).
+# cnf(c572,plain,X254!=X255|in(X255,unordered_pair(X256,X254))).
+# cnf(c620,plain,in(X260,unordered_pair(X259,set_union2(X260,X260)))).
+# cnf(c628,plain,in(set_union2(X262,X262),unordered_pair(X261,X262))).
+# cnf(c97,plain,set_union2(X263,X264)=set_union2(set_union2(X264,X263),set_union2(X264,X263))).
+# cnf(c633,plain,~in(unordered_pair(X265,set_union2(X266,X266)),X266)).
+# cnf(c636,plain,~in(unordered_pair(X267,X268),set_union2(X268,X268))).
+# cnf(c101,plain,unordered_pair(X277,X278)=set_union2(unordered_pair(X278,X277),unordered_pair(X278,X277))).
+# cnf(c199,plain,subset(set_union2(set_union2(X287,X287),X287),set_union2(X287,X287))).
+# cnf(c204,plain,set_union2(X289,set_union2(X288,X288))=set_union2(X289,X288)).
+# cnf(c106,plain,~in(X292,unordered_pair(X291,X290))|subset(unordered_pair(X292,X291),unordered_pair(X291,X290))).
+# cnf(c713,plain,subset(unordered_pair(X295,X295),unordered_pair(X295,X294))).
+# cnf(c107,plain,~in(X302,skolem0002)|subset(unordered_pair(X302,skolem0001),skolem0002)).
+# cnf(c724,plain,subset(unordered_pair(skolem0001,skolem0001),skolem0002)).
+# cnf(c725,plain,subset(unordered_pair(skolem0003,skolem0001),skolem0002)).
+# cnf(c108,plain,~in(X303,skolem0002)|subset(unordered_pair(X303,skolem0003),skolem0002)).
+# cnf(c736,plain,subset(unordered_pair(skolem0001,skolem0003),skolem0002)).
+# cnf(c737,plain,subset(unordered_pair(skolem0003,skolem0003),skolem0002)).
+# cnf(c109,plain,~in(X306,unordered_pair(X305,X304))|subset(unordered_pair(X306,X304),unordered_pair(X305,X304))).
+# cnf(c750,plain,subset(unordered_pair(X309,X309),unordered_pair(X310,X309))).
+# cnf(c111,plain,unordered_pair(set_union2(X314,X315),X313)=unordered_pair(set_union2(X315,X314),set_union2(X313,X313))).
+# cnf(c222,plain,set_union2(set_union2(X319,X319),X318)=set_union2(X319,X318)).
+# cnf(c223,plain,set_union2(X322,X321)=set_union2(set_union2(X322,X322),X321)).
+# cnf(c112,plain,unordered_pair(set_union2(X324,X324),X325)=unordered_pair(X324,set_union2(X325,X325))).
+# cnf(c270,plain,subset(unordered_pair(X330,set_union2(X331,X331)),unordered_pair(X330,X331))).
+# cnf(c113,plain,unordered_pair(X333,X332)=unordered_pair(set_union2(X333,X333),set_union2(X332,X332))).
+# cnf(c287,plain,~in(set_union2(unordered_pair(X341,X340),unordered_pair(X341,X340)),X341)).
+# cnf(c300,plain,~in(set_union2(unordered_pair(X342,X343),unordered_pair(X342,X343)),X343)).
+# cnf(c115,plain,unordered_pair(unordered_pair(X345,X346),X344)=unordered_pair(unordered_pair(X346,X345),set_union2(X344,X344))).
+# cnf(c302,plain,subset(set_union2(X347,X347),set_union2(X347,set_union2(X347,X347)))).
+# cnf(c349,plain,subset(set_union2(X350,set_union2(X350,X350)),set_union2(X350,X350))).
+# cnf(c116,plain,set_union2(X352,X353)!=X354|subset(X354,set_union2(X353,X352))).
+# cnf(c120,plain,unordered_pair(X362,X364)!=X363|subset(X363,unordered_pair(X364,X362))).
+# cnf(c372,plain,set_union2(set_union2(X370,set_union2(X370,X370)),X370)=X370).
+# cnf(c404,plain,subset(unordered_pair(X372,X371),unordered_pair(X372,set_union2(X371,X371)))).
+# cnf(c126,plain,X375!=X373|set_union2(X375,X375)!=X374|subset(X373,X374)).
+# cnf(c130,plain,set_union2(X388,X388)!=X386|X388!=X387|subset(X386,X387)).
+# cnf(c985,plain,X389!=X390|subset(X389,X390)).
+# cnf(c132,plain,unordered_pair(set_union2(X395,X397),set_union2(X396,X396))=unordered_pair(set_union2(X397,X395),X396)).
+# cnf(c133,plain,unordered_pair(set_union2(X405,X405),set_union2(X406,X406))=unordered_pair(X405,X406)).
+# cnf(c987,plain,X409!=X410|subset(set_union2(X409,X409),X410)).
+# cnf(c134,plain,unordered_pair(X415,set_union2(X416,X416))=unordered_pair(set_union2(X415,X415),X416)).
+# cnf(c990,plain,set_union2(X417,X417)!=X418|subset(X417,X418)).
+# cnf(c136,plain,unordered_pair(unordered_pair(X423,X425),set_union2(X424,X424))=unordered_pair(unordered_pair(X425,X423),X424)).
+# cnf(c423,plain,subset(set_union2(X430,X430),set_union2(set_union2(X430,X430),X430))).
+# cnf(c137,plain,set_union2(X434,X435)!=X432|set_union2(X435,X434)!=X433|subset(X432,X433)).
+# cnf(c444,plain,subset(unordered_pair(X440,X439),unordered_pair(set_union2(X440,X440),X439))).
+# cnf(c138,plain,set_union2(set_union2(X445,X446),set_union2(X446,X445))=set_union2(X446,X445)).
+# cnf(c463,plain,subset(unordered_pair(set_union2(X452,X452),X451),unordered_pair(X452,X451))).
+# cnf(c139,plain,unordered_pair(X458,X457)!=X456|unordered_pair(X457,X458)!=X455|subset(X456,X455)).
+# cnf(c482,plain,unordered_pair(X463,X464)=unordered_pair(set_union2(X464,X464),X463)).
+# cnf(c483,plain,unordered_pair(X466,X465)=unordered_pair(X465,set_union2(X466,X466))).
+# cnf(c487,plain,unordered_pair(set_union2(X468,X468),X467)=unordered_pair(X467,X468)).
+# cnf(c142,plain,set_union2(unordered_pair(X470,X469),unordered_pair(X469,X470))=unordered_pair(X469,X470)).
+# cnf(c491,plain,unordered_pair(X477,set_union2(X476,X476))=unordered_pair(X476,X477)).
+# cnf(c144,plain,X481!=X482|unordered_pair(X481,set_union2(set_union2(X483,X483),X483))=unordered_pair(X482,X483)).
+# cnf(c492,plain,subset(X484,set_union2(set_union2(set_union2(X484,X484),X484),X484))).
+# cnf(c508,plain,X485=set_union2(set_union2(set_union2(X485,X485),X485),X485)).
+# cnf(c516,plain,subset(set_union2(X487,set_union2(X486,X486)),set_union2(X487,X486))).
+# cnf(c523,plain,set_union2(X489,X488)=set_union2(set_union2(X488,X488),X489)).
+# cnf(c145,plain,unordered_pair(set_union2(set_union2(X492,X492),X492),set_union2(X491,X491))=unordered_pair(X492,X491)).
+# cnf(c583,plain,in(X497,unordered_pair(set_union2(set_union2(X497,X497),X497),X498))).
+# cnf(c587,plain,in(unordered_pair(X501,X499),unordered_pair(unordered_pair(X499,X501),X500))).
+# cnf(c146,plain,X504!=X502|set_union2(X504,set_union2(set_union2(X503,X503),X503))=set_union2(X502,X503)).
+# cnf(c588,plain,in(set_union2(set_union2(X506,X506),X506),unordered_pair(X506,X505))).
+# cnf(c589,plain,in(set_union2(X507,X508),unordered_pair(set_union2(X508,X507),X509))).
+# cnf(c592,plain,in(X510,unordered_pair(set_union2(X510,set_union2(X510,X510)),X511))).
+# cnf(c595,plain,in(set_union2(X513,set_union2(X513,X513)),unordered_pair(X513,X512))).
+# cnf(c618,plain,in(X514,unordered_pair(X515,set_union2(set_union2(X514,X514),X514)))).
+# cnf(c148,plain,unordered_pair(set_union2(set_union2(X517,X517),X517),X516)=unordered_pair(X517,set_union2(X516,X516))).
+# cnf(c622,plain,in(unordered_pair(X520,X519),unordered_pair(X518,unordered_pair(X519,X520)))).
+# cnf(c623,plain,in(set_union2(set_union2(X522,X522),X522),unordered_pair(X521,X522))).
+# cnf(c624,plain,in(set_union2(X524,X525),unordered_pair(X523,set_union2(X525,X524)))).
+# cnf(c627,plain,in(X527,unordered_pair(X526,set_union2(X527,set_union2(X527,X527))))).
+# cnf(c630,plain,in(set_union2(X529,set_union2(X529,X529)),unordered_pair(X528,X529))).
+# cnf(c150,plain,set_union2(set_union2(set_union2(X530,X530),set_union2(X530,X530)),set_union2(X530,X530))=X530).
+# cnf(c689,plain,subset(set_union2(X532,X533),set_union2(X532,set_union2(X533,X533)))).
+# cnf(c696,plain,set_union2(X535,set_union2(X536,X536))=set_union2(X536,X535)).
+# cnf(c151,plain,X539!=set_union2(set_union2(X538,X538),X538)|X539=X538).
+# cnf(c152,plain,set_union2(set_union2(X546,X546),X546)!=X545|subset(X545,X546)).
+# cnf(c154,plain,unordered_pair(set_union2(X552,X553),X554)=unordered_pair(set_union2(X553,X552),X554)).
+# cnf(c714,plain,subset(unordered_pair(set_union2(X557,X557),X558),unordered_pair(X558,X557))).
+# cnf(c715,plain,subset(unordered_pair(set_union2(X564,X564),X564),unordered_pair(X564,X563))).
+# cnf(c155,plain,unordered_pair(set_union2(set_union2(X565,X565),X565),X566)=unordered_pair(X565,X566)).
+# cnf(c717,plain,subset(unordered_pair(X575,X574),unordered_pair(X574,set_union2(X575,X575)))).
+# cnf(c159,plain,unordered_pair(unordered_pair(X579,X580),X578)=unordered_pair(unordered_pair(X580,X579),X578)).
+# cnf(c748,plain,subset(unordered_pair(set_union2(X583,X583),X583),unordered_pair(X584,X583))).
+# cnf(c160,plain,X593!=X591|set_union2(set_union2(X593,X593),X593)!=X592|subset(X591,X592)).
+# cnf(c781,plain,subset(set_union2(X603,X602),set_union2(set_union2(X603,X603),X602))).
+# cnf(c161,plain,in(X605,set_union2(set_union2(unordered_pair(X605,X604),unordered_pair(X605,X604)),unordered_pair(X605,X604)))).
+# cnf(c788,plain,set_union2(set_union2(X607,X607),X608)=set_union2(X608,X607)).
+# cnf(c162,plain,in(X614,set_union2(set_union2(unordered_pair(X613,X614),unordered_pair(X613,X614)),unordered_pair(X613,X614)))).
+# cnf(c805,plain,subset(set_union2(set_union2(X617,X617),X618),set_union2(X617,X618))).
+# cnf(c812,plain,set_union2(X619,X620)=set_union2(X620,set_union2(X619,X619))).
+# cnf(c163,plain,set_union2(X623,set_union2(set_union2(X623,X623),X623))=set_union2(set_union2(X623,X623),X623)).
+# cnf(c909,plain,subset(set_union2(X627,X628),set_union2(set_union2(X628,X628),X627))).
+# cnf(c910,plain,subset(X629,set_union2(X629,set_union2(set_union2(X629,X629),X629)))).
+# cnf(c911,plain,subset(set_union2(X631,set_union2(X630,X630)),set_union2(X630,X631))).
+# cnf(c165,plain,X632!=X634|unordered_pair(X632,X633)=unordered_pair(X634,set_union2(set_union2(X633,X633),X633))).
+# cnf(c912,plain,subset(set_union2(X636,X635),set_union2(X635,set_union2(X636,X636)))).
+# cnf(c921,plain,subset(set_union2(set_union2(X638,X638),X639),set_union2(X639,X638))).
+# cnf(c925,plain,subset(unordered_pair(X640,set_union2(X641,X641)),unordered_pair(X641,X640))).
+# cnf(c166,plain,unordered_pair(X644,set_union2(X645,X645))=unordered_pair(set_union2(set_union2(X644,X644),X644),X645)).
+# cnf(c939,plain,subset(unordered_pair(X653,X652),unordered_pair(set_union2(X652,X652),X653))).
+# cnf(c167,plain,X658!=X656|set_union2(X658,X657)=set_union2(X656,set_union2(set_union2(X657,X657),X657))).
+# cnf(c940,plain,subset(X661,set_union2(set_union2(X661,set_union2(X661,X661)),X661))).
+# cnf(c943,plain,subset(X662,set_union2(X662,set_union2(X662,set_union2(X662,X662))))).
+# cnf(c958,plain,X663=set_union2(set_union2(X663,set_union2(X663,X663)),X663)).
+# cnf(c168,plain,X666=set_union2(set_union2(set_union2(X666,X666),X666),set_union2(set_union2(X666,X666),X666))).
+# cnf(c997,plain,subset(set_union2(set_union2(set_union2(X670,X670),X670),X670),X670)).
+# cnf(c169,plain,unordered_pair(X676,X675)=unordered_pair(set_union2(set_union2(X676,X676),X676),set_union2(X675,X675))).
+# cnf(c1016,plain,subset(set_union2(set_union2(X684,set_union2(X684,X684)),X684),X684)).
+# cnf(c171,plain,unordered_pair(X685,X686)=unordered_pair(set_union2(set_union2(X685,X685),X685),X686)).
+# cnf(c172,plain,X694!=X693|X694=set_union2(set_union2(X693,X693),X693)).
+# cnf(c173,plain,X700!=X701|subset(X701,set_union2(set_union2(X700,X700),X700))).
+# cnf(c175,plain,set_union2(set_union2(X712,X712),X712)!=X710|X712!=X711|subset(X710,X711)).
+# cnf(c180,plain,empty(set_union2(set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005)),set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005))))).
+# cnf(c185,plain,subset(set_union2(set_union2(set_union2(X743,X743),set_union2(X743,X743)),set_union2(X743,X743)),X743)).
+# cnf(c186,plain,set_union2(set_union2(X754,X755),X756)=set_union2(set_union2(X755,X754),set_union2(X756,X756))).
+# cnf(c1446,plain,X760=set_union2(X760,set_union2(set_union2(X760,X760),X760))).
+# cnf(c187,plain,set_union2(set_union2(set_union2(X763,X763),X763),X764)=set_union2(X763,set_union2(X764,X764))).
+# cnf(c188,plain,set_union2(set_union2(X774,X774),X775)=set_union2(X774,set_union2(X775,X775))).
+# cnf(c1536,plain,~in(unordered_pair(set_union2(set_union2(X780,X780),X780),X779),X780)).
+# cnf(c1541,plain,~in(unordered_pair(unordered_pair(X782,X781),X783),unordered_pair(X781,X782))).
+# cnf(c1586,plain,~in(unordered_pair(X785,X784),set_union2(set_union2(X785,X785),X785))).
+# cnf(c189,plain,set_union2(X786,X787)=set_union2(set_union2(X786,X786),set_union2(X787,X787))).
+# cnf(c1591,plain,~in(unordered_pair(set_union2(X789,X791),X790),set_union2(X791,X789))).
+# cnf(c1596,plain,~in(unordered_pair(set_union2(X793,set_union2(X793,X793)),X792),X793)).
+# cnf(c1601,plain,~in(unordered_pair(X795,X794),set_union2(X795,set_union2(X795,X795)))).
+# cnf(c1606,plain,~in(unordered_pair(X796,set_union2(set_union2(X797,X797),X797)),X797)).
+# cnf(c191,plain,set_union2(unordered_pair(X799,X800),X798)=set_union2(unordered_pair(X800,X799),set_union2(X798,X798))).
+# cnf(c1641,plain,~in(unordered_pair(X801,unordered_pair(X803,X802)),unordered_pair(X802,X803))).
+# cnf(c1646,plain,~in(unordered_pair(X804,X805),set_union2(set_union2(X805,X805),X805))).
+# cnf(c1651,plain,~in(unordered_pair(X806,set_union2(X808,X807)),set_union2(X807,X808))).
+# cnf(c1656,plain,~in(unordered_pair(X809,set_union2(X810,set_union2(X810,X810))),X810)).
+# cnf(c1661,plain,~in(unordered_pair(X811,X812),set_union2(X812,set_union2(X812,X812)))).
+# cnf(c192,plain,set_union2(X814,X813)=set_union2(set_union2(set_union2(X814,X814),X814),set_union2(X813,X813))).
+# cnf(c193,plain,subset(set_union2(X823,X824),set_union2(set_union2(X824,X823),set_union2(X824,X823)))).
+# cnf(c194,plain,subset(X832,set_union2(set_union2(set_union2(X832,X832),X832),set_union2(set_union2(X832,X832),X832)))).
+# cnf(c198,plain,subset(unordered_pair(X842,X841),set_union2(unordered_pair(X841,X842),unordered_pair(X841,X842)))).
+# cnf(c200,plain,set_union2(set_union2(X853,X854),set_union2(X852,X852))=set_union2(set_union2(X854,X853),X852)).
+# cnf(c1982,plain,set_union2(X862,set_union2(set_union2(X862,X862),X862))=X862).
+# cnf(c201,plain,set_union2(set_union2(set_union2(X863,X863),X863),set_union2(X864,X864))=set_union2(X863,X864)).
+# cnf(c2169,plain,X866=set_union2(X866,set_union2(X866,set_union2(X866,X866)))).
+# cnf(c202,plain,set_union2(set_union2(X870,X870),set_union2(X871,X871))=set_union2(X870,X871)).
+# cnf(c203,plain,set_union2(X878,set_union2(X877,X877))=set_union2(set_union2(X878,X878),X877)).
+# cnf(c2486,plain,subset(set_union2(X880,set_union2(set_union2(X880,X880),X880)),X880)).
+# cnf(c205,plain,set_union2(unordered_pair(X885,X886),set_union2(X884,X884))=set_union2(unordered_pair(X886,X885),X884)).
+# cnf(c206,plain,set_union2(X895,set_union2(X894,X894))=set_union2(set_union2(set_union2(X895,X895),X895),X894)).
+# cnf(c207,plain,empty(set_union2(set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005)),set_union2(skolem0005,skolem0005)))).
+# cnf(c2848,plain,subset(set_union2(X903,set_union2(X903,set_union2(X903,X903))),X903)).
+# cnf(c208,plain,empty(set_union2(set_union2(set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005)),set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005))),set_union2(set_union2(skolem0005,skolem0005),set_union2(skolem0005,skolem0005))))).
+# cnf(c2885,plain,set_union2(X906,set_union2(X906,set_union2(X906,X906)))=X906).
+# cnf(c211,plain,empty(set_union2(set_union2(set_union2(set_union2(skolem0005,skolem0005),skolem0005),set_union2(set_union2(skolem0005,skolem0005),skolem0005)),set_union2(set_union2(skolem0005,skolem0005),skolem0005)))).
+# cnf(c336,plain,X914!=set_union2(X913,set_union2(X913,X913))|X914=X913).
+# cnf(c214,plain,empty(set_union2(set_union2(set_union2(skolem0005,skolem0005),skolem0005),set_union2(set_union2(skolem0005,skolem0005),skolem0005)))).
+# cnf(c216,plain,empty(set_union2(set_union2(set_union2(skolem0005,set_union2(skolem0005,skolem0005)),set_union2(skolem0005,set_union2(skolem0005,skolem0005))),set_union2(skolem0005,set_union2(skolem0005,skolem0005))))).
+# cnf(c219,plain,empty(set_union2(set_union2(skolem0005,set_union2(skolem0005,skolem0005)),set_union2(skolem0005,set_union2(skolem0005,skolem0005))))).
+# cnf(c220,plain,set_union2(set_union2(X926,X927),X925)=set_union2(set_union2(X927,X926),X925)).
+# cnf(c337,plain,set_union2(X931,set_union2(X931,X931))!=X930|subset(X930,X931)).
+# cnf(c221,plain,set_union2(set_union2(set_union2(X934,X934),X934),X935)=set_union2(X934,X935)).
+# cnf(c225,plain,set_union2(unordered_pair(X942,X943),X941)=set_union2(unordered_pair(X943,X942),X941)).
+# cnf(c358,plain,X949!=X948|X949=set_union2(X948,set_union2(X948,X948))).
+# cnf(c226,plain,set_union2(X951,X950)=set_union2(set_union2(set_union2(X951,X951),X951),X950)).
+# cnf(c359,plain,X956!=X957|subset(X957,set_union2(X956,set_union2(X956,X956)))).
+# cnf(c227,plain,set_union2(X959,X958)=set_union2(set_union2(set_union2(X959,X959),set_union2(X959,X959)),X958)).
+# cnf(c540,plain,skolem0001!=X963|in(X963,set_union2(skolem0002,skolem0002))).
+# cnf(c3555,plain,in(skolem0001,set_union2(skolem0002,skolem0002))).
+# cnf(c229,plain,X964!=X966|unordered_pair(X964,X965)=unordered_pair(X966,set_union2(set_union2(X965,X965),set_union2(X965,X965)))).
+# cnf(c3559,plain,~in(set_union2(skolem0002,skolem0002),skolem0001)).
+# cnf(c544,plain,in(set_union2(set_union2(skolem0001,skolem0001),skolem0001),skolem0002)).
+# cnf(c547,plain,in(set_union2(skolem0001,set_union2(skolem0001,skolem0001)),skolem0002)).
+# cnf(c553,plain,skolem0003!=X967|in(X967,set_union2(skolem0002,skolem0002))).
+# cnf(c3653,plain,in(skolem0003,set_union2(skolem0002,skolem0002))).
+# cnf(c230,plain,unordered_pair(X968,set_union2(X969,X969))=unordered_pair(set_union2(set_union2(X968,X968),set_union2(X968,X968)),X969)).
+# cnf(c3657,plain,~in(set_union2(skolem0002,skolem0002),skolem0003)).
+# cnf(c557,plain,in(set_union2(set_union2(skolem0003,skolem0003),skolem0003),skolem0002)).
+# cnf(c560,plain,in(set_union2(skolem0003,set_union2(skolem0003,skolem0003)),skolem0002)).
+# cnf(c569,plain,set_union2(X975,X975)!=X973|in(X973,unordered_pair(X975,X974))).
+# cnf(c231,plain,X978!=X976|set_union2(X978,X977)=set_union2(X976,set_union2(set_union2(X977,X977),set_union2(X977,X977)))).
+# cnf(c232,plain,subset(set_union2(set_union2(set_union2(X989,X989),set_union2(X989,X989)),set_union2(set_union2(X989,X989),set_union2(X989,X989))),X989)).
+# cnf(c233,plain,set_union2(X1000,X1001)=set_union2(set_union2(set_union2(X1000,X1000),set_union2(X1000,X1000)),set_union2(X1001,X1001))).
+# cnf(c570,plain,X1006!=X1007|in(X1007,unordered_pair(set_union2(X1006,X1006),X1005))).
+# cnf(c234,plain,X1012=set_union2(set_union2(set_union2(X1012,X1012),set_union2(X1012,X1012)),set_union2(set_union2(X1012,X1012),set_union2(X1012,X1012)))).
+# cnf(c603,plain,X1016!=X1015|in(X1015,unordered_pair(X1014,set_union2(X1016,X1016)))).
+# cnf(c235,plain,unordered_pair(X1025,X1024)=unordered_pair(set_union2(set_union2(X1025,X1025),set_union2(X1025,X1025)),set_union2(X1024,X1024))).
+# cnf(c612,plain,set_union2(X1026,X1026)!=X1027|in(X1027,unordered_pair(X1028,X1026))).
+# cnf(c236,plain,~empty(X1037)|empty(set_union2(set_union2(X1037,X1037),set_union2(X1037,X1037)))).
+# cnf(c237,plain,unordered_pair(X1048,X1049)=unordered_pair(set_union2(set_union2(X1048,X1048),set_union2(X1048,X1048)),X1049)).
+# cnf(c723,plain,subset(unordered_pair(set_union2(skolem0001,skolem0001),skolem0001),skolem0002)).
+# cnf(c726,plain,subset(unordered_pair(set_union2(skolem0003,skolem0003),skolem0001),skolem0002)).
+# cnf(c730,plain,set_union2(unordered_pair(skolem0001,skolem0001),skolem0002)=skolem0002).
+# cnf(c734,plain,set_union2(unordered_pair(skolem0003,skolem0001),skolem0002)=skolem0002).
+# cnf(c240,plain,X1056!=X1055|X1056=set_union2(set_union2(X1055,X1055),set_union2(X1055,X1055))).
+# cnf(c735,plain,subset(unordered_pair(set_union2(skolem0001,skolem0001),skolem0003),skolem0002)).
+# cnf(c738,plain,subset(unordered_pair(set_union2(skolem0003,skolem0003),skolem0003),skolem0002)).
+# cnf(c241,plain,set_union2(X1059,set_union2(X1058,X1058))=set_union2(set_union2(set_union2(X1059,X1059),set_union2(X1059,X1059)),X1058)).
+# cnf(c742,plain,set_union2(unordered_pair(skolem0001,skolem0003),skolem0002)=skolem0002).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t48_zfmisc_1,conjecture,(![A]:(![B]:(![C]:((in(A,B)&in(C,B))=>set_union2(unordered_pair(A,C),B)=B)))),input).
+fof(c5,negated_conjecture,(~(![A]:(![B]:(![C]:((in(A,B)&in(C,B))=>set_union2(unordered_pair(A,C),B)=B))))),inference(assume_negation,status(cth),[t48_zfmisc_1])).
+fof(c6,negated_conjecture,(?[A]:(?[B]:(?[C]:((in(A,B)&in(C,B))&set_union2(unordered_pair(A,C),B)!=B)))),inference(fof_nnf,status(thm),[c5])).
+fof(c7,negated_conjecture,(?[X2]:(?[X3]:(?[X4]:((in(X2,X3)&in(X4,X3))&set_union2(unordered_pair(X2,X4),X3)!=X3)))),inference(variable_rename,status(thm),[c6])).
+fof(c8,negated_conjecture,((in(skolem0001,skolem0002)&in(skolem0003,skolem0002))&set_union2(unordered_pair(skolem0001,skolem0003),skolem0002)!=skolem0002),inference(skolemize,status(esa),[c7])).
+cnf(c11,negated_conjecture,set_union2(unordered_pair(skolem0001,skolem0003),skolem0002)!=skolem0002,inference(split_conjunct,status(thm),[c8])).
+fof(t12_xboole_1,axiom,(![A]:(![B]:(subset(A,B)=>set_union2(A,B)=B))),input).
+fof(c20,axiom,(![A]:(![B]:(~subset(A,B)|set_union2(A,B)=B))),inference(fof_nnf,status(thm),[t12_xboole_1])).
+fof(c21,axiom,(![X11]:(![X12]:(~subset(X11,X12)|set_union2(X11,X12)=X12))),inference(variable_rename,status(thm),[c20])).
+cnf(c22,axiom,~subset(X90,X89)|set_union2(X90,X89)=X89,inference(split_conjunct,status(thm),[c21])).
+cnf(c9,negated_conjecture,in(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c8])).
+cnf(c10,negated_conjecture,in(skolem0003,skolem0002),inference(split_conjunct,status(thm),[c8])).
+fof(t38_zfmisc_1,axiom,(![A]:(![B]:(![C]:(subset(unordered_pair(A,B),C)<=>(in(A,C)&in(B,C)))))),input).
+fof(c12,axiom,(![A]:(![B]:(![C]:((~subset(unordered_pair(A,B),C)|(in(A,C)&in(B,C)))&((~in(A,C)|~in(B,C))|subset(unordered_pair(A,B),C)))))),inference(fof_nnf,status(thm),[t38_zfmisc_1])).
+fof(c13,axiom,((![A]:(![B]:(![C]:(~subset(unordered_pair(A,B),C)|(in(A,C)&in(B,C))))))&(![A]:(![B]:(![C]:((~in(A,C)|~in(B,C))|subset(unordered_pair(A,B),C)))))),inference(shift_quantors,status(thm),[c12])).
+fof(c15,axiom,(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:((~subset(unordered_pair(X5,X6),X7)|(in(X5,X7)&in(X6,X7)))&((~in(X8,X10)|~in(X9,X10))|subset(unordered_pair(X8,X9),X10))))))))),inference(shift_quantors,status(thm),[fof(c14,axiom,((![X5]:(![X6]:(![X7]:(~subset(unordered_pair(X5,X6),X7)|(in(X5,X7)&in(X6,X7))))))&(![X8]:(![X9]:(![X10]:((~in(X8,X10)|~in(X9,X10))|subset(unordered_pair(X8,X9),X10)))))),inference(variable_rename,status(thm),[c13])).])).
+fof(c16,axiom,(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:(((~subset(unordered_pair(X5,X6),X7)|in(X5,X7))&(~subset(unordered_pair(X5,X6),X7)|in(X6,X7)))&((~in(X8,X10)|~in(X9,X10))|subset(unordered_pair(X8,X9),X10))))))))),inference(distribute,status(thm),[c15])).
+cnf(c19,axiom,~in(X100,X99)|~in(X101,X99)|subset(unordered_pair(X100,X101),X99),inference(split_conjunct,status(thm),[c16])).
+cnf(c108,plain,~in(X303,skolem0002)|subset(unordered_pair(X303,skolem0003),skolem0002),inference(resolution,status(thm),[c19, c10])).
+cnf(c736,plain,subset(unordered_pair(skolem0001,skolem0003),skolem0002),inference(resolution,status(thm),[c108, c9])).
+cnf(c742,plain,set_union2(unordered_pair(skolem0001,skolem0003),skolem0002)=skolem0002,inference(resolution,status(thm),[c736, c22])).
+cnf(c4458,plain,$false,inference(resolution,status(thm),[c742, c11])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 24
+# Processed clauses  : 296
+# Factors computed   : 0
+# Resolvents computed: 4422
+# Tautologies deleted: 2
+# Forward subsumed   : 371
+# Backward subsumed  : 6
+
+# -------- CPU Time ---------
+# User time          : 1.417 s
+# System time        : 0.198 s
+# Total time         : 1.615 s

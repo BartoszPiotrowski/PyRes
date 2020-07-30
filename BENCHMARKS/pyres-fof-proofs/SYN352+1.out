@@ -1,0 +1,80 @@
+# cnf(c7,negated_conjecture,big_f(skolem0001,skolem0002)).
+# cnf(c9,negated_conjecture,big_f(X8,X7)|big_f(skolem0003(X8,X7),skolem0003(X8,X7))).
+# cnf(c12,negated_conjecture,~big_f(X10,X9)|~big_f(X10,skolem0003(X10,X9))|~big_f(X9,skolem0003(X10,X9))).
+# cnf(c13,negated_conjecture,~big_f(X12,X11)|big_f(X12,skolem0003(X12,X11))|big_f(X11,skolem0003(X12,X11))).
+# cnf(c8,negated_conjecture,~big_f(X14,X13)|big_f(skolem0002,skolem0003(X14,X13))|big_f(X13,skolem0003(X14,X13))).
+# cnf(c10,negated_conjecture,~big_f(skolem0002,skolem0003(X16,X15))|~big_f(X16,skolem0003(X16,X15))|big_f(skolem0003(X16,X15),skolem0003(X16,X15))).
+# cnf(c19,plain,big_f(skolem0002,skolem0003(skolem0001,skolem0002))).
+# cnf(c23,plain,~big_f(skolem0001,skolem0002)|~big_f(skolem0001,skolem0003(skolem0001,skolem0002))).
+# cnf(c15,plain,big_f(skolem0003(X18,X17),skolem0003(skolem0003(X18,X17),skolem0003(X18,X17)))|big_f(X18,X17)).
+# cnf(c17,plain,big_f(X20,skolem0003(X20,X19))|big_f(X19,skolem0003(X20,X19))|big_f(skolem0003(X20,X19),skolem0003(X20,X19))).
+# cnf(c11,negated_conjecture,big_f(skolem0002,skolem0003(X22,X21))|big_f(X22,skolem0003(X22,X21))|big_f(skolem0003(X22,X21),skolem0003(X22,X21))).
+# cnf(c35,plain,big_f(X23,skolem0003(X23,X23))|big_f(skolem0003(X23,X23),skolem0003(X23,X23))).
+# cnf(c62,plain,big_f(skolem0003(X24,X24),skolem0003(X24,X24))|~big_f(skolem0002,skolem0003(X24,X24))).
+# cnf(c71,plain,big_f(skolem0003(skolem0002,skolem0002),skolem0003(skolem0002,skolem0002))).
+# cnf(c47,plain,big_f(skolem0002,skolem0003(skolem0002,X26))|big_f(skolem0003(skolem0002,X26),skolem0003(skolem0002,X26))).
+# cnf(c14,plain,~big_f(X27,X28)|~big_f(X27,skolem0003(X27,X28))|big_f(skolem0003(X28,skolem0003(X27,X28)),skolem0003(X28,skolem0003(X27,X28)))).
+# cnf(c59,plain,big_f(skolem0003(X29,X29),skolem0003(X29,X29))|~big_f(X29,X29)|~big_f(X29,skolem0003(X29,X29))).
+# cnf(c98,plain,big_f(skolem0003(X30,X30),skolem0003(X30,X30))|~big_f(X30,X30)).
+# cnf(c102,plain,big_f(skolem0003(X31,X31),skolem0003(X31,X31))).
+# cnf(c108,plain,big_f(skolem0003(X32,X32),skolem0003(skolem0003(X32,X32),skolem0003(X32,X32)))).
+# cnf(c77,plain,big_f(skolem0003(skolem0002,X35),skolem0003(skolem0002,X35))|~big_f(skolem0002,skolem0003(skolem0002,X35))).
+# cnf(c115,plain,big_f(skolem0003(skolem0002,X36),skolem0003(skolem0002,X36))).
+# cnf(c122,plain,big_f(skolem0003(skolem0002,X37),skolem0003(skolem0003(skolem0002,X37),skolem0003(skolem0002,X37)))).
+# cnf(c20,plain,big_f(skolem0002,skolem0003(X40,X39))|big_f(X39,skolem0003(X40,X39))|big_f(skolem0003(X40,X39),skolem0003(X40,X39))).
+# cnf(c128,plain,big_f(skolem0002,skolem0003(X45,skolem0002))|big_f(skolem0003(X45,skolem0002),skolem0003(X45,skolem0002))).
+# cnf(c21,plain,~big_f(skolem0002,skolem0003(X47,X46))|big_f(skolem0003(X47,X46),skolem0003(X47,X46))|big_f(skolem0003(X47,skolem0003(X47,X46)),skolem0003(X47,skolem0003(X47,X46)))).
+# cnf(c22,plain,big_f(skolem0002,skolem0003(skolem0002,skolem0003(skolem0001,skolem0002)))|big_f(skolem0003(skolem0001,skolem0002),skolem0003(skolem0002,skolem0003(skolem0001,skolem0002)))).
+# cnf(c39,plain,big_f(X50,skolem0003(X51,X50))|big_f(skolem0003(X51,X50),skolem0003(X51,X50))|~big_f(skolem0002,skolem0003(X51,X50))).
+# cnf(c173,plain,big_f(X53,skolem0003(X52,X53))|big_f(skolem0003(X52,X53),skolem0003(X52,X53))).
+# cnf(c177,plain,big_f(skolem0003(X58,X59),skolem0003(X58,X59))|~big_f(X58,X59)|~big_f(X58,skolem0003(X58,X59))).
+# cnf(c25,plain,~big_f(skolem0001,skolem0002)|big_f(skolem0003(skolem0001,skolem0003(skolem0001,skolem0002)),skolem0003(skolem0001,skolem0003(skolem0001,skolem0002)))).
+# cnf(c187,plain,big_f(skolem0003(X62,X61),skolem0003(X62,X61))|~big_f(X62,X61)|big_f(skolem0002,skolem0003(X62,X61))).
+# cnf(c206,plain,big_f(skolem0003(X64,X63),skolem0003(X64,X63))|big_f(skolem0002,skolem0003(X64,X63))).
+# cnf(c26,plain,big_f(X67,X68)|~big_f(skolem0003(X67,X68),skolem0003(X67,X68))|~big_f(skolem0003(X67,X68),skolem0003(skolem0003(X67,X68),skolem0003(X67,X68)))).
+# cnf(c223,plain,big_f(X69,X69)|~big_f(skolem0003(X69,X69),skolem0003(X69,X69))).
+# cnf(c231,plain,big_f(X70,X70)).
+# cnf(c237,plain,big_f(X72,skolem0003(X72,X72))).
+# cnf(c27,plain,big_f(X73,X74)|big_f(skolem0002,skolem0003(skolem0003(X73,X74),skolem0003(skolem0003(X73,X74),skolem0003(X73,X74))))|big_f(skolem0003(skolem0003(X73,X74),skolem0003(X73,X74)),skolem0003(skolem0003(X73,X74),skolem0003(skolem0003(X73,X74),skolem0003(X73,X74))))).
+# cnf(c238,plain,~big_f(X76,X76)|~big_f(X76,skolem0003(X76,X76))).
+# cnf(c253,plain,~big_f(X77,X77)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(church_46_18_4,conjecture,(![X1]:(![X2]:(?[Y1]:(?[Y2]:(![Z]:(big_f(X1,X2)=>((big_f(Y1,Y2)=>(big_f(X2,Z)|big_f(Y2,Z)))=>(((big_f(Y1,Y2)=>(big_f(X2,Z)<=>big_f(Y1,Z)))=>big_f(Z,Z))=>(big_f(Y1,Y2)&(big_f(Y1,Z)<=>big_f(Y2,Z))))))))))),input).
+fof(c0,negated_conjecture,(~(![X1]:(![X2]:(?[Y1]:(?[Y2]:(![Z]:(big_f(X1,X2)=>((big_f(Y1,Y2)=>(big_f(X2,Z)|big_f(Y2,Z)))=>(((big_f(Y1,Y2)=>(big_f(X2,Z)<=>big_f(Y1,Z)))=>big_f(Z,Z))=>(big_f(Y1,Y2)&(big_f(Y1,Z)<=>big_f(Y2,Z)))))))))))),inference(assume_negation,status(cth),[church_46_18_4])).
+fof(c1,negated_conjecture,(?[X1]:(?[X2]:(![Y1]:(![Y2]:(?[Z]:(big_f(X1,X2)&((~big_f(Y1,Y2)|(big_f(X2,Z)|big_f(Y2,Z)))&(((big_f(Y1,Y2)&((~big_f(X2,Z)|~big_f(Y1,Z))&(big_f(X2,Z)|big_f(Y1,Z))))|big_f(Z,Z))&(~big_f(Y1,Y2)|((~big_f(Y1,Z)|~big_f(Y2,Z))&(big_f(Y1,Z)|big_f(Y2,Z)))))))))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X1]:(?[X2]:(big_f(X1,X2)&(![Y1]:(![Y2]:(?[Z]:((~big_f(Y1,Y2)|(big_f(X2,Z)|big_f(Y2,Z)))&(((big_f(Y1,Y2)&((~big_f(X2,Z)|~big_f(Y1,Z))&(big_f(X2,Z)|big_f(Y1,Z))))|big_f(Z,Z))&(~big_f(Y1,Y2)|((~big_f(Y1,Z)|~big_f(Y2,Z))&(big_f(Y1,Z)|big_f(Y2,Z)))))))))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:(big_f(X2,X3)&(![X4]:(![X5]:(?[X6]:((~big_f(X4,X5)|(big_f(X3,X6)|big_f(X5,X6)))&(((big_f(X4,X5)&((~big_f(X3,X6)|~big_f(X4,X6))&(big_f(X3,X6)|big_f(X4,X6))))|big_f(X6,X6))&(~big_f(X4,X5)|((~big_f(X4,X6)|~big_f(X5,X6))&(big_f(X4,X6)|big_f(X5,X6)))))))))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X4]:(![X5]:(big_f(skolem0001,skolem0002)&((~big_f(X4,X5)|(big_f(skolem0002,skolem0003(X4,X5))|big_f(X5,skolem0003(X4,X5))))&(((big_f(X4,X5)&((~big_f(skolem0002,skolem0003(X4,X5))|~big_f(X4,skolem0003(X4,X5)))&(big_f(skolem0002,skolem0003(X4,X5))|big_f(X4,skolem0003(X4,X5)))))|big_f(skolem0003(X4,X5),skolem0003(X4,X5)))&(~big_f(X4,X5)|((~big_f(X4,skolem0003(X4,X5))|~big_f(X5,skolem0003(X4,X5)))&(big_f(X4,skolem0003(X4,X5))|big_f(X5,skolem0003(X4,X5)))))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(big_f(skolem0001,skolem0002)&(![X4]:(![X5]:((~big_f(X4,X5)|(big_f(skolem0002,skolem0003(X4,X5))|big_f(X5,skolem0003(X4,X5))))&(((big_f(X4,X5)&((~big_f(skolem0002,skolem0003(X4,X5))|~big_f(X4,skolem0003(X4,X5)))&(big_f(skolem0002,skolem0003(X4,X5))|big_f(X4,skolem0003(X4,X5)))))|big_f(skolem0003(X4,X5),skolem0003(X4,X5)))&(~big_f(X4,X5)|((~big_f(X4,skolem0003(X4,X5))|~big_f(X5,skolem0003(X4,X5)))&(big_f(X4,skolem0003(X4,X5))|big_f(X5,skolem0003(X4,X5)))))))))),inference(skolemize,status(esa),[c3])).])).
+fof(c6,negated_conjecture,(![X4]:(![X5]:(big_f(skolem0001,skolem0002)&((~big_f(X4,X5)|(big_f(skolem0002,skolem0003(X4,X5))|big_f(X5,skolem0003(X4,X5))))&(((big_f(X4,X5)|big_f(skolem0003(X4,X5),skolem0003(X4,X5)))&(((~big_f(skolem0002,skolem0003(X4,X5))|~big_f(X4,skolem0003(X4,X5)))|big_f(skolem0003(X4,X5),skolem0003(X4,X5)))&((big_f(skolem0002,skolem0003(X4,X5))|big_f(X4,skolem0003(X4,X5)))|big_f(skolem0003(X4,X5),skolem0003(X4,X5)))))&((~big_f(X4,X5)|(~big_f(X4,skolem0003(X4,X5))|~big_f(X5,skolem0003(X4,X5))))&(~big_f(X4,X5)|(big_f(X4,skolem0003(X4,X5))|big_f(X5,skolem0003(X4,X5)))))))))),inference(distribute,status(thm),[c5])).
+cnf(c9,negated_conjecture,big_f(X8,X7)|big_f(skolem0003(X8,X7),skolem0003(X8,X7)),inference(split_conjunct,status(thm),[c6])).
+cnf(c13,negated_conjecture,~big_f(X12,X11)|big_f(X12,skolem0003(X12,X11))|big_f(X11,skolem0003(X12,X11)),inference(split_conjunct,status(thm),[c6])).
+cnf(c17,plain,big_f(X20,skolem0003(X20,X19))|big_f(X19,skolem0003(X20,X19))|big_f(skolem0003(X20,X19),skolem0003(X20,X19)),inference(resolution,status(thm),[c13, c9])).
+cnf(c35,plain,big_f(X23,skolem0003(X23,X23))|big_f(skolem0003(X23,X23),skolem0003(X23,X23)),inference(factor,status(thm),[c17])).
+cnf(c12,negated_conjecture,~big_f(X10,X9)|~big_f(X10,skolem0003(X10,X9))|~big_f(X9,skolem0003(X10,X9)),inference(split_conjunct,status(thm),[c6])).
+cnf(c59,plain,big_f(skolem0003(X29,X29),skolem0003(X29,X29))|~big_f(X29,X29)|~big_f(X29,skolem0003(X29,X29)),inference(resolution,status(thm),[c35, c12])).
+cnf(c98,plain,big_f(skolem0003(X30,X30),skolem0003(X30,X30))|~big_f(X30,X30),inference(resolution,status(thm),[c59, c35])).
+cnf(c102,plain,big_f(skolem0003(X31,X31),skolem0003(X31,X31)),inference(resolution,status(thm),[c98, c9])).
+cnf(c108,plain,big_f(skolem0003(X32,X32),skolem0003(skolem0003(X32,X32),skolem0003(X32,X32))),inference(resolution,status(thm),[c102, c13])).
+cnf(c15,plain,big_f(skolem0003(X18,X17),skolem0003(skolem0003(X18,X17),skolem0003(X18,X17)))|big_f(X18,X17),inference(resolution,status(thm),[c13, c9])).
+cnf(c26,plain,big_f(X67,X68)|~big_f(skolem0003(X67,X68),skolem0003(X67,X68))|~big_f(skolem0003(X67,X68),skolem0003(skolem0003(X67,X68),skolem0003(X67,X68))),inference(resolution,status(thm),[c15, c12])).
+cnf(c223,plain,big_f(X69,X69)|~big_f(skolem0003(X69,X69),skolem0003(X69,X69)),inference(resolution,status(thm),[c26, c108])).
+cnf(c231,plain,big_f(X70,X70),inference(resolution,status(thm),[c223, c9])).
+cnf(c237,plain,big_f(X72,skolem0003(X72,X72)),inference(resolution,status(thm),[c231, c13])).
+cnf(c238,plain,~big_f(X76,X76)|~big_f(X76,skolem0003(X76,X76)),inference(resolution,status(thm),[c237, c12])).
+cnf(c253,plain,~big_f(X77,X77),inference(resolution,status(thm),[c238, c237])).
+cnf(c254,plain,$false,inference(resolution,status(thm),[c253, c231])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 7
+# Processed clauses  : 40
+# Factors computed   : 3
+# Resolvents computed: 239
+# Tautologies deleted: 0
+# Forward subsumed   : 29
+# Backward subsumed  : 29
+
+# -------- CPU Time ---------
+# User time          : 0.417 s
+# System time        : 0.229 s
+# Total time         : 0.646 s

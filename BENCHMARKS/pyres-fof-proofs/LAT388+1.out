@@ -1,0 +1,40 @@
+# cnf(c71,axiom,$true).
+# cnf(reflexivity,axiom,X73=X73).
+# cnf(symmetry,axiom,X75!=X74|X74=X75).
+# cnf(c32,plain,aCompleteLattice0(xU)).
+# cnf(c33,plain,aFunction0(xf)).
+# cnf(c34,plain,isMonotone0(xf)).
+# cnf(c24,plain,aFixedPointOf0(xp,xf)).
+# cnf(transitivity,axiom,X79!=X78|X78!=X77|X79=X77).
+# cnf(c30,plain,aSubsetOf0(xT,xS)).
+# cnf(c35,plain,isOn0(xf,xU)).
+# cnf(c78,plain,~aCompleteLattice0(X80)|aSet0(X80)).
+# cnf(c171,plain,aSet0(xU)).
+# cnf(c23,negated_conjecture,~aSupremumOfIn0(X81,xT,xS)).
+# cnf(c0,plain,X82!=X83|szDzozmdt0(X82)=szDzozmdt0(X83)).
+# cnf(c141,axiom,~aElement0(X84)|sdtlseqdt0(X84,X84)).
+# cnf(c25,plain,aSupremumOfIn0(xp,xT,xS)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__,conjecture,(?[W0]:aSupremumOfIn0(W0,xT,xS)),input).
+fof(c20,negated_conjecture,(~(?[W0]:aSupremumOfIn0(W0,xT,xS))),inference(assume_negation,status(cth),[m__])).
+fof(c21,negated_conjecture,(![W0]:~aSupremumOfIn0(W0,xT,xS)),inference(fof_nnf,status(thm),[c20])).
+fof(c22,negated_conjecture,(![X2]:~aSupremumOfIn0(X2,xT,xS)),inference(variable_rename,status(thm),[c21])).
+cnf(c23,negated_conjecture,~aSupremumOfIn0(X81,xT,xS),inference(split_conjunct,status(thm),[c22])).
+fof(m__1330,plain,(aFixedPointOf0(xp,xf)&aSupremumOfIn0(xp,xT,xS)),input).
+cnf(c25,plain,aSupremumOfIn0(xp,xT,xS),inference(split_conjunct,status(thm),[m__1330])).
+cnf(c173,plain,$false,inference(resolution,status(thm),[c25, c23])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 89
+# Processed clauses  : 16
+# Factors computed   : 0
+# Resolvents computed: 5
+# Tautologies deleted: 0
+# Forward subsumed   : 4
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.322 s
+# System time        : 0.300 s
+# Total time         : 0.623 s

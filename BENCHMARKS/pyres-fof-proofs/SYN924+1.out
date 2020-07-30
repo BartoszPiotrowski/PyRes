@@ -1,0 +1,45 @@
+# cnf(c7,negated_conjecture,~p(X10)|~p(X11)).
+# cnf(c8,negated_conjecture,~p(X12)|~q(X13)).
+# cnf(c10,negated_conjecture,~q(X17)|~q(X16)).
+# cnf(c11,negated_conjecture,p(skolem0001)|q(skolem0002)|p(skolem0003)|q(skolem0004)).
+# cnf(c12,plain,q(skolem0002)|p(skolem0003)|q(skolem0004)|~p(X18)).
+# cnf(c18,plain,q(skolem0002)|p(skolem0003)|q(skolem0004)).
+# cnf(c20,plain,p(skolem0003)|q(skolem0004)|~q(X19)).
+# cnf(c26,plain,p(skolem0003)|q(skolem0004)).
+# cnf(c27,plain,q(skolem0004)|~p(X20)).
+# cnf(c30,plain,q(skolem0004)).
+# cnf(c31,plain,~q(X22)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,((?[X]:(p(X)|q(X)))<=>((?[X]:p(X))|(?[X]:q(X)))),input).
+fof(c0,negated_conjecture,(~((?[X]:(p(X)|q(X)))<=>((?[X]:p(X))|(?[X]:q(X))))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,(((![X]:(~p(X)&~q(X)))|((![X]:~p(X))&(![X]:~q(X))))&((?[X]:(p(X)|q(X)))|((?[X]:p(X))|(?[X]:q(X))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,((((![X]:~p(X))&(![X]:~q(X)))|((![X]:~p(X))&(![X]:~q(X))))&(((?[X]:p(X))|(?[X]:q(X)))|((?[X]:p(X))|(?[X]:q(X))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,((((![X2]:~p(X2))&(![X3]:~q(X3)))|((![X4]:~p(X4))&(![X5]:~q(X5))))&(((?[X6]:p(X6))|(?[X7]:q(X7)))|((?[X8]:p(X8))|(?[X9]:q(X9))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(((~p(X2)&~q(X3))|(~p(X4)&~q(X5)))&((p(skolem0001)|q(skolem0002))|(p(skolem0003)|q(skolem0004)))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((((![X2]:~p(X2))&(![X3]:~q(X3)))|((![X4]:~p(X4))&(![X5]:~q(X5))))&((p(skolem0001)|q(skolem0002))|(p(skolem0003)|q(skolem0004)))),inference(skolemize,status(esa),[c3])).])).
+fof(c6,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:((((~p(X2)|~p(X4))&(~p(X2)|~q(X5)))&((~q(X3)|~p(X4))&(~q(X3)|~q(X5))))&((p(skolem0001)|q(skolem0002))|(p(skolem0003)|q(skolem0004)))))))),inference(distribute,status(thm),[c5])).
+cnf(c11,negated_conjecture,p(skolem0001)|q(skolem0002)|p(skolem0003)|q(skolem0004),inference(split_conjunct,status(thm),[c6])).
+cnf(c7,negated_conjecture,~p(X10)|~p(X11),inference(split_conjunct,status(thm),[c6])).
+cnf(c12,plain,q(skolem0002)|p(skolem0003)|q(skolem0004)|~p(X18),inference(resolution,status(thm),[c11, c7])).
+cnf(c18,plain,q(skolem0002)|p(skolem0003)|q(skolem0004),inference(resolution,status(thm),[c12, c11])).
+cnf(c10,negated_conjecture,~q(X17)|~q(X16),inference(split_conjunct,status(thm),[c6])).
+cnf(c20,plain,p(skolem0003)|q(skolem0004)|~q(X19),inference(resolution,status(thm),[c18, c10])).
+cnf(c26,plain,p(skolem0003)|q(skolem0004),inference(resolution,status(thm),[c20, c18])).
+cnf(c27,plain,q(skolem0004)|~p(X20),inference(resolution,status(thm),[c26, c7])).
+cnf(c30,plain,q(skolem0004),inference(resolution,status(thm),[c27, c26])).
+cnf(c31,plain,~q(X22),inference(resolution,status(thm),[c30, c10])).
+cnf(c33,plain,$false,inference(resolution,status(thm),[c31, c30])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 11
+# Factors computed   : 0
+# Resolvents computed: 22
+# Tautologies deleted: 0
+# Forward subsumed   : 2
+# Backward subsumed  : 8
+
+# -------- CPU Time ---------
+# User time          : 0.245 s
+# System time        : 0.167 s
+# Total time         : 0.411 s

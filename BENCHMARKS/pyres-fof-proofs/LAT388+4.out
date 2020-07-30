@@ -1,0 +1,54 @@
+# cnf(c199,axiom,$true).
+# cnf(reflexivity,axiom,X104=X104).
+# cnf(symmetry,axiom,X105!=X106|X106=X105).
+# cnf(c80,plain,aSet0(xP)).
+# cnf(c92,plain,aSet0(xT)).
+# cnf(c100,plain,aSet0(xS)).
+# cnf(c114,plain,aSet0(xU)).
+# cnf(c157,plain,aCompleteLattice0(xU)).
+# cnf(transitivity,axiom,X108!=X109|X109!=X107|X108=X107).
+# cnf(c158,plain,aFunction0(xf)).
+# cnf(c160,plain,isMonotone0(xf)).
+# cnf(c47,plain,aFixedPointOf0(xp,xf)).
+# cnf(c67,plain,aElementOf0(xp,xU)).
+# cnf(c0,plain,X111!=X112|szDzozmdt0(X111)=szDzozmdt0(X112)).
+# cnf(c94,plain,aSubsetOf0(xT,xS)).
+# cnf(c163,plain,isOn0(xf,xU)).
+# cnf(c206,plain,~aCompleteLattice0(X113)|aSet0(X113)).
+# cnf(c39,negated_conjecture,~aSupremumOfIn0(X114,xT,xS)).
+# cnf(c1,plain,X115!=X116|szRzazndt0(X115)=szRzazndt0(X116)).
+# cnf(c269,axiom,~aElement0(X117)|sdtlseqdt0(X117,X117)).
+# cnf(c45,plain,aElementOf0(xp,szDzozmdt0(xf))).
+# cnf(c49,plain,aUpperBoundOfIn0(xp,xT,xS)).
+# cnf(c53,plain,aSupremumOfIn0(xp,xT,xS)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__,conjecture,(?[W0]:(((aElementOf0(W0,xS)&((aElementOf0(W0,xS)&(![W1]:(aElementOf0(W1,xT)=>sdtlseqdt0(W1,W0))))|aUpperBoundOfIn0(W0,xT,xS)))&(![W1]:(((aElementOf0(W1,xS)&(![W2]:(aElementOf0(W2,xT)=>sdtlseqdt0(W2,W1))))&aUpperBoundOfIn0(W1,xT,xS))=>sdtlseqdt0(W0,W1))))|aSupremumOfIn0(W0,xT,xS))),input).
+fof(c20,negated_conjecture,(~(?[W0]:(((aElementOf0(W0,xS)&((aElementOf0(W0,xS)&(![W1]:(aElementOf0(W1,xT)=>sdtlseqdt0(W1,W0))))|aUpperBoundOfIn0(W0,xT,xS)))&(![W1]:(((aElementOf0(W1,xS)&(![W2]:(aElementOf0(W2,xT)=>sdtlseqdt0(W2,W1))))&aUpperBoundOfIn0(W1,xT,xS))=>sdtlseqdt0(W0,W1))))|aSupremumOfIn0(W0,xT,xS)))),inference(assume_negation,status(cth),[m__])).
+fof(c21,negated_conjecture,(![W0]:(((~aElementOf0(W0,xS)|((~aElementOf0(W0,xS)|(?[W1]:(aElementOf0(W1,xT)&~sdtlseqdt0(W1,W0))))&~aUpperBoundOfIn0(W0,xT,xS)))|(?[W1]:(((aElementOf0(W1,xS)&(![W2]:(~aElementOf0(W2,xT)|sdtlseqdt0(W2,W1))))&aUpperBoundOfIn0(W1,xT,xS))&~sdtlseqdt0(W0,W1))))&~aSupremumOfIn0(W0,xT,xS))),inference(fof_nnf,status(thm),[c20])).
+fof(c22,negated_conjecture,((![W0]:((~aElementOf0(W0,xS)|((~aElementOf0(W0,xS)|(?[W1]:(aElementOf0(W1,xT)&~sdtlseqdt0(W1,W0))))&~aUpperBoundOfIn0(W0,xT,xS)))|(?[W1]:(((aElementOf0(W1,xS)&(![W2]:(~aElementOf0(W2,xT)|sdtlseqdt0(W2,W1))))&aUpperBoundOfIn0(W1,xT,xS))&~sdtlseqdt0(W0,W1)))))&(![W0]:~aSupremumOfIn0(W0,xT,xS))),inference(shift_quantors,status(thm),[c21])).
+fof(c23,negated_conjecture,((![X2]:((~aElementOf0(X2,xS)|((~aElementOf0(X2,xS)|(?[X3]:(aElementOf0(X3,xT)&~sdtlseqdt0(X3,X2))))&~aUpperBoundOfIn0(X2,xT,xS)))|(?[X4]:(((aElementOf0(X4,xS)&(![X5]:(~aElementOf0(X5,xT)|sdtlseqdt0(X5,X4))))&aUpperBoundOfIn0(X4,xT,xS))&~sdtlseqdt0(X2,X4)))))&(![X6]:~aSupremumOfIn0(X6,xT,xS))),inference(variable_rename,status(thm),[c22])).
+fof(c25,negated_conjecture,(![X2]:(![X5]:(![X6]:(((~aElementOf0(X2,xS)|((~aElementOf0(X2,xS)|(aElementOf0(skolem0001(X2),xT)&~sdtlseqdt0(skolem0001(X2),X2)))&~aUpperBoundOfIn0(X2,xT,xS)))|(((aElementOf0(skolem0002(X2),xS)&(~aElementOf0(X5,xT)|sdtlseqdt0(X5,skolem0002(X2))))&aUpperBoundOfIn0(skolem0002(X2),xT,xS))&~sdtlseqdt0(X2,skolem0002(X2))))&~aSupremumOfIn0(X6,xT,xS))))),inference(shift_quantors,status(thm),[fof(c24,negated_conjecture,((![X2]:((~aElementOf0(X2,xS)|((~aElementOf0(X2,xS)|(aElementOf0(skolem0001(X2),xT)&~sdtlseqdt0(skolem0001(X2),X2)))&~aUpperBoundOfIn0(X2,xT,xS)))|(((aElementOf0(skolem0002(X2),xS)&(![X5]:(~aElementOf0(X5,xT)|sdtlseqdt0(X5,skolem0002(X2)))))&aUpperBoundOfIn0(skolem0002(X2),xT,xS))&~sdtlseqdt0(X2,skolem0002(X2)))))&(![X6]:~aSupremumOfIn0(X6,xT,xS))),inference(skolemize,status(esa),[c23])).])).
+fof(c26,negated_conjecture,(![X2]:(![X5]:(![X6]:((((((((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|aElementOf0(skolem0001(X2),xT)))|aElementOf0(skolem0002(X2),xS))&((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|aElementOf0(skolem0001(X2),xT)))|(~aElementOf0(X5,xT)|sdtlseqdt0(X5,skolem0002(X2)))))&((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|aElementOf0(skolem0001(X2),xT)))|aUpperBoundOfIn0(skolem0002(X2),xT,xS)))&((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|aElementOf0(skolem0001(X2),xT)))|~sdtlseqdt0(X2,skolem0002(X2))))&(((((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|~sdtlseqdt0(skolem0001(X2),X2)))|aElementOf0(skolem0002(X2),xS))&((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|~sdtlseqdt0(skolem0001(X2),X2)))|(~aElementOf0(X5,xT)|sdtlseqdt0(X5,skolem0002(X2)))))&((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|~sdtlseqdt0(skolem0001(X2),X2)))|aUpperBoundOfIn0(skolem0002(X2),xT,xS)))&((~aElementOf0(X2,xS)|(~aElementOf0(X2,xS)|~sdtlseqdt0(skolem0001(X2),X2)))|~sdtlseqdt0(X2,skolem0002(X2)))))&(((((~aElementOf0(X2,xS)|~aUpperBoundOfIn0(X2,xT,xS))|aElementOf0(skolem0002(X2),xS))&((~aElementOf0(X2,xS)|~aUpperBoundOfIn0(X2,xT,xS))|(~aElementOf0(X5,xT)|sdtlseqdt0(X5,skolem0002(X2)))))&((~aElementOf0(X2,xS)|~aUpperBoundOfIn0(X2,xT,xS))|aUpperBoundOfIn0(skolem0002(X2),xT,xS)))&((~aElementOf0(X2,xS)|~aUpperBoundOfIn0(X2,xT,xS))|~sdtlseqdt0(X2,skolem0002(X2)))))&~aSupremumOfIn0(X6,xT,xS))))),inference(distribute,status(thm),[c25])).
+cnf(c39,negated_conjecture,~aSupremumOfIn0(X114,xT,xS),inference(split_conjunct,status(thm),[c26])).
+fof(m__1330,plain,((((((aElementOf0(xp,szDzozmdt0(xf))&sdtlpdtrp0(xf,xp)=xp)&aFixedPointOf0(xp,xf))&(![W0]:(aElementOf0(W0,xT)=>sdtlseqdt0(W0,xp))))&aUpperBoundOfIn0(xp,xT,xS))&(![W0]:(((aElementOf0(W0,xS)&(![W1]:(aElementOf0(W1,xT)=>sdtlseqdt0(W1,W0))))|aUpperBoundOfIn0(W0,xT,xS))=>sdtlseqdt0(xp,W0))))&aSupremumOfIn0(xp,xT,xS)),input).
+fof(c40,plain,((((((aElementOf0(xp,szDzozmdt0(xf))&sdtlpdtrp0(xf,xp)=xp)&aFixedPointOf0(xp,xf))&(![W0]:(~aElementOf0(W0,xT)|sdtlseqdt0(W0,xp))))&aUpperBoundOfIn0(xp,xT,xS))&(![W0]:(((~aElementOf0(W0,xS)|(?[W1]:(aElementOf0(W1,xT)&~sdtlseqdt0(W1,W0))))&~aUpperBoundOfIn0(W0,xT,xS))|sdtlseqdt0(xp,W0))))&aSupremumOfIn0(xp,xT,xS)),inference(fof_nnf,status(thm),[m__1330])).
+fof(c41,plain,((((((aElementOf0(xp,szDzozmdt0(xf))&sdtlpdtrp0(xf,xp)=xp)&aFixedPointOf0(xp,xf))&(![X7]:(~aElementOf0(X7,xT)|sdtlseqdt0(X7,xp))))&aUpperBoundOfIn0(xp,xT,xS))&(![X8]:(((~aElementOf0(X8,xS)|(?[X9]:(aElementOf0(X9,xT)&~sdtlseqdt0(X9,X8))))&~aUpperBoundOfIn0(X8,xT,xS))|sdtlseqdt0(xp,X8))))&aSupremumOfIn0(xp,xT,xS)),inference(variable_rename,status(thm),[c40])).
+fof(c43,plain,(![X7]:(![X8]:((((((aElementOf0(xp,szDzozmdt0(xf))&sdtlpdtrp0(xf,xp)=xp)&aFixedPointOf0(xp,xf))&(~aElementOf0(X7,xT)|sdtlseqdt0(X7,xp)))&aUpperBoundOfIn0(xp,xT,xS))&(((~aElementOf0(X8,xS)|(aElementOf0(skolem0003(X8),xT)&~sdtlseqdt0(skolem0003(X8),X8)))&~aUpperBoundOfIn0(X8,xT,xS))|sdtlseqdt0(xp,X8)))&aSupremumOfIn0(xp,xT,xS)))),inference(shift_quantors,status(thm),[fof(c42,plain,((((((aElementOf0(xp,szDzozmdt0(xf))&sdtlpdtrp0(xf,xp)=xp)&aFixedPointOf0(xp,xf))&(![X7]:(~aElementOf0(X7,xT)|sdtlseqdt0(X7,xp))))&aUpperBoundOfIn0(xp,xT,xS))&(![X8]:(((~aElementOf0(X8,xS)|(aElementOf0(skolem0003(X8),xT)&~sdtlseqdt0(skolem0003(X8),X8)))&~aUpperBoundOfIn0(X8,xT,xS))|sdtlseqdt0(xp,X8))))&aSupremumOfIn0(xp,xT,xS)),inference(skolemize,status(esa),[c41])).])).
+fof(c44,plain,(![X7]:(![X8]:((((((aElementOf0(xp,szDzozmdt0(xf))&sdtlpdtrp0(xf,xp)=xp)&aFixedPointOf0(xp,xf))&(~aElementOf0(X7,xT)|sdtlseqdt0(X7,xp)))&aUpperBoundOfIn0(xp,xT,xS))&((((~aElementOf0(X8,xS)|aElementOf0(skolem0003(X8),xT))|sdtlseqdt0(xp,X8))&((~aElementOf0(X8,xS)|~sdtlseqdt0(skolem0003(X8),X8))|sdtlseqdt0(xp,X8)))&(~aUpperBoundOfIn0(X8,xT,xS)|sdtlseqdt0(xp,X8))))&aSupremumOfIn0(xp,xT,xS)))),inference(distribute,status(thm),[c43])).
+cnf(c53,plain,aSupremumOfIn0(xp,xT,xS),inference(split_conjunct,status(thm),[c44])).
+cnf(c302,plain,$false,inference(resolution,status(thm),[c53, c39])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 178
+# Processed clauses  : 23
+# Factors computed   : 0
+# Resolvents computed: 6
+# Tautologies deleted: 0
+# Forward subsumed   : 5
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.342 s
+# System time        : 0.273 s
+# Total time         : 0.615 s

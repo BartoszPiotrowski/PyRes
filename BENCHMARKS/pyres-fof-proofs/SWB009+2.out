@@ -1,0 +1,78 @@
+# cnf(c2,axiom,iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)).
+# cnf(c3,axiom,iext(uri_rdf_type,uri_ex_c,uri_owl_Class)).
+# cnf(c4,axiom,iext(uri_rdf_type,uri_ex_s,skolem0001)).
+# cnf(c5,axiom,iext(uri_rdf_type,skolem0001,uri_owl_Restriction)).
+# cnf(c6,axiom,iext(uri_owl_onProperty,skolem0001,uri_ex_p)).
+# cnf(c7,axiom,iext(uri_owl_someValuesFrom,skolem0001,uri_ex_c)).
+# cnf(c25,axiom,~iext(uri_rdf_type,X15,X16)|icext(X16,X15)).
+# cnf(c27,plain,icext(skolem0001,uri_ex_s)).
+# cnf(c28,plain,icext(uri_owl_Class,uri_ex_c)).
+# cnf(c29,plain,icext(uri_owl_ObjectProperty,uri_ex_p)).
+# cnf(c30,plain,icext(uri_owl_Restriction,skolem0001)).
+# cnf(c11,negated_conjecture,~iext(uri_ex_p,uri_ex_s,X17)|~iext(uri_rdf_type,X17,uri_ex_c)).
+# cnf(c26,axiom,~icext(X19,X18)|iext(uri_rdf_type,X18,X19)).
+# cnf(c18,axiom,~iext(uri_owl_someValuesFrom,X23,X20)|~iext(uri_owl_onProperty,X23,X22)|~icext(X23,X21)|iext(X22,X21,skolem0002(X23,X22,X20,X21))).
+# cnf(c19,axiom,~iext(uri_owl_someValuesFrom,X27,X24)|~iext(uri_owl_onProperty,X27,X26)|~icext(X27,X25)|icext(X24,skolem0002(X27,X26,X24,X25))).
+# cnf(c36,plain,~iext(uri_owl_someValuesFrom,skolem0001,X28)|~icext(skolem0001,X29)|icext(X28,skolem0002(skolem0001,uri_ex_p,X28,X29))).
+# cnf(c37,plain,~icext(skolem0001,X30)|icext(uri_ex_c,skolem0002(skolem0001,uri_ex_p,uri_ex_c,X30))).
+# cnf(c38,plain,icext(uri_ex_c,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s))).
+# cnf(c39,plain,iext(uri_rdf_type,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s),uri_ex_c)).
+# cnf(c20,axiom,~iext(uri_owl_someValuesFrom,X33,X35)|~iext(uri_owl_onProperty,X33,X31)|~iext(X31,X32,X34)|~icext(X35,X34)|icext(X33,X32)).
+# cnf(c40,plain,~iext(uri_ex_p,uri_ex_s,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s))).
+# cnf(c42,plain,~iext(uri_owl_someValuesFrom,X36,X37)|~iext(uri_owl_onProperty,X36,uri_rdf_type)|~icext(X37,skolem0001)|icext(X36,uri_ex_s)).
+# cnf(c44,plain,~iext(uri_owl_someValuesFrom,X38,X39)|~iext(uri_owl_onProperty,X38,uri_rdf_type)|~icext(X39,uri_owl_Class)|icext(X38,uri_ex_c)).
+# cnf(c45,plain,~iext(uri_owl_someValuesFrom,X40,X41)|~iext(uri_owl_onProperty,X40,uri_owl_someValuesFrom)|~icext(X41,uri_ex_c)|icext(X40,skolem0001)).
+# cnf(c35,plain,~iext(uri_owl_someValuesFrom,skolem0001,X42)|~icext(skolem0001,X43)|iext(uri_ex_p,X43,skolem0002(skolem0001,uri_ex_p,X42,X43))).
+# cnf(c49,plain,~icext(skolem0001,X44)|iext(uri_ex_p,X44,skolem0002(skolem0001,uri_ex_p,uri_ex_c,X44))).
+# cnf(c50,plain,iext(uri_ex_p,uri_ex_s,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(testcase_conclusion_fullish_009_Existential_Restriction_Entailments,conjecture,(?[BNODE_x]:(iext(uri_ex_p,uri_ex_s,BNODE_x)&iext(uri_rdf_type,BNODE_x,uri_ex_c))),input).
+fof(c8,negated_conjecture,(~(?[BNODE_x]:(iext(uri_ex_p,uri_ex_s,BNODE_x)&iext(uri_rdf_type,BNODE_x,uri_ex_c)))),inference(assume_negation,status(cth),[testcase_conclusion_fullish_009_Existential_Restriction_Entailments])).
+fof(c9,negated_conjecture,(![BNODE_x]:(~iext(uri_ex_p,uri_ex_s,BNODE_x)|~iext(uri_rdf_type,BNODE_x,uri_ex_c))),inference(fof_nnf,status(thm),[c8])).
+fof(c10,negated_conjecture,(![X3]:(~iext(uri_ex_p,uri_ex_s,X3)|~iext(uri_rdf_type,X3,uri_ex_c))),inference(variable_rename,status(thm),[c9])).
+cnf(c11,negated_conjecture,~iext(uri_ex_p,uri_ex_s,X17)|~iext(uri_rdf_type,X17,uri_ex_c),inference(split_conjunct,status(thm),[c10])).
+fof(rdfs_cext_def,axiom,(![X]:(![C]:(iext(uri_rdf_type,X,C)<=>icext(C,X)))),input).
+fof(c21,axiom,(![X]:(![C]:((~iext(uri_rdf_type,X,C)|icext(C,X))&(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(fof_nnf,status(thm),[rdfs_cext_def])).
+fof(c22,axiom,((![X]:(![C]:(~iext(uri_rdf_type,X,C)|icext(C,X))))&(![X]:(![C]:(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(shift_quantors,status(thm),[c21])).
+fof(c24,axiom,(![X11]:(![X12]:(![X13]:(![X14]:((~iext(uri_rdf_type,X11,X12)|icext(X12,X11))&(~icext(X14,X13)|iext(uri_rdf_type,X13,X14))))))),inference(shift_quantors,status(thm),[fof(c23,axiom,((![X11]:(![X12]:(~iext(uri_rdf_type,X11,X12)|icext(X12,X11))))&(![X13]:(![X14]:(~icext(X14,X13)|iext(uri_rdf_type,X13,X14))))),inference(variable_rename,status(thm),[c22])).])).
+cnf(c26,axiom,~icext(X19,X18)|iext(uri_rdf_type,X18,X19),inference(split_conjunct,status(thm),[c24])).
+fof(testcase_premise_fullish_009_Existential_Restriction_Entailments,axiom,(?[BNODE_z]:(((((iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)&iext(uri_rdf_type,uri_ex_c,uri_owl_Class))&iext(uri_rdf_type,uri_ex_s,BNODE_z))&iext(uri_rdf_type,BNODE_z,uri_owl_Restriction))&iext(uri_owl_onProperty,BNODE_z,uri_ex_p))&iext(uri_owl_someValuesFrom,BNODE_z,uri_ex_c))),input).
+fof(c0,axiom,(?[X2]:(((((iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)&iext(uri_rdf_type,uri_ex_c,uri_owl_Class))&iext(uri_rdf_type,uri_ex_s,X2))&iext(uri_rdf_type,X2,uri_owl_Restriction))&iext(uri_owl_onProperty,X2,uri_ex_p))&iext(uri_owl_someValuesFrom,X2,uri_ex_c))),inference(variable_rename,status(thm),[testcase_premise_fullish_009_Existential_Restriction_Entailments])).
+fof(c1,axiom,(((((iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)&iext(uri_rdf_type,uri_ex_c,uri_owl_Class))&iext(uri_rdf_type,uri_ex_s,skolem0001))&iext(uri_rdf_type,skolem0001,uri_owl_Restriction))&iext(uri_owl_onProperty,skolem0001,uri_ex_p))&iext(uri_owl_someValuesFrom,skolem0001,uri_ex_c)),inference(skolemize,status(esa),[c0])).
+cnf(c4,axiom,iext(uri_rdf_type,uri_ex_s,skolem0001),inference(split_conjunct,status(thm),[c1])).
+cnf(c25,axiom,~iext(uri_rdf_type,X15,X16)|icext(X16,X15),inference(split_conjunct,status(thm),[c24])).
+cnf(c27,plain,icext(skolem0001,uri_ex_s),inference(resolution,status(thm),[c25, c4])).
+cnf(c7,axiom,iext(uri_owl_someValuesFrom,skolem0001,uri_ex_c),inference(split_conjunct,status(thm),[c1])).
+cnf(c6,axiom,iext(uri_owl_onProperty,skolem0001,uri_ex_p),inference(split_conjunct,status(thm),[c1])).
+fof(owl_restrict_somevaluesfrom,axiom,(![Z]:(![P]:(![C]:((iext(uri_owl_someValuesFrom,Z,C)&iext(uri_owl_onProperty,Z,P))=>(![X]:(icext(Z,X)<=>(?[Y]:(iext(P,X,Y)&icext(C,Y))))))))),input).
+fof(c12,axiom,(![Z]:(![P]:(![C]:((~iext(uri_owl_someValuesFrom,Z,C)|~iext(uri_owl_onProperty,Z,P))|(![X]:((~icext(Z,X)|(?[Y]:(iext(P,X,Y)&icext(C,Y))))&((![Y]:(~iext(P,X,Y)|~icext(C,Y)))|icext(Z,X)))))))),inference(fof_nnf,status(thm),[owl_restrict_somevaluesfrom])).
+fof(c13,axiom,(![Z]:(![P]:(![C]:((~iext(uri_owl_someValuesFrom,Z,C)|~iext(uri_owl_onProperty,Z,P))|((![X]:(~icext(Z,X)|(?[Y]:(iext(P,X,Y)&icext(C,Y)))))&(![X]:((![Y]:(~iext(P,X,Y)|~icext(C,Y)))|icext(Z,X)))))))),inference(shift_quantors,status(thm),[c12])).
+fof(c14,axiom,(![X4]:(![X5]:(![X6]:((~iext(uri_owl_someValuesFrom,X4,X6)|~iext(uri_owl_onProperty,X4,X5))|((![X7]:(~icext(X4,X7)|(?[X8]:(iext(X5,X7,X8)&icext(X6,X8)))))&(![X9]:((![X10]:(~iext(X5,X9,X10)|~icext(X6,X10)))|icext(X4,X9)))))))),inference(variable_rename,status(thm),[c13])).
+fof(c16,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X9]:(![X10]:((~iext(uri_owl_someValuesFrom,X4,X6)|~iext(uri_owl_onProperty,X4,X5))|((~icext(X4,X7)|(iext(X5,X7,skolem0002(X4,X5,X6,X7))&icext(X6,skolem0002(X4,X5,X6,X7))))&((~iext(X5,X9,X10)|~icext(X6,X10))|icext(X4,X9)))))))))),inference(shift_quantors,status(thm),[fof(c15,axiom,(![X4]:(![X5]:(![X6]:((~iext(uri_owl_someValuesFrom,X4,X6)|~iext(uri_owl_onProperty,X4,X5))|((![X7]:(~icext(X4,X7)|(iext(X5,X7,skolem0002(X4,X5,X6,X7))&icext(X6,skolem0002(X4,X5,X6,X7)))))&(![X9]:((![X10]:(~iext(X5,X9,X10)|~icext(X6,X10)))|icext(X4,X9)))))))),inference(skolemize,status(esa),[c14])).])).
+fof(c17,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X9]:(![X10]:((((~iext(uri_owl_someValuesFrom,X4,X6)|~iext(uri_owl_onProperty,X4,X5))|(~icext(X4,X7)|iext(X5,X7,skolem0002(X4,X5,X6,X7))))&((~iext(uri_owl_someValuesFrom,X4,X6)|~iext(uri_owl_onProperty,X4,X5))|(~icext(X4,X7)|icext(X6,skolem0002(X4,X5,X6,X7)))))&((~iext(uri_owl_someValuesFrom,X4,X6)|~iext(uri_owl_onProperty,X4,X5))|((~iext(X5,X9,X10)|~icext(X6,X10))|icext(X4,X9)))))))))),inference(distribute,status(thm),[c16])).
+cnf(c19,axiom,~iext(uri_owl_someValuesFrom,X27,X24)|~iext(uri_owl_onProperty,X27,X26)|~icext(X27,X25)|icext(X24,skolem0002(X27,X26,X24,X25)),inference(split_conjunct,status(thm),[c17])).
+cnf(c36,plain,~iext(uri_owl_someValuesFrom,skolem0001,X28)|~icext(skolem0001,X29)|icext(X28,skolem0002(skolem0001,uri_ex_p,X28,X29)),inference(resolution,status(thm),[c19, c6])).
+cnf(c37,plain,~icext(skolem0001,X30)|icext(uri_ex_c,skolem0002(skolem0001,uri_ex_p,uri_ex_c,X30)),inference(resolution,status(thm),[c36, c7])).
+cnf(c38,plain,icext(uri_ex_c,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s)),inference(resolution,status(thm),[c37, c27])).
+cnf(c39,plain,iext(uri_rdf_type,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s),uri_ex_c),inference(resolution,status(thm),[c38, c26])).
+cnf(c40,plain,~iext(uri_ex_p,uri_ex_s,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s)),inference(resolution,status(thm),[c39, c11])).
+cnf(c18,axiom,~iext(uri_owl_someValuesFrom,X23,X20)|~iext(uri_owl_onProperty,X23,X22)|~icext(X23,X21)|iext(X22,X21,skolem0002(X23,X22,X20,X21)),inference(split_conjunct,status(thm),[c17])).
+cnf(c35,plain,~iext(uri_owl_someValuesFrom,skolem0001,X42)|~icext(skolem0001,X43)|iext(uri_ex_p,X43,skolem0002(skolem0001,uri_ex_p,X42,X43)),inference(resolution,status(thm),[c18, c6])).
+cnf(c49,plain,~icext(skolem0001,X44)|iext(uri_ex_p,X44,skolem0002(skolem0001,uri_ex_p,uri_ex_c,X44)),inference(resolution,status(thm),[c35, c7])).
+cnf(c50,plain,iext(uri_ex_p,uri_ex_s,skolem0002(skolem0001,uri_ex_p,uri_ex_c,uri_ex_s)),inference(resolution,status(thm),[c49, c27])).
+cnf(c51,plain,$false,inference(resolution,status(thm),[c50, c40])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 12
+# Processed clauses  : 27
+# Factors computed   : 0
+# Resolvents computed: 26
+# Tautologies deleted: 0
+# Forward subsumed   : 5
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.354 s
+# System time        : 0.275 s
+# Total time         : 0.628 s

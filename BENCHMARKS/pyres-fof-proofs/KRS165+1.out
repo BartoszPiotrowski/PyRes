@@ -1,0 +1,165 @@
+# cnf(c32,axiom,cowlThing(X13)).
+# cnf(c33,axiom,~cowlNothing(X14)).
+# cnf(c19,axiom,~cCar(X15)|cAutomobile(X15)).
+# cnf(c20,axiom,~cAutomobile(X16)|cCar(X16)).
+# cnf(c26,axiom,~xsd_string(X17)|~xsd_integer(X17)).
+# cnf(c7,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c27,axiom,xsd_integer(X18)|xsd_string(X18)).
+# cnf(c35,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c36,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c38,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c8,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cAutomobile(skolem0005)).
+# cnf(c41,plain,cAutomobile(skolem0004)|cCar(skolem0005)|~xsd_string(skolem0003)).
+# cnf(c42,plain,xsd_integer(skolem0003)|cCar(skolem0005)|cCar(skolem0004)).
+# cnf(c43,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|cAutomobile(skolem0005)).
+# cnf(c45,plain,cCar(skolem0005)|cCar(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c9,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cCar(skolem0004)|cCar(skolem0005)).
+# cnf(c46,plain,xsd_integer(skolem0003)|cCar(skolem0004)|cAutomobile(skolem0005)).
+# cnf(c48,plain,cAutomobile(skolem0004)|cAutomobile(skolem0005)|~xsd_string(skolem0003)).
+# cnf(c10,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cCar(skolem0004)|~cAutomobile(skolem0005)).
+# cnf(c54,plain,cCar(skolem0004)|cAutomobile(skolem0005)|~xsd_string(skolem0003)).
+# cnf(c11,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c50,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)).
+# cnf(c12,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cAutomobile(skolem0005)).
+# cnf(c68,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)).
+# cnf(c71,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|cowlNothing(skolem0002)).
+# cnf(c75,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)).
+# cnf(c76,plain,cAutomobile(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c78,plain,xsd_integer(skolem0003)|cCar(skolem0004)).
+# cnf(c13,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cCar(skolem0004)|cCar(skolem0005)).
+# cnf(c80,plain,cCar(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c14,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cCar(skolem0004)|~cAutomobile(skolem0005)).
+# cnf(c53,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cCar(skolem0005)).
+# cnf(c86,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003)|cCar(skolem0005)).
+# cnf(c87,plain,cowlNothing(skolem0002)|xsd_integer(skolem0003)|cCar(skolem0005)).
+# cnf(c88,plain,xsd_integer(skolem0003)|cCar(skolem0005)).
+# cnf(c92,plain,cCar(skolem0005)|~xsd_string(skolem0003)).
+# cnf(c94,plain,xsd_integer(skolem0003)|cAutomobile(skolem0005)).
+# cnf(c96,plain,cAutomobile(skolem0005)|~xsd_string(skolem0003)).
+# cnf(c66,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c103,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c104,plain,xsd_string(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c112,plain,cAutomobile(skolem0004)|cCar(skolem0005)).
+# cnf(c117,plain,cCar(skolem0005)|cCar(skolem0004)).
+# cnf(c118,plain,cAutomobile(skolem0004)|cAutomobile(skolem0005)).
+# cnf(c119,plain,cCar(skolem0004)|cAutomobile(skolem0005)).
+# cnf(c99,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cCar(skolem0004)).
+# cnf(c133,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)).
+# cnf(c136,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)).
+# cnf(c137,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)).
+# cnf(c139,plain,xsd_integer(skolem0003)).
+# cnf(c140,plain,~xsd_string(skolem0003)).
+# cnf(c120,plain,cCar(skolem0005)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)).
+# cnf(c142,plain,cCar(skolem0005)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c144,plain,cCar(skolem0005)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c146,plain,cCar(skolem0005)|xsd_string(skolem0003)).
+# cnf(c149,plain,cCar(skolem0005)).
+# cnf(c150,plain,cAutomobile(skolem0005)).
+# cnf(c123,plain,cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)).
+# cnf(c154,plain,cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c156,plain,cAutomobile(skolem0004)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c158,plain,cAutomobile(skolem0004)|xsd_string(skolem0003)).
+# cnf(c161,plain,cAutomobile(skolem0004)).
+# cnf(c162,plain,cCar(skolem0004)).
+# cnf(c153,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cCar(skolem0004)).
+# cnf(c164,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)).
+# cnf(c165,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c167,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c168,plain,xsd_string(skolem0003)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(axiom_1,axiom,(![X]:(xsd_string(X)<=>(~xsd_integer(X)))),input).
+fof(c21,axiom,(![X]:(xsd_string(X)<=>~xsd_integer(X))),inference(fof_simplification,status(thm),[axiom_1])).
+fof(c22,axiom,(![X]:((~xsd_string(X)|~xsd_integer(X))&(xsd_integer(X)|xsd_string(X)))),inference(fof_nnf,status(thm),[c21])).
+fof(c23,axiom,((![X]:(~xsd_string(X)|~xsd_integer(X)))&(![X]:(xsd_integer(X)|xsd_string(X)))),inference(shift_quantors,status(thm),[c22])).
+fof(c25,axiom,(![X9]:(![X10]:((~xsd_string(X9)|~xsd_integer(X9))&(xsd_integer(X10)|xsd_string(X10))))),inference(shift_quantors,status(thm),[fof(c24,axiom,((![X9]:(~xsd_string(X9)|~xsd_integer(X9)))&(![X10]:(xsd_integer(X10)|xsd_string(X10)))),inference(variable_rename,status(thm),[c23])).])).
+cnf(c26,axiom,~xsd_string(X17)|~xsd_integer(X17),inference(split_conjunct,status(thm),[c25])).
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c28,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c29,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c28])).
+fof(c31,axiom,(![X11]:(![X12]:(cowlThing(X11)&~cowlNothing(X12)))),inference(shift_quantors,status(thm),[fof(c30,axiom,((![X11]:cowlThing(X11))&(![X12]:~cowlNothing(X12))),inference(variable_rename,status(thm),[c29])).])).
+cnf(c33,axiom,~cowlNothing(X14),inference(split_conjunct,status(thm),[c31])).
+cnf(c32,axiom,cowlThing(X13),inference(split_conjunct,status(thm),[c31])).
+cnf(c27,axiom,xsd_integer(X18)|xsd_string(X18),inference(split_conjunct,status(thm),[c25])).
+fof(axiom_2,axiom,(![X]:(cCar(X)<=>cAutomobile(X))),input).
+fof(c15,axiom,(![X]:((~cCar(X)|cAutomobile(X))&(~cAutomobile(X)|cCar(X)))),inference(fof_nnf,status(thm),[axiom_2])).
+fof(c16,axiom,((![X]:(~cCar(X)|cAutomobile(X)))&(![X]:(~cAutomobile(X)|cCar(X)))),inference(shift_quantors,status(thm),[c15])).
+fof(c18,axiom,(![X7]:(![X8]:((~cCar(X7)|cAutomobile(X7))&(~cAutomobile(X8)|cCar(X8))))),inference(shift_quantors,status(thm),[fof(c17,axiom,((![X7]:(~cCar(X7)|cAutomobile(X7)))&(![X8]:(~cAutomobile(X8)|cCar(X8)))),inference(variable_rename,status(thm),[c16])).])).
+cnf(c20,axiom,~cAutomobile(X16)|cCar(X16),inference(split_conjunct,status(thm),[c18])).
+fof(the_axiom,conjecture,((((![X]:(cowlThing(X)&(~cowlNothing(X))))&(![X]:(xsd_string(X)<=>(~xsd_integer(X)))))&(![X]:(cAutomobile(X)=>cCar(X))))&(![X]:(cCar(X)=>cAutomobile(X)))),input).
+fof(c0,negated_conjecture,(~((((![X]:(cowlThing(X)&(~cowlNothing(X))))&(![X]:(xsd_string(X)<=>(~xsd_integer(X)))))&(![X]:(cAutomobile(X)=>cCar(X))))&(![X]:(cCar(X)=>cAutomobile(X))))),inference(assume_negation,status(cth),[the_axiom])).
+fof(c1,negated_conjecture,(~((((![X]:(cowlThing(X)&~cowlNothing(X)))&(![X]:(xsd_string(X)<=>~xsd_integer(X))))&(![X]:(cAutomobile(X)=>cCar(X))))&(![X]:(cCar(X)=>cAutomobile(X))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,((((?[X]:(~cowlThing(X)|cowlNothing(X)))|(?[X]:((~xsd_string(X)|xsd_integer(X))&(xsd_string(X)|~xsd_integer(X)))))|(?[X]:(cAutomobile(X)&~cCar(X))))|(?[X]:(cCar(X)&~cAutomobile(X)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(((((?[X]:~cowlThing(X))|(?[X]:cowlNothing(X)))|(?[X]:((~xsd_string(X)|xsd_integer(X))&(xsd_string(X)|~xsd_integer(X)))))|(?[X]:(cAutomobile(X)&~cCar(X))))|(?[X]:(cCar(X)&~cAutomobile(X)))),inference(shift_quantors,status(thm),[c2])).
+fof(c4,negated_conjecture,(((((?[X2]:~cowlThing(X2))|(?[X3]:cowlNothing(X3)))|(?[X4]:((~xsd_string(X4)|xsd_integer(X4))&(xsd_string(X4)|~xsd_integer(X4)))))|(?[X5]:(cAutomobile(X5)&~cCar(X5))))|(?[X6]:(cCar(X6)&~cAutomobile(X6)))),inference(variable_rename,status(thm),[c3])).
+fof(c5,negated_conjecture,((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|((~xsd_string(skolem0003)|xsd_integer(skolem0003))&(xsd_string(skolem0003)|~xsd_integer(skolem0003))))|(cAutomobile(skolem0004)&~cCar(skolem0004)))|(cCar(skolem0005)&~cAutomobile(skolem0005))),inference(skolemize,status(esa),[c4])).
+fof(c6,negated_conjecture,(((((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|cAutomobile(skolem0004))|cCar(skolem0005))&((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|cAutomobile(skolem0004))|~cAutomobile(skolem0005)))&(((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|~cCar(skolem0004))|cCar(skolem0005))&((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|~cCar(skolem0004))|~cAutomobile(skolem0005))))&((((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|cAutomobile(skolem0004))|cCar(skolem0005))&((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|cAutomobile(skolem0004))|~cAutomobile(skolem0005)))&(((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|~cCar(skolem0004))|cCar(skolem0005))&((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|~cCar(skolem0004))|~cAutomobile(skolem0005))))),inference(distribute,status(thm),[c5])).
+cnf(c8,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cAutomobile(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c19,axiom,~cCar(X15)|cAutomobile(X15),inference(split_conjunct,status(thm),[c18])).
+cnf(c7,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c35,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c27, c7])).
+cnf(c36,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c35, c32])).
+cnf(c38,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c36, c33])).
+cnf(c43,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|cAutomobile(skolem0005),inference(resolution,status(thm),[c38, c19])).
+cnf(c50,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003),inference(resolution,status(thm),[c43, c8])).
+cnf(c68,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002),inference(resolution,status(thm),[c50, c27])).
+cnf(c71,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004)|cowlNothing(skolem0002),inference(resolution,status(thm),[c68, c32])).
+cnf(c75,plain,xsd_integer(skolem0003)|cAutomobile(skolem0004),inference(resolution,status(thm),[c71, c33])).
+cnf(c78,plain,xsd_integer(skolem0003)|cCar(skolem0004),inference(resolution,status(thm),[c75, c20])).
+cnf(c10,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cCar(skolem0004)|~cAutomobile(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c42,plain,xsd_integer(skolem0003)|cCar(skolem0005)|cCar(skolem0004),inference(resolution,status(thm),[c38, c20])).
+cnf(c9,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cCar(skolem0004)|cCar(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c53,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cCar(skolem0005),inference(resolution,status(thm),[c9, c42])).
+cnf(c86,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003)|cCar(skolem0005),inference(resolution,status(thm),[c53, c27])).
+cnf(c87,plain,cowlNothing(skolem0002)|xsd_integer(skolem0003)|cCar(skolem0005),inference(resolution,status(thm),[c86, c32])).
+cnf(c88,plain,xsd_integer(skolem0003)|cCar(skolem0005),inference(resolution,status(thm),[c87, c33])).
+cnf(c94,plain,xsd_integer(skolem0003)|cAutomobile(skolem0005),inference(resolution,status(thm),[c88, c19])).
+cnf(c99,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cCar(skolem0004),inference(resolution,status(thm),[c94, c10])).
+cnf(c133,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003),inference(resolution,status(thm),[c99, c78])).
+cnf(c136,plain,xsd_integer(skolem0003)|~cowlThing(skolem0001)|cowlNothing(skolem0002),inference(resolution,status(thm),[c133, c27])).
+cnf(c137,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002),inference(resolution,status(thm),[c136, c32])).
+cnf(c139,plain,xsd_integer(skolem0003),inference(resolution,status(thm),[c137, c33])).
+cnf(c140,plain,~xsd_string(skolem0003),inference(resolution,status(thm),[c139, c26])).
+cnf(c12,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cAutomobile(skolem0004)|~cAutomobile(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c92,plain,cCar(skolem0005)|~xsd_string(skolem0003),inference(resolution,status(thm),[c88, c26])).
+cnf(c11,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c66,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c11, c38])).
+cnf(c103,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c66, c32])).
+cnf(c104,plain,xsd_string(skolem0003)|cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c103, c33])).
+cnf(c112,plain,cAutomobile(skolem0004)|cCar(skolem0005),inference(resolution,status(thm),[c104, c92])).
+cnf(c118,plain,cAutomobile(skolem0004)|cAutomobile(skolem0005),inference(resolution,status(thm),[c112, c19])).
+cnf(c123,plain,cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003),inference(resolution,status(thm),[c118, c12])).
+cnf(c154,plain,cAutomobile(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c123, c139])).
+cnf(c156,plain,cAutomobile(skolem0004)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c154, c32])).
+cnf(c158,plain,cAutomobile(skolem0004)|xsd_string(skolem0003),inference(resolution,status(thm),[c156, c33])).
+cnf(c161,plain,cAutomobile(skolem0004),inference(resolution,status(thm),[c158, c140])).
+cnf(c162,plain,cCar(skolem0004),inference(resolution,status(thm),[c161, c20])).
+cnf(c14,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cCar(skolem0004)|~cAutomobile(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c13,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cCar(skolem0004)|cCar(skolem0005),inference(split_conjunct,status(thm),[c6])).
+cnf(c117,plain,cCar(skolem0005)|cCar(skolem0004),inference(resolution,status(thm),[c112, c20])).
+cnf(c120,plain,cCar(skolem0005)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003),inference(resolution,status(thm),[c117, c13])).
+cnf(c142,plain,cCar(skolem0005)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c120, c139])).
+cnf(c144,plain,cCar(skolem0005)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c142, c32])).
+cnf(c146,plain,cCar(skolem0005)|xsd_string(skolem0003),inference(resolution,status(thm),[c144, c33])).
+cnf(c149,plain,cCar(skolem0005),inference(resolution,status(thm),[c146, c140])).
+cnf(c150,plain,cAutomobile(skolem0005),inference(resolution,status(thm),[c149, c19])).
+cnf(c153,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cCar(skolem0004),inference(resolution,status(thm),[c150, c14])).
+cnf(c164,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003),inference(resolution,status(thm),[c153, c162])).
+cnf(c165,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c164, c139])).
+cnf(c167,plain,cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c165, c32])).
+cnf(c168,plain,xsd_string(skolem0003),inference(resolution,status(thm),[c167, c33])).
+cnf(c170,plain,$false,inference(resolution,status(thm),[c168, c140])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 14
+# Processed clauses  : 68
+# Factors computed   : 0
+# Resolvents computed: 137
+# Tautologies deleted: 7
+# Forward subsumed   : 69
+# Backward subsumed  : 55
+
+# -------- CPU Time ---------
+# User time          : 0.335 s
+# System time        : 0.236 s
+# Total time         : 0.570 s

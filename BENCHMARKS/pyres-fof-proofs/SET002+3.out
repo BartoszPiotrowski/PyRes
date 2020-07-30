@@ -1,0 +1,49 @@
+# cnf(reflexivity,axiom,X31=X31).
+# cnf(c19,axiom,subset(X32,X32)).
+# cnf(symmetry,axiom,X34!=X33|X33=X34).
+# cnf(c36,axiom,X37!=X36|subset(X37,X36)).
+# cnf(transitivity,axiom,X40!=X38|X38!=X39|X40=X39).
+# cnf(c37,axiom,X43!=X42|subset(X42,X43)).
+# cnf(c7,negated_conjecture,union(skolem0001,skolem0001)!=skolem0001).
+# cnf(c0,plain,X49!=X50|X48!=X47|union(X49,X48)=union(X50,X47)).
+# cnf(c30,axiom,union(X51,X52)=union(X52,X51)).
+# cnf(c57,plain,subset(union(X53,X54),union(X54,X53))).
+# cnf(c27,axiom,member(skolem0003(X60,X59),X60)|subset(X60,X59)).
+# cnf(c1,plain,X63!=X64|X62!=X61|~subset(X63,X62)|subset(X64,X61)).
+# cnf(c28,axiom,~member(skolem0003(X66,X65),X65)|subset(X66,X65)).
+# cnf(c45,axiom,~member(X70,X69)|member(X70,union(X69,X68))).
+# cnf(c46,axiom,~member(X73,X71)|member(X73,union(X72,X71))).
+# cnf(c49,axiom,~subset(X75,X74)|union(X75,X74)=X74).
+# cnf(c2,plain,X78!=X79|X77!=X76|~member(X78,X77)|member(X79,X76)).
+# cnf(c67,plain,union(X80,X80)=X80).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_idempotency_of_union,conjecture,(![B]:union(B,B)=B),input).
+fof(c3,negated_conjecture,(~(![B]:union(B,B)=B)),inference(assume_negation,status(cth),[prove_idempotency_of_union])).
+fof(c4,negated_conjecture,(?[B]:union(B,B)!=B),inference(fof_nnf,status(thm),[c3])).
+fof(c5,negated_conjecture,(?[X2]:union(X2,X2)!=X2),inference(variable_rename,status(thm),[c4])).
+fof(c6,negated_conjecture,union(skolem0001,skolem0001)!=skolem0001,inference(skolemize,status(esa),[c5])).
+cnf(c7,negated_conjecture,union(skolem0001,skolem0001)!=skolem0001,inference(split_conjunct,status(thm),[c6])).
+fof(reflexivity_of_subset,axiom,(![B]:subset(B,B)),input).
+fof(c18,axiom,(![X10]:subset(X10,X10)),inference(variable_rename,status(thm),[reflexivity_of_subset])).
+cnf(c19,axiom,subset(X32,X32),inference(split_conjunct,status(thm),[c18])).
+fof(subset_union,axiom,(![B]:(![C]:(subset(B,C)=>union(B,C)=C))),input).
+fof(c47,axiom,(![B]:(![C]:(~subset(B,C)|union(B,C)=C))),inference(fof_nnf,status(thm),[subset_union])).
+fof(c48,axiom,(![X29]:(![X30]:(~subset(X29,X30)|union(X29,X30)=X30))),inference(variable_rename,status(thm),[c47])).
+cnf(c49,axiom,~subset(X75,X74)|union(X75,X74)=X74,inference(split_conjunct,status(thm),[c48])).
+cnf(c67,plain,union(X80,X80)=X80,inference(resolution,status(thm),[c49, c19])).
+cnf(c73,plain,$false,inference(resolution,status(thm),[c67, c7])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 23
+# Processed clauses  : 18
+# Factors computed   : 0
+# Resolvents computed: 26
+# Tautologies deleted: 1
+# Forward subsumed   : 6
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.229 s
+# System time        : 0.221 s
+# Total time         : 0.450 s

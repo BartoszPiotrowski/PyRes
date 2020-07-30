@@ -1,0 +1,49 @@
+# cnf(reflexivity,axiom,X31=X31).
+# cnf(c19,axiom,subset(X32,X32)).
+# cnf(symmetry,axiom,X34!=X33|X33=X34).
+# cnf(c36,axiom,X36!=X37|subset(X36,X37)).
+# cnf(transitivity,axiom,X39!=X38|X38!=X40|X39=X40).
+# cnf(c37,axiom,X42!=X43|subset(X43,X42)).
+# cnf(c7,negated_conjecture,intersection(skolem0001,skolem0001)!=skolem0001).
+# cnf(c0,plain,X47!=X49|X50!=X48|intersection(X47,X50)=intersection(X49,X48)).
+# cnf(c30,axiom,intersection(X52,X51)=intersection(X51,X52)).
+# cnf(c58,plain,subset(intersection(X56,X55),intersection(X55,X56))).
+# cnf(c27,axiom,member(skolem0003(X60,X59),X60)|subset(X60,X59)).
+# cnf(c1,plain,X61!=X63|X64!=X62|~subset(X61,X64)|subset(X63,X62)).
+# cnf(c28,axiom,~member(skolem0003(X66,X65),X65)|subset(X66,X65)).
+# cnf(c44,axiom,~member(X68,intersection(X69,X70))|member(X68,X69)).
+# cnf(c45,axiom,~member(X71,intersection(X72,X73))|member(X71,X73)).
+# cnf(c49,axiom,~subset(X75,X74)|intersection(X75,X74)=X75).
+# cnf(c2,plain,X76!=X78|X79!=X77|~member(X76,X79)|member(X78,X77)).
+# cnf(c68,plain,intersection(X80,X80)=X80).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_idempotency_of_intersection,conjecture,(![B]:intersection(B,B)=B),input).
+fof(c3,negated_conjecture,(~(![B]:intersection(B,B)=B)),inference(assume_negation,status(cth),[prove_idempotency_of_intersection])).
+fof(c4,negated_conjecture,(?[B]:intersection(B,B)!=B),inference(fof_nnf,status(thm),[c3])).
+fof(c5,negated_conjecture,(?[X2]:intersection(X2,X2)!=X2),inference(variable_rename,status(thm),[c4])).
+fof(c6,negated_conjecture,intersection(skolem0001,skolem0001)!=skolem0001,inference(skolemize,status(esa),[c5])).
+cnf(c7,negated_conjecture,intersection(skolem0001,skolem0001)!=skolem0001,inference(split_conjunct,status(thm),[c6])).
+fof(reflexivity_of_subset,axiom,(![B]:subset(B,B)),input).
+fof(c18,axiom,(![X10]:subset(X10,X10)),inference(variable_rename,status(thm),[reflexivity_of_subset])).
+cnf(c19,axiom,subset(X32,X32),inference(split_conjunct,status(thm),[c18])).
+fof(subset_intersection,axiom,(![B]:(![C]:(subset(B,C)=>intersection(B,C)=B))),input).
+fof(c47,axiom,(![B]:(![C]:(~subset(B,C)|intersection(B,C)=B))),inference(fof_nnf,status(thm),[subset_intersection])).
+fof(c48,axiom,(![X29]:(![X30]:(~subset(X29,X30)|intersection(X29,X30)=X29))),inference(variable_rename,status(thm),[c47])).
+cnf(c49,axiom,~subset(X75,X74)|intersection(X75,X74)=X75,inference(split_conjunct,status(thm),[c48])).
+cnf(c68,plain,intersection(X80,X80)=X80,inference(resolution,status(thm),[c49, c19])).
+cnf(c72,plain,$false,inference(resolution,status(thm),[c68, c7])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 23
+# Processed clauses  : 18
+# Factors computed   : 0
+# Resolvents computed: 26
+# Tautologies deleted: 1
+# Forward subsumed   : 6
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.310 s
+# System time        : 0.222 s
+# Total time         : 0.532 s

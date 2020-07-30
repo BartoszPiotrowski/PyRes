@@ -1,0 +1,37 @@
+# cnf(c9,axiom,$true).
+# cnf(c16,axiom,subset(X9,X9)).
+# cnf(c7,negated_conjecture,in(skolem0001,skolem0002)).
+# cnf(c8,negated_conjecture,~subset(skolem0001,union(skolem0002))).
+# cnf(c13,axiom,~in(X11,X10)|~in(X10,X11)).
+# cnf(c2,axiom,~in(X13,X12)|subset(X13,union(X12))).
+# cnf(c17,plain,~in(skolem0002,skolem0001)).
+# cnf(c18,plain,subset(skolem0001,union(skolem0002))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t92_zfmisc_1,conjecture,(![A]:(![B]:(in(A,B)=>subset(A,union(B))))),input).
+fof(c3,negated_conjecture,(~(![A]:(![B]:(in(A,B)=>subset(A,union(B)))))),inference(assume_negation,status(cth),[t92_zfmisc_1])).
+fof(c4,negated_conjecture,(?[A]:(?[B]:(in(A,B)&~subset(A,union(B))))),inference(fof_nnf,status(thm),[c3])).
+fof(c5,negated_conjecture,(?[X4]:(?[X5]:(in(X4,X5)&~subset(X4,union(X5))))),inference(variable_rename,status(thm),[c4])).
+fof(c6,negated_conjecture,(in(skolem0001,skolem0002)&~subset(skolem0001,union(skolem0002))),inference(skolemize,status(esa),[c5])).
+cnf(c8,negated_conjecture,~subset(skolem0001,union(skolem0002)),inference(split_conjunct,status(thm),[c6])).
+cnf(c7,negated_conjecture,in(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c6])).
+fof(l50_zfmisc_1,axiom,(![A]:(![B]:(in(A,B)=>subset(A,union(B))))),input).
+fof(c0,axiom,(![A]:(![B]:(~in(A,B)|subset(A,union(B))))),inference(fof_nnf,status(thm),[l50_zfmisc_1])).
+fof(c1,axiom,(![X2]:(![X3]:(~in(X2,X3)|subset(X2,union(X3))))),inference(variable_rename,status(thm),[c0])).
+cnf(c2,axiom,~in(X13,X12)|subset(X13,union(X12)),inference(split_conjunct,status(thm),[c1])).
+cnf(c18,plain,subset(skolem0001,union(skolem0002)),inference(resolution,status(thm),[c2, c7])).
+cnf(c19,plain,$false,inference(resolution,status(thm),[c18, c8])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 8
+# Factors computed   : 0
+# Resolvents computed: 3
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.277 s
+# System time        : 0.123 s
+# Total time         : 0.400 s

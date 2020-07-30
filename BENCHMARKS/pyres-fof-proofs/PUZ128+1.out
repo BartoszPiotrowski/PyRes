@@ -1,0 +1,55 @@
+# cnf(c6,axiom,~patricide(thersandros)).
+# cnf(c7,axiom,patricide(oedipus)).
+# cnf(c8,axiom,parent_of(polyneikes,thersandros)).
+# cnf(c9,axiom,parent_of(oedipus,polyneikes)).
+# cnf(c10,axiom,parent_of(iokaste,polyneikes)).
+# cnf(c4,negated_conjecture,~parent_of(iokaste,X5)|~patricide(X5)|~parent_of(X5,X4)|patricide(X4)).
+# cnf(c11,axiom,parent_of(iokaste,oedipus)).
+# cnf(c12,plain,~parent_of(iokaste,oedipus)|~patricide(oedipus)|patricide(polyneikes)).
+# cnf(c16,plain,~patricide(oedipus)|patricide(polyneikes)).
+# cnf(c17,plain,patricide(polyneikes)).
+# cnf(c13,plain,~parent_of(iokaste,polyneikes)|~patricide(polyneikes)|patricide(thersandros)).
+# cnf(c18,plain,~patricide(polyneikes)|patricide(thersandros)).
+# cnf(c19,plain,patricide(thersandros)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(thersandros_not_patricidal,axiom,(~patricide(thersandros)),input).
+fof(c5,axiom,~patricide(thersandros),inference(fof_simplification,status(thm),[thersandros_not_patricidal])).
+cnf(c6,axiom,~patricide(thersandros),inference(split_conjunct,status(thm),[c5])).
+fof(oedipus_patricidal,axiom,patricide(oedipus),input).
+cnf(c7,axiom,patricide(oedipus),inference(split_conjunct,status(thm),[oedipus_patricidal])).
+fof(iokaste_oedipus,axiom,parent_of(iokaste,oedipus),input).
+cnf(c11,axiom,parent_of(iokaste,oedipus),inference(split_conjunct,status(thm),[iokaste_oedipus])).
+fof(oedipus_polyneikes,axiom,parent_of(oedipus,polyneikes),input).
+cnf(c9,axiom,parent_of(oedipus,polyneikes),inference(split_conjunct,status(thm),[oedipus_polyneikes])).
+fof(iokaste_parent_particide_parent_not_patricide,conjecture,(?[P]:(?[NP]:(((parent_of(iokaste,P)&patricide(P))&parent_of(P,NP))&(~patricide(NP))))),input).
+fof(c0,negated_conjecture,(~(?[P]:(?[NP]:(((parent_of(iokaste,P)&patricide(P))&parent_of(P,NP))&(~patricide(NP)))))),inference(assume_negation,status(cth),[iokaste_parent_particide_parent_not_patricide])).
+fof(c1,negated_conjecture,(~(?[P]:(?[NP]:(((parent_of(iokaste,P)&patricide(P))&parent_of(P,NP))&~patricide(NP))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(![P]:(![NP]:(((~parent_of(iokaste,P)|~patricide(P))|~parent_of(P,NP))|patricide(NP)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(![X2]:(![X3]:(((~parent_of(iokaste,X2)|~patricide(X2))|~parent_of(X2,X3))|patricide(X3)))),inference(variable_rename,status(thm),[c2])).
+cnf(c4,negated_conjecture,~parent_of(iokaste,X5)|~patricide(X5)|~parent_of(X5,X4)|patricide(X4),inference(split_conjunct,status(thm),[c3])).
+cnf(c12,plain,~parent_of(iokaste,oedipus)|~patricide(oedipus)|patricide(polyneikes),inference(resolution,status(thm),[c4, c9])).
+cnf(c16,plain,~patricide(oedipus)|patricide(polyneikes),inference(resolution,status(thm),[c12, c11])).
+cnf(c17,plain,patricide(polyneikes),inference(resolution,status(thm),[c16, c7])).
+fof(iokaste_polyneikes,axiom,parent_of(iokaste,polyneikes),input).
+cnf(c10,axiom,parent_of(iokaste,polyneikes),inference(split_conjunct,status(thm),[iokaste_polyneikes])).
+fof(polyneikes_thersandros,axiom,parent_of(polyneikes,thersandros),input).
+cnf(c8,axiom,parent_of(polyneikes,thersandros),inference(split_conjunct,status(thm),[polyneikes_thersandros])).
+cnf(c13,plain,~parent_of(iokaste,polyneikes)|~patricide(polyneikes)|patricide(thersandros),inference(resolution,status(thm),[c4, c8])).
+cnf(c18,plain,~patricide(polyneikes)|patricide(thersandros),inference(resolution,status(thm),[c13, c10])).
+cnf(c19,plain,patricide(thersandros),inference(resolution,status(thm),[c18, c17])).
+cnf(c20,plain,$false,inference(resolution,status(thm),[c19, c6])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 7
+# Processed clauses  : 13
+# Factors computed   : 0
+# Resolvents computed: 9
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.414 s
+# System time        : 0.260 s
+# Total time         : 0.673 s

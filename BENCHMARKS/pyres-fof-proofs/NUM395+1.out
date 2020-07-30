@@ -1,0 +1,137 @@
+# cnf(reflexivity,axiom,X33=X33).
+# cnf(c11,axiom,epsilon_transitive(empty_set)).
+# cnf(c12,axiom,epsilon_connected(empty_set)).
+# cnf(c23,negated_conjecture,~ordinal(empty_set)).
+# cnf(c30,axiom,~empty(skolem0001)).
+# cnf(symmetry,axiom,X35!=X34|X34=X35).
+# cnf(c33,axiom,empty(skolem0002)).
+# cnf(c34,axiom,empty(empty_set)).
+# cnf(c37,axiom,relation(skolem0003)).
+# cnf(c38,axiom,relation_empty_yielding(skolem0003)).
+# cnf(c42,axiom,~empty(skolem0004)).
+# cnf(transitivity,axiom,X38!=X36|X36!=X37|X38=X37).
+# cnf(c43,axiom,relation(skolem0004)).
+# cnf(c46,axiom,empty(skolem0005)).
+# cnf(c47,axiom,relation(skolem0005)).
+# cnf(c49,axiom,relation(empty_set)).
+# cnf(c0,plain,X40!=X41|X39!=X42|~element(X40,X39)|element(X41,X42)).
+# cnf(c50,axiom,relation_empty_yielding(empty_set)).
+# cnf(c55,axiom,relation(skolem0006)).
+# cnf(c56,axiom,relation_non_empty(skolem0006)).
+# cnf(c1,plain,X43!=X44|~empty(X43)|empty(X44)).
+# cnf(c57,axiom,function(skolem0006)).
+# cnf(c60,axiom,relation(skolem0007)).
+# cnf(c61,axiom,relation_empty_yielding(skolem0007)).
+# cnf(c62,axiom,function(skolem0007)).
+# cnf(c65,axiom,relation(skolem0008)).
+# cnf(c2,plain,X46!=X47|X45!=X48|~in(X46,X45)|in(X47,X48)).
+# cnf(c66,axiom,function(skolem0008)).
+# cnf(c67,axiom,one_to_one(skolem0008)).
+# cnf(c70,axiom,relation(skolem0009)).
+# cnf(c71,axiom,empty(skolem0009)).
+# cnf(c72,axiom,function(skolem0009)).
+# cnf(c3,plain,X49!=X50|~function(X49)|function(X50)).
+# cnf(c75,axiom,relation(skolem0010)).
+# cnf(c76,axiom,function(skolem0010)).
+# cnf(c79,axiom,epsilon_transitive(skolem0011)).
+# cnf(c80,axiom,epsilon_connected(skolem0011)).
+# cnf(c81,axiom,ordinal(skolem0011)).
+# cnf(c4,plain,X51!=X52|~relation(X51)|relation(X52)).
+# cnf(c18,axiom,~ordinal(X54)|epsilon_transitive(X54)).
+# cnf(c19,axiom,~ordinal(X55)|epsilon_connected(X55)).
+# cnf(c5,plain,X56!=X57|~one_to_one(X56)|one_to_one(X57)).
+# cnf(c98,axiom,~empty(X60)|relation(X60)).
+# cnf(c129,plain,relation(skolem0002)).
+# cnf(c6,plain,X61!=X62|~ordinal(X61)|ordinal(X62)).
+# cnf(c107,axiom,~empty(X63)|function(X63)).
+# cnf(c134,plain,function(skolem0002)).
+# cnf(c7,plain,X64!=X65|~epsilon_transitive(X64)|epsilon_transitive(X65)).
+# cnf(c136,plain,function(empty_set)).
+# cnf(c137,plain,function(skolem0005)).
+# cnf(c120,axiom,element(skolem0012(X66),X66)).
+# cnf(c8,plain,X69!=X70|~epsilon_connected(X69)|epsilon_connected(X70)).
+# cnf(c9,plain,X76!=X77|~relation_empty_yielding(X76)|relation_empty_yielding(X77)).
+# cnf(c95,axiom,~in(X80,X79)|~empty(X79)).
+# cnf(c26,axiom,~empty(X81)|X81=empty_set).
+# cnf(c142,plain,skolem0002=empty_set).
+# cnf(c143,plain,skolem0009=empty_set).
+# cnf(c10,plain,X82!=X83|~relation_non_empty(X82)|relation_non_empty(X83)).
+# cnf(c145,plain,skolem0005=empty_set).
+# cnf(c147,plain,empty_set=skolem0002).
+# cnf(c157,plain,empty_set=skolem0009).
+# cnf(c20,axiom,~epsilon_transitive(X85)|~epsilon_connected(X85)|ordinal(X85)).
+# cnf(c170,plain,empty_set=skolem0005).
+# cnf(c110,axiom,~in(X87,X86)|element(X87,X86)).
+# cnf(c114,axiom,~in(X90,X89)|~in(X89,X90)).
+# cnf(c148,plain,~ordinal(skolem0002)|ordinal(empty_set)).
+# cnf(c92,axiom,~empty(X94)|X94=X93|~empty(X93)).
+# cnf(c151,plain,~one_to_one(skolem0002)|one_to_one(empty_set)).
+# cnf(c158,plain,~ordinal(skolem0009)|ordinal(empty_set)).
+# cnf(c161,plain,~one_to_one(skolem0009)|one_to_one(empty_set)).
+# cnf(c166,plain,~relation_non_empty(skolem0009)|relation_non_empty(empty_set)).
+# cnf(c167,plain,~relation_non_empty(skolem0002)|relation_non_empty(empty_set)).
+# cnf(c104,axiom,~relation(X97)|~empty(X97)|~function(X97)|one_to_one(X97)).
+# cnf(c171,plain,~ordinal(skolem0005)|ordinal(empty_set)).
+# cnf(c174,plain,~one_to_one(skolem0005)|one_to_one(empty_set)).
+# cnf(c117,axiom,~element(X98,X99)|empty(X99)|in(X98,X99)).
+# cnf(c176,plain,~relation_non_empty(skolem0005)|relation_non_empty(empty_set)).
+# cnf(c139,plain,skolem0012(X100)!=X102|X100!=X101|element(X102,X101)).
+# cnf(c183,plain,~epsilon_transitive(empty_set)|epsilon_transitive(skolem0002)).
+# cnf(c229,plain,epsilon_transitive(skolem0002)).
+# cnf(c184,plain,~epsilon_connected(empty_set)|epsilon_connected(skolem0002)).
+# cnf(c230,plain,epsilon_connected(skolem0002)).
+# cnf(c155,plain,X103!=skolem0002|X103=empty_set).
+# cnf(c185,plain,~one_to_one(empty_set)|one_to_one(skolem0002)).
+# cnf(c186,plain,~relation_empty_yielding(empty_set)|relation_empty_yielding(skolem0002)).
+# cnf(c234,plain,relation_empty_yielding(skolem0002)).
+# cnf(c165,plain,X104!=skolem0009|X104=empty_set).
+# cnf(c187,plain,~relation_non_empty(empty_set)|relation_non_empty(skolem0002)).
+# cnf(c179,plain,X105!=skolem0005|X105=empty_set).
+# cnf(c194,plain,~epsilon_transitive(empty_set)|epsilon_transitive(skolem0009)).
+# cnf(c190,plain,X106!=empty_set|X106=skolem0002).
+# cnf(c239,plain,epsilon_transitive(skolem0009)).
+# cnf(c242,plain,skolem0005=skolem0002).
+# cnf(c243,plain,skolem0009=skolem0002).
+# cnf(c195,plain,~epsilon_connected(empty_set)|epsilon_connected(skolem0009)).
+# cnf(c268,plain,epsilon_connected(skolem0009)).
+# cnf(c245,plain,skolem0002=skolem0005).
+# cnf(c257,plain,skolem0002=skolem0009).
+# cnf(c196,plain,~one_to_one(empty_set)|one_to_one(skolem0009)).
+# cnf(c197,plain,~relation_empty_yielding(empty_set)|relation_empty_yielding(skolem0009)).
+# cnf(c198,plain,~relation_non_empty(empty_set)|relation_non_empty(skolem0009)).
+# cnf(c294,plain,relation_empty_yielding(skolem0009)).
+# cnf(c202,plain,~epsilon_transitive(empty_set)|ordinal(empty_set)).
+# cnf(c295,plain,ordinal(empty_set)).
+# cnf(c201,plain,X107!=empty_set|X107=skolem0009).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t27_ordinal1,conjecture,ordinal(empty_set),input).
+fof(c21,negated_conjecture,(~ordinal(empty_set)),inference(assume_negation,status(cth),[t27_ordinal1])).
+fof(c22,negated_conjecture,~ordinal(empty_set),inference(fof_simplification,status(thm),[c21])).
+cnf(c23,negated_conjecture,~ordinal(empty_set),inference(split_conjunct,status(thm),[c22])).
+fof(l18_ordinal1,axiom,(epsilon_transitive(empty_set)&epsilon_connected(empty_set)),input).
+cnf(c11,axiom,epsilon_transitive(empty_set),inference(split_conjunct,status(thm),[l18_ordinal1])).
+cnf(c12,axiom,epsilon_connected(empty_set),inference(split_conjunct,status(thm),[l18_ordinal1])).
+fof(d4_ordinal1,axiom,(![A]:(ordinal(A)<=>(epsilon_transitive(A)&epsilon_connected(A)))),input).
+fof(c13,axiom,(![A]:((~ordinal(A)|(epsilon_transitive(A)&epsilon_connected(A)))&((~epsilon_transitive(A)|~epsilon_connected(A))|ordinal(A)))),inference(fof_nnf,status(thm),[d4_ordinal1])).
+fof(c14,axiom,((![A]:(~ordinal(A)|(epsilon_transitive(A)&epsilon_connected(A))))&(![A]:((~epsilon_transitive(A)|~epsilon_connected(A))|ordinal(A)))),inference(shift_quantors,status(thm),[c13])).
+fof(c16,axiom,(![X2]:(![X3]:((~ordinal(X2)|(epsilon_transitive(X2)&epsilon_connected(X2)))&((~epsilon_transitive(X3)|~epsilon_connected(X3))|ordinal(X3))))),inference(shift_quantors,status(thm),[fof(c15,axiom,((![X2]:(~ordinal(X2)|(epsilon_transitive(X2)&epsilon_connected(X2))))&(![X3]:((~epsilon_transitive(X3)|~epsilon_connected(X3))|ordinal(X3)))),inference(variable_rename,status(thm),[c14])).])).
+fof(c17,axiom,(![X2]:(![X3]:(((~ordinal(X2)|epsilon_transitive(X2))&(~ordinal(X2)|epsilon_connected(X2)))&((~epsilon_transitive(X3)|~epsilon_connected(X3))|ordinal(X3))))),inference(distribute,status(thm),[c16])).
+cnf(c20,axiom,~epsilon_transitive(X85)|~epsilon_connected(X85)|ordinal(X85),inference(split_conjunct,status(thm),[c17])).
+cnf(c202,plain,~epsilon_transitive(empty_set)|ordinal(empty_set),inference(resolution,status(thm),[c20, c12])).
+cnf(c295,plain,ordinal(empty_set),inference(resolution,status(thm),[c202, c11])).
+cnf(c297,plain,$false,inference(resolution,status(thm),[c295, c23])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 66
+# Processed clauses  : 105
+# Factors computed   : 0
+# Resolvents computed: 182
+# Tautologies deleted: 12
+# Forward subsumed   : 57
+# Backward subsumed  : 10
+
+# -------- CPU Time ---------
+# User time          : 0.285 s
+# System time        : 0.167 s
+# Total time         : 0.453 s

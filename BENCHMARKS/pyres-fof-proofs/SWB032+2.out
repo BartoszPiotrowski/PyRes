@@ -1,0 +1,279 @@
+# cnf(c43,axiom,idc(uri_xsd_integer)).
+# cnf(c44,axiom,idc(uri_xsd_decimal)).
+# cnf(c45,axiom,idc(uri_xsd_string)).
+# cnf(c27,axiom,~idc(X20)|ic(X20)).
+# cnf(c46,plain,ic(uri_xsd_decimal)).
+# cnf(c2,negated_conjecture,~iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|~iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c47,plain,ic(uri_xsd_integer)).
+# cnf(c48,plain,ic(uri_xsd_string)).
+# cnf(c9,axiom,~iext(uri_owl_disjointWith,X21,X22)|ic(X21)).
+# cnf(c10,axiom,~iext(uri_owl_disjointWith,X23,X24)|ic(X24)).
+# cnf(c20,axiom,~iext(uri_rdfs_subClassOf,X25,X26)|ic(X25)).
+# cnf(c11,axiom,~iext(uri_owl_disjointWith,X28,X29)|~icext(X28,X27)|~icext(X29,X27)).
+# cnf(c21,axiom,~iext(uri_rdfs_subClassOf,X30,X31)|ic(X31)).
+# cnf(c30,axiom,~icext(uri_xsd_integer,X32)|icext(uri_xsd_decimal,X32)).
+# cnf(c33,axiom,~icext(uri_xsd_decimal,X33)|icext(uri_owl_rational,X33)).
+# cnf(c36,axiom,~icext(uri_owl_rational,X34)|icext(uri_owl_real,X34)).
+# cnf(c39,axiom,~icext(uri_xsd_string,X35)|icext(uri_rdf_PlainLiteral,X35)).
+# cnf(c12,axiom,~ic(X37)|~ic(X36)|icext(X37,skolem0001(X37,X36))|iext(uri_owl_disjointWith,X37,X36)).
+# cnf(c42,axiom,~icext(uri_rdf_PlainLiteral,X38)|~icext(uri_owl_real,X38)).
+# cnf(c22,axiom,~iext(uri_rdfs_subClassOf,X40,X41)|~icext(X40,X39)|icext(X41,X39)).
+# cnf(c49,plain,~ic(X42)|icext(X42,skolem0001(X42,uri_xsd_string))|iext(uri_owl_disjointWith,X42,uri_xsd_string)).
+# cnf(c50,plain,~ic(X43)|icext(X43,skolem0001(X43,uri_xsd_integer))|iext(uri_owl_disjointWith,X43,uri_xsd_integer)).
+# cnf(c51,plain,~ic(X44)|icext(X44,skolem0001(X44,uri_xsd_decimal))|iext(uri_owl_disjointWith,X44,uri_xsd_decimal)).
+# cnf(c13,axiom,~ic(X46)|~ic(X45)|icext(X45,skolem0001(X46,X45))|iext(uri_owl_disjointWith,X46,X45)).
+# cnf(c52,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_string)).
+# cnf(c67,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))|~icext(uri_xsd_string,X47)).
+# cnf(c53,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c23,axiom,~ic(X49)|~ic(X48)|icext(X49,skolem0002(X49,X48))|iext(uri_rdfs_subClassOf,X49,X48)).
+# cnf(c54,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c24,axiom,~ic(X51)|~ic(X50)|~icext(X50,skolem0002(X51,X50))|iext(uri_rdfs_subClassOf,X51,X50)).
+# cnf(c55,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)).
+# cnf(c56,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c57,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c88,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))|~icext(uri_xsd_integer,X52)).
+# cnf(c58,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)).
+# cnf(c59,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c60,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_decimal)).
+# cnf(c61,plain,~ic(X53)|icext(uri_xsd_string,skolem0001(X53,uri_xsd_string))|iext(uri_owl_disjointWith,X53,uri_xsd_string)).
+# cnf(c108,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|~icext(uri_xsd_decimal,X54)).
+# cnf(c64,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_string)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c62,plain,~ic(X55)|icext(uri_xsd_integer,skolem0001(X55,uri_xsd_integer))|iext(uri_owl_disjointWith,X55,uri_xsd_integer)).
+# cnf(c117,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))|~icext(uri_xsd_string,X56)).
+# cnf(c69,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_string))).
+# cnf(c63,plain,~ic(X57)|icext(uri_xsd_decimal,skolem0001(X57,uri_xsd_decimal))|iext(uri_owl_disjointWith,X57,uri_xsd_decimal)).
+# cnf(c73,plain,~ic(X58)|icext(X58,skolem0002(X58,uri_xsd_string))|iext(uri_rdfs_subClassOf,X58,uri_xsd_string)).
+# cnf(c74,plain,~ic(X59)|icext(X59,skolem0002(X59,uri_xsd_integer))|iext(uri_rdfs_subClassOf,X59,uri_xsd_integer)).
+# cnf(c75,plain,~ic(X60)|icext(X60,skolem0002(X60,uri_xsd_decimal))|iext(uri_rdfs_subClassOf,X60,uri_xsd_decimal)).
+# cnf(c76,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c72,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,X61)|~icext(uri_xsd_string,X61)).
+# cnf(c80,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_integer))).
+# cnf(c79,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,X62)|~icext(uri_xsd_string,X62)).
+# cnf(c81,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c85,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c84,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,X63)|~icext(uri_xsd_integer,X63)).
+# cnf(c164,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))|~icext(uri_xsd_integer,X64)).
+# cnf(c89,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_integer))).
+# cnf(c92,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,X65)|~icext(uri_xsd_integer,X65)).
+# cnf(c94,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c95,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_decimal))).
+# cnf(c96,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c100,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_decimal))).
+# cnf(c99,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,X66)|~icext(uri_xsd_decimal,X66)).
+# cnf(c101,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c104,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_decimal))|~icext(uri_xsd_integer,X67)|~icext(uri_xsd_decimal,X67)).
+# cnf(c105,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_decimal)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c226,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|~icext(uri_xsd_decimal,X68)).
+# cnf(c110,plain,icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c111,plain,icext(uri_xsd_string,skolem0001(uri_xsd_decimal,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c112,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c113,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c118,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_string,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)).
+# cnf(c120,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_decimal,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c121,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)).
+# cnf(c122,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)).
+# cnf(c127,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_owl_rational,skolem0001(uri_xsd_integer,uri_xsd_string))).
+# cnf(c126,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,X69)|~icext(uri_xsd_string,X69)).
+# cnf(c128,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c129,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)).
+# cnf(c132,plain,icext(uri_xsd_string,skolem0002(uri_xsd_string,uri_xsd_string))|iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_string)).
+# cnf(c315,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_string)|~ic(uri_xsd_string)).
+# cnf(c325,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_string)).
+# cnf(c133,plain,icext(uri_xsd_integer,skolem0002(uri_xsd_integer,uri_xsd_string))|iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_string)).
+# cnf(c134,plain,icext(uri_xsd_decimal,skolem0002(uri_xsd_decimal,uri_xsd_string))|iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c135,plain,icext(uri_xsd_string,skolem0002(uri_xsd_string,uri_xsd_integer))|iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_integer)).
+# cnf(c136,plain,icext(uri_xsd_integer,skolem0002(uri_xsd_integer,uri_xsd_integer))|iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c354,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_integer)|~ic(uri_xsd_integer)).
+# cnf(c363,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c137,plain,icext(uri_xsd_decimal,skolem0002(uri_xsd_decimal,uri_xsd_integer))|iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c138,plain,icext(uri_xsd_string,skolem0002(uri_xsd_string,uri_xsd_decimal))|iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_decimal)).
+# cnf(c139,plain,icext(uri_xsd_integer,skolem0002(uri_xsd_integer,uri_xsd_decimal))|iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c140,plain,icext(uri_xsd_decimal,skolem0002(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_decimal)).
+# cnf(c394,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_decimal)|~ic(uri_xsd_decimal)).
+# cnf(c402,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_decimal)).
+# cnf(c143,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,X73)|~icext(uri_xsd_string,X73)).
+# cnf(c144,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c145,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,skolem0001(uri_xsd_string,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)).
+# cnf(c165,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)|icext(uri_owl_rational,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c146,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,skolem0001(uri_xsd_string,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)).
+# cnf(c421,plain,icext(uri_owl_rational,skolem0001(uri_xsd_integer,uri_xsd_integer))|~icext(uri_xsd_integer,X74)).
+# cnf(c166,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c147,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,skolem0001(uri_xsd_string,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_string)).
+# cnf(c435,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|~icext(uri_xsd_integer,X75)).
+# cnf(c170,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c150,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,X76)|~icext(uri_xsd_integer,X76)).
+# cnf(c172,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c176,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)|icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_integer))).
+# cnf(c151,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)).
+# cnf(c152,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)).
+# cnf(c202,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)|icext(uri_owl_rational,skolem0001(uri_xsd_integer,uri_xsd_decimal))).
+# cnf(c153,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_string)).
+# cnf(c203,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c227,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_decimal)|icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c160,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c494,plain,icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|~icext(uri_xsd_decimal,X78)).
+# cnf(c228,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c229,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c161,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c230,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c167,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c231,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c233,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c168,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c531,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|~icext(uri_xsd_integer,X79)).
+# cnf(c234,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c169,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c235,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_integer,uri_xsd_string))).
+# cnf(c236,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c175,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,X80)|~icext(uri_xsd_integer,X80)).
+# cnf(c242,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c177,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c243,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c244,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c178,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c179,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c266,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c181,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c268,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_integer))).
+# cnf(c270,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c183,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c274,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c278,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)|icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c291,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)|icext(uri_owl_real,skolem0001(uri_xsd_integer,uri_xsd_string))).
+# cnf(c190,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,X82)|~icext(uri_xsd_decimal,X82)).
+# cnf(c307,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_owl_rational,skolem0001(uri_xsd_string,uri_xsd_decimal))).
+# cnf(c310,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c197,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|~icext(uri_xsd_integer,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c311,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c198,plain,iext(uri_owl_disjointWith,uri_xsd_string,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c331,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_decimal,skolem0002(uri_xsd_integer,uri_xsd_string))).
+# cnf(c332,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c201,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_decimal))|~icext(uri_xsd_integer,X84)|~icext(uri_xsd_decimal,X84)).
+# cnf(c333,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_string)|icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c204,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,skolem0001(uri_xsd_decimal,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c337,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_string)|icext(uri_owl_rational,skolem0002(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c340,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_string)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c205,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,skolem0001(uri_xsd_decimal,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c341,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_string)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c347,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_integer)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c206,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c349,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_integer)|icext(uri_rdf_PlainLiteral,skolem0002(uri_xsd_string,uri_xsd_integer))).
+# cnf(c207,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c350,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_integer)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c208,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_decimal)).
+# cnf(c367,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_integer)|icext(uri_owl_rational,skolem0002(uri_xsd_decimal,uri_xsd_integer))).
+# cnf(c370,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_integer)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c209,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_decimal))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_integer)).
+# cnf(c371,plain,iext(uri_rdfs_subClassOf,uri_xsd_decimal,uri_xsd_integer)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c377,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_decimal)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c379,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_decimal)|icext(uri_rdf_PlainLiteral,skolem0002(uri_xsd_string,uri_xsd_decimal))).
+# cnf(c214,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_integer))|~icext(uri_xsd_decimal,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c380,plain,iext(uri_rdfs_subClassOf,uri_xsd_string,uri_xsd_decimal)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c386,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0002(uri_xsd_integer,uri_xsd_decimal))).
+# cnf(c216,plain,iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_integer))|~icext(uri_xsd_string,skolem0001(uri_xsd_integer,uri_xsd_integer))).
+# cnf(c830,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)|~ic(uri_xsd_integer)|~ic(uri_xsd_decimal)).
+# cnf(c838,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)|~ic(uri_xsd_integer)).
+# cnf(c839,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)).
+# cnf(c218,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_decimal))|~icext(uri_xsd_integer,skolem0001(uri_xsd_decimal,uri_xsd_integer))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_integer)).
+# cnf(c841,plain,~iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c845,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c219,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_decimal))|~icext(uri_xsd_integer,skolem0001(uri_xsd_decimal,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)).
+# cnf(c846,plain,icext(uri_xsd_string,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c847,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c848,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c849,plain,icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c850,plain,icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# cnf(c220,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_decimal))|~icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_integer,uri_xsd_string)).
+# cnf(c851,plain,icext(uri_xsd_string,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c852,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_string,uri_xsd_string))).
+# cnf(c853,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c854,plain,icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_decimal))).
+# cnf(c222,plain,icext(uri_xsd_integer,skolem0001(uri_xsd_integer,uri_xsd_decimal))|~icext(uri_xsd_integer,skolem0001(uri_xsd_decimal,uri_xsd_decimal))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_decimal)).
+# cnf(c870,plain,~icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_decimal,uri_xsd_string))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(owl_dat_dtype_relation_subtype_string_plainliteral,axiom,(![X]:(icext(uri_xsd_string,X)=>icext(uri_rdf_PlainLiteral,X))),input).
+fof(c37,axiom,(![X]:(~icext(uri_xsd_string,X)|icext(uri_rdf_PlainLiteral,X))),inference(fof_nnf,status(thm),[owl_dat_dtype_relation_subtype_string_plainliteral])).
+fof(c38,axiom,(![X18]:(~icext(uri_xsd_string,X18)|icext(uri_rdf_PlainLiteral,X18))),inference(variable_rename,status(thm),[c37])).
+cnf(c39,axiom,~icext(uri_xsd_string,X35)|icext(uri_rdf_PlainLiteral,X35),inference(split_conjunct,status(thm),[c38])).
+fof(owl_dat_dtype_decimal_type,axiom,idc(uri_xsd_decimal),input).
+cnf(c44,axiom,idc(uri_xsd_decimal),inference(split_conjunct,status(thm),[owl_dat_dtype_decimal_type])).
+fof(owl_parts_idc_cond_set,axiom,(![X]:(idc(X)=>ic(X))),input).
+fof(c25,axiom,(![X]:(~idc(X)|ic(X))),inference(fof_nnf,status(thm),[owl_parts_idc_cond_set])).
+fof(c26,axiom,(![X14]:(~idc(X14)|ic(X14))),inference(variable_rename,status(thm),[c25])).
+cnf(c27,axiom,~idc(X20)|ic(X20),inference(split_conjunct,status(thm),[c26])).
+cnf(c46,plain,ic(uri_xsd_decimal),inference(resolution,status(thm),[c27, c44])).
+fof(owl_dat_dtype_string_type,axiom,idc(uri_xsd_string),input).
+cnf(c45,axiom,idc(uri_xsd_string),inference(split_conjunct,status(thm),[owl_dat_dtype_string_type])).
+cnf(c48,plain,ic(uri_xsd_string),inference(resolution,status(thm),[c27, c45])).
+fof(owl_eqdis_disjointwith,axiom,(![C1]:(![C2]:(iext(uri_owl_disjointWith,C1,C2)<=>((ic(C1)&ic(C2))&(![X]:(~(icext(C1,X)&icext(C2,X)))))))),input).
+fof(c3,axiom,(![C1]:(![C2]:((~iext(uri_owl_disjointWith,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|~icext(C2,X)))))&(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&icext(C2,X))))|iext(uri_owl_disjointWith,C1,C2))))),inference(fof_nnf,status(thm),[owl_eqdis_disjointwith])).
+fof(c4,axiom,((![C1]:(![C2]:(~iext(uri_owl_disjointWith,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|~icext(C2,X)))))))&(![C1]:(![C2]:(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&icext(C2,X))))|iext(uri_owl_disjointWith,C1,C2))))),inference(shift_quantors,status(thm),[c3])).
+fof(c5,axiom,((![X2]:(![X3]:(~iext(uri_owl_disjointWith,X2,X3)|((ic(X2)&ic(X3))&(![X4]:(~icext(X2,X4)|~icext(X3,X4)))))))&(![X5]:(![X6]:(((~ic(X5)|~ic(X6))|(?[X7]:(icext(X5,X7)&icext(X6,X7))))|iext(uri_owl_disjointWith,X5,X6))))),inference(variable_rename,status(thm),[c4])).
+fof(c7,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:((~iext(uri_owl_disjointWith,X2,X3)|((ic(X2)&ic(X3))&(~icext(X2,X4)|~icext(X3,X4))))&(((~ic(X5)|~ic(X6))|(icext(X5,skolem0001(X5,X6))&icext(X6,skolem0001(X5,X6))))|iext(uri_owl_disjointWith,X5,X6)))))))),inference(shift_quantors,status(thm),[fof(c6,axiom,((![X2]:(![X3]:(~iext(uri_owl_disjointWith,X2,X3)|((ic(X2)&ic(X3))&(![X4]:(~icext(X2,X4)|~icext(X3,X4)))))))&(![X5]:(![X6]:(((~ic(X5)|~ic(X6))|(icext(X5,skolem0001(X5,X6))&icext(X6,skolem0001(X5,X6))))|iext(uri_owl_disjointWith,X5,X6))))),inference(skolemize,status(esa),[c5])).])).
+fof(c8,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:((((~iext(uri_owl_disjointWith,X2,X3)|ic(X2))&(~iext(uri_owl_disjointWith,X2,X3)|ic(X3)))&(~iext(uri_owl_disjointWith,X2,X3)|(~icext(X2,X4)|~icext(X3,X4))))&((((~ic(X5)|~ic(X6))|icext(X5,skolem0001(X5,X6)))|iext(uri_owl_disjointWith,X5,X6))&(((~ic(X5)|~ic(X6))|icext(X6,skolem0001(X5,X6)))|iext(uri_owl_disjointWith,X5,X6))))))))),inference(distribute,status(thm),[c7])).
+cnf(c13,axiom,~ic(X46)|~ic(X45)|icext(X45,skolem0001(X46,X45))|iext(uri_owl_disjointWith,X46,X45),inference(split_conjunct,status(thm),[c8])).
+cnf(c61,plain,~ic(X53)|icext(uri_xsd_string,skolem0001(X53,uri_xsd_string))|iext(uri_owl_disjointWith,X53,uri_xsd_string),inference(resolution,status(thm),[c13, c48])).
+cnf(c111,plain,icext(uri_xsd_string,skolem0001(uri_xsd_decimal,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string),inference(resolution,status(thm),[c61, c46])).
+cnf(c243,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_decimal,uri_xsd_string)),inference(resolution,status(thm),[c111, c39])).
+fof(testcase_conclusion_fullish_032_Datatype_Relationships,conjecture,(iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)&iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)),input).
+fof(c0,negated_conjecture,(~(iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)&iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal))),inference(assume_negation,status(cth),[testcase_conclusion_fullish_032_Datatype_Relationships])).
+fof(c1,negated_conjecture,(~iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|~iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)),inference(fof_nnf,status(thm),[c0])).
+cnf(c2,negated_conjecture,~iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|~iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal),inference(split_conjunct,status(thm),[c1])).
+fof(owl_dat_dtype_integer_type,axiom,idc(uri_xsd_integer),input).
+cnf(c43,axiom,idc(uri_xsd_integer),inference(split_conjunct,status(thm),[owl_dat_dtype_integer_type])).
+cnf(c47,plain,ic(uri_xsd_integer),inference(resolution,status(thm),[c27, c43])).
+fof(owl_rdfsext_subclassof,axiom,(![C1]:(![C2]:(iext(uri_rdfs_subClassOf,C1,C2)<=>((ic(C1)&ic(C2))&(![X]:(icext(C1,X)=>icext(C2,X))))))),input).
+fof(c14,axiom,(![C1]:(![C2]:((~iext(uri_rdfs_subClassOf,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|icext(C2,X)))))&(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&~icext(C2,X))))|iext(uri_rdfs_subClassOf,C1,C2))))),inference(fof_nnf,status(thm),[owl_rdfsext_subclassof])).
+fof(c15,axiom,((![C1]:(![C2]:(~iext(uri_rdfs_subClassOf,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|icext(C2,X)))))))&(![C1]:(![C2]:(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&~icext(C2,X))))|iext(uri_rdfs_subClassOf,C1,C2))))),inference(shift_quantors,status(thm),[c14])).
+fof(c16,axiom,((![X8]:(![X9]:(~iext(uri_rdfs_subClassOf,X8,X9)|((ic(X8)&ic(X9))&(![X10]:(~icext(X8,X10)|icext(X9,X10)))))))&(![X11]:(![X12]:(((~ic(X11)|~ic(X12))|(?[X13]:(icext(X11,X13)&~icext(X12,X13))))|iext(uri_rdfs_subClassOf,X11,X12))))),inference(variable_rename,status(thm),[c15])).
+fof(c18,axiom,(![X8]:(![X9]:(![X10]:(![X11]:(![X12]:((~iext(uri_rdfs_subClassOf,X8,X9)|((ic(X8)&ic(X9))&(~icext(X8,X10)|icext(X9,X10))))&(((~ic(X11)|~ic(X12))|(icext(X11,skolem0002(X11,X12))&~icext(X12,skolem0002(X11,X12))))|iext(uri_rdfs_subClassOf,X11,X12)))))))),inference(shift_quantors,status(thm),[fof(c17,axiom,((![X8]:(![X9]:(~iext(uri_rdfs_subClassOf,X8,X9)|((ic(X8)&ic(X9))&(![X10]:(~icext(X8,X10)|icext(X9,X10)))))))&(![X11]:(![X12]:(((~ic(X11)|~ic(X12))|(icext(X11,skolem0002(X11,X12))&~icext(X12,skolem0002(X11,X12))))|iext(uri_rdfs_subClassOf,X11,X12))))),inference(skolemize,status(esa),[c16])).])).
+fof(c19,axiom,(![X8]:(![X9]:(![X10]:(![X11]:(![X12]:((((~iext(uri_rdfs_subClassOf,X8,X9)|ic(X8))&(~iext(uri_rdfs_subClassOf,X8,X9)|ic(X9)))&(~iext(uri_rdfs_subClassOf,X8,X9)|(~icext(X8,X10)|icext(X9,X10))))&((((~ic(X11)|~ic(X12))|icext(X11,skolem0002(X11,X12)))|iext(uri_rdfs_subClassOf,X11,X12))&(((~ic(X11)|~ic(X12))|~icext(X12,skolem0002(X11,X12)))|iext(uri_rdfs_subClassOf,X11,X12))))))))),inference(distribute,status(thm),[c18])).
+cnf(c24,axiom,~ic(X51)|~ic(X50)|~icext(X50,skolem0002(X51,X50))|iext(uri_rdfs_subClassOf,X51,X50),inference(split_conjunct,status(thm),[c19])).
+fof(owl_dat_dtype_relation_subtype_integer_decimal,axiom,(![X]:(icext(uri_xsd_integer,X)=>icext(uri_xsd_decimal,X))),input).
+fof(c28,axiom,(![X]:(~icext(uri_xsd_integer,X)|icext(uri_xsd_decimal,X))),inference(fof_nnf,status(thm),[owl_dat_dtype_relation_subtype_integer_decimal])).
+fof(c29,axiom,(![X15]:(~icext(uri_xsd_integer,X15)|icext(uri_xsd_decimal,X15))),inference(variable_rename,status(thm),[c28])).
+cnf(c30,axiom,~icext(uri_xsd_integer,X32)|icext(uri_xsd_decimal,X32),inference(split_conjunct,status(thm),[c29])).
+cnf(c23,axiom,~ic(X49)|~ic(X48)|icext(X49,skolem0002(X49,X48))|iext(uri_rdfs_subClassOf,X49,X48),inference(split_conjunct,status(thm),[c19])).
+cnf(c75,plain,~ic(X60)|icext(X60,skolem0002(X60,uri_xsd_decimal))|iext(uri_rdfs_subClassOf,X60,uri_xsd_decimal),inference(resolution,status(thm),[c23, c46])).
+cnf(c139,plain,icext(uri_xsd_integer,skolem0002(uri_xsd_integer,uri_xsd_decimal))|iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal),inference(resolution,status(thm),[c75, c47])).
+cnf(c386,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)|icext(uri_xsd_decimal,skolem0002(uri_xsd_integer,uri_xsd_decimal)),inference(resolution,status(thm),[c139, c30])).
+cnf(c830,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)|~ic(uri_xsd_integer)|~ic(uri_xsd_decimal),inference(resolution,status(thm),[c386, c24])).
+cnf(c838,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal)|~ic(uri_xsd_integer),inference(resolution,status(thm),[c830, c46])).
+cnf(c839,plain,iext(uri_rdfs_subClassOf,uri_xsd_integer,uri_xsd_decimal),inference(resolution,status(thm),[c838, c47])).
+cnf(c841,plain,~iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string),inference(resolution,status(thm),[c839, c2])).
+cnf(c848,plain,icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_decimal,uri_xsd_string)),inference(resolution,status(thm),[c841, c243])).
+fof(owl_dat_dtype_relation_disjoint_plainliteral_real,axiom,(![X]:(~(icext(uri_rdf_PlainLiteral,X)&icext(uri_owl_real,X)))),input).
+fof(c40,axiom,(![X]:(~icext(uri_rdf_PlainLiteral,X)|~icext(uri_owl_real,X))),inference(fof_nnf,status(thm),[owl_dat_dtype_relation_disjoint_plainliteral_real])).
+fof(c41,axiom,(![X19]:(~icext(uri_rdf_PlainLiteral,X19)|~icext(uri_owl_real,X19))),inference(variable_rename,status(thm),[c40])).
+cnf(c42,axiom,~icext(uri_rdf_PlainLiteral,X38)|~icext(uri_owl_real,X38),inference(split_conjunct,status(thm),[c41])).
+fof(owl_dat_dtype_relation_subtype_rational_real,axiom,(![X]:(icext(uri_owl_rational,X)=>icext(uri_owl_real,X))),input).
+fof(c34,axiom,(![X]:(~icext(uri_owl_rational,X)|icext(uri_owl_real,X))),inference(fof_nnf,status(thm),[owl_dat_dtype_relation_subtype_rational_real])).
+fof(c35,axiom,(![X17]:(~icext(uri_owl_rational,X17)|icext(uri_owl_real,X17))),inference(variable_rename,status(thm),[c34])).
+cnf(c36,axiom,~icext(uri_owl_rational,X34)|icext(uri_owl_real,X34),inference(split_conjunct,status(thm),[c35])).
+fof(owl_dat_dtype_relation_subtype_decimal_rational,axiom,(![X]:(icext(uri_xsd_decimal,X)=>icext(uri_owl_rational,X))),input).
+fof(c31,axiom,(![X]:(~icext(uri_xsd_decimal,X)|icext(uri_owl_rational,X))),inference(fof_nnf,status(thm),[owl_dat_dtype_relation_subtype_decimal_rational])).
+fof(c32,axiom,(![X16]:(~icext(uri_xsd_decimal,X16)|icext(uri_owl_rational,X16))),inference(variable_rename,status(thm),[c31])).
+cnf(c33,axiom,~icext(uri_xsd_decimal,X33)|icext(uri_owl_rational,X33),inference(split_conjunct,status(thm),[c32])).
+cnf(c12,axiom,~ic(X37)|~ic(X36)|icext(X37,skolem0001(X37,X36))|iext(uri_owl_disjointWith,X37,X36),inference(split_conjunct,status(thm),[c8])).
+cnf(c49,plain,~ic(X42)|icext(X42,skolem0001(X42,uri_xsd_string))|iext(uri_owl_disjointWith,X42,uri_xsd_string),inference(resolution,status(thm),[c12, c48])).
+cnf(c54,plain,icext(uri_xsd_decimal,skolem0001(uri_xsd_decimal,uri_xsd_string))|iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string),inference(resolution,status(thm),[c49, c46])).
+cnf(c76,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_owl_rational,skolem0001(uri_xsd_decimal,uri_xsd_string)),inference(resolution,status(thm),[c54, c33])).
+cnf(c144,plain,iext(uri_owl_disjointWith,uri_xsd_decimal,uri_xsd_string)|icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_string)),inference(resolution,status(thm),[c76, c36])).
+cnf(c849,plain,icext(uri_owl_real,skolem0001(uri_xsd_decimal,uri_xsd_string)),inference(resolution,status(thm),[c841, c144])).
+cnf(c870,plain,~icext(uri_rdf_PlainLiteral,skolem0001(uri_xsd_decimal,uri_xsd_string)),inference(resolution,status(thm),[c849, c42])).
+cnf(c884,plain,$false,inference(resolution,status(thm),[c870, c848])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 20
+# Processed clauses  : 192
+# Factors computed   : 0
+# Resolvents computed: 839
+# Tautologies deleted: 4
+# Forward subsumed   : 231
+# Backward subsumed  : 63
+
+# -------- CPU Time ---------
+# User time          : 0.601 s
+# System time        : 0.279 s
+# Total time         : 0.879 s

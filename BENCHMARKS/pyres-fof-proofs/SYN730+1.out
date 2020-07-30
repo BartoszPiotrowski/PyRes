@@ -1,0 +1,29 @@
+# cnf(c7,negated_conjecture,~p(X5,skolem0001(X5),X6)).
+# cnf(c6,negated_conjecture,p(a,skolem0001(X7),h(skolem0001(X7)))|p(X7,skolem0001(X7),k(skolem0001(X7)))).
+# cnf(c9,plain,p(a,skolem0001(X8),h(skolem0001(X8)))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(thm75,conjecture,(?[V]:(![J]:(?[Q]:((p(a,J,h(J))|p(V,J,k(J)))=>p(V,J,Q))))),input).
+fof(c0,negated_conjecture,(~(?[V]:(![J]:(?[Q]:((p(a,J,h(J))|p(V,J,k(J)))=>p(V,J,Q)))))),inference(assume_negation,status(cth),[thm75])).
+fof(c1,negated_conjecture,(![V]:(?[J]:(![Q]:((p(a,J,h(J))|p(V,J,k(J)))&~p(V,J,Q))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(![V]:(?[J]:((p(a,J,h(J))|p(V,J,k(J)))&(![Q]:~p(V,J,Q))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(![X2]:(?[X3]:((p(a,X3,h(X3))|p(X2,X3,k(X3)))&(![X4]:~p(X2,X3,X4))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X4]:((p(a,skolem0001(X2),h(skolem0001(X2)))|p(X2,skolem0001(X2),k(skolem0001(X2))))&~p(X2,skolem0001(X2),X4)))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(![X2]:((p(a,skolem0001(X2),h(skolem0001(X2)))|p(X2,skolem0001(X2),k(skolem0001(X2))))&(![X4]:~p(X2,skolem0001(X2),X4)))),inference(skolemize,status(esa),[c3])).])).
+cnf(c7,negated_conjecture,~p(X5,skolem0001(X5),X6),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,p(a,skolem0001(X7),h(skolem0001(X7)))|p(X7,skolem0001(X7),k(skolem0001(X7))),inference(split_conjunct,status(thm),[c5])).
+cnf(c9,plain,p(a,skolem0001(X8),h(skolem0001(X8))),inference(resolution,status(thm),[c6, c7])).
+cnf(c10,plain,$false,inference(resolution,status(thm),[c9, c7])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 2
+# Processed clauses  : 3
+# Factors computed   : 0
+# Resolvents computed: 3
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.273 s
+# System time        : 0.283 s
+# Total time         : 0.556 s

@@ -1,0 +1,91 @@
+# cnf(reflexivity,axiom,X47=X47).
+# cnf(c29,axiom,subset(X48,X48)).
+# cnf(c60,axiom,~member(X49,empty_set)).
+# cnf(c26,axiom,~empty(X51)|~member(X50,X51)).
+# cnf(c76,axiom,subset(X53,union(X53,X52))).
+# cnf(symmetry,axiom,X55!=X54|X54=X55).
+# cnf(c46,axiom,X58!=X57|subset(X58,X57)).
+# cnf(c47,axiom,X61!=X60|subset(X60,X61)).
+# cnf(transitivity,axiom,X64!=X63|X63!=X65|X64=X65).
+# cnf(c27,axiom,member(skolem0004(X68),X68)|empty(X68)).
+# cnf(c81,plain,empty(empty_set)).
+# cnf(c4,plain,X70!=X71|~empty(X70)|empty(X71)).
+# cnf(c0,plain,X73!=X74|X72!=X75|union(X73,X72)=union(X74,X75)).
+# cnf(c40,axiom,union(X77,X78)=union(X78,X77)).
+# cnf(c86,plain,subset(union(X82,X81),union(X81,X82))).
+# cnf(c1,plain,X86!=X87|X85!=X88|difference(X86,X85)=difference(X87,X88)).
+# cnf(c37,axiom,member(skolem0005(X89,X90),X89)|subset(X89,X90)).
+# cnf(c93,plain,subset(empty_set,X91)).
+# cnf(c94,plain,subset(X93,X92)|~empty(X93)).
+# cnf(c96,plain,subset(X96,X95)|member(skolem0004(X96),X96)).
+# cnf(c2,plain,X98!=X99|X97!=X100|~subset(X98,X97)|subset(X99,X100)).
+# cnf(c38,axiom,~member(skolem0005(X104,X105),X105)|subset(X104,X105)).
+# cnf(c55,axiom,~member(X109,difference(X107,X108))|member(X109,X107)).
+# cnf(c3,plain,X111!=X112|X110!=X113|~member(X111,X110)|member(X112,X113)).
+# cnf(c56,axiom,~member(X116,difference(X114,X115))|~member(X116,X115)).
+# cnf(c67,axiom,~member(X118,X117)|member(X118,union(X117,X119))).
+# cnf(c68,axiom,~member(X121,X122)|member(X121,union(X120,X122))).
+# cnf(c16,axiom,X124!=X125|~member(X123,X124)|member(X123,X125)).
+# cnf(c17,axiom,X126!=X127|~member(X128,X127)|member(X128,X126)).
+# cnf(c9,negated_conjecture,difference(skolem0001,union(skolem0001,skolem0002))!=empty_set).
+# cnf(c36,axiom,~subset(X131,X130)|~member(X129,X131)|member(X129,X130)).
+# cnf(c48,axiom,~subset(X133,X132)|~subset(X132,X133)|X133=X132).
+# cnf(c133,plain,~subset(X135,empty_set)|X135=empty_set).
+# cnf(c18,axiom,~member(skolem0003(X137,X136),X137)|~member(skolem0003(X137,X136),X136)|X137=X136).
+# cnf(c136,plain,X138=empty_set|member(skolem0004(X138),X138)).
+# cnf(c150,plain,X139=empty_set|~empty(X139)).
+# cnf(c19,axiom,member(skolem0003(X141,X140),X141)|member(skolem0003(X141,X140),X140)|X141=X140).
+# cnf(c140,plain,member(skolem0004(X142),X142)|empty_set=X142).
+# cnf(c193,plain,empty_set=X143|~empty(X143)).
+# cnf(c57,axiom,~member(X146,X147)|member(X146,X145)|member(X146,difference(X147,X145))).
+# cnf(c66,axiom,~member(X154,union(X155,X153))|member(X154,X155)|member(X154,X153)).
+# cnf(c73,axiom,difference(X158,X159)!=empty_set|subset(X158,X159)).
+# cnf(c74,axiom,~subset(X161,X160)|difference(X161,X160)=empty_set).
+# cnf(c231,plain,difference(X162,X162)=empty_set).
+# cnf(c84,plain,X164!=X165|union(X164,X163)=union(X165,X163)).
+# cnf(c232,plain,empty_set=difference(X167,X167)).
+# cnf(c233,plain,subset(difference(X168,X168),empty_set)).
+# cnf(c87,plain,~empty(union(X172,X171))|empty(union(X171,X172))).
+# cnf(c229,plain,difference(empty_set,X176)=empty_set).
+# cnf(c89,plain,X179!=X180|union(X179,union(X181,X178))=union(X180,union(X178,X181))).
+# cnf(c259,plain,empty_set=difference(empty_set,X182)).
+# cnf(c261,plain,subset(difference(empty_set,X183),empty_set)).
+# cnf(c90,plain,X188!=union(X189,X187)|X188=union(X187,X189)).
+# cnf(c249,plain,~empty(empty_set)|empty(difference(X195,X195))).
+# cnf(c91,plain,X198!=X197|difference(X198,X196)=difference(X197,X196)).
+# cnf(c293,plain,empty(difference(X199,X199))).
+# cnf(c306,plain,subset(difference(X200,X200),X201)).
+# cnf(c92,plain,X208!=X206|difference(X208,union(X207,X205))=difference(X206,union(X205,X207))).
+# cnf(c228,plain,difference(X216,union(X216,X215))=empty_set).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_th76,conjecture,(![B]:(![C]:difference(B,union(B,C))=empty_set)),input).
+fof(c5,negated_conjecture,(~(![B]:(![C]:difference(B,union(B,C))=empty_set))),inference(assume_negation,status(cth),[prove_th76])).
+fof(c6,negated_conjecture,(?[B]:(?[C]:difference(B,union(B,C))!=empty_set)),inference(fof_nnf,status(thm),[c5])).
+fof(c7,negated_conjecture,(?[X2]:(?[X3]:difference(X2,union(X2,X3))!=empty_set)),inference(variable_rename,status(thm),[c6])).
+fof(c8,negated_conjecture,difference(skolem0001,union(skolem0001,skolem0002))!=empty_set,inference(skolemize,status(esa),[c7])).
+cnf(c9,negated_conjecture,difference(skolem0001,union(skolem0001,skolem0002))!=empty_set,inference(split_conjunct,status(thm),[c8])).
+fof(subset_of_union,axiom,(![B]:(![C]:subset(B,union(B,C)))),input).
+fof(c75,axiom,(![X45]:(![X46]:subset(X45,union(X45,X46)))),inference(variable_rename,status(thm),[subset_of_union])).
+cnf(c76,axiom,subset(X53,union(X53,X52)),inference(split_conjunct,status(thm),[c75])).
+fof(difference_empty_set,axiom,(![B]:(![C]:(difference(B,C)=empty_set<=>subset(B,C)))),input).
+fof(c69,axiom,(![B]:(![C]:((difference(B,C)!=empty_set|subset(B,C))&(~subset(B,C)|difference(B,C)=empty_set)))),inference(fof_nnf,status(thm),[difference_empty_set])).
+fof(c70,axiom,((![B]:(![C]:(difference(B,C)!=empty_set|subset(B,C))))&(![B]:(![C]:(~subset(B,C)|difference(B,C)=empty_set)))),inference(shift_quantors,status(thm),[c69])).
+fof(c72,axiom,(![X41]:(![X42]:(![X43]:(![X44]:((difference(X41,X42)!=empty_set|subset(X41,X42))&(~subset(X43,X44)|difference(X43,X44)=empty_set)))))),inference(shift_quantors,status(thm),[fof(c71,axiom,((![X41]:(![X42]:(difference(X41,X42)!=empty_set|subset(X41,X42))))&(![X43]:(![X44]:(~subset(X43,X44)|difference(X43,X44)=empty_set)))),inference(variable_rename,status(thm),[c70])).])).
+cnf(c74,axiom,~subset(X161,X160)|difference(X161,X160)=empty_set,inference(split_conjunct,status(thm),[c72])).
+cnf(c228,plain,difference(X216,union(X216,X215))=empty_set,inference(resolution,status(thm),[c74, c76])).
+cnf(c332,plain,$false,inference(resolution,status(thm),[c228, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 33
+# Processed clauses  : 59
+# Factors computed   : 1
+# Resolvents computed: 255
+# Tautologies deleted: 3
+# Forward subsumed   : 44
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.447 s
+# System time        : 0.294 s
+# Total time         : 0.741 s

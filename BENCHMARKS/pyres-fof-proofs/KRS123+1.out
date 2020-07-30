@@ -1,0 +1,72 @@
+# cnf(c63,axiom,cowlThing(X29)).
+# cnf(c64,axiom,~cowlNothing(X30)).
+# cnf(c0,axiom,cUnsatisfiable(i2003_11_14_17_22_02803)).
+# cnf(c3,axiom,~cf(X31)|cd(X31)).
+# cnf(c6,axiom,~ce3(X32)|cc(X32)).
+# cnf(c12,axiom,~cd1xcomp(X34)|~ra_Px2(X34,X33)).
+# cnf(c37,axiom,~cc1(X35)|cd1(X35)).
+# cnf(c40,axiom,~cc1(X36)|cd1xcomp(X36)).
+# cnf(c43,axiom,~cc(X37)|cdxcomp(X37)).
+# cnf(c49,axiom,~cUnsatisfiable(X38)|cc(X38)).
+# cnf(c65,plain,cc(i2003_11_14_17_22_02803)).
+# cnf(c13,axiom,ra_Px2(X39,skolem0001(X39))|cd1xcomp(X39)).
+# cnf(c66,plain,cdxcomp(i2003_11_14_17_22_02803)).
+# cnf(c50,axiom,~cUnsatisfiable(X40)|cd(X40)).
+# cnf(c68,plain,cd(i2003_11_14_17_22_02803)).
+# cnf(c57,axiom,~xsd_string(X41)|~xsd_integer(X41)).
+# cnf(c58,axiom,xsd_integer(X42)|xsd_string(X42)).
+# cnf(c19,axiom,~cd1(X43)|ra_Px2(X43,skolem0002(X43))).
+# cnf(c20,axiom,~ra_Px2(X46,X47)|cd1(X46)).
+# cnf(c70,plain,cd1(X48)|cd1xcomp(X48)).
+# cnf(c27,axiom,~ra_Px1(X50,X49)|cdxcomp(X50)).
+# cnf(c26,axiom,~cdxcomp(X51)|ra_Px1(X51,skolem0003(X51))).
+# cnf(c33,axiom,~cd(X53)|~ra_Px1(X53,X52)).
+# cnf(c72,plain,ra_Px1(i2003_11_14_17_22_02803,skolem0003(i2003_11_14_17_22_02803))).
+# cnf(c73,plain,~cd(i2003_11_14_17_22_02803)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_12,axiom,cUnsatisfiable(i2003_11_14_17_22_02803),input).
+cnf(c0,axiom,cUnsatisfiable(i2003_11_14_17_22_02803),inference(split_conjunct,status(thm),[axiom_12])).
+fof(axiom_2,axiom,(![X]:(cUnsatisfiable(X)<=>(cc(X)&cd(X)))),input).
+fof(c44,axiom,(![X]:((~cUnsatisfiable(X)|(cc(X)&cd(X)))&((~cc(X)|~cd(X))|cUnsatisfiable(X)))),inference(fof_nnf,status(thm),[axiom_2])).
+fof(c45,axiom,((![X]:(~cUnsatisfiable(X)|(cc(X)&cd(X))))&(![X]:((~cc(X)|~cd(X))|cUnsatisfiable(X)))),inference(shift_quantors,status(thm),[c44])).
+fof(c47,axiom,(![X23]:(![X24]:((~cUnsatisfiable(X23)|(cc(X23)&cd(X23)))&((~cc(X24)|~cd(X24))|cUnsatisfiable(X24))))),inference(shift_quantors,status(thm),[fof(c46,axiom,((![X23]:(~cUnsatisfiable(X23)|(cc(X23)&cd(X23))))&(![X24]:((~cc(X24)|~cd(X24))|cUnsatisfiable(X24)))),inference(variable_rename,status(thm),[c45])).])).
+fof(c48,axiom,(![X23]:(![X24]:(((~cUnsatisfiable(X23)|cc(X23))&(~cUnsatisfiable(X23)|cd(X23)))&((~cc(X24)|~cd(X24))|cUnsatisfiable(X24))))),inference(distribute,status(thm),[c47])).
+cnf(c50,axiom,~cUnsatisfiable(X40)|cd(X40),inference(split_conjunct,status(thm),[c48])).
+cnf(c68,plain,cd(i2003_11_14_17_22_02803),inference(resolution,status(thm),[c50, c0])).
+fof(axiom_6,axiom,(![X]:(cd(X)<=>(~(?[Y]:ra_Px1(X,Y))))),input).
+fof(c28,axiom,(![X]:((~cd(X)|(![Y]:~ra_Px1(X,Y)))&((?[Y]:ra_Px1(X,Y))|cd(X)))),inference(fof_nnf,status(thm),[axiom_6])).
+fof(c29,axiom,((![X]:(~cd(X)|(![Y]:~ra_Px1(X,Y))))&(![X]:((?[Y]:ra_Px1(X,Y))|cd(X)))),inference(shift_quantors,status(thm),[c28])).
+fof(c30,axiom,((![X16]:(~cd(X16)|(![X17]:~ra_Px1(X16,X17))))&(![X18]:((?[X19]:ra_Px1(X18,X19))|cd(X18)))),inference(variable_rename,status(thm),[c29])).
+fof(c32,axiom,(![X16]:(![X17]:(![X18]:((~cd(X16)|~ra_Px1(X16,X17))&(ra_Px1(X18,skolem0004(X18))|cd(X18)))))),inference(shift_quantors,status(thm),[fof(c31,axiom,((![X16]:(~cd(X16)|(![X17]:~ra_Px1(X16,X17))))&(![X18]:(ra_Px1(X18,skolem0004(X18))|cd(X18)))),inference(skolemize,status(esa),[c30])).])).
+cnf(c33,axiom,~cd(X53)|~ra_Px1(X53,X52),inference(split_conjunct,status(thm),[c32])).
+fof(axiom_3,axiom,(![X]:(cc(X)=>cdxcomp(X))),input).
+fof(c41,axiom,(![X]:(~cc(X)|cdxcomp(X))),inference(fof_nnf,status(thm),[axiom_3])).
+fof(c42,axiom,(![X22]:(~cc(X22)|cdxcomp(X22))),inference(variable_rename,status(thm),[c41])).
+cnf(c43,axiom,~cc(X37)|cdxcomp(X37),inference(split_conjunct,status(thm),[c42])).
+cnf(c49,axiom,~cUnsatisfiable(X38)|cc(X38),inference(split_conjunct,status(thm),[c48])).
+cnf(c65,plain,cc(i2003_11_14_17_22_02803),inference(resolution,status(thm),[c49, c0])).
+cnf(c66,plain,cdxcomp(i2003_11_14_17_22_02803),inference(resolution,status(thm),[c65, c43])).
+fof(axiom_7,axiom,(![X]:(cdxcomp(X)<=>(?[Y0]:ra_Px1(X,Y0)))),input).
+fof(c21,axiom,(![X]:((~cdxcomp(X)|(?[Y0]:ra_Px1(X,Y0)))&((![Y0]:~ra_Px1(X,Y0))|cdxcomp(X)))),inference(fof_nnf,status(thm),[axiom_7])).
+fof(c22,axiom,((![X]:(~cdxcomp(X)|(?[Y0]:ra_Px1(X,Y0))))&(![X]:((![Y0]:~ra_Px1(X,Y0))|cdxcomp(X)))),inference(shift_quantors,status(thm),[c21])).
+fof(c23,axiom,((![X12]:(~cdxcomp(X12)|(?[X13]:ra_Px1(X12,X13))))&(![X14]:((![X15]:~ra_Px1(X14,X15))|cdxcomp(X14)))),inference(variable_rename,status(thm),[c22])).
+fof(c25,axiom,(![X12]:(![X14]:(![X15]:((~cdxcomp(X12)|ra_Px1(X12,skolem0003(X12)))&(~ra_Px1(X14,X15)|cdxcomp(X14)))))),inference(shift_quantors,status(thm),[fof(c24,axiom,((![X12]:(~cdxcomp(X12)|ra_Px1(X12,skolem0003(X12))))&(![X14]:((![X15]:~ra_Px1(X14,X15))|cdxcomp(X14)))),inference(skolemize,status(esa),[c23])).])).
+cnf(c26,axiom,~cdxcomp(X51)|ra_Px1(X51,skolem0003(X51)),inference(split_conjunct,status(thm),[c25])).
+cnf(c72,plain,ra_Px1(i2003_11_14_17_22_02803,skolem0003(i2003_11_14_17_22_02803)),inference(resolution,status(thm),[c26, c66])).
+cnf(c73,plain,~cd(i2003_11_14_17_22_02803),inference(resolution,status(thm),[c72, c33])).
+cnf(c75,plain,$false,inference(resolution,status(thm),[c73, c68])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 21
+# Processed clauses  : 25
+# Factors computed   : 0
+# Resolvents computed: 11
+# Tautologies deleted: 2
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.265 s
+# System time        : 0.240 s
+# Total time         : 0.505 s

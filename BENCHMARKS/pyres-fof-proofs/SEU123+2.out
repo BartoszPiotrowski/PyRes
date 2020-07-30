@@ -1,0 +1,208 @@
+# cnf(c60,axiom,$true).
+# cnf(reflexivity,axiom,X61=X61).
+# cnf(c48,axiom,subset(X62,X62)).
+# cnf(c52,axiom,~empty(skolem0004)).
+# cnf(symmetry,axiom,X64!=X63|X63=X64).
+# cnf(c55,axiom,empty(skolem0005)).
+# cnf(c59,axiom,empty(empty_set)).
+# cnf(c39,plain,subset(empty_set,X66)).
+# cnf(c26,negated_conjecture,subset(skolem0002,empty_set)).
+# cnf(transitivity,axiom,X68!=X67|X67!=X69|X68=X69).
+# cnf(c27,negated_conjecture,skolem0002!=empty_set).
+# cnf(c10,axiom,~in(X70,X71)|~empty(X71)).
+# cnf(c58,axiom,set_intersection2(X72,X72)=X72).
+# cnf(c113,plain,X73=set_intersection2(X73,X73)).
+# cnf(c0,plain,X78!=X77|X76!=X75|set_intersection2(X78,X76)=set_intersection2(X77,X75)).
+# cnf(c13,axiom,~empty(X79)|X79=empty_set).
+# cnf(c120,plain,skolem0005=empty_set).
+# cnf(c122,plain,empty_set=skolem0005).
+# cnf(c1,plain,X83!=X82|X81!=X80|~in(X83,X81)|in(X82,X80)).
+# cnf(c45,axiom,~disjoint(X85,X84)|disjoint(X84,X85)).
+# cnf(c102,axiom,X86!=X87|subset(X86,X87)).
+# cnf(c132,plain,subset(skolem0005,empty_set)).
+# cnf(c2,plain,X92!=X91|X90!=X89|~subset(X92,X90)|subset(X91,X89)).
+# cnf(c129,plain,subset(X93,set_intersection2(X93,X93))).
+# cnf(c131,plain,subset(set_intersection2(X94,X94),X94)).
+# cnf(c103,axiom,X95!=X96|subset(X96,X95)).
+# cnf(c3,plain,X101!=X100|X99!=X98|~disjoint(X101,X99)|disjoint(X100,X98)).
+# cnf(c110,axiom,~in(X104,X105)|~in(X105,X104)).
+# cnf(c4,plain,X109!=X108|~empty(X109)|empty(X108)).
+# cnf(c95,axiom,X112!=empty_set|~in(X111,X112)).
+# cnf(c145,plain,~empty(X113)|empty(set_intersection2(X113,X113))).
+# cnf(c7,axiom,~empty(X114)|X114=X115|~empty(X115)).
+# cnf(c149,plain,empty(set_intersection2(skolem0005,skolem0005))).
+# cnf(c150,plain,empty(set_intersection2(empty_set,empty_set))).
+# cnf(c151,plain,~empty(X116)|X116=skolem0005).
+# cnf(c20,plain,disjoint(X117,X118)|in(skolem0001(X117,X118),set_intersection2(X117,X118))).
+# cnf(c147,plain,~empty(set_intersection2(X120,X120))|empty(X120)).
+# cnf(c106,axiom,set_intersection2(X122,X121)=set_intersection2(X121,X122)).
+# cnf(c21,plain,~in(X125,set_intersection2(X123,X124))|~disjoint(X123,X124)).
+# cnf(c123,plain,X128!=skolem0005|X128=empty_set).
+# cnf(c126,plain,X129!=empty_set|X129=skolem0005).
+# cnf(c35,plain,disjoint(X130,X131)|in(skolem0003(X130,X131),X130)).
+# cnf(c188,plain,disjoint(X132,X133)|~empty(X132)).
+# cnf(c191,plain,disjoint(skolem0005,X134)).
+# cnf(c192,plain,disjoint(empty_set,X135)).
+# cnf(c36,plain,disjoint(X136,X137)|in(skolem0003(X136,X137),X137)).
+# cnf(c195,plain,disjoint(X138,skolem0005)).
+# cnf(c197,plain,disjoint(X139,empty_set)).
+# cnf(c203,plain,disjoint(X142,X143)|~empty(X143)).
+# cnf(c37,plain,~in(X145,X146)|~in(X145,X144)|~disjoint(X146,X144)).
+# cnf(c186,plain,disjoint(X149,X150)|X149!=empty_set).
+# cnf(c42,plain,~subset(X154,X155)|~subset(X155,X153)|subset(X154,X153)).
+# cnf(c193,plain,disjoint(set_intersection2(empty_set,empty_set),X158)).
+# cnf(c194,plain,disjoint(set_intersection2(skolem0005,skolem0005),X159)).
+# cnf(c201,plain,disjoint(X160,X161)|X161!=empty_set).
+# cnf(c66,axiom,~disjoint(X164,X163)|set_intersection2(X164,X163)=empty_set).
+# cnf(c212,plain,disjoint(X166,set_intersection2(empty_set,empty_set))).
+# cnf(c213,plain,disjoint(X167,set_intersection2(skolem0005,skolem0005))).
+# cnf(c214,plain,~in(X168,skolem0005)|~in(X168,X169)).
+# cnf(c216,plain,~in(X170,empty_set)|~in(X170,X171)).
+# cnf(c67,axiom,set_intersection2(X173,X172)!=empty_set|disjoint(X173,X172)).
+# cnf(c228,plain,~subset(X180,empty_set)|subset(X180,X179)).
+# cnf(c74,axiom,X182!=set_intersection2(X183,X184)|~in(X181,X182)|in(X181,X183)).
+# cnf(c265,plain,subset(skolem0005,X186)).
+# cnf(c266,plain,subset(skolem0002,X187)).
+# cnf(c75,axiom,X191!=set_intersection2(X192,X193)|~in(X190,X191)|in(X190,X193)).
+# cnf(c76,axiom,X201!=set_intersection2(X202,X204)|~in(X203,X202)|~in(X203,X204)|in(X203,X201)).
+# cnf(c239,plain,set_intersection2(skolem0005,X208)=empty_set).
+# cnf(c286,plain,disjoint(X210,set_intersection2(skolem0005,X211))).
+# cnf(c77,axiom,~in(skolem0006(X212,X213,X214),X214)|~in(skolem0006(X212,X213,X214),X212)|~in(skolem0006(X212,X213,X214),X213)|X214=set_intersection2(X212,X213)).
+# cnf(c293,plain,disjoint(set_intersection2(skolem0005,X216),X215)).
+# cnf(c241,plain,set_intersection2(empty_set,X221)=empty_set).
+# cnf(c78,axiom,in(skolem0006(X223,X224,X225),X225)|in(skolem0006(X223,X224,X225),X223)|X225=set_intersection2(X223,X224)).
+# cnf(c304,plain,disjoint(X227,set_intersection2(empty_set,X226))).
+# cnf(c311,plain,disjoint(set_intersection2(empty_set,X228),X229)).
+# cnf(c245,plain,set_intersection2(X234,empty_set)=empty_set).
+# cnf(c79,axiom,in(skolem0006(X235,X236,X237),X237)|in(skolem0006(X235,X236,X237),X236)|X237=set_intersection2(X235,X236)).
+# cnf(c348,plain,disjoint(X239,set_intersection2(X240,empty_set))).
+# cnf(c355,plain,disjoint(set_intersection2(X241,empty_set),X242)).
+# cnf(c86,axiom,~subset(X248,X249)|~in(X247,X248)|in(X247,X249)).
+# cnf(c247,plain,set_intersection2(X250,skolem0005)=empty_set).
+# cnf(c399,plain,disjoint(X252,set_intersection2(X253,skolem0005))).
+# cnf(c406,plain,disjoint(set_intersection2(X254,skolem0005),X255)).
+# cnf(c87,axiom,in(skolem0007(X259,X258),X259)|subset(X259,X258)).
+# cnf(c421,plain,subset(X260,X261)|~empty(X260)).
+# cnf(c88,axiom,~in(skolem0007(X268,X267),X267)|subset(X268,X267)).
+# cnf(c264,plain,subset(set_intersection2(empty_set,empty_set),X271)).
+# cnf(c274,plain,~subset(X273,skolem0005)|subset(X273,X272)).
+# cnf(c96,axiom,in(skolem0008(X275),X275)|X275=empty_set).
+# cnf(c459,plain,in(skolem0008(skolem0002),skolem0002)).
+# cnf(c104,axiom,~subset(X280,X281)|~subset(X281,X280)|X280=X281).
+# cnf(c466,plain,~empty(skolem0002)).
+# cnf(c464,plain,~in(skolem0008(skolem0002),skolem0005)).
+# cnf(c465,plain,~in(skolem0002,skolem0008(skolem0002))).
+# cnf(c467,plain,~in(skolem0008(skolem0002),empty_set)).
+# cnf(c114,plain,X283!=set_intersection2(X282,X282)|X283=X282).
+# cnf(c277,plain,~subset(X289,skolem0002)|subset(X289,X288)).
+# cnf(c116,plain,X291!=X290|X291=set_intersection2(X290,X290)).
+# cnf(c117,plain,X299!=X298|set_intersection2(X299,X297)=set_intersection2(X298,X297)).
+# cnf(c287,plain,empty_set=set_intersection2(skolem0005,X300)).
+# cnf(c288,plain,set_intersection2(skolem0005,X301)=skolem0005).
+# cnf(c290,plain,subset(set_intersection2(skolem0005,X303),empty_set)).
+# cnf(c118,plain,X306!=X304|set_intersection2(X306,set_intersection2(X305,X305))=set_intersection2(X304,X305)).
+# cnf(c537,plain,subset(set_intersection2(skolem0005,X308),X307)).
+# cnf(c305,plain,empty_set=set_intersection2(empty_set,X315)).
+# cnf(c119,plain,X318!=X316|set_intersection2(X318,X317)=set_intersection2(X316,set_intersection2(X317,X317))).
+# cnf(c306,plain,set_intersection2(empty_set,X319)=skolem0005).
+# cnf(c308,plain,subset(set_intersection2(empty_set,X321),empty_set)).
+# cnf(c602,plain,subset(set_intersection2(empty_set,X322),X323)).
+# cnf(c124,plain,X325!=X324|set_intersection2(X325,skolem0005)=set_intersection2(X324,empty_set)).
+# cnf(c349,plain,empty_set=set_intersection2(X332,empty_set)).
+# cnf(c127,plain,X334!=X333|set_intersection2(X334,empty_set)=set_intersection2(X333,skolem0005)).
+# cnf(c350,plain,set_intersection2(X335,empty_set)=skolem0005).
+# cnf(c352,plain,subset(set_intersection2(X337,empty_set),empty_set)).
+# cnf(c675,plain,subset(set_intersection2(X339,empty_set),X338)).
+# cnf(c133,plain,skolem0002!=X342|empty_set!=X343|subset(X342,X343)).
+# cnf(c400,plain,empty_set=set_intersection2(X348,skolem0005)).
+# cnf(c401,plain,set_intersection2(X349,skolem0005)=skolem0005).
+# cnf(c134,plain,empty_set!=X351|X350!=X352|subset(X351,X352)).
+# cnf(c403,plain,subset(set_intersection2(X354,skolem0005),empty_set)).
+# cnf(c745,plain,subset(set_intersection2(X356,skolem0005),X355)).
+# cnf(c135,plain,skolem0005!=X361|empty_set!=X362|subset(X361,X362)).
+# cnf(c417,plain,subset(X365,X366)|X365!=empty_set).
+# cnf(c136,plain,X372!=X371|X372!=X373|subset(X371,X373)).
+# cnf(c137,plain,X384!=X383|set_intersection2(X384,X384)!=X385|subset(X383,X385)).
+# cnf(c138,plain,set_intersection2(X393,X393)!=X392|X393!=X394|subset(X392,X394)).
+# cnf(c485,plain,subset(set_intersection2(skolem0002,skolem0002),X398)).
+# cnf(c153,plain,~empty(X401)|X401=set_intersection2(skolem0005,skolem0005)).
+# cnf(c524,plain,~in(X404,empty_set)|in(X404,X403)).
+# cnf(c528,plain,skolem0005=set_intersection2(skolem0005,X405)).
+# cnf(c154,plain,empty(set_intersection2(set_intersection2(skolem0005,skolem0005),set_intersection2(skolem0005,skolem0005)))).
+# cnf(c595,plain,skolem0005=set_intersection2(empty_set,X415)).
+# cnf(c156,plain,~empty(X416)|X416=set_intersection2(empty_set,empty_set)).
+# cnf(c157,plain,empty(set_intersection2(set_intersection2(empty_set,empty_set),set_intersection2(empty_set,empty_set)))).
+# cnf(c666,plain,skolem0005=set_intersection2(X425,empty_set)).
+# cnf(c715,plain,skolem0005=set_intersection2(X434,skolem0005)).
+# cnf(c732,plain,empty_set!=X437|subset(X437,X438)).
+# cnf(c163,plain,in(skolem0001(X443,X444),set_intersection2(X443,X444))|disjoint(X444,X443)).
+# cnf(c164,plain,in(skolem0001(X457,X456),set_intersection2(X457,X456))|X457!=X458|X456!=X455|disjoint(X458,X455)).
+# cnf(c846,plain,~in(X464,skolem0005)|in(X464,X463)).
+# cnf(c165,plain,disjoint(X466,X465)|~in(set_intersection2(X466,X465),skolem0001(X466,X465))).
+# cnf(c167,plain,disjoint(X483,X480)|skolem0001(X483,X480)!=X482|set_intersection2(X483,X480)!=X481|in(X482,X481)).
+# cnf(c168,plain,disjoint(X492,X491)|~empty(set_intersection2(X492,X491))).
+# cnf(c172,plain,subset(set_intersection2(X497,X496),set_intersection2(X496,X497))).
+# cnf(c174,plain,X506!=X504|set_intersection2(X506,set_intersection2(X503,X505))=set_intersection2(X504,set_intersection2(X505,X503))).
+# cnf(c451,plain,in(skolem0008(X508),X508)|disjoint(X507,X508)).
+# cnf(c458,plain,in(skolem0008(X513),X513)|disjoint(X513,X514)).
+# cnf(c175,plain,~empty(set_intersection2(X517,X518))|empty(set_intersection2(X518,X517))).
+# cnf(c473,plain,~subset(X521,skolem0005)|X521=skolem0005).
+# cnf(c176,plain,X524!=set_intersection2(X522,X523)|X524=set_intersection2(X523,X522)).
+# cnf(c1079,plain,skolem0002=skolem0005).
+# cnf(c1097,plain,skolem0002=empty_set).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t3_xboole_1,conjecture,(![A]:(subset(A,empty_set)=>A=empty_set)),input).
+fof(c22,negated_conjecture,(~(![A]:(subset(A,empty_set)=>A=empty_set))),inference(assume_negation,status(cth),[t3_xboole_1])).
+fof(c23,negated_conjecture,(?[A]:(subset(A,empty_set)&A!=empty_set)),inference(fof_nnf,status(thm),[c22])).
+fof(c24,negated_conjecture,(?[X13]:(subset(X13,empty_set)&X13!=empty_set)),inference(variable_rename,status(thm),[c23])).
+fof(c25,negated_conjecture,(subset(skolem0002,empty_set)&skolem0002!=empty_set),inference(skolemize,status(esa),[c24])).
+cnf(c27,negated_conjecture,skolem0002!=empty_set,inference(split_conjunct,status(thm),[c25])).
+cnf(transitivity,axiom,X68!=X67|X67!=X69|X68=X69,eq_axiom).
+fof(rc1_xboole_0,axiom,(?[A]:empty(A)),input).
+fof(c53,axiom,(?[X28]:empty(X28)),inference(variable_rename,status(thm),[rc1_xboole_0])).
+fof(c54,axiom,empty(skolem0005),inference(skolemize,status(esa),[c53])).
+cnf(c55,axiom,empty(skolem0005),inference(split_conjunct,status(thm),[c54])).
+fof(t6_boole,axiom,(![A]:(empty(A)=>A=empty_set)),input).
+fof(c11,axiom,(![A]:(~empty(A)|A=empty_set)),inference(fof_nnf,status(thm),[t6_boole])).
+fof(c12,axiom,(![X6]:(~empty(X6)|X6=empty_set)),inference(variable_rename,status(thm),[c11])).
+cnf(c13,axiom,~empty(X79)|X79=empty_set,inference(split_conjunct,status(thm),[c12])).
+cnf(c120,plain,skolem0005=empty_set,inference(resolution,status(thm),[c13, c55])).
+cnf(c123,plain,X128!=skolem0005|X128=empty_set,inference(resolution,status(thm),[c120, transitivity])).
+cnf(c26,negated_conjecture,subset(skolem0002,empty_set),inference(split_conjunct,status(thm),[c25])).
+fof(t2_xboole_1,plain,(![A]:subset(empty_set,A)),input).
+fof(c38,plain,(![X20]:subset(empty_set,X20)),inference(variable_rename,status(thm),[t2_xboole_1])).
+cnf(c39,plain,subset(empty_set,X66),inference(split_conjunct,status(thm),[c38])).
+fof(t1_xboole_1,plain,(![A]:(![B]:(![C]:((subset(A,B)&subset(B,C))=>subset(A,C))))),input).
+fof(c40,plain,(![A]:(![B]:(![C]:((~subset(A,B)|~subset(B,C))|subset(A,C))))),inference(fof_nnf,status(thm),[t1_xboole_1])).
+fof(c41,plain,(![X21]:(![X22]:(![X23]:((~subset(X21,X22)|~subset(X22,X23))|subset(X21,X23))))),inference(variable_rename,status(thm),[c40])).
+cnf(c42,plain,~subset(X154,X155)|~subset(X155,X153)|subset(X154,X153),inference(split_conjunct,status(thm),[c41])).
+cnf(c228,plain,~subset(X180,empty_set)|subset(X180,X179),inference(resolution,status(thm),[c42, c39])).
+cnf(c266,plain,subset(skolem0002,X187),inference(resolution,status(thm),[c228, c26])).
+fof(d10_xboole_0,axiom,(![A]:(![B]:(A=B<=>(subset(A,B)&subset(B,A))))),input).
+fof(c97,axiom,(![A]:(![B]:((A!=B|(subset(A,B)&subset(B,A)))&((~subset(A,B)|~subset(B,A))|A=B)))),inference(fof_nnf,status(thm),[d10_xboole_0])).
+fof(c98,axiom,((![A]:(![B]:(A!=B|(subset(A,B)&subset(B,A)))))&(![A]:(![B]:((~subset(A,B)|~subset(B,A))|A=B)))),inference(shift_quantors,status(thm),[c97])).
+fof(c100,axiom,(![X53]:(![X54]:(![X55]:(![X56]:((X53!=X54|(subset(X53,X54)&subset(X54,X53)))&((~subset(X55,X56)|~subset(X56,X55))|X55=X56)))))),inference(shift_quantors,status(thm),[fof(c99,axiom,((![X53]:(![X54]:(X53!=X54|(subset(X53,X54)&subset(X54,X53)))))&(![X55]:(![X56]:((~subset(X55,X56)|~subset(X56,X55))|X55=X56)))),inference(variable_rename,status(thm),[c98])).])).
+fof(c101,axiom,(![X53]:(![X54]:(![X55]:(![X56]:(((X53!=X54|subset(X53,X54))&(X53!=X54|subset(X54,X53)))&((~subset(X55,X56)|~subset(X56,X55))|X55=X56)))))),inference(distribute,status(thm),[c100])).
+cnf(c102,axiom,X86!=X87|subset(X86,X87),inference(split_conjunct,status(thm),[c101])).
+cnf(c132,plain,subset(skolem0005,empty_set),inference(resolution,status(thm),[c102, c120])).
+cnf(c265,plain,subset(skolem0005,X186),inference(resolution,status(thm),[c228, c132])).
+cnf(c104,axiom,~subset(X280,X281)|~subset(X281,X280)|X280=X281,inference(split_conjunct,status(thm),[c101])).
+cnf(c473,plain,~subset(X521,skolem0005)|X521=skolem0005,inference(resolution,status(thm),[c104, c265])).
+cnf(c1079,plain,skolem0002=skolem0005,inference(resolution,status(thm),[c473, c266])).
+cnf(c1097,plain,skolem0002=empty_set,inference(resolution,status(thm),[c1079, c123])).
+cnf(c1124,plain,$false,inference(resolution,status(thm),[c1097, c27])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 46
+# Processed clauses  : 152
+# Factors computed   : 2
+# Resolvents computed: 1020
+# Tautologies deleted: 8
+# Forward subsumed   : 192
+# Backward subsumed  : 12
+
+# -------- CPU Time ---------
+# User time          : 0.470 s
+# System time        : 0.230 s
+# Total time         : 0.700 s

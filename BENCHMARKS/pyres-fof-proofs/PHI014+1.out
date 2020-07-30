@@ -1,0 +1,105 @@
+# cnf(c2,negated_conjecture,~exemplifies_property(existence,god)).
+# cnf(c3,axiom,is_the(god,none_greater)).
+# cnf(c25,axiom,~is_the(X12,X13)|property(X13)).
+# cnf(c31,plain,property(none_greater)).
+# cnf(c26,axiom,~is_the(X14,X15)|object(X14)).
+# cnf(c9,axiom,~object(X16)|~is_the(X16,none_greater)|exemplifies_property(existence,X16)|object(skolem0001(X16))).
+# cnf(c32,plain,object(god)).
+# cnf(c17,axiom,~object(X17)|~exemplifies_property(none_greater,X17)|exemplifies_property(conceivable,X17)).
+# cnf(c33,plain,~object(god)|exemplifies_property(existence,god)|object(skolem0001(god))).
+# cnf(c34,plain,exemplifies_property(existence,god)|object(skolem0001(god))).
+# cnf(c35,plain,object(skolem0001(god))).
+# cnf(c10,axiom,~object(X18)|~is_the(X18,none_greater)|exemplifies_property(existence,X18)|exemplifies_relation(greater_than,skolem0001(X18),X18)).
+# cnf(c19,axiom,~object(X19)|~exemplifies_property(conceivable,X19)|object(skolem0002(X19))|exemplifies_property(none_greater,X19)).
+# cnf(c11,axiom,~object(X20)|~is_the(X20,none_greater)|exemplifies_property(existence,X20)|exemplifies_property(conceivable,skolem0001(X20))).
+# cnf(c37,plain,~object(god)|exemplifies_property(existence,god)|exemplifies_property(conceivable,skolem0001(god))).
+# cnf(c38,plain,exemplifies_property(existence,god)|exemplifies_property(conceivable,skolem0001(god))).
+# cnf(c39,plain,exemplifies_property(conceivable,skolem0001(god))).
+# cnf(c18,axiom,~object(X22)|~exemplifies_property(none_greater,X22)|~object(X21)|~exemplifies_relation(greater_than,X21,X22)|~exemplifies_property(conceivable,X21)).
+# cnf(c21,axiom,~object(X23)|~exemplifies_property(conceivable,X23)|exemplifies_property(conceivable,skolem0002(X23))|exemplifies_property(none_greater,X23)).
+# cnf(c36,plain,~object(god)|exemplifies_property(existence,god)|exemplifies_relation(greater_than,skolem0001(god),god)).
+# cnf(c43,plain,exemplifies_property(existence,god)|exemplifies_relation(greater_than,skolem0001(god),god)).
+# cnf(c44,plain,exemplifies_relation(greater_than,skolem0001(god),god)).
+# cnf(c20,axiom,~object(X24)|~exemplifies_property(conceivable,X24)|exemplifies_relation(greater_than,skolem0002(X24),X24)|exemplifies_property(none_greater,X24)).
+# cnf(c30,axiom,~property(X26)|~object(X25)|~is_the(X25,X26)|~object(X27)|~is_the(X27,X26)|exemplifies_property(X26,X27)).
+# cnf(c41,plain,~object(skolem0001(god))|object(skolem0002(skolem0001(god)))|exemplifies_property(none_greater,skolem0001(god))).
+# cnf(c49,plain,object(skolem0002(skolem0001(god)))|exemplifies_property(none_greater,skolem0001(god))).
+# cnf(c48,plain,~property(none_greater)|~object(X28)|~is_the(X28,none_greater)|~object(god)|exemplifies_property(none_greater,god)).
+# cnf(c51,plain,~property(none_greater)|~object(god)|exemplifies_property(none_greater,god)).
+# cnf(c52,plain,~property(none_greater)|exemplifies_property(none_greater,god)).
+# cnf(c53,plain,exemplifies_property(none_greater,god)).
+# cnf(c54,plain,~object(god)|exemplifies_property(conceivable,god)).
+# cnf(c55,plain,exemplifies_property(conceivable,god)).
+# cnf(c42,plain,~object(skolem0001(god))|exemplifies_property(conceivable,skolem0002(skolem0001(god)))|exemplifies_property(none_greater,skolem0001(god))).
+# cnf(c59,plain,exemplifies_property(conceivable,skolem0002(skolem0001(god)))|exemplifies_property(none_greater,skolem0001(god))).
+# cnf(c46,plain,~object(god)|~exemplifies_property(none_greater,god)|~object(skolem0001(god))|~exemplifies_property(conceivable,skolem0001(god))).
+# cnf(c64,plain,~object(god)|~exemplifies_property(none_greater,god)|~object(skolem0001(god))).
+# cnf(c65,plain,~object(god)|~exemplifies_property(none_greater,god)).
+# cnf(c66,plain,~object(god)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(definition_god,axiom,is_the(god,none_greater),input).
+cnf(c3,axiom,is_the(god,none_greater),inference(split_conjunct,status(thm),[definition_god])).
+fof(description_is_property_and_described_is_object,axiom,(![X]:(![F]:(is_the(X,F)=>(property(F)&object(X))))),input).
+fof(c22,axiom,(![X]:(![F]:(~is_the(X,F)|(property(F)&object(X))))),inference(fof_nnf,status(thm),[description_is_property_and_described_is_object])).
+fof(c23,axiom,(![X7]:(![X8]:(~is_the(X7,X8)|(property(X8)&object(X7))))),inference(variable_rename,status(thm),[c22])).
+fof(c24,axiom,(![X7]:(![X8]:((~is_the(X7,X8)|property(X8))&(~is_the(X7,X8)|object(X7))))),inference(distribute,status(thm),[c23])).
+cnf(c26,axiom,~is_the(X14,X15)|object(X14),inference(split_conjunct,status(thm),[c24])).
+cnf(c32,plain,object(god),inference(resolution,status(thm),[c26, c3])).
+cnf(c25,axiom,~is_the(X12,X13)|property(X13),inference(split_conjunct,status(thm),[c24])).
+cnf(c31,plain,property(none_greater),inference(resolution,status(thm),[c25, c3])).
+fof(description_theorem_2,axiom,(![F]:(property(F)=>((?[Y]:(object(Y)&is_the(Y,F)))=>(![Z]:(object(Z)=>(is_the(Z,F)=>exemplifies_property(F,Z))))))),input).
+fof(c27,axiom,(![F]:(~property(F)|((![Y]:(~object(Y)|~is_the(Y,F)))|(![Z]:(~object(Z)|(~is_the(Z,F)|exemplifies_property(F,Z))))))),inference(fof_nnf,status(thm),[description_theorem_2])).
+fof(c29,axiom,(![X9]:(![X10]:(![X11]:(~property(X9)|((~object(X10)|~is_the(X10,X9))|(~object(X11)|(~is_the(X11,X9)|exemplifies_property(X9,X11)))))))),inference(shift_quantors,status(thm),[fof(c28,axiom,(![X9]:(~property(X9)|((![X10]:(~object(X10)|~is_the(X10,X9)))|(![X11]:(~object(X11)|(~is_the(X11,X9)|exemplifies_property(X9,X11))))))),inference(variable_rename,status(thm),[c27])).])).
+cnf(c30,axiom,~property(X26)|~object(X25)|~is_the(X25,X26)|~object(X27)|~is_the(X27,X26)|exemplifies_property(X26,X27),inference(split_conjunct,status(thm),[c29])).
+cnf(c48,plain,~property(none_greater)|~object(X28)|~is_the(X28,none_greater)|~object(god)|exemplifies_property(none_greater,god),inference(resolution,status(thm),[c30, c3])).
+cnf(c51,plain,~property(none_greater)|~object(god)|exemplifies_property(none_greater,god),inference(resolution,status(thm),[c48, c3])).
+cnf(c52,plain,~property(none_greater)|exemplifies_property(none_greater,god),inference(resolution,status(thm),[c51, c32])).
+cnf(c53,plain,exemplifies_property(none_greater,god),inference(resolution,status(thm),[c52, c31])).
+fof(god_exists,conjecture,exemplifies_property(existence,god),input).
+fof(c0,negated_conjecture,(~exemplifies_property(existence,god)),inference(assume_negation,status(cth),[god_exists])).
+fof(c1,negated_conjecture,~exemplifies_property(existence,god),inference(fof_simplification,status(thm),[c0])).
+cnf(c2,negated_conjecture,~exemplifies_property(existence,god),inference(split_conjunct,status(thm),[c1])).
+fof(premise_2,axiom,(![X]:(object(X)=>((is_the(X,none_greater)&(~exemplifies_property(existence,X)))=>(?[Y]:((object(Y)&exemplifies_relation(greater_than,Y,X))&exemplifies_property(conceivable,Y)))))),input).
+fof(c4,axiom,(![X]:(object(X)=>((is_the(X,none_greater)&~exemplifies_property(existence,X))=>(?[Y]:((object(Y)&exemplifies_relation(greater_than,Y,X))&exemplifies_property(conceivable,Y)))))),inference(fof_simplification,status(thm),[premise_2])).
+fof(c5,axiom,(![X]:(~object(X)|((~is_the(X,none_greater)|exemplifies_property(existence,X))|(?[Y]:((object(Y)&exemplifies_relation(greater_than,Y,X))&exemplifies_property(conceivable,Y)))))),inference(fof_nnf,status(thm),[c4])).
+fof(c6,axiom,(![X2]:(~object(X2)|((~is_the(X2,none_greater)|exemplifies_property(existence,X2))|(?[X3]:((object(X3)&exemplifies_relation(greater_than,X3,X2))&exemplifies_property(conceivable,X3)))))),inference(variable_rename,status(thm),[c5])).
+fof(c7,axiom,(![X2]:(~object(X2)|((~is_the(X2,none_greater)|exemplifies_property(existence,X2))|((object(skolem0001(X2))&exemplifies_relation(greater_than,skolem0001(X2),X2))&exemplifies_property(conceivable,skolem0001(X2)))))),inference(skolemize,status(esa),[c6])).
+fof(c8,axiom,(![X2]:(((~object(X2)|((~is_the(X2,none_greater)|exemplifies_property(existence,X2))|object(skolem0001(X2))))&(~object(X2)|((~is_the(X2,none_greater)|exemplifies_property(existence,X2))|exemplifies_relation(greater_than,skolem0001(X2),X2))))&(~object(X2)|((~is_the(X2,none_greater)|exemplifies_property(existence,X2))|exemplifies_property(conceivable,skolem0001(X2)))))),inference(distribute,status(thm),[c7])).
+cnf(c9,axiom,~object(X16)|~is_the(X16,none_greater)|exemplifies_property(existence,X16)|object(skolem0001(X16)),inference(split_conjunct,status(thm),[c8])).
+cnf(c33,plain,~object(god)|exemplifies_property(existence,god)|object(skolem0001(god)),inference(resolution,status(thm),[c9, c3])).
+cnf(c34,plain,exemplifies_property(existence,god)|object(skolem0001(god)),inference(resolution,status(thm),[c33, c32])).
+cnf(c35,plain,object(skolem0001(god)),inference(resolution,status(thm),[c34, c2])).
+cnf(c11,axiom,~object(X20)|~is_the(X20,none_greater)|exemplifies_property(existence,X20)|exemplifies_property(conceivable,skolem0001(X20)),inference(split_conjunct,status(thm),[c8])).
+cnf(c37,plain,~object(god)|exemplifies_property(existence,god)|exemplifies_property(conceivable,skolem0001(god)),inference(resolution,status(thm),[c11, c3])).
+cnf(c38,plain,exemplifies_property(existence,god)|exemplifies_property(conceivable,skolem0001(god)),inference(resolution,status(thm),[c37, c32])).
+cnf(c39,plain,exemplifies_property(conceivable,skolem0001(god)),inference(resolution,status(thm),[c38, c2])).
+fof(definition_none_greater,axiom,(![X]:(object(X)=>(exemplifies_property(none_greater,X)<=>(exemplifies_property(conceivable,X)&(~(?[Y]:((object(Y)&exemplifies_relation(greater_than,Y,X))&exemplifies_property(conceivable,Y)))))))),input).
+fof(c12,axiom,(![X]:(~object(X)|((~exemplifies_property(none_greater,X)|(exemplifies_property(conceivable,X)&(![Y]:((~object(Y)|~exemplifies_relation(greater_than,Y,X))|~exemplifies_property(conceivable,Y)))))&((~exemplifies_property(conceivable,X)|(?[Y]:((object(Y)&exemplifies_relation(greater_than,Y,X))&exemplifies_property(conceivable,Y))))|exemplifies_property(none_greater,X))))),inference(fof_nnf,status(thm),[definition_none_greater])).
+fof(c13,axiom,(![X4]:(~object(X4)|((~exemplifies_property(none_greater,X4)|(exemplifies_property(conceivable,X4)&(![X5]:((~object(X5)|~exemplifies_relation(greater_than,X5,X4))|~exemplifies_property(conceivable,X5)))))&((~exemplifies_property(conceivable,X4)|(?[X6]:((object(X6)&exemplifies_relation(greater_than,X6,X4))&exemplifies_property(conceivable,X6))))|exemplifies_property(none_greater,X4))))),inference(variable_rename,status(thm),[c12])).
+fof(c15,axiom,(![X4]:(![X5]:(~object(X4)|((~exemplifies_property(none_greater,X4)|(exemplifies_property(conceivable,X4)&((~object(X5)|~exemplifies_relation(greater_than,X5,X4))|~exemplifies_property(conceivable,X5))))&((~exemplifies_property(conceivable,X4)|((object(skolem0002(X4))&exemplifies_relation(greater_than,skolem0002(X4),X4))&exemplifies_property(conceivable,skolem0002(X4))))|exemplifies_property(none_greater,X4)))))),inference(shift_quantors,status(thm),[fof(c14,axiom,(![X4]:(~object(X4)|((~exemplifies_property(none_greater,X4)|(exemplifies_property(conceivable,X4)&(![X5]:((~object(X5)|~exemplifies_relation(greater_than,X5,X4))|~exemplifies_property(conceivable,X5)))))&((~exemplifies_property(conceivable,X4)|((object(skolem0002(X4))&exemplifies_relation(greater_than,skolem0002(X4),X4))&exemplifies_property(conceivable,skolem0002(X4))))|exemplifies_property(none_greater,X4))))),inference(skolemize,status(esa),[c13])).])).
+fof(c16,axiom,(![X4]:(![X5]:(((~object(X4)|(~exemplifies_property(none_greater,X4)|exemplifies_property(conceivable,X4)))&(~object(X4)|(~exemplifies_property(none_greater,X4)|((~object(X5)|~exemplifies_relation(greater_than,X5,X4))|~exemplifies_property(conceivable,X5)))))&(((~object(X4)|((~exemplifies_property(conceivable,X4)|object(skolem0002(X4)))|exemplifies_property(none_greater,X4)))&(~object(X4)|((~exemplifies_property(conceivable,X4)|exemplifies_relation(greater_than,skolem0002(X4),X4))|exemplifies_property(none_greater,X4))))&(~object(X4)|((~exemplifies_property(conceivable,X4)|exemplifies_property(conceivable,skolem0002(X4)))|exemplifies_property(none_greater,X4))))))),inference(distribute,status(thm),[c15])).
+cnf(c18,axiom,~object(X22)|~exemplifies_property(none_greater,X22)|~object(X21)|~exemplifies_relation(greater_than,X21,X22)|~exemplifies_property(conceivable,X21),inference(split_conjunct,status(thm),[c16])).
+cnf(c10,axiom,~object(X18)|~is_the(X18,none_greater)|exemplifies_property(existence,X18)|exemplifies_relation(greater_than,skolem0001(X18),X18),inference(split_conjunct,status(thm),[c8])).
+cnf(c36,plain,~object(god)|exemplifies_property(existence,god)|exemplifies_relation(greater_than,skolem0001(god),god),inference(resolution,status(thm),[c10, c3])).
+cnf(c43,plain,exemplifies_property(existence,god)|exemplifies_relation(greater_than,skolem0001(god),god),inference(resolution,status(thm),[c36, c32])).
+cnf(c44,plain,exemplifies_relation(greater_than,skolem0001(god),god),inference(resolution,status(thm),[c43, c2])).
+cnf(c46,plain,~object(god)|~exemplifies_property(none_greater,god)|~object(skolem0001(god))|~exemplifies_property(conceivable,skolem0001(god)),inference(resolution,status(thm),[c44, c18])).
+cnf(c64,plain,~object(god)|~exemplifies_property(none_greater,god)|~object(skolem0001(god)),inference(resolution,status(thm),[c46, c39])).
+cnf(c65,plain,~object(god)|~exemplifies_property(none_greater,god),inference(resolution,status(thm),[c64, c35])).
+cnf(c66,plain,~object(god),inference(resolution,status(thm),[c65, c53])).
+cnf(c67,plain,$false,inference(resolution,status(thm),[c66, c32])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 13
+# Processed clauses  : 38
+# Factors computed   : 0
+# Resolvents computed: 37
+# Tautologies deleted: 0
+# Forward subsumed   : 6
+# Backward subsumed  : 15
+
+# -------- CPU Time ---------
+# User time          : 0.344 s
+# System time        : 0.283 s
+# Total time         : 0.627 s

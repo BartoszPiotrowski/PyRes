@@ -1,0 +1,151 @@
+# cnf(c3,axiom,iext(uri_rdf_type,uri_ex_hasAncestor,uri_owl_TransitiveProperty)).
+# cnf(c4,axiom,iext(uri_rdfs_subClassOf,uri_ex_Person,skolem0001)).
+# cnf(c5,axiom,iext(uri_rdf_type,skolem0001,uri_owl_Restriction)).
+# cnf(c6,axiom,iext(uri_owl_onProperty,skolem0001,uri_ex_hasAncestor)).
+# cnf(c8,axiom,iext(uri_rdf_type,uri_ex_alice,uri_ex_Person)).
+# cnf(c7,axiom,iext(uri_owl_minCardinality,skolem0001,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))).
+# cnf(c9,axiom,iext(uri_rdf_type,uri_ex_bob,uri_ex_Person)).
+# cnf(c10,axiom,iext(uri_ex_hasAncestor,uri_ex_alice,uri_ex_bob)).
+# cnf(c21,axiom,~icext(uri_owl_TransitiveProperty,X28)|ip(X28)).
+# cnf(c32,axiom,~iext(uri_rdfs_subClassOf,X30,X29)|ic(X30)).
+# cnf(c51,plain,ic(uri_ex_Person)).
+# cnf(c14,negated_conjecture,~iext(uri_ex_hasAncestor,uri_ex_bob,X31)|~iext(uri_ex_hasAncestor,uri_ex_alice,X31)).
+# cnf(c52,plain,~iext(uri_ex_hasAncestor,uri_ex_bob,uri_ex_bob)).
+# cnf(c33,axiom,~iext(uri_rdfs_subClassOf,X33,X32)|ic(X32)).
+# cnf(c53,plain,ic(skolem0001)).
+# cnf(c49,axiom,~iext(uri_rdf_type,X34,X35)|icext(X35,X34)).
+# cnf(c54,plain,icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)).
+# cnf(c22,axiom,~icext(uri_owl_TransitiveProperty,X38)|~iext(X38,X37,X36)|~iext(X38,X36,X39)|iext(X38,X37,X39)).
+# cnf(c58,plain,ip(uri_ex_hasAncestor)).
+# cnf(c55,plain,icext(uri_ex_Person,uri_ex_alice)).
+# cnf(c56,plain,icext(uri_owl_Restriction,skolem0001)).
+# cnf(c57,plain,icext(uri_ex_Person,uri_ex_bob)).
+# cnf(c50,axiom,~icext(X40,X41)|iext(uri_rdf_type,X41,X40)).
+# cnf(c23,axiom,~ip(X42)|iext(X42,skolem0002(X42),skolem0003(X42))|icext(uri_owl_TransitiveProperty,X42)).
+# cnf(c34,axiom,~iext(uri_rdfs_subClassOf,X44,X43)|~icext(X44,X45)|icext(X43,X45)).
+# cnf(c24,axiom,~ip(X46)|iext(X46,skolem0003(X46),skolem0004(X46))|icext(uri_owl_TransitiveProperty,X46)).
+# cnf(c72,plain,~icext(uri_ex_Person,X47)|icext(skolem0001,X47)).
+# cnf(c74,plain,icext(skolem0001,uri_ex_bob)).
+# cnf(c75,plain,icext(skolem0001,uri_ex_alice)).
+# cnf(c76,plain,iext(uri_rdf_type,uri_ex_bob,skolem0001)).
+# cnf(c25,axiom,~ip(X48)|~iext(X48,skolem0002(X48),skolem0004(X48))|icext(uri_owl_TransitiveProperty,X48)).
+# cnf(c77,plain,iext(uri_rdf_type,uri_ex_alice,skolem0001)).
+# cnf(c35,axiom,~ic(X50)|~ic(X49)|icext(X50,skolem0005(X50,X49))|iext(uri_rdfs_subClassOf,X50,X49)).
+# cnf(c36,axiom,~ic(X52)|~ic(X51)|~icext(X51,skolem0005(X52,X51))|iext(uri_rdfs_subClassOf,X52,X51)).
+# cnf(c82,plain,~ic(X53)|icext(X53,skolem0005(X53,uri_ex_Person))|iext(uri_rdfs_subClassOf,X53,uri_ex_Person)).
+# cnf(c83,plain,~ic(X54)|icext(X54,skolem0005(X54,skolem0001))|iext(uri_rdfs_subClassOf,X54,skolem0001)).
+# cnf(c84,plain,icext(uri_ex_Person,skolem0005(uri_ex_Person,uri_ex_Person))|iext(uri_rdfs_subClassOf,uri_ex_Person,uri_ex_Person)).
+# cnf(c88,plain,iext(uri_rdfs_subClassOf,uri_ex_Person,uri_ex_Person)|~ic(uri_ex_Person)).
+# cnf(c95,plain,iext(uri_rdfs_subClassOf,uri_ex_Person,uri_ex_Person)).
+# cnf(c43,axiom,~iext(uri_owl_minCardinality,X55,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X55,X57)|~icext(X55,X56)|iext(X57,X56,skolem0006(X55,X57,X56))).
+# cnf(c44,axiom,~iext(uri_owl_minCardinality,X59,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X59,X62)|~iext(X62,X60,X61)|icext(X59,X60)).
+# cnf(c102,plain,~iext(uri_owl_onProperty,skolem0001,X64)|~iext(X64,X63,X65)|icext(skolem0001,X63)).
+# cnf(c103,plain,~iext(uri_owl_onProperty,skolem0001,uri_rdfs_subClassOf)|icext(skolem0001,uri_ex_Person)).
+# cnf(c104,plain,~iext(uri_owl_onProperty,skolem0001,uri_owl_onProperty)|icext(skolem0001,skolem0001)).
+# cnf(c105,plain,~iext(uri_owl_onProperty,skolem0001,uri_rdf_type)|icext(skolem0001,uri_ex_hasAncestor)).
+# cnf(c59,plain,~icext(uri_owl_TransitiveProperty,uri_owl_onProperty)|~iext(uri_owl_onProperty,X66,skolem0001)|iext(uri_owl_onProperty,X66,uri_ex_hasAncestor)).
+# cnf(c108,plain,~iext(uri_owl_onProperty,skolem0001,uri_rdf_type)|icext(skolem0001,skolem0001)).
+# cnf(c60,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X67,uri_ex_hasAncestor)|iext(uri_rdf_type,X67,uri_owl_TransitiveProperty)).
+# cnf(c112,plain,~iext(uri_owl_onProperty,skolem0001,uri_owl_minCardinality)|icext(skolem0001,skolem0001)).
+# cnf(c85,plain,icext(skolem0001,skolem0005(skolem0001,uri_ex_Person))|iext(uri_rdfs_subClassOf,skolem0001,uri_ex_Person)).
+# cnf(c61,plain,~icext(uri_owl_TransitiveProperty,uri_rdfs_subClassOf)|~iext(uri_rdfs_subClassOf,X68,uri_ex_Person)|iext(uri_rdfs_subClassOf,X68,skolem0001)).
+# cnf(c87,plain,icext(skolem0001,skolem0005(skolem0001,skolem0001))|iext(uri_rdfs_subClassOf,skolem0001,skolem0001)).
+# cnf(c122,plain,iext(uri_rdfs_subClassOf,skolem0001,skolem0001)|~ic(skolem0001)).
+# cnf(c129,plain,iext(uri_rdfs_subClassOf,skolem0001,skolem0001)).
+# cnf(c62,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X69,uri_ex_alice)|iext(uri_rdf_type,X69,uri_ex_Person)).
+# cnf(c63,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X71,skolem0001)|iext(uri_rdf_type,X71,uri_owl_Restriction)).
+# cnf(c131,plain,~iext(uri_owl_onProperty,skolem0001,uri_rdfs_subClassOf)|icext(skolem0001,skolem0001)).
+# cnf(c135,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|iext(uri_rdf_type,uri_ex_bob,uri_owl_Restriction)).
+# cnf(c136,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|iext(uri_rdf_type,uri_ex_alice,uri_owl_Restriction)).
+# cnf(c64,plain,~icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)|~iext(uri_ex_hasAncestor,X72,uri_ex_alice)|iext(uri_ex_hasAncestor,X72,uri_ex_bob)).
+# cnf(c65,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X73,uri_ex_bob)|iext(uri_rdf_type,X73,uri_ex_Person)).
+# cnf(c78,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X74,uri_ex_bob)|iext(uri_rdf_type,X74,skolem0001)).
+# cnf(c80,plain,~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X75,uri_ex_alice)|iext(uri_rdf_type,X75,skolem0001)).
+# cnf(c66,plain,~icext(uri_owl_TransitiveProperty,uri_owl_minCardinality)|~iext(uri_owl_minCardinality,X78,skolem0001)|iext(uri_owl_minCardinality,X78,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))).
+# cnf(c114,plain,iext(uri_rdfs_subClassOf,skolem0001,uri_ex_Person)|iext(uri_rdf_type,skolem0005(skolem0001,uri_ex_Person),skolem0001)).
+# cnf(c116,plain,icext(skolem0001,skolem0005(skolem0001,uri_ex_Person))|~icext(skolem0001,X79)|icext(uri_ex_Person,X79)).
+# cnf(c100,plain,~iext(uri_owl_onProperty,skolem0001,X84)|~icext(skolem0001,X83)|iext(X84,X83,skolem0006(skolem0001,X84,X83))).
+# cnf(c150,plain,~icext(skolem0001,X85)|iext(uri_ex_hasAncestor,X85,skolem0006(skolem0001,uri_ex_hasAncestor,X85))).
+# cnf(c151,plain,iext(uri_ex_hasAncestor,uri_ex_alice,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_alice))).
+# cnf(c153,plain,iext(uri_ex_hasAncestor,uri_ex_bob,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob))).
+# cnf(c156,plain,~iext(uri_ex_hasAncestor,uri_ex_bob,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_alice))).
+# cnf(c101,plain,~iext(uri_owl_minCardinality,X86,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X86,uri_owl_minCardinality)|icext(X86,X86)).
+# cnf(c137,plain,iext(uri_rdf_type,skolem0005(skolem0001,uri_ex_Person),skolem0001)|~icext(skolem0001,X87)|icext(uri_ex_Person,X87)).
+# cnf(c117,plain,icext(skolem0001,skolem0005(skolem0001,uri_ex_Person))|~icext(uri_owl_TransitiveProperty,uri_rdfs_subClassOf)|~iext(uri_rdfs_subClassOf,X88,skolem0001)|iext(uri_rdfs_subClassOf,X88,uri_ex_Person)).
+# cnf(c143,plain,iext(uri_rdfs_subClassOf,skolem0001,uri_ex_Person)|~icext(uri_owl_TransitiveProperty,uri_rdf_type)|iext(uri_rdf_type,skolem0005(skolem0001,uri_ex_Person),uri_owl_Restriction)).
+# cnf(c155,plain,~icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)|~iext(uri_ex_hasAncestor,X90,uri_ex_alice)|iext(uri_ex_hasAncestor,X90,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_alice))).
+# cnf(c140,plain,iext(uri_rdf_type,skolem0005(skolem0001,uri_ex_Person),skolem0001)|~icext(uri_owl_TransitiveProperty,uri_rdfs_subClassOf)|~iext(uri_rdfs_subClassOf,X91,skolem0001)|iext(uri_rdfs_subClassOf,X91,uri_ex_Person)).
+# cnf(c158,plain,~icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)|~iext(uri_ex_hasAncestor,X92,uri_ex_bob)|iext(uri_ex_hasAncestor,X92,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob))).
+# cnf(c167,plain,~icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)|iext(uri_ex_hasAncestor,uri_ex_alice,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob))).
+# cnf(c168,plain,iext(uri_ex_hasAncestor,uri_ex_alice,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob))).
+# cnf(c171,plain,~iext(uri_ex_hasAncestor,uri_ex_bob,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob))).
+# cnf(c145,plain,iext(uri_rdfs_subClassOf,skolem0001,uri_ex_Person)|~icext(uri_owl_TransitiveProperty,uri_rdf_type)|~iext(uri_rdf_type,X93,skolem0005(skolem0001,uri_ex_Person))|iext(uri_rdf_type,X93,skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(testcase_premise_fullish_024_Cardinality_Restrictions_on_Complex_Properties,axiom,(?[BNODE_z]:(((((((iext(uri_rdf_type,uri_ex_hasAncestor,uri_owl_TransitiveProperty)&iext(uri_rdfs_subClassOf,uri_ex_Person,BNODE_z))&iext(uri_rdf_type,BNODE_z,uri_owl_Restriction))&iext(uri_owl_onProperty,BNODE_z,uri_ex_hasAncestor))&iext(uri_owl_minCardinality,BNODE_z,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger)))&iext(uri_rdf_type,uri_ex_alice,uri_ex_Person))&iext(uri_rdf_type,uri_ex_bob,uri_ex_Person))&iext(uri_ex_hasAncestor,uri_ex_alice,uri_ex_bob))),input).
+fof(c0,axiom,((((?[BNODE_z]:((((iext(uri_rdf_type,uri_ex_hasAncestor,uri_owl_TransitiveProperty)&iext(uri_rdfs_subClassOf,uri_ex_Person,BNODE_z))&iext(uri_rdf_type,BNODE_z,uri_owl_Restriction))&iext(uri_owl_onProperty,BNODE_z,uri_ex_hasAncestor))&iext(uri_owl_minCardinality,BNODE_z,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))))&iext(uri_rdf_type,uri_ex_alice,uri_ex_Person))&iext(uri_rdf_type,uri_ex_bob,uri_ex_Person))&iext(uri_ex_hasAncestor,uri_ex_alice,uri_ex_bob)),inference(shift_quantors,status(thm),[testcase_premise_fullish_024_Cardinality_Restrictions_on_Complex_Properties])).
+fof(c1,axiom,((((?[X2]:((((iext(uri_rdf_type,uri_ex_hasAncestor,uri_owl_TransitiveProperty)&iext(uri_rdfs_subClassOf,uri_ex_Person,X2))&iext(uri_rdf_type,X2,uri_owl_Restriction))&iext(uri_owl_onProperty,X2,uri_ex_hasAncestor))&iext(uri_owl_minCardinality,X2,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))))&iext(uri_rdf_type,uri_ex_alice,uri_ex_Person))&iext(uri_rdf_type,uri_ex_bob,uri_ex_Person))&iext(uri_ex_hasAncestor,uri_ex_alice,uri_ex_bob)),inference(variable_rename,status(thm),[c0])).
+fof(c2,axiom,(((((((iext(uri_rdf_type,uri_ex_hasAncestor,uri_owl_TransitiveProperty)&iext(uri_rdfs_subClassOf,uri_ex_Person,skolem0001))&iext(uri_rdf_type,skolem0001,uri_owl_Restriction))&iext(uri_owl_onProperty,skolem0001,uri_ex_hasAncestor))&iext(uri_owl_minCardinality,skolem0001,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger)))&iext(uri_rdf_type,uri_ex_alice,uri_ex_Person))&iext(uri_rdf_type,uri_ex_bob,uri_ex_Person))&iext(uri_ex_hasAncestor,uri_ex_alice,uri_ex_bob)),inference(skolemize,status(esa),[c1])).
+cnf(c9,axiom,iext(uri_rdf_type,uri_ex_bob,uri_ex_Person),inference(split_conjunct,status(thm),[c2])).
+fof(rdfs_cext_def,axiom,(![X]:(![C]:(iext(uri_rdf_type,X,C)<=>icext(C,X)))),input).
+fof(c45,axiom,(![X]:(![C]:((~iext(uri_rdf_type,X,C)|icext(C,X))&(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(fof_nnf,status(thm),[rdfs_cext_def])).
+fof(c46,axiom,((![X]:(![C]:(~iext(uri_rdf_type,X,C)|icext(C,X))))&(![X]:(![C]:(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(shift_quantors,status(thm),[c45])).
+fof(c48,axiom,(![X24]:(![X25]:(![X26]:(![X27]:((~iext(uri_rdf_type,X24,X25)|icext(X25,X24))&(~icext(X27,X26)|iext(uri_rdf_type,X26,X27))))))),inference(shift_quantors,status(thm),[fof(c47,axiom,((![X24]:(![X25]:(~iext(uri_rdf_type,X24,X25)|icext(X25,X24))))&(![X26]:(![X27]:(~icext(X27,X26)|iext(uri_rdf_type,X26,X27))))),inference(variable_rename,status(thm),[c46])).])).
+cnf(c49,axiom,~iext(uri_rdf_type,X34,X35)|icext(X35,X34),inference(split_conjunct,status(thm),[c48])).
+cnf(c57,plain,icext(uri_ex_Person,uri_ex_bob),inference(resolution,status(thm),[c49, c9])).
+cnf(c4,axiom,iext(uri_rdfs_subClassOf,uri_ex_Person,skolem0001),inference(split_conjunct,status(thm),[c2])).
+fof(owl_rdfsext_subclassof,axiom,(![C1]:(![C2]:(iext(uri_rdfs_subClassOf,C1,C2)<=>((ic(C1)&ic(C2))&(![X]:(icext(C1,X)=>icext(C2,X))))))),input).
+fof(c26,axiom,(![C1]:(![C2]:((~iext(uri_rdfs_subClassOf,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|icext(C2,X)))))&(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&~icext(C2,X))))|iext(uri_rdfs_subClassOf,C1,C2))))),inference(fof_nnf,status(thm),[owl_rdfsext_subclassof])).
+fof(c27,axiom,((![C1]:(![C2]:(~iext(uri_rdfs_subClassOf,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|icext(C2,X)))))))&(![C1]:(![C2]:(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&~icext(C2,X))))|iext(uri_rdfs_subClassOf,C1,C2))))),inference(shift_quantors,status(thm),[c26])).
+fof(c28,axiom,((![X12]:(![X13]:(~iext(uri_rdfs_subClassOf,X12,X13)|((ic(X12)&ic(X13))&(![X14]:(~icext(X12,X14)|icext(X13,X14)))))))&(![X15]:(![X16]:(((~ic(X15)|~ic(X16))|(?[X17]:(icext(X15,X17)&~icext(X16,X17))))|iext(uri_rdfs_subClassOf,X15,X16))))),inference(variable_rename,status(thm),[c27])).
+fof(c30,axiom,(![X12]:(![X13]:(![X14]:(![X15]:(![X16]:((~iext(uri_rdfs_subClassOf,X12,X13)|((ic(X12)&ic(X13))&(~icext(X12,X14)|icext(X13,X14))))&(((~ic(X15)|~ic(X16))|(icext(X15,skolem0005(X15,X16))&~icext(X16,skolem0005(X15,X16))))|iext(uri_rdfs_subClassOf,X15,X16)))))))),inference(shift_quantors,status(thm),[fof(c29,axiom,((![X12]:(![X13]:(~iext(uri_rdfs_subClassOf,X12,X13)|((ic(X12)&ic(X13))&(![X14]:(~icext(X12,X14)|icext(X13,X14)))))))&(![X15]:(![X16]:(((~ic(X15)|~ic(X16))|(icext(X15,skolem0005(X15,X16))&~icext(X16,skolem0005(X15,X16))))|iext(uri_rdfs_subClassOf,X15,X16))))),inference(skolemize,status(esa),[c28])).])).
+fof(c31,axiom,(![X12]:(![X13]:(![X14]:(![X15]:(![X16]:((((~iext(uri_rdfs_subClassOf,X12,X13)|ic(X12))&(~iext(uri_rdfs_subClassOf,X12,X13)|ic(X13)))&(~iext(uri_rdfs_subClassOf,X12,X13)|(~icext(X12,X14)|icext(X13,X14))))&((((~ic(X15)|~ic(X16))|icext(X15,skolem0005(X15,X16)))|iext(uri_rdfs_subClassOf,X15,X16))&(((~ic(X15)|~ic(X16))|~icext(X16,skolem0005(X15,X16)))|iext(uri_rdfs_subClassOf,X15,X16))))))))),inference(distribute,status(thm),[c30])).
+cnf(c34,axiom,~iext(uri_rdfs_subClassOf,X44,X43)|~icext(X44,X45)|icext(X43,X45),inference(split_conjunct,status(thm),[c31])).
+cnf(c72,plain,~icext(uri_ex_Person,X47)|icext(skolem0001,X47),inference(resolution,status(thm),[c34, c4])).
+cnf(c74,plain,icext(skolem0001,uri_ex_bob),inference(resolution,status(thm),[c72, c57])).
+cnf(c6,axiom,iext(uri_owl_onProperty,skolem0001,uri_ex_hasAncestor),inference(split_conjunct,status(thm),[c2])).
+cnf(c7,axiom,iext(uri_owl_minCardinality,skolem0001,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger)),inference(split_conjunct,status(thm),[c2])).
+fof(owl_restrict_mincard_001,axiom,(![Z]:(![P]:((iext(uri_owl_minCardinality,Z,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))&iext(uri_owl_onProperty,Z,P))=>(![X]:(icext(Z,X)<=>(?[Y]:iext(P,X,Y))))))),input).
+fof(c37,axiom,(![Z]:(![P]:((~iext(uri_owl_minCardinality,Z,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,Z,P))|(![X]:((~icext(Z,X)|(?[Y]:iext(P,X,Y)))&((![Y]:~iext(P,X,Y))|icext(Z,X))))))),inference(fof_nnf,status(thm),[owl_restrict_mincard_001])).
+fof(c38,axiom,(![Z]:(![P]:((~iext(uri_owl_minCardinality,Z,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,Z,P))|((![X]:(~icext(Z,X)|(?[Y]:iext(P,X,Y))))&(![X]:((![Y]:~iext(P,X,Y))|icext(Z,X))))))),inference(shift_quantors,status(thm),[c37])).
+fof(c39,axiom,(![X18]:(![X19]:((~iext(uri_owl_minCardinality,X18,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X18,X19))|((![X20]:(~icext(X18,X20)|(?[X21]:iext(X19,X20,X21))))&(![X22]:((![X23]:~iext(X19,X22,X23))|icext(X18,X22))))))),inference(variable_rename,status(thm),[c38])).
+fof(c41,axiom,(![X18]:(![X19]:(![X20]:(![X22]:(![X23]:((~iext(uri_owl_minCardinality,X18,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X18,X19))|((~icext(X18,X20)|iext(X19,X20,skolem0006(X18,X19,X20)))&(~iext(X19,X22,X23)|icext(X18,X22))))))))),inference(shift_quantors,status(thm),[fof(c40,axiom,(![X18]:(![X19]:((~iext(uri_owl_minCardinality,X18,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X18,X19))|((![X20]:(~icext(X18,X20)|iext(X19,X20,skolem0006(X18,X19,X20))))&(![X22]:((![X23]:~iext(X19,X22,X23))|icext(X18,X22))))))),inference(skolemize,status(esa),[c39])).])).
+fof(c42,axiom,(![X18]:(![X19]:(![X20]:(![X22]:(![X23]:(((~iext(uri_owl_minCardinality,X18,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X18,X19))|(~icext(X18,X20)|iext(X19,X20,skolem0006(X18,X19,X20))))&((~iext(uri_owl_minCardinality,X18,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X18,X19))|(~iext(X19,X22,X23)|icext(X18,X22))))))))),inference(distribute,status(thm),[c41])).
+cnf(c43,axiom,~iext(uri_owl_minCardinality,X55,literal_typed(dat_str_1,uri_xsd_nonNegativeInteger))|~iext(uri_owl_onProperty,X55,X57)|~icext(X55,X56)|iext(X57,X56,skolem0006(X55,X57,X56)),inference(split_conjunct,status(thm),[c42])).
+cnf(c100,plain,~iext(uri_owl_onProperty,skolem0001,X84)|~icext(skolem0001,X83)|iext(X84,X83,skolem0006(skolem0001,X84,X83)),inference(resolution,status(thm),[c43, c7])).
+cnf(c150,plain,~icext(skolem0001,X85)|iext(uri_ex_hasAncestor,X85,skolem0006(skolem0001,uri_ex_hasAncestor,X85)),inference(resolution,status(thm),[c100, c6])).
+cnf(c153,plain,iext(uri_ex_hasAncestor,uri_ex_bob,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob)),inference(resolution,status(thm),[c150, c74])).
+fof(testcase_conclusion_fullish_024_Cardinality_Restrictions_on_Complex_Properties,conjecture,(?[BNODE_x]:(iext(uri_ex_hasAncestor,uri_ex_bob,BNODE_x)&iext(uri_ex_hasAncestor,uri_ex_alice,BNODE_x))),input).
+fof(c11,negated_conjecture,(~(?[BNODE_x]:(iext(uri_ex_hasAncestor,uri_ex_bob,BNODE_x)&iext(uri_ex_hasAncestor,uri_ex_alice,BNODE_x)))),inference(assume_negation,status(cth),[testcase_conclusion_fullish_024_Cardinality_Restrictions_on_Complex_Properties])).
+fof(c12,negated_conjecture,(![BNODE_x]:(~iext(uri_ex_hasAncestor,uri_ex_bob,BNODE_x)|~iext(uri_ex_hasAncestor,uri_ex_alice,BNODE_x))),inference(fof_nnf,status(thm),[c11])).
+fof(c13,negated_conjecture,(![X3]:(~iext(uri_ex_hasAncestor,uri_ex_bob,X3)|~iext(uri_ex_hasAncestor,uri_ex_alice,X3))),inference(variable_rename,status(thm),[c12])).
+cnf(c14,negated_conjecture,~iext(uri_ex_hasAncestor,uri_ex_bob,X31)|~iext(uri_ex_hasAncestor,uri_ex_alice,X31),inference(split_conjunct,status(thm),[c13])).
+cnf(c3,axiom,iext(uri_rdf_type,uri_ex_hasAncestor,uri_owl_TransitiveProperty),inference(split_conjunct,status(thm),[c2])).
+cnf(c54,plain,icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor),inference(resolution,status(thm),[c49, c3])).
+cnf(c10,axiom,iext(uri_ex_hasAncestor,uri_ex_alice,uri_ex_bob),inference(split_conjunct,status(thm),[c2])).
+fof(owl_char_transitive,axiom,(![P]:(icext(uri_owl_TransitiveProperty,P)<=>(ip(P)&(![X]:(![Y]:(![Z]:((iext(P,X,Y)&iext(P,Y,Z))=>iext(P,X,Z)))))))),input).
+fof(c15,axiom,(![P]:((~icext(uri_owl_TransitiveProperty,P)|(ip(P)&(![X]:(![Y]:(![Z]:((~iext(P,X,Y)|~iext(P,Y,Z))|iext(P,X,Z)))))))&((~ip(P)|(?[X]:(?[Y]:(?[Z]:((iext(P,X,Y)&iext(P,Y,Z))&~iext(P,X,Z))))))|icext(uri_owl_TransitiveProperty,P)))),inference(fof_nnf,status(thm),[owl_char_transitive])).
+fof(c16,axiom,((![P]:(~icext(uri_owl_TransitiveProperty,P)|(ip(P)&(![X]:(![Y]:(![Z]:((~iext(P,X,Y)|~iext(P,Y,Z))|iext(P,X,Z))))))))&(![P]:((~ip(P)|(?[X]:(?[Y]:(?[Z]:((iext(P,X,Y)&iext(P,Y,Z))&~iext(P,X,Z))))))|icext(uri_owl_TransitiveProperty,P)))),inference(shift_quantors,status(thm),[c15])).
+fof(c17,axiom,((![X4]:(~icext(uri_owl_TransitiveProperty,X4)|(ip(X4)&(![X5]:(![X6]:(![X7]:((~iext(X4,X5,X6)|~iext(X4,X6,X7))|iext(X4,X5,X7))))))))&(![X8]:((~ip(X8)|(?[X9]:(?[X10]:(?[X11]:((iext(X8,X9,X10)&iext(X8,X10,X11))&~iext(X8,X9,X11))))))|icext(uri_owl_TransitiveProperty,X8)))),inference(variable_rename,status(thm),[c16])).
+fof(c19,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:((~icext(uri_owl_TransitiveProperty,X4)|(ip(X4)&((~iext(X4,X5,X6)|~iext(X4,X6,X7))|iext(X4,X5,X7))))&((~ip(X8)|((iext(X8,skolem0002(X8),skolem0003(X8))&iext(X8,skolem0003(X8),skolem0004(X8)))&~iext(X8,skolem0002(X8),skolem0004(X8))))|icext(uri_owl_TransitiveProperty,X8)))))))),inference(shift_quantors,status(thm),[fof(c18,axiom,((![X4]:(~icext(uri_owl_TransitiveProperty,X4)|(ip(X4)&(![X5]:(![X6]:(![X7]:((~iext(X4,X5,X6)|~iext(X4,X6,X7))|iext(X4,X5,X7))))))))&(![X8]:((~ip(X8)|((iext(X8,skolem0002(X8),skolem0003(X8))&iext(X8,skolem0003(X8),skolem0004(X8)))&~iext(X8,skolem0002(X8),skolem0004(X8))))|icext(uri_owl_TransitiveProperty,X8)))),inference(skolemize,status(esa),[c17])).])).
+fof(c20,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(((~icext(uri_owl_TransitiveProperty,X4)|ip(X4))&(~icext(uri_owl_TransitiveProperty,X4)|((~iext(X4,X5,X6)|~iext(X4,X6,X7))|iext(X4,X5,X7))))&((((~ip(X8)|iext(X8,skolem0002(X8),skolem0003(X8)))|icext(uri_owl_TransitiveProperty,X8))&((~ip(X8)|iext(X8,skolem0003(X8),skolem0004(X8)))|icext(uri_owl_TransitiveProperty,X8)))&((~ip(X8)|~iext(X8,skolem0002(X8),skolem0004(X8)))|icext(uri_owl_TransitiveProperty,X8))))))))),inference(distribute,status(thm),[c19])).
+cnf(c22,axiom,~icext(uri_owl_TransitiveProperty,X38)|~iext(X38,X37,X36)|~iext(X38,X36,X39)|iext(X38,X37,X39),inference(split_conjunct,status(thm),[c20])).
+cnf(c158,plain,~icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)|~iext(uri_ex_hasAncestor,X92,uri_ex_bob)|iext(uri_ex_hasAncestor,X92,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob)),inference(resolution,status(thm),[c153, c22])).
+cnf(c167,plain,~icext(uri_owl_TransitiveProperty,uri_ex_hasAncestor)|iext(uri_ex_hasAncestor,uri_ex_alice,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob)),inference(resolution,status(thm),[c158, c10])).
+cnf(c168,plain,iext(uri_ex_hasAncestor,uri_ex_alice,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob)),inference(resolution,status(thm),[c167, c54])).
+cnf(c171,plain,~iext(uri_ex_hasAncestor,uri_ex_bob,skolem0006(skolem0001,uri_ex_hasAncestor,uri_ex_bob)),inference(resolution,status(thm),[c168, c14])).
+cnf(c172,plain,$false,inference(resolution,status(thm),[c171, c153])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 23
+# Processed clauses  : 82
+# Factors computed   : 1
+# Resolvents computed: 121
+# Tautologies deleted: 8
+# Forward subsumed   : 48
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 0.323 s
+# System time        : 0.190 s
+# Total time         : 0.513 s

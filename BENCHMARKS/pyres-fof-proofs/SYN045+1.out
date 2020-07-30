@@ -1,0 +1,49 @@
+# cnf(c3,negated_conjecture,~p|~p|~p).
+# cnf(c4,negated_conjecture,~p|~p|~r).
+# cnf(c5,negated_conjecture,~p|~q|~p).
+# cnf(c6,negated_conjecture,~p|~q|~r).
+# cnf(c10,negated_conjecture,~q|~r|~q|~r).
+# cnf(c11,negated_conjecture,p|q|p|q).
+# cnf(c15,plain,p|q).
+# cnf(c22,plain,q|~p).
+# cnf(c23,plain,q).
+# cnf(c14,negated_conjecture,p|r|p|r).
+# cnf(c24,plain,p|r).
+# cnf(c37,plain,r|~p).
+# cnf(c41,plain,r).
+# cnf(c43,plain,~p).
+# cnf(c42,plain,~q|~r).
+# cnf(c45,plain,~q).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel13,conjecture,((p|(q&r))<=>((p|q)&(p|r))),input).
+fof(c0,negated_conjecture,(~((p|(q&r))<=>((p|q)&(p|r)))),inference(assume_negation,status(cth),[pel13])).
+fof(c1,negated_conjecture,(((~p&(~q|~r))|((~p&~q)|(~p&~r)))&((p|(q&r))|((p|q)&(p|r)))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(((((~p|(~p|~p))&(~p|(~p|~r)))&((~p|(~q|~p))&(~p|(~q|~r))))&((((~q|~r)|(~p|~p))&((~q|~r)|(~p|~r)))&(((~q|~r)|(~q|~p))&((~q|~r)|(~q|~r)))))&((((p|q)|(p|q))&((p|q)|(p|r)))&(((p|r)|(p|q))&((p|r)|(p|r))))),inference(distribute,status(thm),[c1])).
+cnf(c11,negated_conjecture,p|q|p|q,inference(split_conjunct,status(thm),[c2])).
+cnf(c15,plain,p|q,inference(factor,status(thm),[c11])).
+cnf(c3,negated_conjecture,~p|~p|~p,inference(split_conjunct,status(thm),[c2])).
+cnf(c22,plain,q|~p,inference(resolution,status(thm),[c15, c3])).
+cnf(c23,plain,q,inference(resolution,status(thm),[c22, c15])).
+cnf(c14,negated_conjecture,p|r|p|r,inference(split_conjunct,status(thm),[c2])).
+cnf(c24,plain,p|r,inference(factor,status(thm),[c14])).
+cnf(c37,plain,r|~p,inference(resolution,status(thm),[c24, c3])).
+cnf(c41,plain,r,inference(resolution,status(thm),[c37, c24])).
+cnf(c10,negated_conjecture,~q|~r|~q|~r,inference(split_conjunct,status(thm),[c2])).
+cnf(c42,plain,~q|~r,inference(resolution,status(thm),[c41, c10])).
+cnf(c45,plain,~q,inference(resolution,status(thm),[c42, c41])).
+cnf(c46,plain,$false,inference(resolution,status(thm),[c45, c23])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 12
+# Processed clauses  : 16
+# Factors computed   : 4
+# Resolvents computed: 28
+# Tautologies deleted: 5
+# Forward subsumed   : 7
+# Backward subsumed  : 12
+
+# -------- CPU Time ---------
+# User time          : 0.248 s
+# System time        : 0.175 s
+# Total time         : 0.423 s

@@ -1,0 +1,50 @@
+# cnf(c2,negated_conjecture,~p|~q).
+# cnf(c3,negated_conjecture,p|q).
+# cnf(c8,axiom,~r|p).
+# cnf(c9,axiom,~r|q).
+# cnf(c11,axiom,~q|r).
+# cnf(c5,axiom,~p|q|r).
+# cnf(c13,plain,r|p).
+# cnf(c16,plain,p).
+# cnf(c14,plain,q|r).
+# cnf(c19,plain,r).
+# cnf(c21,plain,q).
+# cnf(c23,plain,~p).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel10_2,axiom,(r=>(p&q)),input).
+fof(c6,axiom,(~r|(p&q)),inference(fof_nnf,status(thm),[pel10_2])).
+fof(c7,axiom,((~r|p)&(~r|q)),inference(distribute,status(thm),[c6])).
+cnf(c8,axiom,~r|p,inference(split_conjunct,status(thm),[c7])).
+fof(pel10,conjecture,(p<=>q),input).
+fof(c0,negated_conjecture,(~(p<=>q)),inference(assume_negation,status(cth),[pel10])).
+fof(c1,negated_conjecture,((~p|~q)&(p|q)),inference(fof_nnf,status(thm),[c0])).
+cnf(c3,negated_conjecture,p|q,inference(split_conjunct,status(thm),[c1])).
+fof(pel10_1,axiom,(q=>r),input).
+fof(c10,axiom,(~q|r),inference(fof_nnf,status(thm),[pel10_1])).
+cnf(c11,axiom,~q|r,inference(split_conjunct,status(thm),[c10])).
+cnf(c13,plain,r|p,inference(resolution,status(thm),[c11, c3])).
+cnf(c16,plain,p,inference(resolution,status(thm),[c13, c8])).
+cnf(c2,negated_conjecture,~p|~q,inference(split_conjunct,status(thm),[c1])).
+cnf(c9,axiom,~r|q,inference(split_conjunct,status(thm),[c7])).
+fof(pel10_3,axiom,(p=>(q|r)),input).
+fof(c4,axiom,(~p|(q|r)),inference(fof_nnf,status(thm),[pel10_3])).
+cnf(c5,axiom,~p|q|r,inference(split_conjunct,status(thm),[c4])).
+cnf(c14,plain,q|r,inference(resolution,status(thm),[c5, c3])).
+cnf(c21,plain,q,inference(resolution,status(thm),[c14, c9])).
+cnf(c23,plain,~p,inference(resolution,status(thm),[c21, c2])).
+cnf(c24,plain,$false,inference(resolution,status(thm),[c23, c16])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 12
+# Factors computed   : 0
+# Resolvents computed: 13
+# Tautologies deleted: 1
+# Forward subsumed   : 2
+# Backward subsumed  : 8
+
+# -------- CPU Time ---------
+# User time          : 0.181 s
+# System time        : 0.212 s
+# Total time         : 0.393 s

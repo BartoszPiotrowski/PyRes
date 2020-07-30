@@ -1,0 +1,47 @@
+# cnf(c2,negated_conjecture,~goal).
+# cnf(c11,axiom,neg_psi).
+# cnf(c10,axiom,drunk(X5)).
+# cnf(c6,axiom,~neg_psi|not_drunk(skolem0001)).
+# cnf(c17,plain,not_drunk(skolem0001)).
+# cnf(c16,axiom,~drunk(X6)|~not_drunk(X6)|goal).
+# cnf(c18,plain,~drunk(skolem0001)|goal).
+# cnf(c19,plain,goal).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(goal_to_be_proved,conjecture,goal,input).
+fof(c0,negated_conjecture,(~goal),inference(assume_negation,status(cth),[goal_to_be_proved])).
+fof(c1,negated_conjecture,~goal,inference(fof_simplification,status(thm),[c0])).
+cnf(c2,negated_conjecture,~goal,inference(split_conjunct,status(thm),[c1])).
+fof(neg_phi,axiom,(![A]:(drunk(A)&neg_psi)),input).
+fof(c7,axiom,((![A]:drunk(A))&neg_psi),inference(shift_quantors,status(thm),[neg_phi])).
+fof(c9,axiom,(![X3]:(drunk(X3)&neg_psi)),inference(shift_quantors,status(thm),[fof(c8,axiom,((![X3]:drunk(X3))&neg_psi),inference(variable_rename,status(thm),[c7])).])).
+cnf(c10,axiom,drunk(X5),inference(split_conjunct,status(thm),[c9])).
+cnf(c11,axiom,neg_psi,inference(split_conjunct,status(thm),[c9])).
+fof(neg_psi_ax,axiom,(neg_psi=>(?[A]:not_drunk(A))),input).
+fof(c3,axiom,(~neg_psi|(?[A]:not_drunk(A))),inference(fof_nnf,status(thm),[neg_psi_ax])).
+fof(c4,axiom,(~neg_psi|(?[X2]:not_drunk(X2))),inference(variable_rename,status(thm),[c3])).
+fof(c5,axiom,(~neg_psi|not_drunk(skolem0001)),inference(skolemize,status(esa),[c4])).
+cnf(c6,axiom,~neg_psi|not_drunk(skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c17,plain,not_drunk(skolem0001),inference(resolution,status(thm),[c6, c11])).
+fof(d_cons,axiom,(![A]:((drunk(A)&not_drunk(A))=>goal)),input).
+fof(c12,axiom,(![A]:((~drunk(A)|~not_drunk(A))|goal)),inference(fof_nnf,status(thm),[d_cons])).
+fof(c13,axiom,((![A]:(~drunk(A)|~not_drunk(A)))|goal),inference(shift_quantors,status(thm),[c12])).
+fof(c15,axiom,(![X4]:((~drunk(X4)|~not_drunk(X4))|goal)),inference(shift_quantors,status(thm),[fof(c14,axiom,((![X4]:(~drunk(X4)|~not_drunk(X4)))|goal),inference(variable_rename,status(thm),[c13])).])).
+cnf(c16,axiom,~drunk(X6)|~not_drunk(X6)|goal,inference(split_conjunct,status(thm),[c15])).
+cnf(c18,plain,~drunk(skolem0001)|goal,inference(resolution,status(thm),[c16, c17])).
+cnf(c19,plain,goal,inference(resolution,status(thm),[c18, c10])).
+cnf(c20,plain,$false,inference(resolution,status(thm),[c19, c2])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 8
+# Factors computed   : 0
+# Resolvents computed: 4
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 3
+
+# -------- CPU Time ---------
+# User time          : 0.320 s
+# System time        : 0.252 s
+# Total time         : 0.572 s

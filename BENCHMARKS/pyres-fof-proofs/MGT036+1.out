@@ -1,0 +1,107 @@
+# cnf(c5,negated_conjecture,environment(skolem0001)).
+# cnf(c7,negated_conjecture,outcompetes(first_movers,efficient_producers,skolem0002)).
+# cnf(c6,negated_conjecture,subpopulations(first_movers,efficient_producers,skolem0001,skolem0002)).
+# cnf(c8,plain,greater(resilience(efficient_producers),resilience(first_movers))).
+# cnf(c25,axiom,environment(X25)|~greater(zero,growth_rate(X26,X24))).
+# cnf(c12,plain,~environment(X28)|~in_environment(X28,X29)|greater(zero,growth_rate(X30,X29))|~greater(resilience(X27),resilience(X30))|~greater(zero,growth_rate(X27,X29))).
+# cnf(c26,axiom,subpopulations(X34,X31,X33,X32)|~greater(zero,growth_rate(X34,X32))).
+# cnf(c31,axiom,~environment(X36)|~subpopulations(first_movers,efficient_producers,X36,X35)|in_environment(X36,X35)).
+# cnf(c35,plain,~environment(skolem0001)|in_environment(skolem0001,skolem0002)).
+# cnf(c36,plain,in_environment(skolem0001,skolem0002)).
+# cnf(c27,axiom,~greater_or_equal(growth_rate(X38,X37),zero)|~greater(zero,growth_rate(X38,X37))).
+# cnf(c16,plain,~environment(X42)|~subpopulations(X40,X39,X42,X41)|~greater_or_equal(growth_rate(X39,X41),zero)|~greater(zero,growth_rate(X40,X41))|outcompetes(X39,X40,X41)).
+# cnf(c34,axiom,~environment(X44)|~subpopulations(first_movers,efficient_producers,X44,X43)|subpopulations(efficient_producers,first_movers,X44,X43)).
+# cnf(c37,plain,~environment(skolem0001)|subpopulations(efficient_producers,first_movers,skolem0001,skolem0002)).
+# cnf(c38,plain,subpopulations(efficient_producers,first_movers,skolem0001,skolem0002)).
+# cnf(c17,plain,~environment(X48)|~subpopulations(X46,X45,X48,X47)|~outcompetes(X45,X46,X47)|greater_or_equal(growth_rate(X45,X47),zero)).
+# cnf(c18,plain,~environment(X52)|~subpopulations(X50,X49,X52,X51)|~outcompetes(X49,X50,X51)|greater(zero,growth_rate(X50,X51))).
+# cnf(c28,axiom,greater(zero,growth_rate(X53,X56))|~environment(X55)|~subpopulations(X53,X54,X55,X56)|greater_or_equal(growth_rate(X53,X56),zero)).
+# cnf(c39,plain,~environment(skolem0001)|~outcompetes(first_movers,efficient_producers,skolem0002)|greater_or_equal(growth_rate(first_movers,skolem0002),zero)).
+# cnf(c45,plain,~environment(skolem0001)|greater_or_equal(growth_rate(first_movers,skolem0002),zero)).
+# cnf(c46,plain,greater_or_equal(growth_rate(first_movers,skolem0002),zero)).
+# cnf(c40,plain,~environment(skolem0001)|~outcompetes(efficient_producers,first_movers,skolem0002)|greater_or_equal(growth_rate(efficient_producers,skolem0002),zero)).
+# cnf(c41,plain,~environment(skolem0001)|~outcompetes(first_movers,efficient_producers,skolem0002)|greater(zero,growth_rate(efficient_producers,skolem0002))).
+# cnf(c42,plain,~environment(skolem0001)|~outcompetes(efficient_producers,first_movers,skolem0002)|greater(zero,growth_rate(first_movers,skolem0002))).
+# cnf(c47,plain,~environment(skolem0001)|greater(zero,growth_rate(efficient_producers,skolem0002))).
+# cnf(c48,plain,greater(zero,growth_rate(efficient_producers,skolem0002))).
+# cnf(c51,plain,environment(X57)).
+# cnf(c53,plain,subpopulations(efficient_producers,X59,X58,skolem0002)).
+# cnf(c49,plain,~greater_or_equal(growth_rate(efficient_producers,skolem0002),zero)).
+# cnf(c56,plain,~environment(X61)|~outcompetes(X60,efficient_producers,skolem0002)|greater_or_equal(growth_rate(X60,skolem0002),zero)).
+# cnf(c50,plain,~environment(X66)|~subpopulations(efficient_producers,X67,X66,skolem0002)|~greater_or_equal(growth_rate(X67,skolem0002),zero)|outcompetes(X67,efficient_producers,skolem0002)).
+# cnf(c52,plain,~environment(X69)|~in_environment(X69,skolem0002)|greater(zero,growth_rate(X70,skolem0002))|~greater(resilience(efficient_producers),resilience(X70))).
+# cnf(c59,plain,~environment(X71)|~in_environment(X71,skolem0002)|greater(zero,growth_rate(first_movers,skolem0002))).
+# cnf(c60,plain,~environment(skolem0001)|greater(zero,growth_rate(first_movers,skolem0002))).
+# cnf(c61,plain,greater(zero,growth_rate(first_movers,skolem0002))).
+# cnf(c62,plain,~greater_or_equal(growth_rate(first_movers,skolem0002),zero)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_t5,conjecture,(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>(~outcompetes(first_movers,efficient_producers,T))))),input).
+fof(c0,negated_conjecture,(~(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>(~outcompetes(first_movers,efficient_producers,T)))))),inference(assume_negation,status(cth),[prove_t5])).
+fof(c1,negated_conjecture,(~(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>~outcompetes(first_movers,efficient_producers,T))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[E]:(?[T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))&outcompetes(first_movers,efficient_producers,T)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:((environment(X2)&subpopulations(first_movers,efficient_producers,X2,X3))&outcompetes(first_movers,efficient_producers,X3)))),inference(variable_rename,status(thm),[c2])).
+fof(c4,negated_conjecture,((environment(skolem0001)&subpopulations(first_movers,efficient_producers,skolem0001,skolem0002))&outcompetes(first_movers,efficient_producers,skolem0002)),inference(skolemize,status(esa),[c3])).
+cnf(c5,negated_conjecture,environment(skolem0001),inference(split_conjunct,status(thm),[c4])).
+cnf(c7,negated_conjecture,outcompetes(first_movers,efficient_producers,skolem0002),inference(split_conjunct,status(thm),[c4])).
+cnf(c6,negated_conjecture,subpopulations(first_movers,efficient_producers,skolem0001,skolem0002),inference(split_conjunct,status(thm),[c4])).
+fof(mp_symmetry_of_FM_and_EP,axiom,(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>subpopulations(efficient_producers,first_movers,E,T)))),input).
+fof(c32,axiom,(![E]:(![T]:((~environment(E)|~subpopulations(first_movers,efficient_producers,E,T))|subpopulations(efficient_producers,first_movers,E,T)))),inference(fof_nnf,status(thm),[mp_symmetry_of_FM_and_EP])).
+fof(c33,axiom,(![X22]:(![X23]:((~environment(X22)|~subpopulations(first_movers,efficient_producers,X22,X23))|subpopulations(efficient_producers,first_movers,X22,X23)))),inference(variable_rename,status(thm),[c32])).
+cnf(c34,axiom,~environment(X44)|~subpopulations(first_movers,efficient_producers,X44,X43)|subpopulations(efficient_producers,first_movers,X44,X43),inference(split_conjunct,status(thm),[c33])).
+cnf(c37,plain,~environment(skolem0001)|subpopulations(efficient_producers,first_movers,skolem0001,skolem0002),inference(resolution,status(thm),[c34, c6])).
+cnf(c38,plain,subpopulations(efficient_producers,first_movers,skolem0001,skolem0002),inference(resolution,status(thm),[c37, c5])).
+fof(d2,plain,(![E]:(![S1]:(![S2]:(![T]:((environment(E)&subpopulations(S1,S2,E,T))=>((greater_or_equal(growth_rate(S2,T),zero)&greater(zero,growth_rate(S1,T)))<=>outcompetes(S2,S1,T))))))),input).
+fof(c13,plain,(![E]:(![S1]:(![S2]:(![T]:((~environment(E)|~subpopulations(S1,S2,E,T))|(((~greater_or_equal(growth_rate(S2,T),zero)|~greater(zero,growth_rate(S1,T)))|outcompetes(S2,S1,T))&(~outcompetes(S2,S1,T)|(greater_or_equal(growth_rate(S2,T),zero)&greater(zero,growth_rate(S1,T)))))))))),inference(fof_nnf,status(thm),[d2])).
+fof(c14,plain,(![X8]:(![X9]:(![X10]:(![X11]:((~environment(X8)|~subpopulations(X9,X10,X8,X11))|(((~greater_or_equal(growth_rate(X10,X11),zero)|~greater(zero,growth_rate(X9,X11)))|outcompetes(X10,X9,X11))&(~outcompetes(X10,X9,X11)|(greater_or_equal(growth_rate(X10,X11),zero)&greater(zero,growth_rate(X9,X11)))))))))),inference(variable_rename,status(thm),[c13])).
+fof(c15,plain,(![X8]:(![X9]:(![X10]:(![X11]:(((~environment(X8)|~subpopulations(X9,X10,X8,X11))|((~greater_or_equal(growth_rate(X10,X11),zero)|~greater(zero,growth_rate(X9,X11)))|outcompetes(X10,X9,X11)))&(((~environment(X8)|~subpopulations(X9,X10,X8,X11))|(~outcompetes(X10,X9,X11)|greater_or_equal(growth_rate(X10,X11),zero)))&((~environment(X8)|~subpopulations(X9,X10,X8,X11))|(~outcompetes(X10,X9,X11)|greater(zero,growth_rate(X9,X11)))))))))),inference(distribute,status(thm),[c14])).
+cnf(c17,plain,~environment(X48)|~subpopulations(X46,X45,X48,X47)|~outcompetes(X45,X46,X47)|greater_or_equal(growth_rate(X45,X47),zero),inference(split_conjunct,status(thm),[c15])).
+cnf(c39,plain,~environment(skolem0001)|~outcompetes(first_movers,efficient_producers,skolem0002)|greater_or_equal(growth_rate(first_movers,skolem0002),zero),inference(resolution,status(thm),[c17, c38])).
+cnf(c45,plain,~environment(skolem0001)|greater_or_equal(growth_rate(first_movers,skolem0002),zero),inference(resolution,status(thm),[c39, c7])).
+cnf(c46,plain,greater_or_equal(growth_rate(first_movers,skolem0002),zero),inference(resolution,status(thm),[c45, c5])).
+fof(mp_growth_rate_relationships,axiom,(![E]:(![S1]:(![S2]:(![T]:(((environment(E)&subpopulations(S1,S2,E,T))=>greater_or_equal(growth_rate(S1,T),zero))<=>(~greater(zero,growth_rate(S1,T)))))))),input).
+fof(c19,axiom,(![E]:(![S1]:(![S2]:(![T]:(((environment(E)&subpopulations(S1,S2,E,T))=>greater_or_equal(growth_rate(S1,T),zero))<=>~greater(zero,growth_rate(S1,T))))))),inference(fof_simplification,status(thm),[mp_growth_rate_relationships])).
+fof(c20,axiom,(![E]:(![S1]:(![S2]:(![T]:((((environment(E)&subpopulations(S1,S2,E,T))&~greater_or_equal(growth_rate(S1,T),zero))|~greater(zero,growth_rate(S1,T)))&(greater(zero,growth_rate(S1,T))|((~environment(E)|~subpopulations(S1,S2,E,T))|greater_or_equal(growth_rate(S1,T),zero)))))))),inference(fof_nnf,status(thm),[c19])).
+fof(c21,axiom,((![E]:(![S1]:(![S2]:(![T]:(((environment(E)&subpopulations(S1,S2,E,T))&~greater_or_equal(growth_rate(S1,T),zero))|~greater(zero,growth_rate(S1,T)))))))&(![E]:(![S1]:(![S2]:(![T]:(greater(zero,growth_rate(S1,T))|((~environment(E)|~subpopulations(S1,S2,E,T))|greater_or_equal(growth_rate(S1,T),zero)))))))),inference(shift_quantors,status(thm),[c20])).
+fof(c23,axiom,(![X12]:(![X13]:(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:((((environment(X12)&subpopulations(X13,X14,X12,X15))&~greater_or_equal(growth_rate(X13,X15),zero))|~greater(zero,growth_rate(X13,X15)))&(greater(zero,growth_rate(X17,X19))|((~environment(X16)|~subpopulations(X17,X18,X16,X19))|greater_or_equal(growth_rate(X17,X19),zero)))))))))))),inference(shift_quantors,status(thm),[fof(c22,axiom,((![X12]:(![X13]:(![X14]:(![X15]:(((environment(X12)&subpopulations(X13,X14,X12,X15))&~greater_or_equal(growth_rate(X13,X15),zero))|~greater(zero,growth_rate(X13,X15)))))))&(![X16]:(![X17]:(![X18]:(![X19]:(greater(zero,growth_rate(X17,X19))|((~environment(X16)|~subpopulations(X17,X18,X16,X19))|greater_or_equal(growth_rate(X17,X19),zero)))))))),inference(variable_rename,status(thm),[c21])).])).
+fof(c24,axiom,(![X12]:(![X13]:(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:((((environment(X12)|~greater(zero,growth_rate(X13,X15)))&(subpopulations(X13,X14,X12,X15)|~greater(zero,growth_rate(X13,X15))))&(~greater_or_equal(growth_rate(X13,X15),zero)|~greater(zero,growth_rate(X13,X15))))&(greater(zero,growth_rate(X17,X19))|((~environment(X16)|~subpopulations(X17,X18,X16,X19))|greater_or_equal(growth_rate(X17,X19),zero)))))))))))),inference(distribute,status(thm),[c23])).
+cnf(c27,axiom,~greater_or_equal(growth_rate(X38,X37),zero)|~greater(zero,growth_rate(X38,X37)),inference(split_conjunct,status(thm),[c24])).
+cnf(c25,axiom,environment(X25)|~greater(zero,growth_rate(X26,X24)),inference(split_conjunct,status(thm),[c24])).
+cnf(c18,plain,~environment(X52)|~subpopulations(X50,X49,X52,X51)|~outcompetes(X49,X50,X51)|greater(zero,growth_rate(X50,X51)),inference(split_conjunct,status(thm),[c15])).
+cnf(c41,plain,~environment(skolem0001)|~outcompetes(first_movers,efficient_producers,skolem0002)|greater(zero,growth_rate(efficient_producers,skolem0002)),inference(resolution,status(thm),[c18, c38])).
+cnf(c47,plain,~environment(skolem0001)|greater(zero,growth_rate(efficient_producers,skolem0002)),inference(resolution,status(thm),[c41, c7])).
+cnf(c48,plain,greater(zero,growth_rate(efficient_producers,skolem0002)),inference(resolution,status(thm),[c47, c5])).
+cnf(c51,plain,environment(X57),inference(resolution,status(thm),[c48, c25])).
+fof(mp_time_point_occur,axiom,(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>in_environment(E,T)))),input).
+fof(c29,axiom,(![E]:(![T]:((~environment(E)|~subpopulations(first_movers,efficient_producers,E,T))|in_environment(E,T)))),inference(fof_nnf,status(thm),[mp_time_point_occur])).
+fof(c30,axiom,(![X20]:(![X21]:((~environment(X20)|~subpopulations(first_movers,efficient_producers,X20,X21))|in_environment(X20,X21)))),inference(variable_rename,status(thm),[c29])).
+cnf(c31,axiom,~environment(X36)|~subpopulations(first_movers,efficient_producers,X36,X35)|in_environment(X36,X35),inference(split_conjunct,status(thm),[c30])).
+cnf(c35,plain,~environment(skolem0001)|in_environment(skolem0001,skolem0002),inference(resolution,status(thm),[c31, c6])).
+cnf(c36,plain,in_environment(skolem0001,skolem0002),inference(resolution,status(thm),[c35, c5])).
+fof(a2,plain,greater(resilience(efficient_producers),resilience(first_movers)),input).
+cnf(c8,plain,greater(resilience(efficient_producers),resilience(first_movers)),inference(split_conjunct,status(thm),[a2])).
+fof(a12,plain,(![E]:(![S1]:(![S2]:(![T]:((((environment(E)&in_environment(E,T))&(~greater(zero,growth_rate(S1,T))))&greater(resilience(S2),resilience(S1)))=>(~greater(zero,growth_rate(S2,T)))))))),input).
+fof(c9,plain,(![E]:(![S1]:(![S2]:(![T]:((((environment(E)&in_environment(E,T))&~greater(zero,growth_rate(S1,T)))&greater(resilience(S2),resilience(S1)))=>~greater(zero,growth_rate(S2,T))))))),inference(fof_simplification,status(thm),[a12])).
+fof(c10,plain,(![E]:(![S1]:(![S2]:(![T]:((((~environment(E)|~in_environment(E,T))|greater(zero,growth_rate(S1,T)))|~greater(resilience(S2),resilience(S1)))|~greater(zero,growth_rate(S2,T))))))),inference(fof_nnf,status(thm),[c9])).
+fof(c11,plain,(![X4]:(![X5]:(![X6]:(![X7]:((((~environment(X4)|~in_environment(X4,X7))|greater(zero,growth_rate(X5,X7)))|~greater(resilience(X6),resilience(X5)))|~greater(zero,growth_rate(X6,X7))))))),inference(variable_rename,status(thm),[c10])).
+cnf(c12,plain,~environment(X28)|~in_environment(X28,X29)|greater(zero,growth_rate(X30,X29))|~greater(resilience(X27),resilience(X30))|~greater(zero,growth_rate(X27,X29)),inference(split_conjunct,status(thm),[c11])).
+cnf(c52,plain,~environment(X69)|~in_environment(X69,skolem0002)|greater(zero,growth_rate(X70,skolem0002))|~greater(resilience(efficient_producers),resilience(X70)),inference(resolution,status(thm),[c48, c12])).
+cnf(c59,plain,~environment(X71)|~in_environment(X71,skolem0002)|greater(zero,growth_rate(first_movers,skolem0002)),inference(resolution,status(thm),[c52, c8])).
+cnf(c60,plain,~environment(skolem0001)|greater(zero,growth_rate(first_movers,skolem0002)),inference(resolution,status(thm),[c59, c36])).
+cnf(c61,plain,greater(zero,growth_rate(first_movers,skolem0002)),inference(resolution,status(thm),[c60, c51])).
+cnf(c62,plain,~greater_or_equal(growth_rate(first_movers,skolem0002),zero),inference(resolution,status(thm),[c61, c27])).
+cnf(c66,plain,$false,inference(resolution,status(thm),[c62, c46])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 14
+# Processed clauses  : 36
+# Factors computed   : 0
+# Resolvents computed: 32
+# Tautologies deleted: 0
+# Forward subsumed   : 6
+# Backward subsumed  : 12
+
+# -------- CPU Time ---------
+# User time          : 0.283 s
+# System time        : 0.215 s
+# Total time         : 0.498 s

@@ -1,0 +1,34 @@
+# cnf(c8,negated_conjecture,f(X8)|f(X9)).
+# cnf(c10,plain,f(X10)).
+# cnf(c7,negated_conjecture,~f(skolem0001)|~f(skolem0002)|~f(skolem0003)).
+# cnf(c11,plain,~f(skolem0001)|~f(skolem0002)).
+# cnf(c12,plain,~f(skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(kalish246,conjecture,((![X]:f(X))<=>(![Y]:(![Z]:(f(Y)&f(Z))))),input).
+fof(c0,negated_conjecture,(~((![X]:f(X))<=>(![Y]:(![Z]:(f(Y)&f(Z)))))),inference(assume_negation,status(cth),[kalish246])).
+fof(c1,negated_conjecture,(((?[X]:~f(X))|(?[Y]:(?[Z]:(~f(Y)|~f(Z)))))&((![X]:f(X))|(![Y]:(![Z]:(f(Y)&f(Z)))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(((?[X]:~f(X))|((?[Y]:~f(Y))|(?[Z]:~f(Z))))&((![X]:f(X))|((![Y]:f(Y))&(![Z]:f(Z))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(((?[X2]:~f(X2))|((?[X3]:~f(X3))|(?[X4]:~f(X4))))&((![X5]:f(X5))|((![X6]:f(X6))&(![X7]:f(X7))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X5]:(![X6]:(![X7]:((~f(skolem0001)|(~f(skolem0002)|~f(skolem0003)))&(f(X5)|(f(X6)&f(X7))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((~f(skolem0001)|(~f(skolem0002)|~f(skolem0003)))&((![X5]:f(X5))|((![X6]:f(X6))&(![X7]:f(X7))))),inference(skolemize,status(esa),[c3])).])).
+fof(c6,negated_conjecture,(![X5]:(![X6]:(![X7]:((~f(skolem0001)|(~f(skolem0002)|~f(skolem0003)))&((f(X5)|f(X6))&(f(X5)|f(X7))))))),inference(distribute,status(thm),[c5])).
+cnf(c8,negated_conjecture,f(X8)|f(X9),inference(split_conjunct,status(thm),[c6])).
+cnf(c10,plain,f(X10),inference(factor,status(thm),[c8])).
+cnf(c7,negated_conjecture,~f(skolem0001)|~f(skolem0002)|~f(skolem0003),inference(split_conjunct,status(thm),[c6])).
+cnf(c11,plain,~f(skolem0001)|~f(skolem0002),inference(resolution,status(thm),[c7, c10])).
+cnf(c12,plain,~f(skolem0001),inference(resolution,status(thm),[c11, c10])).
+cnf(c13,plain,$false,inference(resolution,status(thm),[c12, c10])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 3
+# Processed clauses  : 5
+# Factors computed   : 1
+# Resolvents computed: 3
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 3
+
+# -------- CPU Time ---------
+# User time          : 0.271 s
+# System time        : 0.208 s
+# Total time         : 0.479 s

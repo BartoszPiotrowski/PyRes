@@ -1,0 +1,222 @@
+# cnf(c449,axiom,$true).
+# cnf(reflexivity,axiom,X80=X80).
+# cnf(symmetry,axiom,X82!=X81|X81=X82).
+# cnf(c26,plain,aElement0(xw)).
+# cnf(c40,plain,aElement0(xv)).
+# cnf(c50,plain,aElement0(xu)).
+# cnf(c348,plain,aElement0(xa)).
+# cnf(c349,plain,aElement0(xb)).
+# cnf(transitivity,axiom,X85!=X84|X84!=X83|X85=X83).
+# cnf(c350,plain,aElement0(xc)).
+# cnf(c367,plain,isLocallyConfluent0(xR)).
+# cnf(c371,plain,isTerminating0(xR)).
+# cnf(c372,plain,aRewritingSystem0(xR)).
+# cnf(c0,plain,X87!=X88|~aElement0(X87)|aElement0(X88)).
+# cnf(c22,negated_conjecture,~aNormalFormOfIn0(X90,xw,xR)).
+# cnf(c31,plain,sdtmndtasgtdt0(xu,xR,xw)).
+# cnf(c36,plain,sdtmndtasgtdt0(xv,xR,xw)).
+# cnf(c41,plain,aReductOfIn0(xv,xa,xR)).
+# cnf(c1,plain,X91!=X92|~aRewritingSystem0(X91)|aRewritingSystem0(X92)).
+# cnf(c46,plain,sdtmndtasgtdt0(xv,xR,xc)).
+# cnf(c51,plain,aReductOfIn0(xu,xa,xR)).
+# cnf(c56,plain,sdtmndtasgtdt0(xu,xR,xb)).
+# cnf(c63,plain,sdtmndtplgtdt0(xa,xR,xb)).
+# cnf(c2,plain,X96!=X97|X98!=X95|X99!=X94|~aReductOfIn0(X96,X98,X99)|aReductOfIn0(X97,X95,X94)).
+# cnf(c67,plain,sdtmndtplgtdt0(xa,xR,xc)).
+# cnf(c6,plain,X102!=X103|~isConfluent0(X102)|isConfluent0(X103)).
+# cnf(c7,plain,X105!=X106|~isLocallyConfluent0(X105)|isLocallyConfluent0(X106)).
+# cnf(c3,plain,X107!=X108|X110!=X109|~iLess0(X107,X110)|iLess0(X108,X109)).
+# cnf(c8,plain,X112!=X113|~isTerminating0(X112)|isTerminating0(X113)).
+# cnf(c394,plain,~aRewritingSystem0(X115)|aElement0(skolem0016(X115))|isTerminating0(X115)).
+# cnf(c4,plain,X118!=X119|X120!=X117|X121!=X116|~sdtmndtplgtdt0(X118,X120,X121)|sdtmndtplgtdt0(X119,X117,X116)).
+# cnf(c395,plain,~aRewritingSystem0(X122)|aElement0(skolem0017(X122))|isTerminating0(X122)).
+# cnf(c406,plain,~aRewritingSystem0(X123)|aElement0(skolem0019(X123))|isLocallyConfluent0(X123)).
+# cnf(c407,plain,~aRewritingSystem0(X124)|aElement0(skolem0020(X124))|isLocallyConfluent0(X124)).
+# cnf(c5,plain,X127!=X128|X129!=X126|X130!=X125|~sdtmndtasgtdt0(X127,X129,X130)|sdtmndtasgtdt0(X128,X126,X125)).
+# cnf(c408,plain,~aRewritingSystem0(X131)|aElement0(skolem0021(X131))|isLocallyConfluent0(X131)).
+# cnf(c420,plain,~aRewritingSystem0(X132)|aElement0(skolem0023(X132))|isConfluent0(X132)).
+# cnf(c480,plain,aElement0(skolem0023(xR))|isConfluent0(xR)).
+# cnf(c9,plain,X135!=X136|X137!=X134|X138!=X133|~aNormalFormOfIn0(X135,X137,X138)|aNormalFormOfIn0(X136,X134,X133)).
+# cnf(c421,plain,~aRewritingSystem0(X139)|aElement0(skolem0024(X139))|isConfluent0(X139)).
+# cnf(c481,plain,aElement0(skolem0024(xR))|isConfluent0(xR)).
+# cnf(c422,plain,~aRewritingSystem0(X140)|aElement0(skolem0025(X140))|isConfluent0(X140)).
+# cnf(c482,plain,aElement0(skolem0025(xR))|isConfluent0(xR)).
+# cnf(c60,plain,aReductOfIn0(xb,xa,xR)|aElement0(skolem0006)).
+# cnf(c17,negated_conjecture,~aElement0(X141)|xw!=X141|aReductOfIn0(skolem0001(X141),X141,xR)).
+# cnf(c64,plain,aReductOfIn0(xc,xa,xR)|aElement0(skolem0007)).
+# cnf(c30,plain,xu=xw|sdtmndtplgtdt0(xu,xR,xw)).
+# cnf(c35,plain,xv=xw|sdtmndtplgtdt0(xv,xR,xw)).
+# cnf(c45,plain,xv=xc|sdtmndtplgtdt0(xv,xR,xc)).
+# cnf(c55,plain,xu=xb|sdtmndtplgtdt0(xu,xR,xb)).
+# cnf(c18,negated_conjecture,~aElement0(X142)|~aReductOfIn0(X142,xw,xR)|aReductOfIn0(skolem0001(X142),X142,xR)).
+# cnf(c384,plain,~aElement0(X144)|~aRewritingSystem0(X143)|~aNormalFormOfIn0(X145,X144,X143)|aElement0(X145)).
+# cnf(c397,plain,~aRewritingSystem0(X146)|~iLess0(skolem0017(X146),skolem0016(X146))|isTerminating0(X146)).
+# cnf(c455,axiom,~aElement0(X148)|~aRewritingSystem0(X149)|~aReductOfIn0(X147,X148,X149)|aElement0(X147)).
+# cnf(c19,negated_conjecture,~aElement0(X151)|~aElement0(X150)|~aReductOfIn0(X150,xw,xR)|~sdtmndtplgtdt0(X150,xR,X151)|aReductOfIn0(skolem0001(X151),X151,xR)).
+# cnf(c484,plain,~aElement0(xw)|aReductOfIn0(skolem0001(xw),xw,xR)).
+# cnf(c528,plain,aReductOfIn0(skolem0001(xw),xw,xR)).
+# cnf(c489,plain,sdtmndtplgtdt0(xu,xR,xw)|xw=xu).
+# cnf(c497,plain,sdtmndtplgtdt0(xv,xR,xw)|xw=xv).
+# cnf(c505,plain,sdtmndtplgtdt0(xv,xR,xc)|xc=xv).
+# cnf(c20,negated_conjecture,~aElement0(X152)|~sdtmndtplgtdt0(xw,xR,X152)|aReductOfIn0(skolem0001(X152),X152,xR)).
+# cnf(c513,plain,sdtmndtplgtdt0(xu,xR,xb)|xb=xu).
+# cnf(c529,plain,~aElement0(xw)|~aRewritingSystem0(xR)|aElement0(skolem0001(xw))).
+# cnf(c570,plain,~aElement0(xw)|aElement0(skolem0001(xw))).
+# cnf(c571,plain,aElement0(skolem0001(xw))).
+# cnf(c21,negated_conjecture,~aElement0(X153)|~sdtmndtasgtdt0(xw,xR,X153)|aReductOfIn0(skolem0001(X153),X153,xR)).
+# cnf(c396,plain,~aRewritingSystem0(X154)|sdtmndtplgtdt0(skolem0016(X154),X154,skolem0017(X154))|isTerminating0(X154)).
+# cnf(c409,plain,~aRewritingSystem0(X155)|aReductOfIn0(skolem0020(X155),skolem0019(X155),X155)|isLocallyConfluent0(X155)).
+# cnf(c27,plain,xu=xw|aReductOfIn0(xw,xu,xR)|aElement0(skolem0002)).
+# cnf(c410,plain,~aRewritingSystem0(X156)|aReductOfIn0(skolem0021(X156),skolem0019(X156),X156)|isLocallyConfluent0(X156)).
+# cnf(c423,plain,~aRewritingSystem0(X157)|sdtmndtasgtdt0(skolem0023(X157),X157,skolem0024(X157))|isConfluent0(X157)).
+# cnf(c424,plain,~aRewritingSystem0(X158)|sdtmndtasgtdt0(skolem0023(X158),X158,skolem0025(X158))|isConfluent0(X158)).
+# cnf(c61,plain,aReductOfIn0(xb,xa,xR)|aReductOfIn0(skolem0006,xa,xR)).
+# cnf(c62,plain,aReductOfIn0(xb,xa,xR)|sdtmndtplgtdt0(skolem0006,xR,xb)).
+# cnf(c28,plain,xu=xw|aReductOfIn0(xw,xu,xR)|aReductOfIn0(skolem0002,xu,xR)).
+# cnf(c65,plain,aReductOfIn0(xc,xa,xR)|aReductOfIn0(skolem0007,xa,xR)).
+# cnf(c66,plain,aReductOfIn0(xc,xa,xR)|sdtmndtplgtdt0(skolem0007,xR,xc)).
+# cnf(c368,plain,~aElement0(X160)|~aElement0(X159)|~aReductOfIn0(X159,X160,xR)|iLess0(X159,X160)).
+# cnf(c615,plain,~aElement0(xa)|~aElement0(xv)|iLess0(xv,xa)).
+# cnf(c627,plain,~aElement0(xa)|iLess0(xv,xa)).
+# cnf(c29,plain,xu=xw|aReductOfIn0(xw,xu,xR)|sdtmndtplgtdt0(skolem0002,xR,xw)).
+# cnf(c628,plain,iLess0(xv,xa)).
+# cnf(c624,plain,~aElement0(xa)|~aElement0(xu)|iLess0(xu,xa)).
+# cnf(c642,plain,~aElement0(xa)|iLess0(xu,xa)).
+# cnf(c643,plain,iLess0(xu,xa)).
+# cnf(c641,plain,xv!=X161|xa!=X162|iLess0(X161,X162)).
+# cnf(c32,plain,xv=xw|aReductOfIn0(xw,xv,xR)|aElement0(skolem0003)).
+# cnf(c645,plain,xv!=X163|iLess0(X163,xa)).
+# cnf(c644,plain,xu!=X164|xa!=X165|iLess0(X164,X165)).
+# cnf(c660,plain,xu!=X166|iLess0(X166,xa)).
+# cnf(c33,plain,xv=xw|aReductOfIn0(xw,xv,xR)|aReductOfIn0(skolem0003,xv,xR)).
+# cnf(c656,plain,iLess0(xc,xa)|sdtmndtplgtdt0(xv,xR,xc)).
+# cnf(c657,plain,iLess0(xw,xa)|sdtmndtplgtdt0(xv,xR,xw)).
+# cnf(c661,plain,iLess0(xw,xa)|sdtmndtplgtdt0(xu,xR,xw)).
+# cnf(c664,plain,iLess0(xb,xa)|sdtmndtplgtdt0(xu,xR,xb)).
+# cnf(c370,plain,~aElement0(X168)|~aElement0(X167)|~sdtmndtplgtdt0(X168,xR,X167)|iLess0(X167,X168)).
+# cnf(c34,plain,xv=xw|aReductOfIn0(xw,xv,xR)|sdtmndtplgtdt0(skolem0003,xR,xw)).
+# cnf(c699,plain,~aElement0(xa)|~aElement0(xc)|iLess0(xc,xa)).
+# cnf(c724,plain,~aElement0(xa)|iLess0(xc,xa)).
+# cnf(c725,plain,iLess0(xc,xa)).
+# cnf(c707,plain,~aElement0(xa)|~aElement0(xb)|iLess0(xb,xa)).
+# cnf(c727,plain,~aElement0(xa)|iLess0(xb,xa)).
+# cnf(c42,plain,xv=xc|aReductOfIn0(xc,xv,xR)|aElement0(skolem0004)).
+# cnf(c728,plain,iLess0(xb,xa)).
+# cnf(c726,plain,xc!=X169|xa!=X170|iLess0(X169,X170)).
+# cnf(c741,plain,xc!=X171|iLess0(X171,xa)).
+# cnf(c740,plain,xb!=X172|xa!=X173|iLess0(X172,X173)).
+# cnf(c43,plain,xv=xc|aReductOfIn0(xc,xv,xR)|aReductOfIn0(skolem0004,xv,xR)).
+# cnf(c744,plain,xb!=X174|iLess0(X174,xa)).
+# cnf(c385,plain,~aElement0(X176)|~aRewritingSystem0(X175)|~aNormalFormOfIn0(X177,X176,X175)|sdtmndtasgtdt0(X176,X175,X177)).
+# cnf(c44,plain,xv=xc|aReductOfIn0(xc,xv,xR)|sdtmndtplgtdt0(skolem0004,xR,xc)).
+# cnf(c386,plain,~aElement0(X180)|~aRewritingSystem0(X179)|~aNormalFormOfIn0(X181,X180,X179)|~aReductOfIn0(X178,X181,X179)).
+# cnf(c787,plain,~aElement0(X182)|~aRewritingSystem0(xR)|~aNormalFormOfIn0(xa,X182,xR)).
+# cnf(c788,plain,~aElement0(X183)|~aRewritingSystem0(xR)|~aNormalFormOfIn0(xw,X183,xR)).
+# cnf(c486,plain,sdtmndtplgtdt0(xu,xR,xw)|~isLocallyConfluent0(xu)|isLocallyConfluent0(xw)).
+# cnf(c52,plain,xu=xb|aReductOfIn0(xb,xu,xR)|aElement0(skolem0005)).
+# cnf(c490,plain,sdtmndtplgtdt0(xu,xR,xw)|~isConfluent0(xu)|isConfluent0(xw)).
+# cnf(c491,plain,sdtmndtplgtdt0(xu,xR,xw)|~isTerminating0(xu)|isTerminating0(xw)).
+# cnf(c492,plain,sdtmndtplgtdt0(xu,xR,xw)|~aRewritingSystem0(xu)|aRewritingSystem0(xw)).
+# cnf(c494,plain,sdtmndtplgtdt0(xv,xR,xw)|~isLocallyConfluent0(xv)|isLocallyConfluent0(xw)).
+# cnf(c53,plain,xu=xb|aReductOfIn0(xb,xu,xR)|aReductOfIn0(skolem0005,xu,xR)).
+# cnf(c498,plain,sdtmndtplgtdt0(xv,xR,xw)|~isConfluent0(xv)|isConfluent0(xw)).
+# cnf(c499,plain,sdtmndtplgtdt0(xv,xR,xw)|~isTerminating0(xv)|isTerminating0(xw)).
+# cnf(c500,plain,sdtmndtplgtdt0(xv,xR,xw)|~aRewritingSystem0(xv)|aRewritingSystem0(xw)).
+# cnf(c502,plain,sdtmndtplgtdt0(xv,xR,xc)|~isLocallyConfluent0(xv)|isLocallyConfluent0(xc)).
+# cnf(c54,plain,xu=xb|aReductOfIn0(xb,xu,xR)|sdtmndtplgtdt0(skolem0005,xR,xb)).
+# cnf(c506,plain,sdtmndtplgtdt0(xv,xR,xc)|~isConfluent0(xv)|isConfluent0(xc)).
+# cnf(c507,plain,sdtmndtplgtdt0(xv,xR,xc)|~isTerminating0(xv)|isTerminating0(xc)).
+# cnf(c508,plain,sdtmndtplgtdt0(xv,xR,xc)|~aRewritingSystem0(xv)|aRewritingSystem0(xc)).
+# cnf(c510,plain,sdtmndtplgtdt0(xu,xR,xb)|~isLocallyConfluent0(xu)|isLocallyConfluent0(xb)).
+# cnf(c73,plain,~aElement0(X187)|~aElement0(X185)|~aElement0(X186)|X187!=X185|X187!=X186|~iLess0(X187,xa)|aElement0(skolem0008(X187,X185,X186))).
+# cnf(c514,plain,sdtmndtplgtdt0(xu,xR,xb)|~isConfluent0(xu)|isConfluent0(xb)).
+# cnf(c515,plain,sdtmndtplgtdt0(xu,xR,xb)|~isTerminating0(xu)|isTerminating0(xb)).
+# cnf(c516,plain,sdtmndtplgtdt0(xu,xR,xb)|~aRewritingSystem0(xu)|aRewritingSystem0(xb)).
+# cnf(c74,plain,~aElement0(X190)|~aElement0(X188)|~aElement0(X189)|X190!=X188|X190!=X189|~iLess0(X190,xa)|X188=skolem0008(X190,X188,X189)|aReductOfIn0(skolem0008(X190,X188,X189),X188,xR)|aElement0(skolem0009(X190,X188,X189))).
+# cnf(c534,plain,sdtmndtplgtdt0(xu,xR,xw)|~isLocallyConfluent0(xw)|isLocallyConfluent0(xu)).
+# cnf(c539,plain,sdtmndtplgtdt0(xu,xR,xw)|~isConfluent0(xw)|isConfluent0(xu)).
+# cnf(c540,plain,sdtmndtplgtdt0(xu,xR,xw)|~isTerminating0(xw)|isTerminating0(xu)).
+# cnf(c75,plain,~aElement0(X193)|~aElement0(X191)|~aElement0(X192)|X193!=X191|X193!=X192|~iLess0(X193,xa)|X191=skolem0008(X193,X191,X192)|aReductOfIn0(skolem0008(X193,X191,X192),X191,xR)|aReductOfIn0(skolem0009(X193,X191,X192),X191,xR)).
+# cnf(c541,plain,sdtmndtplgtdt0(xu,xR,xw)|~aRewritingSystem0(xw)|aRewritingSystem0(xu)).
+# cnf(c544,plain,sdtmndtplgtdt0(xv,xR,xw)|~isLocallyConfluent0(xw)|isLocallyConfluent0(xv)).
+# cnf(c549,plain,sdtmndtplgtdt0(xv,xR,xw)|~isConfluent0(xw)|isConfluent0(xv)).
+# cnf(c550,plain,sdtmndtplgtdt0(xv,xR,xw)|~isTerminating0(xw)|isTerminating0(xv)).
+# cnf(c76,plain,~aElement0(X196)|~aElement0(X194)|~aElement0(X195)|X196!=X194|X196!=X195|~iLess0(X196,xa)|X194=skolem0008(X196,X194,X195)|aReductOfIn0(skolem0008(X196,X194,X195),X194,xR)|sdtmndtplgtdt0(skolem0009(X196,X194,X195),xR,skolem0008(X196,X194,X195))).
+# cnf(c551,plain,sdtmndtplgtdt0(xv,xR,xw)|~aRewritingSystem0(xw)|aRewritingSystem0(xv)).
+# cnf(c554,plain,sdtmndtplgtdt0(xv,xR,xc)|~isLocallyConfluent0(xc)|isLocallyConfluent0(xv)).
+# cnf(c558,plain,sdtmndtplgtdt0(xv,xR,xc)|~isConfluent0(xc)|isConfluent0(xv)).
+# cnf(c559,plain,sdtmndtplgtdt0(xv,xR,xc)|~isTerminating0(xc)|isTerminating0(xv)).
+# cnf(c77,plain,~aElement0(X199)|~aElement0(X197)|~aElement0(X198)|X199!=X197|X199!=X198|~iLess0(X199,xa)|X197=skolem0008(X199,X197,X198)|sdtmndtplgtdt0(X197,xR,skolem0008(X199,X197,X198))).
+# cnf(c560,plain,sdtmndtplgtdt0(xv,xR,xc)|~aRewritingSystem0(xc)|aRewritingSystem0(xv)).
+# cnf(c563,plain,sdtmndtplgtdt0(xu,xR,xb)|~isLocallyConfluent0(xb)|isLocallyConfluent0(xu)).
+# cnf(c567,plain,sdtmndtplgtdt0(xu,xR,xb)|~isConfluent0(xb)|isConfluent0(xu)).
+# cnf(c568,plain,sdtmndtplgtdt0(xu,xR,xb)|~isTerminating0(xb)|isTerminating0(xu)).
+# cnf(c78,plain,~aElement0(X202)|~aElement0(X200)|~aElement0(X201)|X202!=X200|X202!=X201|~iLess0(X202,xa)|sdtmndtasgtdt0(X200,xR,skolem0008(X202,X200,X201))).
+# cnf(c569,plain,sdtmndtplgtdt0(xu,xR,xb)|~aRewritingSystem0(xb)|aRewritingSystem0(xu)).
+# cnf(c584,plain,sdtmndtasgtdt0(skolem0023(xR),xR,skolem0024(xR))|isConfluent0(xR)).
+# cnf(c79,plain,~aElement0(X205)|~aElement0(X203)|~aElement0(X204)|X205!=X203|X205!=X204|~iLess0(X205,xa)|X204=skolem0008(X205,X203,X204)|aReductOfIn0(skolem0008(X205,X203,X204),X204,xR)|aElement0(skolem0010(X205,X203,X204))).
+# cnf(c585,plain,sdtmndtasgtdt0(skolem0023(xR),xR,skolem0025(xR))|isConfluent0(xR)).
+# cnf(c377,axiom,~aRewritingSystem0(X206)|~isTerminating0(X206)|~aElement0(X207)|aNormalFormOfIn0(skolem0014(X206,X207),X207,X206)).
+# cnf(c894,plain,~aRewritingSystem0(X208)|~isTerminating0(X208)|aNormalFormOfIn0(skolem0014(X208,xa),xa,X208)).
+# cnf(c895,plain,~aRewritingSystem0(X209)|~isTerminating0(X209)|aNormalFormOfIn0(skolem0014(X209,xv),xv,X209)).
+# cnf(c896,plain,~aRewritingSystem0(X210)|~isTerminating0(X210)|aNormalFormOfIn0(skolem0014(X210,xb),xb,X210)).
+# cnf(c80,plain,~aElement0(X213)|~aElement0(X211)|~aElement0(X212)|X213!=X211|X213!=X212|~iLess0(X213,xa)|X212=skolem0008(X213,X211,X212)|aReductOfIn0(skolem0008(X213,X211,X212),X212,xR)|aReductOfIn0(skolem0010(X213,X211,X212),X212,xR)).
+# cnf(c897,plain,~aRewritingSystem0(X214)|~isTerminating0(X214)|aNormalFormOfIn0(skolem0014(X214,xw),xw,X214)).
+# cnf(c898,plain,~aRewritingSystem0(X215)|~isTerminating0(X215)|aNormalFormOfIn0(skolem0014(X215,xc),xc,X215)).
+# cnf(c900,plain,~aRewritingSystem0(X216)|~isTerminating0(X216)|aNormalFormOfIn0(skolem0014(X216,xu),xu,X216)).
+# cnf(c901,plain,~aRewritingSystem0(xR)|aNormalFormOfIn0(skolem0014(xR,xa),xa,xR)).
+# cnf(c913,plain,aNormalFormOfIn0(skolem0014(xR,xa),xa,xR)).
+# cnf(c81,plain,~aElement0(X219)|~aElement0(X217)|~aElement0(X218)|X219!=X217|X219!=X218|~iLess0(X219,xa)|X218=skolem0008(X219,X217,X218)|aReductOfIn0(skolem0008(X219,X217,X218),X218,xR)|sdtmndtplgtdt0(skolem0010(X219,X217,X218),xR,skolem0008(X219,X217,X218))).
+# cnf(c902,plain,~aRewritingSystem0(xR)|aNormalFormOfIn0(skolem0014(xR,xv),xv,xR)).
+# cnf(c923,plain,aNormalFormOfIn0(skolem0014(xR,xv),xv,xR)).
+# cnf(c903,plain,~aRewritingSystem0(xR)|aNormalFormOfIn0(skolem0014(xR,xb),xb,xR)).
+# cnf(c927,plain,aNormalFormOfIn0(skolem0014(xR,xb),xb,xR)).
+# cnf(c910,plain,~aRewritingSystem0(xR)|aNormalFormOfIn0(skolem0014(xR,xw),xw,xR)).
+# cnf(c82,plain,~aElement0(X222)|~aElement0(X220)|~aElement0(X221)|X222!=X220|X222!=X221|~iLess0(X222,xa)|X221=skolem0008(X222,X220,X221)|sdtmndtplgtdt0(X221,xR,skolem0008(X222,X220,X221))).
+# cnf(c931,plain,aNormalFormOfIn0(skolem0014(xR,xw),xw,xR)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__,conjecture,(?[W0]:(((aElement0(W0)&((((xw=W0|aReductOfIn0(W0,xw,xR))|(?[W1]:((aElement0(W1)&aReductOfIn0(W1,xw,xR))&sdtmndtplgtdt0(W1,xR,W0))))|sdtmndtplgtdt0(xw,xR,W0))|sdtmndtasgtdt0(xw,xR,W0)))&(~(?[W1]:aReductOfIn0(W1,W0,xR))))|aNormalFormOfIn0(W0,xw,xR))),input).
+fof(c10,negated_conjecture,(~(?[W0]:(((aElement0(W0)&((((xw=W0|aReductOfIn0(W0,xw,xR))|(?[W1]:((aElement0(W1)&aReductOfIn0(W1,xw,xR))&sdtmndtplgtdt0(W1,xR,W0))))|sdtmndtplgtdt0(xw,xR,W0))|sdtmndtasgtdt0(xw,xR,W0)))&(~(?[W1]:aReductOfIn0(W1,W0,xR))))|aNormalFormOfIn0(W0,xw,xR)))),inference(assume_negation,status(cth),[m__])).
+fof(c11,negated_conjecture,(![W0]:(((~aElement0(W0)|((((xw!=W0&~aReductOfIn0(W0,xw,xR))&(![W1]:((~aElement0(W1)|~aReductOfIn0(W1,xw,xR))|~sdtmndtplgtdt0(W1,xR,W0))))&~sdtmndtplgtdt0(xw,xR,W0))&~sdtmndtasgtdt0(xw,xR,W0)))|(?[W1]:aReductOfIn0(W1,W0,xR)))&~aNormalFormOfIn0(W0,xw,xR))),inference(fof_nnf,status(thm),[c10])).
+fof(c12,negated_conjecture,((![W0]:((~aElement0(W0)|((((xw!=W0&~aReductOfIn0(W0,xw,xR))&(![W1]:((~aElement0(W1)|~aReductOfIn0(W1,xw,xR))|~sdtmndtplgtdt0(W1,xR,W0))))&~sdtmndtplgtdt0(xw,xR,W0))&~sdtmndtasgtdt0(xw,xR,W0)))|(?[W1]:aReductOfIn0(W1,W0,xR))))&(![W0]:~aNormalFormOfIn0(W0,xw,xR))),inference(shift_quantors,status(thm),[c11])).
+fof(c13,negated_conjecture,((![X2]:((~aElement0(X2)|((((xw!=X2&~aReductOfIn0(X2,xw,xR))&(![X3]:((~aElement0(X3)|~aReductOfIn0(X3,xw,xR))|~sdtmndtplgtdt0(X3,xR,X2))))&~sdtmndtplgtdt0(xw,xR,X2))&~sdtmndtasgtdt0(xw,xR,X2)))|(?[X4]:aReductOfIn0(X4,X2,xR))))&(![X5]:~aNormalFormOfIn0(X5,xw,xR))),inference(variable_rename,status(thm),[c12])).
+fof(c15,negated_conjecture,(![X2]:(![X3]:(![X5]:(((~aElement0(X2)|((((xw!=X2&~aReductOfIn0(X2,xw,xR))&((~aElement0(X3)|~aReductOfIn0(X3,xw,xR))|~sdtmndtplgtdt0(X3,xR,X2)))&~sdtmndtplgtdt0(xw,xR,X2))&~sdtmndtasgtdt0(xw,xR,X2)))|aReductOfIn0(skolem0001(X2),X2,xR))&~aNormalFormOfIn0(X5,xw,xR))))),inference(shift_quantors,status(thm),[fof(c14,negated_conjecture,((![X2]:((~aElement0(X2)|((((xw!=X2&~aReductOfIn0(X2,xw,xR))&(![X3]:((~aElement0(X3)|~aReductOfIn0(X3,xw,xR))|~sdtmndtplgtdt0(X3,xR,X2))))&~sdtmndtplgtdt0(xw,xR,X2))&~sdtmndtasgtdt0(xw,xR,X2)))|aReductOfIn0(skolem0001(X2),X2,xR)))&(![X5]:~aNormalFormOfIn0(X5,xw,xR))),inference(skolemize,status(esa),[c13])).])).
+fof(c16,negated_conjecture,(![X2]:(![X3]:(![X5]:(((((((~aElement0(X2)|xw!=X2)|aReductOfIn0(skolem0001(X2),X2,xR))&((~aElement0(X2)|~aReductOfIn0(X2,xw,xR))|aReductOfIn0(skolem0001(X2),X2,xR)))&((~aElement0(X2)|((~aElement0(X3)|~aReductOfIn0(X3,xw,xR))|~sdtmndtplgtdt0(X3,xR,X2)))|aReductOfIn0(skolem0001(X2),X2,xR)))&((~aElement0(X2)|~sdtmndtplgtdt0(xw,xR,X2))|aReductOfIn0(skolem0001(X2),X2,xR)))&((~aElement0(X2)|~sdtmndtasgtdt0(xw,xR,X2))|aReductOfIn0(skolem0001(X2),X2,xR)))&~aNormalFormOfIn0(X5,xw,xR))))),inference(distribute,status(thm),[c15])).
+cnf(c22,negated_conjecture,~aNormalFormOfIn0(X90,xw,xR),inference(split_conjunct,status(thm),[c16])).
+fof(m__656,plain,aRewritingSystem0(xR),input).
+cnf(c372,plain,aRewritingSystem0(xR),inference(split_conjunct,status(thm),[m__656])).
+fof(m__656_01,plain,((((![W0]:(![W1]:(![W2]:(((((aElement0(W0)&aElement0(W1))&aElement0(W2))&aReductOfIn0(W1,W0,xR))&aReductOfIn0(W2,W0,xR))=>(?[W3]:((((aElement0(W3)&(W1=W3|((aReductOfIn0(W3,W1,xR)|(?[W4]:((aElement0(W4)&aReductOfIn0(W4,W1,xR))&sdtmndtplgtdt0(W4,xR,W3))))&sdtmndtplgtdt0(W1,xR,W3))))&sdtmndtasgtdt0(W1,xR,W3))&(W2=W3|((aReductOfIn0(W3,W2,xR)|(?[W4]:((aElement0(W4)&aReductOfIn0(W4,W2,xR))&sdtmndtplgtdt0(W4,xR,W3))))&sdtmndtplgtdt0(W2,xR,W3))))&sdtmndtasgtdt0(W2,xR,W3)))))))&isLocallyConfluent0(xR))&(![W0]:(![W1]:((aElement0(W0)&aElement0(W1))=>(((aReductOfIn0(W1,W0,xR)|(?[W2]:((aElement0(W2)&aReductOfIn0(W2,W0,xR))&sdtmndtplgtdt0(W2,xR,W1))))|sdtmndtplgtdt0(W0,xR,W1))=>iLess0(W1,W0))))))&isTerminating0(xR)),input).
+fof(c351,plain,((((![W0]:(![W1]:(![W2]:(((((~aElement0(W0)|~aElement0(W1))|~aElement0(W2))|~aReductOfIn0(W1,W0,xR))|~aReductOfIn0(W2,W0,xR))|(?[W3]:((((aElement0(W3)&(W1=W3|((aReductOfIn0(W3,W1,xR)|(?[W4]:((aElement0(W4)&aReductOfIn0(W4,W1,xR))&sdtmndtplgtdt0(W4,xR,W3))))&sdtmndtplgtdt0(W1,xR,W3))))&sdtmndtasgtdt0(W1,xR,W3))&(W2=W3|((aReductOfIn0(W3,W2,xR)|(?[W4]:((aElement0(W4)&aReductOfIn0(W4,W2,xR))&sdtmndtplgtdt0(W4,xR,W3))))&sdtmndtplgtdt0(W2,xR,W3))))&sdtmndtasgtdt0(W2,xR,W3)))))))&isLocallyConfluent0(xR))&(![W0]:(![W1]:((~aElement0(W0)|~aElement0(W1))|(((~aReductOfIn0(W1,W0,xR)&(![W2]:((~aElement0(W2)|~aReductOfIn0(W2,W0,xR))|~sdtmndtplgtdt0(W2,xR,W1))))&~sdtmndtplgtdt0(W0,xR,W1))|iLess0(W1,W0))))))&isTerminating0(xR)),inference(fof_nnf,status(thm),[m__656_01])).
+fof(c352,plain,((((![X20]:(![X21]:(![X22]:(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(?[X23]:((((aElement0(X23)&(X21=X23|((aReductOfIn0(X23,X21,xR)|(?[X24]:((aElement0(X24)&aReductOfIn0(X24,X21,xR))&sdtmndtplgtdt0(X24,xR,X23))))&sdtmndtplgtdt0(X21,xR,X23))))&sdtmndtasgtdt0(X21,xR,X23))&(X22=X23|((aReductOfIn0(X23,X22,xR)|(?[X25]:((aElement0(X25)&aReductOfIn0(X25,X22,xR))&sdtmndtplgtdt0(X25,xR,X23))))&sdtmndtplgtdt0(X22,xR,X23))))&sdtmndtasgtdt0(X22,xR,X23)))))))&isLocallyConfluent0(xR))&(![X26]:(![X27]:((~aElement0(X26)|~aElement0(X27))|(((~aReductOfIn0(X27,X26,xR)&(![X28]:((~aElement0(X28)|~aReductOfIn0(X28,X26,xR))|~sdtmndtplgtdt0(X28,xR,X27))))&~sdtmndtplgtdt0(X26,xR,X27))|iLess0(X27,X26))))))&isTerminating0(xR)),inference(variable_rename,status(thm),[c351])).
+fof(c354,plain,(![X20]:(![X21]:(![X22]:(![X26]:(![X27]:(![X28]:((((((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|((((aElement0(skolem0011(X20,X21,X22))&(X21=skolem0011(X20,X21,X22)|((aReductOfIn0(skolem0011(X20,X21,X22),X21,xR)|((aElement0(skolem0012(X20,X21,X22))&aReductOfIn0(skolem0012(X20,X21,X22),X21,xR))&sdtmndtplgtdt0(skolem0012(X20,X21,X22),xR,skolem0011(X20,X21,X22))))&sdtmndtplgtdt0(X21,xR,skolem0011(X20,X21,X22)))))&sdtmndtasgtdt0(X21,xR,skolem0011(X20,X21,X22)))&(X22=skolem0011(X20,X21,X22)|((aReductOfIn0(skolem0011(X20,X21,X22),X22,xR)|((aElement0(skolem0013(X20,X21,X22))&aReductOfIn0(skolem0013(X20,X21,X22),X22,xR))&sdtmndtplgtdt0(skolem0013(X20,X21,X22),xR,skolem0011(X20,X21,X22))))&sdtmndtplgtdt0(X22,xR,skolem0011(X20,X21,X22)))))&sdtmndtasgtdt0(X22,xR,skolem0011(X20,X21,X22))))&isLocallyConfluent0(xR))&((~aElement0(X26)|~aElement0(X27))|(((~aReductOfIn0(X27,X26,xR)&((~aElement0(X28)|~aReductOfIn0(X28,X26,xR))|~sdtmndtplgtdt0(X28,xR,X27)))&~sdtmndtplgtdt0(X26,xR,X27))|iLess0(X27,X26))))&isTerminating0(xR)))))))),inference(shift_quantors,status(thm),[fof(c353,plain,((((![X20]:(![X21]:(![X22]:(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|((((aElement0(skolem0011(X20,X21,X22))&(X21=skolem0011(X20,X21,X22)|((aReductOfIn0(skolem0011(X20,X21,X22),X21,xR)|((aElement0(skolem0012(X20,X21,X22))&aReductOfIn0(skolem0012(X20,X21,X22),X21,xR))&sdtmndtplgtdt0(skolem0012(X20,X21,X22),xR,skolem0011(X20,X21,X22))))&sdtmndtplgtdt0(X21,xR,skolem0011(X20,X21,X22)))))&sdtmndtasgtdt0(X21,xR,skolem0011(X20,X21,X22)))&(X22=skolem0011(X20,X21,X22)|((aReductOfIn0(skolem0011(X20,X21,X22),X22,xR)|((aElement0(skolem0013(X20,X21,X22))&aReductOfIn0(skolem0013(X20,X21,X22),X22,xR))&sdtmndtplgtdt0(skolem0013(X20,X21,X22),xR,skolem0011(X20,X21,X22))))&sdtmndtplgtdt0(X22,xR,skolem0011(X20,X21,X22)))))&sdtmndtasgtdt0(X22,xR,skolem0011(X20,X21,X22)))))))&isLocallyConfluent0(xR))&(![X26]:(![X27]:((~aElement0(X26)|~aElement0(X27))|(((~aReductOfIn0(X27,X26,xR)&(![X28]:((~aElement0(X28)|~aReductOfIn0(X28,X26,xR))|~sdtmndtplgtdt0(X28,xR,X27))))&~sdtmndtplgtdt0(X26,xR,X27))|iLess0(X27,X26))))))&isTerminating0(xR)),inference(skolemize,status(esa),[c352])).])).
+fof(c355,plain,(![X20]:(![X21]:(![X22]:(![X26]:(![X27]:(![X28]:((((((((((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|aElement0(skolem0011(X20,X21,X22)))&((((((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X21=skolem0011(X20,X21,X22)|(aReductOfIn0(skolem0011(X20,X21,X22),X21,xR)|aElement0(skolem0012(X20,X21,X22)))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X21=skolem0011(X20,X21,X22)|(aReductOfIn0(skolem0011(X20,X21,X22),X21,xR)|aReductOfIn0(skolem0012(X20,X21,X22),X21,xR)))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X21=skolem0011(X20,X21,X22)|(aReductOfIn0(skolem0011(X20,X21,X22),X21,xR)|sdtmndtplgtdt0(skolem0012(X20,X21,X22),xR,skolem0011(X20,X21,X22))))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X21=skolem0011(X20,X21,X22)|sdtmndtplgtdt0(X21,xR,skolem0011(X20,X21,X22))))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|sdtmndtasgtdt0(X21,xR,skolem0011(X20,X21,X22))))&((((((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X22=skolem0011(X20,X21,X22)|(aReductOfIn0(skolem0011(X20,X21,X22),X22,xR)|aElement0(skolem0013(X20,X21,X22)))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X22=skolem0011(X20,X21,X22)|(aReductOfIn0(skolem0011(X20,X21,X22),X22,xR)|aReductOfIn0(skolem0013(X20,X21,X22),X22,xR)))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X22=skolem0011(X20,X21,X22)|(aReductOfIn0(skolem0011(X20,X21,X22),X22,xR)|sdtmndtplgtdt0(skolem0013(X20,X21,X22),xR,skolem0011(X20,X21,X22))))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|(X22=skolem0011(X20,X21,X22)|sdtmndtplgtdt0(X22,xR,skolem0011(X20,X21,X22))))))&(((((~aElement0(X20)|~aElement0(X21))|~aElement0(X22))|~aReductOfIn0(X21,X20,xR))|~aReductOfIn0(X22,X20,xR))|sdtmndtasgtdt0(X22,xR,skolem0011(X20,X21,X22))))&isLocallyConfluent0(xR))&((((~aElement0(X26)|~aElement0(X27))|(~aReductOfIn0(X27,X26,xR)|iLess0(X27,X26)))&((~aElement0(X26)|~aElement0(X27))|(((~aElement0(X28)|~aReductOfIn0(X28,X26,xR))|~sdtmndtplgtdt0(X28,xR,X27))|iLess0(X27,X26))))&((~aElement0(X26)|~aElement0(X27))|(~sdtmndtplgtdt0(X26,xR,X27)|iLess0(X27,X26)))))&isTerminating0(xR)))))))),inference(distribute,status(thm),[c354])).
+cnf(c371,plain,isTerminating0(xR),inference(split_conjunct,status(thm),[c355])).
+fof(m__799,plain,((((aElement0(xw)&(xu=xw|((aReductOfIn0(xw,xu,xR)|(?[W0]:((aElement0(W0)&aReductOfIn0(W0,xu,xR))&sdtmndtplgtdt0(W0,xR,xw))))&sdtmndtplgtdt0(xu,xR,xw))))&sdtmndtasgtdt0(xu,xR,xw))&(xv=xw|((aReductOfIn0(xw,xv,xR)|(?[W0]:((aElement0(W0)&aReductOfIn0(W0,xv,xR))&sdtmndtplgtdt0(W0,xR,xw))))&sdtmndtplgtdt0(xv,xR,xw))))&sdtmndtasgtdt0(xv,xR,xw)),input).
+fof(c23,plain,((((aElement0(xw)&(xu=xw|((aReductOfIn0(xw,xu,xR)|(?[X6]:((aElement0(X6)&aReductOfIn0(X6,xu,xR))&sdtmndtplgtdt0(X6,xR,xw))))&sdtmndtplgtdt0(xu,xR,xw))))&sdtmndtasgtdt0(xu,xR,xw))&(xv=xw|((aReductOfIn0(xw,xv,xR)|(?[X7]:((aElement0(X7)&aReductOfIn0(X7,xv,xR))&sdtmndtplgtdt0(X7,xR,xw))))&sdtmndtplgtdt0(xv,xR,xw))))&sdtmndtasgtdt0(xv,xR,xw)),inference(variable_rename,status(thm),[m__799])).
+fof(c24,plain,((((aElement0(xw)&(xu=xw|((aReductOfIn0(xw,xu,xR)|((aElement0(skolem0002)&aReductOfIn0(skolem0002,xu,xR))&sdtmndtplgtdt0(skolem0002,xR,xw)))&sdtmndtplgtdt0(xu,xR,xw))))&sdtmndtasgtdt0(xu,xR,xw))&(xv=xw|((aReductOfIn0(xw,xv,xR)|((aElement0(skolem0003)&aReductOfIn0(skolem0003,xv,xR))&sdtmndtplgtdt0(skolem0003,xR,xw)))&sdtmndtplgtdt0(xv,xR,xw))))&sdtmndtasgtdt0(xv,xR,xw)),inference(skolemize,status(esa),[c23])).
+fof(c25,plain,((((aElement0(xw)&((((xu=xw|(aReductOfIn0(xw,xu,xR)|aElement0(skolem0002)))&(xu=xw|(aReductOfIn0(xw,xu,xR)|aReductOfIn0(skolem0002,xu,xR))))&(xu=xw|(aReductOfIn0(xw,xu,xR)|sdtmndtplgtdt0(skolem0002,xR,xw))))&(xu=xw|sdtmndtplgtdt0(xu,xR,xw))))&sdtmndtasgtdt0(xu,xR,xw))&((((xv=xw|(aReductOfIn0(xw,xv,xR)|aElement0(skolem0003)))&(xv=xw|(aReductOfIn0(xw,xv,xR)|aReductOfIn0(skolem0003,xv,xR))))&(xv=xw|(aReductOfIn0(xw,xv,xR)|sdtmndtplgtdt0(skolem0003,xR,xw))))&(xv=xw|sdtmndtplgtdt0(xv,xR,xw))))&sdtmndtasgtdt0(xv,xR,xw)),inference(distribute,status(thm),[c24])).
+cnf(c26,plain,aElement0(xw),inference(split_conjunct,status(thm),[c25])).
+fof(mTermNF,axiom,(![W0]:((aRewritingSystem0(W0)&isTerminating0(W0))=>(![W1]:(aElement0(W1)=>(?[W2]:aNormalFormOfIn0(W2,W1,W0)))))),input).
+fof(c373,axiom,(![W0]:((~aRewritingSystem0(W0)|~isTerminating0(W0))|(![W1]:(~aElement0(W1)|(?[W2]:aNormalFormOfIn0(W2,W1,W0)))))),inference(fof_nnf,status(thm),[mTermNF])).
+fof(c374,axiom,(![X29]:((~aRewritingSystem0(X29)|~isTerminating0(X29))|(![X30]:(~aElement0(X30)|(?[X31]:aNormalFormOfIn0(X31,X30,X29)))))),inference(variable_rename,status(thm),[c373])).
+fof(c376,axiom,(![X29]:(![X30]:((~aRewritingSystem0(X29)|~isTerminating0(X29))|(~aElement0(X30)|aNormalFormOfIn0(skolem0014(X29,X30),X30,X29))))),inference(shift_quantors,status(thm),[fof(c375,axiom,(![X29]:((~aRewritingSystem0(X29)|~isTerminating0(X29))|(![X30]:(~aElement0(X30)|aNormalFormOfIn0(skolem0014(X29,X30),X30,X29))))),inference(skolemize,status(esa),[c374])).])).
+cnf(c377,axiom,~aRewritingSystem0(X206)|~isTerminating0(X206)|~aElement0(X207)|aNormalFormOfIn0(skolem0014(X206,X207),X207,X206),inference(split_conjunct,status(thm),[c376])).
+cnf(c897,plain,~aRewritingSystem0(X214)|~isTerminating0(X214)|aNormalFormOfIn0(skolem0014(X214,xw),xw,X214),inference(resolution,status(thm),[c377, c26])).
+cnf(c910,plain,~aRewritingSystem0(xR)|aNormalFormOfIn0(skolem0014(xR,xw),xw,xR),inference(resolution,status(thm),[c897, c371])).
+cnf(c931,plain,aNormalFormOfIn0(skolem0014(xR,xw),xw,xR),inference(resolution,status(thm),[c910, c372])).
+cnf(c939,plain,$false,inference(resolution,status(thm),[c931, c22])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 390
+# Processed clauses  : 176
+# Factors computed   : 0
+# Resolvents computed: 482
+# Tautologies deleted: 6
+# Forward subsumed   : 35
+# Backward subsumed  : 17
+
+# -------- CPU Time ---------
+# User time          : 0.600 s
+# System time        : 0.184 s
+# Total time         : 0.783 s

@@ -1,0 +1,36 @@
+# cnf(c8,negated_conjecture,~big_p(skolem0001)).
+# cnf(c9,negated_conjecture,~big_q(skolem0001)).
+# cnf(c6,negated_conjecture,~big_r(X5)|big_p(X5)).
+# cnf(c7,negated_conjecture,big_q(X6)|big_r(X6)).
+# cnf(c10,plain,big_r(skolem0001)).
+# cnf(c11,plain,big_q(X7)|big_p(X7)).
+# cnf(c12,plain,big_p(skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(x2106,conjecture,(((![X]:(big_r(X)=>big_p(X)))&(![X]:((~big_q(X))=>big_r(X))))=>(![X]:(big_p(X)|big_q(X)))),input).
+fof(c0,negated_conjecture,(~(((![X]:(big_r(X)=>big_p(X)))&(![X]:((~big_q(X))=>big_r(X))))=>(![X]:(big_p(X)|big_q(X))))),inference(assume_negation,status(cth),[x2106])).
+fof(c1,negated_conjecture,(~(((![X]:(big_r(X)=>big_p(X)))&(![X]:(~big_q(X)=>big_r(X))))=>(![X]:(big_p(X)|big_q(X))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(((![X]:(~big_r(X)|big_p(X)))&(![X]:(big_q(X)|big_r(X))))&(?[X]:(~big_p(X)&~big_q(X)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(((![X2]:(~big_r(X2)|big_p(X2)))&(![X3]:(big_q(X3)|big_r(X3))))&(?[X4]:(~big_p(X4)&~big_q(X4)))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(((~big_r(X2)|big_p(X2))&(big_q(X3)|big_r(X3)))&(~big_p(skolem0001)&~big_q(skolem0001))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(((![X2]:(~big_r(X2)|big_p(X2)))&(![X3]:(big_q(X3)|big_r(X3))))&(~big_p(skolem0001)&~big_q(skolem0001))),inference(skolemize,status(esa),[c3])).])).
+cnf(c8,negated_conjecture,~big_p(skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,~big_r(X5)|big_p(X5),inference(split_conjunct,status(thm),[c5])).
+cnf(c9,negated_conjecture,~big_q(skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,negated_conjecture,big_q(X6)|big_r(X6),inference(split_conjunct,status(thm),[c5])).
+cnf(c10,plain,big_r(skolem0001),inference(resolution,status(thm),[c7, c9])).
+cnf(c12,plain,big_p(skolem0001),inference(resolution,status(thm),[c10, c6])).
+cnf(c15,plain,$false,inference(resolution,status(thm),[c12, c8])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 6
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.248 s
+# System time        : 0.226 s
+# Total time         : 0.474 s

@@ -1,0 +1,586 @@
+# cnf(c4,negated_conjecture,algorithm_program_decides(skolem0001)).
+# cnf(c106,axiom,~algorithm_program_decides(X82)|algorithm(X82)).
+# cnf(c126,plain,algorithm(skolem0001)).
+# cnf(c107,axiom,~algorithm_program_decides(X83)|program_decides(X83)).
+# cnf(c127,plain,program_decides(skolem0001)).
+# cnf(c12,axiom,~program(X84)|~program_halts2_halts2_outputs(X84,skolem0002(X84),good)|~program_not_halts2_halts2_outputs(X84,skolem0003(X84),bad)|program(skolem0004)).
+# cnf(c114,axiom,~program_program_decides(X85)|program(X85)).
+# cnf(c115,axiom,~program_program_decides(X86)|program_decides(X86)).
+# cnf(c35,axiom,~algorithm_program_decides(X87)|program_program_decides(skolem0008)).
+# cnf(c128,plain,program_program_decides(skolem0008)).
+# cnf(c129,plain,program_decides(skolem0008)).
+# cnf(c13,axiom,~program(X88)|~program_halts2_halts2_outputs(X88,skolem0002(X88),good)|~program_not_halts2_halts2_outputs(X88,skolem0003(X88),bad)|~program_halts2(X89,X89)|~halts2(skolem0004,X89)).
+# cnf(c130,plain,program(skolem0008)).
+# cnf(c82,axiom,~program_not_halts2(X90,X91)|program(X90)).
+# cnf(c98,axiom,~program_halts2(X92,X93)|program(X92)).
+# cnf(c83,axiom,~program_not_halts2(X94,X95)|~halts2(X94,X95)).
+# cnf(c99,axiom,~program_halts2(X96,X97)|halts2(X96,X97)).
+# cnf(c14,axiom,~program(X99)|~program_halts2_halts2_outputs(X99,skolem0002(X99),good)|~program_not_halts2_halts2_outputs(X99,skolem0003(X99),bad)|program_not_halts2_halts2_outputs(skolem0004,X98,good)).
+# cnf(c124,axiom,program(skolem0009(X100))|program_decides(X100)).
+# cnf(c42,axiom,program_not_halts2(X101,X101)|program_not_halts2_halts2_outputs(X103,X101,X102)).
+# cnf(c131,plain,program_not_halts2_halts2_outputs(X104,X106,X105)|program(X106)).
+# cnf(c50,axiom,program_halts2(X109,X109)|program_halts2_halts2_outputs(X108,X109,X107)).
+# cnf(c138,plain,program_halts2_halts2_outputs(X110,X112,X111)|program(X112)).
+# cnf(c21,axiom,~program(X113)|~program_halts2_halts3_outputs(X113,skolem0005(X113),skolem0005(X113),good)|~program_not_halts2_halts3_outputs(X113,skolem0006(X113),skolem0006(X113),bad)|program(skolem0007)).
+# cnf(c73,axiom,~halts2_outputs(X114,X116,X115)|halts2(X114,X116)).
+# cnf(c74,axiom,~halts2_outputs(X117,X119,X118)|outputs(X117,X118)).
+# cnf(c108,axiom,~algorithm(X120)|~program_decides(X120)|algorithm_program_decides(X120)).
+# cnf(c141,plain,~algorithm(skolem0008)|algorithm_program_decides(skolem0008)).
+# cnf(c22,axiom,~program(X122)|~program_halts2_halts3_outputs(X122,skolem0005(X122),skolem0005(X122),good)|~program_not_halts2_halts3_outputs(X122,skolem0006(X122),skolem0006(X122),bad)|program_halts2_halts2_outputs(skolem0007,X121,good)).
+# cnf(c116,axiom,~program(X123)|~program_decides(X123)|program_program_decides(X123)).
+# cnf(c145,plain,~program(skolem0001)|program_program_decides(skolem0001)).
+# cnf(c139,plain,program_halts2_halts2_outputs(X125,X124,X126)|halts2(X124,X124)).
+# cnf(c148,plain,program_halts2_halts2_outputs(X128,X129,X127)|~program_not_halts2(X129,X129)).
+# cnf(c23,axiom,~program(X131)|~program_halts2_halts3_outputs(X131,skolem0005(X131),skolem0005(X131),good)|~program_not_halts2_halts3_outputs(X131,skolem0006(X131),skolem0006(X131),bad)|program_not_halts2_halts2_outputs(skolem0007,X130,bad)).
+# cnf(c29,axiom,~program_program_decides(X133)|program_halts2_halts3_outputs(X133,X134,X132,good)).
+# cnf(c150,plain,program_halts2_halts3_outputs(skolem0008,X136,X135,good)).
+# cnf(c30,axiom,~program_program_decides(X139)|program_not_halts2_halts3_outputs(X139,X138,X137,bad)).
+# cnf(c151,plain,program_not_halts2_halts3_outputs(skolem0008,X141,X140,bad)).
+# cnf(c43,axiom,~halts2_outputs(X144,X142,X143)|program_not_halts2_halts2_outputs(X144,X142,X143)).
+# cnf(c41,axiom,~program_not_halts2_halts2_outputs(X147,X145,X146)|~program_not_halts2(X145,X145)|halts2_outputs(X147,X145,X146)).
+# cnf(c51,axiom,~halts2_outputs(X149,X150,X148)|program_halts2_halts2_outputs(X149,X150,X148)).
+# cnf(c58,axiom,program_not_halts2(X154,X152)|program_not_halts2_halts3_outputs(X153,X154,X152,X151)).
+# cnf(c158,plain,program_not_halts2_halts3_outputs(X156,X155,X157,X158)|program(X155)).
+# cnf(c66,axiom,program_halts2(X161,X159)|program_halts2_halts3_outputs(X162,X161,X159,X160)).
+# cnf(c166,plain,program_halts2_halts3_outputs(X164,X163,X166,X165)|program(X163)).
+# cnf(c49,axiom,~program_halts2_halts2_outputs(X168,X167,X169)|~program_halts2(X167,X167)|halts2_outputs(X168,X167,X169)).
+# cnf(c91,axiom,~halts3_outputs(X172,X173,X171,X170)|outputs(X172,X170)).
+# cnf(c146,plain,program_program_decides(skolem0001)|program_not_halts2_halts2_outputs(X174,skolem0001,X175)).
+# cnf(c147,plain,program_program_decides(skolem0001)|program_halts2_halts2_outputs(X177,skolem0001,X176)).
+# cnf(c149,plain,program_halts2_halts2_outputs(X178,X180,X179)|program_not_halts2_halts2_outputs(X182,X180,X181)).
+# cnf(c167,plain,program_halts2_halts3_outputs(X185,X183,X186,X184)|halts2(X183,X186)).
+# cnf(c57,axiom,~program_not_halts2_halts3_outputs(X188,X190,X189,X187)|~program_not_halts2(X190,X189)|halts3_outputs(X188,X190,X189,X187)).
+# cnf(c187,plain,program_halts2_halts3_outputs(X202,X201,X199,X200)|~program_not_halts2(X201,X199)).
+# cnf(c59,axiom,~halts3_outputs(X205,X206,X204,X203)|program_not_halts2_halts3_outputs(X205,X206,X204,X203)).
+# cnf(c84,axiom,~program(X207)|halts2(X207,X208)|program_not_halts2(X207,X208)).
+# cnf(c197,plain,halts2(skolem0008,X209)|program_not_halts2(skolem0008,X209)).
+# cnf(c90,axiom,~halts3_outputs(X214,X215,X213,X212)|halts3(X214,X215,X213)).
+# cnf(c65,axiom,~program_halts2_halts3_outputs(X219,X217,X218,X216)|~program_halts2(X217,X218)|halts3_outputs(X219,X217,X218,X216)).
+# cnf(c100,axiom,~program(X221)|~halts2(X221,X220)|program_halts2(X221,X220)).
+# cnf(c123,axiom,~program_decides(X222)|~program(X224)|decides(X222,X224,X223)).
+# cnf(c214,plain,~program_decides(X226)|decides(X226,skolem0008,X225)).
+# cnf(c217,plain,decides(skolem0008,skolem0008,X227)).
+# cnf(c218,plain,decides(skolem0001,skolem0008,X228)).
+# cnf(c67,axiom,~halts3_outputs(X232,X231,X229,X230)|program_halts2_halts3_outputs(X232,X231,X229,X230)).
+# cnf(c140,plain,~algorithm(X233)|algorithm_program_decides(X233)|program(skolem0009(X233))).
+# cnf(c143,plain,~program(X234)|program_program_decides(X234)|program(skolem0009(X234))).
+# cnf(c157,plain,program_not_halts2_halts3_outputs(X237,X235,X235,X239)|program_halts2_halts2_outputs(X236,X235,X238)).
+# cnf(c75,axiom,~halts2(X240,X241)|~outputs(X240,X242)|halts2_outputs(X240,X241,X242)).
+# cnf(c165,plain,program_not_halts2_halts3_outputs(X244,skolem0001,X245,X243)|program_program_decides(skolem0001)).
+# cnf(c168,plain,program_halts2_halts3_outputs(X248,skolem0001,X247,X246)|program_program_decides(skolem0001)).
+# cnf(c192,plain,program_halts2_halts3_outputs(X249,X250,X250,X253)|program_not_halts2_halts2_outputs(X252,X250,X251)).
+# cnf(c216,plain,decides(X255,skolem0008,X254)|program(skolem0009(X255))).
+# cnf(c92,axiom,~halts3(X262,X260,X259)|~outputs(X262,X261)|halts3_outputs(X262,X260,X259,X261)).
+# cnf(c125,axiom,~decides(X272,skolem0009(X272),skolem0010(X272))|program_decides(X272)).
+# cnf(c132,plain,program_not_halts2(skolem0003(X277),skolem0003(X277))|~program(X277)|~program_halts2_halts2_outputs(X277,skolem0002(X277),good)|~program_halts2(X276,X276)|~halts2(skolem0004,X276)).
+# cnf(c189,plain,~program_not_halts2(X281,X282)|halts3_outputs(skolem0008,X281,X282,bad)).
+# cnf(c191,plain,program_halts2_halts3_outputs(X283,X284,X286,X288)|program_not_halts2_halts3_outputs(X285,X284,X286,X287)).
+# cnf(c133,plain,program_not_halts2(skolem0003(X294),skolem0003(X294))|~program(X294)|~program_halts2_halts2_outputs(X294,skolem0002(X294),good)|program(skolem0004)).
+# cnf(c206,plain,~program_halts2(X295,X296)|halts3_outputs(skolem0008,X295,X296,good)).
+# cnf(c134,plain,program_not_halts2(skolem0003(X309),skolem0003(X309))|~program(X309)|~program_halts2_halts2_outputs(X309,skolem0002(X309),good)|program_not_halts2_halts2_outputs(skolem0004,X310,good)).
+# cnf(c193,plain,halts2(X316,X317)|program_not_halts2(X316,X317)|program_halts2_halts2_outputs(X318,X316,X315)).
+# cnf(c194,plain,halts2(X324,X325)|program_not_halts2(X324,X325)|program_not_halts2_halts2_outputs(X323,X324,X326)).
+# cnf(c135,plain,program(skolem0003(X332))|~program(X332)|~program_halts2_halts2_outputs(X332,skolem0002(X332),good)|~program_halts2(X331,X331)|~halts2(skolem0004,X331)).
+# cnf(c210,plain,~program_decides(X344)|decides(X344,X343,X345)|program_halts2_halts2_outputs(X342,X343,X341)).
+# cnf(c301,plain,decides(skolem0008,X347,X346)|program_halts2_halts2_outputs(X349,X347,X348)).
+# cnf(c302,plain,decides(skolem0001,X351,X350)|program_halts2_halts2_outputs(X353,X351,X352)).
+# cnf(c136,plain,program(skolem0003(X354))|~program(X354)|~program_halts2_halts2_outputs(X354,skolem0002(X354),good)|program(skolem0004)).
+# cnf(c211,plain,~program_decides(X362)|decides(X362,X360,X363)|program_not_halts2_halts2_outputs(X359,X360,X361)).
+# cnf(c324,plain,decides(skolem0008,X366,X364)|program_not_halts2_halts2_outputs(X365,X366,X367)).
+# cnf(c325,plain,decides(skolem0001,X370,X368)|program_not_halts2_halts2_outputs(X369,X370,X371)).
+# cnf(c137,plain,program(skolem0003(X372))|~program(X372)|~program_halts2_halts2_outputs(X372,skolem0002(X372),good)|program_not_halts2_halts2_outputs(skolem0004,X373,good)).
+# cnf(c215,plain,~program_decides(X380)|decides(X380,skolem0009(X379),X378)|program_decides(X379)).
+# cnf(c345,plain,decides(skolem0008,skolem0009(X382),X381)|program_decides(X382)).
+# cnf(c152,plain,~program(skolem0008)|~program_halts2_halts3_outputs(skolem0008,skolem0005(skolem0008),skolem0005(skolem0008),good)|program_not_halts2_halts2_outputs(skolem0007,X383,bad)).
+# cnf(c346,plain,decides(skolem0001,skolem0009(X385),X384)|program_decides(X385)).
+# cnf(c355,plain,~program(skolem0008)|program_not_halts2_halts2_outputs(skolem0007,X386,bad)).
+# cnf(c371,plain,program_not_halts2_halts2_outputs(skolem0007,X387,bad)).
+# cnf(c373,plain,~program_not_halts2(X388,X388)|halts2_outputs(skolem0007,X388,bad)).
+# cnf(c153,plain,~program(skolem0008)|~program_halts2_halts3_outputs(skolem0008,skolem0005(skolem0008),skolem0005(skolem0008),good)|program_halts2_halts2_outputs(skolem0007,X389,good)).
+# cnf(c382,plain,~program(skolem0008)|program_halts2_halts2_outputs(skolem0007,X390,good)).
+# cnf(c391,plain,program_halts2_halts2_outputs(skolem0007,X391,good)).
+# cnf(c395,plain,~program_halts2(X392,X392)|halts2_outputs(skolem0007,X392,good)).
+# cnf(c380,plain,halts2_outputs(skolem0007,X395,bad)|program_not_halts2_halts2_outputs(X393,X395,X394)).
+# cnf(c402,plain,program_not_halts2_halts2_outputs(X396,X397,X398)|halts2(skolem0007,X397)).
+# cnf(c154,plain,~program(skolem0008)|~program_halts2_halts3_outputs(skolem0008,skolem0005(skolem0008),skolem0005(skolem0008),good)|program(skolem0007)).
+# cnf(c416,plain,~program(skolem0008)|program(skolem0007)).
+# cnf(c425,plain,program(skolem0007)).
+# cnf(c427,plain,~program_decides(X400)|decides(X400,skolem0007,X399)).
+# cnf(c429,plain,decides(skolem0008,skolem0007,X401)).
+# cnf(c430,plain,decides(skolem0001,skolem0007,X402)).
+# cnf(c413,plain,program_not_halts2_halts2_outputs(X406,X407,X405)|~program_not_halts2(skolem0007,X407)).
+# cnf(c426,plain,halts2(skolem0007,X412)|program_not_halts2(skolem0007,X412)).
+# cnf(c428,plain,program_program_decides(skolem0007)|program(skolem0009(skolem0007))).
+# cnf(c404,plain,program_not_halts2_halts2_outputs(X421,X422,X423)|outputs(skolem0007,bad)).
+# cnf(c432,plain,decides(X431,skolem0007,X430)|program(skolem0009(X431))).
+# cnf(c400,plain,halts2_outputs(skolem0007,X434,good)|program_halts2_halts2_outputs(X432,X434,X433)).
+# cnf(c462,plain,program_halts2_halts2_outputs(X438,X439,X437)|halts2(skolem0007,X439)).
+# cnf(c479,plain,program_halts2_halts2_outputs(X441,X442,X440)|~program_not_halts2(skolem0007,X442)).
+# cnf(c464,plain,program_halts2_halts2_outputs(X447,X448,X446)|outputs(skolem0007,good)).
+# cnf(c434,plain,program_not_halts2_halts2_outputs(X460,X457,X461)|program_not_halts2_halts3_outputs(X458,skolem0007,X457,X459)).
+# cnf(c437,plain,program_not_halts2_halts2_outputs(X463,skolem0007,X465)|program_not_halts2_halts2_outputs(X462,skolem0007,X464)).
+# cnf(c499,plain,program_not_halts2_halts2_outputs(X466,skolem0007,X467)).
+# cnf(c481,plain,program_halts2_halts2_outputs(X484,X480,X482)|program_not_halts2_halts3_outputs(X481,skolem0007,X480,X483)).
+# cnf(c174,plain,program_not_halts2_halts2_outputs(X490,skolem0001,X489)|program_not_halts2_halts3_outputs(skolem0001,X492,X491,bad)).
+# cnf(c502,plain,~program_not_halts2(skolem0007,skolem0007)|halts2_outputs(X493,skolem0007,X494)).
+# cnf(c517,plain,halts2_outputs(X499,skolem0007,X500)|halts2(skolem0007,skolem0007)).
+# cnf(c521,plain,halts2(skolem0007,skolem0007)|outputs(X501,X502)).
+# cnf(c524,plain,outputs(X504,X503)|~program_not_halts2(skolem0007,skolem0007)).
+# cnf(c175,plain,program_not_halts2_halts2_outputs(X507,skolem0001,X506)|program_halts2_halts3_outputs(skolem0001,X508,X505,good)).
+# cnf(c519,plain,halts2(skolem0007,skolem0007)|halts2(X515,skolem0007)).
+# cnf(c534,plain,halts2(skolem0007,skolem0007)).
+# cnf(c539,plain,~program_not_halts2(skolem0007,skolem0007)).
+# cnf(c176,plain,program_program_decides(skolem0001)|~program_not_halts2(skolem0001,skolem0001)|halts2_outputs(X516,skolem0001,X517)).
+# cnf(c541,plain,program_not_halts2_halts3_outputs(X520,skolem0007,skolem0007,X521)).
+# cnf(c540,plain,~program(skolem0007)|program_halts2(skolem0007,skolem0007)).
+# cnf(c551,plain,program_halts2(skolem0007,skolem0007)).
+# cnf(c179,plain,program_halts2_halts2_outputs(X523,skolem0001,X522)|program_not_halts2_halts3_outputs(skolem0001,X525,X524,bad)).
+# cnf(c557,plain,halts2_outputs(skolem0007,skolem0007,good)).
+# cnf(c565,plain,outputs(skolem0007,good)).
+# cnf(c180,plain,program_halts2_halts2_outputs(X527,skolem0001,X526)|program_halts2_halts3_outputs(skolem0001,X529,X528,good)).
+# cnf(c558,plain,halts3_outputs(skolem0008,skolem0007,skolem0007,good)).
+# cnf(c571,plain,outputs(skolem0008,good)).
+# cnf(c569,plain,halts3(skolem0008,skolem0007,skolem0007)).
+# cnf(c181,plain,program_program_decides(skolem0001)|~program_halts2(skolem0001,skolem0001)|halts2_outputs(X530,skolem0001,X531)).
+# cnf(c182,plain,program_not_halts2_halts2_outputs(X536,X539,X537)|~program_halts2(X539,X539)|halts2_outputs(X540,X539,X538)).
+# cnf(c183,plain,program_halts2_halts2_outputs(X555,skolem0003(X556),X553)|~program(X556)|~program_halts2_halts2_outputs(X556,skolem0002(X556),good)|~program_halts2(X554,X554)|~halts2(skolem0004,X554)).
+# cnf(c566,plain,~halts2(skolem0007,X561)|halts2_outputs(skolem0007,X561,good)).
+# cnf(c573,plain,~halts2(skolem0008,X562)|halts2_outputs(skolem0008,X562,good)).
+# cnf(c596,plain,halts2_outputs(skolem0007,X575,good)|program_not_halts2(skolem0007,X575)).
+# cnf(c185,plain,program_halts2_halts2_outputs(X578,skolem0003(X577),X579)|~program(X577)|~program_halts2_halts2_outputs(X577,skolem0002(X577),good)|program(skolem0004)).
+# cnf(c599,plain,halts2_outputs(skolem0007,X583,good)|program_not_halts2_halts2_outputs(X584,X583,X582)).
+# cnf(c186,plain,program_halts2_halts2_outputs(X593,skolem0003(X592),X594)|~program(X592)|~program_halts2_halts2_outputs(X592,skolem0002(X592),good)|program_not_halts2_halts2_outputs(skolem0004,X591,good)).
+# cnf(c603,plain,halts2_outputs(skolem0008,X595,good)|program_not_halts2(skolem0008,X595)).
+# cnf(c605,plain,program_not_halts2(skolem0007,X599)|program_not_halts2_halts2_outputs(skolem0007,X599,good)).
+# cnf(c195,plain,halts2(X614,X612)|program_not_halts2(X614,X612)|program_halts2_halts3_outputs(X616,X614,X615,X613)).
+# cnf(c629,plain,program_not_halts2_halts2_outputs(X617,X619,X618)|program_not_halts2_halts2_outputs(skolem0007,X619,good)).
+# cnf(c681,plain,program_not_halts2_halts2_outputs(skolem0007,X620,good)).
+# cnf(c687,plain,~program_not_halts2(X621,X621)|halts2_outputs(skolem0007,X621,good)).
+# cnf(c196,plain,halts2(X627,X625)|program_not_halts2(X627,X625)|program_not_halts2_halts3_outputs(X626,X627,X628,X629)).
+# cnf(c649,plain,program_not_halts2(skolem0008,X630)|program_not_halts2_halts2_outputs(skolem0008,X630,good)).
+# cnf(c651,plain,program_not_halts2(skolem0008,X632)|program_halts2_halts2_outputs(skolem0008,X632,good)).
+# cnf(c198,plain,halts2(skolem0009(X637),X638)|program_not_halts2(skolem0009(X637),X638)|program_decides(X637)).
+# cnf(c220,plain,program_program_decides(X646)|program(skolem0009(X646))|program_halts2_halts2_outputs(X647,X646,X645)).
+# cnf(c221,plain,program_program_decides(X649)|program(skolem0009(X649))|program_not_halts2_halts2_outputs(X648,X649,X650)).
+# cnf(c256,plain,halts3_outputs(skolem0008,X653,X653,bad)|program_not_halts2_halts2_outputs(X651,X653,X652)).
+# cnf(c778,plain,program_not_halts2_halts2_outputs(X658,X659,X660)|halts3(skolem0008,X659,X659)).
+# cnf(c780,plain,program_not_halts2_halts2_outputs(X661,X662,X663)|outputs(skolem0008,bad)).
+# cnf(c268,plain,halts3_outputs(skolem0008,X666,X666,good)|program_halts2_halts2_outputs(X664,X666,X665)).
+# cnf(c796,plain,program_halts2_halts2_outputs(X668,X669,X667)|halts3(skolem0008,X669,X669)).
+# cnf(c376,plain,halts2_outputs(skolem0007,X692,bad)|program_not_halts2_halts3_outputs(X691,X692,X692,X693)).
+# cnf(c207,plain,~program(skolem0008)|program_halts2(skolem0008,X694)|program_not_halts2(skolem0008,X694)).
+# cnf(c830,plain,program_halts2(skolem0008,X695)|program_not_halts2(skolem0008,X695)).
+# cnf(c822,plain,program_not_halts2_halts3_outputs(X701,X699,X699,X700)|halts2(skolem0007,X699)).
+# cnf(c212,plain,~program_decides(X704)|decides(X704,X703,X705)|program_halts2_halts3_outputs(X707,X703,X706,X702)).
+# cnf(c843,plain,program_not_halts2_halts3_outputs(X710,X709,X709,X708)|~program_not_halts2(skolem0007,X709)).
+# cnf(c824,plain,program_not_halts2_halts3_outputs(X716,X714,X714,X715)|outputs(skolem0007,bad)).
+# cnf(c213,plain,~program_decides(X725)|decides(X725,X723,X727)|program_not_halts2_halts3_outputs(X722,X723,X724,X726)).
+# cnf(c846,plain,decides(skolem0008,X728,X731)|program_halts2_halts3_outputs(X730,X728,X732,X729)).
+# cnf(c847,plain,decides(skolem0001,X733,X736)|program_halts2_halts3_outputs(X735,X733,X737,X734)).
+# cnf(c862,plain,decides(skolem0008,X742,X740)|program_not_halts2_halts3_outputs(X739,X742,X738,X741)).
+# cnf(c863,plain,decides(skolem0001,X747,X745)|program_not_halts2_halts3_outputs(X744,X747,X743,X746)).
+# cnf(c222,plain,program_program_decides(X752)|program(skolem0009(X752))|program_halts2_halts3_outputs(X754,X752,X753,X751)).
+# cnf(c399,plain,halts2_outputs(skolem0007,X760,good)|program_halts2_halts3_outputs(X759,X760,X760,X758)).
+# cnf(c885,plain,program_halts2_halts3_outputs(X762,X763,X763,X761)|halts2(skolem0007,X763)).
+# cnf(c890,plain,program_halts2_halts3_outputs(X766,X765,X765,X764)|~program_not_halts2(skolem0007,X765)).
+# cnf(c223,plain,program_program_decides(X770)|program(skolem0009(X770))|program_not_halts2_halts3_outputs(X771,X770,X772,X773)).
+# cnf(c225,plain,program_program_decides(skolem0009(X791))|program(skolem0009(skolem0009(X791)))|program_decides(X791)).
+# cnf(c688,plain,halts2_outputs(skolem0007,X793,good)|program_not_halts2_halts3_outputs(X792,X793,X793,X794)).
+# cnf(c852,plain,program_not_halts2_halts3_outputs(X859,X856,X856,X855)|program_not_halts2_halts3_outputs(X857,skolem0007,X856,X858)).
+# cnf(c230,plain,program_not_halts2_halts3_outputs(X888,X887,X887,X890)|~program_halts2(X887,X887)|halts2_outputs(X889,X887,X886)).
+# cnf(c893,plain,program_halts2_halts3_outputs(X894,X896,X896,X898)|program_not_halts2_halts3_outputs(X895,skolem0007,X896,X897)).
+# cnf(c231,plain,program_program_decides(skolem0001)|~program_not_halts2(skolem0001,X909)|halts3_outputs(X908,skolem0001,X909,X910)).
+# cnf(c254,plain,halts3_outputs(skolem0008,X913,X912,bad)|program_not_halts2_halts3_outputs(X911,X913,X912,X914)).
+# cnf(c945,plain,program_not_halts2_halts3_outputs(X915,X918,X916,X917)|halts3(skolem0008,X918,X916)).
+# cnf(c947,plain,program_not_halts2_halts3_outputs(X919,X921,X922,X920)|outputs(skolem0008,bad)).
+# cnf(c255,plain,halts3_outputs(skolem0008,skolem0008,X923,bad)|halts2(skolem0008,X923)).
+# cnf(c956,plain,halts2(skolem0008,X924)|outputs(skolem0008,bad)).
+# cnf(c234,plain,program_not_halts2_halts3_outputs(X925,skolem0001,X926,X927)|program_not_halts2_halts3_outputs(skolem0001,X929,X928,bad)).
+# cnf(c965,plain,program_not_halts2_halts3_outputs(skolem0001,skolem0001,X930,bad)).
+# cnf(c961,plain,outputs(skolem0008,bad)|~program_not_halts2(skolem0008,X931)).
+# cnf(c976,plain,outputs(skolem0008,bad)|program_halts2(skolem0008,X933)).
+# cnf(c235,plain,program_not_halts2_halts3_outputs(X934,skolem0001,X936,X937)|program_halts2_halts3_outputs(skolem0001,X938,X935,good)).
+# cnf(c954,plain,halts2(skolem0008,X940)|halts3(skolem0008,skolem0008,X940)).
+# cnf(c989,plain,halts3(skolem0008,skolem0008,X943)|~program_not_halts2(skolem0008,X943)).
+# cnf(c236,plain,program_program_decides(skolem0001)|~program_halts2(skolem0001,X946)|halts3_outputs(X945,skolem0001,X946,X947)).
+# cnf(c1000,plain,halts3(skolem0008,skolem0008,X948)|program_halts2(skolem0008,X948)).
+# cnf(c962,plain,outputs(skolem0008,bad)|halts2_outputs(skolem0008,X951,good)).
+# cnf(c239,plain,program_halts2_halts3_outputs(X955,skolem0001,X953,X954)|program_not_halts2_halts3_outputs(skolem0001,X957,X956,bad)).
+# cnf(c969,plain,outputs(skolem0008,bad)|program_halts2_halts2_outputs(skolem0008,X958,good)).
+# cnf(c240,plain,program_halts2_halts3_outputs(X968,skolem0001,X964,X965)|program_halts2_halts3_outputs(skolem0001,X967,X966,good)).
+# cnf(c1031,plain,program_halts2_halts3_outputs(skolem0001,skolem0001,X969,good)).
+# cnf(c267,plain,halts3_outputs(skolem0008,X972,X975,good)|program_halts2_halts3_outputs(X973,X972,X975,X974)).
+# cnf(c1035,plain,program_halts2_halts3_outputs(X977,X978,X976,X979)|halts3(skolem0008,X978,X976)).
+# cnf(c241,plain,program_not_halts2_halts2_outputs(X982,X983,X981)|~program_halts2(X983,X983)|halts3_outputs(X984,X983,X983,X980)).
+# cnf(c348,plain,decides(skolem0008,skolem0009(X1000),X999)|~program(X1000)|program_program_decides(X1000)).
+# cnf(c1050,plain,decides(skolem0008,skolem0009(skolem0007),X1001)|program_program_decides(skolem0007)).
+# cnf(c242,plain,program_halts2_halts3_outputs(X1003,skolem0003(X1005),skolem0003(X1005),X1004)|~program(X1005)|~program_halts2_halts2_outputs(X1005,skolem0002(X1005),good)|~program_halts2(X1002,X1002)|~halts2(skolem0004,X1002)).
+# cnf(c349,plain,decides(skolem0008,skolem0009(X1010),X1009)|~algorithm(X1010)|algorithm_program_decides(X1010)).
+# cnf(c353,plain,decides(skolem0008,skolem0009(X1019),X1017)|decides(X1019,skolem0008,X1018)).
+# cnf(c361,plain,decides(skolem0001,skolem0009(X1022),X1021)|~program(X1022)|program_program_decides(X1022)).
+# cnf(c1088,plain,decides(skolem0001,skolem0009(skolem0007),X1023)|program_program_decides(skolem0007)).
+# cnf(c244,plain,program_halts2_halts3_outputs(X1025,skolem0003(X1026),skolem0003(X1026),X1027)|~program(X1026)|~program_halts2_halts2_outputs(X1026,skolem0002(X1026),good)|program(skolem0004)).
+# cnf(c362,plain,decides(skolem0001,skolem0009(X1031),X1030)|~algorithm(X1031)|algorithm_program_decides(X1031)).
+# cnf(c366,plain,decides(skolem0001,skolem0009(X1035),X1034)|decides(X1035,skolem0008,X1033)).
+# cnf(c245,plain,program_halts2_halts3_outputs(X1036,skolem0003(X1037),skolem0003(X1037),X1038)|~program(X1037)|~program_halts2_halts2_outputs(X1037,skolem0002(X1037),good)|program_not_halts2_halts2_outputs(skolem0004,X1039,good)).
+# cnf(c379,plain,halts2_outputs(skolem0007,skolem0008,bad)|halts2(skolem0008,skolem0008)).
+# cnf(c1142,plain,halts2(skolem0008,skolem0008)|halts2(skolem0007,skolem0008)).
+# cnf(c246,plain,decides(X1052,skolem0008,X1051)|~program_decides(X1050)|decides(X1050,skolem0009(X1052),X1049)).
+# cnf(c1144,plain,halts2(skolem0008,skolem0008)|outputs(skolem0007,bad)).
+# cnf(c1148,plain,halts2(skolem0007,skolem0008)|~program_not_halts2(skolem0008,skolem0008)).
+# cnf(c1151,plain,halts2(skolem0008,skolem0008)|~program_not_halts2(skolem0007,skolem0008)).
+# cnf(c1161,plain,outputs(skolem0007,bad)|~program_not_halts2(skolem0008,skolem0008)).
+# cnf(c247,plain,decides(X1055,skolem0008,X1054)|halts2(skolem0009(X1055),X1053)|program_not_halts2(skolem0009(X1055),X1053)).
+# cnf(c1172,plain,halts2(skolem0007,skolem0008)|program_halts2(skolem0008,skolem0008)).
+# cnf(c248,plain,decides(X1059,skolem0008,X1058)|program_program_decides(skolem0009(X1059))|program(skolem0009(skolem0009(X1059)))).
+# cnf(c1190,plain,outputs(skolem0007,bad)|program_halts2(skolem0008,skolem0008)).
+# cnf(c1202,plain,program_halts2(skolem0008,skolem0008)|~program_not_halts2(skolem0007,skolem0008)).
+# cnf(c249,plain,program_not_halts2(skolem0003(X1062),skolem0003(X1062))|~program(X1062)|~program_halts2(X1063,X1063)|~halts2(skolem0004,X1063)|program_halts2(skolem0002(X1062),skolem0002(X1062))).
+# cnf(c394,plain,program(skolem0003(skolem0007))|~program(skolem0007)|program(skolem0004)).
+# cnf(c250,plain,program_not_halts2(skolem0003(X1073),skolem0003(X1073))|~program(X1073)|~program_halts2(X1072,X1072)|~halts2(skolem0004,X1072)|halts2(skolem0002(X1073),skolem0002(X1073))).
+# cnf(c1242,plain,program(skolem0003(skolem0007))|program(skolem0004)).
+# cnf(c410,plain,halts2(skolem0007,X1075)|~program_not_halts2(X1075,X1075)|halts2_outputs(X1074,X1075,X1076)).
+# cnf(c414,plain,program_not_halts2_halts2_outputs(X1081,X1079,X1080)|~program(skolem0007)|program_halts2(skolem0007,X1079)).
+# cnf(c1278,plain,program_not_halts2_halts2_outputs(X1084,X1082,X1083)|program_halts2(skolem0007,X1082)).
+# cnf(c251,plain,program_not_halts2(skolem0003(X1088),skolem0003(X1088))|~program(X1088)|~program_halts2(X1085,X1085)|~halts2(skolem0004,X1085)|program_not_halts2_halts3_outputs(X1086,skolem0002(X1088),skolem0002(X1088),X1087)).
+# cnf(c431,plain,decides(X1095,skolem0007,X1096)|decides(skolem0001,skolem0009(X1095),X1097)).
+# cnf(c252,plain,program_not_halts2(skolem0003(X1100),skolem0003(X1100))|~program(X1100)|~program_halts2(X1099,X1099)|~halts2(skolem0004,X1099)|program(skolem0002(X1100))).
+# cnf(c433,plain,decides(X1102,skolem0007,X1103)|decides(skolem0008,skolem0009(X1102),X1101)).
+# cnf(c439,plain,program_not_halts2(skolem0007,X1105)|~program(skolem0007)|program_halts2(skolem0007,X1105)).
+# cnf(c1308,plain,program_not_halts2(skolem0007,X1106)|program_halts2(skolem0007,X1106)).
+# cnf(c253,plain,program_not_halts2(skolem0003(X1108),skolem0003(X1108))|~program(X1108)|~program_halts2(X1107,X1107)|~halts2(skolem0004,X1107)|program_not_halts2_halts2_outputs(X1110,skolem0002(X1108),X1109)).
+# cnf(c1316,plain,program_halts2(skolem0007,X1114)|program_halts2_halts2_outputs(X1113,X1114,X1115)).
+# cnf(c257,plain,program_not_halts2_halts3_outputs(X1124,X1126,X1125,X1122)|~program_halts2(X1126,X1125)|halts3_outputs(X1127,X1126,X1125,X1123)).
+# cnf(c1313,plain,program_halts2(skolem0007,X1134)|program_halts2_halts3_outputs(X1133,X1134,X1134,X1132)).
+# cnf(c1321,plain,program_halts2(skolem0007,X1140)|program_not_halts2_halts3_outputs(X1138,X1140,X1140,X1139)).
+# cnf(c1318,plain,program_halts2(skolem0007,skolem0008)|halts2(skolem0008,skolem0008)).
+# cnf(c1322,plain,program_halts2(skolem0007,skolem0008)|program_halts2(skolem0008,skolem0008)).
+# cnf(c1395,plain,program_halts2(skolem0007,skolem0008)|~program_not_halts2(skolem0008,skolem0008)).
+# cnf(c444,plain,halts2(skolem0007,X1174)|halts3_outputs(skolem0008,skolem0007,X1174,bad)).
+# cnf(c1424,plain,halts2(skolem0007,X1175)|outputs(skolem0008,bad)).
+# cnf(c262,plain,program_not_halts2(skolem0003(X1176),skolem0003(X1176))|~program(X1176)|program(skolem0004)|program_halts2(skolem0002(X1176),skolem0002(X1176))).
+# cnf(c1428,plain,outputs(skolem0008,bad)|~program_not_halts2(skolem0007,X1177)).
+# cnf(c1453,plain,outputs(skolem0008,bad)|program_halts2(skolem0007,X1178)).
+# cnf(c263,plain,program_not_halts2(skolem0003(X1181),skolem0003(X1181))|~program(X1181)|program(skolem0004)|halts2(skolem0002(X1181),skolem0002(X1181))).
+# cnf(c1422,plain,halts2(skolem0007,X1182)|halts3(skolem0008,skolem0007,X1182)).
+# cnf(c1486,plain,halts3(skolem0008,skolem0007,X1185)|~program_not_halts2(skolem0007,X1185)).
+# cnf(c1493,plain,halts3(skolem0008,skolem0007,X1186)|program_halts2(skolem0007,X1186)).
+# cnf(c264,plain,program_not_halts2(skolem0003(X1190),skolem0003(X1190))|~program(X1190)|program(skolem0004)|program_not_halts2_halts3_outputs(X1188,skolem0002(X1190),skolem0002(X1190),X1189)).
+# cnf(c1426,plain,outputs(skolem0008,bad)|halts2_outputs(skolem0007,X1193,good)).
+# cnf(c265,plain,program_not_halts2(skolem0003(X1195),skolem0003(X1195))|~program(X1195)|program(skolem0004)|program(skolem0002(X1195))).
+# cnf(c448,plain,program(skolem0009(skolem0007))|program_not_halts2_halts3_outputs(skolem0007,X1203,X1202,bad)).
+# cnf(c266,plain,program_not_halts2(skolem0003(X1205),skolem0003(X1205))|~program(X1205)|program(skolem0004)|program_not_halts2_halts2_outputs(X1204,skolem0002(X1205),X1206)).
+# cnf(c449,plain,program(skolem0009(skolem0007))|program_halts2_halts3_outputs(skolem0007,X1208,X1207,good)).
+# cnf(c475,plain,halts2(skolem0007,X1210)|~program_halts2(X1210,X1210)|halts2_outputs(X1209,X1210,X1211)).
+# cnf(c1596,plain,halts2(skolem0007,skolem0008)|halts2_outputs(X1215,skolem0008,X1214)).
+# cnf(c1609,plain,halts2(skolem0007,skolem0008)|outputs(X1216,X1217)).
+# cnf(c269,plain,program_not_halts2(skolem0003(X1218),skolem0003(X1218))|~program(X1218)|program_not_halts2_halts2_outputs(skolem0004,X1219,good)|program_halts2(skolem0002(X1218),skolem0002(X1218))).
+# cnf(c1612,plain,outputs(X1220,X1221)|~program_not_halts2(skolem0007,skolem0008)).
+# cnf(c1639,plain,outputs(X1222,X1223)|program_halts2(skolem0007,skolem0008)).
+# cnf(c270,plain,program_not_halts2(skolem0003(X1230),skolem0003(X1230))|~program(X1230)|program_not_halts2_halts2_outputs(skolem0004,X1231,good)|halts2(skolem0002(X1230),skolem0002(X1230))).
+# cnf(c1607,plain,halts2(skolem0007,skolem0008)|halts2(X1232,skolem0008)).
+# cnf(c1667,plain,halts2(skolem0007,skolem0008)).
+# cnf(c1682,plain,~program_not_halts2(skolem0007,skolem0008)).
+# cnf(c1688,plain,program_halts2(skolem0007,skolem0008)).
+# cnf(c271,plain,program_not_halts2(skolem0003(X1236),skolem0003(X1236))|~program(X1236)|program_not_halts2_halts2_outputs(skolem0004,X1233,good)|program_not_halts2_halts3_outputs(X1234,skolem0002(X1236),skolem0002(X1236),X1235)).
+# cnf(c1680,plain,halts2_outputs(skolem0007,skolem0008,good)).
+# cnf(c272,plain,program_not_halts2(skolem0003(X1237),skolem0003(X1237))|~program(X1237)|program_not_halts2_halts2_outputs(skolem0004,X1238,good)|program(skolem0002(X1237))).
+# cnf(c1683,plain,program_not_halts2_halts3_outputs(X1239,skolem0007,skolem0008,X1240)).
+# cnf(c273,plain,program_not_halts2(skolem0003(X1242),skolem0003(X1242))|~program(X1242)|program_not_halts2_halts2_outputs(skolem0004,X1244,good)|program_not_halts2_halts2_outputs(X1241,skolem0002(X1242),X1243)).
+# cnf(c1692,plain,halts3_outputs(skolem0008,skolem0007,skolem0008,good)).
+# cnf(c1760,plain,halts3(skolem0008,skolem0007,skolem0008)).
+# cnf(c275,plain,program_not_halts2(X1247,X1245)|program_halts2_halts2_outputs(X1248,X1247,X1246)|~program(X1247)|program_halts2(X1247,X1245)).
+# cnf(c277,plain,halts2(X1259,X1257)|program_halts2_halts2_outputs(X1260,X1259,X1258)|halts3_outputs(skolem0008,X1259,X1257,bad)).
+# cnf(c280,plain,halts2(X1294,X1295)|program_not_halts2(X1294,X1295)|~program_halts2(X1294,X1294)|halts2_outputs(X1293,X1294,X1296)).
+# cnf(c574,plain,~outputs(skolem0008,X1302)|halts3_outputs(skolem0008,skolem0007,skolem0007,X1302)).
+# cnf(c281,plain,halts2(skolem0002(X1303),X1305)|program_not_halts2(skolem0002(X1303),X1305)|program_not_halts2(skolem0003(X1303),skolem0003(X1303))|~program(X1303)|~program_halts2(X1304,X1304)|~halts2(skolem0004,X1304)).
+# cnf(c594,plain,halts2_outputs(skolem0007,X1307,good)|program_halts2_halts3_outputs(X1308,skolem0007,X1307,X1306)).
+# cnf(c600,plain,halts2_outputs(skolem0008,X1318,good)|program_halts2_halts3_outputs(X1319,skolem0008,X1318,X1317)).
+# cnf(c282,plain,halts2(skolem0002(X1320),X1321)|program_not_halts2(skolem0002(X1320),X1321)|program_not_halts2(skolem0003(X1320),skolem0003(X1320))|~program(X1320)|program(skolem0004)).
+# cnf(c604,plain,halts2_outputs(skolem0008,skolem0008,good)|program_halts2_halts2_outputs(X1329,skolem0008,X1328)).
+# cnf(c283,plain,halts2(skolem0002(X1334),X1335)|program_not_halts2(skolem0002(X1334),X1335)|program_not_halts2(skolem0003(X1334),skolem0003(X1334))|~program(X1334)|program_not_halts2_halts2_outputs(skolem0004,X1336,good)).
+# cnf(c285,plain,program_not_halts2(X1352,X1350)|program_not_halts2_halts2_outputs(X1351,X1352,X1353)|~program(X1352)|program_halts2(X1352,X1350)).
+# cnf(c287,plain,halts2(X1369,X1367)|program_not_halts2_halts2_outputs(X1368,X1369,X1366)|halts3_outputs(skolem0008,X1369,X1367,bad)).
+# cnf(c712,plain,program_not_halts2_halts2_outputs(skolem0008,X1372,good)|program_halts2_halts3_outputs(X1370,skolem0008,X1372,X1371)).
+# cnf(c719,plain,program_halts2_halts2_outputs(skolem0008,X1377,good)|program_halts2_halts3_outputs(X1375,skolem0008,X1377,X1376)).
+# cnf(c720,plain,program_halts2_halts2_outputs(skolem0008,skolem0008,good)|program_halts2_halts2_outputs(X1378,skolem0008,X1379)).
+# cnf(c1951,plain,program_halts2_halts2_outputs(skolem0008,skolem0008,good)).
+# cnf(c833,plain,program_not_halts2(skolem0008,X1388)|halts3_outputs(skolem0008,skolem0008,X1388,good)).
+# cnf(c1965,plain,program_not_halts2(skolem0008,X1390)|halts3(skolem0008,skolem0008,X1390)).
+# cnf(c290,plain,halts2(skolem0003(X1393),X1392)|program_not_halts2(skolem0003(X1393),X1392)|~program(X1393)|~program_halts2_halts2_outputs(X1393,skolem0002(X1393),good)|~program_halts2(X1391,X1391)|~halts2(skolem0004,X1391)).
+# cnf(c1971,plain,halts3(skolem0008,skolem0008,X1394)).
+# cnf(c2000,plain,~outputs(skolem0008,X1398)|halts3_outputs(skolem0008,skolem0008,X1399,X1398)).
+# cnf(c291,plain,halts2(X1402,X1400)|program_not_halts2(X1402,X1400)|~program_not_halts2(X1402,X1402)|halts2_outputs(X1401,X1402,X1403)).
+# cnf(c2007,plain,halts3_outputs(skolem0008,skolem0008,X1404,good)).
+# cnf(c2029,plain,program_not_halts2_halts3_outputs(skolem0008,skolem0008,X1406,good)).
+# cnf(c292,plain,halts2(skolem0003(X1408),X1409)|program_not_halts2(skolem0003(X1408),X1409)|~program(X1408)|~program_halts2_halts2_outputs(X1408,skolem0002(X1408),good)|program(skolem0004)).
+# cnf(c838,plain,program_halts2(skolem0008,skolem0008)|halts2_outputs(skolem0007,skolem0008,bad)).
+# cnf(c839,plain,program_halts2(skolem0008,X1410)|halts3_outputs(skolem0008,skolem0008,X1410,bad)).
+# cnf(c293,plain,halts2(skolem0003(X1411),X1412)|program_not_halts2(skolem0003(X1411),X1412)|~program(X1411)|~program_halts2_halts2_outputs(X1411,skolem0002(X1411),good)|program_not_halts2_halts2_outputs(skolem0004,X1413,good)).
+# cnf(c294,plain,program(skolem0003(X1421))|~program(X1421)|~program_halts2(X1422,X1422)|~halts2(skolem0004,X1422)|program_halts2(skolem0002(X1421),skolem0002(X1421))).
+# cnf(c295,plain,program(skolem0003(X1444))|~program(X1444)|~program_halts2(X1443,X1443)|~halts2(skolem0004,X1443)|halts2(skolem0002(X1444),skolem0002(X1444))).
+# cnf(c296,plain,program(skolem0003(X1462))|~program(X1462)|~program_halts2(X1459,X1459)|~halts2(skolem0004,X1459)|program_not_halts2_halts3_outputs(X1460,skolem0002(X1462),skolem0002(X1462),X1461)).
+# cnf(c968,plain,~program_not_halts2(skolem0001,X1464)|halts3_outputs(skolem0001,skolem0001,X1464,bad)).
+# cnf(c297,plain,program(skolem0003(X1468))|~program(X1468)|~program_halts2(X1467,X1467)|~halts2(skolem0004,X1467)|program(skolem0002(X1468))).
+# cnf(c1034,plain,~program_halts2(skolem0001,X1476)|halts3_outputs(skolem0001,skolem0001,X1476,good)).
+# cnf(c298,plain,program(skolem0003(X1479))|~program(X1479)|~program_halts2(X1477,X1477)|~halts2(skolem0004,X1477)|halts2(skolem0002(X1479),X1478)|program_not_halts2(skolem0002(X1479),X1478)).
+# cnf(c299,plain,program(skolem0003(X1494))|~program(X1494)|~program_halts2(X1492,X1492)|~halts2(skolem0004,X1492)|program_not_halts2_halts2_outputs(X1493,skolem0002(X1494),X1495)).
+# cnf(c300,plain,decides(X1504,X1502,X1503)|program_halts2_halts2_outputs(X1506,X1502,X1505)|program(skolem0009(X1504))).
+# cnf(c1162,plain,outputs(skolem0007,bad)|halts2_outputs(skolem0008,skolem0008,good)).
+# cnf(c304,plain,decides(skolem0008,skolem0002(X1509),X1510)|program_not_halts2(skolem0003(X1509),skolem0003(X1509))|~program(X1509)|program(skolem0004)).
+# cnf(c305,plain,decides(skolem0008,skolem0002(X1513),X1514)|program_not_halts2(skolem0003(X1513),skolem0003(X1513))|~program(X1513)|program_not_halts2_halts2_outputs(skolem0004,X1515,good)).
+# cnf(c306,plain,decides(skolem0008,X1520,X1518)|~program_halts2(X1520,X1520)|halts2_outputs(X1519,X1520,X1521)).
+# cnf(c1284,plain,program_halts2(skolem0007,X1528)|~program_not_halts2(X1528,X1528)|halts2_outputs(X1527,X1528,X1529)).
+# cnf(c307,plain,decides(skolem0008,skolem0002(X1530),X1532)|program_not_halts2(skolem0003(X1530),skolem0003(X1530))|~program(X1530)|~program_halts2(X1531,X1531)|~halts2(skolem0004,X1531)).
+# cnf(c1290,plain,program_not_halts2_halts2_outputs(X1537,X1538,X1539)|halts3_outputs(skolem0008,skolem0007,X1538,good)).
+# cnf(c2283,plain,program_not_halts2_halts2_outputs(X1544,X1545,X1543)|halts3(skolem0008,skolem0007,X1545)).
+# cnf(c308,plain,decides(skolem0008,skolem0002(X1548),X1547)|program(skolem0003(X1548))|~program(X1548)|~program_halts2(X1546,X1546)|~halts2(skolem0004,X1546)).
+# cnf(c1319,plain,program_halts2(skolem0007,X1549)|halts3_outputs(skolem0008,skolem0007,X1549,bad)).
+# cnf(c310,plain,decides(skolem0001,skolem0002(X1553),X1554)|program_not_halts2(skolem0003(X1553),skolem0003(X1553))|~program(X1553)|program(skolem0004)).
+# cnf(c1330,plain,program_not_halts2(skolem0007,X1555)|halts3_outputs(skolem0008,skolem0007,X1555,good)).
+# cnf(c311,plain,decides(skolem0001,skolem0002(X1556),X1557)|program_not_halts2(skolem0003(X1556),skolem0003(X1556))|~program(X1556)|program_not_halts2_halts2_outputs(skolem0004,X1558,good)).
+# cnf(c2353,plain,program_not_halts2(skolem0007,X1560)|halts3(skolem0008,skolem0007,X1560)).
+# cnf(c2394,plain,halts3(skolem0008,skolem0007,X1561)).
+# cnf(c312,plain,decides(skolem0001,X1563,X1565)|~program_halts2(X1563,X1563)|halts2_outputs(X1562,X1563,X1564)).
+# cnf(c313,plain,decides(skolem0001,skolem0002(X1576),X1577)|program_not_halts2(skolem0003(X1576),skolem0003(X1576))|~program(X1576)|~program_halts2(X1575,X1575)|~halts2(skolem0004,X1575)).
+# cnf(c2396,plain,~outputs(skolem0008,X1584)|halts3_outputs(skolem0008,skolem0007,X1585,X1584)).
+# cnf(c2426,plain,halts3_outputs(skolem0008,skolem0007,X1586,good)).
+# cnf(c314,plain,decides(skolem0001,skolem0002(X1588),X1589)|program(skolem0003(X1588))|~program(X1588)|~program_halts2(X1587,X1587)|~halts2(skolem0004,X1587)).
+# cnf(c2431,plain,program_not_halts2_halts3_outputs(skolem0008,skolem0007,X1591,good)).
+# cnf(c315,plain,program(skolem0003(X1598))|~program(X1598)|program(skolem0004)|program_halts2(skolem0002(X1598),skolem0002(X1598))).
+# cnf(c1351,plain,program_halts2(skolem0007,X1603)|~program_halts2(X1603,X1603)|halts2_outputs(X1602,X1603,X1604)).
+# cnf(c316,plain,program(skolem0003(X1607))|~program(X1607)|program(skolem0004)|halts2(skolem0002(X1607),skolem0002(X1607))).
+# cnf(c317,plain,program(skolem0003(X1613))|~program(X1613)|program(skolem0004)|program_not_halts2_halts3_outputs(X1611,skolem0002(X1613),skolem0002(X1613),X1612)).
+# cnf(c318,plain,program(skolem0003(X1620))|~program(X1620)|program(skolem0004)|program(skolem0002(X1620))).
+# cnf(c319,plain,program(skolem0003(X1631))|~program(X1631)|program(skolem0004)|decides(skolem0008,skolem0002(X1631),X1630)).
+# cnf(c320,plain,program(skolem0003(X1637))|~program(X1637)|program(skolem0004)|decides(skolem0001,skolem0002(X1637),X1636)).
+# cnf(c321,plain,program(skolem0003(X1653))|~program(X1653)|program(skolem0004)|halts2(skolem0002(X1653),X1652)|program_not_halts2(skolem0002(X1653),X1652)).
+# cnf(c1954,plain,~program_halts2(skolem0008,skolem0008)|halts2_outputs(skolem0008,skolem0008,good)).
+# cnf(c322,plain,program(skolem0003(X1662))|~program(X1662)|program(skolem0004)|program_not_halts2_halts2_outputs(X1661,skolem0002(X1662),X1663)).
+# cnf(c2001,plain,halts3_outputs(skolem0008,skolem0008,X1667,bad)|halts2(skolem0008,X1666)).
+# cnf(c323,plain,decides(X1675,X1673,X1672)|program_not_halts2_halts2_outputs(X1674,X1673,X1671)|program(skolem0009(X1675))).
+# cnf(c2003,plain,halts3_outputs(skolem0008,skolem0008,X1677,bad)|halts2(skolem0007,X1676)).
+# cnf(c2004,plain,halts3_outputs(skolem0008,skolem0008,X1682,bad)|program_halts2(skolem0007,X1681)).
+# cnf(c327,plain,decides(skolem0008,skolem0003(X1686),X1685)|~program(X1686)|~program_halts2_halts2_outputs(X1686,skolem0002(X1686),good)|~program_halts2(X1684,X1684)|~halts2(skolem0004,X1684)).
+# cnf(c2006,plain,halts3_outputs(skolem0008,skolem0008,X1691,bad)|program_not_halts2_halts2_outputs(X1690,X1692,X1693)).
+# cnf(c328,plain,decides(skolem0008,X1703,X1702)|~program_not_halts2(X1703,X1703)|halts2_outputs(X1701,X1703,X1704)).
+# cnf(c2009,plain,halts3_outputs(skolem0008,skolem0008,X1705,bad)|program_halts2(skolem0008,X1706)).
+# cnf(c329,plain,decides(skolem0008,skolem0003(X1713),X1712)|~program(X1713)|~program_halts2_halts2_outputs(X1713,skolem0002(X1713),good)|program(skolem0004)).
+# cnf(c330,plain,decides(skolem0008,skolem0003(X1717),X1716)|~program(X1717)|~program_halts2_halts2_outputs(X1717,skolem0002(X1717),good)|program_not_halts2_halts2_outputs(skolem0004,X1718,good)).
+# cnf(c332,plain,decides(skolem0001,skolem0003(X1728),X1727)|~program(X1728)|~program_halts2_halts2_outputs(X1728,skolem0002(X1728),good)|~program_halts2(X1726,X1726)|~halts2(skolem0004,X1726)).
+# cnf(c333,plain,decides(skolem0001,X1740,X1739)|~program_not_halts2(X1740,X1740)|halts2_outputs(X1738,X1740,X1741)).
+# cnf(c2420,plain,halts3_outputs(skolem0008,skolem0007,X1750,bad)|halts2(skolem0008,X1749)).
+# cnf(c334,plain,decides(skolem0001,skolem0003(X1752),X1751)|~program(X1752)|~program_halts2_halts2_outputs(X1752,skolem0002(X1752),good)|program(skolem0004)).
+# cnf(c2422,plain,halts3_outputs(skolem0008,skolem0007,X1756,bad)|halts2(skolem0007,X1757)).
+# cnf(c335,plain,decides(skolem0001,skolem0003(X1761),X1762)|~program(X1761)|~program_halts2_halts2_outputs(X1761,skolem0002(X1761),good)|program_not_halts2_halts2_outputs(skolem0004,X1763,good)).
+# cnf(c2423,plain,halts3_outputs(skolem0008,skolem0007,X1765,bad)|program_halts2(skolem0007,X1764)).
+# cnf(c2425,plain,halts3_outputs(skolem0008,skolem0007,X1770,bad)|program_not_halts2_halts2_outputs(X1771,X1773,X1772)).
+# cnf(c336,plain,program(skolem0003(X1774))|~program(X1774)|program_not_halts2_halts2_outputs(skolem0004,X1775,good)|program_halts2(skolem0002(X1774),skolem0002(X1774))).
+# cnf(c2428,plain,halts3_outputs(skolem0008,skolem0007,X1783,bad)|program_halts2(skolem0008,X1784)).
+# cnf(c337,plain,program(skolem0003(X1788))|~program(X1788)|program_not_halts2_halts2_outputs(skolem0004,X1789,good)|halts2(skolem0002(X1788),skolem0002(X1788))).
+# cnf(c338,plain,program(skolem0003(X1795))|~program(X1795)|program_not_halts2_halts2_outputs(skolem0004,X1794,good)|program_not_halts2_halts3_outputs(X1793,skolem0002(X1795),skolem0002(X1795),X1792)).
+# cnf(c2636,plain,halts2(skolem0008,X1800)|program_halts2_halts3_outputs(skolem0008,skolem0008,X1801,bad)).
+# cnf(c2637,plain,halts3_outputs(skolem0008,skolem0008,X1803,bad)|~program_not_halts2(skolem0008,X1802)).
+# cnf(c339,plain,program(skolem0003(X1807))|~program(X1807)|program_not_halts2_halts2_outputs(skolem0004,X1806,good)|program(skolem0002(X1807))).
+# cnf(c2679,plain,halts2(skolem0007,X1808)|program_halts2_halts3_outputs(skolem0008,skolem0008,X1809,bad)).
+# cnf(c2681,plain,halts3_outputs(skolem0008,skolem0008,X1810,bad)|~program_not_halts2(skolem0007,X1811)).
+# cnf(c2686,plain,program_halts2(skolem0007,X1814)|program_halts2_halts3_outputs(skolem0008,skolem0008,X1815,bad)).
+# cnf(c340,plain,program(skolem0003(X1818))|~program(X1818)|program_not_halts2_halts2_outputs(skolem0004,X1819,good)|decides(skolem0008,skolem0002(X1818),X1817)).
+# cnf(c2724,plain,program_not_halts2_halts2_outputs(X1827,X1829,X1828)|program_halts2_halts3_outputs(skolem0008,skolem0008,X1826,bad)).
+# cnf(c2748,plain,program_halts2(skolem0008,X1832)|program_halts2_halts3_outputs(skolem0008,skolem0008,X1833,bad)).
+# cnf(c341,plain,program(skolem0003(X1836))|~program(X1836)|program_not_halts2_halts2_outputs(skolem0004,X1834,good)|decides(skolem0001,skolem0002(X1836),X1835)).
+# cnf(c2845,plain,halts2(skolem0008,X1843)|program_halts2_halts3_outputs(skolem0008,skolem0007,X1842,bad)).
+# cnf(c2846,plain,halts3_outputs(skolem0008,skolem0007,X1844,bad)|~program_not_halts2(skolem0008,X1845)).
+# cnf(c342,plain,program(skolem0003(X1848))|~program(X1848)|program_not_halts2_halts2_outputs(skolem0004,X1847,good)|halts2(skolem0002(X1848),X1846)|program_not_halts2(skolem0002(X1848),X1846)).
+# cnf(c2873,plain,halts2(skolem0007,X1851)|program_halts2_halts3_outputs(skolem0008,skolem0007,X1852,bad)).
+# cnf(c2875,plain,halts3_outputs(skolem0008,skolem0007,X1853,bad)|~program_not_halts2(skolem0007,X1854)).
+# cnf(c2901,plain,program_halts2(skolem0007,X1857)|program_halts2_halts3_outputs(skolem0008,skolem0007,X1858,bad)).
+# cnf(c343,plain,program(skolem0003(X1861))|~program(X1861)|program_not_halts2_halts2_outputs(skolem0004,X1860,good)|program_not_halts2_halts2_outputs(X1859,skolem0002(X1861),X1862)).
+# cnf(c2918,plain,program_not_halts2_halts2_outputs(X1870,X1872,X1873)|program_halts2_halts3_outputs(skolem0008,skolem0007,X1871,bad)).
+# cnf(c344,plain,decides(X1877,skolem0009(X1878),X1876)|program_decides(X1878)|program(skolem0009(X1877))).
+# cnf(c2948,plain,program_halts2(skolem0008,X1880)|program_halts2_halts3_outputs(skolem0008,skolem0007,X1881,bad)).
+# cnf(c3007,plain,program_halts2_halts3_outputs(skolem0008,skolem0008,X1885,bad)|~program_not_halts2(skolem0008,X1886)).
+# cnf(c350,plain,decides(skolem0008,skolem0009(X1888),X1887)|decides(X1888,skolem0009(X1890),X1889)|program_decides(X1890)).
+# cnf(c3045,plain,program_halts2_halts3_outputs(skolem0008,skolem0008,X1898,bad)|~program_not_halts2(skolem0007,X1899)).
+# cnf(c351,plain,decides(skolem0008,skolem0009(X1902),X1901)|decides(X1902,X1900,X1903)|program_halts2_halts2_outputs(X1905,X1900,X1904)).
+# cnf(c3135,plain,program_halts2_halts3_outputs(skolem0008,skolem0007,X1915,bad)|~program_not_halts2(skolem0008,X1914)).
+# cnf(c352,plain,decides(skolem0008,skolem0009(X1916),X1917)|decides(X1916,X1920,X1919)|program_not_halts2_halts2_outputs(X1921,X1920,X1918)).
+# cnf(c3173,plain,program_halts2_halts3_outputs(skolem0008,skolem0007,X1927,bad)|~program_not_halts2(skolem0007,X1926)).
+# cnf(c451,plain,program_program_decides(skolem0007)|~program_decides(X1958)|decides(X1958,skolem0009(skolem0007),X1957)).
+# cnf(c454,plain,outputs(skolem0007,bad)|~program_not_halts2(X1962,X1962)|halts2_outputs(X1961,X1962,X1963)).
+# cnf(c787,plain,halts3(skolem0008,X1997,X1997)|~program_not_halts2(X1997,X1997)|halts2_outputs(X1996,X1997,X1998)).
+# cnf(c792,plain,outputs(skolem0008,bad)|~program_not_halts2(X2000,X2000)|halts2_outputs(X1999,X2000,X2001)).
+# cnf(c813,plain,halts3(skolem0008,X2003,X2003)|~program_halts2(X2003,X2003)|halts2_outputs(X2002,X2003,X2004)).
+# cnf(c363,plain,decides(skolem0001,skolem0009(X2008),X2009)|decides(X2008,skolem0009(X2010),X2007)|program_decides(X2010)).
+# cnf(c842,plain,halts2(skolem0007,X2015)|~program_not_halts2(X2015,X2015)|halts3_outputs(X2014,X2015,X2015,X2016)).
+# cnf(c364,plain,decides(skolem0001,skolem0009(X2024),X2023)|decides(X2024,X2022,X2025)|program_halts2_halts2_outputs(X2027,X2022,X2026)).
+# cnf(c889,plain,halts2(skolem0007,X2029)|~program_halts2(X2029,X2029)|halts3_outputs(X2028,X2029,X2029,X2030)).
+# cnf(c365,plain,decides(skolem0001,skolem0009(X2038),X2040)|decides(X2038,X2042,X2041)|program_not_halts2_halts2_outputs(X2043,X2042,X2039)).
+# cnf(c1255,plain,program(skolem0004)|~program_decides(X2047)|decides(X2047,skolem0003(skolem0007),X2046)).
+# cnf(c3540,plain,program(skolem0004)|decides(skolem0008,skolem0003(skolem0007),X2048)).
+# cnf(c3541,plain,program(skolem0004)|decides(skolem0001,skolem0003(skolem0007),X2049)).
+# cnf(c372,plain,~program(skolem0007)|~program_halts2_halts2_outputs(skolem0007,skolem0002(skolem0007),good)|~program_halts2(X2050,X2050)|~halts2(skolem0004,X2050)).
+# cnf(c3632,plain,~program(skolem0007)|~program_halts2(X2051,X2051)|~halts2(skolem0004,X2051)).
+# cnf(c1260,plain,program(skolem0003(skolem0007))|~program_decides(X2053)|decides(X2053,skolem0004,X2052)).
+# cnf(c3656,plain,program(skolem0003(skolem0007))|decides(skolem0008,skolem0004,X2054)).
+# cnf(c3657,plain,program(skolem0003(skolem0007))|decides(skolem0001,skolem0004,X2055)).
+# cnf(c374,plain,~program(skolem0007)|~program_halts2_halts2_outputs(skolem0007,skolem0002(skolem0007),good)|program(skolem0004)).
+# cnf(c3748,plain,~program(skolem0007)|program(skolem0004)).
+# cnf(c3763,plain,program(skolem0004)).
+# cnf(c3779,plain,~program_decides(X2062)|decides(X2062,skolem0004,X2061)).
+# cnf(c3792,plain,decides(skolem0008,skolem0004,X2063)).
+# cnf(c3793,plain,decides(skolem0001,skolem0004,X2064)).
+# cnf(c375,plain,~program(skolem0007)|~program_halts2_halts2_outputs(skolem0007,skolem0002(skolem0007),good)|program_not_halts2_halts2_outputs(skolem0004,X2065,good)).
+# cnf(c3766,plain,halts2(skolem0004,X2070)|program_not_halts2(skolem0004,X2070)).
+# cnf(c3786,plain,program_program_decides(skolem0004)|program(skolem0009(skolem0004))).
+# cnf(c3796,plain,decides(X2086,skolem0004,X2085)|program(skolem0009(X2086))).
+# cnf(c3806,plain,~program(skolem0007)|program_not_halts2_halts2_outputs(skolem0004,X2087,good)).
+# cnf(c3905,plain,program_not_halts2_halts2_outputs(skolem0004,X2088,good)).
+# cnf(c3908,plain,~program_not_halts2(X2089,X2089)|halts2_outputs(skolem0004,X2089,good)).
+# cnf(c3913,plain,halts2_outputs(skolem0004,X2098,good)|program_not_halts2_halts2_outputs(X2096,X2098,X2097)).
+# cnf(c3927,plain,program_not_halts2_halts2_outputs(X2099,X2101,X2100)|halts2(skolem0004,X2101)).
+# cnf(c3941,plain,program_not_halts2_halts2_outputs(X2103,X2104,X2102)|~program_not_halts2(skolem0004,X2104)).
+# cnf(c3929,plain,program_not_halts2_halts2_outputs(X2111,X2113,X2112)|outputs(skolem0004,good)).
+# cnf(c3953,plain,program_not_halts2_halts2_outputs(X2122,skolem0004,X2123)|program_not_halts2_halts2_outputs(X2120,skolem0004,X2121)).
+# cnf(c3963,plain,program_not_halts2_halts2_outputs(X2125,skolem0004,X2124)).
+# cnf(c3954,plain,program_not_halts2_halts2_outputs(X2131,X2128,X2130)|program_not_halts2_halts3_outputs(X2127,skolem0004,X2128,X2129)).
+# cnf(c3966,plain,~program_not_halts2(skolem0004,skolem0004)|halts2_outputs(X2132,skolem0004,X2133)).
+# cnf(c3973,plain,halts2_outputs(X2139,skolem0004,X2138)|halts2(skolem0004,skolem0004)).
+# cnf(c3980,plain,halts2(skolem0004,skolem0004)|outputs(X2140,X2141)).
+# cnf(c4007,plain,outputs(X2146,X2145)|~program_not_halts2(skolem0004,skolem0004)).
+# cnf(c3978,plain,halts2(skolem0004,skolem0004)|halts2(X2153,skolem0004)).
+# cnf(c4029,plain,halts2(skolem0004,skolem0004)).
+# cnf(c4077,plain,~program_not_halts2(skolem0004,skolem0004)).
+# cnf(c4090,plain,program_not_halts2_halts3_outputs(X2157,skolem0004,skolem0004,X2158)).
+# cnf(c4082,plain,~program(skolem0004)|program_halts2(skolem0004,skolem0004)).
+# cnf(c4099,plain,program_halts2(skolem0004,skolem0004)).
+# cnf(c4113,plain,halts2_outputs(skolem0007,skolem0004,good)).
+# cnf(c4118,plain,halts2(skolem0007,skolem0004)).
+# cnf(c4122,plain,~program_not_halts2(skolem0007,skolem0004)).
+# cnf(c4125,plain,program_halts2(skolem0007,skolem0004)).
+# cnf(c4127,plain,program_not_halts2_halts3_outputs(X2162,skolem0007,skolem0004,X2163)).
+# cnf(c4083,plain,~program(skolem0007)|~program_halts2(skolem0004,skolem0004)).
+# cnf(c4139,plain,~program(skolem0007)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(program_program_decides_def,axiom,(![X]:(program_program_decides(X)<=>(program(X)&program_decides(X)))),input).
+fof(c109,axiom,(![X]:((~program_program_decides(X)|(program(X)&program_decides(X)))&((~program(X)|~program_decides(X))|program_program_decides(X)))),inference(fof_nnf,status(thm),[program_program_decides_def])).
+fof(c110,axiom,((![X]:(~program_program_decides(X)|(program(X)&program_decides(X))))&(![X]:((~program(X)|~program_decides(X))|program_program_decides(X)))),inference(shift_quantors,status(thm),[c109])).
+fof(c112,axiom,(![X74]:(![X75]:((~program_program_decides(X74)|(program(X74)&program_decides(X74)))&((~program(X75)|~program_decides(X75))|program_program_decides(X75))))),inference(shift_quantors,status(thm),[fof(c111,axiom,((![X74]:(~program_program_decides(X74)|(program(X74)&program_decides(X74))))&(![X75]:((~program(X75)|~program_decides(X75))|program_program_decides(X75)))),inference(variable_rename,status(thm),[c110])).])).
+fof(c113,axiom,(![X74]:(![X75]:(((~program_program_decides(X74)|program(X74))&(~program_program_decides(X74)|program_decides(X74)))&((~program(X75)|~program_decides(X75))|program_program_decides(X75))))),inference(distribute,status(thm),[c112])).
+cnf(c114,axiom,~program_program_decides(X85)|program(X85),inference(split_conjunct,status(thm),[c113])).
+fof(prove_this,conjecture,(~(?[X]:algorithm_program_decides(X))),input).
+fof(c0,negated_conjecture,(~(~(?[X]:algorithm_program_decides(X)))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,(?[X]:algorithm_program_decides(X)),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:algorithm_program_decides(X2)),inference(variable_rename,status(thm),[c1])).
+fof(c3,negated_conjecture,algorithm_program_decides(skolem0001),inference(skolemize,status(esa),[c2])).
+cnf(c4,negated_conjecture,algorithm_program_decides(skolem0001),inference(split_conjunct,status(thm),[c3])).
+fof(p1,axiom,((?[X]:algorithm_program_decides(X))=>(?[W]:program_program_decides(W))),input).
+fof(c31,axiom,((![X]:~algorithm_program_decides(X))|(?[W]:program_program_decides(W))),inference(fof_nnf,status(thm),[p1])).
+fof(c32,axiom,((![X20]:~algorithm_program_decides(X20))|(?[X21]:program_program_decides(X21))),inference(variable_rename,status(thm),[c31])).
+fof(c34,axiom,(![X20]:(~algorithm_program_decides(X20)|program_program_decides(skolem0008))),inference(shift_quantors,status(thm),[fof(c33,axiom,((![X20]:~algorithm_program_decides(X20))|program_program_decides(skolem0008)),inference(skolemize,status(esa),[c32])).])).
+cnf(c35,axiom,~algorithm_program_decides(X87)|program_program_decides(skolem0008),inference(split_conjunct,status(thm),[c34])).
+cnf(c128,plain,program_program_decides(skolem0008),inference(resolution,status(thm),[c35, c4])).
+cnf(c130,plain,program(skolem0008),inference(resolution,status(thm),[c128, c114])).
+fof(p2,axiom,(![W]:(program_program_decides(W)=>(![Y]:(![Z]:(program_halts2_halts3_outputs(W,Y,Z,good)&program_not_halts2_halts3_outputs(W,Y,Z,bad)))))),input).
+fof(c24,axiom,(![W]:(~program_program_decides(W)|(![Y]:(![Z]:(program_halts2_halts3_outputs(W,Y,Z,good)&program_not_halts2_halts3_outputs(W,Y,Z,bad)))))),inference(fof_nnf,status(thm),[p2])).
+fof(c25,axiom,(![W]:(~program_program_decides(W)|((![Y]:(![Z]:program_halts2_halts3_outputs(W,Y,Z,good)))&(![Y]:(![Z]:program_not_halts2_halts3_outputs(W,Y,Z,bad)))))),inference(shift_quantors,status(thm),[c24])).
+fof(c27,axiom,(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:(~program_program_decides(X15)|(program_halts2_halts3_outputs(X15,X16,X17,good)&program_not_halts2_halts3_outputs(X15,X18,X19,bad)))))))),inference(shift_quantors,status(thm),[fof(c26,axiom,(![X15]:(~program_program_decides(X15)|((![X16]:(![X17]:program_halts2_halts3_outputs(X15,X16,X17,good)))&(![X18]:(![X19]:program_not_halts2_halts3_outputs(X15,X18,X19,bad)))))),inference(variable_rename,status(thm),[c25])).])).
+fof(c28,axiom,(![X15]:(![X16]:(![X17]:(![X18]:(![X19]:((~program_program_decides(X15)|program_halts2_halts3_outputs(X15,X16,X17,good))&(~program_program_decides(X15)|program_not_halts2_halts3_outputs(X15,X18,X19,bad)))))))),inference(distribute,status(thm),[c27])).
+cnf(c29,axiom,~program_program_decides(X133)|program_halts2_halts3_outputs(X133,X134,X132,good),inference(split_conjunct,status(thm),[c28])).
+cnf(c150,plain,program_halts2_halts3_outputs(skolem0008,X136,X135,good),inference(resolution,status(thm),[c29, c128])).
+fof(p3,axiom,((?[W]:(program(W)&(![Y]:(program_halts2_halts3_outputs(W,Y,Y,good)&program_not_halts2_halts3_outputs(W,Y,Y,bad)))))=>(?[V]:(program(V)&(![Y]:(program_halts2_halts2_outputs(V,Y,good)&program_not_halts2_halts2_outputs(V,Y,bad)))))),input).
+fof(c15,axiom,((![W]:(~program(W)|(?[Y]:(~program_halts2_halts3_outputs(W,Y,Y,good)|~program_not_halts2_halts3_outputs(W,Y,Y,bad)))))|(?[V]:(program(V)&(![Y]:(program_halts2_halts2_outputs(V,Y,good)&program_not_halts2_halts2_outputs(V,Y,bad)))))),inference(fof_nnf,status(thm),[p3])).
+fof(c16,axiom,((![W]:(~program(W)|((?[Y]:~program_halts2_halts3_outputs(W,Y,Y,good))|(?[Y]:~program_not_halts2_halts3_outputs(W,Y,Y,bad)))))|(?[V]:(program(V)&((![Y]:program_halts2_halts2_outputs(V,Y,good))&(![Y]:program_not_halts2_halts2_outputs(V,Y,bad)))))),inference(shift_quantors,status(thm),[c15])).
+fof(c17,axiom,((![X9]:(~program(X9)|((?[X10]:~program_halts2_halts3_outputs(X9,X10,X10,good))|(?[X11]:~program_not_halts2_halts3_outputs(X9,X11,X11,bad)))))|(?[X12]:(program(X12)&((![X13]:program_halts2_halts2_outputs(X12,X13,good))&(![X14]:program_not_halts2_halts2_outputs(X12,X14,bad)))))),inference(variable_rename,status(thm),[c16])).
+fof(c19,axiom,(![X9]:(![X13]:(![X14]:((~program(X9)|(~program_halts2_halts3_outputs(X9,skolem0005(X9),skolem0005(X9),good)|~program_not_halts2_halts3_outputs(X9,skolem0006(X9),skolem0006(X9),bad)))|(program(skolem0007)&(program_halts2_halts2_outputs(skolem0007,X13,good)&program_not_halts2_halts2_outputs(skolem0007,X14,bad))))))),inference(shift_quantors,status(thm),[fof(c18,axiom,((![X9]:(~program(X9)|(~program_halts2_halts3_outputs(X9,skolem0005(X9),skolem0005(X9),good)|~program_not_halts2_halts3_outputs(X9,skolem0006(X9),skolem0006(X9),bad))))|(program(skolem0007)&((![X13]:program_halts2_halts2_outputs(skolem0007,X13,good))&(![X14]:program_not_halts2_halts2_outputs(skolem0007,X14,bad))))),inference(skolemize,status(esa),[c17])).])).
+fof(c20,axiom,(![X9]:(![X13]:(![X14]:(((~program(X9)|(~program_halts2_halts3_outputs(X9,skolem0005(X9),skolem0005(X9),good)|~program_not_halts2_halts3_outputs(X9,skolem0006(X9),skolem0006(X9),bad)))|program(skolem0007))&(((~program(X9)|(~program_halts2_halts3_outputs(X9,skolem0005(X9),skolem0005(X9),good)|~program_not_halts2_halts3_outputs(X9,skolem0006(X9),skolem0006(X9),bad)))|program_halts2_halts2_outputs(skolem0007,X13,good))&((~program(X9)|(~program_halts2_halts3_outputs(X9,skolem0005(X9),skolem0005(X9),good)|~program_not_halts2_halts3_outputs(X9,skolem0006(X9),skolem0006(X9),bad)))|program_not_halts2_halts2_outputs(skolem0007,X14,bad))))))),inference(distribute,status(thm),[c19])).
+cnf(c21,axiom,~program(X113)|~program_halts2_halts3_outputs(X113,skolem0005(X113),skolem0005(X113),good)|~program_not_halts2_halts3_outputs(X113,skolem0006(X113),skolem0006(X113),bad)|program(skolem0007),inference(split_conjunct,status(thm),[c20])).
+cnf(c30,axiom,~program_program_decides(X139)|program_not_halts2_halts3_outputs(X139,X138,X137,bad),inference(split_conjunct,status(thm),[c28])).
+cnf(c151,plain,program_not_halts2_halts3_outputs(skolem0008,X141,X140,bad),inference(resolution,status(thm),[c30, c128])).
+cnf(c154,plain,~program(skolem0008)|~program_halts2_halts3_outputs(skolem0008,skolem0005(skolem0008),skolem0005(skolem0008),good)|program(skolem0007),inference(resolution,status(thm),[c151, c21])).
+cnf(c416,plain,~program(skolem0008)|program(skolem0007),inference(resolution,status(thm),[c154, c150])).
+cnf(c425,plain,program(skolem0007),inference(resolution,status(thm),[c416, c130])).
+cnf(c22,axiom,~program(X122)|~program_halts2_halts3_outputs(X122,skolem0005(X122),skolem0005(X122),good)|~program_not_halts2_halts3_outputs(X122,skolem0006(X122),skolem0006(X122),bad)|program_halts2_halts2_outputs(skolem0007,X121,good),inference(split_conjunct,status(thm),[c20])).
+cnf(c153,plain,~program(skolem0008)|~program_halts2_halts3_outputs(skolem0008,skolem0005(skolem0008),skolem0005(skolem0008),good)|program_halts2_halts2_outputs(skolem0007,X389,good),inference(resolution,status(thm),[c151, c22])).
+cnf(c382,plain,~program(skolem0008)|program_halts2_halts2_outputs(skolem0007,X390,good),inference(resolution,status(thm),[c153, c150])).
+cnf(c391,plain,program_halts2_halts2_outputs(skolem0007,X391,good),inference(resolution,status(thm),[c382, c130])).
+fof(p4,axiom,((?[V]:(program(V)&(![Y]:(program_halts2_halts2_outputs(V,Y,good)&program_not_halts2_halts2_outputs(V,Y,bad)))))=>(?[U]:(program(U)&(![Y]:((program_halts2(Y,Y)=>(~halts2(U,Y)))&program_not_halts2_halts2_outputs(U,Y,good)))))),input).
+fof(c5,axiom,((?[V]:(program(V)&(![Y]:(program_halts2_halts2_outputs(V,Y,good)&program_not_halts2_halts2_outputs(V,Y,bad)))))=>(?[U]:(program(U)&(![Y]:((program_halts2(Y,Y)=>~halts2(U,Y))&program_not_halts2_halts2_outputs(U,Y,good)))))),inference(fof_simplification,status(thm),[p4])).
+fof(c6,axiom,((![V]:(~program(V)|(?[Y]:(~program_halts2_halts2_outputs(V,Y,good)|~program_not_halts2_halts2_outputs(V,Y,bad)))))|(?[U]:(program(U)&(![Y]:((~program_halts2(Y,Y)|~halts2(U,Y))&program_not_halts2_halts2_outputs(U,Y,good)))))),inference(fof_nnf,status(thm),[c5])).
+fof(c7,axiom,((![V]:(~program(V)|((?[Y]:~program_halts2_halts2_outputs(V,Y,good))|(?[Y]:~program_not_halts2_halts2_outputs(V,Y,bad)))))|(?[U]:(program(U)&((![Y]:(~program_halts2(Y,Y)|~halts2(U,Y)))&(![Y]:program_not_halts2_halts2_outputs(U,Y,good)))))),inference(shift_quantors,status(thm),[c6])).
+fof(c8,axiom,((![X3]:(~program(X3)|((?[X4]:~program_halts2_halts2_outputs(X3,X4,good))|(?[X5]:~program_not_halts2_halts2_outputs(X3,X5,bad)))))|(?[X6]:(program(X6)&((![X7]:(~program_halts2(X7,X7)|~halts2(X6,X7)))&(![X8]:program_not_halts2_halts2_outputs(X6,X8,good)))))),inference(variable_rename,status(thm),[c7])).
+fof(c10,axiom,(![X3]:(![X7]:(![X8]:((~program(X3)|(~program_halts2_halts2_outputs(X3,skolem0002(X3),good)|~program_not_halts2_halts2_outputs(X3,skolem0003(X3),bad)))|(program(skolem0004)&((~program_halts2(X7,X7)|~halts2(skolem0004,X7))&program_not_halts2_halts2_outputs(skolem0004,X8,good))))))),inference(shift_quantors,status(thm),[fof(c9,axiom,((![X3]:(~program(X3)|(~program_halts2_halts2_outputs(X3,skolem0002(X3),good)|~program_not_halts2_halts2_outputs(X3,skolem0003(X3),bad))))|(program(skolem0004)&((![X7]:(~program_halts2(X7,X7)|~halts2(skolem0004,X7)))&(![X8]:program_not_halts2_halts2_outputs(skolem0004,X8,good))))),inference(skolemize,status(esa),[c8])).])).
+fof(c11,axiom,(![X3]:(![X7]:(![X8]:(((~program(X3)|(~program_halts2_halts2_outputs(X3,skolem0002(X3),good)|~program_not_halts2_halts2_outputs(X3,skolem0003(X3),bad)))|program(skolem0004))&(((~program(X3)|(~program_halts2_halts2_outputs(X3,skolem0002(X3),good)|~program_not_halts2_halts2_outputs(X3,skolem0003(X3),bad)))|(~program_halts2(X7,X7)|~halts2(skolem0004,X7)))&((~program(X3)|(~program_halts2_halts2_outputs(X3,skolem0002(X3),good)|~program_not_halts2_halts2_outputs(X3,skolem0003(X3),bad)))|program_not_halts2_halts2_outputs(skolem0004,X8,good))))))),inference(distribute,status(thm),[c10])).
+cnf(c12,axiom,~program(X84)|~program_halts2_halts2_outputs(X84,skolem0002(X84),good)|~program_not_halts2_halts2_outputs(X84,skolem0003(X84),bad)|program(skolem0004),inference(split_conjunct,status(thm),[c11])).
+cnf(c23,axiom,~program(X131)|~program_halts2_halts3_outputs(X131,skolem0005(X131),skolem0005(X131),good)|~program_not_halts2_halts3_outputs(X131,skolem0006(X131),skolem0006(X131),bad)|program_not_halts2_halts2_outputs(skolem0007,X130,bad),inference(split_conjunct,status(thm),[c20])).
+cnf(c152,plain,~program(skolem0008)|~program_halts2_halts3_outputs(skolem0008,skolem0005(skolem0008),skolem0005(skolem0008),good)|program_not_halts2_halts2_outputs(skolem0007,X383,bad),inference(resolution,status(thm),[c151, c23])).
+cnf(c355,plain,~program(skolem0008)|program_not_halts2_halts2_outputs(skolem0007,X386,bad),inference(resolution,status(thm),[c152, c150])).
+cnf(c371,plain,program_not_halts2_halts2_outputs(skolem0007,X387,bad),inference(resolution,status(thm),[c355, c130])).
+cnf(c374,plain,~program(skolem0007)|~program_halts2_halts2_outputs(skolem0007,skolem0002(skolem0007),good)|program(skolem0004),inference(resolution,status(thm),[c371, c12])).
+cnf(c3748,plain,~program(skolem0007)|program(skolem0004),inference(resolution,status(thm),[c374, c391])).
+cnf(c3763,plain,program(skolem0004),inference(resolution,status(thm),[c3748, c425])).
+fof(program_halts2_def,axiom,(![X]:(![Y]:(program_halts2(X,Y)<=>(program(X)&halts2(X,Y))))),input).
+fof(c93,axiom,(![X]:(![Y]:((~program_halts2(X,Y)|(program(X)&halts2(X,Y)))&((~program(X)|~halts2(X,Y))|program_halts2(X,Y))))),inference(fof_nnf,status(thm),[program_halts2_def])).
+fof(c94,axiom,((![X]:(![Y]:(~program_halts2(X,Y)|(program(X)&halts2(X,Y)))))&(![X]:(![Y]:((~program(X)|~halts2(X,Y))|program_halts2(X,Y))))),inference(shift_quantors,status(thm),[c93])).
+fof(c96,axiom,(![X68]:(![X69]:(![X70]:(![X71]:((~program_halts2(X68,X69)|(program(X68)&halts2(X68,X69)))&((~program(X70)|~halts2(X70,X71))|program_halts2(X70,X71))))))),inference(shift_quantors,status(thm),[fof(c95,axiom,((![X68]:(![X69]:(~program_halts2(X68,X69)|(program(X68)&halts2(X68,X69)))))&(![X70]:(![X71]:((~program(X70)|~halts2(X70,X71))|program_halts2(X70,X71))))),inference(variable_rename,status(thm),[c94])).])).
+fof(c97,axiom,(![X68]:(![X69]:(![X70]:(![X71]:(((~program_halts2(X68,X69)|program(X68))&(~program_halts2(X68,X69)|halts2(X68,X69)))&((~program(X70)|~halts2(X70,X71))|program_halts2(X70,X71))))))),inference(distribute,status(thm),[c96])).
+cnf(c100,axiom,~program(X221)|~halts2(X221,X220)|program_halts2(X221,X220),inference(split_conjunct,status(thm),[c97])).
+fof(halts2_outputs_def,axiom,(![X]:(![Y]:(![W]:(halts2_outputs(X,Y,W)<=>(halts2(X,Y)&outputs(X,W)))))),input).
+fof(c68,axiom,(![X]:(![Y]:(![W]:((~halts2_outputs(X,Y,W)|(halts2(X,Y)&outputs(X,W)))&((~halts2(X,Y)|~outputs(X,W))|halts2_outputs(X,Y,W)))))),inference(fof_nnf,status(thm),[halts2_outputs_def])).
+fof(c69,axiom,((![X]:(![Y]:(![W]:(~halts2_outputs(X,Y,W)|(halts2(X,Y)&outputs(X,W))))))&(![X]:(![Y]:(![W]:((~halts2(X,Y)|~outputs(X,W))|halts2_outputs(X,Y,W)))))),inference(shift_quantors,status(thm),[c68])).
+fof(c71,axiom,(![X50]:(![X51]:(![X52]:(![X53]:(![X54]:(![X55]:((~halts2_outputs(X50,X51,X52)|(halts2(X50,X51)&outputs(X50,X52)))&((~halts2(X53,X54)|~outputs(X53,X55))|halts2_outputs(X53,X54,X55))))))))),inference(shift_quantors,status(thm),[fof(c70,axiom,((![X50]:(![X51]:(![X52]:(~halts2_outputs(X50,X51,X52)|(halts2(X50,X51)&outputs(X50,X52))))))&(![X53]:(![X54]:(![X55]:((~halts2(X53,X54)|~outputs(X53,X55))|halts2_outputs(X53,X54,X55)))))),inference(variable_rename,status(thm),[c69])).])).
+fof(c72,axiom,(![X50]:(![X51]:(![X52]:(![X53]:(![X54]:(![X55]:(((~halts2_outputs(X50,X51,X52)|halts2(X50,X51))&(~halts2_outputs(X50,X51,X52)|outputs(X50,X52)))&((~halts2(X53,X54)|~outputs(X53,X55))|halts2_outputs(X53,X54,X55))))))))),inference(distribute,status(thm),[c71])).
+cnf(c73,axiom,~halts2_outputs(X114,X116,X115)|halts2(X114,X116),inference(split_conjunct,status(thm),[c72])).
+fof(program_not_halts2_def,axiom,(![X]:(![Y]:(program_not_halts2(X,Y)<=>(program(X)&(~halts2(X,Y)))))),input).
+fof(c76,axiom,(![X]:(![Y]:(program_not_halts2(X,Y)<=>(program(X)&~halts2(X,Y))))),inference(fof_simplification,status(thm),[program_not_halts2_def])).
+fof(c77,axiom,(![X]:(![Y]:((~program_not_halts2(X,Y)|(program(X)&~halts2(X,Y)))&((~program(X)|halts2(X,Y))|program_not_halts2(X,Y))))),inference(fof_nnf,status(thm),[c76])).
+fof(c78,axiom,((![X]:(![Y]:(~program_not_halts2(X,Y)|(program(X)&~halts2(X,Y)))))&(![X]:(![Y]:((~program(X)|halts2(X,Y))|program_not_halts2(X,Y))))),inference(shift_quantors,status(thm),[c77])).
+fof(c80,axiom,(![X56]:(![X57]:(![X58]:(![X59]:((~program_not_halts2(X56,X57)|(program(X56)&~halts2(X56,X57)))&((~program(X58)|halts2(X58,X59))|program_not_halts2(X58,X59))))))),inference(shift_quantors,status(thm),[fof(c79,axiom,((![X56]:(![X57]:(~program_not_halts2(X56,X57)|(program(X56)&~halts2(X56,X57)))))&(![X58]:(![X59]:((~program(X58)|halts2(X58,X59))|program_not_halts2(X58,X59))))),inference(variable_rename,status(thm),[c78])).])).
+fof(c81,axiom,(![X56]:(![X57]:(![X58]:(![X59]:(((~program_not_halts2(X56,X57)|program(X56))&(~program_not_halts2(X56,X57)|~halts2(X56,X57)))&((~program(X58)|halts2(X58,X59))|program_not_halts2(X58,X59))))))),inference(distribute,status(thm),[c80])).
+cnf(c84,axiom,~program(X207)|halts2(X207,X208)|program_not_halts2(X207,X208),inference(split_conjunct,status(thm),[c81])).
+cnf(c3766,plain,halts2(skolem0004,X2070)|program_not_halts2(skolem0004,X2070),inference(resolution,status(thm),[c3763, c84])).
+fof(program_not_halts2_halts2_outputs_def,axiom,(![X]:(![Y]:(![W]:(program_not_halts2_halts2_outputs(X,Y,W)<=>(program_not_halts2(Y,Y)=>halts2_outputs(X,Y,W)))))),input).
+fof(c36,axiom,(![X]:(![Y]:(![W]:((~program_not_halts2_halts2_outputs(X,Y,W)|(~program_not_halts2(Y,Y)|halts2_outputs(X,Y,W)))&((program_not_halts2(Y,Y)&~halts2_outputs(X,Y,W))|program_not_halts2_halts2_outputs(X,Y,W)))))),inference(fof_nnf,status(thm),[program_not_halts2_halts2_outputs_def])).
+fof(c37,axiom,((![X]:(![Y]:(![W]:(~program_not_halts2_halts2_outputs(X,Y,W)|(~program_not_halts2(Y,Y)|halts2_outputs(X,Y,W))))))&(![X]:(![Y]:(![W]:((program_not_halts2(Y,Y)&~halts2_outputs(X,Y,W))|program_not_halts2_halts2_outputs(X,Y,W)))))),inference(shift_quantors,status(thm),[c36])).
+fof(c39,axiom,(![X22]:(![X23]:(![X24]:(![X25]:(![X26]:(![X27]:((~program_not_halts2_halts2_outputs(X22,X23,X24)|(~program_not_halts2(X23,X23)|halts2_outputs(X22,X23,X24)))&((program_not_halts2(X26,X26)&~halts2_outputs(X25,X26,X27))|program_not_halts2_halts2_outputs(X25,X26,X27))))))))),inference(shift_quantors,status(thm),[fof(c38,axiom,((![X22]:(![X23]:(![X24]:(~program_not_halts2_halts2_outputs(X22,X23,X24)|(~program_not_halts2(X23,X23)|halts2_outputs(X22,X23,X24))))))&(![X25]:(![X26]:(![X27]:((program_not_halts2(X26,X26)&~halts2_outputs(X25,X26,X27))|program_not_halts2_halts2_outputs(X25,X26,X27)))))),inference(variable_rename,status(thm),[c37])).])).
+fof(c40,axiom,(![X22]:(![X23]:(![X24]:(![X25]:(![X26]:(![X27]:((~program_not_halts2_halts2_outputs(X22,X23,X24)|(~program_not_halts2(X23,X23)|halts2_outputs(X22,X23,X24)))&((program_not_halts2(X26,X26)|program_not_halts2_halts2_outputs(X25,X26,X27))&(~halts2_outputs(X25,X26,X27)|program_not_halts2_halts2_outputs(X25,X26,X27)))))))))),inference(distribute,status(thm),[c39])).
+cnf(c41,axiom,~program_not_halts2_halts2_outputs(X147,X145,X146)|~program_not_halts2(X145,X145)|halts2_outputs(X147,X145,X146),inference(split_conjunct,status(thm),[c40])).
+cnf(c42,axiom,program_not_halts2(X101,X101)|program_not_halts2_halts2_outputs(X103,X101,X102),inference(split_conjunct,status(thm),[c40])).
+cnf(c83,axiom,~program_not_halts2(X94,X95)|~halts2(X94,X95),inference(split_conjunct,status(thm),[c81])).
+cnf(c14,axiom,~program(X99)|~program_halts2_halts2_outputs(X99,skolem0002(X99),good)|~program_not_halts2_halts2_outputs(X99,skolem0003(X99),bad)|program_not_halts2_halts2_outputs(skolem0004,X98,good),inference(split_conjunct,status(thm),[c11])).
+cnf(c375,plain,~program(skolem0007)|~program_halts2_halts2_outputs(skolem0007,skolem0002(skolem0007),good)|program_not_halts2_halts2_outputs(skolem0004,X2065,good),inference(resolution,status(thm),[c371, c14])).
+cnf(c3806,plain,~program(skolem0007)|program_not_halts2_halts2_outputs(skolem0004,X2087,good),inference(resolution,status(thm),[c375, c391])).
+cnf(c3905,plain,program_not_halts2_halts2_outputs(skolem0004,X2088,good),inference(resolution,status(thm),[c3806, c425])).
+cnf(c3908,plain,~program_not_halts2(X2089,X2089)|halts2_outputs(skolem0004,X2089,good),inference(resolution,status(thm),[c3905, c41])).
+cnf(c3913,plain,halts2_outputs(skolem0004,X2098,good)|program_not_halts2_halts2_outputs(X2096,X2098,X2097),inference(resolution,status(thm),[c3908, c42])).
+cnf(c3927,plain,program_not_halts2_halts2_outputs(X2099,X2101,X2100)|halts2(skolem0004,X2101),inference(resolution,status(thm),[c3913, c73])).
+cnf(c3941,plain,program_not_halts2_halts2_outputs(X2103,X2104,X2102)|~program_not_halts2(skolem0004,X2104),inference(resolution,status(thm),[c3927, c83])).
+cnf(c3953,plain,program_not_halts2_halts2_outputs(X2122,skolem0004,X2123)|program_not_halts2_halts2_outputs(X2120,skolem0004,X2121),inference(resolution,status(thm),[c3941, c42])).
+cnf(c3963,plain,program_not_halts2_halts2_outputs(X2125,skolem0004,X2124),inference(factor,status(thm),[c3953])).
+cnf(c3966,plain,~program_not_halts2(skolem0004,skolem0004)|halts2_outputs(X2132,skolem0004,X2133),inference(resolution,status(thm),[c3963, c41])).
+cnf(c3973,plain,halts2_outputs(X2139,skolem0004,X2138)|halts2(skolem0004,skolem0004),inference(resolution,status(thm),[c3966, c3766])).
+cnf(c3978,plain,halts2(skolem0004,skolem0004)|halts2(X2153,skolem0004),inference(resolution,status(thm),[c3973, c73])).
+cnf(c4029,plain,halts2(skolem0004,skolem0004),inference(factor,status(thm),[c3978])).
+cnf(c4082,plain,~program(skolem0004)|program_halts2(skolem0004,skolem0004),inference(resolution,status(thm),[c4029, c100])).
+cnf(c4099,plain,program_halts2(skolem0004,skolem0004),inference(resolution,status(thm),[c4082, c3763])).
+cnf(c13,axiom,~program(X88)|~program_halts2_halts2_outputs(X88,skolem0002(X88),good)|~program_not_halts2_halts2_outputs(X88,skolem0003(X88),bad)|~program_halts2(X89,X89)|~halts2(skolem0004,X89),inference(split_conjunct,status(thm),[c11])).
+cnf(c372,plain,~program(skolem0007)|~program_halts2_halts2_outputs(skolem0007,skolem0002(skolem0007),good)|~program_halts2(X2050,X2050)|~halts2(skolem0004,X2050),inference(resolution,status(thm),[c371, c13])).
+cnf(c3632,plain,~program(skolem0007)|~program_halts2(X2051,X2051)|~halts2(skolem0004,X2051),inference(resolution,status(thm),[c372, c391])).
+cnf(c4083,plain,~program(skolem0007)|~program_halts2(skolem0004,skolem0004),inference(resolution,status(thm),[c4029, c3632])).
+cnf(c4139,plain,~program(skolem0007),inference(resolution,status(thm),[c4083, c4099])).
+cnf(c4142,plain,$false,inference(resolution,status(thm),[c4139, c425])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 43
+# Processed clauses  : 463
+# Factors computed   : 16
+# Resolvents computed: 4003
+# Tautologies deleted: 12
+# Forward subsumed   : 566
+# Backward subsumed  : 128
+
+# -------- CPU Time ---------
+# User time          : 1.204 s
+# System time        : 0.209 s
+# Total time         : 1.412 s

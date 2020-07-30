@@ -1,0 +1,70 @@
+# cnf(c10,plain,organisation_at_time(skolem0001,skolem0002)).
+# cnf(c11,plain,founding_time(skolem0001,skolem0002)).
+# cnf(c13,plain,~has_elaborated_routines(skolem0001,skolem0002)).
+# cnf(c12,plain,number_of_routines(skolem0001,skolem0002,high)).
+# cnf(c6,negated_conjecture,~organisation_at_time(X12,X13)|first_mover(X12)|efficient_producer(X12)).
+# cnf(c16,plain,~organisation_at_time(X14,X15)|~first_mover(X14)|~founding_time(X14,X15)|number_of_routines(X14,X15,low)).
+# cnf(c23,plain,first_mover(skolem0001)|efficient_producer(skolem0001)).
+# cnf(c22,axiom,~number_of_routines(X17,X16,low)|~number_of_routines(X17,X16,high)).
+# cnf(c25,plain,~number_of_routines(skolem0001,skolem0002,low)).
+# cnf(c19,plain,~organisation_at_time(X19,X18)|~efficient_producer(X19)|~founding_time(X19,X18)|has_elaborated_routines(X19,X18)).
+# cnf(c26,plain,~organisation_at_time(skolem0001,skolem0002)|~efficient_producer(skolem0001)|has_elaborated_routines(skolem0001,skolem0002)).
+# cnf(c24,plain,~organisation_at_time(skolem0001,skolem0002)|~first_mover(skolem0001)|number_of_routines(skolem0001,skolem0002,low)).
+# cnf(c27,plain,~efficient_producer(skolem0001)|has_elaborated_routines(skolem0001,skolem0002)).
+# cnf(c29,plain,has_elaborated_routines(skolem0001,skolem0002)|first_mover(skolem0001)).
+# cnf(c30,plain,first_mover(skolem0001)).
+# cnf(c28,plain,~first_mover(skolem0001)|number_of_routines(skolem0001,skolem0002,low)).
+# cnf(c31,plain,number_of_routines(skolem0001,skolem0002,low)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(a16,plain,(?[X]:(?[T]:(((organisation_at_time(X,T)&founding_time(X,T))&number_of_routines(X,T,high))&(~has_elaborated_routines(X,T))))),input).
+fof(c7,plain,(?[X]:(?[T]:(((organisation_at_time(X,T)&founding_time(X,T))&number_of_routines(X,T,high))&~has_elaborated_routines(X,T)))),inference(fof_simplification,status(thm),[a16])).
+fof(c8,plain,(?[X4]:(?[X5]:(((organisation_at_time(X4,X5)&founding_time(X4,X5))&number_of_routines(X4,X5,high))&~has_elaborated_routines(X4,X5)))),inference(variable_rename,status(thm),[c7])).
+fof(c9,plain,(((organisation_at_time(skolem0001,skolem0002)&founding_time(skolem0001,skolem0002))&number_of_routines(skolem0001,skolem0002,high))&~has_elaborated_routines(skolem0001,skolem0002)),inference(skolemize,status(esa),[c8])).
+cnf(c12,plain,number_of_routines(skolem0001,skolem0002,high),inference(split_conjunct,status(thm),[c9])).
+fof(mp_not_high_and_low,axiom,(![X]:(![T]:(~(number_of_routines(X,T,low)&number_of_routines(X,T,high))))),input).
+fof(c20,axiom,(![X]:(![T]:(~number_of_routines(X,T,low)|~number_of_routines(X,T,high)))),inference(fof_nnf,status(thm),[mp_not_high_and_low])).
+fof(c21,axiom,(![X10]:(![X11]:(~number_of_routines(X10,X11,low)|~number_of_routines(X10,X11,high)))),inference(variable_rename,status(thm),[c20])).
+cnf(c22,axiom,~number_of_routines(X17,X16,low)|~number_of_routines(X17,X16,high),inference(split_conjunct,status(thm),[c21])).
+cnf(c25,plain,~number_of_routines(skolem0001,skolem0002,low),inference(resolution,status(thm),[c22, c12])).
+cnf(c13,plain,~has_elaborated_routines(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c9])).
+cnf(c10,plain,organisation_at_time(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c9])).
+fof(prove_t10,conjecture,(?[X]:(?[T]:((organisation_at_time(X,T)&(~first_mover(X)))&(~efficient_producer(X))))),input).
+fof(c0,negated_conjecture,(~(?[X]:(?[T]:((organisation_at_time(X,T)&(~first_mover(X)))&(~efficient_producer(X)))))),inference(assume_negation,status(cth),[prove_t10])).
+fof(c1,negated_conjecture,(~(?[X]:(?[T]:((organisation_at_time(X,T)&~first_mover(X))&~efficient_producer(X))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(![X]:(![T]:((~organisation_at_time(X,T)|first_mover(X))|efficient_producer(X)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(![X]:(((![T]:~organisation_at_time(X,T))|first_mover(X))|efficient_producer(X))),inference(shift_quantors,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:((~organisation_at_time(X2,X3)|first_mover(X2))|efficient_producer(X2)))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(![X2]:(((![X3]:~organisation_at_time(X2,X3))|first_mover(X2))|efficient_producer(X2))),inference(variable_rename,status(thm),[c3])).])).
+cnf(c6,negated_conjecture,~organisation_at_time(X12,X13)|first_mover(X12)|efficient_producer(X12),inference(split_conjunct,status(thm),[c5])).
+cnf(c23,plain,first_mover(skolem0001)|efficient_producer(skolem0001),inference(resolution,status(thm),[c6, c10])).
+cnf(c11,plain,founding_time(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c9])).
+fof(a14,plain,(![X]:(![T]:(((organisation_at_time(X,T)&efficient_producer(X))&founding_time(X,T))=>has_elaborated_routines(X,T)))),input).
+fof(c17,plain,(![X]:(![T]:(((~organisation_at_time(X,T)|~efficient_producer(X))|~founding_time(X,T))|has_elaborated_routines(X,T)))),inference(fof_nnf,status(thm),[a14])).
+fof(c18,plain,(![X8]:(![X9]:(((~organisation_at_time(X8,X9)|~efficient_producer(X8))|~founding_time(X8,X9))|has_elaborated_routines(X8,X9)))),inference(variable_rename,status(thm),[c17])).
+cnf(c19,plain,~organisation_at_time(X19,X18)|~efficient_producer(X19)|~founding_time(X19,X18)|has_elaborated_routines(X19,X18),inference(split_conjunct,status(thm),[c18])).
+cnf(c26,plain,~organisation_at_time(skolem0001,skolem0002)|~efficient_producer(skolem0001)|has_elaborated_routines(skolem0001,skolem0002),inference(resolution,status(thm),[c19, c11])).
+cnf(c27,plain,~efficient_producer(skolem0001)|has_elaborated_routines(skolem0001,skolem0002),inference(resolution,status(thm),[c26, c10])).
+cnf(c29,plain,has_elaborated_routines(skolem0001,skolem0002)|first_mover(skolem0001),inference(resolution,status(thm),[c27, c23])).
+cnf(c30,plain,first_mover(skolem0001),inference(resolution,status(thm),[c29, c13])).
+fof(a15,plain,(![X]:(![T]:(((organisation_at_time(X,T)&first_mover(X))&founding_time(X,T))=>number_of_routines(X,T,low)))),input).
+fof(c14,plain,(![X]:(![T]:(((~organisation_at_time(X,T)|~first_mover(X))|~founding_time(X,T))|number_of_routines(X,T,low)))),inference(fof_nnf,status(thm),[a15])).
+fof(c15,plain,(![X6]:(![X7]:(((~organisation_at_time(X6,X7)|~first_mover(X6))|~founding_time(X6,X7))|number_of_routines(X6,X7,low)))),inference(variable_rename,status(thm),[c14])).
+cnf(c16,plain,~organisation_at_time(X14,X15)|~first_mover(X14)|~founding_time(X14,X15)|number_of_routines(X14,X15,low),inference(split_conjunct,status(thm),[c15])).
+cnf(c24,plain,~organisation_at_time(skolem0001,skolem0002)|~first_mover(skolem0001)|number_of_routines(skolem0001,skolem0002,low),inference(resolution,status(thm),[c16, c11])).
+cnf(c28,plain,~first_mover(skolem0001)|number_of_routines(skolem0001,skolem0002,low),inference(resolution,status(thm),[c24, c10])).
+cnf(c31,plain,number_of_routines(skolem0001,skolem0002,low),inference(resolution,status(thm),[c28, c30])).
+cnf(c32,plain,$false,inference(resolution,status(thm),[c31, c25])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 8
+# Processed clauses  : 17
+# Factors computed   : 0
+# Resolvents computed: 10
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 0.339 s
+# System time        : 0.258 s
+# Total time         : 0.597 s

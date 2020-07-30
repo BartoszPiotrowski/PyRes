@@ -1,0 +1,128 @@
+# cnf(c2,negated_conjecture,~goal).
+# cnf(c5,axiom,less(X11,skolem0001(X11))).
+# cnf(c13,axiom,p(X12)|p(skolem0002(X12))).
+# cnf(c12,axiom,p(X13)|less(X13,skolem0002(X13))).
+# cnf(c8,axiom,~less(X15,X16)|~less(X16,X14)|less(X15,X14)).
+# cnf(c18,axiom,~p(X17)|~less(X17,X18)|~p(X18)|goal).
+# cnf(c19,plain,~less(X20,X19)|less(X20,skolem0001(X19))).
+# cnf(c23,plain,less(X21,skolem0001(skolem0001(X21)))).
+# cnf(c21,plain,~p(X22)|~p(skolem0001(X22))|goal).
+# cnf(c27,plain,less(X23,skolem0001(skolem0001(skolem0001(X23))))).
+# cnf(c24,plain,less(X24,skolem0001(skolem0002(X24)))|p(X24)).
+# cnf(c20,plain,~less(X26,X25)|less(X26,skolem0002(X25))|p(X25)).
+# cnf(c25,plain,~p(X27)|~p(skolem0001(skolem0001(X27)))|goal).
+# cnf(c26,plain,~less(X29,X28)|less(X29,skolem0001(skolem0001(X28)))).
+# cnf(c28,plain,~p(X31)|goal|p(skolem0002(skolem0001(X31)))).
+# cnf(c32,plain,less(X32,skolem0001(skolem0001(skolem0001(skolem0001(X32)))))).
+# cnf(c35,plain,p(X35)|less(X35,skolem0001(skolem0001(skolem0002(X35))))).
+# cnf(c39,plain,less(X36,skolem0002(skolem0001(X36)))|p(skolem0001(X36))).
+# cnf(c72,plain,less(X38,skolem0002(skolem0001(X38)))|~p(X38)|goal).
+# cnf(c29,plain,~p(X39)|goal|less(skolem0001(X39),skolem0002(skolem0001(X39)))).
+# cnf(c30,plain,~p(X40)|~p(skolem0001(skolem0001(skolem0001(X40))))|goal).
+# cnf(c31,plain,~less(X42,X41)|less(X42,skolem0001(skolem0001(skolem0001(X41))))).
+# cnf(c42,plain,~p(X44)|goal|p(skolem0002(skolem0001(skolem0001(X44))))).
+# cnf(c46,plain,less(X45,skolem0001(skolem0001(skolem0001(skolem0001(skolem0001(X45))))))).
+# cnf(c50,plain,goal|p(skolem0002(skolem0001(X47)))|p(skolem0002(X47))).
+# cnf(c112,plain,p(skolem0002(skolem0001(X48)))|p(skolem0002(X48))).
+# cnf(c51,plain,goal|p(skolem0002(skolem0001(skolem0002(X49))))|p(X49)).
+# cnf(c129,plain,p(skolem0002(skolem0001(skolem0002(X50))))|p(X50)).
+# cnf(c34,plain,p(X52)|~less(X53,X52)|less(X53,skolem0001(skolem0002(X52)))).
+# cnf(c45,plain,less(X55,skolem0001(skolem0001(skolem0001(skolem0002(X55)))))|p(X55)).
+# cnf(c52,plain,goal|p(skolem0002(skolem0001(X56)))|less(X56,skolem0002(X56))).
+# cnf(c175,plain,p(skolem0002(skolem0001(X57)))|less(X57,skolem0002(X57))).
+# cnf(c36,plain,less(skolem0001(X59),skolem0001(skolem0002(skolem0001(X59))))|~p(X59)|goal).
+# cnf(c70,plain,p(skolem0001(X60))|less(X60,skolem0001(skolem0002(skolem0001(X60))))).
+# cnf(c79,plain,less(X61,skolem0002(skolem0001(X61)))|goal|p(skolem0002(X61))).
+# cnf(c232,plain,less(X62,skolem0002(skolem0001(X62)))|p(skolem0002(X62))).
+# cnf(c37,plain,less(X65,skolem0002(skolem0001(skolem0002(X65))))|p(skolem0001(skolem0002(X65)))|p(X65)).
+# cnf(c195,plain,p(skolem0002(skolem0001(X66)))|less(X66,skolem0001(skolem0002(X66)))).
+# cnf(c211,plain,less(X67,skolem0001(skolem0002(skolem0001(X67))))|~p(X67)|goal).
+# cnf(c242,plain,p(skolem0002(X68))|less(X68,skolem0001(skolem0002(skolem0001(X68))))).
+# cnf(c54,plain,less(X70,skolem0001(skolem0001(skolem0001(skolem0001(skolem0001(skolem0001(X70)))))))).
+# cnf(c38,plain,less(X71,skolem0002(skolem0001(skolem0001(skolem0001(X71)))))|p(skolem0001(skolem0001(skolem0001(X71))))).
+# cnf(c55,plain,~less(X73,X72)|less(X73,skolem0001(skolem0001(skolem0001(skolem0001(X72)))))).
+# cnf(c56,plain,~p(X75)|~p(skolem0001(skolem0001(skolem0001(skolem0001(X75)))))|goal).
+# cnf(c76,plain,less(X76,skolem0002(skolem0001(X76)))|goal|less(X76,skolem0002(X76))).
+# cnf(c372,plain,less(X77,skolem0002(skolem0001(X77)))|less(X77,skolem0002(X77))).
+# cnf(c40,plain,less(X78,skolem0002(skolem0001(skolem0001(X78))))|p(skolem0001(skolem0001(X78)))).
+# cnf(c412,plain,less(X79,skolem0002(skolem0001(skolem0001(X79))))|~p(X79)|goal).
+# cnf(c90,plain,~p(X80)|goal|p(skolem0002(skolem0001(skolem0001(skolem0001(X80)))))).
+# cnf(c100,plain,goal|p(skolem0002(skolem0001(skolem0001(skolem0002(X82)))))|p(X82)).
+# cnf(c455,plain,p(skolem0002(skolem0001(skolem0001(skolem0002(X83)))))|p(X83)).
+# cnf(c43,plain,~p(X84)|goal|less(skolem0001(skolem0001(X84)),skolem0002(skolem0001(skolem0001(X84))))).
+# cnf(c104,plain,goal|p(skolem0002(skolem0001(skolem0001(X85))))|p(skolem0002(X85))).
+# cnf(c518,plain,p(skolem0002(skolem0001(skolem0001(X86))))|p(skolem0002(X86))).
+# cnf(c135,plain,goal|p(skolem0002(skolem0001(skolem0002(skolem0001(X88)))))|~p(X88)).
+# cnf(c44,plain,~p(X90)|goal|less(skolem0001(skolem0001(X90)),skolem0001(skolem0002(skolem0001(skolem0001(X90)))))).
+# cnf(c386,plain,less(X92,skolem0002(X92))|less(X92,skolem0001(skolem0002(skolem0001(X92))))).
+# cnf(c394,plain,less(X93,skolem0002(skolem0001(X93)))|less(X93,skolem0001(skolem0002(X93)))).
+# cnf(c62,plain,p(X95)|less(X95,skolem0001(skolem0001(skolem0001(skolem0001(skolem0002(X95))))))).
+# cnf(c58,plain,less(X96,skolem0002(skolem0001(skolem0001(skolem0001(skolem0001(X96))))))|p(skolem0001(skolem0001(skolem0001(skolem0001(X96)))))).
+# cnf(c63,plain,p(X97)|~less(X98,X97)|less(X98,skolem0001(skolem0001(skolem0002(X97))))).
+# cnf(c67,plain,p(skolem0001(X100))|less(X100,skolem0001(skolem0001(skolem0002(skolem0001(X100)))))).
+# cnf(c68,plain,p(skolem0001(X101))|~less(X102,X101)|less(X102,skolem0002(skolem0001(X101)))).
+# cnf(c69,plain,p(skolem0001(X103))|~p(X103)|~p(skolem0002(skolem0001(X103)))|goal).
+# cnf(c59,plain,less(skolem0001(X104),skolem0001(skolem0001(skolem0002(skolem0001(X104)))))|~p(X104)|goal).
+# cnf(c762,plain,p(skolem0001(X105))|~p(X105)|goal).
+# cnf(c809,plain,p(skolem0001(skolem0002(X106)))|goal|p(X106)).
+# cnf(c838,plain,goal|p(X107)|~p(skolem0002(X107))).
+# cnf(c868,plain,goal|p(X108)).
+# cnf(c887,plain,p(X109)).
+# cnf(c889,plain,goal|~p(X111)).
+# cnf(c912,plain,goal).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(goal_to_be_proved,conjecture,goal,input).
+fof(c0,negated_conjecture,(~goal),inference(assume_negation,status(cth),[goal_to_be_proved])).
+fof(c1,negated_conjecture,~goal,inference(fof_simplification,status(thm),[c0])).
+cnf(c2,negated_conjecture,~goal,inference(split_conjunct,status(thm),[c1])).
+fof(right_to_left,axiom,(![A]:(p(A)|(?[B]:(less(A,B)&p(B))))),input).
+fof(c9,axiom,(![X7]:(p(X7)|(?[X8]:(less(X7,X8)&p(X8))))),inference(variable_rename,status(thm),[right_to_left])).
+fof(c10,axiom,(![X7]:(p(X7)|(less(X7,skolem0002(X7))&p(skolem0002(X7))))),inference(skolemize,status(esa),[c9])).
+fof(c11,axiom,(![X7]:((p(X7)|less(X7,skolem0002(X7)))&(p(X7)|p(skolem0002(X7))))),inference(distribute,status(thm),[c10])).
+cnf(c13,axiom,p(X12)|p(skolem0002(X12)),inference(split_conjunct,status(thm),[c11])).
+fof(serial_less,axiom,(![A]:(?[B]:less(A,B))),input).
+fof(c3,axiom,(![X2]:(?[X3]:less(X2,X3))),inference(variable_rename,status(thm),[serial_less])).
+fof(c4,axiom,(![X2]:less(X2,skolem0001(X2))),inference(skolemize,status(esa),[c3])).
+cnf(c5,axiom,less(X11,skolem0001(X11)),inference(split_conjunct,status(thm),[c4])).
+fof(left_to_right,axiom,(![A]:(![B]:(((p(A)&less(A,B))&p(B))=>goal))),input).
+fof(c14,axiom,(![A]:(![B]:(((~p(A)|~less(A,B))|~p(B))|goal))),inference(fof_nnf,status(thm),[left_to_right])).
+fof(c15,axiom,((![A]:(![B]:((~p(A)|~less(A,B))|~p(B))))|goal),inference(shift_quantors,status(thm),[c14])).
+fof(c17,axiom,(![X9]:(![X10]:(((~p(X9)|~less(X9,X10))|~p(X10))|goal))),inference(shift_quantors,status(thm),[fof(c16,axiom,((![X9]:(![X10]:((~p(X9)|~less(X9,X10))|~p(X10))))|goal),inference(variable_rename,status(thm),[c15])).])).
+cnf(c18,axiom,~p(X17)|~less(X17,X18)|~p(X18)|goal,inference(split_conjunct,status(thm),[c17])).
+cnf(c21,plain,~p(X22)|~p(skolem0001(X22))|goal,inference(resolution,status(thm),[c18, c5])).
+cnf(c12,axiom,p(X13)|less(X13,skolem0002(X13)),inference(split_conjunct,status(thm),[c11])).
+fof(transitive_less,axiom,(![A]:(![B]:(![C]:((less(A,B)&less(B,C))=>less(A,C))))),input).
+fof(c6,axiom,(![A]:(![B]:(![C]:((~less(A,B)|~less(B,C))|less(A,C))))),inference(fof_nnf,status(thm),[transitive_less])).
+fof(c7,axiom,(![X4]:(![X5]:(![X6]:((~less(X4,X5)|~less(X5,X6))|less(X4,X6))))),inference(variable_rename,status(thm),[c6])).
+cnf(c8,axiom,~less(X15,X16)|~less(X16,X14)|less(X15,X14),inference(split_conjunct,status(thm),[c7])).
+cnf(c20,plain,~less(X26,X25)|less(X26,skolem0002(X25))|p(X25),inference(resolution,status(thm),[c8, c12])).
+cnf(c39,plain,less(X36,skolem0002(skolem0001(X36)))|p(skolem0001(X36)),inference(resolution,status(thm),[c20, c5])).
+cnf(c69,plain,p(skolem0001(X103))|~p(X103)|~p(skolem0002(skolem0001(X103)))|goal,inference(resolution,status(thm),[c39, c18])).
+cnf(c762,plain,p(skolem0001(X105))|~p(X105)|goal,inference(resolution,status(thm),[c69, c13])).
+cnf(c809,plain,p(skolem0001(skolem0002(X106)))|goal|p(X106),inference(resolution,status(thm),[c762, c13])).
+cnf(c838,plain,goal|p(X107)|~p(skolem0002(X107)),inference(resolution,status(thm),[c809, c21])).
+cnf(c868,plain,goal|p(X108),inference(resolution,status(thm),[c838, c13])).
+cnf(c887,plain,p(X109),inference(resolution,status(thm),[c868, c2])).
+cnf(c19,plain,~less(X20,X19)|less(X20,skolem0001(X19)),inference(resolution,status(thm),[c8, c5])).
+cnf(c23,plain,less(X21,skolem0001(skolem0001(X21))),inference(resolution,status(thm),[c19, c5])).
+cnf(c27,plain,less(X23,skolem0001(skolem0001(skolem0001(X23)))),inference(resolution,status(thm),[c23, c19])).
+cnf(c32,plain,less(X32,skolem0001(skolem0001(skolem0001(skolem0001(X32))))),inference(resolution,status(thm),[c27, c19])).
+cnf(c56,plain,~p(X75)|~p(skolem0001(skolem0001(skolem0001(skolem0001(X75)))))|goal,inference(resolution,status(thm),[c32, c18])).
+cnf(c889,plain,goal|~p(X111),inference(resolution,status(thm),[c868, c56])).
+cnf(c912,plain,goal,inference(resolution,status(thm),[c889, c887])).
+cnf(c913,plain,$false,inference(resolution,status(thm),[c912, c2])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 72
+# Factors computed   : 0
+# Resolvents computed: 895
+# Tautologies deleted: 3
+# Forward subsumed   : 17
+# Backward subsumed  : 55
+
+# -------- CPU Time ---------
+# User time          : 0.451 s
+# System time        : 0.237 s
+# Total time         : 0.688 s

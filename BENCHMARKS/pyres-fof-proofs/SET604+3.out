@@ -1,0 +1,70 @@
+# cnf(reflexivity,axiom,X30=X30).
+# cnf(c18,axiom,subset(X31,X31)).
+# cnf(c47,axiom,~member(X32,empty_set)).
+# cnf(c55,axiom,subset(empty_set,X33)).
+# cnf(c15,axiom,~empty(X34)|~member(X35,X34)).
+# cnf(symmetry,axiom,X37!=X36|X36=X37).
+# cnf(c33,axiom,X40!=X39|subset(X40,X39)).
+# cnf(c34,axiom,X43!=X42|subset(X42,X43)).
+# cnf(transitivity,axiom,X47!=X45|X45!=X46|X47=X46).
+# cnf(c16,axiom,member(skolem0002(X50),X50)|empty(X50)).
+# cnf(c61,plain,empty(empty_set)).
+# cnf(c3,plain,X52!=X53|~empty(X52)|empty(X53)).
+# cnf(c0,plain,X54!=X55|X56!=X57|difference(X54,X56)=difference(X55,X57)).
+# cnf(c8,negated_conjecture,difference(empty_set,skolem0001)!=empty_set).
+# cnf(c26,axiom,member(skolem0003(X60,X59),X60)|subset(X60,X59)).
+# cnf(c64,plain,subset(X62,X63)|~empty(X62)).
+# cnf(c1,plain,X64!=X65|X66!=X67|~subset(X64,X66)|subset(X65,X67)).
+# cnf(c67,plain,subset(X70,X69)|member(skolem0002(X70),X70)).
+# cnf(c27,axiom,~member(skolem0003(X75,X74),X74)|subset(X75,X74)).
+# cnf(c2,plain,X76!=X77|X78!=X79|~member(X76,X78)|member(X77,X79)).
+# cnf(c42,axiom,~member(X82,difference(X83,X81))|member(X82,X83)).
+# cnf(c43,axiom,~member(X85,difference(X86,X84))|~member(X85,X84)).
+# cnf(c25,axiom,~subset(X89,X87)|~member(X88,X89)|member(X88,X87)).
+# cnf(c35,axiom,~subset(X90,X91)|~subset(X91,X90)|X90=X91).
+# cnf(c44,axiom,~member(X92,X94)|member(X92,X93)|member(X92,difference(X94,X93))).
+# cnf(c89,plain,~subset(X96,empty_set)|X96=empty_set).
+# cnf(c94,plain,X97=empty_set|member(skolem0002(X97),X97)).
+# cnf(c52,axiom,difference(X98,X99)!=empty_set|subset(X98,X99)).
+# cnf(c105,plain,X100=empty_set|~empty(X100)).
+# cnf(c100,plain,member(skolem0002(X101),X101)|empty_set=X101).
+# cnf(c53,axiom,~subset(X102,X103)|difference(X102,X103)=empty_set).
+# cnf(c115,plain,empty_set=X104|~empty(X104)).
+# cnf(c131,plain,difference(X105,X105)=empty_set).
+# cnf(c136,plain,empty_set=difference(X107,X107)).
+# cnf(c63,plain,X110!=X109|difference(X110,X108)=difference(X109,X108)).
+# cnf(c139,plain,subset(difference(X112,X112),empty_set)).
+# cnf(c68,plain,X116!=X118|X119!=X117|subset(X118,X117)|member(skolem0003(X116,X119),X116)).
+# cnf(c130,plain,difference(empty_set,X121)=empty_set).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_no_difference_with_empty_set,conjecture,(![B]:difference(empty_set,B)=empty_set),input).
+fof(c4,negated_conjecture,(~(![B]:difference(empty_set,B)=empty_set)),inference(assume_negation,status(cth),[prove_no_difference_with_empty_set])).
+fof(c5,negated_conjecture,(?[B]:difference(empty_set,B)!=empty_set),inference(fof_nnf,status(thm),[c4])).
+fof(c6,negated_conjecture,(?[X2]:difference(empty_set,X2)!=empty_set),inference(variable_rename,status(thm),[c5])).
+fof(c7,negated_conjecture,difference(empty_set,skolem0001)!=empty_set,inference(skolemize,status(esa),[c6])).
+cnf(c8,negated_conjecture,difference(empty_set,skolem0001)!=empty_set,inference(split_conjunct,status(thm),[c7])).
+fof(empty_set_subset,axiom,(![B]:subset(empty_set,B)),input).
+fof(c54,axiom,(![X29]:subset(empty_set,X29)),inference(variable_rename,status(thm),[empty_set_subset])).
+cnf(c55,axiom,subset(empty_set,X33),inference(split_conjunct,status(thm),[c54])).
+fof(difference_empty_set,axiom,(![B]:(![C]:(difference(B,C)=empty_set<=>subset(B,C)))),input).
+fof(c48,axiom,(![B]:(![C]:((difference(B,C)!=empty_set|subset(B,C))&(~subset(B,C)|difference(B,C)=empty_set)))),inference(fof_nnf,status(thm),[difference_empty_set])).
+fof(c49,axiom,((![B]:(![C]:(difference(B,C)!=empty_set|subset(B,C))))&(![B]:(![C]:(~subset(B,C)|difference(B,C)=empty_set)))),inference(shift_quantors,status(thm),[c48])).
+fof(c51,axiom,(![X25]:(![X26]:(![X27]:(![X28]:((difference(X25,X26)!=empty_set|subset(X25,X26))&(~subset(X27,X28)|difference(X27,X28)=empty_set)))))),inference(shift_quantors,status(thm),[fof(c50,axiom,((![X25]:(![X26]:(difference(X25,X26)!=empty_set|subset(X25,X26))))&(![X27]:(![X28]:(~subset(X27,X28)|difference(X27,X28)=empty_set)))),inference(variable_rename,status(thm),[c49])).])).
+cnf(c53,axiom,~subset(X102,X103)|difference(X102,X103)=empty_set,inference(split_conjunct,status(thm),[c51])).
+cnf(c130,plain,difference(empty_set,X121)=empty_set,inference(resolution,status(thm),[c53, c55])).
+cnf(c168,plain,$false,inference(resolution,status(thm),[c130, c8])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 24
+# Processed clauses  : 38
+# Factors computed   : 0
+# Resolvents computed: 115
+# Tautologies deleted: 3
+# Forward subsumed   : 21
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.316 s
+# System time        : 0.356 s
+# Total time         : 0.672 s

@@ -1,0 +1,51 @@
+# cnf(c5,negated_conjecture,intersect(skolem0001,skolem0002)).
+# cnf(c9,axiom,~intersect(X13,X14)|intersect(X14,X13)).
+# cnf(c19,plain,intersect(skolem0002,skolem0001)).
+# cnf(c6,negated_conjecture,~member(X15,skolem0001)|~member(X15,skolem0002)).
+# cnf(c16,axiom,~intersect(X17,X16)|member(skolem0003(X17,X16),X17)).
+# cnf(c21,plain,member(skolem0003(skolem0002,skolem0001),skolem0002)).
+# cnf(c22,plain,member(skolem0003(skolem0001,skolem0002),skolem0001)).
+# cnf(c23,plain,~member(skolem0003(skolem0002,skolem0001),skolem0001)).
+# cnf(c17,axiom,~intersect(X19,X18)|member(skolem0003(X19,X18),X18)).
+# cnf(c24,plain,member(skolem0003(skolem0002,skolem0001),skolem0001)).
+# cnf(c18,axiom,~member(X20,X21)|~member(X20,X22)|intersect(X21,X22)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_th15,conjecture,(![B]:(![C]:(intersect(B,C)=>(?[D]:(member(D,B)&member(D,C)))))),input).
+fof(c0,negated_conjecture,(~(![B]:(![C]:(intersect(B,C)=>(?[D]:(member(D,B)&member(D,C))))))),inference(assume_negation,status(cth),[prove_th15])).
+fof(c1,negated_conjecture,(?[B]:(?[C]:(intersect(B,C)&(![D]:(~member(D,B)|~member(D,C)))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:(?[X3]:(intersect(X2,X3)&(![X4]:(~member(X4,X2)|~member(X4,X3)))))),inference(variable_rename,status(thm),[c1])).
+fof(c4,negated_conjecture,(![X4]:(intersect(skolem0001,skolem0002)&(~member(X4,skolem0001)|~member(X4,skolem0002)))),inference(shift_quantors,status(thm),[fof(c3,negated_conjecture,(intersect(skolem0001,skolem0002)&(![X4]:(~member(X4,skolem0001)|~member(X4,skolem0002)))),inference(skolemize,status(esa),[c2])).])).
+cnf(c6,negated_conjecture,~member(X15,skolem0001)|~member(X15,skolem0002),inference(split_conjunct,status(thm),[c4])).
+cnf(c5,negated_conjecture,intersect(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c4])).
+fof(symmetry_of_intersect,axiom,(![B]:(![C]:(intersect(B,C)=>intersect(C,B)))),input).
+fof(c7,axiom,(![B]:(![C]:(~intersect(B,C)|intersect(C,B)))),inference(fof_nnf,status(thm),[symmetry_of_intersect])).
+fof(c8,axiom,(![X5]:(![X6]:(~intersect(X5,X6)|intersect(X6,X5)))),inference(variable_rename,status(thm),[c7])).
+cnf(c9,axiom,~intersect(X13,X14)|intersect(X14,X13),inference(split_conjunct,status(thm),[c8])).
+cnf(c19,plain,intersect(skolem0002,skolem0001),inference(resolution,status(thm),[c9, c5])).
+fof(intersect_defn,axiom,(![B]:(![C]:(intersect(B,C)<=>(?[D]:(member(D,B)&member(D,C)))))),input).
+fof(c10,axiom,(![B]:(![C]:((~intersect(B,C)|(?[D]:(member(D,B)&member(D,C))))&((![D]:(~member(D,B)|~member(D,C)))|intersect(B,C))))),inference(fof_nnf,status(thm),[intersect_defn])).
+fof(c11,axiom,((![B]:(![C]:(~intersect(B,C)|(?[D]:(member(D,B)&member(D,C))))))&(![B]:(![C]:((![D]:(~member(D,B)|~member(D,C)))|intersect(B,C))))),inference(shift_quantors,status(thm),[c10])).
+fof(c12,axiom,((![X7]:(![X8]:(~intersect(X7,X8)|(?[X9]:(member(X9,X7)&member(X9,X8))))))&(![X10]:(![X11]:((![X12]:(~member(X12,X10)|~member(X12,X11)))|intersect(X10,X11))))),inference(variable_rename,status(thm),[c11])).
+fof(c14,axiom,(![X7]:(![X8]:(![X10]:(![X11]:(![X12]:((~intersect(X7,X8)|(member(skolem0003(X7,X8),X7)&member(skolem0003(X7,X8),X8)))&((~member(X12,X10)|~member(X12,X11))|intersect(X10,X11)))))))),inference(shift_quantors,status(thm),[fof(c13,axiom,((![X7]:(![X8]:(~intersect(X7,X8)|(member(skolem0003(X7,X8),X7)&member(skolem0003(X7,X8),X8)))))&(![X10]:(![X11]:((![X12]:(~member(X12,X10)|~member(X12,X11)))|intersect(X10,X11))))),inference(skolemize,status(esa),[c12])).])).
+fof(c15,axiom,(![X7]:(![X8]:(![X10]:(![X11]:(![X12]:(((~intersect(X7,X8)|member(skolem0003(X7,X8),X7))&(~intersect(X7,X8)|member(skolem0003(X7,X8),X8)))&((~member(X12,X10)|~member(X12,X11))|intersect(X10,X11)))))))),inference(distribute,status(thm),[c14])).
+cnf(c16,axiom,~intersect(X17,X16)|member(skolem0003(X17,X16),X17),inference(split_conjunct,status(thm),[c15])).
+cnf(c21,plain,member(skolem0003(skolem0002,skolem0001),skolem0002),inference(resolution,status(thm),[c16, c19])).
+cnf(c23,plain,~member(skolem0003(skolem0002,skolem0001),skolem0001),inference(resolution,status(thm),[c21, c6])).
+cnf(c17,axiom,~intersect(X19,X18)|member(skolem0003(X19,X18),X18),inference(split_conjunct,status(thm),[c15])).
+cnf(c24,plain,member(skolem0003(skolem0002,skolem0001),skolem0001),inference(resolution,status(thm),[c17, c19])).
+cnf(c26,plain,$false,inference(resolution,status(thm),[c24, c23])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 11
+# Factors computed   : 0
+# Resolvents computed: 11
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.314 s
+# System time        : 0.339 s
+# Total time         : 0.652 s

@@ -1,0 +1,67 @@
+# cnf(c5,negated_conjecture,big_j(skolem0001)).
+# cnf(c6,negated_conjecture,big_i(skolem0001)).
+# cnf(c21,axiom,big_f(skolem0002)).
+# cnf(c22,axiom,~big_g(skolem0002)).
+# cnf(c17,axiom,~big_f(X8)|big_h(X8)).
+# cnf(c11,axiom,~big_h(X10)|big_g(X10)|~big_i(X9)|~big_h(X9)).
+# cnf(c23,plain,big_h(skolem0002)).
+# cnf(c14,axiom,~big_j(X11)|~big_i(X11)|big_f(X11)).
+# cnf(c25,plain,~big_j(skolem0001)|big_f(skolem0001)).
+# cnf(c26,plain,big_f(skolem0001)).
+# cnf(c27,plain,big_h(skolem0001)).
+# cnf(c24,plain,~big_h(X12)|big_g(X12)|~big_i(skolem0002)).
+# cnf(c28,plain,~big_h(X13)|big_g(X13)|~big_i(skolem0001)).
+# cnf(c29,plain,~big_h(X14)|big_g(X14)).
+# cnf(c30,plain,big_g(skolem0001)).
+# cnf(c31,plain,big_g(skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel27_1,axiom,(?[X]:(big_f(X)&(~big_g(X)))),input).
+fof(c18,axiom,(?[X]:(big_f(X)&~big_g(X))),inference(fof_simplification,status(thm),[pel27_1])).
+fof(c19,axiom,(?[X7]:(big_f(X7)&~big_g(X7))),inference(variable_rename,status(thm),[c18])).
+fof(c20,axiom,(big_f(skolem0002)&~big_g(skolem0002)),inference(skolemize,status(esa),[c19])).
+cnf(c22,axiom,~big_g(skolem0002),inference(split_conjunct,status(thm),[c20])).
+cnf(c21,axiom,big_f(skolem0002),inference(split_conjunct,status(thm),[c20])).
+fof(pel27_2,axiom,(![X]:(big_f(X)=>big_h(X))),input).
+fof(c15,axiom,(![X]:(~big_f(X)|big_h(X))),inference(fof_nnf,status(thm),[pel27_2])).
+fof(c16,axiom,(![X6]:(~big_f(X6)|big_h(X6))),inference(variable_rename,status(thm),[c15])).
+cnf(c17,axiom,~big_f(X8)|big_h(X8),inference(split_conjunct,status(thm),[c16])).
+cnf(c23,plain,big_h(skolem0002),inference(resolution,status(thm),[c17, c21])).
+fof(pel27,conjecture,(![X]:(big_j(X)=>(~big_i(X)))),input).
+fof(c0,negated_conjecture,(~(![X]:(big_j(X)=>(~big_i(X))))),inference(assume_negation,status(cth),[pel27])).
+fof(c1,negated_conjecture,(~(![X]:(big_j(X)=>~big_i(X)))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:(big_j(X)&big_i(X))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(big_j(X2)&big_i(X2))),inference(variable_rename,status(thm),[c2])).
+fof(c4,negated_conjecture,(big_j(skolem0001)&big_i(skolem0001)),inference(skolemize,status(esa),[c3])).
+cnf(c6,negated_conjecture,big_i(skolem0001),inference(split_conjunct,status(thm),[c4])).
+fof(pel27_4,axiom,((?[X]:(big_h(X)&(~big_g(X))))=>(![X1]:(big_i(X1)=>(~big_h(X1))))),input).
+fof(c7,axiom,((?[X]:(big_h(X)&~big_g(X)))=>(![X1]:(big_i(X1)=>~big_h(X1)))),inference(fof_simplification,status(thm),[pel27_4])).
+fof(c8,axiom,((![X]:(~big_h(X)|big_g(X)))|(![X1]:(~big_i(X1)|~big_h(X1)))),inference(fof_nnf,status(thm),[c7])).
+fof(c10,axiom,(![X3]:(![X4]:((~big_h(X3)|big_g(X3))|(~big_i(X4)|~big_h(X4))))),inference(shift_quantors,status(thm),[fof(c9,axiom,((![X3]:(~big_h(X3)|big_g(X3)))|(![X4]:(~big_i(X4)|~big_h(X4)))),inference(variable_rename,status(thm),[c8])).])).
+cnf(c11,axiom,~big_h(X10)|big_g(X10)|~big_i(X9)|~big_h(X9),inference(split_conjunct,status(thm),[c10])).
+cnf(c5,negated_conjecture,big_j(skolem0001),inference(split_conjunct,status(thm),[c4])).
+fof(pel27_3,axiom,(![X]:((big_j(X)&big_i(X))=>big_f(X))),input).
+fof(c12,axiom,(![X]:((~big_j(X)|~big_i(X))|big_f(X))),inference(fof_nnf,status(thm),[pel27_3])).
+fof(c13,axiom,(![X5]:((~big_j(X5)|~big_i(X5))|big_f(X5))),inference(variable_rename,status(thm),[c12])).
+cnf(c14,axiom,~big_j(X11)|~big_i(X11)|big_f(X11),inference(split_conjunct,status(thm),[c13])).
+cnf(c25,plain,~big_j(skolem0001)|big_f(skolem0001),inference(resolution,status(thm),[c14, c6])).
+cnf(c26,plain,big_f(skolem0001),inference(resolution,status(thm),[c25, c5])).
+cnf(c27,plain,big_h(skolem0001),inference(resolution,status(thm),[c26, c17])).
+cnf(c28,plain,~big_h(X13)|big_g(X13)|~big_i(skolem0001),inference(resolution,status(thm),[c27, c11])).
+cnf(c29,plain,~big_h(X14)|big_g(X14),inference(resolution,status(thm),[c28, c6])).
+cnf(c31,plain,big_g(skolem0002),inference(resolution,status(thm),[c29, c23])).
+cnf(c32,plain,$false,inference(resolution,status(thm),[c31, c22])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 7
+# Processed clauses  : 16
+# Factors computed   : 0
+# Resolvents computed: 10
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.373 s
+# System time        : 0.288 s
+# Total time         : 0.662 s

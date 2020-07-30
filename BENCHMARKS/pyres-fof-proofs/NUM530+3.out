@@ -1,0 +1,26 @@
+# cnf(c11,negated_conjecture,~$false).
+# cnf(c13,plain,~$true).
+# cnf(c116,axiom,$true).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__3161,plain,(~$true),input).
+fof(c12,plain,~$true,inference(fof_simplification,status(thm),[m__3161])).
+cnf(c13,plain,~$true,inference(split_conjunct,status(thm),[c12])).
+fof(mIH,axiom,(![W0]:(![W1]:((aNaturalNumber0(W0)&aNaturalNumber0(W1))=>(iLess0(W0,W1)=>$true)))),input).
+fof(c115,axiom,$true,inference(fof_simplification,status(thm),[mIH])).
+cnf(c116,axiom,$true,inference(split_conjunct,status(thm),[c115])).
+cnf(c232,plain,$false,inference(resolution,status(thm),[c116, c13])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 117
+# Processed clauses  : 3
+# Factors computed   : 0
+# Resolvents computed: 1
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.372 s
+# System time        : 0.304 s
+# Total time         : 0.677 s

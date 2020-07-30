@@ -1,0 +1,99 @@
+# cnf(c7,negated_conjecture,a_vector_space(skolem0002)).
+# cnf(c6,negated_conjecture,a_vector_subspace_of(skolem0001,skolem0002)).
+# cnf(c18,axiom,~a_vector_subspace_of(X20,X19)|a_vector_space(X20)).
+# cnf(c34,plain,a_vector_space(skolem0001)).
+# cnf(c32,axiom,~basis_of(X21,X22)|lin_ind_subset(X21,X22)).
+# cnf(c8,negated_conjecture,~basis_of(union(X23,X24),skolem0002)|~basis_of(X23,skolem0001)).
+# cnf(c22,axiom,~a_vector_space(X25)|basis_of(skolem0003(X25),X25)).
+# cnf(c35,plain,basis_of(skolem0003(skolem0001),skolem0001)).
+# cnf(c36,plain,basis_of(skolem0003(skolem0002),skolem0002)).
+# cnf(c37,plain,lin_ind_subset(skolem0003(skolem0001),skolem0001)).
+# cnf(c38,plain,lin_ind_subset(skolem0003(skolem0002),skolem0002)).
+# cnf(c12,axiom,~a_vector_subspace_of(X26,X27)|~a_subset_of(X28,vec_to_class(X26))|~lin_ind_subset(X28,X26)|lin_ind_subset(X28,X27)).
+# cnf(c33,axiom,~basis_of(X29,X30)|a_subset_of(X29,vec_to_class(X30))).
+# cnf(c39,plain,a_subset_of(skolem0003(skolem0002),vec_to_class(skolem0002))).
+# cnf(c40,plain,a_subset_of(skolem0003(skolem0001),vec_to_class(skolem0001))).
+# cnf(c27,axiom,~lin_ind_subset(X32,X33)|~basis_of(X31,X33)|a_subset_of(skolem0004(X32,X31,X33),X31)).
+# cnf(c13,axiom,~a_vector_subspace_of(X34,X35)|~a_subset_of(X36,vec_to_class(X34))|~lin_ind_subset(X36,X35)|lin_ind_subset(X36,X34)).
+# cnf(c28,axiom,~lin_ind_subset(X38,X39)|~basis_of(X37,X39)|basis_of(union(X38,skolem0004(X38,X37,X39)),X39)).
+# cnf(c41,plain,~a_vector_subspace_of(skolem0002,X40)|~lin_ind_subset(skolem0003(skolem0002),skolem0002)|lin_ind_subset(skolem0003(skolem0002),X40)).
+# cnf(c49,plain,~a_vector_subspace_of(skolem0002,X41)|lin_ind_subset(skolem0003(skolem0002),X41)).
+# cnf(c42,plain,~a_vector_subspace_of(skolem0001,X42)|~lin_ind_subset(skolem0003(skolem0001),skolem0001)|lin_ind_subset(skolem0003(skolem0001),X42)).
+# cnf(c50,plain,~a_vector_subspace_of(skolem0001,X43)|lin_ind_subset(skolem0003(skolem0001),X43)).
+# cnf(c51,plain,lin_ind_subset(skolem0003(skolem0001),skolem0002)).
+# cnf(c43,plain,~lin_ind_subset(X44,skolem0002)|a_subset_of(skolem0004(X44,skolem0003(skolem0002),skolem0002),skolem0003(skolem0002))).
+# cnf(c52,plain,a_subset_of(skolem0004(skolem0003(skolem0002),skolem0003(skolem0002),skolem0002),skolem0003(skolem0002))).
+# cnf(c53,plain,a_subset_of(skolem0004(skolem0003(skolem0001),skolem0003(skolem0002),skolem0002),skolem0003(skolem0002))).
+# cnf(c44,plain,~lin_ind_subset(X45,skolem0001)|a_subset_of(skolem0004(X45,skolem0003(skolem0001),skolem0001),skolem0003(skolem0001))).
+# cnf(c54,plain,a_subset_of(skolem0004(skolem0003(skolem0001),skolem0003(skolem0001),skolem0001),skolem0003(skolem0001))).
+# cnf(c47,plain,~lin_ind_subset(X48,skolem0002)|basis_of(union(X48,skolem0004(X48,skolem0003(skolem0002),skolem0002)),skolem0002)).
+# cnf(c48,plain,~lin_ind_subset(X49,skolem0001)|basis_of(union(X49,skolem0004(X49,skolem0003(skolem0001),skolem0001)),skolem0001)).
+# cnf(c55,plain,basis_of(union(skolem0003(skolem0002),skolem0004(skolem0003(skolem0002),skolem0003(skolem0002),skolem0002)),skolem0002)).
+# cnf(c60,plain,~basis_of(skolem0003(skolem0002),skolem0001)).
+# cnf(c56,plain,basis_of(union(skolem0003(skolem0001),skolem0004(skolem0003(skolem0001),skolem0003(skolem0002),skolem0002)),skolem0002)).
+# cnf(c57,plain,basis_of(union(skolem0003(skolem0001),skolem0004(skolem0003(skolem0001),skolem0003(skolem0001),skolem0001)),skolem0001)).
+# cnf(c65,plain,~basis_of(skolem0003(skolem0001),skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(bg_2_4_3,conjecture,(![W]:(![V]:((a_vector_subspace_of(W,V)&a_vector_space(V))=>(?[E]:(?[F]:(basis_of(union(E,F),V)&basis_of(E,W))))))),input).
+fof(c0,negated_conjecture,(~(![W]:(![V]:((a_vector_subspace_of(W,V)&a_vector_space(V))=>(?[E]:(?[F]:(basis_of(union(E,F),V)&basis_of(E,W)))))))),inference(assume_negation,status(cth),[bg_2_4_3])).
+fof(c1,negated_conjecture,(?[W]:(?[V]:((a_vector_subspace_of(W,V)&a_vector_space(V))&(![E]:(![F]:(~basis_of(union(E,F),V)|~basis_of(E,W))))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[W]:(?[V]:((a_vector_subspace_of(W,V)&a_vector_space(V))&(![E]:((![F]:~basis_of(union(E,F),V))|~basis_of(E,W)))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:((a_vector_subspace_of(X2,X3)&a_vector_space(X3))&(![X4]:((![X5]:~basis_of(union(X4,X5),X3))|~basis_of(X4,X2)))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X4]:(![X5]:((a_vector_subspace_of(skolem0001,skolem0002)&a_vector_space(skolem0002))&(~basis_of(union(X4,X5),skolem0002)|~basis_of(X4,skolem0001))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((a_vector_subspace_of(skolem0001,skolem0002)&a_vector_space(skolem0002))&(![X4]:((![X5]:~basis_of(union(X4,X5),skolem0002))|~basis_of(X4,skolem0001)))),inference(skolemize,status(esa),[c3])).])).
+cnf(c6,negated_conjecture,a_vector_subspace_of(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+fof(bg_2_4_a,axiom,(![A]:(![B]:(a_vector_subspace_of(A,B)=>a_vector_space(A)))),input).
+fof(c14,axiom,(![A]:(![B]:(~a_vector_subspace_of(A,B)|a_vector_space(A)))),inference(fof_nnf,status(thm),[bg_2_4_a])).
+fof(c15,axiom,(![A]:((![B]:~a_vector_subspace_of(A,B))|a_vector_space(A))),inference(shift_quantors,status(thm),[c14])).
+fof(c17,axiom,(![X9]:(![X10]:(~a_vector_subspace_of(X9,X10)|a_vector_space(X9)))),inference(shift_quantors,status(thm),[fof(c16,axiom,(![X9]:((![X10]:~a_vector_subspace_of(X9,X10))|a_vector_space(X9))),inference(variable_rename,status(thm),[c15])).])).
+cnf(c18,axiom,~a_vector_subspace_of(X20,X19)|a_vector_space(X20),inference(split_conjunct,status(thm),[c17])).
+cnf(c34,plain,a_vector_space(skolem0001),inference(resolution,status(thm),[c18, c6])).
+fof(bg_remark_63_a,axiom,(![A]:(a_vector_space(A)=>(?[B]:basis_of(B,A)))),input).
+fof(c19,axiom,(![A]:(~a_vector_space(A)|(?[B]:basis_of(B,A)))),inference(fof_nnf,status(thm),[bg_remark_63_a])).
+fof(c20,axiom,(![X11]:(~a_vector_space(X11)|(?[X12]:basis_of(X12,X11)))),inference(variable_rename,status(thm),[c19])).
+fof(c21,axiom,(![X11]:(~a_vector_space(X11)|basis_of(skolem0003(X11),X11))),inference(skolemize,status(esa),[c20])).
+cnf(c22,axiom,~a_vector_space(X25)|basis_of(skolem0003(X25),X25),inference(split_conjunct,status(thm),[c21])).
+cnf(c35,plain,basis_of(skolem0003(skolem0001),skolem0001),inference(resolution,status(thm),[c22, c34])).
+cnf(c8,negated_conjecture,~basis_of(union(X23,X24),skolem0002)|~basis_of(X23,skolem0001),inference(split_conjunct,status(thm),[c5])).
+fof(basis_of,axiom,(![B]:(![V]:(basis_of(B,V)=>(lin_ind_subset(B,V)&a_subset_of(B,vec_to_class(V)))))),input).
+fof(c29,axiom,(![B]:(![V]:(~basis_of(B,V)|(lin_ind_subset(B,V)&a_subset_of(B,vec_to_class(V)))))),inference(fof_nnf,status(thm),[basis_of])).
+fof(c30,axiom,(![X17]:(![X18]:(~basis_of(X17,X18)|(lin_ind_subset(X17,X18)&a_subset_of(X17,vec_to_class(X18)))))),inference(variable_rename,status(thm),[c29])).
+fof(c31,axiom,(![X17]:(![X18]:((~basis_of(X17,X18)|lin_ind_subset(X17,X18))&(~basis_of(X17,X18)|a_subset_of(X17,vec_to_class(X18)))))),inference(distribute,status(thm),[c30])).
+cnf(c32,axiom,~basis_of(X21,X22)|lin_ind_subset(X21,X22),inference(split_conjunct,status(thm),[c31])).
+cnf(c37,plain,lin_ind_subset(skolem0003(skolem0001),skolem0001),inference(resolution,status(thm),[c35, c32])).
+fof(bg_2_4_2,axiom,(![W]:(![V]:(![E]:((a_vector_subspace_of(W,V)&a_subset_of(E,vec_to_class(W)))=>(lin_ind_subset(E,W)<=>lin_ind_subset(E,V)))))),input).
+fof(c9,axiom,(![W]:(![V]:(![E]:((~a_vector_subspace_of(W,V)|~a_subset_of(E,vec_to_class(W)))|((~lin_ind_subset(E,W)|lin_ind_subset(E,V))&(~lin_ind_subset(E,V)|lin_ind_subset(E,W))))))),inference(fof_nnf,status(thm),[bg_2_4_2])).
+fof(c10,axiom,(![X6]:(![X7]:(![X8]:((~a_vector_subspace_of(X6,X7)|~a_subset_of(X8,vec_to_class(X6)))|((~lin_ind_subset(X8,X6)|lin_ind_subset(X8,X7))&(~lin_ind_subset(X8,X7)|lin_ind_subset(X8,X6))))))),inference(variable_rename,status(thm),[c9])).
+fof(c11,axiom,(![X6]:(![X7]:(![X8]:(((~a_vector_subspace_of(X6,X7)|~a_subset_of(X8,vec_to_class(X6)))|(~lin_ind_subset(X8,X6)|lin_ind_subset(X8,X7)))&((~a_vector_subspace_of(X6,X7)|~a_subset_of(X8,vec_to_class(X6)))|(~lin_ind_subset(X8,X7)|lin_ind_subset(X8,X6))))))),inference(distribute,status(thm),[c10])).
+cnf(c12,axiom,~a_vector_subspace_of(X26,X27)|~a_subset_of(X28,vec_to_class(X26))|~lin_ind_subset(X28,X26)|lin_ind_subset(X28,X27),inference(split_conjunct,status(thm),[c11])).
+cnf(c33,axiom,~basis_of(X29,X30)|a_subset_of(X29,vec_to_class(X30)),inference(split_conjunct,status(thm),[c31])).
+cnf(c40,plain,a_subset_of(skolem0003(skolem0001),vec_to_class(skolem0001)),inference(resolution,status(thm),[c33, c35])).
+cnf(c42,plain,~a_vector_subspace_of(skolem0001,X42)|~lin_ind_subset(skolem0003(skolem0001),skolem0001)|lin_ind_subset(skolem0003(skolem0001),X42),inference(resolution,status(thm),[c40, c12])).
+cnf(c50,plain,~a_vector_subspace_of(skolem0001,X43)|lin_ind_subset(skolem0003(skolem0001),X43),inference(resolution,status(thm),[c42, c37])).
+cnf(c51,plain,lin_ind_subset(skolem0003(skolem0001),skolem0002),inference(resolution,status(thm),[c50, c6])).
+cnf(c7,negated_conjecture,a_vector_space(skolem0002),inference(split_conjunct,status(thm),[c5])).
+cnf(c36,plain,basis_of(skolem0003(skolem0002),skolem0002),inference(resolution,status(thm),[c22, c7])).
+fof(bg_2_2_5,axiom,(![S]:(![T]:(![V]:((lin_ind_subset(S,V)&basis_of(T,V))=>(?[U]:(a_subset_of(U,T)&basis_of(union(S,U),V))))))),input).
+fof(c23,axiom,(![S]:(![T]:(![V]:((~lin_ind_subset(S,V)|~basis_of(T,V))|(?[U]:(a_subset_of(U,T)&basis_of(union(S,U),V))))))),inference(fof_nnf,status(thm),[bg_2_2_5])).
+fof(c24,axiom,(![X13]:(![X14]:(![X15]:((~lin_ind_subset(X13,X15)|~basis_of(X14,X15))|(?[X16]:(a_subset_of(X16,X14)&basis_of(union(X13,X16),X15))))))),inference(variable_rename,status(thm),[c23])).
+fof(c25,axiom,(![X13]:(![X14]:(![X15]:((~lin_ind_subset(X13,X15)|~basis_of(X14,X15))|(a_subset_of(skolem0004(X13,X14,X15),X14)&basis_of(union(X13,skolem0004(X13,X14,X15)),X15)))))),inference(skolemize,status(esa),[c24])).
+fof(c26,axiom,(![X13]:(![X14]:(![X15]:(((~lin_ind_subset(X13,X15)|~basis_of(X14,X15))|a_subset_of(skolem0004(X13,X14,X15),X14))&((~lin_ind_subset(X13,X15)|~basis_of(X14,X15))|basis_of(union(X13,skolem0004(X13,X14,X15)),X15)))))),inference(distribute,status(thm),[c25])).
+cnf(c28,axiom,~lin_ind_subset(X38,X39)|~basis_of(X37,X39)|basis_of(union(X38,skolem0004(X38,X37,X39)),X39),inference(split_conjunct,status(thm),[c26])).
+cnf(c47,plain,~lin_ind_subset(X48,skolem0002)|basis_of(union(X48,skolem0004(X48,skolem0003(skolem0002),skolem0002)),skolem0002),inference(resolution,status(thm),[c28, c36])).
+cnf(c56,plain,basis_of(union(skolem0003(skolem0001),skolem0004(skolem0003(skolem0001),skolem0003(skolem0002),skolem0002)),skolem0002),inference(resolution,status(thm),[c47, c51])).
+cnf(c65,plain,~basis_of(skolem0003(skolem0001),skolem0001),inference(resolution,status(thm),[c56, c8])).
+cnf(c72,plain,$false,inference(resolution,status(thm),[c65, c35])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 11
+# Processed clauses  : 35
+# Factors computed   : 0
+# Resolvents computed: 39
+# Tautologies deleted: 0
+# Forward subsumed   : 2
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.303 s
+# System time        : 0.135 s
+# Total time         : 0.437 s

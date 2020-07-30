@@ -1,0 +1,47 @@
+# cnf(c37,axiom,cowlThing(X13)).
+# cnf(c38,axiom,~cowlNothing(X14)).
+# cnf(c0,axiom,cUnsatisfiable(i2003_11_14_17_20_00819)).
+# cnf(c3,axiom,~cf(X15)|cd(X15)).
+# cnf(c6,axiom,~ce3(X16)|cc(X16)).
+# cnf(c9,axiom,~cc1(X17)|cd1(X17)).
+# cnf(c13,axiom,~cc1(X18)|~cd1(X18)).
+# cnf(c17,axiom,~cc(X19)|~cd(X19)).
+# cnf(c23,axiom,~cUnsatisfiable(X20)|cd(X20)).
+# cnf(c39,plain,cd(i2003_11_14_17_20_00819)).
+# cnf(c40,plain,~cc(i2003_11_14_17_20_00819)).
+# cnf(c24,axiom,~cUnsatisfiable(X21)|cc(X21)).
+# cnf(c41,plain,cc(i2003_11_14_17_20_00819)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_3,axiom,(![X]:(cc(X)=>(~cd(X)))),input).
+fof(c14,axiom,(![X]:(cc(X)=>~cd(X))),inference(fof_simplification,status(thm),[axiom_3])).
+fof(c15,axiom,(![X]:(~cc(X)|~cd(X))),inference(fof_nnf,status(thm),[c14])).
+fof(c16,axiom,(![X6]:(~cc(X6)|~cd(X6))),inference(variable_rename,status(thm),[c15])).
+cnf(c17,axiom,~cc(X19)|~cd(X19),inference(split_conjunct,status(thm),[c16])).
+fof(axiom_8,axiom,cUnsatisfiable(i2003_11_14_17_20_00819),input).
+cnf(c0,axiom,cUnsatisfiable(i2003_11_14_17_20_00819),inference(split_conjunct,status(thm),[axiom_8])).
+fof(axiom_2,axiom,(![X]:(cUnsatisfiable(X)<=>(cd(X)&cc(X)))),input).
+fof(c18,axiom,(![X]:((~cUnsatisfiable(X)|(cd(X)&cc(X)))&((~cd(X)|~cc(X))|cUnsatisfiable(X)))),inference(fof_nnf,status(thm),[axiom_2])).
+fof(c19,axiom,((![X]:(~cUnsatisfiable(X)|(cd(X)&cc(X))))&(![X]:((~cd(X)|~cc(X))|cUnsatisfiable(X)))),inference(shift_quantors,status(thm),[c18])).
+fof(c21,axiom,(![X7]:(![X8]:((~cUnsatisfiable(X7)|(cd(X7)&cc(X7)))&((~cd(X8)|~cc(X8))|cUnsatisfiable(X8))))),inference(shift_quantors,status(thm),[fof(c20,axiom,((![X7]:(~cUnsatisfiable(X7)|(cd(X7)&cc(X7))))&(![X8]:((~cd(X8)|~cc(X8))|cUnsatisfiable(X8)))),inference(variable_rename,status(thm),[c19])).])).
+fof(c22,axiom,(![X7]:(![X8]:(((~cUnsatisfiable(X7)|cd(X7))&(~cUnsatisfiable(X7)|cc(X7)))&((~cd(X8)|~cc(X8))|cUnsatisfiable(X8))))),inference(distribute,status(thm),[c21])).
+cnf(c23,axiom,~cUnsatisfiable(X20)|cd(X20),inference(split_conjunct,status(thm),[c22])).
+cnf(c39,plain,cd(i2003_11_14_17_20_00819),inference(resolution,status(thm),[c23, c0])).
+cnf(c40,plain,~cc(i2003_11_14_17_20_00819),inference(resolution,status(thm),[c39, c17])).
+cnf(c24,axiom,~cUnsatisfiable(X21)|cc(X21),inference(split_conjunct,status(thm),[c22])).
+cnf(c41,plain,cc(i2003_11_14_17_20_00819),inference(resolution,status(thm),[c24, c0])).
+cnf(c42,plain,$false,inference(resolution,status(thm),[c41, c40])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 13
+# Processed clauses  : 13
+# Factors computed   : 0
+# Resolvents computed: 4
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.285 s
+# System time        : 0.247 s
+# Total time         : 0.531 s

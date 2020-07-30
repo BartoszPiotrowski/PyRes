@@ -1,0 +1,142 @@
+# cnf(c296,axiom,$true).
+# cnf(reflexivity,axiom,X113=X113).
+# cnf(c42,plain,aNaturalNumber0(skolem0003)).
+# cnf(c47,plain,aNaturalNumber0(skolem0004)).
+# cnf(symmetry,axiom,X114!=X115|X115=X114).
+# cnf(c49,plain,aNaturalNumber0(skolem0005)).
+# cnf(c57,plain,aNaturalNumber0(xr)).
+# cnf(c58,plain,aNaturalNumber0(skolem0006)).
+# cnf(c65,plain,isPrime0(xr)).
+# cnf(c71,plain,aNaturalNumber0(xk)).
+# cnf(transitivity,axiom,X116!=X118|X118!=X117|X116=X117).
+# cnf(c77,plain,aNaturalNumber0(skolem0007)).
+# cnf(c81,plain,aNaturalNumber0(skolem0008)).
+# cnf(c103,plain,isPrime0(xp)).
+# cnf(c104,plain,aNaturalNumber0(skolem0009)).
+# cnf(c238,plain,aNaturalNumber0(xn)).
+# cnf(c0,plain,X119!=X120|X121!=X122|sdtpldt0(X119,X121)=sdtpldt0(X120,X122)).
+# cnf(c239,plain,aNaturalNumber0(xm)).
+# cnf(c240,plain,aNaturalNumber0(xp)).
+# cnf(c407,axiom,aNaturalNumber0(sz10)).
+# cnf(c409,axiom,aNaturalNumber0(sz00)).
+# cnf(c1,plain,X124!=X125|X126!=X127|sdtasdt0(X124,X126)=sdtasdt0(X125,X127)).
+# cnf(c14,negated_conjecture,~doDivides0(xp,xn)).
+# cnf(c16,negated_conjecture,~doDivides0(xp,xm)).
+# cnf(c21,plain,~doDivides0(xr,xm)).
+# cnf(c26,plain,~doDivides0(xr,xn)).
+# cnf(c41,plain,xk!=xp).
+# cnf(c2,plain,X128!=X129|X130!=X131|sdtmndt0(X128,X130)=sdtmndt0(X129,X131)).
+# cnf(c44,plain,sdtlseqdt0(xk,xp)).
+# cnf(c60,plain,doDivides0(xr,xk)).
+# cnf(c61,plain,xr!=sz00).
+# cnf(c62,plain,xr!=sz10).
+# cnf(c66,plain,xk!=sz00).
+# cnf(c3,plain,X132!=X133|X134!=X135|sdtsldt0(X132,X134)=sdtsldt0(X133,X135)).
+# cnf(c67,plain,xk!=sz10).
+# cnf(c76,plain,xn!=xp).
+# cnf(c79,plain,sdtlseqdt0(xn,xp)).
+# cnf(c4,plain,X136!=X137|~aNaturalNumber0(X136)|aNaturalNumber0(X137)).
+# cnf(c80,plain,xm!=xp).
+# cnf(c83,plain,sdtlseqdt0(xm,xp)).
+# cnf(c88,plain,~sdtlseqdt0(xp,xm)).
+# cnf(c93,plain,~sdtlseqdt0(xp,xn)).
+# cnf(c99,plain,xp!=sz00).
+# cnf(c5,plain,X138!=X139|X140!=X141|~sdtlseqdt0(X138,X140)|sdtlseqdt0(X139,X141)).
+# cnf(c100,plain,xp!=sz10).
+# cnf(c408,axiom,sz10!=sz00).
+# cnf(c333,axiom,~aNaturalNumber0(X143)|sdtlseqdt0(X143,X143)).
+# cnf(c422,plain,sdtlseqdt0(skolem0004,skolem0004)).
+# cnf(c6,plain,X144!=X145|X146!=X147|~iLess0(X144,X146)|iLess0(X145,X147)).
+# cnf(c423,plain,sdtlseqdt0(xk,xk)).
+# cnf(c424,plain,sdtlseqdt0(skolem0008,skolem0008)).
+# cnf(c425,plain,sdtlseqdt0(skolem0009,skolem0009)).
+# cnf(c426,plain,sdtlseqdt0(xp,xp)).
+# cnf(c427,plain,sdtlseqdt0(xn,xn)).
+# cnf(c7,plain,X148!=X149|X150!=X151|~doDivides0(X148,X150)|doDivides0(X149,X151)).
+# cnf(c428,plain,sdtlseqdt0(sz10,sz10)).
+# cnf(c429,plain,sdtlseqdt0(skolem0007,skolem0007)).
+# cnf(c430,plain,sdtlseqdt0(sz00,sz00)).
+# cnf(c431,plain,sdtlseqdt0(xm,xm)).
+# cnf(c432,plain,sdtlseqdt0(skolem0005,skolem0005)).
+# cnf(c8,plain,X152!=X153|~isPrime0(X152)|isPrime0(X153)).
+# cnf(c433,plain,sdtlseqdt0(xr,xr)).
+# cnf(c434,plain,sdtlseqdt0(skolem0006,skolem0006)).
+# cnf(c435,plain,sdtlseqdt0(skolem0003,skolem0003)).
+# cnf(c30,plain,aNaturalNumber0(skolem0001)|aNaturalNumber0(skolem0002)).
+# cnf(c13,negated_conjecture,~aNaturalNumber0(X155)|xn!=sdtasdt0(xp,X155)).
+# cnf(c32,plain,aNaturalNumber0(skolem0001)|doDivides0(xr,xm)).
+# cnf(c455,plain,aNaturalNumber0(skolem0001)).
+# cnf(c457,plain,sdtlseqdt0(skolem0001,skolem0001)).
+# cnf(c36,plain,doDivides0(xr,xn)|aNaturalNumber0(skolem0002)).
+# cnf(c15,negated_conjecture,~aNaturalNumber0(X158)|xm!=sdtasdt0(xp,X158)).
+# cnf(c459,plain,aNaturalNumber0(skolem0002)).
+# cnf(c462,plain,sdtlseqdt0(skolem0002,skolem0002)).
+# cnf(c43,plain,sdtpldt0(xk,skolem0003)=xp).
+# cnf(c48,plain,sdtpldt0(xr,skolem0004)=xk).
+# cnf(c51,plain,doDivides0(xr,sdtasdt0(xn,xm))).
+# cnf(c20,plain,~aNaturalNumber0(X159)|xm!=sdtasdt0(xr,X159)).
+# cnf(c59,plain,xk=sdtasdt0(xr,skolem0006)).
+# cnf(c78,plain,sdtpldt0(xn,skolem0007)=xp).
+# cnf(c82,plain,sdtpldt0(xm,skolem0008)=xp).
+# cnf(c106,plain,doDivides0(xp,sdtasdt0(xn,xm))).
+# cnf(c25,plain,~aNaturalNumber0(X160)|xn!=sdtasdt0(xr,X160)).
+# cnf(c466,plain,xp=sdtpldt0(xk,skolem0003)).
+# cnf(c474,plain,xk=sdtpldt0(xr,skolem0004)).
+# cnf(c483,plain,sdtasdt0(xr,skolem0006)=xk).
+# cnf(c491,plain,xp=sdtpldt0(xn,skolem0007)).
+# cnf(c499,plain,xp=sdtpldt0(xm,skolem0008)).
+# cnf(c253,plain,~aNaturalNumber0(X161)|~isPrime0(X161)|X161!=sz00).
+# cnf(c546,plain,~aNaturalNumber0(sz00)|~isPrime0(sz00)).
+# cnf(c254,plain,~aNaturalNumber0(X162)|~isPrime0(X162)|X162!=sz10).
+# cnf(c547,plain,~aNaturalNumber0(sz10)|~isPrime0(sz10)).
+# cnf(c34,plain,xn=sdtasdt0(xr,skolem0001)|xm=sdtasdt0(xr,skolem0002)).
+# cnf(c382,axiom,~aNaturalNumber0(X163)|sdtasdt0(X163,sz10)=X163).
+# cnf(c566,plain,sdtasdt0(skolem0004,sz10)=skolem0004).
+# cnf(c567,plain,sdtasdt0(skolem0001,sz10)=skolem0001).
+# cnf(c568,plain,sdtasdt0(xn,sz10)=xn).
+# cnf(c569,plain,sdtasdt0(skolem0007,sz10)=skolem0007).
+# cnf(c35,plain,xn=sdtasdt0(xr,skolem0001)|doDivides0(xr,xm)).
+# cnf(c570,plain,sdtasdt0(skolem0006,sz10)=skolem0006).
+# cnf(c571,plain,sdtasdt0(skolem0003,sz10)=skolem0003).
+# cnf(c572,plain,sdtasdt0(xk,sz10)=xk).
+# cnf(c573,plain,sdtasdt0(xp,sz10)=xp).
+# cnf(c574,plain,sdtasdt0(sz00,sz10)=sz00).
+# cnf(c37,plain,doDivides0(xr,xn)|xm=sdtasdt0(xr,skolem0002)).
+# cnf(c575,plain,sdtasdt0(skolem0008,sz10)=skolem0008).
+# cnf(c576,plain,sdtasdt0(skolem0009,sz10)=skolem0009).
+# cnf(c577,plain,sdtasdt0(xr,sz10)=xr).
+# cnf(c578,plain,sdtasdt0(sz10,sz10)=sz10).
+# cnf(c579,plain,sdtasdt0(xm,sz10)=xm).
+# cnf(c38,plain,doDivides0(xr,xn)|doDivides0(xr,xm)).
+# cnf(c718,plain,doDivides0(xr,xm)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__2698,plain,(~((?[W0]:(aNaturalNumber0(W0)&xm=sdtasdt0(xr,W0)))|doDivides0(xr,xm))),input).
+fof(c17,plain,((![W0]:(~aNaturalNumber0(W0)|xm!=sdtasdt0(xr,W0)))&~doDivides0(xr,xm)),inference(fof_nnf,status(thm),[m__2698])).
+fof(c19,plain,(![X4]:((~aNaturalNumber0(X4)|xm!=sdtasdt0(xr,X4))&~doDivides0(xr,xm))),inference(shift_quantors,status(thm),[fof(c18,plain,((![X4]:(~aNaturalNumber0(X4)|xm!=sdtasdt0(xr,X4)))&~doDivides0(xr,xm)),inference(variable_rename,status(thm),[c17])).])).
+cnf(c21,plain,~doDivides0(xr,xm),inference(split_conjunct,status(thm),[c19])).
+fof(m__2487,plain,(~((?[W0]:(aNaturalNumber0(W0)&xn=sdtasdt0(xr,W0)))|doDivides0(xr,xn))),input).
+fof(c22,plain,((![W0]:(~aNaturalNumber0(W0)|xn!=sdtasdt0(xr,W0)))&~doDivides0(xr,xn)),inference(fof_nnf,status(thm),[m__2487])).
+fof(c24,plain,(![X5]:((~aNaturalNumber0(X5)|xn!=sdtasdt0(xr,X5))&~doDivides0(xr,xn))),inference(shift_quantors,status(thm),[fof(c23,plain,((![X5]:(~aNaturalNumber0(X5)|xn!=sdtasdt0(xr,X5)))&~doDivides0(xr,xn)),inference(variable_rename,status(thm),[c22])).])).
+cnf(c26,plain,~doDivides0(xr,xn),inference(split_conjunct,status(thm),[c24])).
+fof(m__2449,plain,(((?[W0]:(aNaturalNumber0(W0)&xn=sdtasdt0(xr,W0)))&doDivides0(xr,xn))|((?[W0]:(aNaturalNumber0(W0)&xm=sdtasdt0(xr,W0)))&doDivides0(xr,xm))),input).
+fof(c27,plain,(((?[X6]:(aNaturalNumber0(X6)&xn=sdtasdt0(xr,X6)))&doDivides0(xr,xn))|((?[X7]:(aNaturalNumber0(X7)&xm=sdtasdt0(xr,X7)))&doDivides0(xr,xm))),inference(variable_rename,status(thm),[m__2449])).
+fof(c28,plain,(((aNaturalNumber0(skolem0001)&xn=sdtasdt0(xr,skolem0001))&doDivides0(xr,xn))|((aNaturalNumber0(skolem0002)&xm=sdtasdt0(xr,skolem0002))&doDivides0(xr,xm))),inference(skolemize,status(esa),[c27])).
+fof(c29,plain,(((((aNaturalNumber0(skolem0001)|aNaturalNumber0(skolem0002))&(aNaturalNumber0(skolem0001)|xm=sdtasdt0(xr,skolem0002)))&(aNaturalNumber0(skolem0001)|doDivides0(xr,xm)))&(((xn=sdtasdt0(xr,skolem0001)|aNaturalNumber0(skolem0002))&(xn=sdtasdt0(xr,skolem0001)|xm=sdtasdt0(xr,skolem0002)))&(xn=sdtasdt0(xr,skolem0001)|doDivides0(xr,xm))))&(((doDivides0(xr,xn)|aNaturalNumber0(skolem0002))&(doDivides0(xr,xn)|xm=sdtasdt0(xr,skolem0002)))&(doDivides0(xr,xn)|doDivides0(xr,xm)))),inference(distribute,status(thm),[c28])).
+cnf(c38,plain,doDivides0(xr,xn)|doDivides0(xr,xm),inference(split_conjunct,status(thm),[c29])).
+cnf(c718,plain,doDivides0(xr,xm),inference(resolution,status(thm),[c38, c26])).
+cnf(c722,plain,$false,inference(resolution,status(thm),[c718, c21])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 273
+# Processed clauses  : 111
+# Factors computed   : 0
+# Resolvents computed: 312
+# Tautologies deleted: 3
+# Forward subsumed   : 13
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 0.359 s
+# System time        : 0.200 s
+# Total time         : 0.559 s

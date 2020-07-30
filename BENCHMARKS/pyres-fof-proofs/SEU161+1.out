@@ -1,0 +1,49 @@
+# cnf(c12,axiom,$true).
+# cnf(reflexivity,axiom,X11=X11).
+# cnf(c10,negated_conjecture,in(skolem0001,skolem0002)).
+# cnf(c20,axiom,set_union2(X12,X12)=X12).
+# cnf(symmetry,axiom,X13!=X14|X14=X13).
+# cnf(c24,plain,X16=set_union2(X16,X16)).
+# cnf(c17,axiom,~in(X18,X19)|~in(X19,X18)).
+# cnf(c26,plain,~in(skolem0002,skolem0001)).
+# cnf(transitivity,axiom,X20!=X22|X22!=X21|X20=X21).
+# cnf(c22,axiom,set_union2(X25,X26)=set_union2(X26,X25)).
+# cnf(c27,plain,X29!=X30|X29=set_union2(X30,X30)).
+# cnf(c0,plain,X35!=X32|X33!=X34|set_union2(X35,X33)=set_union2(X32,X34)).
+# cnf(c29,plain,X37!=set_union2(X38,X38)|X37=X38).
+# cnf(c1,plain,X43!=X42|singleton(X43)=singleton(X42)).
+# cnf(c44,plain,singleton(X45)=singleton(set_union2(X45,X45))).
+# cnf(c47,plain,singleton(set_union2(X46,X46))=singleton(X46)).
+# cnf(c2,plain,X52!=X49|X50!=X51|~in(X52,X50)|in(X49,X51)).
+# cnf(c11,negated_conjecture,set_union2(singleton(skolem0001),skolem0002)!=skolem0002).
+# cnf(c5,axiom,~in(X53,X54)|set_union2(singleton(X53),X54)=X54).
+# cnf(c59,plain,set_union2(singleton(skolem0001),skolem0002)=skolem0002).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t46_zfmisc_1,conjecture,(![A]:(![B]:(in(A,B)=>set_union2(singleton(A),B)=B))),input).
+fof(c6,negated_conjecture,(~(![A]:(![B]:(in(A,B)=>set_union2(singleton(A),B)=B)))),inference(assume_negation,status(cth),[t46_zfmisc_1])).
+fof(c7,negated_conjecture,(?[A]:(?[B]:(in(A,B)&set_union2(singleton(A),B)!=B))),inference(fof_nnf,status(thm),[c6])).
+fof(c8,negated_conjecture,(?[X4]:(?[X5]:(in(X4,X5)&set_union2(singleton(X4),X5)!=X5))),inference(variable_rename,status(thm),[c7])).
+fof(c9,negated_conjecture,(in(skolem0001,skolem0002)&set_union2(singleton(skolem0001),skolem0002)!=skolem0002),inference(skolemize,status(esa),[c8])).
+cnf(c11,negated_conjecture,set_union2(singleton(skolem0001),skolem0002)!=skolem0002,inference(split_conjunct,status(thm),[c9])).
+cnf(c10,negated_conjecture,in(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c9])).
+fof(l23_zfmisc_1,axiom,(![A]:(![B]:(in(A,B)=>set_union2(singleton(A),B)=B))),input).
+fof(c3,axiom,(![A]:(![B]:(~in(A,B)|set_union2(singleton(A),B)=B))),inference(fof_nnf,status(thm),[l23_zfmisc_1])).
+fof(c4,axiom,(![X2]:(![X3]:(~in(X2,X3)|set_union2(singleton(X2),X3)=X3))),inference(variable_rename,status(thm),[c3])).
+cnf(c5,axiom,~in(X53,X54)|set_union2(singleton(X53),X54)=X54,inference(split_conjunct,status(thm),[c4])).
+cnf(c59,plain,set_union2(singleton(skolem0001),skolem0002)=skolem0002,inference(resolution,status(thm),[c5, c10])).
+cnf(c63,plain,$false,inference(resolution,status(thm),[c59, c11])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 14
+# Processed clauses  : 20
+# Factors computed   : 0
+# Resolvents computed: 43
+# Tautologies deleted: 1
+# Forward subsumed   : 12
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.254 s
+# System time        : 0.180 s
+# Total time         : 0.434 s

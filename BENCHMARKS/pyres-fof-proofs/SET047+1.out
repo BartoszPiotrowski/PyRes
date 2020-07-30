@@ -1,0 +1,83 @@
+# cnf(c4,negated_conjecture,~set_equal(skolem0001,skolem0002)|~set_equal(skolem0002,skolem0001)).
+# cnf(c5,negated_conjecture,set_equal(skolem0001,skolem0002)|set_equal(skolem0002,skolem0001)).
+# cnf(c12,axiom,~set_equal(X11,X13)|~element(X12,X11)|element(X12,X13)).
+# cnf(c13,axiom,~set_equal(X15,X16)|~element(X14,X16)|element(X14,X15)).
+# cnf(c14,axiom,~element(skolem0003(X18,X17),X18)|~element(skolem0003(X18,X17),X17)|set_equal(X18,X17)).
+# cnf(c15,axiom,element(skolem0003(X20,X19),X20)|element(skolem0003(X20,X19),X19)|set_equal(X20,X19)).
+# cnf(c17,plain,element(skolem0003(X21,X21),X21)|set_equal(X21,X21)).
+# cnf(c26,plain,set_equal(X22,X22)|~element(skolem0003(X22,X22),X22)).
+# cnf(c30,plain,set_equal(X23,X23)).
+# cnf(c18,plain,element(skolem0003(X26,X27),X27)|set_equal(X26,X27)|~set_equal(X25,X26)|element(skolem0003(X26,X27),X25)).
+# cnf(c20,plain,element(skolem0003(X36,X38),X38)|set_equal(X36,X38)|~set_equal(X36,X37)|element(skolem0003(X36,X38),X37)).
+# cnf(c21,plain,element(skolem0003(X43,X45),X43)|set_equal(X43,X45)|~set_equal(X44,X45)|element(skolem0003(X43,X45),X44)).
+# cnf(c23,plain,element(skolem0003(X48,X49),X48)|set_equal(X48,X49)|~set_equal(X49,X50)|element(skolem0003(X48,X49),X50)).
+# cnf(c24,plain,element(skolem0003(skolem0002,skolem0001),skolem0002)|element(skolem0003(skolem0002,skolem0001),skolem0001)|~set_equal(skolem0001,skolem0002)).
+# cnf(c31,plain,element(skolem0003(skolem0002,X53),X53)|set_equal(skolem0002,X53)|element(skolem0003(skolem0002,X53),skolem0001)|set_equal(skolem0002,skolem0001)).
+# cnf(c49,plain,element(skolem0003(skolem0002,skolem0001),skolem0001)|set_equal(skolem0002,skolem0001)).
+# cnf(c33,plain,element(skolem0003(X56,X55),X55)|set_equal(X56,X55)|element(skolem0003(X56,X55),X54)|element(skolem0003(X54,X56),X54)|element(skolem0003(X54,X56),X56)).
+# cnf(c68,plain,set_equal(skolem0002,skolem0001)|~element(skolem0003(skolem0002,skolem0001),skolem0002)).
+# cnf(c34,plain,element(skolem0003(skolem0001,X61),X61)|set_equal(skolem0001,X61)|element(skolem0003(skolem0001,X61),skolem0002)|set_equal(skolem0001,skolem0002)).
+# cnf(c71,plain,element(skolem0003(skolem0002,skolem0001),skolem0001)|~set_equal(skolem0001,skolem0002)).
+# cnf(c102,plain,element(skolem0003(skolem0001,skolem0002),skolem0002)|set_equal(skolem0001,skolem0002)).
+# cnf(c35,plain,element(skolem0003(skolem0001,X62),X62)|set_equal(skolem0001,X62)|element(skolem0003(skolem0001,X62),skolem0002)|set_equal(skolem0002,skolem0001)).
+# cnf(c127,plain,set_equal(skolem0001,skolem0002)|~element(skolem0003(skolem0001,skolem0002),skolem0001)).
+# cnf(c67,plain,set_equal(skolem0002,skolem0001)|~set_equal(X63,skolem0001)|element(skolem0003(skolem0002,skolem0001),X63)).
+# cnf(c69,plain,set_equal(skolem0002,skolem0001)|~set_equal(skolem0001,X64)|element(skolem0003(skolem0002,skolem0001),X64)).
+# cnf(c37,plain,element(skolem0003(X65,X66),X66)|set_equal(X65,X66)|element(skolem0003(X65,X66),X67)|element(skolem0003(X65,X67),X65)|element(skolem0003(X65,X67),X67)).
+# cnf(c166,plain,set_equal(skolem0002,skolem0001)|element(skolem0003(skolem0002,skolem0001),skolem0002)).
+# cnf(c207,plain,set_equal(skolem0002,skolem0001)).
+# cnf(c211,plain,~set_equal(skolem0001,skolem0002)).
+# cnf(c38,plain,element(skolem0003(skolem0002,X70),X70)|set_equal(skolem0002,X70)|element(skolem0003(skolem0002,X70),skolem0001)|set_equal(skolem0001,skolem0002)).
+# cnf(c218,plain,element(skolem0003(skolem0001,skolem0002),skolem0002)).
+# cnf(c237,plain,~set_equal(skolem0002,X71)|element(skolem0003(skolem0001,skolem0002),X71)).
+# cnf(c243,plain,element(skolem0003(skolem0001,skolem0002),skolem0001)).
+# cnf(c248,plain,set_equal(skolem0001,skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel43,conjecture,(![X]:(![Y]:(set_equal(X,Y)<=>set_equal(Y,X)))),input).
+fof(c0,negated_conjecture,(~(![X]:(![Y]:(set_equal(X,Y)<=>set_equal(Y,X))))),inference(assume_negation,status(cth),[pel43])).
+fof(c1,negated_conjecture,(?[X]:(?[Y]:((~set_equal(X,Y)|~set_equal(Y,X))&(set_equal(X,Y)|set_equal(Y,X))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:(?[X3]:((~set_equal(X2,X3)|~set_equal(X3,X2))&(set_equal(X2,X3)|set_equal(X3,X2))))),inference(variable_rename,status(thm),[c1])).
+fof(c3,negated_conjecture,((~set_equal(skolem0001,skolem0002)|~set_equal(skolem0002,skolem0001))&(set_equal(skolem0001,skolem0002)|set_equal(skolem0002,skolem0001))),inference(skolemize,status(esa),[c2])).
+cnf(c4,negated_conjecture,~set_equal(skolem0001,skolem0002)|~set_equal(skolem0002,skolem0001),inference(split_conjunct,status(thm),[c3])).
+fof(pel43_1,axiom,(![X]:(![Y]:(set_equal(X,Y)<=>(![Z]:(element(Z,X)<=>element(Z,Y)))))),input).
+fof(c6,axiom,(![X]:(![Y]:((~set_equal(X,Y)|(![Z]:((~element(Z,X)|element(Z,Y))&(~element(Z,Y)|element(Z,X)))))&((?[Z]:((~element(Z,X)|~element(Z,Y))&(element(Z,X)|element(Z,Y))))|set_equal(X,Y))))),inference(fof_nnf,status(thm),[pel43_1])).
+fof(c7,axiom,((![X]:(![Y]:(~set_equal(X,Y)|((![Z]:(~element(Z,X)|element(Z,Y)))&(![Z]:(~element(Z,Y)|element(Z,X)))))))&(![X]:(![Y]:((?[Z]:((~element(Z,X)|~element(Z,Y))&(element(Z,X)|element(Z,Y))))|set_equal(X,Y))))),inference(shift_quantors,status(thm),[c6])).
+fof(c8,axiom,((![X4]:(![X5]:(~set_equal(X4,X5)|((![X6]:(~element(X6,X4)|element(X6,X5)))&(![X7]:(~element(X7,X5)|element(X7,X4)))))))&(![X8]:(![X9]:((?[X10]:((~element(X10,X8)|~element(X10,X9))&(element(X10,X8)|element(X10,X9))))|set_equal(X8,X9))))),inference(variable_rename,status(thm),[c7])).
+fof(c10,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:((~set_equal(X4,X5)|((~element(X6,X4)|element(X6,X5))&(~element(X7,X5)|element(X7,X4))))&(((~element(skolem0003(X8,X9),X8)|~element(skolem0003(X8,X9),X9))&(element(skolem0003(X8,X9),X8)|element(skolem0003(X8,X9),X9)))|set_equal(X8,X9))))))))),inference(shift_quantors,status(thm),[fof(c9,axiom,((![X4]:(![X5]:(~set_equal(X4,X5)|((![X6]:(~element(X6,X4)|element(X6,X5)))&(![X7]:(~element(X7,X5)|element(X7,X4)))))))&(![X8]:(![X9]:(((~element(skolem0003(X8,X9),X8)|~element(skolem0003(X8,X9),X9))&(element(skolem0003(X8,X9),X8)|element(skolem0003(X8,X9),X9)))|set_equal(X8,X9))))),inference(skolemize,status(esa),[c8])).])).
+fof(c11,axiom,(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:(((~set_equal(X4,X5)|(~element(X6,X4)|element(X6,X5)))&(~set_equal(X4,X5)|(~element(X7,X5)|element(X7,X4))))&(((~element(skolem0003(X8,X9),X8)|~element(skolem0003(X8,X9),X9))|set_equal(X8,X9))&((element(skolem0003(X8,X9),X8)|element(skolem0003(X8,X9),X9))|set_equal(X8,X9)))))))))),inference(distribute,status(thm),[c10])).
+cnf(c14,axiom,~element(skolem0003(X18,X17),X18)|~element(skolem0003(X18,X17),X17)|set_equal(X18,X17),inference(split_conjunct,status(thm),[c11])).
+cnf(c5,negated_conjecture,set_equal(skolem0001,skolem0002)|set_equal(skolem0002,skolem0001),inference(split_conjunct,status(thm),[c3])).
+cnf(c13,axiom,~set_equal(X15,X16)|~element(X14,X16)|element(X14,X15),inference(split_conjunct,status(thm),[c11])).
+cnf(c15,axiom,element(skolem0003(X20,X19),X20)|element(skolem0003(X20,X19),X19)|set_equal(X20,X19),inference(split_conjunct,status(thm),[c11])).
+cnf(c18,plain,element(skolem0003(X26,X27),X27)|set_equal(X26,X27)|~set_equal(X25,X26)|element(skolem0003(X26,X27),X25),inference(resolution,status(thm),[c15, c13])).
+cnf(c31,plain,element(skolem0003(skolem0002,X53),X53)|set_equal(skolem0002,X53)|element(skolem0003(skolem0002,X53),skolem0001)|set_equal(skolem0002,skolem0001),inference(resolution,status(thm),[c18, c5])).
+cnf(c49,plain,element(skolem0003(skolem0002,skolem0001),skolem0001)|set_equal(skolem0002,skolem0001),inference(factor,status(thm),[c31])).
+cnf(c68,plain,set_equal(skolem0002,skolem0001)|~element(skolem0003(skolem0002,skolem0001),skolem0002),inference(resolution,status(thm),[c49, c14])).
+cnf(c12,axiom,~set_equal(X11,X13)|~element(X12,X11)|element(X12,X13),inference(split_conjunct,status(thm),[c11])).
+cnf(c69,plain,set_equal(skolem0002,skolem0001)|~set_equal(skolem0001,X64)|element(skolem0003(skolem0002,skolem0001),X64),inference(resolution,status(thm),[c49, c12])).
+cnf(c166,plain,set_equal(skolem0002,skolem0001)|element(skolem0003(skolem0002,skolem0001),skolem0002),inference(resolution,status(thm),[c69, c5])).
+cnf(c207,plain,set_equal(skolem0002,skolem0001),inference(resolution,status(thm),[c166, c68])).
+cnf(c211,plain,~set_equal(skolem0001,skolem0002),inference(resolution,status(thm),[c207, c4])).
+cnf(c34,plain,element(skolem0003(skolem0001,X61),X61)|set_equal(skolem0001,X61)|element(skolem0003(skolem0001,X61),skolem0002)|set_equal(skolem0001,skolem0002),inference(resolution,status(thm),[c18, c5])).
+cnf(c102,plain,element(skolem0003(skolem0001,skolem0002),skolem0002)|set_equal(skolem0001,skolem0002),inference(factor,status(thm),[c34])).
+cnf(c127,plain,set_equal(skolem0001,skolem0002)|~element(skolem0003(skolem0001,skolem0002),skolem0001),inference(resolution,status(thm),[c102, c14])).
+cnf(c218,plain,element(skolem0003(skolem0001,skolem0002),skolem0002),inference(resolution,status(thm),[c211, c102])).
+cnf(c237,plain,~set_equal(skolem0002,X71)|element(skolem0003(skolem0001,skolem0002),X71),inference(resolution,status(thm),[c218, c12])).
+cnf(c243,plain,element(skolem0003(skolem0001,skolem0002),skolem0001),inference(resolution,status(thm),[c237, c207])).
+cnf(c248,plain,set_equal(skolem0001,skolem0002),inference(resolution,status(thm),[c243, c127])).
+cnf(c250,plain,$false,inference(resolution,status(thm),[c248, c211])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 34
+# Factors computed   : 19
+# Resolvents computed: 219
+# Tautologies deleted: 3
+# Forward subsumed   : 21
+# Backward subsumed  : 17
+
+# -------- CPU Time ---------
+# User time          : 0.473 s
+# System time        : 0.205 s
+# Total time         : 0.677 s

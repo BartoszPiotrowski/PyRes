@@ -1,0 +1,154 @@
+# cnf(c8,axiom,subset(X28,X28)).
+# cnf(c4,negated_conjecture,subset(skolem0001,skolem0002)).
+# cnf(c5,negated_conjecture,subset(skolem0003,skolem0004)).
+# cnf(c16,axiom,member(skolem0005(X30,X29),X30)|subset(X30,X29)).
+# cnf(c17,axiom,~member(skolem0005(X32,X31),X31)|subset(X32,X31)).
+# cnf(c6,negated_conjecture,~subset(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003))).
+# cnf(c24,axiom,~member(X36,difference(X35,X34))|member(X36,X35)).
+# cnf(c25,axiom,~member(X39,difference(X38,X37))|~member(X39,X37)).
+# cnf(c15,axiom,~subset(X42,X40)|~member(X41,X42)|member(X41,X40)).
+# cnf(c39,axiom,~subset(X44,X45)|~subset(X45,X43)|subset(X44,X43)).
+# cnf(c26,axiom,~member(X47,X46)|member(X47,X48)|member(X47,difference(X46,X48))).
+# cnf(c45,plain,~subset(X51,skolem0001)|subset(X51,skolem0002)).
+# cnf(c47,plain,~subset(X52,skolem0003)|subset(X52,skolem0004)).
+# cnf(c31,axiom,~subset(X53,X54)|subset(difference(X55,X54),difference(X55,X53))).
+# cnf(c54,plain,subset(difference(X58,skolem0002),difference(X58,skolem0001))).
+# cnf(c56,plain,subset(difference(X59,skolem0004),difference(X59,skolem0003))).
+# cnf(c50,plain,subset(X60,skolem0002)|member(skolem0005(X60,skolem0001),X60)).
+# cnf(c36,axiom,~subset(X62,X61)|subset(difference(X62,X63),difference(X61,X63))).
+# cnf(c69,plain,subset(difference(skolem0001,X66),difference(skolem0002,X66))).
+# cnf(c74,plain,subset(difference(skolem0003,X67),difference(skolem0004,X67))).
+# cnf(c52,plain,subset(X68,skolem0004)|member(skolem0005(X68,skolem0003),X68)).
+# cnf(c41,plain,member(skolem0005(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),difference(skolem0001,skolem0004))).
+# cnf(c44,plain,~subset(X69,X70)|member(skolem0005(X69,X71),X70)|subset(X69,X71)).
+# cnf(c94,plain,member(skolem0005(skolem0001,X74),skolem0002)|subset(skolem0001,X74)).
+# cnf(c102,plain,member(skolem0005(skolem0003,X75),skolem0004)|subset(skolem0003,X75)).
+# cnf(c42,plain,member(skolem0005(difference(X78,X77),X76),X78)|subset(difference(X78,X77),X76)).
+# cnf(c123,plain,subset(difference(X80,X79),X80)).
+# cnf(c134,plain,subset(difference(skolem0001,X81),skolem0002)).
+# cnf(c135,plain,subset(difference(skolem0003,X82),skolem0004)).
+# cnf(c138,plain,~subset(X83,difference(X85,X84))|subset(X83,X85)).
+# cnf(c43,plain,~member(skolem0005(difference(X88,X86),X87),X86)|subset(difference(X88,X86),X87)).
+# cnf(c158,plain,subset(difference(X91,X91),X92)).
+# cnf(c46,plain,~subset(X97,X98)|subset(X97,X99)|member(skolem0005(X98,X99),X98)).
+# cnf(c157,plain,subset(difference(difference(X105,X104),X106),X105)).
+# cnf(c49,plain,member(skolem0005(X107,X108),X109)|member(skolem0005(X107,X108),difference(X107,X109))|subset(X107,X108)).
+# cnf(c164,plain,~subset(X110,difference(X111,X111))|subset(X110,X112)).
+# cnf(c211,plain,subset(difference(skolem0001,skolem0002),X117)).
+# cnf(c215,plain,subset(difference(skolem0003,skolem0004),X118)).
+# cnf(c55,plain,subset(difference(X121,X119),difference(X121,X120))|member(skolem0005(X120,X119),X120)).
+# cnf(c58,plain,subset(difference(X127,difference(X128,skolem0001)),difference(X127,difference(X128,skolem0002)))).
+# cnf(c218,plain,subset(difference(difference(X131,X131),X132),X130)).
+# cnf(c59,plain,~subset(X133,difference(X134,skolem0002))|subset(X133,difference(X134,skolem0001))).
+# cnf(c60,plain,subset(difference(X145,difference(X146,skolem0003)),difference(X145,difference(X146,skolem0004)))).
+# cnf(c183,plain,subset(difference(difference(skolem0001,X155),X156),skolem0002)).
+# cnf(c61,plain,~subset(X157,difference(X158,skolem0004))|subset(X157,difference(X158,skolem0003))).
+# cnf(c184,plain,subset(difference(difference(skolem0003,X161),X162),skolem0004)).
+# cnf(c136,plain,subset(difference(X166,X165),difference(X166,difference(X165,X167)))).
+# cnf(c62,plain,member(skolem0005(X169,skolem0001),X169)|subset(difference(X168,skolem0002),difference(X168,X169))).
+# cnf(c321,plain,subset(difference(difference(X174,X172),X174),X173)).
+# cnf(c63,plain,member(skolem0005(X184,skolem0001),X184)|~subset(X183,X184)|subset(X183,skolem0002)).
+# cnf(c137,plain,subset(difference(difference(X187,X189),X188),difference(X187,X188))).
+# cnf(c142,plain,~subset(X196,difference(skolem0001,X197))|subset(X196,skolem0002)).
+# cnf(c64,plain,subset(X199,skolem0002)|member(skolem0005(X199,skolem0001),X198)|member(skolem0005(X199,skolem0001),difference(X199,X198))).
+# cnf(c66,plain,subset(X204,skolem0002)|~subset(X204,X203)|member(skolem0005(X204,skolem0001),X203)).
+# cnf(c67,plain,subset(difference(X212,X211),skolem0002)|~member(skolem0005(difference(X212,X211),skolem0001),X211)).
+# cnf(c146,plain,~subset(X215,difference(skolem0003,X216))|subset(X215,skolem0004)).
+# cnf(c68,plain,subset(difference(X221,X220),skolem0002)|member(skolem0005(difference(X221,X220),skolem0001),X221)).
+# cnf(c70,plain,subset(difference(difference(X224,skolem0004),X223),difference(difference(X224,skolem0003),X223))).
+# cnf(c161,plain,subset(difference(X235,X234),difference(X235,difference(X233,X233)))).
+# cnf(c71,plain,subset(difference(X237,X236),difference(skolem0002,X236))|member(skolem0005(X237,skolem0001),X237)).
+# cnf(c72,plain,subset(difference(X248,X249),difference(X250,X249))|member(skolem0005(X248,X250),X248)).
+# cnf(c186,plain,subset(difference(difference(difference(X253,X252),X251),X254),X253)).
+# cnf(c214,plain,subset(difference(difference(difference(X256,X256),X255),X258),X257)).
+# cnf(c229,plain,~subset(X259,difference(skolem0001,skolem0002))|subset(X259,X260)).
+# cnf(c75,plain,subset(difference(difference(X265,skolem0002),X264),difference(difference(X265,skolem0001),X264))).
+# cnf(c587,plain,subset(difference(difference(skolem0001,X274),skolem0002),X275)).
+# cnf(c76,plain,subset(difference(X277,difference(skolem0002,X276)),difference(X277,difference(skolem0001,X276)))).
+# cnf(c591,plain,subset(difference(difference(skolem0001,skolem0002),X281),X280)).
+# cnf(c77,plain,subset(difference(difference(skolem0001,X289),X288),difference(difference(skolem0002,X289),X288))).
+# cnf(c238,plain,~subset(X296,difference(skolem0003,skolem0004))|subset(X296,X297)).
+# cnf(c78,plain,~subset(X300,difference(skolem0001,X301))|subset(X300,difference(skolem0002,X301))).
+# cnf(c79,plain,subset(difference(X312,difference(skolem0004,X311)),difference(X312,difference(skolem0003,X311)))).
+# cnf(c672,plain,subset(difference(difference(skolem0003,X319),skolem0004),X320)).
+# cnf(c676,plain,subset(difference(difference(skolem0003,skolem0004),X321),X322)).
+# cnf(c80,plain,subset(difference(difference(skolem0003,X324),X323),difference(difference(skolem0004,X324),X323))).
+# cnf(c81,plain,~subset(X334,difference(skolem0003,X335))|subset(X334,difference(skolem0004,X335))).
+# cnf(c82,plain,member(skolem0005(X347,skolem0003),X347)|subset(difference(X346,skolem0004),difference(X346,X347))).
+# cnf(c83,plain,member(skolem0005(X354,skolem0003),X354)|subset(difference(X354,X355),difference(skolem0004,X355))).
+# cnf(c84,plain,member(skolem0005(X362,skolem0003),X362)|~subset(X361,X362)|subset(X361,skolem0004)).
+# cnf(c85,plain,subset(X378,skolem0004)|member(skolem0005(X378,skolem0003),X377)|member(skolem0005(X378,skolem0003),difference(X378,X377))).
+# cnf(c87,plain,subset(X385,skolem0004)|~subset(X385,X384)|member(skolem0005(X385,skolem0003),X384)).
+# cnf(c88,plain,subset(difference(X392,X391),skolem0004)|~member(skolem0005(difference(X392,X391),skolem0003),X391)).
+# cnf(c89,plain,subset(difference(X402,X401),skolem0004)|member(skolem0005(difference(X402,X401),skolem0003),X402)).
+# cnf(c90,plain,member(skolem0005(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),X408)|member(skolem0005(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),difference(difference(skolem0001,skolem0004),X408))).
+# cnf(c91,plain,~subset(difference(skolem0001,skolem0004),X414)|member(skolem0005(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),X414)).
+# cnf(c150,plain,subset(X418,X420)|member(skolem0005(X418,difference(X420,X419)),X418)).
+# cnf(c166,plain,subset(skolem0001,X421)|member(skolem0005(skolem0002,X421),skolem0002)).
+# cnf(c92,plain,~member(skolem0005(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),skolem0004)).
+# cnf(c178,plain,subset(skolem0003,X425)|member(skolem0005(skolem0004,X425),skolem0004)).
+# cnf(c182,plain,subset(difference(X427,X428),X426)|member(skolem0005(X427,X426),X427)).
+# cnf(c93,plain,member(skolem0005(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),skolem0001)).
+# cnf(c188,plain,~subset(X431,difference(difference(X434,X432),X433))|subset(X431,X434)).
+# cnf(c95,plain,member(skolem0005(difference(X439,skolem0004),X440),difference(X439,skolem0003))|subset(difference(X439,skolem0004),X440)).
+# cnf(c96,plain,member(skolem0005(X456,X457),skolem0002)|subset(X456,X457)|member(skolem0005(X456,skolem0001),X456)).
+# cnf(c97,plain,member(skolem0005(X468,X470),X469)|subset(X468,X470)|member(skolem0005(X468,X469),X468)).
+# cnf(c98,plain,member(skolem0005(X481,X480),skolem0004)|subset(X481,X480)|member(skolem0005(X481,skolem0003),X481)).
+# cnf(c99,plain,member(skolem0005(difference(skolem0001,X495),X496),difference(skolem0002,X495))|subset(difference(skolem0001,X495),X496)).
+# cnf(c192,plain,member(skolem0005(X504,X505),difference(X504,X505))|subset(X504,X505)).
+# cnf(c100,plain,member(skolem0005(difference(skolem0003,X506),X507),difference(skolem0004,X506))|subset(difference(skolem0003,X506),X507)).
+# cnf(c219,plain,subset(X513,X514)|member(skolem0005(X513,difference(X515,X515)),X513)).
+# cnf(c103,plain,member(skolem0005(difference(X520,skolem0002),X519),difference(X520,skolem0001))|subset(difference(X520,skolem0002),X519)).
+# cnf(c246,plain,member(skolem0005(X523,X524),X523)|subset(difference(X523,X524),X522)).
+# cnf(c1465,plain,member(skolem0005(skolem0001,skolem0004),skolem0001)).
+# cnf(c104,plain,subset(skolem0001,X529)|member(skolem0005(skolem0001,X529),X530)|member(skolem0005(skolem0001,X529),difference(skolem0002,X530))).
+# cnf(c266,plain,~subset(X531,difference(difference(X534,X534),X533))|subset(X531,X532)).
+# cnf(c106,plain,subset(skolem0001,X542)|~subset(skolem0002,X543)|member(skolem0005(skolem0001,X542),X543)).
+# cnf(c108,plain,member(skolem0005(skolem0001,skolem0003),skolem0002)|subset(skolem0001,skolem0004)).
+# cnf(c109,plain,member(skolem0005(skolem0001,X580),skolem0002)|subset(difference(X581,X580),difference(X581,skolem0001))).
+# cnf(c280,plain,subset(difference(skolem0003,skolem0002),difference(skolem0004,skolem0001))).
+# cnf(c110,plain,member(skolem0005(skolem0001,X593),skolem0002)|subset(difference(skolem0001,X594),difference(X593,X594))).
+# cnf(c297,plain,subset(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_th48,conjecture,(![B]:(![C]:(![D]:(![E]:((subset(B,C)&subset(D,E))=>subset(difference(B,E),difference(C,D))))))),input).
+fof(c0,negated_conjecture,(~(![B]:(![C]:(![D]:(![E]:((subset(B,C)&subset(D,E))=>subset(difference(B,E),difference(C,D)))))))),inference(assume_negation,status(cth),[prove_th48])).
+fof(c1,negated_conjecture,(?[B]:(?[C]:(?[D]:(?[E]:((subset(B,C)&subset(D,E))&~subset(difference(B,E),difference(C,D))))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:(?[X3]:(?[X4]:(?[X5]:((subset(X2,X3)&subset(X4,X5))&~subset(difference(X2,X5),difference(X3,X4))))))),inference(variable_rename,status(thm),[c1])).
+fof(c3,negated_conjecture,((subset(skolem0001,skolem0002)&subset(skolem0003,skolem0004))&~subset(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003))),inference(skolemize,status(esa),[c2])).
+cnf(c6,negated_conjecture,~subset(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),inference(split_conjunct,status(thm),[c3])).
+cnf(c4,negated_conjecture,subset(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c3])).
+fof(difference_subset1,axiom,(![B]:(![C]:(![D]:(subset(B,C)=>subset(difference(B,D),difference(C,D)))))),input).
+fof(c32,axiom,(![B]:(![C]:(![D]:(~subset(B,C)|subset(difference(B,D),difference(C,D)))))),inference(fof_nnf,status(thm),[difference_subset1])).
+fof(c33,axiom,(![B]:(![C]:(~subset(B,C)|(![D]:subset(difference(B,D),difference(C,D)))))),inference(shift_quantors,status(thm),[c32])).
+fof(c35,axiom,(![X22]:(![X23]:(![X24]:(~subset(X22,X23)|subset(difference(X22,X24),difference(X23,X24)))))),inference(shift_quantors,status(thm),[fof(c34,axiom,(![X22]:(![X23]:(~subset(X22,X23)|(![X24]:subset(difference(X22,X24),difference(X23,X24)))))),inference(variable_rename,status(thm),[c33])).])).
+cnf(c36,axiom,~subset(X62,X61)|subset(difference(X62,X63),difference(X61,X63)),inference(split_conjunct,status(thm),[c35])).
+cnf(c69,plain,subset(difference(skolem0001,X66),difference(skolem0002,X66)),inference(resolution,status(thm),[c36, c4])).
+fof(transitivity_of_subset,axiom,(![B]:(![C]:(![D]:((subset(B,C)&subset(C,D))=>subset(B,D))))),input).
+fof(c37,axiom,(![B]:(![C]:(![D]:((~subset(B,C)|~subset(C,D))|subset(B,D))))),inference(fof_nnf,status(thm),[transitivity_of_subset])).
+fof(c38,axiom,(![X25]:(![X26]:(![X27]:((~subset(X25,X26)|~subset(X26,X27))|subset(X25,X27))))),inference(variable_rename,status(thm),[c37])).
+cnf(c39,axiom,~subset(X44,X45)|~subset(X45,X43)|subset(X44,X43),inference(split_conjunct,status(thm),[c38])).
+cnf(c5,negated_conjecture,subset(skolem0003,skolem0004),inference(split_conjunct,status(thm),[c3])).
+fof(difference_subset2,axiom,(![B]:(![C]:(![D]:(subset(B,C)=>subset(difference(D,C),difference(D,B)))))),input).
+fof(c27,axiom,(![B]:(![C]:(![D]:(~subset(B,C)|subset(difference(D,C),difference(D,B)))))),inference(fof_nnf,status(thm),[difference_subset2])).
+fof(c28,axiom,(![B]:(![C]:(~subset(B,C)|(![D]:subset(difference(D,C),difference(D,B)))))),inference(shift_quantors,status(thm),[c27])).
+fof(c30,axiom,(![X19]:(![X20]:(![X21]:(~subset(X19,X20)|subset(difference(X21,X20),difference(X21,X19)))))),inference(shift_quantors,status(thm),[fof(c29,axiom,(![X19]:(![X20]:(~subset(X19,X20)|(![X21]:subset(difference(X21,X20),difference(X21,X19)))))),inference(variable_rename,status(thm),[c28])).])).
+cnf(c31,axiom,~subset(X53,X54)|subset(difference(X55,X54),difference(X55,X53)),inference(split_conjunct,status(thm),[c30])).
+cnf(c56,plain,subset(difference(X59,skolem0004),difference(X59,skolem0003)),inference(resolution,status(thm),[c31, c5])).
+cnf(c61,plain,~subset(X157,difference(X158,skolem0004))|subset(X157,difference(X158,skolem0003)),inference(resolution,status(thm),[c56, c39])).
+cnf(c297,plain,subset(difference(skolem0001,skolem0004),difference(skolem0002,skolem0003)),inference(resolution,status(thm),[c61, c69])).
+cnf(c1645,plain,$false,inference(resolution,status(thm),[c297, c6])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 13
+# Processed clauses  : 111
+# Factors computed   : 3
+# Resolvents computed: 1604
+# Tautologies deleted: 1
+# Forward subsumed   : 214
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.585 s
+# System time        : 0.260 s
+# Total time         : 0.845 s

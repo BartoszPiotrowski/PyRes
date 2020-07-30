@@ -1,0 +1,190 @@
+# cnf(reflexivity,axiom,X23=X23).
+# cnf(c12,negated_conjecture,environment(skolem0001)).
+# cnf(symmetry,axiom,X24!=X25|X25=X24).
+# cnf(c29,axiom,~greater(X28,X27)|greater_or_equal(X28,X27)).
+# cnf(transitivity,axiom,X29!=X30|X30!=X31|X29=X31).
+# cnf(c30,axiom,X33!=X32|greater_or_equal(X33,X32)).
+# cnf(c56,plain,greater_or_equal(X34,X34)).
+# cnf(c3,plain,X37!=X38|~environment(X37)|environment(X38)).
+# cnf(c0,plain,X40!=X43|X41!=X42|number_of_organizations(X40,X41)=number_of_organizations(X43,X42)).
+# cnf(c13,negated_conjecture,in_environment(skolem0001,appear(an_organisation,skolem0001))).
+# cnf(c28,axiom,~greater_or_equal(X45,X44)|greater(X45,X44)|X45=X44).
+# cnf(c33,axiom,~greater(X47,X49)|~greater(X49,X48)|greater(X47,X48)).
+# cnf(c14,negated_conjecture,appear(an_organisation,skolem0001)!=appear(first_movers,skolem0001)).
+# cnf(c1,plain,X50!=X53|X51!=X52|appear(X50,X51)=appear(X53,X52)).
+# cnf(c58,plain,X56!=X54|number_of_organizations(X56,X55)=number_of_organizations(X54,X55)).
+# cnf(c60,plain,X60!=X61|appear(X60,X59)=appear(X61,X59)).
+# cnf(c36,axiom,~environment(X64)|greater_or_equal(appear(first_movers,X64),appear(an_organisation,X64))).
+# cnf(c2,plain,X65!=X68|X66!=X67|cardinality_at_time(X65,X66)=cardinality_at_time(X68,X67)).
+# cnf(c63,plain,greater_or_equal(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))).
+# cnf(c64,plain,X70!=X71|cardinality_at_time(X70,X69)=cardinality_at_time(X71,X69)).
+# cnf(c4,plain,X74!=X77|X75!=X76|~greater(X74,X75)|greater(X77,X76)).
+# cnf(c6,plain,X78!=X81|X79!=X80|~in_environment(X78,X79)|in_environment(X81,X80)).
+# cnf(c5,plain,X84!=X82|X85!=X86|X83!=X87|~subpopulation(X84,X85,X83)|subpopulation(X82,X86,X87)).
+# cnf(c7,plain,X88!=X91|X89!=X90|~greater_or_equal(X88,X89)|greater_or_equal(X91,X90)).
+# cnf(c69,plain,X94!=X93|X94!=X92|greater_or_equal(X93,X92)).
+# cnf(c70,plain,X95!=X96|greater_or_equal(X96,X95)).
+# cnf(c17,plain,~environment(X98)|greater(appear(efficient_producers,e),appear(first_movers,X98))).
+# cnf(c22,plain,~environment(X100)|~subpopulation(X101,X100,X99)|~greater(cardinality_at_time(X101,X99),zero)|X101=efficient_producers|X101=first_movers).
+# cnf(c72,plain,greater(appear(efficient_producers,e),appear(first_movers,skolem0001))).
+# cnf(c73,plain,greater_or_equal(appear(efficient_producers,e),appear(first_movers,skolem0001))).
+# cnf(c53,axiom,~environment(X102)|greater(number_of_organizations(e,appear(an_organisation,X102)),zero)).
+# cnf(c78,plain,greater(number_of_organizations(e,appear(an_organisation,skolem0001)),zero)).
+# cnf(c79,plain,greater_or_equal(number_of_organizations(e,appear(an_organisation,skolem0001)),zero)).
+# cnf(c40,axiom,~environment(X103)|~in_environment(X103,X104)|~greater(appear(first_movers,X103),X104)|~greater(cardinality_at_time(first_movers,X104),zero)).
+# cnf(c67,plain,skolem0001!=X106|appear(an_organisation,skolem0001)!=X105|in_environment(X106,X105)).
+# cnf(c84,plain,skolem0001!=X107|in_environment(X107,appear(an_organisation,skolem0001))).
+# cnf(c74,plain,~greater(X108,appear(efficient_producers,e))|greater(X108,appear(first_movers,skolem0001))).
+# cnf(c80,plain,~greater(X109,number_of_organizations(e,appear(an_organisation,skolem0001)))|greater(X109,zero)).
+# cnf(c44,axiom,~environment(X110)|~in_environment(X110,X111)|~greater(appear(efficient_producers,X110),X111)|~greater(cardinality_at_time(efficient_producers,X111),zero)).
+# cnf(c49,axiom,~environment(X112)|~greater(number_of_organizations(X112,X113),zero)|subpopulation(skolem0002(X112,X113),X112,X113)).
+# cnf(c50,axiom,~environment(X114)|~greater(number_of_organizations(X114,X115),zero)|greater(cardinality_at_time(skolem0002(X114,X115),X115),zero)).
+# cnf(c68,plain,appear(first_movers,skolem0001)!=X117|appear(an_organisation,skolem0001)!=X116|greater_or_equal(X117,X116)).
+# cnf(c88,plain,appear(first_movers,skolem0001)!=X118|greater_or_equal(X118,appear(an_organisation,skolem0001))).
+# cnf(c65,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))|appear(first_movers,skolem0001)=appear(an_organisation,skolem0001)).
+# cnf(c75,plain,appear(efficient_producers,e)!=X119|appear(first_movers,skolem0001)!=X120|greater(X119,X120)).
+# cnf(c107,plain,appear(efficient_producers,e)!=X121|greater(X121,appear(first_movers,skolem0001))).
+# cnf(c76,plain,appear(efficient_producers,e)!=X123|appear(first_movers,skolem0001)!=X122|greater_or_equal(X123,X122)).
+# cnf(c110,plain,appear(efficient_producers,e)!=X124|greater_or_equal(X124,appear(first_movers,skolem0001))).
+# cnf(c81,plain,number_of_organizations(e,appear(an_organisation,skolem0001))!=X125|zero!=X126|greater(X125,X126)).
+# cnf(c112,plain,zero!=X127|greater(number_of_organizations(e,appear(an_organisation,skolem0001)),X127)).
+# cnf(c82,plain,number_of_organizations(e,appear(an_organisation,skolem0001))!=X129|zero!=X128|greater_or_equal(X129,X128)).
+# cnf(c114,plain,zero!=X130|greater_or_equal(number_of_organizations(e,appear(an_organisation,skolem0001)),X130)).
+# cnf(c86,plain,~environment(e)|subpopulation(skolem0002(e,appear(an_organisation,skolem0001)),e,appear(an_organisation,skolem0001))).
+# cnf(c87,plain,~environment(e)|greater(cardinality_at_time(skolem0002(e,appear(an_organisation,skolem0001)),appear(an_organisation,skolem0001)),zero)).
+# cnf(c91,plain,appear(first_movers,skolem0001)=appear(an_organisation,skolem0001)|appear(first_movers,skolem0001)!=X131|appear(an_organisation,skolem0001)!=X132|greater(X131,X132)).
+# cnf(c95,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))|greater_or_equal(appear(an_organisation,skolem0001),appear(first_movers,skolem0001))).
+# cnf(c105,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))|appear(an_organisation,skolem0001)=appear(first_movers,skolem0001)).
+# cnf(c129,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))).
+# cnf(c92,plain,appear(first_movers,skolem0001)=appear(an_organisation,skolem0001)|~greater(X133,appear(first_movers,skolem0001))|greater(X133,appear(an_organisation,skolem0001))).
+# cnf(c143,plain,~greater(X134,appear(first_movers,skolem0001))|greater(X134,appear(an_organisation,skolem0001))).
+# cnf(c145,plain,greater(appear(efficient_producers,e),appear(an_organisation,skolem0001))).
+# cnf(c146,plain,greater_or_equal(appear(efficient_producers,e),appear(an_organisation,skolem0001))).
+# cnf(c148,plain,~greater(X135,appear(efficient_producers,e))|greater(X135,appear(an_organisation,skolem0001))).
+# cnf(c142,plain,appear(first_movers,skolem0001)!=X137|appear(an_organisation,skolem0001)!=X138|greater(X137,X138)).
+# cnf(c151,plain,appear(first_movers,skolem0001)!=X139|greater(X139,appear(an_organisation,skolem0001))).
+# cnf(c147,plain,appear(efficient_producers,e)!=X140|appear(an_organisation,skolem0001)!=X141|greater(X140,X141)).
+# cnf(c153,plain,appear(efficient_producers,e)!=X142|greater(X142,appear(an_organisation,skolem0001))).
+# cnf(c149,plain,appear(efficient_producers,e)!=X145|appear(an_organisation,skolem0001)!=X144|greater_or_equal(X145,X144)).
+# cnf(c155,plain,appear(efficient_producers,e)!=X146|greater_or_equal(X146,appear(an_organisation,skolem0001))).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+cnf(reflexivity,axiom,X23=X23,eq_axiom).
+cnf(c7,plain,X88!=X91|X89!=X90|~greater_or_equal(X88,X89)|greater_or_equal(X91,X90),eq_axiom).
+fof(mp_greater_or_equal,axiom,(![X]:(![Y]:(greater_or_equal(X,Y)<=>(greater(X,Y)|X=Y)))),input).
+fof(c23,axiom,(![X]:(![Y]:((~greater_or_equal(X,Y)|(greater(X,Y)|X=Y))&((~greater(X,Y)&X!=Y)|greater_or_equal(X,Y))))),inference(fof_nnf,status(thm),[mp_greater_or_equal])).
+fof(c24,axiom,((![X]:(![Y]:(~greater_or_equal(X,Y)|(greater(X,Y)|X=Y))))&(![X]:(![Y]:((~greater(X,Y)&X!=Y)|greater_or_equal(X,Y))))),inference(shift_quantors,status(thm),[c23])).
+fof(c26,axiom,(![X7]:(![X8]:(![X9]:(![X10]:((~greater_or_equal(X7,X8)|(greater(X7,X8)|X7=X8))&((~greater(X9,X10)&X9!=X10)|greater_or_equal(X9,X10))))))),inference(shift_quantors,status(thm),[fof(c25,axiom,((![X7]:(![X8]:(~greater_or_equal(X7,X8)|(greater(X7,X8)|X7=X8))))&(![X9]:(![X10]:((~greater(X9,X10)&X9!=X10)|greater_or_equal(X9,X10))))),inference(variable_rename,status(thm),[c24])).])).
+fof(c27,axiom,(![X7]:(![X8]:(![X9]:(![X10]:((~greater_or_equal(X7,X8)|(greater(X7,X8)|X7=X8))&((~greater(X9,X10)|greater_or_equal(X9,X10))&(X9!=X10|greater_or_equal(X9,X10)))))))),inference(distribute,status(thm),[c26])).
+cnf(c29,axiom,~greater(X28,X27)|greater_or_equal(X28,X27),inference(split_conjunct,status(thm),[c27])).
+fof(prove_l13,conjecture,(![E]:((environment(E)&in_environment(E,appear(an_organisation,E)))=>appear(an_organisation,E)=appear(first_movers,E))),input).
+fof(c8,negated_conjecture,(~(![E]:((environment(E)&in_environment(E,appear(an_organisation,E)))=>appear(an_organisation,E)=appear(first_movers,E)))),inference(assume_negation,status(cth),[prove_l13])).
+fof(c9,negated_conjecture,(?[E]:((environment(E)&in_environment(E,appear(an_organisation,E)))&appear(an_organisation,E)!=appear(first_movers,E))),inference(fof_nnf,status(thm),[c8])).
+fof(c10,negated_conjecture,(?[X2]:((environment(X2)&in_environment(X2,appear(an_organisation,X2)))&appear(an_organisation,X2)!=appear(first_movers,X2))),inference(variable_rename,status(thm),[c9])).
+fof(c11,negated_conjecture,((environment(skolem0001)&in_environment(skolem0001,appear(an_organisation,skolem0001)))&appear(an_organisation,skolem0001)!=appear(first_movers,skolem0001)),inference(skolemize,status(esa),[c10])).
+cnf(c12,negated_conjecture,environment(skolem0001),inference(split_conjunct,status(thm),[c11])).
+fof(a13,plain,(![E]:(environment(E)=>greater(appear(efficient_producers,e),appear(first_movers,E)))),input).
+fof(c15,plain,(![E]:(~environment(E)|greater(appear(efficient_producers,e),appear(first_movers,E)))),inference(fof_nnf,status(thm),[a13])).
+fof(c16,plain,(![X3]:(~environment(X3)|greater(appear(efficient_producers,e),appear(first_movers,X3)))),inference(variable_rename,status(thm),[c15])).
+cnf(c17,plain,~environment(X98)|greater(appear(efficient_producers,e),appear(first_movers,X98)),inference(split_conjunct,status(thm),[c16])).
+cnf(c72,plain,greater(appear(efficient_producers,e),appear(first_movers,skolem0001)),inference(resolution,status(thm),[c17, c12])).
+fof(mp_greater_transitivity,axiom,(![X]:(![Y]:(![Z]:((greater(X,Y)&greater(Y,Z))=>greater(X,Z))))),input).
+fof(c31,axiom,(![X]:(![Y]:(![Z]:((~greater(X,Y)|~greater(Y,Z))|greater(X,Z))))),inference(fof_nnf,status(thm),[mp_greater_transitivity])).
+fof(c32,axiom,(![X11]:(![X12]:(![X13]:((~greater(X11,X12)|~greater(X12,X13))|greater(X11,X13))))),inference(variable_rename,status(thm),[c31])).
+cnf(c33,axiom,~greater(X47,X49)|~greater(X49,X48)|greater(X47,X48),inference(split_conjunct,status(thm),[c32])).
+cnf(c14,negated_conjecture,appear(an_organisation,skolem0001)!=appear(first_movers,skolem0001),inference(split_conjunct,status(thm),[c11])).
+cnf(symmetry,axiom,X24!=X25|X25=X24,eq_axiom).
+cnf(c28,axiom,~greater_or_equal(X45,X44)|greater(X45,X44)|X45=X44,inference(split_conjunct,status(thm),[c27])).
+fof(mp_FM_not_precede_first,axiom,(![E]:(environment(E)=>greater_or_equal(appear(first_movers,E),appear(an_organisation,E)))),input).
+fof(c34,axiom,(![E]:(~environment(E)|greater_or_equal(appear(first_movers,E),appear(an_organisation,E)))),inference(fof_nnf,status(thm),[mp_FM_not_precede_first])).
+fof(c35,axiom,(![X14]:(~environment(X14)|greater_or_equal(appear(first_movers,X14),appear(an_organisation,X14)))),inference(variable_rename,status(thm),[c34])).
+cnf(c36,axiom,~environment(X64)|greater_or_equal(appear(first_movers,X64),appear(an_organisation,X64)),inference(split_conjunct,status(thm),[c35])).
+cnf(c63,plain,greater_or_equal(appear(first_movers,skolem0001),appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c36, c12])).
+cnf(c65,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))|appear(first_movers,skolem0001)=appear(an_organisation,skolem0001),inference(resolution,status(thm),[c63, c28])).
+cnf(c105,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001))|appear(an_organisation,skolem0001)=appear(first_movers,skolem0001),inference(resolution,status(thm),[c65, symmetry])).
+cnf(c129,plain,greater(appear(first_movers,skolem0001),appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c105, c14])).
+cnf(c143,plain,~greater(X134,appear(first_movers,skolem0001))|greater(X134,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c129, c33])).
+cnf(c145,plain,greater(appear(efficient_producers,e),appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c143, c72])).
+cnf(c146,plain,greater_or_equal(appear(efficient_producers,e),appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c145, c29])).
+cnf(c149,plain,appear(efficient_producers,e)!=X145|appear(an_organisation,skolem0001)!=X144|greater_or_equal(X145,X144),inference(resolution,status(thm),[c146, c7])).
+cnf(c155,plain,appear(efficient_producers,e)!=X146|greater_or_equal(X146,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c149, reflexivity])).
+cnf(c4,plain,X74!=X77|X75!=X76|~greater(X74,X75)|greater(X77,X76),eq_axiom).
+cnf(c147,plain,appear(efficient_producers,e)!=X140|appear(an_organisation,skolem0001)!=X141|greater(X140,X141),inference(resolution,status(thm),[c145, c4])).
+cnf(c153,plain,appear(efficient_producers,e)!=X142|greater(X142,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c147, reflexivity])).
+cnf(c142,plain,appear(first_movers,skolem0001)!=X137|appear(an_organisation,skolem0001)!=X138|greater(X137,X138),inference(resolution,status(thm),[c129, c4])).
+cnf(c151,plain,appear(first_movers,skolem0001)!=X139|greater(X139,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c142, reflexivity])).
+cnf(c148,plain,~greater(X135,appear(efficient_producers,e))|greater(X135,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c145, c33])).
+fof(mp_positive_number_when_appear,axiom,(![E]:(environment(E)=>greater(number_of_organizations(e,appear(an_organisation,E)),zero))),input).
+fof(c51,axiom,(![E]:(~environment(E)|greater(number_of_organizations(e,appear(an_organisation,E)),zero))),inference(fof_nnf,status(thm),[mp_positive_number_when_appear])).
+fof(c52,axiom,(![X22]:(~environment(X22)|greater(number_of_organizations(e,appear(an_organisation,X22)),zero))),inference(variable_rename,status(thm),[c51])).
+cnf(c53,axiom,~environment(X102)|greater(number_of_organizations(e,appear(an_organisation,X102)),zero),inference(split_conjunct,status(thm),[c52])).
+cnf(c78,plain,greater(number_of_organizations(e,appear(an_organisation,skolem0001)),zero),inference(resolution,status(thm),[c53, c12])).
+fof(mp_number_mean_non_empty,axiom,(![E]:(![T]:((environment(E)&greater(number_of_organizations(E,T),zero))=>(?[S]:(subpopulation(S,E,T)&greater(cardinality_at_time(S,T),zero)))))),input).
+fof(c45,axiom,(![E]:(![T]:((~environment(E)|~greater(number_of_organizations(E,T),zero))|(?[S]:(subpopulation(S,E,T)&greater(cardinality_at_time(S,T),zero)))))),inference(fof_nnf,status(thm),[mp_number_mean_non_empty])).
+fof(c46,axiom,(![X19]:(![X20]:((~environment(X19)|~greater(number_of_organizations(X19,X20),zero))|(?[X21]:(subpopulation(X21,X19,X20)&greater(cardinality_at_time(X21,X20),zero)))))),inference(variable_rename,status(thm),[c45])).
+fof(c47,axiom,(![X19]:(![X20]:((~environment(X19)|~greater(number_of_organizations(X19,X20),zero))|(subpopulation(skolem0002(X19,X20),X19,X20)&greater(cardinality_at_time(skolem0002(X19,X20),X20),zero))))),inference(skolemize,status(esa),[c46])).
+fof(c48,axiom,(![X19]:(![X20]:(((~environment(X19)|~greater(number_of_organizations(X19,X20),zero))|subpopulation(skolem0002(X19,X20),X19,X20))&((~environment(X19)|~greater(number_of_organizations(X19,X20),zero))|greater(cardinality_at_time(skolem0002(X19,X20),X20),zero))))),inference(distribute,status(thm),[c47])).
+cnf(c50,axiom,~environment(X114)|~greater(number_of_organizations(X114,X115),zero)|greater(cardinality_at_time(skolem0002(X114,X115),X115),zero),inference(split_conjunct,status(thm),[c48])).
+cnf(c87,plain,~environment(e)|greater(cardinality_at_time(skolem0002(e,appear(an_organisation,skolem0001)),appear(an_organisation,skolem0001)),zero),inference(resolution,status(thm),[c50, c78])).
+cnf(c49,axiom,~environment(X112)|~greater(number_of_organizations(X112,X113),zero)|subpopulation(skolem0002(X112,X113),X112,X113),inference(split_conjunct,status(thm),[c48])).
+cnf(c86,plain,~environment(e)|subpopulation(skolem0002(e,appear(an_organisation,skolem0001)),e,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c49, c78])).
+cnf(c79,plain,greater_or_equal(number_of_organizations(e,appear(an_organisation,skolem0001)),zero),inference(resolution,status(thm),[c78, c29])).
+cnf(c82,plain,number_of_organizations(e,appear(an_organisation,skolem0001))!=X129|zero!=X128|greater_or_equal(X129,X128),inference(resolution,status(thm),[c79, c7])).
+cnf(c114,plain,zero!=X130|greater_or_equal(number_of_organizations(e,appear(an_organisation,skolem0001)),X130),inference(resolution,status(thm),[c82, reflexivity])).
+cnf(c81,plain,number_of_organizations(e,appear(an_organisation,skolem0001))!=X125|zero!=X126|greater(X125,X126),inference(resolution,status(thm),[c78, c4])).
+cnf(c112,plain,zero!=X127|greater(number_of_organizations(e,appear(an_organisation,skolem0001)),X127),inference(resolution,status(thm),[c81, reflexivity])).
+cnf(c73,plain,greater_or_equal(appear(efficient_producers,e),appear(first_movers,skolem0001)),inference(resolution,status(thm),[c72, c29])).
+cnf(c76,plain,appear(efficient_producers,e)!=X123|appear(first_movers,skolem0001)!=X122|greater_or_equal(X123,X122),inference(resolution,status(thm),[c73, c7])).
+cnf(c110,plain,appear(efficient_producers,e)!=X124|greater_or_equal(X124,appear(first_movers,skolem0001)),inference(resolution,status(thm),[c76, reflexivity])).
+cnf(c75,plain,appear(efficient_producers,e)!=X119|appear(first_movers,skolem0001)!=X120|greater(X119,X120),inference(resolution,status(thm),[c72, c4])).
+cnf(c107,plain,appear(efficient_producers,e)!=X121|greater(X121,appear(first_movers,skolem0001)),inference(resolution,status(thm),[c75, reflexivity])).
+cnf(c68,plain,appear(first_movers,skolem0001)!=X117|appear(an_organisation,skolem0001)!=X116|greater_or_equal(X117,X116),inference(resolution,status(thm),[c7, c63])).
+cnf(c88,plain,appear(first_movers,skolem0001)!=X118|greater_or_equal(X118,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c68, reflexivity])).
+fof(mp_no_EP_before_appearance,axiom,(![E]:(![T]:(((environment(E)&in_environment(E,T))&greater(appear(efficient_producers,E),T))=>(~greater(cardinality_at_time(efficient_producers,T),zero))))),input).
+fof(c41,axiom,(![E]:(![T]:(((environment(E)&in_environment(E,T))&greater(appear(efficient_producers,E),T))=>~greater(cardinality_at_time(efficient_producers,T),zero)))),inference(fof_simplification,status(thm),[mp_no_EP_before_appearance])).
+fof(c42,axiom,(![E]:(![T]:(((~environment(E)|~in_environment(E,T))|~greater(appear(efficient_producers,E),T))|~greater(cardinality_at_time(efficient_producers,T),zero)))),inference(fof_nnf,status(thm),[c41])).
+fof(c43,axiom,(![X17]:(![X18]:(((~environment(X17)|~in_environment(X17,X18))|~greater(appear(efficient_producers,X17),X18))|~greater(cardinality_at_time(efficient_producers,X18),zero)))),inference(variable_rename,status(thm),[c42])).
+cnf(c44,axiom,~environment(X110)|~in_environment(X110,X111)|~greater(appear(efficient_producers,X110),X111)|~greater(cardinality_at_time(efficient_producers,X111),zero),inference(split_conjunct,status(thm),[c43])).
+cnf(c80,plain,~greater(X109,number_of_organizations(e,appear(an_organisation,skolem0001)))|greater(X109,zero),inference(resolution,status(thm),[c78, c33])).
+cnf(c74,plain,~greater(X108,appear(efficient_producers,e))|greater(X108,appear(first_movers,skolem0001)),inference(resolution,status(thm),[c72, c33])).
+cnf(c13,negated_conjecture,in_environment(skolem0001,appear(an_organisation,skolem0001)),inference(split_conjunct,status(thm),[c11])).
+cnf(c6,plain,X78!=X81|X79!=X80|~in_environment(X78,X79)|in_environment(X81,X80),eq_axiom).
+cnf(c67,plain,skolem0001!=X106|appear(an_organisation,skolem0001)!=X105|in_environment(X106,X105),inference(resolution,status(thm),[c6, c13])).
+cnf(c84,plain,skolem0001!=X107|in_environment(X107,appear(an_organisation,skolem0001)),inference(resolution,status(thm),[c67, reflexivity])).
+fof(mp_no_FM_before_appearance,axiom,(![E]:(![T]:(((environment(E)&in_environment(E,T))&greater(appear(first_movers,E),T))=>(~greater(cardinality_at_time(first_movers,T),zero))))),input).
+fof(c37,axiom,(![E]:(![T]:(((environment(E)&in_environment(E,T))&greater(appear(first_movers,E),T))=>~greater(cardinality_at_time(first_movers,T),zero)))),inference(fof_simplification,status(thm),[mp_no_FM_before_appearance])).
+fof(c38,axiom,(![E]:(![T]:(((~environment(E)|~in_environment(E,T))|~greater(appear(first_movers,E),T))|~greater(cardinality_at_time(first_movers,T),zero)))),inference(fof_nnf,status(thm),[c37])).
+fof(c39,axiom,(![X15]:(![X16]:(((~environment(X15)|~in_environment(X15,X16))|~greater(appear(first_movers,X15),X16))|~greater(cardinality_at_time(first_movers,X16),zero)))),inference(variable_rename,status(thm),[c38])).
+cnf(c40,axiom,~environment(X103)|~in_environment(X103,X104)|~greater(appear(first_movers,X103),X104)|~greater(cardinality_at_time(first_movers,X104),zero),inference(split_conjunct,status(thm),[c39])).
+fof(a9,plain,(![E]:(![X]:(![T]:(((environment(E)&subpopulation(X,E,T))&greater(cardinality_at_time(X,T),zero))=>(X=efficient_producers|X=first_movers))))),input).
+fof(c18,plain,(![E]:(![X]:(![T]:(((~environment(E)|~subpopulation(X,E,T))|~greater(cardinality_at_time(X,T),zero))|(X=efficient_producers|X=first_movers))))),inference(fof_nnf,status(thm),[a9])).
+fof(c19,plain,(![E]:(![X]:((![T]:((~environment(E)|~subpopulation(X,E,T))|~greater(cardinality_at_time(X,T),zero)))|(X=efficient_producers|X=first_movers)))),inference(shift_quantors,status(thm),[c18])).
+fof(c21,plain,(![X4]:(![X5]:(![X6]:(((~environment(X4)|~subpopulation(X5,X4,X6))|~greater(cardinality_at_time(X5,X6),zero))|(X5=efficient_producers|X5=first_movers))))),inference(shift_quantors,status(thm),[fof(c20,plain,(![X4]:(![X5]:((![X6]:((~environment(X4)|~subpopulation(X5,X4,X6))|~greater(cardinality_at_time(X5,X6),zero)))|(X5=efficient_producers|X5=first_movers)))),inference(variable_rename,status(thm),[c19])).])).
+cnf(c22,plain,~environment(X100)|~subpopulation(X101,X100,X99)|~greater(cardinality_at_time(X101,X99),zero)|X101=efficient_producers|X101=first_movers,inference(split_conjunct,status(thm),[c21])).
+cnf(c30,axiom,X33!=X32|greater_or_equal(X33,X32),inference(split_conjunct,status(thm),[c27])).
+cnf(c56,plain,greater_or_equal(X34,X34),inference(resolution,status(thm),[c30, reflexivity])).
+cnf(c69,plain,X94!=X93|X94!=X92|greater_or_equal(X93,X92),inference(resolution,status(thm),[c7, c56])).
+cnf(c70,plain,X95!=X96|greater_or_equal(X96,X95),inference(resolution,status(thm),[c69, reflexivity])).
+cnf(c5,plain,X84!=X82|X85!=X86|X83!=X87|~subpopulation(X84,X85,X83)|subpopulation(X82,X86,X87),eq_axiom).
+cnf(c2,plain,X65!=X68|X66!=X67|cardinality_at_time(X65,X66)=cardinality_at_time(X68,X67),eq_axiom).
+cnf(c64,plain,X70!=X71|cardinality_at_time(X70,X69)=cardinality_at_time(X71,X69),inference(resolution,status(thm),[c2, reflexivity])).
+cnf(c1,plain,X50!=X53|X51!=X52|appear(X50,X51)=appear(X53,X52),eq_axiom).
+cnf(c60,plain,X60!=X61|appear(X60,X59)=appear(X61,X59),inference(resolution,status(thm),[c1, reflexivity])).
+cnf(c0,plain,X40!=X43|X41!=X42|number_of_organizations(X40,X41)=number_of_organizations(X43,X42),eq_axiom).
+cnf(c58,plain,X56!=X54|number_of_organizations(X56,X55)=number_of_organizations(X54,X55),inference(resolution,status(thm),[c0, reflexivity])).
+cnf(c3,plain,X37!=X38|~environment(X37)|environment(X38),eq_axiom).
+cnf(transitivity,axiom,X29!=X30|X30!=X31|X29=X31,eq_axiom).
+# SZS output end Saturation
+
+# Initial clauses    : 26
+# Processed clauses  : 69
+# Factors computed   : 0
+# Resolvents computed: 103
+# Tautologies deleted: 2
+# Forward subsumed   : 58
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 0.388 s
+# System time        : 0.255 s
+# Total time         : 0.643 s

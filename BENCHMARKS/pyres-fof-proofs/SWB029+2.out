@@ -1,0 +1,124 @@
+# cnf(c3,axiom,iext(uri_rdf_type,uri_ex_A,uri_owl_Class)).
+# cnf(c4,axiom,iext(uri_rdf_type,uri_ex_B,uri_owl_Class)).
+# cnf(c5,axiom,iext(uri_rdf_type,uri_ex_w,skolem0001)).
+# cnf(c6,axiom,iext(uri_owl_intersectionOf,skolem0001,skolem0003)).
+# cnf(c7,axiom,iext(uri_rdf_first,skolem0003,uri_ex_A)).
+# cnf(c8,axiom,iext(uri_rdf_rest,skolem0003,skolem0004)).
+# cnf(c9,axiom,iext(uri_rdf_first,skolem0004,skolem0002)).
+# cnf(c10,axiom,iext(uri_rdf_rest,skolem0004,uri_rdf_nil)).
+# cnf(c11,axiom,iext(uri_owl_complementOf,skolem0002,uri_ex_A)).
+# cnf(c14,negated_conjecture,~iext(uri_rdf_type,uri_ex_w,uri_ex_B)).
+# cnf(c36,axiom,~iext(uri_owl_complementOf,X22,X23)|ic(X22)).
+# cnf(c21,axiom,~iext(uri_rdf_first,X25,X26)|~iext(uri_rdf_rest,X25,X24)|~iext(uri_rdf_first,X24,X27)|~iext(uri_rdf_rest,X24,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X28,X25)|ic(X28)).
+# cnf(c46,plain,ic(skolem0002)).
+# cnf(c37,axiom,~iext(uri_owl_complementOf,X29,X30)|ic(X30)).
+# cnf(c48,plain,ic(uri_ex_A)).
+# cnf(c44,axiom,~iext(uri_rdf_type,X31,X32)|icext(X32,X31)).
+# cnf(c49,plain,icext(uri_owl_Class,uri_ex_A)).
+# cnf(c22,axiom,~iext(uri_rdf_first,X34,X35)|~iext(uri_rdf_rest,X34,X33)|~iext(uri_rdf_first,X33,X36)|~iext(uri_rdf_rest,X33,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X37,X34)|ic(X35)).
+# cnf(c50,plain,icext(skolem0001,uri_ex_w)).
+# cnf(c51,plain,icext(uri_owl_Class,uri_ex_B)).
+# cnf(c45,axiom,~icext(X38,X39)|iext(uri_rdf_type,X39,X38)).
+# cnf(c23,axiom,~iext(uri_rdf_first,X41,X42)|~iext(uri_rdf_rest,X41,X40)|~iext(uri_rdf_first,X40,X43)|~iext(uri_rdf_rest,X40,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X44,X41)|ic(X43)).
+# cnf(c38,axiom,~iext(uri_owl_complementOf,X46,X47)|~icext(X46,X45)|~icext(X47,X45)).
+# cnf(c57,plain,~icext(skolem0002,X48)|~icext(uri_ex_A,X48)).
+# cnf(c39,axiom,~iext(uri_owl_complementOf,X50,X51)|icext(X51,X49)|icext(X50,X49)).
+# cnf(c58,plain,icext(uri_ex_A,X52)|icext(skolem0002,X52)).
+# cnf(c24,axiom,~iext(uri_rdf_first,X54,X55)|~iext(uri_rdf_rest,X54,X53)|~iext(uri_rdf_first,X53,X56)|~iext(uri_rdf_rest,X53,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X58,X54)|~icext(X58,X57)|icext(X55,X57)).
+# cnf(c60,plain,icext(skolem0002,X60)|iext(uri_rdf_type,X60,uri_ex_A)).
+# cnf(c61,plain,icext(uri_ex_A,X62)|iext(uri_rdf_type,X62,skolem0002)).
+# cnf(c25,axiom,~iext(uri_rdf_first,X65,X66)|~iext(uri_rdf_rest,X65,X64)|~iext(uri_rdf_first,X64,X67)|~iext(uri_rdf_rest,X64,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X69,X65)|~icext(X69,X68)|icext(X67,X68)).
+# cnf(c63,plain,iext(uri_rdf_type,X71,uri_ex_A)|iext(uri_rdf_type,X71,skolem0002)).
+# cnf(c26,axiom,~iext(uri_rdf_first,X76,X77)|~iext(uri_rdf_rest,X76,X75)|~iext(uri_rdf_first,X75,X78)|~iext(uri_rdf_rest,X75,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X80,X76)|~icext(X77,X79)|~icext(X78,X79)|icext(X80,X79)).
+# cnf(c52,plain,~iext(uri_rdf_first,skolem0003,X83)|~iext(uri_rdf_rest,skolem0003,X81)|~iext(uri_rdf_first,X81,X82)|~iext(uri_rdf_rest,X81,uri_rdf_nil)|ic(X83)).
+# cnf(c72,plain,~iext(uri_rdf_first,skolem0003,X85)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X84)|ic(X85)).
+# cnf(c73,plain,~iext(uri_rdf_first,skolem0003,X86)|~iext(uri_rdf_rest,skolem0003,skolem0004)|ic(X86)).
+# cnf(c74,plain,~iext(uri_rdf_first,skolem0003,X87)|ic(X87)).
+# cnf(c27,axiom,~iext(uri_rdf_first,X89,X90)|~iext(uri_rdf_rest,X89,X88)|~iext(uri_rdf_first,X88,X91)|~iext(uri_rdf_rest,X88,uri_rdf_nil)|~ic(X92)|~ic(X90)|~ic(X91)|~icext(X92,skolem0005(X92,X89,X90,X88,X91))|~icext(X90,skolem0005(X92,X89,X90,X88,X91))|~icext(X91,skolem0005(X92,X89,X90,X88,X91))|iext(uri_owl_intersectionOf,X92,X89)).
+# cnf(c56,plain,~iext(uri_rdf_first,skolem0003,X94)|~iext(uri_rdf_rest,skolem0003,X93)|~iext(uri_rdf_first,X93,X95)|~iext(uri_rdf_rest,X93,uri_rdf_nil)|ic(X95)).
+# cnf(c80,plain,~iext(uri_rdf_first,skolem0003,X97)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X96)|ic(X96)).
+# cnf(c47,plain,~iext(uri_rdf_first,skolem0003,X101)|~iext(uri_rdf_rest,skolem0003,X99)|~iext(uri_rdf_first,X99,X100)|~iext(uri_rdf_rest,X99,uri_rdf_nil)|ic(skolem0001)).
+# cnf(c82,plain,~iext(uri_rdf_first,skolem0003,X102)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X103)|ic(skolem0001)).
+# cnf(c28,axiom,~iext(uri_rdf_first,X105,X106)|~iext(uri_rdf_rest,X105,X104)|~iext(uri_rdf_first,X104,X107)|~iext(uri_rdf_rest,X104,uri_rdf_nil)|~ic(X108)|~ic(X106)|~ic(X107)|icext(X108,skolem0005(X108,X105,X106,X104,X107))|icext(X106,skolem0005(X108,X105,X106,X104,X107))|iext(uri_owl_intersectionOf,X108,X105)).
+# cnf(c83,plain,~iext(uri_rdf_first,skolem0003,X109)|~iext(uri_rdf_rest,skolem0003,skolem0004)|ic(skolem0001)).
+# cnf(c85,plain,~iext(uri_rdf_first,skolem0003,X110)|ic(skolem0001)).
+# cnf(c86,plain,ic(skolem0001)).
+# cnf(c62,plain,~iext(uri_rdf_first,skolem0003,X114)|~iext(uri_rdf_rest,skolem0003,X111)|~iext(uri_rdf_first,X111,X113)|~iext(uri_rdf_rest,X111,uri_rdf_nil)|~icext(skolem0001,X112)|icext(X114,X112)).
+# cnf(c87,plain,~iext(uri_rdf_first,skolem0003,X117)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X115)|~icext(skolem0001,X116)|icext(X117,X116)).
+# cnf(c29,axiom,~iext(uri_rdf_first,X119,X120)|~iext(uri_rdf_rest,X119,X118)|~iext(uri_rdf_first,X118,X121)|~iext(uri_rdf_rest,X118,uri_rdf_nil)|~ic(X122)|~ic(X120)|~ic(X121)|icext(X122,skolem0005(X122,X119,X120,X118,X121))|icext(X121,skolem0005(X122,X119,X120,X118,X121))|iext(uri_owl_intersectionOf,X122,X119)).
+# cnf(c88,plain,~iext(uri_rdf_first,skolem0003,X123)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~icext(skolem0001,X124)|icext(X123,X124)).
+# cnf(c90,plain,~iext(uri_rdf_first,skolem0003,X125)|~icext(skolem0001,X126)|icext(X125,X126)).
+# cnf(c91,plain,~icext(skolem0001,X127)|icext(uri_ex_A,X127)).
+# cnf(c92,plain,icext(uri_ex_A,uri_ex_w)).
+# cnf(c93,plain,~icext(skolem0002,uri_ex_w)).
+# cnf(c68,plain,~iext(uri_rdf_first,skolem0003,X129)|~iext(uri_rdf_rest,skolem0003,X128)|~iext(uri_rdf_first,X128,X131)|~iext(uri_rdf_rest,X128,uri_rdf_nil)|~icext(skolem0001,X130)|icext(X131,X130)).
+# cnf(c94,plain,iext(uri_rdf_type,uri_ex_w,uri_ex_A)).
+# cnf(c97,plain,~iext(uri_rdf_first,skolem0003,X134)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X133)|~icext(skolem0001,X132)|icext(X133,X132)).
+# cnf(c71,plain,~iext(uri_rdf_first,skolem0003,X137)|~iext(uri_rdf_rest,skolem0003,X138)|~iext(uri_rdf_first,X138,X135)|~iext(uri_rdf_rest,X138,uri_rdf_nil)|~icext(X137,X136)|~icext(X135,X136)|icext(skolem0001,X136)).
+# cnf(c99,plain,~iext(uri_rdf_first,skolem0003,X140)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~icext(skolem0001,X139)|icext(skolem0002,X139)).
+# cnf(c101,plain,~iext(uri_rdf_first,skolem0003,X141)|~icext(skolem0001,X142)|icext(skolem0002,X142)).
+# cnf(c102,plain,~icext(skolem0001,X143)|icext(skolem0002,X143)).
+# cnf(c103,plain,icext(skolem0002,uri_ex_w)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(testcase_premise_fullish_029_Ex_Falso_Quodlibet,axiom,(?[BNODE_x]:(?[BNODE_y]:(?[BNODE_l1]:(?[BNODE_l2]:((((((((iext(uri_rdf_type,uri_ex_A,uri_owl_Class)&iext(uri_rdf_type,uri_ex_B,uri_owl_Class))&iext(uri_rdf_type,uri_ex_w,BNODE_x))&iext(uri_owl_intersectionOf,BNODE_x,BNODE_l1))&iext(uri_rdf_first,BNODE_l1,uri_ex_A))&iext(uri_rdf_rest,BNODE_l1,BNODE_l2))&iext(uri_rdf_first,BNODE_l2,BNODE_y))&iext(uri_rdf_rest,BNODE_l2,uri_rdf_nil))&iext(uri_owl_complementOf,BNODE_y,uri_ex_A)))))),input).
+fof(c0,axiom,(?[BNODE_x]:(?[BNODE_y]:((?[BNODE_l1]:(?[BNODE_l2]:(((((((iext(uri_rdf_type,uri_ex_A,uri_owl_Class)&iext(uri_rdf_type,uri_ex_B,uri_owl_Class))&iext(uri_rdf_type,uri_ex_w,BNODE_x))&iext(uri_owl_intersectionOf,BNODE_x,BNODE_l1))&iext(uri_rdf_first,BNODE_l1,uri_ex_A))&iext(uri_rdf_rest,BNODE_l1,BNODE_l2))&iext(uri_rdf_first,BNODE_l2,BNODE_y))&iext(uri_rdf_rest,BNODE_l2,uri_rdf_nil))))&iext(uri_owl_complementOf,BNODE_y,uri_ex_A)))),inference(shift_quantors,status(thm),[testcase_premise_fullish_029_Ex_Falso_Quodlibet])).
+fof(c1,axiom,(?[X2]:(?[X3]:((?[X4]:(?[X5]:(((((((iext(uri_rdf_type,uri_ex_A,uri_owl_Class)&iext(uri_rdf_type,uri_ex_B,uri_owl_Class))&iext(uri_rdf_type,uri_ex_w,X2))&iext(uri_owl_intersectionOf,X2,X4))&iext(uri_rdf_first,X4,uri_ex_A))&iext(uri_rdf_rest,X4,X5))&iext(uri_rdf_first,X5,X3))&iext(uri_rdf_rest,X5,uri_rdf_nil))))&iext(uri_owl_complementOf,X3,uri_ex_A)))),inference(variable_rename,status(thm),[c0])).
+fof(c2,axiom,((((((((iext(uri_rdf_type,uri_ex_A,uri_owl_Class)&iext(uri_rdf_type,uri_ex_B,uri_owl_Class))&iext(uri_rdf_type,uri_ex_w,skolem0001))&iext(uri_owl_intersectionOf,skolem0001,skolem0003))&iext(uri_rdf_first,skolem0003,uri_ex_A))&iext(uri_rdf_rest,skolem0003,skolem0004))&iext(uri_rdf_first,skolem0004,skolem0002))&iext(uri_rdf_rest,skolem0004,uri_rdf_nil))&iext(uri_owl_complementOf,skolem0002,uri_ex_A)),inference(skolemize,status(esa),[c1])).
+cnf(c11,axiom,iext(uri_owl_complementOf,skolem0002,uri_ex_A),inference(split_conjunct,status(thm),[c2])).
+fof(owl_bool_complementof_class,axiom,(![Z]:(![C]:(iext(uri_owl_complementOf,Z,C)=>((ic(Z)&ic(C))&(![X]:(icext(Z,X)<=>(~icext(C,X)))))))),input).
+fof(c30,axiom,(![Z]:(![C]:(iext(uri_owl_complementOf,Z,C)=>((ic(Z)&ic(C))&(![X]:(icext(Z,X)<=>~icext(C,X))))))),inference(fof_simplification,status(thm),[owl_bool_complementof_class])).
+fof(c31,axiom,(![Z]:(![C]:(~iext(uri_owl_complementOf,Z,C)|((ic(Z)&ic(C))&(![X]:((~icext(Z,X)|~icext(C,X))&(icext(C,X)|icext(Z,X)))))))),inference(fof_nnf,status(thm),[c30])).
+fof(c32,axiom,(![Z]:(![C]:(~iext(uri_owl_complementOf,Z,C)|((ic(Z)&ic(C))&((![X]:(~icext(Z,X)|~icext(C,X)))&(![X]:(icext(C,X)|icext(Z,X)))))))),inference(shift_quantors,status(thm),[c31])).
+fof(c34,axiom,(![X14]:(![X15]:(![X16]:(![X17]:(~iext(uri_owl_complementOf,X14,X15)|((ic(X14)&ic(X15))&((~icext(X14,X16)|~icext(X15,X16))&(icext(X15,X17)|icext(X14,X17))))))))),inference(shift_quantors,status(thm),[fof(c33,axiom,(![X14]:(![X15]:(~iext(uri_owl_complementOf,X14,X15)|((ic(X14)&ic(X15))&((![X16]:(~icext(X14,X16)|~icext(X15,X16)))&(![X17]:(icext(X15,X17)|icext(X14,X17)))))))),inference(variable_rename,status(thm),[c32])).])).
+fof(c35,axiom,(![X14]:(![X15]:(![X16]:(![X17]:(((~iext(uri_owl_complementOf,X14,X15)|ic(X14))&(~iext(uri_owl_complementOf,X14,X15)|ic(X15)))&((~iext(uri_owl_complementOf,X14,X15)|(~icext(X14,X16)|~icext(X15,X16)))&(~iext(uri_owl_complementOf,X14,X15)|(icext(X15,X17)|icext(X14,X17))))))))),inference(distribute,status(thm),[c34])).
+cnf(c38,axiom,~iext(uri_owl_complementOf,X46,X47)|~icext(X46,X45)|~icext(X47,X45),inference(split_conjunct,status(thm),[c35])).
+cnf(c57,plain,~icext(skolem0002,X48)|~icext(uri_ex_A,X48),inference(resolution,status(thm),[c38, c11])).
+cnf(c5,axiom,iext(uri_rdf_type,uri_ex_w,skolem0001),inference(split_conjunct,status(thm),[c2])).
+fof(rdfs_cext_def,axiom,(![X]:(![C]:(iext(uri_rdf_type,X,C)<=>icext(C,X)))),input).
+fof(c40,axiom,(![X]:(![C]:((~iext(uri_rdf_type,X,C)|icext(C,X))&(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(fof_nnf,status(thm),[rdfs_cext_def])).
+fof(c41,axiom,((![X]:(![C]:(~iext(uri_rdf_type,X,C)|icext(C,X))))&(![X]:(![C]:(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(shift_quantors,status(thm),[c40])).
+fof(c43,axiom,(![X18]:(![X19]:(![X20]:(![X21]:((~iext(uri_rdf_type,X18,X19)|icext(X19,X18))&(~icext(X21,X20)|iext(uri_rdf_type,X20,X21))))))),inference(shift_quantors,status(thm),[fof(c42,axiom,((![X18]:(![X19]:(~iext(uri_rdf_type,X18,X19)|icext(X19,X18))))&(![X20]:(![X21]:(~icext(X21,X20)|iext(uri_rdf_type,X20,X21))))),inference(variable_rename,status(thm),[c41])).])).
+cnf(c44,axiom,~iext(uri_rdf_type,X31,X32)|icext(X32,X31),inference(split_conjunct,status(thm),[c43])).
+cnf(c50,plain,icext(skolem0001,uri_ex_w),inference(resolution,status(thm),[c44, c5])).
+cnf(c7,axiom,iext(uri_rdf_first,skolem0003,uri_ex_A),inference(split_conjunct,status(thm),[c2])).
+cnf(c8,axiom,iext(uri_rdf_rest,skolem0003,skolem0004),inference(split_conjunct,status(thm),[c2])).
+cnf(c9,axiom,iext(uri_rdf_first,skolem0004,skolem0002),inference(split_conjunct,status(thm),[c2])).
+cnf(c10,axiom,iext(uri_rdf_rest,skolem0004,uri_rdf_nil),inference(split_conjunct,status(thm),[c2])).
+cnf(c6,axiom,iext(uri_owl_intersectionOf,skolem0001,skolem0003),inference(split_conjunct,status(thm),[c2])).
+fof(owl_bool_intersectionof_class_002,axiom,(![Z]:(![S1]:(![C1]:(![S2]:(![C2]:((((iext(uri_rdf_first,S1,C1)&iext(uri_rdf_rest,S1,S2))&iext(uri_rdf_first,S2,C2))&iext(uri_rdf_rest,S2,uri_rdf_nil))=>(iext(uri_owl_intersectionOf,Z,S1)<=>(((ic(Z)&ic(C1))&ic(C2))&(![X]:(icext(Z,X)<=>(icext(C1,X)&icext(C2,X)))))))))))),input).
+fof(c15,axiom,(![Z]:(![S1]:(![C1]:(![S2]:(![C2]:((((~iext(uri_rdf_first,S1,C1)|~iext(uri_rdf_rest,S1,S2))|~iext(uri_rdf_first,S2,C2))|~iext(uri_rdf_rest,S2,uri_rdf_nil))|((~iext(uri_owl_intersectionOf,Z,S1)|(((ic(Z)&ic(C1))&ic(C2))&(![X]:((~icext(Z,X)|(icext(C1,X)&icext(C2,X)))&((~icext(C1,X)|~icext(C2,X))|icext(Z,X))))))&((((~ic(Z)|~ic(C1))|~ic(C2))|(?[X]:((~icext(Z,X)|(~icext(C1,X)|~icext(C2,X)))&(icext(Z,X)|(icext(C1,X)&icext(C2,X))))))|iext(uri_owl_intersectionOf,Z,S1))))))))),inference(fof_nnf,status(thm),[owl_bool_intersectionof_class_002])).
+fof(c16,axiom,(![Z]:(![S1]:(![C1]:(![S2]:(![C2]:((((~iext(uri_rdf_first,S1,C1)|~iext(uri_rdf_rest,S1,S2))|~iext(uri_rdf_first,S2,C2))|~iext(uri_rdf_rest,S2,uri_rdf_nil))|((~iext(uri_owl_intersectionOf,Z,S1)|(((ic(Z)&ic(C1))&ic(C2))&((![X]:(~icext(Z,X)|(icext(C1,X)&icext(C2,X))))&(![X]:((~icext(C1,X)|~icext(C2,X))|icext(Z,X))))))&((((~ic(Z)|~ic(C1))|~ic(C2))|(?[X]:((~icext(Z,X)|(~icext(C1,X)|~icext(C2,X)))&(icext(Z,X)|(icext(C1,X)&icext(C2,X))))))|iext(uri_owl_intersectionOf,Z,S1))))))))),inference(shift_quantors,status(thm),[c15])).
+fof(c17,axiom,(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|((~iext(uri_owl_intersectionOf,X6,X7)|(((ic(X6)&ic(X8))&ic(X10))&((![X11]:(~icext(X6,X11)|(icext(X8,X11)&icext(X10,X11))))&(![X12]:((~icext(X8,X12)|~icext(X10,X12))|icext(X6,X12))))))&((((~ic(X6)|~ic(X8))|~ic(X10))|(?[X13]:((~icext(X6,X13)|(~icext(X8,X13)|~icext(X10,X13)))&(icext(X6,X13)|(icext(X8,X13)&icext(X10,X13))))))|iext(uri_owl_intersectionOf,X6,X7))))))))),inference(variable_rename,status(thm),[c16])).
+fof(c19,axiom,(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:(![X11]:(![X12]:((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|((~iext(uri_owl_intersectionOf,X6,X7)|(((ic(X6)&ic(X8))&ic(X10))&((~icext(X6,X11)|(icext(X8,X11)&icext(X10,X11)))&((~icext(X8,X12)|~icext(X10,X12))|icext(X6,X12)))))&((((~ic(X6)|~ic(X8))|~ic(X10))|((~icext(X6,skolem0005(X6,X7,X8,X9,X10))|(~icext(X8,skolem0005(X6,X7,X8,X9,X10))|~icext(X10,skolem0005(X6,X7,X8,X9,X10))))&(icext(X6,skolem0005(X6,X7,X8,X9,X10))|(icext(X8,skolem0005(X6,X7,X8,X9,X10))&icext(X10,skolem0005(X6,X7,X8,X9,X10))))))|iext(uri_owl_intersectionOf,X6,X7))))))))))),inference(shift_quantors,status(thm),[fof(c18,axiom,(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|((~iext(uri_owl_intersectionOf,X6,X7)|(((ic(X6)&ic(X8))&ic(X10))&((![X11]:(~icext(X6,X11)|(icext(X8,X11)&icext(X10,X11))))&(![X12]:((~icext(X8,X12)|~icext(X10,X12))|icext(X6,X12))))))&((((~ic(X6)|~ic(X8))|~ic(X10))|((~icext(X6,skolem0005(X6,X7,X8,X9,X10))|(~icext(X8,skolem0005(X6,X7,X8,X9,X10))|~icext(X10,skolem0005(X6,X7,X8,X9,X10))))&(icext(X6,skolem0005(X6,X7,X8,X9,X10))|(icext(X8,skolem0005(X6,X7,X8,X9,X10))&icext(X10,skolem0005(X6,X7,X8,X9,X10))))))|iext(uri_owl_intersectionOf,X6,X7))))))))),inference(skolemize,status(esa),[c17])).])).
+fof(c20,axiom,(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:(![X11]:(![X12]:((((((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|(~iext(uri_owl_intersectionOf,X6,X7)|ic(X6)))&((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|(~iext(uri_owl_intersectionOf,X6,X7)|ic(X8))))&((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|(~iext(uri_owl_intersectionOf,X6,X7)|ic(X10))))&((((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|(~iext(uri_owl_intersectionOf,X6,X7)|(~icext(X6,X11)|icext(X8,X11))))&((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|(~iext(uri_owl_intersectionOf,X6,X7)|(~icext(X6,X11)|icext(X10,X11)))))&((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|(~iext(uri_owl_intersectionOf,X6,X7)|((~icext(X8,X12)|~icext(X10,X12))|icext(X6,X12))))))&(((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|((((~ic(X6)|~ic(X8))|~ic(X10))|(~icext(X6,skolem0005(X6,X7,X8,X9,X10))|(~icext(X8,skolem0005(X6,X7,X8,X9,X10))|~icext(X10,skolem0005(X6,X7,X8,X9,X10)))))|iext(uri_owl_intersectionOf,X6,X7)))&(((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|((((~ic(X6)|~ic(X8))|~ic(X10))|(icext(X6,skolem0005(X6,X7,X8,X9,X10))|icext(X8,skolem0005(X6,X7,X8,X9,X10))))|iext(uri_owl_intersectionOf,X6,X7)))&((((~iext(uri_rdf_first,X7,X8)|~iext(uri_rdf_rest,X7,X9))|~iext(uri_rdf_first,X9,X10))|~iext(uri_rdf_rest,X9,uri_rdf_nil))|((((~ic(X6)|~ic(X8))|~ic(X10))|(icext(X6,skolem0005(X6,X7,X8,X9,X10))|icext(X10,skolem0005(X6,X7,X8,X9,X10))))|iext(uri_owl_intersectionOf,X6,X7))))))))))))),inference(distribute,status(thm),[c19])).
+cnf(c24,axiom,~iext(uri_rdf_first,X54,X55)|~iext(uri_rdf_rest,X54,X53)|~iext(uri_rdf_first,X53,X56)|~iext(uri_rdf_rest,X53,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X58,X54)|~icext(X58,X57)|icext(X55,X57),inference(split_conjunct,status(thm),[c20])).
+cnf(c62,plain,~iext(uri_rdf_first,skolem0003,X114)|~iext(uri_rdf_rest,skolem0003,X111)|~iext(uri_rdf_first,X111,X113)|~iext(uri_rdf_rest,X111,uri_rdf_nil)|~icext(skolem0001,X112)|icext(X114,X112),inference(resolution,status(thm),[c24, c6])).
+cnf(c87,plain,~iext(uri_rdf_first,skolem0003,X117)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X115)|~icext(skolem0001,X116)|icext(X117,X116),inference(resolution,status(thm),[c62, c10])).
+cnf(c88,plain,~iext(uri_rdf_first,skolem0003,X123)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~icext(skolem0001,X124)|icext(X123,X124),inference(resolution,status(thm),[c87, c9])).
+cnf(c90,plain,~iext(uri_rdf_first,skolem0003,X125)|~icext(skolem0001,X126)|icext(X125,X126),inference(resolution,status(thm),[c88, c8])).
+cnf(c91,plain,~icext(skolem0001,X127)|icext(uri_ex_A,X127),inference(resolution,status(thm),[c90, c7])).
+cnf(c92,plain,icext(uri_ex_A,uri_ex_w),inference(resolution,status(thm),[c91, c50])).
+cnf(c93,plain,~icext(skolem0002,uri_ex_w),inference(resolution,status(thm),[c92, c57])).
+cnf(c25,axiom,~iext(uri_rdf_first,X65,X66)|~iext(uri_rdf_rest,X65,X64)|~iext(uri_rdf_first,X64,X67)|~iext(uri_rdf_rest,X64,uri_rdf_nil)|~iext(uri_owl_intersectionOf,X69,X65)|~icext(X69,X68)|icext(X67,X68),inference(split_conjunct,status(thm),[c20])).
+cnf(c68,plain,~iext(uri_rdf_first,skolem0003,X129)|~iext(uri_rdf_rest,skolem0003,X128)|~iext(uri_rdf_first,X128,X131)|~iext(uri_rdf_rest,X128,uri_rdf_nil)|~icext(skolem0001,X130)|icext(X131,X130),inference(resolution,status(thm),[c25, c6])).
+cnf(c97,plain,~iext(uri_rdf_first,skolem0003,X134)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~iext(uri_rdf_first,skolem0004,X133)|~icext(skolem0001,X132)|icext(X133,X132),inference(resolution,status(thm),[c68, c10])).
+cnf(c99,plain,~iext(uri_rdf_first,skolem0003,X140)|~iext(uri_rdf_rest,skolem0003,skolem0004)|~icext(skolem0001,X139)|icext(skolem0002,X139),inference(resolution,status(thm),[c97, c9])).
+cnf(c101,plain,~iext(uri_rdf_first,skolem0003,X141)|~icext(skolem0001,X142)|icext(skolem0002,X142),inference(resolution,status(thm),[c99, c8])).
+cnf(c102,plain,~icext(skolem0001,X143)|icext(skolem0002,X143),inference(resolution,status(thm),[c101, c7])).
+cnf(c103,plain,icext(skolem0002,uri_ex_w),inference(resolution,status(thm),[c102, c50])).
+cnf(c104,plain,$false,inference(resolution,status(thm),[c103, c93])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 25
+# Processed clauses  : 61
+# Factors computed   : 0
+# Resolvents computed: 60
+# Tautologies deleted: 1
+# Forward subsumed   : 14
+# Backward subsumed  : 12
+
+# -------- CPU Time ---------
+# User time          : 0.303 s
+# System time        : 0.225 s
+# Total time         : 0.528 s

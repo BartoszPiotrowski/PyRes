@@ -1,0 +1,38 @@
+# cnf(c7,negated_conjecture,big_f(X6,X7)|big_g(X6,X7)).
+# cnf(c8,negated_conjecture,~big_f(X9,X8)|big_g(X8,X9)).
+# cnf(c9,negated_conjecture,big_f(X11,X10)|~big_g(X11,X10)).
+# cnf(c12,plain,big_f(X13,X12)).
+# cnf(c13,plain,big_g(X15,X14)).
+# cnf(c10,negated_conjecture,~big_f(X16,X17)|~big_g(X17,X16)).
+# cnf(c14,plain,~big_f(X18,X19)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(church_46_4_2,conjecture,(?[Y]:((![X]:((big_f(X,Y)=>big_f(Y,X))=>big_g(X,Y)))=>(~(![X]:((big_f(X,Y)=>big_f(Y,X))=>(~big_g(X,Y))))))),input).
+fof(c0,negated_conjecture,(~(?[Y]:((![X]:((big_f(X,Y)=>big_f(Y,X))=>big_g(X,Y)))=>(~(![X]:((big_f(X,Y)=>big_f(Y,X))=>(~big_g(X,Y)))))))),inference(assume_negation,status(cth),[church_46_4_2])).
+fof(c1,negated_conjecture,(~(?[Y]:((![X]:((big_f(X,Y)=>big_f(Y,X))=>big_g(X,Y)))=>(~(![X]:((big_f(X,Y)=>big_f(Y,X))=>~big_g(X,Y))))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(![Y]:((![X]:((big_f(X,Y)&~big_f(Y,X))|big_g(X,Y)))&(![X]:((big_f(X,Y)&~big_f(Y,X))|~big_g(X,Y))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,((![Y]:(![X]:((big_f(X,Y)&~big_f(Y,X))|big_g(X,Y))))&(![Y]:(![X]:((big_f(X,Y)&~big_f(Y,X))|~big_g(X,Y))))),inference(shift_quantors,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(((big_f(X3,X2)&~big_f(X2,X3))|big_g(X3,X2))&((big_f(X5,X4)&~big_f(X4,X5))|~big_g(X5,X4))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((![X2]:(![X3]:((big_f(X3,X2)&~big_f(X2,X3))|big_g(X3,X2))))&(![X4]:(![X5]:((big_f(X5,X4)&~big_f(X4,X5))|~big_g(X5,X4))))),inference(variable_rename,status(thm),[c3])).])).
+fof(c6,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(((big_f(X3,X2)|big_g(X3,X2))&(~big_f(X2,X3)|big_g(X3,X2)))&((big_f(X5,X4)|~big_g(X5,X4))&(~big_f(X4,X5)|~big_g(X5,X4)))))))),inference(distribute,status(thm),[c5])).
+cnf(c7,negated_conjecture,big_f(X6,X7)|big_g(X6,X7),inference(split_conjunct,status(thm),[c6])).
+cnf(c9,negated_conjecture,big_f(X11,X10)|~big_g(X11,X10),inference(split_conjunct,status(thm),[c6])).
+cnf(c12,plain,big_f(X13,X12),inference(resolution,status(thm),[c9, c7])).
+cnf(c8,negated_conjecture,~big_f(X9,X8)|big_g(X8,X9),inference(split_conjunct,status(thm),[c6])).
+cnf(c13,plain,big_g(X15,X14),inference(resolution,status(thm),[c12, c8])).
+cnf(c10,negated_conjecture,~big_f(X16,X17)|~big_g(X17,X16),inference(split_conjunct,status(thm),[c6])).
+cnf(c14,plain,~big_f(X18,X19),inference(resolution,status(thm),[c10, c13])).
+cnf(c15,plain,$false,inference(resolution,status(thm),[c14, c12])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 5
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.205 s
+# System time        : 0.235 s
+# Total time         : 0.440 s

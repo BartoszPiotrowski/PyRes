@@ -1,0 +1,36 @@
+# cnf(c4,negated_conjecture,p|p).
+# cnf(c9,plain,p).
+# cnf(c7,negated_conjecture,~q|~q).
+# cnf(c8,negated_conjecture,~p|q|~p|q).
+# cnf(c10,plain,~p|q).
+# cnf(c11,plain,q).
+# cnf(c12,plain,~q).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel15,conjecture,((p=>q)<=>((~p)|q)),input).
+fof(c0,negated_conjecture,(~((p=>q)<=>((~p)|q))),inference(assume_negation,status(cth),[pel15])).
+fof(c1,negated_conjecture,(~((p=>q)<=>(~p|q))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(((p&~q)|(p&~q))&((~p|q)|(~p|q))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,((((p|p)&(p|~q))&((~q|p)&(~q|~q)))&((~p|q)|(~p|q))),inference(distribute,status(thm),[c2])).
+cnf(c4,negated_conjecture,p|p,inference(split_conjunct,status(thm),[c3])).
+cnf(c9,plain,p,inference(factor,status(thm),[c4])).
+cnf(c8,negated_conjecture,~p|q|~p|q,inference(split_conjunct,status(thm),[c3])).
+cnf(c10,plain,~p|q,inference(resolution,status(thm),[c8, c9])).
+cnf(c11,plain,q,inference(resolution,status(thm),[c10, c9])).
+cnf(c7,negated_conjecture,~q|~q,inference(split_conjunct,status(thm),[c3])).
+cnf(c12,plain,~q,inference(resolution,status(thm),[c11, c7])).
+cnf(c13,plain,$false,inference(resolution,status(thm),[c12, c11])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 7
+# Factors computed   : 1
+# Resolvents computed: 4
+# Tautologies deleted: 0
+# Forward subsumed   : 2
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.274 s
+# System time        : 0.170 s
+# Total time         : 0.444 s

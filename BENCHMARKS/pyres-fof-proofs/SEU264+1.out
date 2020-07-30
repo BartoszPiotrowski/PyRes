@@ -1,0 +1,129 @@
+# cnf(c45,axiom,$true).
+# cnf(c4,axiom,~element(X42,powerset(X41))|subset(X42,X41)).
+# cnf(c26,axiom,subset(X43,X43)).
+# cnf(c14,negated_conjecture,subset(skolem0001,skolem0002)).
+# cnf(c38,axiom,element(skolem0006(X44),X44)).
+# cnf(c13,negated_conjecture,relation_of2_as_subset(skolem0004,skolem0003,skolem0001)).
+# cnf(c5,axiom,~subset(X45,X46)|element(X45,powerset(X46))).
+# cnf(c55,plain,element(X47,powerset(X47))).
+# cnf(c15,negated_conjecture,~relation_of2_as_subset(skolem0004,skolem0003,skolem0002)).
+# cnf(c35,axiom,relation_of2_as_subset(skolem0005(X49,X50),X49,X50)).
+# cnf(c41,axiom,relation_of2(skolem0007(X52,X51),X52,X51)).
+# cnf(c8,axiom,~subset(X55,X53)|~subset(X53,X54)|subset(X55,X54)).
+# cnf(c54,plain,subset(skolem0006(powerset(X56)),X56)).
+# cnf(c56,plain,element(skolem0001,powerset(skolem0002))).
+# cnf(c31,axiom,~relation_of2_as_subset(X59,X61,X60)|relation_of2(X59,X61,X60)).
+# cnf(c18,axiom,~relation_of2_as_subset(X63,X64,X65)|~subset(relation_rng(X63),X62)|relation_of2_as_subset(X63,X64,X62)).
+# cnf(c63,plain,relation_of2(skolem0005(X67,X66),X67,X66)).
+# cnf(c64,plain,relation_of2(skolem0004,skolem0003,skolem0001)).
+# cnf(c32,axiom,~relation_of2(X68,X70,X69)|relation_of2_as_subset(X68,X70,X69)).
+# cnf(c22,axiom,~relation_of2_as_subset(X74,X73,X75)|subset(relation_dom(X74),X73)).
+# cnf(c68,plain,relation_of2_as_subset(skolem0007(X76,X77),X76,X77)).
+# cnf(c70,plain,subset(relation_dom(skolem0004),skolem0003)).
+# cnf(c69,plain,subset(relation_dom(skolem0005(X81,X80)),X81)).
+# cnf(c71,plain,subset(relation_dom(skolem0007(X83,X82)),X83)).
+# cnf(c23,axiom,~relation_of2_as_subset(X85,X84,X86)|subset(relation_rng(X85),X86)).
+# cnf(c81,plain,subset(relation_rng(skolem0004),skolem0001)).
+# cnf(c79,plain,subset(relation_rng(skolem0005(X88,X87)),X87)).
+# cnf(c80,plain,subset(relation_rng(skolem0007(X89,X90)),X90)).
+# cnf(c59,plain,~subset(X91,skolem0001)|subset(X91,skolem0002)).
+# cnf(c44,axiom,~relation_of2_as_subset(X94,X92,X93)|element(X94,powerset(cartesian_product2(X92,X93)))).
+# cnf(c97,plain,subset(relation_rng(skolem0004),skolem0002)).
+# cnf(c74,plain,element(relation_dom(skolem0004),powerset(skolem0003))).
+# cnf(c84,plain,element(relation_rng(skolem0004),powerset(skolem0001))).
+# cnf(c53,axiom,~element(X96,powerset(cartesian_product2(X97,X98)))|relation(X96)).
+# cnf(c107,plain,relation(cartesian_product2(X99,X100))).
+# cnf(c95,plain,subset(skolem0006(powerset(skolem0001)),skolem0002)).
+# cnf(c103,plain,element(relation_rng(skolem0004),powerset(skolem0002))).
+# cnf(c60,plain,~subset(X102,skolem0006(powerset(X101)))|subset(X102,X101)).
+# cnf(c106,plain,relation(skolem0006(powerset(cartesian_product2(X104,X105))))).
+# cnf(c76,plain,element(relation_dom(skolem0005(X107,X106)),powerset(X107))).
+# cnf(c78,plain,element(relation_dom(skolem0007(X110,X111)),powerset(X110))).
+# cnf(c65,plain,~relation_of2_as_subset(X113,X112,X114)|relation_of2_as_subset(X113,X112,relation_rng(X113))).
+# cnf(c123,plain,relation_of2_as_subset(skolem0004,skolem0003,relation_rng(skolem0004))).
+# cnf(c73,plain,~subset(X117,relation_dom(skolem0004))|subset(X117,skolem0003)).
+# cnf(c128,plain,relation_of2(skolem0004,skolem0003,relation_rng(skolem0004))).
+# cnf(c87,plain,element(relation_rng(skolem0005(X119,X118)),powerset(X118))).
+# cnf(c75,plain,~subset(X124,relation_dom(skolem0005(X122,X123)))|subset(X124,X122)).
+# cnf(c90,plain,element(relation_rng(skolem0007(X127,X128)),powerset(X128))).
+# cnf(c91,plain,subset(relation_rng(skolem0007(X131,skolem0001)),skolem0002)).
+# cnf(c92,plain,subset(relation_dom(skolem0005(skolem0001,X132)),skolem0002)).
+# cnf(c77,plain,~subset(X135,relation_dom(skolem0007(X134,X133)))|subset(X135,X134)).
+# cnf(c94,plain,subset(relation_rng(skolem0005(X138,skolem0001)),skolem0002)).
+# cnf(c96,plain,subset(relation_dom(skolem0007(skolem0001,X139)),skolem0002)).
+# cnf(c117,plain,relation(relation_dom(skolem0005(cartesian_product2(X140,X142),X141)))).
+# cnf(c119,plain,relation(relation_dom(skolem0007(cartesian_product2(X143,X145),X144)))).
+# cnf(c82,plain,~subset(X146,relation_rng(skolem0004))|subset(X146,skolem0001)).
+# cnf(c136,plain,relation(relation_rng(skolem0005(X149,cartesian_product2(X147,X148))))).
+# cnf(c144,plain,relation(relation_rng(skolem0007(X151,cartesian_product2(X150,X152))))).
+# cnf(c98,plain,element(skolem0005(X154,X153),powerset(cartesian_product2(X154,X153)))).
+# cnf(c168,plain,relation(skolem0005(X155,X156))).
+# cnf(c83,plain,~relation_of2_as_subset(skolem0004,X157,X158)|relation_of2_as_subset(skolem0004,X157,skolem0001)).
+# cnf(c169,plain,subset(skolem0005(X159,X160),cartesian_product2(X159,X160))).
+# cnf(c99,plain,element(skolem0007(X161,X162),powerset(cartesian_product2(X161,X162)))).
+# cnf(c174,plain,relation(skolem0007(X163,X164))).
+# cnf(c85,plain,~subset(X167,relation_rng(skolem0005(X166,X165)))|subset(X167,X165)).
+# cnf(c175,plain,subset(skolem0007(X170,X171),cartesian_product2(X170,X171))).
+# cnf(c100,plain,element(skolem0004,powerset(cartesian_product2(skolem0003,skolem0001)))).
+# cnf(c184,plain,relation(skolem0004)).
+# cnf(c185,plain,subset(skolem0004,cartesian_product2(skolem0003,skolem0001))).
+# cnf(c86,plain,~relation_of2_as_subset(skolem0005(X175,X173),X172,X174)|relation_of2_as_subset(skolem0005(X175,X173),X172,X173)).
+# cnf(c101,plain,~subset(X178,relation_rng(skolem0004))|subset(X178,skolem0002)).
+# cnf(c109,plain,element(skolem0006(powerset(skolem0001)),powerset(skolem0002))).
+# cnf(c88,plain,~subset(X181,relation_rng(skolem0007(X179,X180)))|subset(X181,X180)).
+# cnf(c115,plain,subset(skolem0006(powerset(skolem0006(powerset(X184)))),X184)).
+# cnf(c133,plain,subset(skolem0006(powerset(relation_dom(skolem0004))),skolem0003)).
+# cnf(c166,plain,subset(skolem0006(powerset(relation_rng(skolem0004))),skolem0001)).
+# cnf(c89,plain,~relation_of2_as_subset(skolem0007(X187,X188),X190,X189)|relation_of2_as_subset(skolem0007(X187,X188),X190,X188)).
+# cnf(c193,plain,subset(skolem0006(powerset(relation_rng(skolem0004))),skolem0002)).
+# cnf(c102,plain,~relation_of2_as_subset(skolem0004,X195,X196)|relation_of2_as_subset(skolem0004,X195,skolem0002)).
+# cnf(c221,plain,relation_of2_as_subset(skolem0004,skolem0003,skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t16_relset_1,conjecture,(![A]:(![B]:(![C]:(![D]:(relation_of2_as_subset(D,C,A)=>(subset(A,B)=>relation_of2_as_subset(D,C,B))))))),input).
+fof(c9,negated_conjecture,(~(![A]:(![B]:(![C]:(![D]:(relation_of2_as_subset(D,C,A)=>(subset(A,B)=>relation_of2_as_subset(D,C,B)))))))),inference(assume_negation,status(cth),[t16_relset_1])).
+fof(c10,negated_conjecture,(?[A]:(?[B]:(?[C]:(?[D]:(relation_of2_as_subset(D,C,A)&(subset(A,B)&~relation_of2_as_subset(D,C,B))))))),inference(fof_nnf,status(thm),[c9])).
+fof(c11,negated_conjecture,(?[X9]:(?[X10]:(?[X11]:(?[X12]:(relation_of2_as_subset(X12,X11,X9)&(subset(X9,X10)&~relation_of2_as_subset(X12,X11,X10))))))),inference(variable_rename,status(thm),[c10])).
+fof(c12,negated_conjecture,(relation_of2_as_subset(skolem0004,skolem0003,skolem0001)&(subset(skolem0001,skolem0002)&~relation_of2_as_subset(skolem0004,skolem0003,skolem0002))),inference(skolemize,status(esa),[c11])).
+cnf(c15,negated_conjecture,~relation_of2_as_subset(skolem0004,skolem0003,skolem0002),inference(split_conjunct,status(thm),[c12])).
+cnf(c13,negated_conjecture,relation_of2_as_subset(skolem0004,skolem0003,skolem0001),inference(split_conjunct,status(thm),[c12])).
+fof(reflexivity_r1_tarski,axiom,(![A]:(![B]:subset(A,A))),input).
+fof(c24,axiom,(![A]:subset(A,A)),inference(fof_simplification,status(thm),[reflexivity_r1_tarski])).
+fof(c25,axiom,(![X20]:subset(X20,X20)),inference(variable_rename,status(thm),[c24])).
+cnf(c26,axiom,subset(X43,X43),inference(split_conjunct,status(thm),[c25])).
+fof(t14_relset_1,axiom,(![A]:(![B]:(![C]:(![D]:(relation_of2_as_subset(D,C,A)=>(subset(relation_rng(D),B)=>relation_of2_as_subset(D,C,B))))))),input).
+fof(c16,axiom,(![A]:(![B]:(![C]:(![D]:(~relation_of2_as_subset(D,C,A)|(~subset(relation_rng(D),B)|relation_of2_as_subset(D,C,B))))))),inference(fof_nnf,status(thm),[t14_relset_1])).
+fof(c17,axiom,(![X13]:(![X14]:(![X15]:(![X16]:(~relation_of2_as_subset(X16,X15,X13)|(~subset(relation_rng(X16),X14)|relation_of2_as_subset(X16,X15,X14))))))),inference(variable_rename,status(thm),[c16])).
+cnf(c18,axiom,~relation_of2_as_subset(X63,X64,X65)|~subset(relation_rng(X63),X62)|relation_of2_as_subset(X63,X64,X62),inference(split_conjunct,status(thm),[c17])).
+cnf(c65,plain,~relation_of2_as_subset(X113,X112,X114)|relation_of2_as_subset(X113,X112,relation_rng(X113)),inference(resolution,status(thm),[c18, c26])).
+cnf(c123,plain,relation_of2_as_subset(skolem0004,skolem0003,relation_rng(skolem0004)),inference(resolution,status(thm),[c65, c13])).
+fof(t12_relset_1,axiom,(![A]:(![B]:(![C]:(relation_of2_as_subset(C,A,B)=>(subset(relation_dom(C),A)&subset(relation_rng(C),B)))))),input).
+fof(c19,axiom,(![A]:(![B]:(![C]:(~relation_of2_as_subset(C,A,B)|(subset(relation_dom(C),A)&subset(relation_rng(C),B)))))),inference(fof_nnf,status(thm),[t12_relset_1])).
+fof(c20,axiom,(![X17]:(![X18]:(![X19]:(~relation_of2_as_subset(X19,X17,X18)|(subset(relation_dom(X19),X17)&subset(relation_rng(X19),X18)))))),inference(variable_rename,status(thm),[c19])).
+fof(c21,axiom,(![X17]:(![X18]:(![X19]:((~relation_of2_as_subset(X19,X17,X18)|subset(relation_dom(X19),X17))&(~relation_of2_as_subset(X19,X17,X18)|subset(relation_rng(X19),X18)))))),inference(distribute,status(thm),[c20])).
+cnf(c23,axiom,~relation_of2_as_subset(X85,X84,X86)|subset(relation_rng(X85),X86),inference(split_conjunct,status(thm),[c21])).
+cnf(c81,plain,subset(relation_rng(skolem0004),skolem0001),inference(resolution,status(thm),[c23, c13])).
+cnf(c14,negated_conjecture,subset(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c12])).
+fof(t1_xboole_1,axiom,(![A]:(![B]:(![C]:((subset(A,B)&subset(B,C))=>subset(A,C))))),input).
+fof(c6,axiom,(![A]:(![B]:(![C]:((~subset(A,B)|~subset(B,C))|subset(A,C))))),inference(fof_nnf,status(thm),[t1_xboole_1])).
+fof(c7,axiom,(![X6]:(![X7]:(![X8]:((~subset(X6,X7)|~subset(X7,X8))|subset(X6,X8))))),inference(variable_rename,status(thm),[c6])).
+cnf(c8,axiom,~subset(X55,X53)|~subset(X53,X54)|subset(X55,X54),inference(split_conjunct,status(thm),[c7])).
+cnf(c59,plain,~subset(X91,skolem0001)|subset(X91,skolem0002),inference(resolution,status(thm),[c8, c14])).
+cnf(c97,plain,subset(relation_rng(skolem0004),skolem0002),inference(resolution,status(thm),[c59, c81])).
+cnf(c102,plain,~relation_of2_as_subset(skolem0004,X195,X196)|relation_of2_as_subset(skolem0004,X195,skolem0002),inference(resolution,status(thm),[c97, c18])).
+cnf(c221,plain,relation_of2_as_subset(skolem0004,skolem0003,skolem0002),inference(resolution,status(thm),[c102, c123])).
+cnf(c226,plain,$false,inference(resolution,status(thm),[c221, c15])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 23
+# Processed clauses  : 80
+# Factors computed   : 0
+# Resolvents computed: 177
+# Tautologies deleted: 1
+# Forward subsumed   : 40
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.473 s
+# System time        : 0.311 s
+# Total time         : 0.783 s

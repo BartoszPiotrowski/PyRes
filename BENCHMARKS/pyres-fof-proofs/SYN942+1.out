@@ -1,0 +1,36 @@
+# cnf(c6,negated_conjecture,a(skolem0001)).
+# cnf(c7,negated_conjecture,~b(skolem0001)).
+# cnf(c8,negated_conjecture,~a(X5)|~c(X5)).
+# cnf(c5,negated_conjecture,~a(X6)|b(X6)|c(X6)).
+# cnf(c9,plain,b(skolem0001)|c(skolem0001)).
+# cnf(c10,plain,c(skolem0001)).
+# cnf(c12,plain,~a(skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,(((![X]:(a(X)=>(b(X)|c(X))))&(~(![X]:(a(X)=>b(X)))))=>(?[X]:(a(X)&c(X)))),input).
+fof(c0,negated_conjecture,(~(((![X]:(a(X)=>(b(X)|c(X))))&(~(![X]:(a(X)=>b(X)))))=>(?[X]:(a(X)&c(X))))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,(((![X]:(~a(X)|(b(X)|c(X))))&(?[X]:(a(X)&~b(X))))&(![X]:(~a(X)|~c(X)))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(((![X2]:(~a(X2)|(b(X2)|c(X2))))&(?[X3]:(a(X3)&~b(X3))))&(![X4]:(~a(X4)|~c(X4)))),inference(variable_rename,status(thm),[c1])).
+fof(c4,negated_conjecture,(![X2]:(![X4]:(((~a(X2)|(b(X2)|c(X2)))&(a(skolem0001)&~b(skolem0001)))&(~a(X4)|~c(X4))))),inference(shift_quantors,status(thm),[fof(c3,negated_conjecture,(((![X2]:(~a(X2)|(b(X2)|c(X2))))&(a(skolem0001)&~b(skolem0001)))&(![X4]:(~a(X4)|~c(X4)))),inference(skolemize,status(esa),[c2])).])).
+cnf(c6,negated_conjecture,a(skolem0001),inference(split_conjunct,status(thm),[c4])).
+cnf(c8,negated_conjecture,~a(X5)|~c(X5),inference(split_conjunct,status(thm),[c4])).
+cnf(c7,negated_conjecture,~b(skolem0001),inference(split_conjunct,status(thm),[c4])).
+cnf(c5,negated_conjecture,~a(X6)|b(X6)|c(X6),inference(split_conjunct,status(thm),[c4])).
+cnf(c9,plain,b(skolem0001)|c(skolem0001),inference(resolution,status(thm),[c5, c6])).
+cnf(c10,plain,c(skolem0001),inference(resolution,status(thm),[c9, c7])).
+cnf(c12,plain,~a(skolem0001),inference(resolution,status(thm),[c10, c8])).
+cnf(c13,plain,$false,inference(resolution,status(thm),[c12, c6])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 5
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.277 s
+# System time        : 0.265 s
+# Total time         : 0.542 s

@@ -1,0 +1,70 @@
+# cnf(c71,axiom,cowlThing(X87)).
+# cnf(c72,axiom,~cowlNothing(X88)).
+# cnf(reflexivity,axiom,X89=X89).
+# cnf(c18,axiom,cUnsatisfiable(i2003_11_14_17_18_59896)).
+# cnf(c65,axiom,~xsd_string(X90)|~xsd_integer(X90)).
+# cnf(symmetry,axiom,X91!=X92|X92=X91).
+# cnf(c66,axiom,xsd_integer(X94)|xsd_string(X94)).
+# cnf(c14,axiom,~rs(X96,X97)|rf(X96,X97)).
+# cnf(c17,axiom,~rs(X98,X99)|rf1(X98,X99)).
+# cnf(transitivity,axiom,X100!=X101|X101!=X102|X100=X102).
+# cnf(c26,axiom,~rinvS(X104,X103)|rs(X103,X104)).
+# cnf(c27,axiom,~rs(X106,X105)|rinvS(X105,X106)).
+# cnf(c32,axiom,~rinvF1(X107,X108)|rf1(X108,X107)).
+# cnf(c33,axiom,~rf1(X109,X110)|rinvF1(X110,X109)).
+# cnf(c38,axiom,~rinvF(X111,X112)|rf(X112,X111)).
+# cnf(c0,plain,X113!=X114|~cUnsatisfiable(X113)|cUnsatisfiable(X114)).
+# cnf(c39,axiom,~rf(X117,X116)|rinvF(X116,X117)).
+# cnf(c54,axiom,~cUnsatisfiable(X118)|cp(skolem0001(X118))).
+# cnf(c131,plain,cp(skolem0001(i2003_11_14_17_18_59896))).
+# cnf(c56,axiom,~cUnsatisfiable(X119)|cp(skolem0002(X119))).
+# cnf(c132,plain,cp(skolem0002(i2003_11_14_17_18_59896))).
+# cnf(c53,axiom,~cUnsatisfiable(X124)|rs(X124,skolem0001(X124))).
+# cnf(c133,plain,rs(i2003_11_14_17_18_59896,skolem0001(i2003_11_14_17_18_59896))).
+# cnf(c134,plain,rf(i2003_11_14_17_18_59896,skolem0001(i2003_11_14_17_18_59896))).
+# cnf(c135,plain,rf1(i2003_11_14_17_18_59896,skolem0001(i2003_11_14_17_18_59896))).
+# cnf(c136,plain,rinvS(skolem0001(i2003_11_14_17_18_59896),i2003_11_14_17_18_59896)).
+# cnf(c137,plain,rinvF(skolem0001(i2003_11_14_17_18_59896),i2003_11_14_17_18_59896)).
+# cnf(c138,plain,rinvF1(skolem0001(i2003_11_14_17_18_59896),i2003_11_14_17_18_59896)).
+# cnf(c3,plain,X127!=X128|~cp(X127)|cp(X128)).
+# cnf(c10,plain,X130!=X131|~xsd_integer(X130)|xsd_integer(X131)).
+# cnf(c4,plain,X133!=X134|X135!=X136|~rf(X133,X135)|rf(X134,X136)).
+# cnf(c11,plain,X137!=X138|~xsd_string(X137)|xsd_string(X138)).
+# cnf(c57,axiom,~cUnsatisfiable(X140)|~rs(X140,X141)|~cp(X141)).
+# cnf(c5,plain,X146!=X147|X148!=X149|~rf1(X146,X148)|rf1(X147,X149)).
+# cnf(c146,plain,~cUnsatisfiable(i2003_11_14_17_18_59896)|~cp(skolem0001(i2003_11_14_17_18_59896))).
+# cnf(c6,plain,X158!=X159|X160!=X161|~rinvF(X158,X160)|rinvF(X159,X161)).
+# cnf(c148,plain,~cUnsatisfiable(i2003_11_14_17_18_59896)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_9,axiom,cUnsatisfiable(i2003_11_14_17_18_59896),input).
+cnf(c18,axiom,cUnsatisfiable(i2003_11_14_17_18_59896),inference(split_conjunct,status(thm),[axiom_9])).
+fof(axiom_2,axiom,(![X]:(cUnsatisfiable(X)<=>((?[Y]:((rs(X,Y)&cp(Y))&(?[Z]:(rinvS(Y,Z)&cp(Z)))))&(![Y]:(rs(X,Y)=>(~cp(Y))))))),input).
+fof(c46,axiom,(![X]:(cUnsatisfiable(X)<=>((?[Y]:((rs(X,Y)&cp(Y))&(?[Z]:(rinvS(Y,Z)&cp(Z)))))&(![Y]:(rs(X,Y)=>~cp(Y)))))),inference(fof_simplification,status(thm),[axiom_2])).
+fof(c47,axiom,(![X]:((~cUnsatisfiable(X)|((?[Y]:((rs(X,Y)&cp(Y))&(?[Z]:(rinvS(Y,Z)&cp(Z)))))&(![Y]:(~rs(X,Y)|~cp(Y)))))&(((![Y]:((~rs(X,Y)|~cp(Y))|(![Z]:(~rinvS(Y,Z)|~cp(Z)))))|(?[Y]:(rs(X,Y)&cp(Y))))|cUnsatisfiable(X)))),inference(fof_nnf,status(thm),[c46])).
+fof(c48,axiom,((![X]:(~cUnsatisfiable(X)|((?[Y]:((rs(X,Y)&cp(Y))&(?[Z]:(rinvS(Y,Z)&cp(Z)))))&(![Y]:(~rs(X,Y)|~cp(Y))))))&(![X]:(((![Y]:((~rs(X,Y)|~cp(Y))|(![Z]:(~rinvS(Y,Z)|~cp(Z)))))|(?[Y]:(rs(X,Y)&cp(Y))))|cUnsatisfiable(X)))),inference(shift_quantors,status(thm),[c47])).
+fof(c49,axiom,((![X27]:(~cUnsatisfiable(X27)|((?[X28]:((rs(X27,X28)&cp(X28))&(?[X29]:(rinvS(X28,X29)&cp(X29)))))&(![X30]:(~rs(X27,X30)|~cp(X30))))))&(![X31]:(((![X32]:((~rs(X31,X32)|~cp(X32))|(![X33]:(~rinvS(X32,X33)|~cp(X33)))))|(?[X34]:(rs(X31,X34)&cp(X34))))|cUnsatisfiable(X31)))),inference(variable_rename,status(thm),[c48])).
+fof(c51,axiom,(![X27]:(![X30]:(![X31]:(![X32]:(![X33]:((~cUnsatisfiable(X27)|(((rs(X27,skolem0001(X27))&cp(skolem0001(X27)))&(rinvS(skolem0001(X27),skolem0002(X27))&cp(skolem0002(X27))))&(~rs(X27,X30)|~cp(X30))))&((((~rs(X31,X32)|~cp(X32))|(~rinvS(X32,X33)|~cp(X33)))|(rs(X31,skolem0003(X31))&cp(skolem0003(X31))))|cUnsatisfiable(X31)))))))),inference(shift_quantors,status(thm),[fof(c50,axiom,((![X27]:(~cUnsatisfiable(X27)|(((rs(X27,skolem0001(X27))&cp(skolem0001(X27)))&(rinvS(skolem0001(X27),skolem0002(X27))&cp(skolem0002(X27))))&(![X30]:(~rs(X27,X30)|~cp(X30))))))&(![X31]:(((![X32]:((~rs(X31,X32)|~cp(X32))|(![X33]:(~rinvS(X32,X33)|~cp(X33)))))|(rs(X31,skolem0003(X31))&cp(skolem0003(X31))))|cUnsatisfiable(X31)))),inference(skolemize,status(esa),[c49])).])).
+fof(c52,axiom,(![X27]:(![X30]:(![X31]:(![X32]:(![X33]:(((((~cUnsatisfiable(X27)|rs(X27,skolem0001(X27)))&(~cUnsatisfiable(X27)|cp(skolem0001(X27))))&((~cUnsatisfiable(X27)|rinvS(skolem0001(X27),skolem0002(X27)))&(~cUnsatisfiable(X27)|cp(skolem0002(X27)))))&(~cUnsatisfiable(X27)|(~rs(X27,X30)|~cp(X30))))&(((((~rs(X31,X32)|~cp(X32))|(~rinvS(X32,X33)|~cp(X33)))|rs(X31,skolem0003(X31)))|cUnsatisfiable(X31))&((((~rs(X31,X32)|~cp(X32))|(~rinvS(X32,X33)|~cp(X33)))|cp(skolem0003(X31)))|cUnsatisfiable(X31))))))))),inference(distribute,status(thm),[c51])).
+cnf(c54,axiom,~cUnsatisfiable(X118)|cp(skolem0001(X118)),inference(split_conjunct,status(thm),[c52])).
+cnf(c131,plain,cp(skolem0001(i2003_11_14_17_18_59896)),inference(resolution,status(thm),[c54, c18])).
+cnf(c53,axiom,~cUnsatisfiable(X124)|rs(X124,skolem0001(X124)),inference(split_conjunct,status(thm),[c52])).
+cnf(c133,plain,rs(i2003_11_14_17_18_59896,skolem0001(i2003_11_14_17_18_59896)),inference(resolution,status(thm),[c53, c18])).
+cnf(c57,axiom,~cUnsatisfiable(X140)|~rs(X140,X141)|~cp(X141),inference(split_conjunct,status(thm),[c52])).
+cnf(c146,plain,~cUnsatisfiable(i2003_11_14_17_18_59896)|~cp(skolem0001(i2003_11_14_17_18_59896)),inference(resolution,status(thm),[c57, c133])).
+cnf(c148,plain,~cUnsatisfiable(i2003_11_14_17_18_59896),inference(resolution,status(thm),[c146, c131])).
+cnf(c150,plain,$false,inference(resolution,status(thm),[c148, c18])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 56
+# Processed clauses  : 37
+# Factors computed   : 0
+# Resolvents computed: 24
+# Tautologies deleted: 6
+# Forward subsumed   : 12
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.349 s
+# System time        : 0.287 s
+# Total time         : 0.636 s

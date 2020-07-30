@@ -1,0 +1,45 @@
+# cnf(c19,axiom,cowlThing(X8)).
+# cnf(c20,axiom,~cowlNothing(X9)).
+# cnf(c4,axiom,cs(skolem0001)).
+# cnf(c3,axiom,rq(ii,skolem0001)).
+# cnf(c7,axiom,~rp(ii,X10)|ca(X10)).
+# cnf(c13,axiom,~xsd_string(X11)|~xsd_integer(X11)).
+# cnf(c14,axiom,xsd_integer(X12)|xsd_string(X12)).
+# SZS status Satisfiable
+# SZS output start Saturation
+fof(axiom_1,axiom,(![X]:(xsd_string(X)<=>(~xsd_integer(X)))),input).
+fof(c8,axiom,(![X]:(xsd_string(X)<=>~xsd_integer(X))),inference(fof_simplification,status(thm),[axiom_1])).
+fof(c9,axiom,(![X]:((~xsd_string(X)|~xsd_integer(X))&(xsd_integer(X)|xsd_string(X)))),inference(fof_nnf,status(thm),[c8])).
+fof(c10,axiom,((![X]:(~xsd_string(X)|~xsd_integer(X)))&(![X]:(xsd_integer(X)|xsd_string(X)))),inference(shift_quantors,status(thm),[c9])).
+fof(c12,axiom,(![X4]:(![X5]:((~xsd_string(X4)|~xsd_integer(X4))&(xsd_integer(X5)|xsd_string(X5))))),inference(shift_quantors,status(thm),[fof(c11,axiom,((![X4]:(~xsd_string(X4)|~xsd_integer(X4)))&(![X5]:(xsd_integer(X5)|xsd_string(X5)))),inference(variable_rename,status(thm),[c10])).])).
+cnf(c14,axiom,xsd_integer(X12)|xsd_string(X12),inference(split_conjunct,status(thm),[c12])).
+cnf(c13,axiom,~xsd_string(X11)|~xsd_integer(X11),inference(split_conjunct,status(thm),[c12])).
+fof(axiom_2_AndLHS,axiom,(![X]:(rp(ii,X)=>ca(X))),input).
+fof(c5,axiom,(![X]:(~rp(ii,X)|ca(X))),inference(fof_nnf,status(thm),[axiom_2_AndLHS])).
+fof(c6,axiom,(![X3]:(~rp(ii,X3)|ca(X3))),inference(variable_rename,status(thm),[c5])).
+cnf(c7,axiom,~rp(ii,X10)|ca(X10),inference(split_conjunct,status(thm),[c6])).
+fof(axiom_2_AndRHS,axiom,(?[X]:(rq(ii,X)&cs(X))),input).
+fof(c1,axiom,(?[X2]:(rq(ii,X2)&cs(X2))),inference(variable_rename,status(thm),[axiom_2_AndRHS])).
+fof(c2,axiom,(rq(ii,skolem0001)&cs(skolem0001)),inference(skolemize,status(esa),[c1])).
+cnf(c3,axiom,rq(ii,skolem0001),inference(split_conjunct,status(thm),[c2])).
+cnf(c4,axiom,cs(skolem0001),inference(split_conjunct,status(thm),[c2])).
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c15,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c16,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c15])).
+fof(c18,axiom,(![X6]:(![X7]:(cowlThing(X6)&~cowlNothing(X7)))),inference(shift_quantors,status(thm),[fof(c17,axiom,((![X6]:cowlThing(X6))&(![X7]:~cowlNothing(X7))),inference(variable_rename,status(thm),[c16])).])).
+cnf(c20,axiom,~cowlNothing(X9),inference(split_conjunct,status(thm),[c18])).
+cnf(c19,axiom,cowlThing(X8),inference(split_conjunct,status(thm),[c18])).
+# SZS output end Saturation
+
+# Initial clauses    : 8
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 1
+# Tautologies deleted: 1
+# Forward subsumed   : 1
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.296 s
+# System time        : 0.219 s
+# Total time         : 0.515 s

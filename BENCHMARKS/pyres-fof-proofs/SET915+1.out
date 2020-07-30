@@ -1,0 +1,38 @@
+# cnf(c14,axiom,~empty(skolem0003)).
+# cnf(c17,axiom,empty(skolem0004)).
+# cnf(c9,negated_conjecture,~in(skolem0001,skolem0002)).
+# cnf(c10,negated_conjecture,~disjoint(singleton(skolem0001),skolem0002)).
+# cnf(c21,axiom,~in(X13,X12)|~in(X12,X13)).
+# cnf(c3,axiom,in(X15,X14)|disjoint(singleton(X15),X14)).
+# cnf(c27,plain,in(skolem0001,skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t56_zfmisc_1,conjecture,(![A]:(![B]:((~in(A,B))=>disjoint(singleton(A),B)))),input).
+fof(c4,negated_conjecture,(~(![A]:(![B]:((~in(A,B))=>disjoint(singleton(A),B))))),inference(assume_negation,status(cth),[t56_zfmisc_1])).
+fof(c5,negated_conjecture,(~(![A]:(![B]:(~in(A,B)=>disjoint(singleton(A),B))))),inference(fof_simplification,status(thm),[c4])).
+fof(c6,negated_conjecture,(?[A]:(?[B]:(~in(A,B)&~disjoint(singleton(A),B)))),inference(fof_nnf,status(thm),[c5])).
+fof(c7,negated_conjecture,(?[X4]:(?[X5]:(~in(X4,X5)&~disjoint(singleton(X4),X5)))),inference(variable_rename,status(thm),[c6])).
+fof(c8,negated_conjecture,(~in(skolem0001,skolem0002)&~disjoint(singleton(skolem0001),skolem0002)),inference(skolemize,status(esa),[c7])).
+cnf(c9,negated_conjecture,~in(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c8])).
+cnf(c10,negated_conjecture,~disjoint(singleton(skolem0001),skolem0002),inference(split_conjunct,status(thm),[c8])).
+fof(l28_zfmisc_1,axiom,(![A]:(![B]:((~in(A,B))=>disjoint(singleton(A),B)))),input).
+fof(c0,axiom,(![A]:(![B]:(~in(A,B)=>disjoint(singleton(A),B)))),inference(fof_simplification,status(thm),[l28_zfmisc_1])).
+fof(c1,axiom,(![A]:(![B]:(in(A,B)|disjoint(singleton(A),B)))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,axiom,(![X2]:(![X3]:(in(X2,X3)|disjoint(singleton(X2),X3)))),inference(variable_rename,status(thm),[c1])).
+cnf(c3,axiom,in(X15,X14)|disjoint(singleton(X15),X14),inference(split_conjunct,status(thm),[c2])).
+cnf(c27,plain,in(skolem0001,skolem0002),inference(resolution,status(thm),[c3, c10])).
+cnf(c28,plain,$false,inference(resolution,status(thm),[c27, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 7
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 5
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.232 s
+# System time        : 0.209 s
+# Total time         : 0.441 s
