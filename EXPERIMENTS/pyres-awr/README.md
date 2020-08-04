@@ -8,20 +8,9 @@ different values of the parameter `p`.
 The plots show the dependence between `p` and the number of processed
 clauses (abstract time).
 
-(PyRes version used:
-https://github.com/BartoszPiotrowski/PyRes/tree/random
-commit ad4ba04)
 
 
-# Producing plots from statistics
-
-Producing plots for the problems which were both solved and unsolved
-for different values of queue probabilities:
-```
-grep 'yes' stats/*.p -l | xargs grep 'no' -l | xargs -l1 ./scripts/stats.R
-```
-
-# Selection of plots
+# Selection of different plots
 
 ## Steady grow
 
@@ -32,7 +21,7 @@ grep 'yes' stats/*.p -l | xargs grep 'no' -l | xargs -l1 ./scripts/stats.R
 ![](stats/SYN375+1.p.png?raw=true)
 ![](stats/SYO578+1.p.png?raw=true)
 ![](stats/SEU139+1.p.png?raw=true)
-![](stats/SWB029+2+1.p.png?raw=true)
+![](stats/SWB029+2.p.png?raw=true)
 
 ## Proved for rare age queue only
 
@@ -58,20 +47,19 @@ grep 'yes' stats/*.p -l | xargs grep 'no' -l | xargs -l1 ./scripts/stats.R
 ## Bimodal
 
 ![](stats/COM013+4.p.png?raw=true)
-![](stats/COM003+2.p.png?raw=true)
 ![](stats/SEU123+2.p.png?raw=true)
 ![](stats/SEU294+1.p.png?raw=true)
 
 ## Success in small interval only
 
 ![](stats/SEU130+2.p.png?raw=true)
-![](stats/NLP046+2.p.png?raw=true)
+![](stats/NLP046+1.p.png?raw=true)
 
-## Multiple ``branches'' or ``clusters''
+## Multiple *branches* or *clusters*
 
 ![](stats/KRS172+1.p.png?raw=true)
 ![](stats/KRS175+1.p.png?raw=true)
-![](stats/MGT0028+1.p.png?raw=true)
+![](stats/MGT028+1.p.png?raw=true)
 ![](stats/SET589+3.p.png?raw=true)
 ![](stats/LCL686+1.005.p.png?raw=true)
 ![](stats/MGT014+1.p.png?raw=true)
@@ -86,6 +74,15 @@ grep 'yes' stats/*.p -l | xargs grep 'no' -l | xargs -l1 ./scripts/stats.R
 ![](stats/SEU306+1.p.png?raw=true)
 
 
-
-
-
+# Reproducing the experiment
+```
+git checkout
+./EXPERIMENTS/pyres-awr/scripts/prep.py EXPERIMENTS/pyres-awr/logs > \
+	EXPERIMENTS/pyres-awr/to_run
+./EXPERIMENTS/pyres-awr/scripts/run.sh EXPERIMENTS/pyres-awr/to_run
+find  EXPERIMENTS/pyres-awr/logs/ -type f | xargs -l1 \
+	EXPERIMENTS/pyres-awr/scripts/stats.py EXPERIMENTS/pyres-awr/stats
+find EXPERIMENTS/pyres-awr/stats/ -name '*.p' | \
+	grep 'yes' -l | xargs grep 'no' -l | xargs -l1 \
+	./EXPERIMENTS/pyres-awr/scripts/stats.R
+```
