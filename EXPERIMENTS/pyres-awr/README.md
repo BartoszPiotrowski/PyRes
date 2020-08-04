@@ -76,7 +76,7 @@ clauses (abstract time).
 
 # Reproducing the experiment
 ```
-git checkout
+git checkout pyres-awr
 ./EXPERIMENTS/pyres-awr/scripts/prep.py EXPERIMENTS/pyres-awr/logs > \
 	EXPERIMENTS/pyres-awr/to_run
 ./EXPERIMENTS/pyres-awr/scripts/run.sh EXPERIMENTS/pyres-awr/to_run
