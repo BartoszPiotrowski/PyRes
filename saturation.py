@@ -138,7 +138,8 @@ class ProofState(object):
         Pick a clause from unprocessed and process it. If the empty
         clause is found, return it. Otherwise return None.
         """
-        given_clause = self.unprocessed.extractBest()
+        #given_clause = self.unprocessed.extractBest()
+        given_clause, eval_fun = self.unprocessed.extractBest2()
         given_clause = given_clause.freshVarCopy()
         if not self.silent:
             print("#")
@@ -175,7 +176,7 @@ class ProofState(object):
         if(self.params.literal_selection):
             given_clause.selectInferenceLits(self.params.literal_selection)
         if not self.silent:
-            print("#", given_clause)
+            print("#", eval_fun, given_clause)
         new = []
         factors    = computeAllFactors(given_clause)
         new.extend(factors)

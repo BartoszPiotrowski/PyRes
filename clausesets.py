@@ -126,7 +126,7 @@ class ClauseSet(object):
         all clauses.
         """
         return self.clauses
-        
+
 
     def parse(self, lexer):
         """
@@ -192,6 +192,15 @@ class HeuristicClauseSet(ClauseSet):
         return self.extractBestByEval(self.eval_functions.nextEval())
 
 
+    def extractBest2(self):
+        """
+        Extract and return the next "best" clause according to the
+        evaluation scheme.
+        """
+        eval_fun = self.eval_functions.nextEval()
+        return self.extractBestByEval(eval_fun), eval_fun
+
+
 
 class IndexedClauseSet(ClauseSet):
     """
@@ -200,7 +209,7 @@ class IndexedClauseSet(ClauseSet):
     """
     def __init__(self, clauses = []):
         """
-        Create the two indices and call the superclass initializer. 
+        Create the two indices and call the superclass initializer.
         """
         self.res_index = ResolutionIndex()
         self.sub_index = SubsumptionIndex()
@@ -226,19 +235,19 @@ class IndexedClauseSet(ClauseSet):
 
     def getResolutionLiterals(self, lit):
         """
-        Overwrite the original function with one based on indexing. 
+        Overwrite the original function with one based on indexing.
         """
         return self.res_index.getResolutionLiterals(lit)
 
     def getSubsumingCandidates(self, queryclause):
         """
-        Overwrite the original function with one based on indexing. 
+        Overwrite the original function with one based on indexing.
         """
         return self.sub_index.getSubsumingCandidates(queryclause)
 
     def getSubsumedCandidates(self, queryclause):
         """
-        Overwrite the original function with one based on indexing. 
+        Overwrite the original function with one based on indexing.
         """
         return self.sub_index.getSubsumedCandidates(queryclause)
 
