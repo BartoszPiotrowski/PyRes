@@ -76,5 +76,7 @@ def apply_temperature(probs, t):
     return [p ** (1/t) / denom for p in probs]
 
 
-
+def mkdir_if_not_exists(dirpath):
+    if not os.path.exists(dirpath):
+        os.makedirs(dirpath)
 

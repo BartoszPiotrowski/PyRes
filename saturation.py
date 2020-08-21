@@ -241,6 +241,8 @@ class ProofState(object):
         Return the proof state statistics in string form ready for
         output.
         """
+        used_queues = self.unprocessed.used_heuristic_indices
+        age_weight_ratio = sum(used_queues) / len(used_queues)
         return """
 # Initial clauses    : %d
 # Processed clauses  : %d
@@ -249,13 +251,15 @@ class ProofState(object):
 # Tautologies deleted: %d
 # Forward subsumed   : %d
 # Backward subsumed  : %d
+# Age / weight ratio : %.3f
 """ %(self.initial_clause_count,
     self.proc_clause_count,
     self.factor_count,
     self.resolvent_count,
     self.tautologies_deleted,
     self.forward_subsumed,
-    self.backward_subsumed)
+    self.backward_subsumed,
+    age_weight_ratio)
 
 
 class TestProver(unittest.TestCase):

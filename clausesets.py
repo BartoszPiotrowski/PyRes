@@ -161,6 +161,7 @@ class HeuristicClauseSet(ClauseSet):
         """
         self.clauses  = []
         self.eval_functions = eval_functions
+        self.used_heuristic_indices = []
 
 
     def addClause(self, clause):
@@ -179,6 +180,7 @@ class HeuristicClauseSet(ClauseSet):
         to the selected heuristic. If the set is empty, return None.
         """
         if self.clauses:
+            self.used_heuristic_indices.append(heuristic_index)
             best = 0
             besteval = self.clauses[0].evaluation[heuristic_index]
             for i in range(1, len(self.clauses)):

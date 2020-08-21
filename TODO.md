@@ -1,4 +1,5 @@
 # TODO
+- recording stats and visualizing
 - clipping of the inf loss
 - decrease the temperature with time
 - avoid running out of memory

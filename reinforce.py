@@ -9,6 +9,7 @@ from sys import getsizeof
 import numpy as np
 from itertools import chain
 from joblib import Parallel, delayed
+from time import strftime
 from rl_environment import Environment
 from policy_model import PolicyModel
 from evaluate import evaluate
@@ -136,7 +137,7 @@ if __name__ == "__main__":
         help="Timeout for running PyRes with trained policy for one problem.")
     parser.add_argument(
         "--save_path",
-        default='policy_model.pt',
+        default=None,
         type=str,
         help="Path for saving a trained policy model.")
     parser.add_argument(
@@ -144,10 +145,17 @@ if __name__ == "__main__":
         default=0,
         type=int,
         help="Number of parallel jobs to run.")
+    parser.add_argument(
+        "--stats_dir",
+        default='stats',
+        type=str,
+        help="Where to save statistics for partilular problems.")
     args = parser.parse_args()
 
     if not args.n_jobs:
         args.n_jobs = args.batch_size
+    if not args.save_path:
+        args.save_path = f"policy_model_{strftime('%Y%m%d%H%M%S')}.pt"
 
     env = Environment(**vars(args))
     problems = Problems(**vars(args))
@@ -238,6 +246,6 @@ if __name__ == "__main__":
                   f'(mode: {args.policy_eval_mode})...')
             evaluate(args.problems_list, args.pyres_options,
                      args.eval_timeout, saved_policy_model,
-                     args.policy_eval_mode)
+                     args.policy_eval_mode, args.stats_dir)
             print()
 
