@@ -1,7 +1,7 @@
 STATS_DIR=tests/reinforce/10
 rm $STATS_DIR/*
 python3 reinforce.py \
-	BENCHMARKS/B3_10 \
+	'BENCHMARKS/B_NUM519+1' \
 	--episodes 5000 \
 	--step_limit 100 \
 	--batch_size 1 \
