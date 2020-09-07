@@ -125,6 +125,8 @@ class ProofState(object):
         for c in clauses.clauses:
             self.unprocessed.addClause(c)
         self.initial_clause_count = len(self.unprocessed)
+        self.initial_mean_clause_len = self.unprocessed.avgNumOfLits()
+        self.initial_mean_clause_weight = self.unprocessed.avgWeightOfClauses()
         self.proc_clause_count    = 0
         self.factor_count         = 0
         self.resolvent_count      = 0
@@ -192,6 +194,7 @@ class ProofState(object):
             self.unprocessed.addClause(c)
         return None
 
+
     def saturate(self):
         """
         Main proof procedure. If the clause set is found
@@ -211,14 +214,18 @@ class ProofState(object):
         output.
         """
         return """
-# Initial clauses    : %d
-# Processed clauses  : %d
-# Factors computed   : %d
-# Resolvents computed: %d
-# Tautologies deleted: %d
-# Forward subsumed   : %d
-# Backward subsumed  : %d""" \
+# Initial clauses                : %d
+# Initial mean length of clauses : %f
+# Initial mean weight of clauses : %f
+# Processed clauses              : %d
+# Factors computed               : %d
+# Resolvents computed            : %d
+# Tautologies deleted            : %d
+# Forward subsumed               : %d
+# Backward subsumed              : %d""" \
     %(self.initial_clause_count,
+      self.initial_mean_clause_len,
+      self.initial_mean_clause_weight,
       self.proc_clause_count,
       self.factor_count,
       self.resolvent_count,
