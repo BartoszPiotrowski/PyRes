@@ -34,6 +34,7 @@ Email: schulz@eprover.org
 """
 
 import unittest
+import numpy as np
 from lexer import Lexer
 from signature import Signature
 from literals import parseLiteral
@@ -139,6 +140,14 @@ class ClauseSet(object):
             self.addClause(clause)
             count = count+1
         return count
+
+    def avgNumOfLits(self):
+        lens = [len(c) for c in self.clauses]
+        return np.mean(lens) if lens else 0.0
+
+    def avgWeightOfClauses(self):
+        weights = [c.weight(2, 1) for c in self.clauses]
+        return np.mean(weights) if weights else 0.0
 
 
 class HeuristicClauseSet(ClauseSet):
