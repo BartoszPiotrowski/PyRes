@@ -13,9 +13,10 @@ rm -rf EXPERIMENTS/regression/logs
 	EXPERIMENTS/regression/to_run
 ./EXPERIMENTS/regression/scripts/run.sh EXPERIMENTS/regression/to_run
 
-rm -rf EXPERIMENTS/regression/stats
+rm -rf EXPERIMENTS/regression/stats.csv
 find  EXPERIMENTS/regression/logs/ -type f | \
-	EXPERIMENTS/regression/scripts/stats.py EXPERIMENTS/regression/stats
+	EXPERIMENTS/regression/scripts/stats.py EXPERIMENTS/regression/stats.csv
+./EXPERIMENTS/regression/scripts/stats.R \
+	EXPERIMENTS/regression/stats.csv
 
-./EXPERIMENTS/regression/scripts/stats.R EXPERIMENTS/regression/stats
 ```
