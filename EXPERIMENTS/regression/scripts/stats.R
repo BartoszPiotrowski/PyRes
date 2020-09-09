@@ -2,6 +2,8 @@
 library(ggplot2)
 library(reshape)
 library(ranger)
+#library(xgboost)
+#library(caret)
 
 stats<-commandArgs(trailingOnly=T)[[1]]
 df<-read.csv(stats, header=F)
@@ -16,7 +18,7 @@ df<-df[df$max_processed > 0,]
 # when processed is 0, processed is 2 * max_processed
 df$processed<-ifelse(df$processed > 0, df$processed, 2*df$max_processed)
 
-test.probs <- sample(df$problem_name, 30)
+test.probs <- sample(df$problem_name, 50)
 df.test<-df[df$problem_name %in% test.probs,]
 df.train<-df[!(df$problem_name %in% test.probs),]
 
@@ -30,11 +32,33 @@ df.train<-df[!(df$problem_name %in% test.probs),]
 #	#scale_y_continuous(limits = c(0, NA)) +
 #ggsave(paste(stats, '.png', sep=''), device='png', width=24, heigh=16)
 
-model <- ranger(
+#model.lm <- lm(
+#	processed ~ age_prob + init_clauses + init_lengths + init_weights,
+#	data = df.train)
+
+#df.test$predicted_processed<-predict(model.lm, df.test)
+
+model.rf <- ranger(
 	processed ~ age_prob + init_clauses + init_lengths + init_weights,
 	data = df.train, num.trees=1000, importance = 'impurity')
 
-df.test$predicted_processed<-predict(model, df.test)$predictions
+df.test$predicted_processed<-predict(model.rf, df.test)$predictions
+
+#xgb.grid <- expand.grid(
+#	nrounds = 100,
+#	max_depth = c(5, 10),
+#	eta = c(0.01, 0.1),
+#	gamma = 0,
+#	colsample_bytree = 1,
+#	min_child_weight = 1,
+#	subsample = 1)
+#
+#model.xgb <- train(
+#	processed ~ age_prob + init_clauses + init_lengths + init_weights,
+#	data = df.train,
+#	method = 'xgbTree',
+#	tuneGrid = xgb.grid)
+#
 
 for (prob in test.probs){
 	df.prob<-df.test[df.test$problem_name==prob,]
@@ -43,6 +67,7 @@ for (prob in test.probs){
 				  measure.vars=c("processed", "predicted_processed"))
 	ggplot(df.prob, aes(x=age_prob, y=value)) +
 		geom_point(aes(color=variable, shape=proved)) +
+		ggtitle(prob)
 		#scale_x_continuous(limits=c(0,1), breaks = seq(0,1,0.1), expand=c(0,0)) +
 		#scale_x_continuous(limits=c(0,1), breaks = seq(0,1,0.1)) +
 		#scale_y_continuous(limits = c(0, NA)) +
