@@ -1,4 +1,6 @@
 # TODO
+- select some problems with a clear dependence between age_weight ratio
+	and performance; do rl on them
 - recording stats and visualizing
 - clipping of the inf loss
 - decrease the temperature with time
