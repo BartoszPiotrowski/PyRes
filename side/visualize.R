@@ -9,7 +9,7 @@ p=strsplit(problem, '/')[[1]]
 problem_name = p[[length(p)]]
 df$step<-seq(nrow(df))
 ggplot(df, aes(x=step, y=processed_clauses)) +
-	geom_point(aes(color=age_weight_ratio),size=0.8,alpha=0.8) +
+	geom_point(aes(color=age_weight_ratio),size=1,alpha=1) +
 	#geom_hline(yintercept=mean(df$initial), color='orange', size=1, alpha=0.4) +
 	#scale_x_continuous(limits=c(0,1), breaks = seq(0,1,0.1), expand=c(0,0)) +
 	#scale_y_continuous(limits = c(0, NA), expand=c(0,0)) +
