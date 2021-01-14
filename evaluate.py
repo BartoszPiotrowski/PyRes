@@ -44,14 +44,14 @@ def stats_from_output(outputs, stats_dir=None):
                 if 'Age / weight ratio' in l:
                     aw = float(l.split(' ')[-1])
                     age_weight.append(aw)
+            if stats_dir:
+                mkdir_if_not_exists(stats_dir)
+                file = os.path.join(stats_dir, os.path.basename(o))
+                to_append = f"{t},{p},{aw}"
+                append_line(to_append, file)
         else:
             success.append(0)
 
-        if stats_dir:
-            mkdir_if_not_exists(stats_dir)
-            file = os.path.join(stats_dir, os.path.basename(o))
-            to_append = f"{t},{p},{aw}"
-            append_line(to_append, file)
 
     print(f'Problems solved                     : {sum(success)} / {len(success)}')
     print(f'Average user time                   : {np.mean(time):.2f}')
