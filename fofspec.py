@@ -113,6 +113,7 @@ class FOFSpec(object):
         """
         if formula.type in ["conjecture", "negated_conjecture"] :
             self.hasConj = True
+            self.conj = formula
         self.isFof = True
         self.formulas.append(formula)
 
@@ -152,6 +153,8 @@ class FOFSpec(object):
             form = self.formulas.pop()
             form = negateConjecture(form)
             tmp = wFormulaClausify(form)
+            if form.type == "negated_conjecture":
+                self.conj_cnfs = tmp
             self.clauses.extend(tmp)
 
         return ClauseSet(self.clauses)

@@ -194,12 +194,18 @@ if __name__ == '__main__':
     params = processOptions(opts)
 
     problem = FOFSpec()
-    for file in args:
-        problem.parse(file)
+    assert len(args) == 1
+    file = args[0]
+    problem.parse(file)
+    print(problem.conj.formula)
 
     if not suppressEqAxioms:
         problem.addEqAxioms()
     cnf = problem.clausify()
+    print(problem.conj_cnfs)
+    print(problem.conj_cnfs[0])
+    if params.heuristics == GivenClauseHeuristics['ThreeQueues']:
+        params.heuristics = params.heuristics(problem.conj_cnfs)
 
     state = ProofState(params, cnf, silent, indexed)
     res = state.saturate()

@@ -46,6 +46,7 @@ import unittest
 from lexer import Lexer
 import clauses
 import numpy as np
+from distance import distanceFromSet
 
 class ClauseEvaluationFunction(object):
     """
@@ -120,6 +121,24 @@ class SymbolCountEvaluation(ClauseEvaluationFunction):
         return clause.weight(self.fweight, self.vweight)
 
 
+class ConjectureSimilarityEvaluation(ClauseEvaluationFunction):
+    """
+    Evaluation based on similarity of a clause to the conjecture.
+    """
+    def __init__(self, conj_cnfs):
+        """
+        Initialize heuristic.
+        """
+        self.conj_cnfs = conj_cnfs
+        self.name           = "ConjectureSimilarityEvaluation"
+
+    def hEval(self, clause):
+        """
+        Actual evaluation function.
+        """
+        return distanceFromSet(self.conj_cnfs, clause)
+
+
 class EvalStructure(object):
     """
     Represent a heuristic clause processing schema. The scheme
@@ -173,7 +192,6 @@ class EvalStructureRandom(EvalStructure):
         return self.current
 
 
-
 FIFOEval        = EvalStructure([(FIFOEvaluation(),1)])
 """
 Strict first-in/first out evaluation. This is obviously fair
@@ -211,13 +229,21 @@ PickGivenRandom = lambda age_queue_prob: \
     EvalStructureRandom([(SymbolCountEvaluation(2,1),1 - age_queue_prob),
                          (FIFOEvaluation(), age_queue_prob)])
 
+ThreeQueues = lambda conj_cnfs: \
+    EvalStructure([
+        (SymbolCountEvaluation(2,1),1),
+        (FIFOEvaluation(),1),
+        (ConjectureSimilarityEvaluation(conj_cnfs),1)
+    ])
+
 
 GivenClauseHeuristics = {
     "FIFO"       : FIFOEval,
     "SymbolCount": SymbolCountEval,
     "PickGiven5" : PickGiven5,
     "PickGiven2" : PickGiven2,
-    "PickGivenRandom" : PickGivenRandom}
+    "PickGivenRandom" : PickGivenRandom,
+    "ThreeQueues" : ThreeQueues}
 """
 Table associating name and evaluation function, so that we can select
 the function by name.
