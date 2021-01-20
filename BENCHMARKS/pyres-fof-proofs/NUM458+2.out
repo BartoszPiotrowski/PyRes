@@ -1,0 +1,67 @@
+# cnf(c89,axiom,$true).
+# cnf(reflexivity,axiom,X41=X41).
+# cnf(c11,plain,aNaturalNumber0(xm)).
+# cnf(c85,axiom,aNaturalNumber0(sz10)).
+# cnf(c87,axiom,aNaturalNumber0(sz00)).
+# cnf(symmetry,axiom,X42!=X43|X43=X42).
+# cnf(c10,negated_conjecture,~sdtlseqdt0(xm,xm)).
+# cnf(c86,axiom,sz10!=sz00).
+# cnf(c3,plain,X45!=X46|~aNaturalNumber0(X45)|aNaturalNumber0(X46)).
+# cnf(transitivity,axiom,X48!=X49|X49!=X50|X48=X50).
+# cnf(c60,axiom,~aNaturalNumber0(X53)|sdtasdt0(X53,sz10)=X53).
+# cnf(c93,plain,sdtasdt0(xm,sz10)=xm).
+# cnf(c94,plain,sdtasdt0(sz00,sz10)=sz00).
+# cnf(c95,plain,sdtasdt0(sz10,sz10)=sz10).
+# cnf(c0,plain,X55!=X57|X54!=X56|sdtpldt0(X55,X54)=sdtpldt0(X57,X56)).
+# cnf(c97,plain,xm=sdtasdt0(xm,sz10)).
+# cnf(c100,plain,sz00=sdtasdt0(sz00,sz10)).
+# cnf(c103,plain,sz10=sdtasdt0(sz10,sz10)).
+# cnf(c1,plain,X59!=X61|X58!=X60|sdtasdt0(X59,X58)=sdtasdt0(X61,X60)).
+# cnf(c61,axiom,~aNaturalNumber0(X62)|X62=sdtasdt0(sz10,X62)).
+# cnf(c128,plain,xm=sdtasdt0(sz10,xm)).
+# cnf(c129,plain,sz00=sdtasdt0(sz10,sz00)).
+# cnf(c2,plain,X64!=X66|X63!=X65|sdtmndt0(X64,X63)=sdtmndt0(X66,X65)).
+# cnf(c133,plain,sdtasdt0(sz10,xm)=xm).
+# cnf(c138,plain,sdtasdt0(sz10,sz00)=sz00).
+# cnf(c71,axiom,~aNaturalNumber0(X67)|sdtpldt0(X67,sz00)=X67).
+# cnf(c4,plain,X69!=X71|X68!=X70|~sdtlseqdt0(X69,X68)|sdtlseqdt0(X71,X70)).
+# cnf(c162,plain,sdtpldt0(xm,sz00)=xm).
+# cnf(c163,plain,sdtpldt0(sz00,sz00)=sz00).
+# cnf(c164,plain,sdtpldt0(sz10,sz00)=sz10).
+# cnf(c168,plain,xm=sdtpldt0(xm,sz00)).
+# cnf(c174,plain,sz00=sdtpldt0(sz00,sz00)).
+# cnf(c9,negated_conjecture,~aNaturalNumber0(X72)|sdtpldt0(xm,X72)!=xm).
+# cnf(c195,plain,~aNaturalNumber0(sz00)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(mSortsC,axiom,aNaturalNumber0(sz00),input).
+cnf(c87,axiom,aNaturalNumber0(sz00),inference(split_conjunct,status(thm),[mSortsC])).
+fof(m__718,plain,aNaturalNumber0(xm),input).
+cnf(c11,plain,aNaturalNumber0(xm),inference(split_conjunct,status(thm),[m__718])).
+fof(m_AddZero,axiom,(![W0]:(aNaturalNumber0(W0)=>(sdtpldt0(W0,sz00)=W0&W0=sdtpldt0(sz00,W0)))),input).
+fof(c68,axiom,(![W0]:(~aNaturalNumber0(W0)|(sdtpldt0(W0,sz00)=W0&W0=sdtpldt0(sz00,W0)))),inference(fof_nnf,status(thm),[m_AddZero])).
+fof(c69,axiom,(![X31]:(~aNaturalNumber0(X31)|(sdtpldt0(X31,sz00)=X31&X31=sdtpldt0(sz00,X31)))),inference(variable_rename,status(thm),[c68])).
+fof(c70,axiom,(![X31]:((~aNaturalNumber0(X31)|sdtpldt0(X31,sz00)=X31)&(~aNaturalNumber0(X31)|X31=sdtpldt0(sz00,X31)))),inference(distribute,status(thm),[c69])).
+cnf(c71,axiom,~aNaturalNumber0(X67)|sdtpldt0(X67,sz00)=X67,inference(split_conjunct,status(thm),[c70])).
+cnf(c162,plain,sdtpldt0(xm,sz00)=xm,inference(resolution,status(thm),[c71, c11])).
+fof(m__,conjecture,((?[W0]:(aNaturalNumber0(W0)&sdtpldt0(xm,W0)=xm))|sdtlseqdt0(xm,xm)),input).
+fof(c5,negated_conjecture,(~((?[W0]:(aNaturalNumber0(W0)&sdtpldt0(xm,W0)=xm))|sdtlseqdt0(xm,xm))),inference(assume_negation,status(cth),[m__])).
+fof(c6,negated_conjecture,((![W0]:(~aNaturalNumber0(W0)|sdtpldt0(xm,W0)!=xm))&~sdtlseqdt0(xm,xm)),inference(fof_nnf,status(thm),[c5])).
+fof(c8,negated_conjecture,(![X2]:((~aNaturalNumber0(X2)|sdtpldt0(xm,X2)!=xm)&~sdtlseqdt0(xm,xm))),inference(shift_quantors,status(thm),[fof(c7,negated_conjecture,((![X2]:(~aNaturalNumber0(X2)|sdtpldt0(xm,X2)!=xm))&~sdtlseqdt0(xm,xm)),inference(variable_rename,status(thm),[c6])).])).
+cnf(c9,negated_conjecture,~aNaturalNumber0(X72)|sdtpldt0(xm,X72)!=xm,inference(split_conjunct,status(thm),[c8])).
+cnf(c195,plain,~aNaturalNumber0(sz00),inference(resolution,status(thm),[c9, c162])).
+cnf(c196,plain,$false,inference(resolution,status(thm),[c195, c87])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 42
+# Processed clauses  : 34
+# Factors computed   : 0
+# Resolvents computed: 107
+# Tautologies deleted: 2
+# Forward subsumed   : 7
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.278 s
+# System time        : 0.268 s
+# Total time         : 0.546 s

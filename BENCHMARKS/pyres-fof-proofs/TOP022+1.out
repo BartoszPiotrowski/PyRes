@@ -1,0 +1,74 @@
+# cnf(c4,negated_conjecture,path_connected(skolem0001)).
+# cnf(c5,negated_conjecture,a_member_of(skolem0002,skolem0001)).
+# cnf(c6,negated_conjecture,a_member_of(skolem0003,skolem0001)).
+# cnf(c18,axiom,a_member_of(X25,X26)|path_connected(X26)).
+# cnf(c7,negated_conjecture,~isomorphic_groups(first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003))).
+# cnf(c20,axiom,~a_path_from_to_in(X29,X30,X31,X32)|path_connected(X32)).
+# cnf(c27,axiom,~a_group_isomorphism_from_to(X35,X34,X33)|isomorphic_groups(X34,X33)).
+# cnf(c26,axiom,~isomorphic_groups(X37,X36)|a_group_isomorphism_from_to(skolem0005(X37,X36),X37,X36)).
+# cnf(c10,axiom,~a_path_from_to_in(X38,X41,X39,X40)|a_group_isomorphism_from_to(alpha_hat(X38),first_homotop_grp(X40,X41),first_homotop_grp(X40,X39))).
+# cnf(c17,axiom,~path_connected(X44)|~a_member_of(X42,X44)|~a_member_of(X43,X44)|a_path_from_to_in(skolem0004(X44,X42,X43),X42,X43,X44)).
+# cnf(c28,plain,~path_connected(skolem0001)|~a_member_of(X45,skolem0001)|a_path_from_to_in(skolem0004(skolem0001,X45,skolem0002),X45,skolem0002,skolem0001)).
+# cnf(c31,plain,~path_connected(skolem0001)|a_path_from_to_in(skolem0004(skolem0001,skolem0002,skolem0002),skolem0002,skolem0002,skolem0001)).
+# cnf(c35,plain,a_path_from_to_in(skolem0004(skolem0001,skolem0002,skolem0002),skolem0002,skolem0002,skolem0001)).
+# cnf(c32,plain,~path_connected(skolem0001)|a_path_from_to_in(skolem0004(skolem0001,skolem0003,skolem0002),skolem0003,skolem0002,skolem0001)).
+# cnf(c29,plain,~path_connected(skolem0001)|~a_member_of(X49,skolem0001)|a_path_from_to_in(skolem0004(skolem0001,X49,skolem0003),X49,skolem0003,skolem0001)).
+# cnf(c39,plain,a_path_from_to_in(skolem0004(skolem0001,skolem0003,skolem0002),skolem0003,skolem0002,skolem0001)).
+# cnf(c40,plain,~path_connected(skolem0001)|a_path_from_to_in(skolem0004(skolem0001,skolem0002,skolem0003),skolem0002,skolem0003,skolem0001)).
+# cnf(c46,plain,a_path_from_to_in(skolem0004(skolem0001,skolem0002,skolem0003),skolem0002,skolem0003,skolem0001)).
+# cnf(c41,plain,~path_connected(skolem0001)|a_path_from_to_in(skolem0004(skolem0001,skolem0003,skolem0003),skolem0003,skolem0003,skolem0001)).
+# cnf(c50,plain,a_path_from_to_in(skolem0004(skolem0001,skolem0003,skolem0003),skolem0003,skolem0003,skolem0001)).
+# cnf(c36,plain,a_group_isomorphism_from_to(alpha_hat(skolem0004(skolem0001,skolem0002,skolem0002)),first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0002))).
+# cnf(c53,plain,isomorphic_groups(first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0002))).
+# cnf(c43,plain,a_group_isomorphism_from_to(alpha_hat(skolem0004(skolem0001,skolem0003,skolem0002)),first_homotop_grp(skolem0001,skolem0003),first_homotop_grp(skolem0001,skolem0002))).
+# cnf(c47,plain,a_group_isomorphism_from_to(alpha_hat(skolem0004(skolem0001,skolem0002,skolem0003)),first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003))).
+# cnf(c55,plain,isomorphic_groups(first_homotop_grp(skolem0001,skolem0003),first_homotop_grp(skolem0001,skolem0002))).
+# cnf(c56,plain,isomorphic_groups(first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m_8_2_2,conjecture,(![X]:(![X0]:(![X1]:(((path_connected(X)&a_member_of(X0,X))&a_member_of(X1,X))=>isomorphic_groups(first_homotop_grp(X,X0),first_homotop_grp(X,X1)))))),input).
+fof(c0,negated_conjecture,(~(![X]:(![X0]:(![X1]:(((path_connected(X)&a_member_of(X0,X))&a_member_of(X1,X))=>isomorphic_groups(first_homotop_grp(X,X0),first_homotop_grp(X,X1))))))),inference(assume_negation,status(cth),[m_8_2_2])).
+fof(c1,negated_conjecture,(?[X]:(?[X0]:(?[X1]:(((path_connected(X)&a_member_of(X0,X))&a_member_of(X1,X))&~isomorphic_groups(first_homotop_grp(X,X0),first_homotop_grp(X,X1)))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:(?[X3]:(?[X4]:(((path_connected(X2)&a_member_of(X3,X2))&a_member_of(X4,X2))&~isomorphic_groups(first_homotop_grp(X2,X3),first_homotop_grp(X2,X4)))))),inference(variable_rename,status(thm),[c1])).
+fof(c3,negated_conjecture,(((path_connected(skolem0001)&a_member_of(skolem0002,skolem0001))&a_member_of(skolem0003,skolem0001))&~isomorphic_groups(first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003))),inference(skolemize,status(esa),[c2])).
+cnf(c7,negated_conjecture,~isomorphic_groups(first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003)),inference(split_conjunct,status(thm),[c3])).
+fof(isomorphic_groups_defn,axiom,(![A]:(![B]:(isomorphic_groups(A,B)<=>(?[F]:a_group_isomorphism_from_to(F,A,B))))),input).
+fof(c21,axiom,(![A]:(![B]:((~isomorphic_groups(A,B)|(?[F]:a_group_isomorphism_from_to(F,A,B)))&((![F]:~a_group_isomorphism_from_to(F,A,B))|isomorphic_groups(A,B))))),inference(fof_nnf,status(thm),[isomorphic_groups_defn])).
+fof(c22,axiom,((![A]:(![B]:(~isomorphic_groups(A,B)|(?[F]:a_group_isomorphism_from_to(F,A,B)))))&(![A]:(![B]:((![F]:~a_group_isomorphism_from_to(F,A,B))|isomorphic_groups(A,B))))),inference(shift_quantors,status(thm),[c21])).
+fof(c23,axiom,((![X19]:(![X20]:(~isomorphic_groups(X19,X20)|(?[X21]:a_group_isomorphism_from_to(X21,X19,X20)))))&(![X22]:(![X23]:((![X24]:~a_group_isomorphism_from_to(X24,X22,X23))|isomorphic_groups(X22,X23))))),inference(variable_rename,status(thm),[c22])).
+fof(c25,axiom,(![X19]:(![X20]:(![X22]:(![X23]:(![X24]:((~isomorphic_groups(X19,X20)|a_group_isomorphism_from_to(skolem0005(X19,X20),X19,X20))&(~a_group_isomorphism_from_to(X24,X22,X23)|isomorphic_groups(X22,X23)))))))),inference(shift_quantors,status(thm),[fof(c24,axiom,((![X19]:(![X20]:(~isomorphic_groups(X19,X20)|a_group_isomorphism_from_to(skolem0005(X19,X20),X19,X20))))&(![X22]:(![X23]:((![X24]:~a_group_isomorphism_from_to(X24,X22,X23))|isomorphic_groups(X22,X23))))),inference(skolemize,status(esa),[c23])).])).
+cnf(c27,axiom,~a_group_isomorphism_from_to(X35,X34,X33)|isomorphic_groups(X34,X33),inference(split_conjunct,status(thm),[c25])).
+fof(m_8_2_1,axiom,(![A]:(![X0]:(![X1]:(![X]:(a_path_from_to_in(A,X0,X1,X)=>a_group_isomorphism_from_to(alpha_hat(A),first_homotop_grp(X,X0),first_homotop_grp(X,X1))))))),input).
+fof(c8,axiom,(![A]:(![X0]:(![X1]:(![X]:(~a_path_from_to_in(A,X0,X1,X)|a_group_isomorphism_from_to(alpha_hat(A),first_homotop_grp(X,X0),first_homotop_grp(X,X1))))))),inference(fof_nnf,status(thm),[m_8_2_1])).
+fof(c9,axiom,(![X5]:(![X6]:(![X7]:(![X8]:(~a_path_from_to_in(X5,X6,X7,X8)|a_group_isomorphism_from_to(alpha_hat(X5),first_homotop_grp(X8,X6),first_homotop_grp(X8,X7))))))),inference(variable_rename,status(thm),[c8])).
+cnf(c10,axiom,~a_path_from_to_in(X38,X41,X39,X40)|a_group_isomorphism_from_to(alpha_hat(X38),first_homotop_grp(X40,X41),first_homotop_grp(X40,X39)),inference(split_conjunct,status(thm),[c9])).
+cnf(c4,negated_conjecture,path_connected(skolem0001),inference(split_conjunct,status(thm),[c3])).
+cnf(c5,negated_conjecture,a_member_of(skolem0002,skolem0001),inference(split_conjunct,status(thm),[c3])).
+cnf(c6,negated_conjecture,a_member_of(skolem0003,skolem0001),inference(split_conjunct,status(thm),[c3])).
+fof(path_connected_defn,axiom,(![X]:(![X0]:(![X1]:(path_connected(X)<=>((a_member_of(X0,X)&a_member_of(X1,X))=>(?[P]:a_path_from_to_in(P,X0,X1,X))))))),input).
+fof(c11,axiom,(![X]:(![X0]:(![X1]:((~path_connected(X)|((~a_member_of(X0,X)|~a_member_of(X1,X))|(?[P]:a_path_from_to_in(P,X0,X1,X))))&(((a_member_of(X0,X)&a_member_of(X1,X))&(![P]:~a_path_from_to_in(P,X0,X1,X)))|path_connected(X)))))),inference(fof_nnf,status(thm),[path_connected_defn])).
+fof(c12,axiom,((![X]:(~path_connected(X)|(![X0]:(![X1]:((~a_member_of(X0,X)|~a_member_of(X1,X))|(?[P]:a_path_from_to_in(P,X0,X1,X)))))))&(![X]:((((![X0]:a_member_of(X0,X))&(![X1]:a_member_of(X1,X)))&(![X0]:(![X1]:(![P]:~a_path_from_to_in(P,X0,X1,X)))))|path_connected(X)))),inference(shift_quantors,status(thm),[c11])).
+fof(c13,axiom,((![X9]:(~path_connected(X9)|(![X10]:(![X11]:((~a_member_of(X10,X9)|~a_member_of(X11,X9))|(?[X12]:a_path_from_to_in(X12,X10,X11,X9)))))))&(![X13]:((((![X14]:a_member_of(X14,X13))&(![X15]:a_member_of(X15,X13)))&(![X16]:(![X17]:(![X18]:~a_path_from_to_in(X18,X16,X17,X13)))))|path_connected(X13)))),inference(variable_rename,status(thm),[c12])).
+fof(c15,axiom,(![X9]:(![X10]:(![X11]:(![X13]:(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:((~path_connected(X9)|((~a_member_of(X10,X9)|~a_member_of(X11,X9))|a_path_from_to_in(skolem0004(X9,X10,X11),X10,X11,X9)))&(((a_member_of(X14,X13)&a_member_of(X15,X13))&~a_path_from_to_in(X18,X16,X17,X13))|path_connected(X13)))))))))))),inference(shift_quantors,status(thm),[fof(c14,axiom,((![X9]:(~path_connected(X9)|(![X10]:(![X11]:((~a_member_of(X10,X9)|~a_member_of(X11,X9))|a_path_from_to_in(skolem0004(X9,X10,X11),X10,X11,X9))))))&(![X13]:((((![X14]:a_member_of(X14,X13))&(![X15]:a_member_of(X15,X13)))&(![X16]:(![X17]:(![X18]:~a_path_from_to_in(X18,X16,X17,X13)))))|path_connected(X13)))),inference(skolemize,status(esa),[c13])).])).
+fof(c16,axiom,(![X9]:(![X10]:(![X11]:(![X13]:(![X14]:(![X15]:(![X16]:(![X17]:(![X18]:((~path_connected(X9)|((~a_member_of(X10,X9)|~a_member_of(X11,X9))|a_path_from_to_in(skolem0004(X9,X10,X11),X10,X11,X9)))&(((a_member_of(X14,X13)|path_connected(X13))&(a_member_of(X15,X13)|path_connected(X13)))&(~a_path_from_to_in(X18,X16,X17,X13)|path_connected(X13))))))))))))),inference(distribute,status(thm),[c15])).
+cnf(c17,axiom,~path_connected(X44)|~a_member_of(X42,X44)|~a_member_of(X43,X44)|a_path_from_to_in(skolem0004(X44,X42,X43),X42,X43,X44),inference(split_conjunct,status(thm),[c16])).
+cnf(c29,plain,~path_connected(skolem0001)|~a_member_of(X49,skolem0001)|a_path_from_to_in(skolem0004(skolem0001,X49,skolem0003),X49,skolem0003,skolem0001),inference(resolution,status(thm),[c17, c6])).
+cnf(c40,plain,~path_connected(skolem0001)|a_path_from_to_in(skolem0004(skolem0001,skolem0002,skolem0003),skolem0002,skolem0003,skolem0001),inference(resolution,status(thm),[c29, c5])).
+cnf(c46,plain,a_path_from_to_in(skolem0004(skolem0001,skolem0002,skolem0003),skolem0002,skolem0003,skolem0001),inference(resolution,status(thm),[c40, c4])).
+cnf(c47,plain,a_group_isomorphism_from_to(alpha_hat(skolem0004(skolem0001,skolem0002,skolem0003)),first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003)),inference(resolution,status(thm),[c46, c10])).
+cnf(c56,plain,isomorphic_groups(first_homotop_grp(skolem0001,skolem0002),first_homotop_grp(skolem0001,skolem0003)),inference(resolution,status(thm),[c47, c27])).
+cnf(c58,plain,$false,inference(resolution,status(thm),[c56, c7])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 11
+# Processed clauses  : 26
+# Factors computed   : 0
+# Resolvents computed: 32
+# Tautologies deleted: 3
+# Forward subsumed   : 9
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.356 s
+# System time        : 0.283 s
+# Total time         : 0.639 s

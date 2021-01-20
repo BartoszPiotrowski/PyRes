@@ -1,0 +1,27 @@
+# cnf(c12,axiom,cowlThing(X6)).
+# cnf(c13,axiom,~cowlNothing(X7)).
+# cnf(c0,axiom,cowlNothing(i2003_11_14_17_18_08754)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c8,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c9,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c8])).
+fof(c11,axiom,(![X4]:(![X5]:(cowlThing(X4)&~cowlNothing(X5)))),inference(shift_quantors,status(thm),[fof(c10,axiom,((![X4]:cowlThing(X4))&(![X5]:~cowlNothing(X5))),inference(variable_rename,status(thm),[c9])).])).
+cnf(c13,axiom,~cowlNothing(X7),inference(split_conjunct,status(thm),[c11])).
+fof(axiom_2,axiom,cowlNothing(i2003_11_14_17_18_08754),input).
+cnf(c0,axiom,cowlNothing(i2003_11_14_17_18_08754),inference(split_conjunct,status(thm),[axiom_2])).
+cnf(c14,plain,$false,inference(resolution,status(thm),[c0, c13])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 3
+# Factors computed   : 0
+# Resolvents computed: 1
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.295 s
+# System time        : 0.174 s
+# Total time         : 0.470 s

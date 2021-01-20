@@ -1,0 +1,420 @@
+# cnf(c53,axiom,cowlThing(X30)).
+# cnf(c54,axiom,~cowlNothing(X31)).
+# cnf(reflexivity,axiom,X32=X32).
+# cnf(symmetry,axiom,X34!=X33|X33=X34).
+# cnf(c47,axiom,~xsd_string(X36)|~xsd_integer(X36)).
+# cnf(c48,axiom,xsd_integer(X37)|xsd_string(X37)).
+# cnf(c26,axiom,~cB(X39)|X39=ib).
+# cnf(transitivity,axiom,X42!=X41|X41!=X40|X42=X40).
+# cnf(c27,axiom,X43!=ib|cB(X43)).
+# cnf(c79,plain,cB(ib)).
+# cnf(c34,axiom,X44!=ib|cA_and_B(X44)).
+# cnf(c81,plain,cA_and_B(ib)).
+# cnf(c0,plain,X45!=X46|~cA(X45)|cA(X46)).
+# cnf(c35,axiom,X48!=ia|cA_and_B(X48)).
+# cnf(c83,plain,cA_and_B(ia)).
+# cnf(c40,axiom,~cA(X49)|X49=ia).
+# cnf(c41,axiom,X50!=ia|cA(X50)).
+# cnf(c1,plain,X51!=X52|~cA_and_B(X51)|cA_and_B(X52)).
+# cnf(c84,plain,cA(ia)).
+# cnf(c2,plain,X56!=X57|~cB(X56)|cB(X57)).
+# cnf(c5,plain,X63!=X64|~xsd_integer(X63)|xsd_integer(X64)).
+# cnf(c6,plain,X66!=X67|~xsd_string(X66)|xsd_string(X67)).
+# cnf(c14,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cB(skolem0004)).
+# cnf(c15,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cA(skolem0004)).
+# cnf(c33,axiom,~cA_and_B(X83)|X83=ib|X83=ia).
+# cnf(c16,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c17,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cB(skolem0004)).
+# cnf(c18,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cA(skolem0004)).
+# cnf(c92,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c93,plain,cowlNothing(skolem0002)|xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c19,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c94,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c106,plain,cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c109,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|cA(skolem0004)|skolem0004=ib).
+# cnf(c126,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|cA(skolem0004)).
+# cnf(c131,plain,cA_and_B(skolem0004)|cA(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c135,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|skolem0004=ia).
+# cnf(c142,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)).
+# cnf(c150,plain,cA_and_B(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c96,plain,cowlNothing(skolem0002)|xsd_integer(skolem0003)|cB(skolem0004)|cA(skolem0004)|skolem0004=ib|skolem0004=ia).
+# cnf(c139,plain,xsd_integer(skolem0003)|skolem0004=ia|skolem0004=ib).
+# cnf(c182,plain,xsd_integer(skolem0003)|skolem0004=ib|cA(skolem0004)).
+# cnf(c202,plain,xsd_integer(skolem0003)|cA(skolem0004)|cB(skolem0004)).
+# cnf(c215,plain,cA(skolem0004)|cB(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c191,plain,xsd_integer(skolem0003)|skolem0004=ia|cB(skolem0004)).
+# cnf(c201,plain,skolem0004=ib|cA(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c206,plain,xsd_integer(skolem0003)|cA(skolem0004)|ib=skolem0004).
+# cnf(c244,plain,xsd_integer(skolem0003)|cA(skolem0004)|~cA(ib)).
+# cnf(c224,plain,skolem0004=ia|cB(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c230,plain,xsd_integer(skolem0003)|cB(skolem0004)|ia=skolem0004).
+# cnf(c260,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cB(ia)).
+# cnf(c239,plain,cA(skolem0004)|ib=skolem0004|~xsd_string(skolem0003)).
+# cnf(c252,plain,cB(skolem0004)|ia=skolem0004|~xsd_string(skolem0003)).
+# cnf(c103,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c181,plain,skolem0004=ia|skolem0004=ib|~xsd_string(skolem0003)).
+# cnf(c187,plain,xsd_integer(skolem0003)|skolem0004=ib|ia=skolem0004).
+# cnf(c195,plain,xsd_integer(skolem0003)|skolem0004=ia|ib=skolem0004).
+# cnf(c209,plain,xsd_integer(skolem0003)|cA(skolem0004)|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c210,plain,xsd_integer(skolem0003)|cA(skolem0004)|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c232,plain,xsd_integer(skolem0003)|cB(skolem0004)|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c233,plain,xsd_integer(skolem0003)|cB(skolem0004)|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c248,plain,xsd_integer(skolem0003)|cA(skolem0004)|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c249,plain,xsd_integer(skolem0003)|cA(skolem0004)|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c261,plain,xsd_integer(skolem0003)|cB(skolem0004)|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c262,plain,xsd_integer(skolem0003)|cB(skolem0004)|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c267,plain,skolem0004=ib|ia=skolem0004|~xsd_string(skolem0003)).
+# cnf(c272,plain,xsd_integer(skolem0003)|ia=skolem0004|ib=skolem0004).
+# cnf(c284,plain,skolem0004=ia|ib=skolem0004|~xsd_string(skolem0003)).
+# cnf(c301,plain,xsd_integer(skolem0003)|cA(skolem0004)|xsd_integer(ib)|xsd_string(skolem0004)).
+# cnf(c302,plain,xsd_integer(skolem0003)|cA(skolem0004)|xsd_string(ib)|xsd_integer(skolem0004)).
+# cnf(c303,plain,xsd_integer(skolem0003)|cB(skolem0004)|xsd_integer(ia)|xsd_string(skolem0004)).
+# cnf(c304,plain,xsd_integer(skolem0003)|cB(skolem0004)|xsd_string(ia)|xsd_integer(skolem0004)).
+# cnf(c310,plain,ia=skolem0004|ib=skolem0004|~xsd_string(skolem0003)).
+# cnf(c326,plain,cA(skolem0004)|xsd_integer(ib)|xsd_string(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c334,plain,cA(skolem0004)|xsd_string(ib)|xsd_integer(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c342,plain,cB(skolem0004)|xsd_integer(ia)|xsd_string(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c350,plain,cB(skolem0004)|xsd_string(ia)|xsd_integer(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c189,plain,xsd_integer(skolem0003)|skolem0004=ib|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c190,plain,xsd_integer(skolem0003)|skolem0004=ib|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c198,plain,xsd_integer(skolem0003)|skolem0004=ia|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c199,plain,xsd_integer(skolem0003)|skolem0004=ia|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c203,plain,xsd_integer(skolem0003)|cA(skolem0004)|X86!=skolem0004|X86=ib).
+# cnf(c226,plain,xsd_integer(skolem0003)|cB(skolem0004)|X87!=skolem0004|X87=ia).
+# cnf(c243,plain,xsd_integer(skolem0003)|cA(skolem0004)|X88!=ib|X88=skolem0004).
+# cnf(c256,plain,xsd_integer(skolem0003)|cB(skolem0004)|X89!=ia|X89=skolem0004).
+# cnf(c270,plain,xsd_integer(skolem0003)|ia=skolem0004|~cA(skolem0004)|cA(ib)).
+# cnf(c275,plain,xsd_integer(skolem0003)|ia=skolem0004|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c276,plain,xsd_integer(skolem0003)|ia=skolem0004|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c282,plain,xsd_integer(skolem0003)|skolem0004=ib|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c283,plain,xsd_integer(skolem0003)|skolem0004=ib|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c291,plain,xsd_integer(skolem0003)|ib=skolem0004|~cB(skolem0004)|cB(ia)).
+# cnf(c292,plain,xsd_integer(skolem0003)|ib=skolem0004|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c293,plain,xsd_integer(skolem0003)|ib=skolem0004|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c299,plain,xsd_integer(skolem0003)|skolem0004=ia|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c300,plain,xsd_integer(skolem0003)|skolem0004=ia|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c316,plain,xsd_integer(skolem0003)|ib=skolem0004|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c317,plain,xsd_integer(skolem0003)|ib=skolem0004|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c323,plain,xsd_integer(skolem0003)|ia=skolem0004|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c324,plain,xsd_integer(skolem0003)|ia=skolem0004|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c329,plain,xsd_integer(skolem0003)|xsd_integer(ib)|xsd_string(skolem0004)|skolem0004=ia).
+# cnf(c337,plain,xsd_integer(skolem0003)|xsd_string(ib)|xsd_integer(skolem0004)|skolem0004=ia).
+# cnf(c344,plain,xsd_integer(skolem0003)|xsd_integer(ia)|xsd_string(skolem0004)|skolem0004=ib).
+# cnf(c352,plain,xsd_integer(skolem0003)|xsd_string(ia)|xsd_integer(skolem0004)|skolem0004=ib).
+# cnf(c404,plain,xsd_integer(skolem0003)|ia=skolem0004|xsd_integer(ib)|xsd_string(skolem0004)).
+# cnf(c528,plain,xsd_integer(skolem0003)|xsd_integer(ib)|xsd_string(skolem0004)|~xsd_string(ia)).
+# cnf(c541,plain,xsd_integer(skolem0003)|xsd_integer(ib)|xsd_string(skolem0004)|xsd_integer(ia)).
+# cnf(c542,plain,xsd_integer(ib)|xsd_string(skolem0004)|xsd_integer(ia)|~xsd_string(skolem0003)).
+# cnf(c544,plain,xsd_integer(skolem0003)|xsd_string(skolem0004)|xsd_integer(ia)|~xsd_string(ib)).
+# cnf(c406,plain,xsd_integer(skolem0003)|ia=skolem0004|xsd_string(ib)|xsd_integer(skolem0004)).
+# cnf(c568,plain,xsd_integer(skolem0003)|xsd_string(ib)|xsd_integer(skolem0004)|~xsd_integer(ia)).
+# cnf(c584,plain,xsd_integer(skolem0003)|xsd_string(ib)|xsd_integer(skolem0004)|xsd_string(ia)).
+# cnf(c586,plain,xsd_string(ib)|xsd_integer(skolem0004)|xsd_string(ia)|~xsd_string(skolem0003)).
+# cnf(c592,plain,xsd_integer(skolem0003)|xsd_string(ib)|xsd_string(ia)|~xsd_string(skolem0004)).
+# cnf(c419,plain,xsd_integer(skolem0003)|ib=skolem0004|xsd_integer(ia)|xsd_string(skolem0004)).
+# cnf(c421,plain,xsd_integer(skolem0003)|ib=skolem0004|xsd_string(ia)|xsd_integer(skolem0004)).
+# cnf(c639,plain,xsd_integer(skolem0003)|xsd_string(ia)|xsd_integer(skolem0004)|~xsd_integer(ib)).
+# cnf(c435,plain,xsd_integer(ib)|xsd_string(skolem0004)|skolem0004=ia|~xsd_string(skolem0003)).
+# cnf(c456,plain,xsd_string(ib)|xsd_integer(skolem0004)|skolem0004=ia|~xsd_string(skolem0003)).
+# cnf(c477,plain,xsd_integer(ia)|xsd_string(skolem0004)|skolem0004=ib|~xsd_string(skolem0003)).
+# cnf(c498,plain,xsd_string(ia)|xsd_integer(skolem0004)|skolem0004=ib|~xsd_string(skolem0003)).
+# cnf(c519,plain,ia=skolem0004|xsd_integer(ib)|xsd_string(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c561,plain,ia=skolem0004|xsd_string(ib)|xsd_integer(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c610,plain,ib=skolem0004|xsd_integer(ia)|xsd_string(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c632,plain,ib=skolem0004|xsd_string(ia)|xsd_integer(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c183,plain,xsd_integer(skolem0003)|skolem0004=ib|X91!=skolem0004|X91=ia).
+# cnf(c192,plain,xsd_integer(skolem0003)|skolem0004=ia|X92!=skolem0004|X92=ib).
+# cnf(c265,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c688,plain,xsd_string(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c727,plain,cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004)).
+# cnf(c756,plain,cA_and_B(skolem0004)|cA(skolem0004)|skolem0004=ib).
+# cnf(c774,plain,cA_and_B(skolem0004)|cA(skolem0004)).
+# cnf(c782,plain,cA_and_B(skolem0004)|skolem0004=ia).
+# cnf(c787,plain,cA_and_B(skolem0004)).
+# cnf(c784,plain,skolem0004=ia|skolem0004=ib).
+# cnf(c796,plain,skolem0004=ib|cA(skolem0004)).
+# cnf(c816,plain,cA(skolem0004)|cB(skolem0004)).
+# cnf(c806,plain,skolem0004=ia|cB(skolem0004)).
+# cnf(c820,plain,cA(skolem0004)|ib=skolem0004).
+# cnf(c859,plain,cA(skolem0004)|~cA(ib)).
+# cnf(c843,plain,cB(skolem0004)|ia=skolem0004).
+# cnf(c878,plain,cB(skolem0004)|~cB(ia)).
+# cnf(c801,plain,skolem0004=ib|ia=skolem0004).
+# cnf(c810,plain,skolem0004=ia|ib=skolem0004).
+# cnf(c824,plain,cA(skolem0004)|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c825,plain,cA(skolem0004)|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c846,plain,cB(skolem0004)|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c847,plain,cB(skolem0004)|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c864,plain,cA(skolem0004)|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c212,plain,xsd_integer(skolem0003)|skolem0004=ib|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c866,plain,cA(skolem0004)|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c879,plain,cB(skolem0004)|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c881,plain,cB(skolem0004)|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c886,plain,ia=skolem0004|ib=skolem0004).
+# cnf(c929,plain,cA(skolem0004)|xsd_integer(ib)|xsd_string(skolem0004)).
+# cnf(c934,plain,cA(skolem0004)|xsd_string(ib)|xsd_integer(skolem0004)).
+# cnf(c945,plain,cB(skolem0004)|xsd_integer(ia)|xsd_string(skolem0004)).
+# cnf(c950,plain,cB(skolem0004)|xsd_string(ia)|xsd_integer(skolem0004)).
+# cnf(c217,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c221,plain,xsd_integer(skolem0003)|cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c804,plain,skolem0004=ib|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c805,plain,skolem0004=ib|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c236,plain,xsd_integer(skolem0003)|skolem0004=ia|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c814,plain,skolem0004=ia|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c815,plain,skolem0004=ia|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c817,plain,cA(skolem0004)|X95!=skolem0004|X95=ib).
+# cnf(c839,plain,cB(skolem0004)|X96!=skolem0004|X96=ia).
+# cnf(c858,plain,cA(skolem0004)|X97!=ib|X97=skolem0004).
+# cnf(c241,plain,xsd_integer(skolem0003)|ib=skolem0004|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c873,plain,cB(skolem0004)|X98!=ia|X98=skolem0004).
+# cnf(c884,plain,ia=skolem0004|~cA(skolem0004)|cA(ib)).
+# cnf(c890,plain,ia=skolem0004|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c891,plain,ia=skolem0004|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c900,plain,skolem0004=ib|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c255,plain,xsd_integer(skolem0003)|ia=skolem0004|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c902,plain,skolem0004=ib|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c910,plain,ib=skolem0004|~cB(skolem0004)|cB(ia)).
+# cnf(c911,plain,ib=skolem0004|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c269,plain,xsd_integer(skolem0003)|ia=skolem0004|X99!=skolem0004|X99=ib).
+# cnf(c912,plain,ib=skolem0004|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c921,plain,skolem0004=ia|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c277,plain,xsd_integer(skolem0003)|skolem0004=ib|X100!=ia|X100=skolem0004).
+# cnf(c923,plain,skolem0004=ia|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c985,plain,ib=skolem0004|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c286,plain,xsd_integer(skolem0003)|ib=skolem0004|X101!=skolem0004|X101=ia).
+# cnf(c987,plain,ib=skolem0004|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c996,plain,ia=skolem0004|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c294,plain,xsd_integer(skolem0003)|skolem0004=ia|X102!=ib|X102=skolem0004).
+# cnf(c998,plain,ia=skolem0004|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c1001,plain,xsd_integer(ib)|xsd_string(skolem0004)|skolem0004=ia).
+# cnf(c1017,plain,xsd_string(ib)|xsd_integer(skolem0004)|skolem0004=ia).
+# cnf(c311,plain,xsd_integer(skolem0003)|ib=skolem0004|X103!=ia|X103=skolem0004).
+# cnf(c1030,plain,xsd_integer(ia)|xsd_string(skolem0004)|skolem0004=ib).
+# cnf(c318,plain,xsd_integer(skolem0003)|ia=skolem0004|X104!=ib|X104=skolem0004).
+# cnf(c1046,plain,xsd_string(ia)|xsd_integer(skolem0004)|skolem0004=ib).
+# cnf(c328,plain,xsd_integer(skolem0003)|xsd_integer(ib)|xsd_string(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c1139,plain,ia=skolem0004|xsd_integer(ib)|xsd_string(skolem0004)).
+# cnf(c1359,plain,xsd_integer(ib)|xsd_string(skolem0004)|~xsd_string(ia)).
+# cnf(c1377,plain,xsd_integer(ib)|xsd_string(skolem0004)|xsd_integer(ia)).
+# cnf(c1384,plain,xsd_string(skolem0004)|xsd_integer(ia)|~xsd_string(ib)).
+# cnf(c1144,plain,ia=skolem0004|xsd_string(ib)|xsd_integer(skolem0004)).
+# cnf(c1409,plain,xsd_string(ib)|xsd_integer(skolem0004)|~xsd_integer(ia)).
+# cnf(c1428,plain,xsd_string(ib)|xsd_integer(skolem0004)|xsd_string(ia)).
+# cnf(c1439,plain,xsd_string(ib)|xsd_string(ia)|~xsd_string(skolem0004)).
+# cnf(c1171,plain,ib=skolem0004|xsd_integer(ia)|xsd_string(skolem0004)).
+# cnf(c336,plain,xsd_integer(skolem0003)|xsd_string(ib)|xsd_integer(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c1187,plain,ib=skolem0004|xsd_string(ia)|xsd_integer(skolem0004)).
+# cnf(c1487,plain,xsd_string(ia)|xsd_integer(skolem0004)|~xsd_integer(ib)).
+# cnf(c345,plain,xsd_integer(skolem0003)|xsd_integer(ia)|xsd_string(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c353,plain,xsd_integer(skolem0003)|xsd_string(ia)|xsd_integer(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c797,plain,skolem0004=ib|X105!=skolem0004|X105=ia).
+# cnf(c807,plain,skolem0004=ia|X106!=skolem0004|X106=ib).
+# cnf(c883,plain,ia=skolem0004|X107!=skolem0004|X107=ib).
+# cnf(c894,plain,skolem0004=ib|X108!=ia|X108=skolem0004).
+# cnf(c904,plain,ib=skolem0004|X109!=skolem0004|X109=ia).
+# cnf(c915,plain,skolem0004=ia|X110!=ib|X110=skolem0004).
+# cnf(c979,plain,ib=skolem0004|X111!=ia|X111=skolem0004).
+# cnf(c990,plain,ia=skolem0004|X112!=ib|X112=skolem0004).
+# cnf(c1263,plain,xsd_integer(ib)|xsd_string(skolem0004)|~cB(skolem0004)|cB(ia)).
+# cnf(c1285,plain,xsd_string(ib)|xsd_integer(skolem0004)|~cB(skolem0004)|cB(ia)).
+# cnf(c1319,plain,xsd_integer(ia)|xsd_string(skolem0004)|~cA(skolem0004)|cA(ib)).
+# cnf(c1348,plain,xsd_string(ia)|xsd_integer(skolem0004)|~cA(skolem0004)|cA(ib)).
+# cnf(c1261,plain,xsd_integer(ib)|xsd_string(skolem0004)|X114!=skolem0004|X114=ia).
+# cnf(c1283,plain,xsd_string(ib)|xsd_integer(skolem0004)|X115!=skolem0004|X115=ia).
+# cnf(c1311,plain,xsd_integer(ia)|xsd_string(skolem0004)|X116!=skolem0004|X116=ib).
+# cnf(c1339,plain,xsd_string(ia)|xsd_integer(skolem0004)|X117!=skolem0004|X117=ib).
+# cnf(c1352,plain,xsd_integer(ib)|xsd_string(skolem0004)|X118!=ia|X118=skolem0004).
+# cnf(c1404,plain,xsd_string(ib)|xsd_integer(skolem0004)|X120!=ia|X120=skolem0004).
+# cnf(c1456,plain,xsd_integer(ia)|xsd_string(skolem0004)|X121!=ib|X121=skolem0004).
+# cnf(c1482,plain,xsd_string(ia)|xsd_integer(skolem0004)|X122!=ib|X122=skolem0004).
+# cnf(c1061,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)).
+# cnf(c1669,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)).
+# cnf(c1670,plain,xsd_integer(skolem0003)|cB(skolem0004)|cowlNothing(skolem0002)).
+# cnf(c1678,plain,xsd_integer(skolem0003)|cB(skolem0004)).
+# cnf(c1679,plain,cB(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c1681,plain,xsd_integer(skolem0003)|skolem0004=ib).
+# cnf(c1687,plain,skolem0004=ib|~xsd_string(skolem0003)).
+# cnf(c1699,plain,xsd_integer(skolem0003)|ib=skolem0004).
+# cnf(c1703,plain,ib=skolem0004|~xsd_string(skolem0003)).
+# cnf(c1692,plain,xsd_integer(skolem0003)|~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c1696,plain,xsd_integer(skolem0003)|~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c1698,plain,xsd_integer(skolem0003)|~cA(skolem0004)|cA(ib)).
+# cnf(c1710,plain,xsd_integer(skolem0003)|~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c1713,plain,xsd_integer(skolem0003)|~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c1725,plain,xsd_integer(skolem0003)|xsd_integer(ib)|xsd_string(skolem0004)).
+# cnf(c1731,plain,xsd_integer(skolem0003)|xsd_string(ib)|xsd_integer(skolem0004)).
+# cnf(c1753,plain,xsd_integer(ib)|xsd_string(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c1768,plain,xsd_string(ib)|xsd_integer(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c1688,plain,xsd_integer(skolem0003)|X127!=skolem0004|X127=ib).
+# cnf(c1705,plain,xsd_integer(skolem0003)|X128!=ib|X128=skolem0004).
+# cnf(c1062,plain,xsd_integer(skolem0003)|cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)).
+# cnf(c1803,plain,xsd_integer(skolem0003)|cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)).
+# cnf(c1804,plain,xsd_integer(skolem0003)|cA(skolem0004)|cowlNothing(skolem0002)).
+# cnf(c1813,plain,xsd_integer(skolem0003)|cA(skolem0004)).
+# cnf(c1814,plain,cA(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c1819,plain,xsd_integer(skolem0003)|cA(ib)).
+# cnf(c1823,plain,cA(ib)|~xsd_string(skolem0003)).
+# cnf(c1817,plain,xsd_integer(skolem0003)|skolem0004=ia).
+# cnf(c1825,plain,xsd_integer(skolem0003)|ib=ia).
+# cnf(c1827,plain,skolem0004=ia|~xsd_string(skolem0003)).
+# cnf(c1839,plain,xsd_integer(skolem0003)|ia=skolem0004).
+# cnf(c1842,plain,ib=ia|~xsd_string(skolem0003)).
+# cnf(c1854,plain,xsd_integer(skolem0003)|ia=ib).
+# cnf(c1888,plain,xsd_integer(skolem0003)|cB(ia)).
+# cnf(c1894,plain,cB(ia)|~xsd_string(skolem0003)).
+# cnf(c1858,plain,ia=skolem0004|~xsd_string(skolem0003)).
+# cnf(c1878,plain,ia=ib|~xsd_string(skolem0003)).
+# cnf(c1832,plain,xsd_integer(skolem0003)|~xsd_integer(skolem0004)|xsd_integer(ia)).
+# cnf(c1834,plain,xsd_integer(skolem0003)|~xsd_string(skolem0004)|xsd_string(ia)).
+# cnf(c1847,plain,xsd_integer(skolem0003)|~xsd_integer(ib)|xsd_integer(ia)).
+# cnf(c1849,plain,xsd_integer(skolem0003)|~xsd_string(ib)|xsd_string(ia)).
+# cnf(c1866,plain,xsd_integer(skolem0003)|~xsd_integer(ia)|xsd_integer(skolem0004)).
+# cnf(c1869,plain,xsd_integer(skolem0003)|~xsd_string(ia)|xsd_string(skolem0004)).
+# cnf(c1883,plain,xsd_integer(skolem0003)|~xsd_integer(ia)|xsd_integer(ib)).
+# cnf(c1887,plain,xsd_integer(skolem0003)|~xsd_string(ia)|xsd_string(ib)).
+# cnf(c1903,plain,xsd_integer(skolem0003)|xsd_integer(ia)|xsd_string(skolem0004)).
+# cnf(c1906,plain,xsd_integer(skolem0003)|xsd_integer(ia)|xsd_string(ib)).
+# cnf(c1910,plain,xsd_integer(skolem0003)|xsd_string(ia)|xsd_integer(skolem0004)).
+# cnf(c1915,plain,xsd_integer(skolem0003)|xsd_string(ia)|xsd_integer(ib)).
+# cnf(c1950,plain,xsd_integer(ia)|xsd_string(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c1967,plain,xsd_integer(ia)|xsd_string(ib)|~xsd_string(skolem0003)).
+# cnf(c1981,plain,xsd_string(ia)|xsd_integer(skolem0004)|~xsd_string(skolem0003)).
+# cnf(c1997,plain,xsd_string(ia)|xsd_integer(ib)|~xsd_string(skolem0003)).
+# cnf(c1829,plain,xsd_integer(skolem0003)|X131!=skolem0004|X131=ia).
+# cnf(c1844,plain,xsd_integer(skolem0003)|X132!=ib|X132=ia).
+# cnf(c1860,plain,xsd_integer(skolem0003)|X133!=ia|X133=skolem0004).
+# cnf(c1879,plain,xsd_integer(skolem0003)|X134!=ia|X134=ib).
+# cnf(c1677,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|~cowlThing(skolem0001)|~xsd_string(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c2052,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|~cowlThing(skolem0001)|~xsd_string(skolem0003)).
+# cnf(c2053,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|~cowlThing(skolem0001)).
+# cnf(c2054,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)).
+# cnf(c2056,plain,xsd_integer(skolem0003)).
+# cnf(c2057,plain,~xsd_string(skolem0003)).
+# cnf(c833,plain,cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c2059,plain,cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)).
+# cnf(c2060,plain,cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c2062,plain,cB(skolem0004)|cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c2068,plain,cB(skolem0004)|xsd_string(skolem0003)).
+# cnf(c2075,plain,cB(skolem0004)).
+# cnf(c2077,plain,skolem0004=ib).
+# cnf(c2092,plain,ib=skolem0004).
+# cnf(c2085,plain,~xsd_integer(skolem0004)|xsd_integer(ib)).
+# cnf(c2089,plain,~xsd_string(skolem0004)|xsd_string(ib)).
+# cnf(c2091,plain,~cA(skolem0004)|cA(ib)).
+# cnf(c2100,plain,~xsd_integer(ib)|xsd_integer(skolem0004)).
+# cnf(c2103,plain,~xsd_string(ib)|xsd_string(skolem0004)).
+# cnf(c2111,plain,xsd_integer(ib)|xsd_string(skolem0004)).
+# cnf(c2115,plain,xsd_string(ib)|xsd_integer(skolem0004)).
+# cnf(c2081,plain,X136!=skolem0004|X136=ib).
+# cnf(c2096,plain,X137!=ib|X137=skolem0004).
+# cnf(c836,plain,cA(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c2067,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|~cowlThing(skolem0001)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)).
+# cnf(c2142,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|~cowlThing(skolem0001)|~xsd_integer(skolem0003)).
+# cnf(c2143,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|~cowlThing(skolem0001)).
+# cnf(c2145,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)).
+# cnf(c2146,plain,xsd_string(skolem0003)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(axiom_1,axiom,(![X]:(xsd_string(X)<=>(~xsd_integer(X)))),input).
+fof(c42,axiom,(![X]:(xsd_string(X)<=>~xsd_integer(X))),inference(fof_simplification,status(thm),[axiom_1])).
+fof(c43,axiom,(![X]:((~xsd_string(X)|~xsd_integer(X))&(xsd_integer(X)|xsd_string(X)))),inference(fof_nnf,status(thm),[c42])).
+fof(c44,axiom,((![X]:(~xsd_string(X)|~xsd_integer(X)))&(![X]:(xsd_integer(X)|xsd_string(X)))),inference(shift_quantors,status(thm),[c43])).
+fof(c46,axiom,(![X12]:(![X13]:((~xsd_string(X12)|~xsd_integer(X12))&(xsd_integer(X13)|xsd_string(X13))))),inference(shift_quantors,status(thm),[fof(c45,axiom,((![X12]:(~xsd_string(X12)|~xsd_integer(X12)))&(![X13]:(xsd_integer(X13)|xsd_string(X13)))),inference(variable_rename,status(thm),[c44])).])).
+cnf(c47,axiom,~xsd_string(X36)|~xsd_integer(X36),inference(split_conjunct,status(thm),[c46])).
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c49,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c50,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c49])).
+fof(c52,axiom,(![X14]:(![X15]:(cowlThing(X14)&~cowlNothing(X15)))),inference(shift_quantors,status(thm),[fof(c51,axiom,((![X14]:cowlThing(X14))&(![X15]:~cowlNothing(X15))),inference(variable_rename,status(thm),[c50])).])).
+cnf(c54,axiom,~cowlNothing(X31),inference(split_conjunct,status(thm),[c52])).
+cnf(c53,axiom,cowlThing(X30),inference(split_conjunct,status(thm),[c52])).
+cnf(c48,axiom,xsd_integer(X37)|xsd_string(X37),inference(split_conjunct,status(thm),[c46])).
+fof(axiom_3,axiom,(![X]:(cA_and_B(X)<=>(X=ib|X=ia))),input).
+fof(c28,axiom,(![X]:((~cA_and_B(X)|(X=ib|X=ia))&((X!=ib&X!=ia)|cA_and_B(X)))),inference(fof_nnf,status(thm),[axiom_3])).
+fof(c29,axiom,((![X]:(~cA_and_B(X)|(X=ib|X=ia)))&(![X]:((X!=ib&X!=ia)|cA_and_B(X)))),inference(shift_quantors,status(thm),[c28])).
+fof(c31,axiom,(![X8]:(![X9]:((~cA_and_B(X8)|(X8=ib|X8=ia))&((X9!=ib&X9!=ia)|cA_and_B(X9))))),inference(shift_quantors,status(thm),[fof(c30,axiom,((![X8]:(~cA_and_B(X8)|(X8=ib|X8=ia)))&(![X9]:((X9!=ib&X9!=ia)|cA_and_B(X9)))),inference(variable_rename,status(thm),[c29])).])).
+fof(c32,axiom,(![X8]:(![X9]:((~cA_and_B(X8)|(X8=ib|X8=ia))&((X9!=ib|cA_and_B(X9))&(X9!=ia|cA_and_B(X9)))))),inference(distribute,status(thm),[c31])).
+cnf(c35,axiom,X48!=ia|cA_and_B(X48),inference(split_conjunct,status(thm),[c32])).
+fof(axiom_2,axiom,(![X]:(cA(X)<=>X=ia)),input).
+fof(c36,axiom,(![X]:((~cA(X)|X=ia)&(X!=ia|cA(X)))),inference(fof_nnf,status(thm),[axiom_2])).
+fof(c37,axiom,((![X]:(~cA(X)|X=ia))&(![X]:(X!=ia|cA(X)))),inference(shift_quantors,status(thm),[c36])).
+fof(c39,axiom,(![X10]:(![X11]:((~cA(X10)|X10=ia)&(X11!=ia|cA(X11))))),inference(shift_quantors,status(thm),[fof(c38,axiom,((![X10]:(~cA(X10)|X10=ia))&(![X11]:(X11!=ia|cA(X11)))),inference(variable_rename,status(thm),[c37])).])).
+cnf(c40,axiom,~cA(X49)|X49=ia,inference(split_conjunct,status(thm),[c39])).
+cnf(c34,axiom,X44!=ib|cA_and_B(X44),inference(split_conjunct,status(thm),[c32])).
+fof(axiom_4,axiom,(![X]:(cB(X)<=>X=ib)),input).
+fof(c22,axiom,(![X]:((~cB(X)|X=ib)&(X!=ib|cB(X)))),inference(fof_nnf,status(thm),[axiom_4])).
+fof(c23,axiom,((![X]:(~cB(X)|X=ib))&(![X]:(X!=ib|cB(X)))),inference(shift_quantors,status(thm),[c22])).
+fof(c25,axiom,(![X6]:(![X7]:((~cB(X6)|X6=ib)&(X7!=ib|cB(X7))))),inference(shift_quantors,status(thm),[fof(c24,axiom,((![X6]:(~cB(X6)|X6=ib))&(![X7]:(X7!=ib|cB(X7)))),inference(variable_rename,status(thm),[c23])).])).
+cnf(c26,axiom,~cB(X39)|X39=ib,inference(split_conjunct,status(thm),[c25])).
+fof(the_axiom,conjecture,(((![X]:(cowlThing(X)&(~cowlNothing(X))))&(![X]:(xsd_string(X)<=>(~xsd_integer(X)))))&(![X]:(cA_and_B(X)<=>(cB(X)|cA(X))))),input).
+fof(c7,negated_conjecture,(~(((![X]:(cowlThing(X)&(~cowlNothing(X))))&(![X]:(xsd_string(X)<=>(~xsd_integer(X)))))&(![X]:(cA_and_B(X)<=>(cB(X)|cA(X)))))),inference(assume_negation,status(cth),[the_axiom])).
+fof(c8,negated_conjecture,(~(((![X]:(cowlThing(X)&~cowlNothing(X)))&(![X]:(xsd_string(X)<=>~xsd_integer(X))))&(![X]:(cA_and_B(X)<=>(cB(X)|cA(X)))))),inference(fof_simplification,status(thm),[c7])).
+fof(c9,negated_conjecture,(((?[X]:(~cowlThing(X)|cowlNothing(X)))|(?[X]:((~xsd_string(X)|xsd_integer(X))&(xsd_string(X)|~xsd_integer(X)))))|(?[X]:((~cA_and_B(X)|(~cB(X)&~cA(X)))&(cA_and_B(X)|(cB(X)|cA(X)))))),inference(fof_nnf,status(thm),[c8])).
+fof(c10,negated_conjecture,((((?[X]:~cowlThing(X))|(?[X]:cowlNothing(X)))|(?[X]:((~xsd_string(X)|xsd_integer(X))&(xsd_string(X)|~xsd_integer(X)))))|(?[X]:((~cA_and_B(X)|(~cB(X)&~cA(X)))&(cA_and_B(X)|(cB(X)|cA(X)))))),inference(shift_quantors,status(thm),[c9])).
+fof(c11,negated_conjecture,((((?[X2]:~cowlThing(X2))|(?[X3]:cowlNothing(X3)))|(?[X4]:((~xsd_string(X4)|xsd_integer(X4))&(xsd_string(X4)|~xsd_integer(X4)))))|(?[X5]:((~cA_and_B(X5)|(~cB(X5)&~cA(X5)))&(cA_and_B(X5)|(cB(X5)|cA(X5)))))),inference(variable_rename,status(thm),[c10])).
+fof(c12,negated_conjecture,(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|((~xsd_string(skolem0003)|xsd_integer(skolem0003))&(xsd_string(skolem0003)|~xsd_integer(skolem0003))))|((~cA_and_B(skolem0004)|(~cB(skolem0004)&~cA(skolem0004)))&(cA_and_B(skolem0004)|(cB(skolem0004)|cA(skolem0004))))),inference(skolemize,status(esa),[c11])).
+fof(c13,negated_conjecture,((((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|(~cA_and_B(skolem0004)|~cB(skolem0004)))&(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|(~cA_and_B(skolem0004)|~cA(skolem0004))))&(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(~xsd_string(skolem0003)|xsd_integer(skolem0003)))|(cA_and_B(skolem0004)|(cB(skolem0004)|cA(skolem0004)))))&(((((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|(~cA_and_B(skolem0004)|~cB(skolem0004)))&(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|(~cA_and_B(skolem0004)|~cA(skolem0004))))&(((~cowlThing(skolem0001)|cowlNothing(skolem0002))|(xsd_string(skolem0003)|~xsd_integer(skolem0003)))|(cA_and_B(skolem0004)|(cB(skolem0004)|cA(skolem0004)))))),inference(distribute,status(thm),[c12])).
+cnf(c16,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(split_conjunct,status(thm),[c13])).
+cnf(c92,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c16, c48])).
+cnf(c93,plain,cowlNothing(skolem0002)|xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c92, c53])).
+cnf(c94,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c93, c54])).
+cnf(c109,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|cA(skolem0004)|skolem0004=ib,inference(resolution,status(thm),[c94, c26])).
+cnf(c126,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c109, c34])).
+cnf(c135,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004)|skolem0004=ia,inference(resolution,status(thm),[c126, c40])).
+cnf(c142,plain,xsd_integer(skolem0003)|cA_and_B(skolem0004),inference(resolution,status(thm),[c135, c35])).
+cnf(c150,plain,cA_and_B(skolem0004)|~xsd_string(skolem0003),inference(resolution,status(thm),[c142, c47])).
+cnf(c19,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(split_conjunct,status(thm),[c13])).
+cnf(c103,plain,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c19, c93])).
+cnf(c265,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c103, c53])).
+cnf(c688,plain,xsd_string(skolem0003)|cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c265, c54])).
+cnf(c727,plain,cA_and_B(skolem0004)|cB(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c688, c150])).
+cnf(c756,plain,cA_and_B(skolem0004)|cA(skolem0004)|skolem0004=ib,inference(resolution,status(thm),[c727, c26])).
+cnf(c774,plain,cA_and_B(skolem0004)|cA(skolem0004),inference(resolution,status(thm),[c756, c34])).
+cnf(c782,plain,cA_and_B(skolem0004)|skolem0004=ia,inference(resolution,status(thm),[c774, c40])).
+cnf(c787,plain,cA_and_B(skolem0004),inference(resolution,status(thm),[c782, c35])).
+cnf(c14,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cB(skolem0004),inference(split_conjunct,status(thm),[c13])).
+cnf(c15,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cA(skolem0004),inference(split_conjunct,status(thm),[c13])).
+cnf(c27,axiom,X43!=ib|cB(X43),inference(split_conjunct,status(thm),[c25])).
+cnf(c41,axiom,X50!=ia|cA(X50),inference(split_conjunct,status(thm),[c39])).
+cnf(c33,axiom,~cA_and_B(X83)|X83=ib|X83=ia,inference(split_conjunct,status(thm),[c32])).
+cnf(c139,plain,xsd_integer(skolem0003)|skolem0004=ia|skolem0004=ib,inference(resolution,status(thm),[c135, c33])).
+cnf(c182,plain,xsd_integer(skolem0003)|skolem0004=ib|cA(skolem0004),inference(resolution,status(thm),[c139, c41])).
+cnf(c202,plain,xsd_integer(skolem0003)|cA(skolem0004)|cB(skolem0004),inference(resolution,status(thm),[c182, c27])).
+cnf(c217,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003)|~cA_and_B(skolem0004),inference(resolution,status(thm),[c202, c15])).
+cnf(c1061,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|~xsd_string(skolem0003),inference(resolution,status(thm),[c217, c787])).
+cnf(c1669,plain,xsd_integer(skolem0003)|cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002),inference(resolution,status(thm),[c1061, c48])).
+cnf(c1670,plain,xsd_integer(skolem0003)|cB(skolem0004)|cowlNothing(skolem0002),inference(resolution,status(thm),[c1669, c53])).
+cnf(c1677,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|~cowlThing(skolem0001)|~xsd_string(skolem0003)|~cA_and_B(skolem0004),inference(resolution,status(thm),[c1670, c14])).
+cnf(c2052,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|~cowlThing(skolem0001)|~xsd_string(skolem0003),inference(resolution,status(thm),[c1677, c787])).
+cnf(c2053,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002)|~cowlThing(skolem0001),inference(resolution,status(thm),[c2052, c48])).
+cnf(c2054,plain,xsd_integer(skolem0003)|cowlNothing(skolem0002),inference(resolution,status(thm),[c2053, c53])).
+cnf(c2056,plain,xsd_integer(skolem0003),inference(resolution,status(thm),[c2054, c54])).
+cnf(c2057,plain,~xsd_string(skolem0003),inference(resolution,status(thm),[c2056, c47])).
+cnf(c17,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cB(skolem0004),inference(split_conjunct,status(thm),[c13])).
+cnf(c18,negated_conjecture,~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004)|~cA(skolem0004),inference(split_conjunct,status(thm),[c13])).
+cnf(c784,plain,skolem0004=ia|skolem0004=ib,inference(resolution,status(thm),[c782, c33])).
+cnf(c796,plain,skolem0004=ib|cA(skolem0004),inference(resolution,status(thm),[c784, c41])).
+cnf(c816,plain,cA(skolem0004)|cB(skolem0004),inference(resolution,status(thm),[c796, c27])).
+cnf(c833,plain,cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004),inference(resolution,status(thm),[c816, c18])).
+cnf(c2059,plain,cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003)|~xsd_integer(skolem0003),inference(resolution,status(thm),[c833, c787])).
+cnf(c2060,plain,cB(skolem0004)|~cowlThing(skolem0001)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c2059, c48])).
+cnf(c2062,plain,cB(skolem0004)|cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c2060, c53])).
+cnf(c2067,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|~cowlThing(skolem0001)|~xsd_integer(skolem0003)|~cA_and_B(skolem0004),inference(resolution,status(thm),[c2062, c17])).
+cnf(c2142,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|~cowlThing(skolem0001)|~xsd_integer(skolem0003),inference(resolution,status(thm),[c2067, c787])).
+cnf(c2143,plain,cowlNothing(skolem0002)|xsd_string(skolem0003)|~cowlThing(skolem0001),inference(resolution,status(thm),[c2142, c48])).
+cnf(c2145,plain,cowlNothing(skolem0002)|xsd_string(skolem0003),inference(resolution,status(thm),[c2143, c53])).
+cnf(c2146,plain,xsd_string(skolem0003),inference(resolution,status(thm),[c2145, c54])).
+cnf(c2148,plain,$false,inference(resolution,status(thm),[c2146, c2057])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 36
+# Processed clauses  : 315
+# Factors computed   : 0
+# Resolvents computed: 2073
+# Tautologies deleted: 69
+# Forward subsumed   : 1629
+# Backward subsumed  : 275
+
+# -------- CPU Time ---------
+# User time          : 1.120 s
+# System time        : 0.117 s
+# Total time         : 1.237 s

@@ -1,0 +1,32 @@
+# cnf(c5,negated_conjecture,~a(X13,X11)|~a(X10,X12)).
+# cnf(c6,negated_conjecture,a(skolem0001,skolem0002)|a(skolem0004,skolem0003)).
+# cnf(c7,plain,a(skolem0004,skolem0003)|~a(X15,X14)).
+# cnf(c9,plain,a(skolem0004,skolem0003)).
+# cnf(c11,plain,~a(X17,X16)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,((?[X]:(?[Y]:a(X,Y)))<=>(?[Y]:(?[X]:a(X,Y)))),input).
+fof(c0,negated_conjecture,(~((?[X]:(?[Y]:a(X,Y)))<=>(?[Y]:(?[X]:a(X,Y))))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,(((![X]:(![Y]:~a(X,Y)))|(![Y]:(![X]:~a(X,Y))))&((?[X]:(?[Y]:a(X,Y)))|(?[Y]:(?[X]:a(X,Y))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(((![X2]:(![X3]:~a(X2,X3)))|(![X4]:(![X5]:~a(X5,X4))))&((?[X6]:(?[X7]:a(X6,X7)))|(?[X8]:(?[X9]:a(X9,X8))))),inference(variable_rename,status(thm),[c1])).
+fof(c4,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:((~a(X2,X3)|~a(X5,X4))&(a(skolem0001,skolem0002)|a(skolem0004,skolem0003))))))),inference(shift_quantors,status(thm),[fof(c3,negated_conjecture,(((![X2]:(![X3]:~a(X2,X3)))|(![X4]:(![X5]:~a(X5,X4))))&(a(skolem0001,skolem0002)|a(skolem0004,skolem0003))),inference(skolemize,status(esa),[c2])).])).
+cnf(c6,negated_conjecture,a(skolem0001,skolem0002)|a(skolem0004,skolem0003),inference(split_conjunct,status(thm),[c4])).
+cnf(c5,negated_conjecture,~a(X13,X11)|~a(X10,X12),inference(split_conjunct,status(thm),[c4])).
+cnf(c7,plain,a(skolem0004,skolem0003)|~a(X15,X14),inference(resolution,status(thm),[c6, c5])).
+cnf(c9,plain,a(skolem0004,skolem0003),inference(resolution,status(thm),[c7, c6])).
+cnf(c11,plain,~a(X17,X16),inference(resolution,status(thm),[c9, c5])).
+cnf(c12,plain,$false,inference(resolution,status(thm),[c11, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 2
+# Processed clauses  : 5
+# Factors computed   : 0
+# Resolvents computed: 6
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 3
+
+# -------- CPU Time ---------
+# User time          : 0.289 s
+# System time        : 0.266 s
+# Total time         : 0.555 s

@@ -1,0 +1,373 @@
+# cnf(reflexivity,axiom,X53=X53).
+# cnf(c41,negated_conjecture,hollywood(skolem0001)).
+# cnf(c42,negated_conjecture,city(skolem0001)).
+# cnf(c43,negated_conjecture,event(skolem0002)).
+# cnf(c44,negated_conjecture,street(skolem0003)).
+# cnf(symmetry,axiom,X55!=X54|X54=X55).
+# cnf(c45,negated_conjecture,way(skolem0003)).
+# cnf(c46,negated_conjecture,lonely(skolem0003)).
+# cnf(c47,negated_conjecture,chevy(skolem0004)).
+# cnf(c48,negated_conjecture,car(skolem0004)).
+# cnf(c49,negated_conjecture,white(skolem0004)).
+# cnf(transitivity,axiom,X57!=X56|X56!=X58|X57=X58).
+# cnf(c50,negated_conjecture,dirty(skolem0004)).
+# cnf(c51,negated_conjecture,old(skolem0004)).
+# cnf(c52,negated_conjecture,barrel(skolem0002,skolem0004)).
+# cnf(c53,negated_conjecture,down(skolem0002,skolem0003)).
+# cnf(c0,plain,X60!=X61|~chevy(X60)|chevy(X61)).
+# cnf(c54,negated_conjecture,in(skolem0002,skolem0001)).
+# cnf(c82,axiom,~human(X62)|~nonhuman(X62)).
+# cnf(c85,axiom,~nonhuman(X63)|entity(X63)).
+# cnf(c90,axiom,~drs(X64)|proposition(X64)).
+# cnf(c91,axiom,~proposition(X65)|drs(X65)).
+# cnf(c1,plain,X66!=X67|~car(X66)|car(X67)).
+# cnf(c94,axiom,~woman(X68)|female(X68)).
+# cnf(c97,axiom,~female(X69)|human(X69)).
+# cnf(c100,axiom,~male(X70)|human(X70)).
+# cnf(c103,axiom,~man(X71)|male(X71)).
+# cnf(c107,axiom,~man(X72)|~woman(X72)).
+# cnf(c2,plain,X73!=X74|~vehicle(X73)|vehicle(X74)).
+# cnf(c111,axiom,~male(X75)|~female(X75)).
+# cnf(c115,axiom,~abstraction(X76)|~eventuality(X76)).
+# cnf(c119,axiom,~abstraction(X77)|~entity(X77)).
+# cnf(c123,axiom,~eventuality(X78)|~entity(X78)).
+# cnf(c127,axiom,~old(X79)|~new(X79)).
+# cnf(c3,plain,X80!=X81|~transport(X80)|transport(X81)).
+# cnf(c130,axiom,~object(X82)|entity(X82)).
+# cnf(c133,axiom,~location(X83)|object(X83)).
+# cnf(c136,axiom,~city(X84)|location(X84)).
+# cnf(c181,plain,location(skolem0001)).
+# cnf(c182,plain,object(skolem0001)).
+# cnf(c4,plain,X85!=X86|~instrumentality(X85)|instrumentality(X86)).
+# cnf(c183,plain,entity(skolem0001)).
+# cnf(c185,plain,~abstraction(skolem0001)).
+# cnf(c186,plain,~eventuality(skolem0001)).
+# cnf(c139,axiom,~hollywood(X87)|city(X87)).
+# cnf(c5,plain,X88!=X89|~artifact(X88)|artifact(X89)).
+# cnf(c142,axiom,~event(X90)|eventuality(X90)).
+# cnf(c189,plain,eventuality(skolem0002)).
+# cnf(c190,plain,~abstraction(skolem0002)).
+# cnf(c146,axiom,~artifact(X91)|~location(X91)).
+# cnf(c191,plain,~artifact(skolem0001)).
+# cnf(c6,plain,X92!=X93|~way(X92)|way(X93)).
+# cnf(c149,axiom,~artifact(X94)|object(X94)).
+# cnf(c152,axiom,~way(X95)|artifact(X95)).
+# cnf(c193,plain,artifact(skolem0003)).
+# cnf(c194,plain,object(skolem0003)).
+# cnf(c195,plain,entity(skolem0003)).
+# cnf(c7,plain,X96!=X97|~street(X96)|street(X97)).
+# cnf(c196,plain,~abstraction(skolem0003)).
+# cnf(c197,plain,~eventuality(skolem0003)).
+# cnf(c155,axiom,~street(X98)|way(X98)).
+# cnf(c159,axiom,~instrumentality(X99)|~way(X99)).
+# cnf(c8,plain,X100!=X101|~object(X100)|object(X101)).
+# cnf(c200,plain,~instrumentality(skolem0003)).
+# cnf(c162,axiom,~instrumentality(X102)|artifact(X102)).
+# cnf(c165,axiom,~transport(X103)|instrumentality(X103)).
+# cnf(c168,axiom,~vehicle(X104)|transport(X104)).
+# cnf(c171,axiom,~car(X105)|vehicle(X105)).
+# cnf(c9,plain,X106!=X107|~location(X106)|location(X107)).
+# cnf(c202,plain,vehicle(skolem0004)).
+# cnf(c204,plain,transport(skolem0004)).
+# cnf(c205,plain,instrumentality(skolem0004)).
+# cnf(c206,plain,artifact(skolem0004)).
+# cnf(c207,plain,object(skolem0004)).
+# cnf(c10,plain,X108!=X109|~event(X108)|event(X109)).
+# cnf(c208,plain,entity(skolem0004)).
+# cnf(c210,plain,~abstraction(skolem0004)).
+# cnf(c211,plain,~eventuality(skolem0004)).
+# cnf(c174,axiom,~chevy(X110)|car(X110)).
+# cnf(c11,plain,X111!=X112|~eventuality(X111)|eventuality(X112)).
+# cnf(c12,plain,X118!=X119|~hollywood(X118)|hollywood(X119)).
+# cnf(c13,plain,X125!=X126|~city(X125)|city(X126)).
+# cnf(c14,plain,X133!=X134|~entity(X133)|entity(X134)).
+# cnf(c15,plain,X136!=X137|~old(X136)|old(X137)).
+# cnf(c16,plain,X139!=X140|~new(X139)|new(X140)).
+# cnf(c17,plain,X142!=X143|~abstraction(X142)|abstraction(X143)).
+# cnf(c18,plain,X145!=X146|~male(X145)|male(X146)).
+# cnf(c19,plain,X148!=X149|~female(X148)|female(X149)).
+# cnf(c20,plain,X151!=X152|~man(X151)|man(X152)).
+# cnf(c21,plain,X154!=X155|~woman(X154)|woman(X155)).
+# cnf(c22,plain,X157!=X158|~human(X157)|human(X158)).
+# cnf(c23,plain,X160!=X161|~drs(X160)|drs(X161)).
+# cnf(c24,plain,X163!=X164|~proposition(X163)|proposition(X164)).
+# cnf(c25,plain,X166!=X167|~nonhuman(X166)|nonhuman(X167)).
+# cnf(c26,plain,X171!=X169|X174!=X170|X173!=X172|~have(X171,X174,X173)|have(X169,X170,X172)).
+# cnf(c27,plain,X175!=X176|~owner(X175)|owner(X176)).
+# cnf(c30,plain,X178!=X179|~lonely(X178)|lonely(X179)).
+# cnf(c31,plain,X181!=X182|~white(X181)|white(X182)).
+# cnf(c28,plain,X183!=X186|X185!=X184|~of(X183,X185)|of(X186,X184)).
+# cnf(c32,plain,X188!=X189|~dirty(X188)|dirty(X189)).
+# cnf(c62,axiom,~of(X191,X192)|event(skolem0005(X192,X191))).
+# cnf(c78,axiom,~owner(X193)|~of(X193,X194)|human(X193)).
+# cnf(c29,plain,X195!=X198|X197!=X196|~partof(X195,X197)|partof(X198,X196)).
+# cnf(c75,axiom,~have(X200,X201,X199)|~human(X201)|owner(X201)).
+# cnf(c57,axiom,~partof(X203,X204)|~partof(X203,X202)|X204=X202).
+# cnf(c63,axiom,~of(X205,X206)|have(skolem0005(X206,X205),X206,X205)).
+# cnf(c66,axiom,~event(X207)|~have(X207,X209,X208)|of(X209,X208)).
+# cnf(c76,axiom,~have(X211,X212,X210)|~human(X212)|of(X212,X210)).
+# cnf(c33,plain,X213!=X216|X215!=X214|~barrel(X213,X215)|barrel(X216,X214)).
+# cnf(c77,axiom,~owner(X218)|~of(X218,X219)|have(X217,X218,X219)).
+# cnf(c232,plain,skolem0002!=X220|skolem0004!=X221|barrel(X220,X221)).
+# cnf(c233,plain,skolem0002!=X222|barrel(X222,skolem0004)).
+# cnf(c69,axiom,~have(X224,X223,X225)|~nonhuman(X223)|~nonhuman(X225)|partof(X225,X223)).
+# cnf(c34,plain,X226!=X229|X228!=X227|~down(X226,X228)|down(X229,X227)).
+# cnf(c235,plain,skolem0002!=X230|skolem0003!=X231|down(X230,X231)).
+# cnf(c236,plain,skolem0002!=X232|down(X232,skolem0003)).
+# cnf(c35,plain,X233!=X236|X235!=X234|~in(X233,X235)|in(X236,X234)).
+# cnf(c238,plain,skolem0002!=X238|skolem0001!=X237|in(X238,X237)).
+# cnf(c239,plain,skolem0002!=X239|in(X239,skolem0001)).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+cnf(reflexivity,axiom,X53=X53,eq_axiom).
+fof(co1,conjecture,(~(?[U]:(?[V]:(?[W]:(?[X]:(((((((((((((hollywood(U)&city(U))&event(V))&street(W))&way(W))&lonely(W))&chevy(X))&car(X))&white(X))&dirty(X))&old(X))&barrel(V,X))&down(V,W))&in(V,U))))))),input).
+fof(c36,negated_conjecture,(~(~(?[U]:(?[V]:(?[W]:(?[X]:(((((((((((((hollywood(U)&city(U))&event(V))&street(W))&way(W))&lonely(W))&chevy(X))&car(X))&white(X))&dirty(X))&old(X))&barrel(V,X))&down(V,W))&in(V,U)))))))),inference(assume_negation,status(cth),[co1])).
+fof(c37,negated_conjecture,(?[U]:(?[V]:(?[W]:(?[X]:(((((((((((((hollywood(U)&city(U))&event(V))&street(W))&way(W))&lonely(W))&chevy(X))&car(X))&white(X))&dirty(X))&old(X))&barrel(V,X))&down(V,W))&in(V,U)))))),inference(fof_nnf,status(thm),[c36])).
+fof(c38,negated_conjecture,(?[U]:(?[V]:((?[W]:((?[X]:(((((((((((hollywood(U)&city(U))&event(V))&street(W))&way(W))&lonely(W))&chevy(X))&car(X))&white(X))&dirty(X))&old(X))&barrel(V,X)))&down(V,W)))&in(V,U)))),inference(shift_quantors,status(thm),[c37])).
+fof(c39,negated_conjecture,(?[X2]:(?[X3]:((?[X4]:((?[X5]:(((((((((((hollywood(X2)&city(X2))&event(X3))&street(X4))&way(X4))&lonely(X4))&chevy(X5))&car(X5))&white(X5))&dirty(X5))&old(X5))&barrel(X3,X5)))&down(X3,X4)))&in(X3,X2)))),inference(variable_rename,status(thm),[c38])).
+fof(c40,negated_conjecture,(((((((((((((hollywood(skolem0001)&city(skolem0001))&event(skolem0002))&street(skolem0003))&way(skolem0003))&lonely(skolem0003))&chevy(skolem0004))&car(skolem0004))&white(skolem0004))&dirty(skolem0004))&old(skolem0004))&barrel(skolem0002,skolem0004))&down(skolem0002,skolem0003))&in(skolem0002,skolem0001)),inference(skolemize,status(esa),[c39])).
+cnf(c54,negated_conjecture,in(skolem0002,skolem0001),inference(split_conjunct,status(thm),[c40])).
+cnf(c35,plain,X233!=X236|X235!=X234|~in(X233,X235)|in(X236,X234),eq_axiom).
+cnf(c238,plain,skolem0002!=X238|skolem0001!=X237|in(X238,X237),inference(resolution,status(thm),[c35, c54])).
+cnf(c239,plain,skolem0002!=X239|in(X239,skolem0001),inference(resolution,status(thm),[c238, reflexivity])).
+cnf(c53,negated_conjecture,down(skolem0002,skolem0003),inference(split_conjunct,status(thm),[c40])).
+cnf(c34,plain,X226!=X229|X228!=X227|~down(X226,X228)|down(X229,X227),eq_axiom).
+cnf(c235,plain,skolem0002!=X230|skolem0003!=X231|down(X230,X231),inference(resolution,status(thm),[c34, c53])).
+cnf(c236,plain,skolem0002!=X232|down(X232,skolem0003),inference(resolution,status(thm),[c235, reflexivity])).
+fof(ax30,axiom,(![U]:(![V]:(![W]:(((have(U,V,W)&nonhuman(V))&nonhuman(W))=>partof(W,V))))),input).
+fof(c67,axiom,(![U]:(![V]:(![W]:(((~have(U,V,W)|~nonhuman(V))|~nonhuman(W))|partof(W,V))))),inference(fof_nnf,status(thm),[ax30])).
+fof(c68,axiom,(![X15]:(![X16]:(![X17]:(((~have(X15,X16,X17)|~nonhuman(X16))|~nonhuman(X17))|partof(X17,X16))))),inference(variable_rename,status(thm),[c67])).
+cnf(c69,axiom,~have(X224,X223,X225)|~nonhuman(X223)|~nonhuman(X225)|partof(X225,X223),inference(split_conjunct,status(thm),[c68])).
+cnf(c52,negated_conjecture,barrel(skolem0002,skolem0004),inference(split_conjunct,status(thm),[c40])).
+cnf(c33,plain,X213!=X216|X215!=X214|~barrel(X213,X215)|barrel(X216,X214),eq_axiom).
+cnf(c232,plain,skolem0002!=X220|skolem0004!=X221|barrel(X220,X221),inference(resolution,status(thm),[c33, c52])).
+cnf(c233,plain,skolem0002!=X222|barrel(X222,skolem0004),inference(resolution,status(thm),[c232, reflexivity])).
+fof(ax29,axiom,(![U]:(![V]:(![W]:((have(U,V,W)&human(V))<=>(owner(V)&of(V,W)))))),input).
+fof(c70,axiom,(![U]:(![V]:(![W]:(((~have(U,V,W)|~human(V))|(owner(V)&of(V,W)))&((~owner(V)|~of(V,W))|(have(U,V,W)&human(V))))))),inference(fof_nnf,status(thm),[ax29])).
+fof(c71,axiom,((![U]:(![V]:(![W]:((~have(U,V,W)|~human(V))|(owner(V)&of(V,W))))))&(![U]:(![V]:(![W]:((~owner(V)|~of(V,W))|(have(U,V,W)&human(V))))))),inference(shift_quantors,status(thm),[c70])).
+fof(c73,axiom,(![X18]:(![X19]:(![X20]:(![X21]:(![X22]:(![X23]:(((~have(X18,X19,X20)|~human(X19))|(owner(X19)&of(X19,X20)))&((~owner(X22)|~of(X22,X23))|(have(X21,X22,X23)&human(X22)))))))))),inference(shift_quantors,status(thm),[fof(c72,axiom,((![X18]:(![X19]:(![X20]:((~have(X18,X19,X20)|~human(X19))|(owner(X19)&of(X19,X20))))))&(![X21]:(![X22]:(![X23]:((~owner(X22)|~of(X22,X23))|(have(X21,X22,X23)&human(X22))))))),inference(variable_rename,status(thm),[c71])).])).
+fof(c74,axiom,(![X18]:(![X19]:(![X20]:(![X21]:(![X22]:(![X23]:((((~have(X18,X19,X20)|~human(X19))|owner(X19))&((~have(X18,X19,X20)|~human(X19))|of(X19,X20)))&(((~owner(X22)|~of(X22,X23))|have(X21,X22,X23))&((~owner(X22)|~of(X22,X23))|human(X22)))))))))),inference(distribute,status(thm),[c73])).
+cnf(c77,axiom,~owner(X218)|~of(X218,X219)|have(X217,X218,X219),inference(split_conjunct,status(thm),[c74])).
+cnf(c76,axiom,~have(X211,X212,X210)|~human(X212)|of(X212,X210),inference(split_conjunct,status(thm),[c74])).
+fof(ax31,axiom,(![U]:(![V]:(![W]:((event(U)&have(U,V,W))=>of(V,W))))),input).
+fof(c64,axiom,(![U]:(![V]:(![W]:((~event(U)|~have(U,V,W))|of(V,W))))),inference(fof_nnf,status(thm),[ax31])).
+fof(c65,axiom,(![X12]:(![X13]:(![X14]:((~event(X12)|~have(X12,X13,X14))|of(X13,X14))))),inference(variable_rename,status(thm),[c64])).
+cnf(c66,axiom,~event(X207)|~have(X207,X209,X208)|of(X209,X208),inference(split_conjunct,status(thm),[c65])).
+fof(ax32,axiom,(![U]:(![V]:(of(V,U)=>(?[W]:(event(W)&have(W,U,V)))))),input).
+fof(c58,axiom,(![U]:(![V]:(~of(V,U)|(?[W]:(event(W)&have(W,U,V)))))),inference(fof_nnf,status(thm),[ax32])).
+fof(c59,axiom,(![X9]:(![X10]:(~of(X10,X9)|(?[X11]:(event(X11)&have(X11,X9,X10)))))),inference(variable_rename,status(thm),[c58])).
+fof(c60,axiom,(![X9]:(![X10]:(~of(X10,X9)|(event(skolem0005(X9,X10))&have(skolem0005(X9,X10),X9,X10))))),inference(skolemize,status(esa),[c59])).
+fof(c61,axiom,(![X9]:(![X10]:((~of(X10,X9)|event(skolem0005(X9,X10)))&(~of(X10,X9)|have(skolem0005(X9,X10),X9,X10))))),inference(distribute,status(thm),[c60])).
+cnf(c63,axiom,~of(X205,X206)|have(skolem0005(X206,X205),X206,X205),inference(split_conjunct,status(thm),[c61])).
+fof(ax33,axiom,(![U]:(![V]:(![W]:((partof(U,V)&partof(U,W))=>V=W)))),input).
+fof(c55,axiom,(![U]:(![V]:(![W]:((~partof(U,V)|~partof(U,W))|V=W)))),inference(fof_nnf,status(thm),[ax33])).
+fof(c56,axiom,(![X6]:(![X7]:(![X8]:((~partof(X6,X7)|~partof(X6,X8))|X7=X8)))),inference(variable_rename,status(thm),[c55])).
+cnf(c57,axiom,~partof(X203,X204)|~partof(X203,X202)|X204=X202,inference(split_conjunct,status(thm),[c56])).
+cnf(c75,axiom,~have(X200,X201,X199)|~human(X201)|owner(X201),inference(split_conjunct,status(thm),[c74])).
+cnf(c29,plain,X195!=X198|X197!=X196|~partof(X195,X197)|partof(X198,X196),eq_axiom).
+cnf(c78,axiom,~owner(X193)|~of(X193,X194)|human(X193),inference(split_conjunct,status(thm),[c74])).
+cnf(c62,axiom,~of(X191,X192)|event(skolem0005(X192,X191)),inference(split_conjunct,status(thm),[c61])).
+cnf(c32,plain,X188!=X189|~dirty(X188)|dirty(X189),eq_axiom).
+cnf(c28,plain,X183!=X186|X185!=X184|~of(X183,X185)|of(X186,X184),eq_axiom).
+cnf(c31,plain,X181!=X182|~white(X181)|white(X182),eq_axiom).
+cnf(c30,plain,X178!=X179|~lonely(X178)|lonely(X179),eq_axiom).
+cnf(c27,plain,X175!=X176|~owner(X175)|owner(X176),eq_axiom).
+cnf(c26,plain,X171!=X169|X174!=X170|X173!=X172|~have(X171,X174,X173)|have(X169,X170,X172),eq_axiom).
+cnf(c25,plain,X166!=X167|~nonhuman(X166)|nonhuman(X167),eq_axiom).
+cnf(c24,plain,X163!=X164|~proposition(X163)|proposition(X164),eq_axiom).
+cnf(c23,plain,X160!=X161|~drs(X160)|drs(X161),eq_axiom).
+cnf(c22,plain,X157!=X158|~human(X157)|human(X158),eq_axiom).
+cnf(c21,plain,X154!=X155|~woman(X154)|woman(X155),eq_axiom).
+cnf(c20,plain,X151!=X152|~man(X151)|man(X152),eq_axiom).
+cnf(c19,plain,X148!=X149|~female(X148)|female(X149),eq_axiom).
+cnf(c18,plain,X145!=X146|~male(X145)|male(X146),eq_axiom).
+cnf(c17,plain,X142!=X143|~abstraction(X142)|abstraction(X143),eq_axiom).
+cnf(c16,plain,X139!=X140|~new(X139)|new(X140),eq_axiom).
+cnf(c15,plain,X136!=X137|~old(X136)|old(X137),eq_axiom).
+cnf(c14,plain,X133!=X134|~entity(X133)|entity(X134),eq_axiom).
+cnf(c13,plain,X125!=X126|~city(X125)|city(X126),eq_axiom).
+cnf(c12,plain,X118!=X119|~hollywood(X118)|hollywood(X119),eq_axiom).
+cnf(c11,plain,X111!=X112|~eventuality(X111)|eventuality(X112),eq_axiom).
+fof(ax1,axiom,(![U]:(chevy(U)=>car(U))),input).
+fof(c172,axiom,(![U]:(~chevy(U)|car(U))),inference(fof_nnf,status(thm),[ax1])).
+fof(c173,axiom,(![X52]:(~chevy(X52)|car(X52))),inference(variable_rename,status(thm),[c172])).
+cnf(c174,axiom,~chevy(X110)|car(X110),inference(split_conjunct,status(thm),[c173])).
+fof(ax17,axiom,(![U]:(eventuality(U)=>(~entity(U)))),input).
+fof(c120,axiom,(![U]:(eventuality(U)=>~entity(U))),inference(fof_simplification,status(thm),[ax17])).
+fof(c121,axiom,(![U]:(~eventuality(U)|~entity(U))),inference(fof_nnf,status(thm),[c120])).
+fof(c122,axiom,(![X36]:(~eventuality(X36)|~entity(X36))),inference(variable_rename,status(thm),[c121])).
+cnf(c123,axiom,~eventuality(X78)|~entity(X78),inference(split_conjunct,status(thm),[c122])).
+fof(ax15,axiom,(![U]:(object(U)=>entity(U))),input).
+fof(c128,axiom,(![U]:(~object(U)|entity(U))),inference(fof_nnf,status(thm),[ax15])).
+fof(c129,axiom,(![X38]:(~object(X38)|entity(X38))),inference(variable_rename,status(thm),[c128])).
+cnf(c130,axiom,~object(X82)|entity(X82),inference(split_conjunct,status(thm),[c129])).
+fof(ax9,axiom,(![U]:(artifact(U)=>object(U))),input).
+fof(c147,axiom,(![U]:(~artifact(U)|object(U))),inference(fof_nnf,status(thm),[ax9])).
+fof(c148,axiom,(![X44]:(~artifact(X44)|object(X44))),inference(variable_rename,status(thm),[c147])).
+cnf(c149,axiom,~artifact(X94)|object(X94),inference(split_conjunct,status(thm),[c148])).
+fof(ax5,axiom,(![U]:(instrumentality(U)=>artifact(U))),input).
+fof(c160,axiom,(![U]:(~instrumentality(U)|artifact(U))),inference(fof_nnf,status(thm),[ax5])).
+fof(c161,axiom,(![X48]:(~instrumentality(X48)|artifact(X48))),inference(variable_rename,status(thm),[c160])).
+cnf(c162,axiom,~instrumentality(X102)|artifact(X102),inference(split_conjunct,status(thm),[c161])).
+fof(ax4,axiom,(![U]:(transport(U)=>instrumentality(U))),input).
+fof(c163,axiom,(![U]:(~transport(U)|instrumentality(U))),inference(fof_nnf,status(thm),[ax4])).
+fof(c164,axiom,(![X49]:(~transport(X49)|instrumentality(X49))),inference(variable_rename,status(thm),[c163])).
+cnf(c165,axiom,~transport(X103)|instrumentality(X103),inference(split_conjunct,status(thm),[c164])).
+fof(ax3,axiom,(![U]:(vehicle(U)=>transport(U))),input).
+fof(c166,axiom,(![U]:(~vehicle(U)|transport(U))),inference(fof_nnf,status(thm),[ax3])).
+fof(c167,axiom,(![X50]:(~vehicle(X50)|transport(X50))),inference(variable_rename,status(thm),[c166])).
+cnf(c168,axiom,~vehicle(X104)|transport(X104),inference(split_conjunct,status(thm),[c167])).
+cnf(c48,negated_conjecture,car(skolem0004),inference(split_conjunct,status(thm),[c40])).
+fof(ax2,axiom,(![U]:(car(U)=>vehicle(U))),input).
+fof(c169,axiom,(![U]:(~car(U)|vehicle(U))),inference(fof_nnf,status(thm),[ax2])).
+fof(c170,axiom,(![X51]:(~car(X51)|vehicle(X51))),inference(variable_rename,status(thm),[c169])).
+cnf(c171,axiom,~car(X105)|vehicle(X105),inference(split_conjunct,status(thm),[c170])).
+cnf(c202,plain,vehicle(skolem0004),inference(resolution,status(thm),[c171, c48])).
+cnf(c204,plain,transport(skolem0004),inference(resolution,status(thm),[c202, c168])).
+cnf(c205,plain,instrumentality(skolem0004),inference(resolution,status(thm),[c204, c165])).
+cnf(c206,plain,artifact(skolem0004),inference(resolution,status(thm),[c205, c162])).
+cnf(c207,plain,object(skolem0004),inference(resolution,status(thm),[c206, c149])).
+cnf(c208,plain,entity(skolem0004),inference(resolution,status(thm),[c207, c130])).
+cnf(c211,plain,~eventuality(skolem0004),inference(resolution,status(thm),[c208, c123])).
+fof(ax18,axiom,(![U]:(abstraction(U)=>(~entity(U)))),input).
+fof(c116,axiom,(![U]:(abstraction(U)=>~entity(U))),inference(fof_simplification,status(thm),[ax18])).
+fof(c117,axiom,(![U]:(~abstraction(U)|~entity(U))),inference(fof_nnf,status(thm),[c116])).
+fof(c118,axiom,(![X35]:(~abstraction(X35)|~entity(X35))),inference(variable_rename,status(thm),[c117])).
+cnf(c119,axiom,~abstraction(X77)|~entity(X77),inference(split_conjunct,status(thm),[c118])).
+cnf(c210,plain,~abstraction(skolem0004),inference(resolution,status(thm),[c208, c119])).
+cnf(c10,plain,X108!=X109|~event(X108)|event(X109),eq_axiom).
+cnf(c9,plain,X106!=X107|~location(X106)|location(X107),eq_axiom).
+cnf(c45,negated_conjecture,way(skolem0003),inference(split_conjunct,status(thm),[c40])).
+fof(ax6,axiom,(![U]:(instrumentality(U)=>(~way(U)))),input).
+fof(c156,axiom,(![U]:(instrumentality(U)=>~way(U))),inference(fof_simplification,status(thm),[ax6])).
+fof(c157,axiom,(![U]:(~instrumentality(U)|~way(U))),inference(fof_nnf,status(thm),[c156])).
+fof(c158,axiom,(![X47]:(~instrumentality(X47)|~way(X47))),inference(variable_rename,status(thm),[c157])).
+cnf(c159,axiom,~instrumentality(X99)|~way(X99),inference(split_conjunct,status(thm),[c158])).
+cnf(c200,plain,~instrumentality(skolem0003),inference(resolution,status(thm),[c159, c45])).
+cnf(c8,plain,X100!=X101|~object(X100)|object(X101),eq_axiom).
+fof(ax7,axiom,(![U]:(street(U)=>way(U))),input).
+fof(c153,axiom,(![U]:(~street(U)|way(U))),inference(fof_nnf,status(thm),[ax7])).
+fof(c154,axiom,(![X46]:(~street(X46)|way(X46))),inference(variable_rename,status(thm),[c153])).
+cnf(c155,axiom,~street(X98)|way(X98),inference(split_conjunct,status(thm),[c154])).
+fof(ax8,axiom,(![U]:(way(U)=>artifact(U))),input).
+fof(c150,axiom,(![U]:(~way(U)|artifact(U))),inference(fof_nnf,status(thm),[ax8])).
+fof(c151,axiom,(![X45]:(~way(X45)|artifact(X45))),inference(variable_rename,status(thm),[c150])).
+cnf(c152,axiom,~way(X95)|artifact(X95),inference(split_conjunct,status(thm),[c151])).
+cnf(c193,plain,artifact(skolem0003),inference(resolution,status(thm),[c152, c45])).
+cnf(c194,plain,object(skolem0003),inference(resolution,status(thm),[c193, c149])).
+cnf(c195,plain,entity(skolem0003),inference(resolution,status(thm),[c194, c130])).
+cnf(c197,plain,~eventuality(skolem0003),inference(resolution,status(thm),[c195, c123])).
+cnf(c196,plain,~abstraction(skolem0003),inference(resolution,status(thm),[c195, c119])).
+cnf(c7,plain,X96!=X97|~street(X96)|street(X97),eq_axiom).
+cnf(c6,plain,X92!=X93|~way(X92)|way(X93),eq_axiom).
+cnf(c42,negated_conjecture,city(skolem0001),inference(split_conjunct,status(thm),[c40])).
+fof(ax13,axiom,(![U]:(city(U)=>location(U))),input).
+fof(c134,axiom,(![U]:(~city(U)|location(U))),inference(fof_nnf,status(thm),[ax13])).
+fof(c135,axiom,(![X40]:(~city(X40)|location(X40))),inference(variable_rename,status(thm),[c134])).
+cnf(c136,axiom,~city(X84)|location(X84),inference(split_conjunct,status(thm),[c135])).
+cnf(c181,plain,location(skolem0001),inference(resolution,status(thm),[c136, c42])).
+fof(ax10,axiom,(![U]:(artifact(U)=>(~location(U)))),input).
+fof(c143,axiom,(![U]:(artifact(U)=>~location(U))),inference(fof_simplification,status(thm),[ax10])).
+fof(c144,axiom,(![U]:(~artifact(U)|~location(U))),inference(fof_nnf,status(thm),[c143])).
+fof(c145,axiom,(![X43]:(~artifact(X43)|~location(X43))),inference(variable_rename,status(thm),[c144])).
+cnf(c146,axiom,~artifact(X91)|~location(X91),inference(split_conjunct,status(thm),[c145])).
+cnf(c191,plain,~artifact(skolem0001),inference(resolution,status(thm),[c146, c181])).
+fof(ax19,axiom,(![U]:(abstraction(U)=>(~eventuality(U)))),input).
+fof(c112,axiom,(![U]:(abstraction(U)=>~eventuality(U))),inference(fof_simplification,status(thm),[ax19])).
+fof(c113,axiom,(![U]:(~abstraction(U)|~eventuality(U))),inference(fof_nnf,status(thm),[c112])).
+fof(c114,axiom,(![X34]:(~abstraction(X34)|~eventuality(X34))),inference(variable_rename,status(thm),[c113])).
+cnf(c115,axiom,~abstraction(X76)|~eventuality(X76),inference(split_conjunct,status(thm),[c114])).
+cnf(c43,negated_conjecture,event(skolem0002),inference(split_conjunct,status(thm),[c40])).
+fof(ax11,axiom,(![U]:(event(U)=>eventuality(U))),input).
+fof(c140,axiom,(![U]:(~event(U)|eventuality(U))),inference(fof_nnf,status(thm),[ax11])).
+fof(c141,axiom,(![X42]:(~event(X42)|eventuality(X42))),inference(variable_rename,status(thm),[c140])).
+cnf(c142,axiom,~event(X90)|eventuality(X90),inference(split_conjunct,status(thm),[c141])).
+cnf(c189,plain,eventuality(skolem0002),inference(resolution,status(thm),[c142, c43])).
+cnf(c190,plain,~abstraction(skolem0002),inference(resolution,status(thm),[c189, c115])).
+cnf(c5,plain,X88!=X89|~artifact(X88)|artifact(X89),eq_axiom).
+fof(ax12,axiom,(![U]:(hollywood(U)=>city(U))),input).
+fof(c137,axiom,(![U]:(~hollywood(U)|city(U))),inference(fof_nnf,status(thm),[ax12])).
+fof(c138,axiom,(![X41]:(~hollywood(X41)|city(X41))),inference(variable_rename,status(thm),[c137])).
+cnf(c139,axiom,~hollywood(X87)|city(X87),inference(split_conjunct,status(thm),[c138])).
+fof(ax14,axiom,(![U]:(location(U)=>object(U))),input).
+fof(c131,axiom,(![U]:(~location(U)|object(U))),inference(fof_nnf,status(thm),[ax14])).
+fof(c132,axiom,(![X39]:(~location(X39)|object(X39))),inference(variable_rename,status(thm),[c131])).
+cnf(c133,axiom,~location(X83)|object(X83),inference(split_conjunct,status(thm),[c132])).
+cnf(c182,plain,object(skolem0001),inference(resolution,status(thm),[c181, c133])).
+cnf(c183,plain,entity(skolem0001),inference(resolution,status(thm),[c182, c130])).
+cnf(c186,plain,~eventuality(skolem0001),inference(resolution,status(thm),[c183, c123])).
+cnf(c185,plain,~abstraction(skolem0001),inference(resolution,status(thm),[c183, c119])).
+cnf(c4,plain,X85!=X86|~instrumentality(X85)|instrumentality(X86),eq_axiom).
+cnf(c3,plain,X80!=X81|~transport(X80)|transport(X81),eq_axiom).
+fof(ax16,axiom,(![U]:(old(U)=>(~new(U)))),input).
+fof(c124,axiom,(![U]:(old(U)=>~new(U))),inference(fof_simplification,status(thm),[ax16])).
+fof(c125,axiom,(![U]:(~old(U)|~new(U))),inference(fof_nnf,status(thm),[c124])).
+fof(c126,axiom,(![X37]:(~old(X37)|~new(X37))),inference(variable_rename,status(thm),[c125])).
+cnf(c127,axiom,~old(X79)|~new(X79),inference(split_conjunct,status(thm),[c126])).
+fof(ax20,axiom,(![U]:(male(U)=>(~female(U)))),input).
+fof(c108,axiom,(![U]:(male(U)=>~female(U))),inference(fof_simplification,status(thm),[ax20])).
+fof(c109,axiom,(![U]:(~male(U)|~female(U))),inference(fof_nnf,status(thm),[c108])).
+fof(c110,axiom,(![X33]:(~male(X33)|~female(X33))),inference(variable_rename,status(thm),[c109])).
+cnf(c111,axiom,~male(X75)|~female(X75),inference(split_conjunct,status(thm),[c110])).
+cnf(c2,plain,X73!=X74|~vehicle(X73)|vehicle(X74),eq_axiom).
+fof(ax21,axiom,(![U]:(man(U)=>(~woman(U)))),input).
+fof(c104,axiom,(![U]:(man(U)=>~woman(U))),inference(fof_simplification,status(thm),[ax21])).
+fof(c105,axiom,(![U]:(~man(U)|~woman(U))),inference(fof_nnf,status(thm),[c104])).
+fof(c106,axiom,(![X32]:(~man(X32)|~woman(X32))),inference(variable_rename,status(thm),[c105])).
+cnf(c107,axiom,~man(X72)|~woman(X72),inference(split_conjunct,status(thm),[c106])).
+fof(ax22,axiom,(![U]:(man(U)=>male(U))),input).
+fof(c101,axiom,(![U]:(~man(U)|male(U))),inference(fof_nnf,status(thm),[ax22])).
+fof(c102,axiom,(![X31]:(~man(X31)|male(X31))),inference(variable_rename,status(thm),[c101])).
+cnf(c103,axiom,~man(X71)|male(X71),inference(split_conjunct,status(thm),[c102])).
+fof(ax23,axiom,(![U]:(male(U)=>human(U))),input).
+fof(c98,axiom,(![U]:(~male(U)|human(U))),inference(fof_nnf,status(thm),[ax23])).
+fof(c99,axiom,(![X30]:(~male(X30)|human(X30))),inference(variable_rename,status(thm),[c98])).
+cnf(c100,axiom,~male(X70)|human(X70),inference(split_conjunct,status(thm),[c99])).
+fof(ax24,axiom,(![U]:(female(U)=>human(U))),input).
+fof(c95,axiom,(![U]:(~female(U)|human(U))),inference(fof_nnf,status(thm),[ax24])).
+fof(c96,axiom,(![X29]:(~female(X29)|human(X29))),inference(variable_rename,status(thm),[c95])).
+cnf(c97,axiom,~female(X69)|human(X69),inference(split_conjunct,status(thm),[c96])).
+fof(ax25,axiom,(![U]:(woman(U)=>female(U))),input).
+fof(c92,axiom,(![U]:(~woman(U)|female(U))),inference(fof_nnf,status(thm),[ax25])).
+fof(c93,axiom,(![X28]:(~woman(X28)|female(X28))),inference(variable_rename,status(thm),[c92])).
+cnf(c94,axiom,~woman(X68)|female(X68),inference(split_conjunct,status(thm),[c93])).
+cnf(c1,plain,X66!=X67|~car(X66)|car(X67),eq_axiom).
+fof(ax26,axiom,(![U]:(drs(U)<=>proposition(U))),input).
+fof(c86,axiom,(![U]:((~drs(U)|proposition(U))&(~proposition(U)|drs(U)))),inference(fof_nnf,status(thm),[ax26])).
+fof(c87,axiom,((![U]:(~drs(U)|proposition(U)))&(![U]:(~proposition(U)|drs(U)))),inference(shift_quantors,status(thm),[c86])).
+fof(c89,axiom,(![X26]:(![X27]:((~drs(X26)|proposition(X26))&(~proposition(X27)|drs(X27))))),inference(shift_quantors,status(thm),[fof(c88,axiom,((![X26]:(~drs(X26)|proposition(X26)))&(![X27]:(~proposition(X27)|drs(X27)))),inference(variable_rename,status(thm),[c87])).])).
+cnf(c91,axiom,~proposition(X65)|drs(X65),inference(split_conjunct,status(thm),[c89])).
+cnf(c90,axiom,~drs(X64)|proposition(X64),inference(split_conjunct,status(thm),[c89])).
+fof(ax27,axiom,(![U]:(nonhuman(U)=>entity(U))),input).
+fof(c83,axiom,(![U]:(~nonhuman(U)|entity(U))),inference(fof_nnf,status(thm),[ax27])).
+fof(c84,axiom,(![X25]:(~nonhuman(X25)|entity(X25))),inference(variable_rename,status(thm),[c83])).
+cnf(c85,axiom,~nonhuman(X63)|entity(X63),inference(split_conjunct,status(thm),[c84])).
+fof(ax28,axiom,(![U]:(human(U)=>(~nonhuman(U)))),input).
+fof(c79,axiom,(![U]:(human(U)=>~nonhuman(U))),inference(fof_simplification,status(thm),[ax28])).
+fof(c80,axiom,(![U]:(~human(U)|~nonhuman(U))),inference(fof_nnf,status(thm),[c79])).
+fof(c81,axiom,(![X24]:(~human(X24)|~nonhuman(X24))),inference(variable_rename,status(thm),[c80])).
+cnf(c82,axiom,~human(X62)|~nonhuman(X62),inference(split_conjunct,status(thm),[c81])).
+cnf(c0,plain,X60!=X61|~chevy(X60)|chevy(X61),eq_axiom).
+cnf(c51,negated_conjecture,old(skolem0004),inference(split_conjunct,status(thm),[c40])).
+cnf(c50,negated_conjecture,dirty(skolem0004),inference(split_conjunct,status(thm),[c40])).
+cnf(transitivity,axiom,X57!=X56|X56!=X58|X57=X58,eq_axiom).
+cnf(c49,negated_conjecture,white(skolem0004),inference(split_conjunct,status(thm),[c40])).
+cnf(c47,negated_conjecture,chevy(skolem0004),inference(split_conjunct,status(thm),[c40])).
+cnf(c46,negated_conjecture,lonely(skolem0003),inference(split_conjunct,status(thm),[c40])).
+cnf(symmetry,axiom,X55!=X54|X54=X55,eq_axiom).
+cnf(c44,negated_conjecture,street(skolem0003),inference(split_conjunct,status(thm),[c40])).
+cnf(c41,negated_conjecture,hollywood(skolem0001),inference(split_conjunct,status(thm),[c40])).
+# SZS output end Saturation
+
+# Initial clauses    : 91
+# Processed clauses  : 119
+# Factors computed   : 0
+# Resolvents computed: 66
+# Tautologies deleted: 31
+# Forward subsumed   : 7
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.321 s
+# System time        : 0.193 s
+# Total time         : 0.514 s

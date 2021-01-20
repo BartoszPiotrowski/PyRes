@@ -1,0 +1,58 @@
+# cnf(c4,negated_conjecture,p|p|p).
+# cnf(c35,plain,p).
+# cnf(c26,negated_conjecture,~s|~q|r).
+# cnf(c27,negated_conjecture,~s|~q|~s).
+# cnf(c29,negated_conjecture,~s|~s|r).
+# cnf(c30,negated_conjecture,~s|~s|~s).
+# cnf(c17,negated_conjecture,~q|r|~q|r).
+# cnf(c31,negated_conjecture,~p|q|s|~p|q|s).
+# cnf(c38,plain,~p|q|s).
+# cnf(c39,plain,q|s).
+# cnf(c42,plain,q|~s).
+# cnf(c45,plain,q).
+# cnf(c46,plain,~s|r).
+# cnf(c47,plain,~q|r).
+# cnf(c48,plain,r).
+# cnf(c34,negated_conjecture,~p|~r|s|~p|~r|s).
+# cnf(c49,plain,~p|~r|s).
+# cnf(c50,plain,~p|s).
+# cnf(c51,plain,s).
+# cnf(c53,plain,~s).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel17,conjecture,(((p&(q=>r))=>s)<=>((((~p)|q)|s)&(((~p)|(~r))|s))),input).
+fof(c0,negated_conjecture,(~(((p&(q=>r))=>s)<=>((((~p)|q)|s)&(((~p)|(~r))|s)))),inference(assume_negation,status(cth),[pel17])).
+fof(c1,negated_conjecture,(~(((p&(q=>r))=>s)<=>(((~p|q)|s)&((~p|~r)|s)))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,((((p&(~q|r))&~s)|(((p&~q)&~s)|((p&r)&~s)))&(((~p|(q&~r))|s)|(((~p|q)|s)&((~p|~r)|s)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,((((((((p|(p|p))&(p|(p|r)))&(p|(p|~s)))&(((p|(~q|p))&(p|(~q|r)))&(p|(~q|~s))))&(((p|(~s|p))&(p|(~s|r)))&(p|(~s|~s))))&((((((~q|r)|(p|p))&((~q|r)|(p|r)))&((~q|r)|(p|~s)))&((((~q|r)|(~q|p))&((~q|r)|(~q|r)))&((~q|r)|(~q|~s))))&((((~q|r)|(~s|p))&((~q|r)|(~s|r)))&((~q|r)|(~s|~s)))))&(((((~s|(p|p))&(~s|(p|r)))&(~s|(p|~s)))&(((~s|(~q|p))&(~s|(~q|r)))&(~s|(~q|~s))))&(((~s|(~s|p))&(~s|(~s|r)))&(~s|(~s|~s)))))&(((((~p|q)|s)|((~p|q)|s))&(((~p|q)|s)|((~p|~r)|s)))&((((~p|~r)|s)|((~p|q)|s))&(((~p|~r)|s)|((~p|~r)|s))))),inference(distribute,status(thm),[c2])).
+cnf(c4,negated_conjecture,p|p|p,inference(split_conjunct,status(thm),[c3])).
+cnf(c35,plain,p,inference(factor,status(thm),[c4])).
+cnf(c31,negated_conjecture,~p|q|s|~p|q|s,inference(split_conjunct,status(thm),[c3])).
+cnf(c38,plain,~p|q|s,inference(resolution,status(thm),[c31, c35])).
+cnf(c39,plain,q|s,inference(resolution,status(thm),[c38, c35])).
+cnf(c30,negated_conjecture,~s|~s|~s,inference(split_conjunct,status(thm),[c3])).
+cnf(c42,plain,q|~s,inference(resolution,status(thm),[c39, c30])).
+cnf(c45,plain,q,inference(resolution,status(thm),[c42, c39])).
+cnf(c17,negated_conjecture,~q|r|~q|r,inference(split_conjunct,status(thm),[c3])).
+cnf(c47,plain,~q|r,inference(resolution,status(thm),[c45, c17])).
+cnf(c48,plain,r,inference(resolution,status(thm),[c47, c45])).
+cnf(c34,negated_conjecture,~p|~r|s|~p|~r|s,inference(split_conjunct,status(thm),[c3])).
+cnf(c49,plain,~p|~r|s,inference(resolution,status(thm),[c34, c48])).
+cnf(c50,plain,~p|s,inference(resolution,status(thm),[c49, c48])).
+cnf(c51,plain,s,inference(resolution,status(thm),[c50, c35])).
+cnf(c53,plain,~s,inference(resolution,status(thm),[c51, c30])).
+cnf(c54,plain,$false,inference(resolution,status(thm),[c53, c51])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 31
+# Processed clauses  : 20
+# Factors computed   : 3
+# Resolvents computed: 17
+# Tautologies deleted: 2
+# Forward subsumed   : 27
+# Backward subsumed  : 15
+
+# -------- CPU Time ---------
+# User time          : 0.228 s
+# System time        : 0.208 s
+# Total time         : 0.436 s

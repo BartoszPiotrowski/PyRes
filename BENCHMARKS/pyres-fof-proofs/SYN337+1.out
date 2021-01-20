@@ -1,0 +1,30 @@
+# cnf(c6,negated_conjecture,big_f(skolem0001,X7)).
+# cnf(c9,negated_conjecture,~big_f(skolem0002,X8)).
+# cnf(c8,negated_conjecture,big_f(skolem0003(X9),X9)).
+# cnf(c7,negated_conjecture,big_f(skolem0003(X10),skolem0001)).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+fof(church_46_15_2,conjecture,(![X1]:(![X2]:(?[Y]:(![Z]:(big_f(X1,Y)=>(big_f(Z,X1)=>(big_f(Z,Y)=>(big_f(X2,Y)|big_f(X2,Z))))))))),input).
+fof(c0,negated_conjecture,(~(![X1]:(![X2]:(?[Y]:(![Z]:(big_f(X1,Y)=>(big_f(Z,X1)=>(big_f(Z,Y)=>(big_f(X2,Y)|big_f(X2,Z)))))))))),inference(assume_negation,status(cth),[church_46_15_2])).
+fof(c1,negated_conjecture,(?[X1]:(?[X2]:(![Y]:(?[Z]:(big_f(X1,Y)&(big_f(Z,X1)&(big_f(Z,Y)&(~big_f(X2,Y)&~big_f(X2,Z))))))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X1]:((![Y]:big_f(X1,Y))&(?[X2]:(![Y]:(?[Z]:(big_f(Z,X1)&(big_f(Z,Y)&(~big_f(X2,Y)&~big_f(X2,Z))))))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:((![X3]:big_f(X2,X3))&(?[X4]:(![X5]:(?[X6]:(big_f(X6,X2)&(big_f(X6,X5)&(~big_f(X4,X5)&~big_f(X4,X6))))))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X3]:(![X5]:(big_f(skolem0001,X3)&(big_f(skolem0003(X5),skolem0001)&(big_f(skolem0003(X5),X5)&(~big_f(skolem0002,X5)&~big_f(skolem0002,skolem0003(X5)))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((![X3]:big_f(skolem0001,X3))&(![X5]:(big_f(skolem0003(X5),skolem0001)&(big_f(skolem0003(X5),X5)&(~big_f(skolem0002,X5)&~big_f(skolem0002,skolem0003(X5))))))),inference(skolemize,status(esa),[c3])).])).
+cnf(c7,negated_conjecture,big_f(skolem0003(X10),skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c8,negated_conjecture,big_f(skolem0003(X9),X9),inference(split_conjunct,status(thm),[c5])).
+cnf(c9,negated_conjecture,~big_f(skolem0002,X8),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,big_f(skolem0001,X7),inference(split_conjunct,status(thm),[c5])).
+# SZS output end Saturation
+
+# Initial clauses    : 5
+# Processed clauses  : 4
+# Factors computed   : 0
+# Resolvents computed: 0
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.296 s
+# System time        : 0.148 s
+# Total time         : 0.444 s

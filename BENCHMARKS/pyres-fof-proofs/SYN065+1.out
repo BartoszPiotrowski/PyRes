@@ -1,0 +1,41 @@
+# cnf(c4,negated_conjecture,~big_h(skolem0001,X11)).
+# cnf(c15,axiom,big_g(X12,skolem0002(X12))).
+# cnf(c18,axiom,big_f(X13,skolem0003(X13))).
+# cnf(c9,axiom,~big_f(X15,X14)|~big_f(X14,X16)|big_h(X15,X16)).
+# cnf(c19,plain,~big_f(X18,X17)|big_h(X18,skolem0003(X17))).
+# cnf(c10,axiom,~big_f(X20,X19)|~big_g(X19,X21)|big_h(X20,X21)).
+# cnf(c20,plain,big_h(X22,skolem0003(skolem0003(X22)))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel36,conjecture,(![X]:(?[Y]:big_h(X,Y))),input).
+fof(c0,negated_conjecture,(~(![X]:(?[Y]:big_h(X,Y)))),inference(assume_negation,status(cth),[pel36])).
+fof(c1,negated_conjecture,(?[X]:(![Y]:~big_h(X,Y))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:(![X3]:~big_h(X2,X3))),inference(variable_rename,status(thm),[c1])).
+fof(c3,negated_conjecture,(![X3]:~big_h(skolem0001,X3)),inference(skolemize,status(esa),[c2])).
+cnf(c4,negated_conjecture,~big_h(skolem0001,X11),inference(split_conjunct,status(thm),[c3])).
+fof(pel36_1,axiom,(![X]:(?[Y]:big_f(X,Y))),input).
+fof(c16,axiom,(![X9]:(?[X10]:big_f(X9,X10))),inference(variable_rename,status(thm),[pel36_1])).
+fof(c17,axiom,(![X9]:big_f(X9,skolem0003(X9))),inference(skolemize,status(esa),[c16])).
+cnf(c18,axiom,big_f(X13,skolem0003(X13)),inference(split_conjunct,status(thm),[c17])).
+fof(pel36_3,axiom,(![X]:(![Y]:((big_f(X,Y)|big_g(X,Y))=>(![Z]:((big_f(Y,Z)|big_g(Y,Z))=>big_h(X,Z)))))),input).
+fof(c5,axiom,(![X]:(![Y]:((~big_f(X,Y)&~big_g(X,Y))|(![Z]:((~big_f(Y,Z)&~big_g(Y,Z))|big_h(X,Z)))))),inference(fof_nnf,status(thm),[pel36_3])).
+fof(c7,axiom,(![X4]:(![X5]:(![X6]:((~big_f(X4,X5)&~big_g(X4,X5))|((~big_f(X5,X6)&~big_g(X5,X6))|big_h(X4,X6)))))),inference(shift_quantors,status(thm),[fof(c6,axiom,(![X4]:(![X5]:((~big_f(X4,X5)&~big_g(X4,X5))|(![X6]:((~big_f(X5,X6)&~big_g(X5,X6))|big_h(X4,X6)))))),inference(variable_rename,status(thm),[c5])).])).
+fof(c8,axiom,(![X4]:(![X5]:(![X6]:(((~big_f(X4,X5)|(~big_f(X5,X6)|big_h(X4,X6)))&(~big_f(X4,X5)|(~big_g(X5,X6)|big_h(X4,X6))))&((~big_g(X4,X5)|(~big_f(X5,X6)|big_h(X4,X6)))&(~big_g(X4,X5)|(~big_g(X5,X6)|big_h(X4,X6)))))))),inference(distribute,status(thm),[c7])).
+cnf(c9,axiom,~big_f(X15,X14)|~big_f(X14,X16)|big_h(X15,X16),inference(split_conjunct,status(thm),[c8])).
+cnf(c19,plain,~big_f(X18,X17)|big_h(X18,skolem0003(X17)),inference(resolution,status(thm),[c9, c18])).
+cnf(c20,plain,big_h(X22,skolem0003(skolem0003(X22))),inference(resolution,status(thm),[c19, c18])).
+cnf(c22,plain,$false,inference(resolution,status(thm),[c20, c4])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 7
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 4
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.356 s
+# System time        : 0.259 s
+# Total time         : 0.615 s

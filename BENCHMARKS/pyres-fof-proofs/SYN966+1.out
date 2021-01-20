@@ -1,0 +1,63 @@
+# cnf(c11,negated_conjecture,eq(skolem0002,skolem0003)).
+# cnf(c12,negated_conjecture,~eq(skolem0003,skolem0002)).
+# cnf(c7,negated_conjecture,~eq(X11,X12)|~a_member_of(X13,X11)|a_member_of(X13,X12)).
+# cnf(c8,negated_conjecture,~eq(X14,X15)|~a_member_of(X16,X15)|a_member_of(X16,X14)).
+# cnf(c9,negated_conjecture,~a_member_of(skolem0001(X17,X18),X17)|~a_member_of(skolem0001(X17,X18),X18)|eq(X17,X18)).
+# cnf(c10,negated_conjecture,a_member_of(skolem0001(X19,X20),X19)|a_member_of(skolem0001(X19,X20),X20)|eq(X19,X20)).
+# cnf(c13,plain,a_member_of(skolem0001(X21,X21),X21)|eq(X21,X21)).
+# cnf(c22,plain,eq(X22,X22)|~a_member_of(skolem0001(X22,X22),X22)).
+# cnf(c26,plain,eq(X23,X23)).
+# cnf(c14,plain,a_member_of(skolem0001(X27,X28),X28)|eq(X27,X28)|~eq(X27,X26)|a_member_of(skolem0001(X27,X28),X26)).
+# cnf(c16,plain,a_member_of(skolem0001(X39,X40),X40)|eq(X39,X40)|~eq(X38,X39)|a_member_of(skolem0001(X39,X40),X38)).
+# cnf(c20,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)|a_member_of(skolem0001(skolem0003,skolem0002),skolem0002)).
+# cnf(c17,plain,a_member_of(skolem0001(X45,X43),X45)|eq(X45,X43)|~eq(X43,X44)|a_member_of(skolem0001(X45,X43),X44)).
+# cnf(c19,plain,a_member_of(skolem0001(X49,X50),X49)|eq(X49,X50)|~eq(X48,X50)|a_member_of(skolem0001(X49,X50),X48)).
+# cnf(c28,plain,a_member_of(skolem0001(skolem0002,X51),X51)|eq(skolem0002,X51)|a_member_of(skolem0001(skolem0002,X51),skolem0003)).
+# cnf(c31,plain,a_member_of(skolem0001(skolem0003,X54),X54)|eq(skolem0003,X54)|a_member_of(skolem0001(skolem0003,X54),skolem0002)).
+# cnf(c63,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0002)).
+# cnf(c67,plain,~eq(skolem0002,X55)|a_member_of(skolem0001(skolem0003,skolem0002),X55)).
+# cnf(c29,plain,a_member_of(skolem0001(X56,X58),X58)|eq(X56,X58)|a_member_of(skolem0001(X56,X58),X57)|a_member_of(skolem0001(X56,X57),X56)|a_member_of(skolem0001(X56,X57),X57)).
+# cnf(c73,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)).
+# cnf(c69,plain,~eq(X61,skolem0002)|a_member_of(skolem0001(skolem0003,skolem0002),X61)).
+# cnf(c32,plain,a_member_of(skolem0001(X64,X62),X62)|eq(X64,X62)|a_member_of(skolem0001(X64,X62),X63)|a_member_of(skolem0001(X63,X64),X63)|a_member_of(skolem0001(X63,X64),X64)).
+# cnf(c98,plain,~eq(skolem0003,X70)|a_member_of(skolem0001(skolem0003,skolem0002),X70)).
+# cnf(c99,plain,~eq(X71,skolem0003)|a_member_of(skolem0001(skolem0003,skolem0002),X71)).
+# cnf(c68,plain,~a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)|eq(skolem0003,skolem0002)).
+# cnf(c143,plain,eq(skolem0003,skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,((![X]:(![Y]:(eq(X,Y)<=>(![Z]:(a_member_of(Z,X)<=>a_member_of(Z,Y))))))=>(![A]:(![B]:(eq(A,B)=>eq(B,A))))),input).
+fof(c0,negated_conjecture,(~((![X]:(![Y]:(eq(X,Y)<=>(![Z]:(a_member_of(Z,X)<=>a_member_of(Z,Y))))))=>(![A]:(![B]:(eq(A,B)=>eq(B,A)))))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,((![X]:(![Y]:((~eq(X,Y)|(![Z]:((~a_member_of(Z,X)|a_member_of(Z,Y))&(~a_member_of(Z,Y)|a_member_of(Z,X)))))&((?[Z]:((~a_member_of(Z,X)|~a_member_of(Z,Y))&(a_member_of(Z,X)|a_member_of(Z,Y))))|eq(X,Y)))))&(?[A]:(?[B]:(eq(A,B)&~eq(B,A))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(((![X]:(![Y]:(~eq(X,Y)|((![Z]:(~a_member_of(Z,X)|a_member_of(Z,Y)))&(![Z]:(~a_member_of(Z,Y)|a_member_of(Z,X)))))))&(![X]:(![Y]:((?[Z]:((~a_member_of(Z,X)|~a_member_of(Z,Y))&(a_member_of(Z,X)|a_member_of(Z,Y))))|eq(X,Y)))))&(?[A]:(?[B]:(eq(A,B)&~eq(B,A))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(((![X2]:(![X3]:(~eq(X2,X3)|((![X4]:(~a_member_of(X4,X2)|a_member_of(X4,X3)))&(![X5]:(~a_member_of(X5,X3)|a_member_of(X5,X2)))))))&(![X6]:(![X7]:((?[X8]:((~a_member_of(X8,X6)|~a_member_of(X8,X7))&(a_member_of(X8,X6)|a_member_of(X8,X7))))|eq(X6,X7)))))&(?[X9]:(?[X10]:(eq(X9,X10)&~eq(X10,X9))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(((~eq(X2,X3)|((~a_member_of(X4,X2)|a_member_of(X4,X3))&(~a_member_of(X5,X3)|a_member_of(X5,X2))))&(((~a_member_of(skolem0001(X6,X7),X6)|~a_member_of(skolem0001(X6,X7),X7))&(a_member_of(skolem0001(X6,X7),X6)|a_member_of(skolem0001(X6,X7),X7)))|eq(X6,X7)))&(eq(skolem0002,skolem0003)&~eq(skolem0003,skolem0002))))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(((![X2]:(![X3]:(~eq(X2,X3)|((![X4]:(~a_member_of(X4,X2)|a_member_of(X4,X3)))&(![X5]:(~a_member_of(X5,X3)|a_member_of(X5,X2)))))))&(![X6]:(![X7]:(((~a_member_of(skolem0001(X6,X7),X6)|~a_member_of(skolem0001(X6,X7),X7))&(a_member_of(skolem0001(X6,X7),X6)|a_member_of(skolem0001(X6,X7),X7)))|eq(X6,X7)))))&(eq(skolem0002,skolem0003)&~eq(skolem0003,skolem0002))),inference(skolemize,status(esa),[c3])).])).
+fof(c6,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:((((~eq(X2,X3)|(~a_member_of(X4,X2)|a_member_of(X4,X3)))&(~eq(X2,X3)|(~a_member_of(X5,X3)|a_member_of(X5,X2))))&(((~a_member_of(skolem0001(X6,X7),X6)|~a_member_of(skolem0001(X6,X7),X7))|eq(X6,X7))&((a_member_of(skolem0001(X6,X7),X6)|a_member_of(skolem0001(X6,X7),X7))|eq(X6,X7))))&(eq(skolem0002,skolem0003)&~eq(skolem0003,skolem0002))))))))),inference(distribute,status(thm),[c5])).
+cnf(c12,negated_conjecture,~eq(skolem0003,skolem0002),inference(split_conjunct,status(thm),[c6])).
+cnf(c11,negated_conjecture,eq(skolem0002,skolem0003),inference(split_conjunct,status(thm),[c6])).
+cnf(c7,negated_conjecture,~eq(X11,X12)|~a_member_of(X13,X11)|a_member_of(X13,X12),inference(split_conjunct,status(thm),[c6])).
+cnf(c8,negated_conjecture,~eq(X14,X15)|~a_member_of(X16,X15)|a_member_of(X16,X14),inference(split_conjunct,status(thm),[c6])).
+cnf(c10,negated_conjecture,a_member_of(skolem0001(X19,X20),X19)|a_member_of(skolem0001(X19,X20),X20)|eq(X19,X20),inference(split_conjunct,status(thm),[c6])).
+cnf(c16,plain,a_member_of(skolem0001(X39,X40),X40)|eq(X39,X40)|~eq(X38,X39)|a_member_of(skolem0001(X39,X40),X38),inference(resolution,status(thm),[c10, c8])).
+cnf(c31,plain,a_member_of(skolem0001(skolem0003,X54),X54)|eq(skolem0003,X54)|a_member_of(skolem0001(skolem0003,X54),skolem0002),inference(resolution,status(thm),[c16, c11])).
+cnf(c63,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0002),inference(resolution,status(thm),[c31, c12])).
+cnf(c67,plain,~eq(skolem0002,X55)|a_member_of(skolem0001(skolem0003,skolem0002),X55),inference(resolution,status(thm),[c63, c7])).
+cnf(c73,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0003),inference(resolution,status(thm),[c67, c11])).
+cnf(c9,negated_conjecture,~a_member_of(skolem0001(X17,X18),X17)|~a_member_of(skolem0001(X17,X18),X18)|eq(X17,X18),inference(split_conjunct,status(thm),[c6])).
+cnf(c68,plain,~a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)|eq(skolem0003,skolem0002),inference(resolution,status(thm),[c63, c9])).
+cnf(c143,plain,eq(skolem0003,skolem0002),inference(resolution,status(thm),[c68, c73])).
+cnf(c154,plain,$false,inference(resolution,status(thm),[c143, c12])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 26
+# Factors computed   : 15
+# Resolvents computed: 127
+# Tautologies deleted: 2
+# Forward subsumed   : 23
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.333 s
+# System time        : 0.211 s
+# Total time         : 0.544 s

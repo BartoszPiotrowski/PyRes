@@ -1,0 +1,48 @@
+# cnf(c10,negated_conjecture,~a_truth(implies(skolem0001,skolem0001))).
+# cnf(c7,negated_conjecture,a_truth(implies(X12,implies(X13,X12)))).
+# cnf(c6,negated_conjecture,~a_truth(implies(X15,X14))|~a_truth(X15)|a_truth(X14)).
+# cnf(c11,plain,~a_truth(X16)|a_truth(implies(X17,X16))).
+# cnf(c12,plain,a_truth(implies(X20,implies(X18,implies(X19,X18))))).
+# cnf(c8,negated_conjecture,a_truth(implies(implies(X21,implies(X23,X22)),implies(implies(X21,X23),implies(X21,X22))))).
+# cnf(c13,plain,a_truth(implies(X29,implies(X28,implies(X27,implies(X30,X27)))))).
+# cnf(c9,negated_conjecture,a_truth(implies(implies(not(X35),not(X36)),implies(X36,X35)))).
+# cnf(c20,plain,~a_truth(implies(not(X37),not(X38)))|a_truth(implies(X38,X37))).
+# cnf(c15,plain,a_truth(implies(X41,implies(implies(X39,implies(X40,X42)),implies(implies(X39,X40),implies(X39,X42)))))).
+# cnf(c17,plain,a_truth(implies(X44,implies(X43,implies(X45,implies(X47,implies(X46,X47))))))).
+# cnf(c19,plain,a_truth(implies(X55,implies(implies(not(X53),not(X54)),implies(X54,X53))))).
+# cnf(c16,plain,~a_truth(implies(X60,implies(X59,X61)))|a_truth(implies(implies(X60,X59),implies(X60,X61)))).
+# cnf(c21,plain,a_truth(implies(X64,implies(X62,implies(implies(X63,implies(X66,X65)),implies(implies(X63,X66),implies(X63,X65))))))).
+# cnf(c29,plain,a_truth(implies(implies(X67,X68),implies(X67,X67)))).
+# cnf(c39,plain,~a_truth(implies(X70,X69))|a_truth(implies(X70,X70))).
+# cnf(c43,plain,a_truth(implies(X71,X71))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(thm147,conjecture,(~(((((![P]:(![Q]:(((~a_truth(implies(P,Q)))|(~a_truth(P)))|a_truth(Q))))&(![P]:(![Q]:a_truth(implies(P,implies(Q,P))))))&(![P]:(![Q]:(![R]:a_truth(implies(implies(P,implies(Q,R)),implies(implies(P,Q),implies(P,R))))))))&(![P]:(![Q]:a_truth(implies(implies(not(P),not(Q)),implies(Q,P))))))&(?[A]:(~a_truth(implies(A,A)))))),input).
+fof(c0,negated_conjecture,(~(~(((((![P]:(![Q]:(((~a_truth(implies(P,Q)))|(~a_truth(P)))|a_truth(Q))))&(![P]:(![Q]:a_truth(implies(P,implies(Q,P))))))&(![P]:(![Q]:(![R]:a_truth(implies(implies(P,implies(Q,R)),implies(implies(P,Q),implies(P,R))))))))&(![P]:(![Q]:a_truth(implies(implies(not(P),not(Q)),implies(Q,P))))))&(?[A]:(~a_truth(implies(A,A))))))),inference(assume_negation,status(cth),[thm147])).
+fof(c1,negated_conjecture,(~(~(((((![P]:(![Q]:((~a_truth(implies(P,Q))|~a_truth(P))|a_truth(Q))))&(![P]:(![Q]:a_truth(implies(P,implies(Q,P))))))&(![P]:(![Q]:(![R]:a_truth(implies(implies(P,implies(Q,R)),implies(implies(P,Q),implies(P,R))))))))&(![P]:(![Q]:a_truth(implies(implies(not(P),not(Q)),implies(Q,P))))))&(?[A]:~a_truth(implies(A,A)))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(((((![P]:(![Q]:((~a_truth(implies(P,Q))|~a_truth(P))|a_truth(Q))))&(![P]:(![Q]:a_truth(implies(P,implies(Q,P))))))&(![P]:(![Q]:(![R]:a_truth(implies(implies(P,implies(Q,R)),implies(implies(P,Q),implies(P,R))))))))&(![P]:(![Q]:a_truth(implies(implies(not(P),not(Q)),implies(Q,P))))))&(?[A]:~a_truth(implies(A,A)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(((((![X2]:(![X3]:((~a_truth(implies(X2,X3))|~a_truth(X2))|a_truth(X3))))&(![X4]:(![X5]:a_truth(implies(X4,implies(X5,X4))))))&(![X6]:(![X7]:(![X8]:a_truth(implies(implies(X6,implies(X7,X8)),implies(implies(X6,X7),implies(X6,X8))))))))&(![X9]:(![X10]:a_truth(implies(implies(not(X9),not(X10)),implies(X10,X9))))))&(?[X11]:~a_truth(implies(X11,X11)))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(![X8]:(![X9]:(![X10]:((((((~a_truth(implies(X2,X3))|~a_truth(X2))|a_truth(X3))&a_truth(implies(X4,implies(X5,X4))))&a_truth(implies(implies(X6,implies(X7,X8)),implies(implies(X6,X7),implies(X6,X8)))))&a_truth(implies(implies(not(X9),not(X10)),implies(X10,X9))))&~a_truth(implies(skolem0001,skolem0001)))))))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(((((![X2]:(![X3]:((~a_truth(implies(X2,X3))|~a_truth(X2))|a_truth(X3))))&(![X4]:(![X5]:a_truth(implies(X4,implies(X5,X4))))))&(![X6]:(![X7]:(![X8]:a_truth(implies(implies(X6,implies(X7,X8)),implies(implies(X6,X7),implies(X6,X8))))))))&(![X9]:(![X10]:a_truth(implies(implies(not(X9),not(X10)),implies(X10,X9))))))&~a_truth(implies(skolem0001,skolem0001))),inference(skolemize,status(esa),[c3])).])).
+cnf(c10,negated_conjecture,~a_truth(implies(skolem0001,skolem0001)),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,negated_conjecture,a_truth(implies(X12,implies(X13,X12))),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,~a_truth(implies(X15,X14))|~a_truth(X15)|a_truth(X14),inference(split_conjunct,status(thm),[c5])).
+cnf(c8,negated_conjecture,a_truth(implies(implies(X21,implies(X23,X22)),implies(implies(X21,X23),implies(X21,X22)))),inference(split_conjunct,status(thm),[c5])).
+cnf(c16,plain,~a_truth(implies(X60,implies(X59,X61)))|a_truth(implies(implies(X60,X59),implies(X60,X61))),inference(resolution,status(thm),[c8, c6])).
+cnf(c29,plain,a_truth(implies(implies(X67,X68),implies(X67,X67))),inference(resolution,status(thm),[c16, c7])).
+cnf(c39,plain,~a_truth(implies(X70,X69))|a_truth(implies(X70,X70)),inference(resolution,status(thm),[c29, c6])).
+cnf(c43,plain,a_truth(implies(X71,X71)),inference(resolution,status(thm),[c39, c7])).
+cnf(c51,plain,$false,inference(resolution,status(thm),[c43, c10])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 17
+# Factors computed   : 0
+# Resolvents computed: 45
+# Tautologies deleted: 0
+# Forward subsumed   : 4
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.231 s
+# System time        : 0.209 s
+# Total time         : 0.440 s

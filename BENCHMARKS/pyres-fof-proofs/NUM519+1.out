@@ -1,0 +1,86 @@
+# cnf(c102,axiom,$true).
+# cnf(reflexivity,axiom,X89=X89).
+# cnf(c22,plain,aNaturalNumber0(xr)).
+# cnf(c24,plain,isPrime0(xr)).
+# cnf(symmetry,axiom,X90!=X91|X91=X90).
+# cnf(c39,plain,isPrime0(xp)).
+# cnf(c44,plain,aNaturalNumber0(xn)).
+# cnf(c45,plain,aNaturalNumber0(xm)).
+# cnf(c46,plain,aNaturalNumber0(xp)).
+# cnf(c213,axiom,aNaturalNumber0(sz10)).
+# cnf(transitivity,axiom,X92!=X94|X94!=X93|X92=X93).
+# cnf(c215,axiom,aNaturalNumber0(sz00)).
+# cnf(c11,negated_conjecture,~doDivides0(xp,xn)).
+# cnf(c12,negated_conjecture,~doDivides0(xp,xm)).
+# cnf(c14,plain,~doDivides0(xr,xm)).
+# cnf(c0,plain,X97!=X96|X99!=X98|sdtpldt0(X97,X99)=sdtpldt0(X96,X98)).
+# cnf(c16,plain,~doDivides0(xr,xn)).
+# cnf(c18,plain,xk!=xp).
+# cnf(c19,plain,sdtlseqdt0(xk,xp)).
+# cnf(c20,plain,sdtlseqdt0(xr,xk)).
+# cnf(c23,plain,doDivides0(xr,xk)).
+# cnf(c1,plain,X101!=X100|X103!=X102|sdtasdt0(X101,X103)=sdtasdt0(X100,X102)).
+# cnf(c25,plain,xk!=sz00).
+# cnf(c26,plain,xk!=sz10).
+# cnf(c31,plain,xn!=xp).
+# cnf(c2,plain,X105!=X104|X107!=X106|sdtmndt0(X105,X107)=sdtmndt0(X104,X106)).
+# cnf(c32,plain,sdtlseqdt0(xn,xp)).
+# cnf(c33,plain,xm!=xp).
+# cnf(c34,plain,sdtlseqdt0(xm,xp)).
+# cnf(c36,plain,~sdtlseqdt0(xp,xm)).
+# cnf(c38,plain,~sdtlseqdt0(xp,xn)).
+# cnf(c3,plain,X109!=X108|X111!=X110|sdtsldt0(X109,X111)=sdtsldt0(X108,X110)).
+# cnf(c214,axiom,sz10!=sz00).
+# cnf(c139,axiom,~aNaturalNumber0(X112)|sdtlseqdt0(X112,X112)).
+# cnf(c224,plain,sdtlseqdt0(xr,xr)).
+# cnf(c225,plain,sdtlseqdt0(sz00,sz00)).
+# cnf(c226,plain,sdtlseqdt0(xn,xn)).
+# cnf(c4,plain,X114!=X113|~aNaturalNumber0(X114)|aNaturalNumber0(X113)).
+# cnf(c227,plain,sdtlseqdt0(xm,xm)).
+# cnf(c228,plain,sdtlseqdt0(xp,xp)).
+# cnf(c229,plain,sdtlseqdt0(sz10,sz10)).
+# cnf(c5,plain,X119!=X118|X121!=X120|~sdtlseqdt0(X119,X121)|sdtlseqdt0(X118,X120)).
+# cnf(c8,plain,X123!=X122|~isPrime0(X123)|isPrime0(X122)).
+# cnf(c21,plain,doDivides0(xr,sdtasdt0(xn,xm))).
+# cnf(c40,plain,doDivides0(xp,sdtasdt0(xn,xm))).
+# cnf(c59,plain,~aNaturalNumber0(X125)|~isPrime0(X125)|X125!=sz00).
+# cnf(c6,plain,X127!=X126|X129!=X128|~iLess0(X127,X129)|iLess0(X126,X128)).
+# cnf(c242,plain,~aNaturalNumber0(sz00)|~isPrime0(sz00)).
+# cnf(c60,plain,~aNaturalNumber0(X130)|~isPrime0(X130)|X130!=sz10).
+# cnf(c243,plain,~aNaturalNumber0(sz10)|~isPrime0(sz10)).
+# cnf(c188,axiom,~aNaturalNumber0(X131)|sdtasdt0(X131,sz10)=X131).
+# cnf(c244,plain,sdtasdt0(xr,sz10)=xr).
+# cnf(c7,plain,X133!=X132|X135!=X134|~doDivides0(X133,X135)|doDivides0(X132,X134)).
+# cnf(c245,plain,sdtasdt0(sz00,sz10)=sz00).
+# cnf(c246,plain,sdtasdt0(xn,sz10)=xn).
+# cnf(c247,plain,sdtasdt0(xm,sz10)=xm).
+# cnf(c248,plain,sdtasdt0(xp,sz10)=xp).
+# cnf(c249,plain,sdtasdt0(sz10,sz10)=sz10).
+# cnf(c17,plain,doDivides0(xr,xn)|doDivides0(xr,xm)).
+# cnf(c303,plain,doDivides0(xr,xm)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__2698,plain,(~doDivides0(xr,xm)),input).
+fof(c13,plain,~doDivides0(xr,xm),inference(fof_simplification,status(thm),[m__2698])).
+cnf(c14,plain,~doDivides0(xr,xm),inference(split_conjunct,status(thm),[c13])).
+fof(m__2487,plain,(~doDivides0(xr,xn)),input).
+fof(c15,plain,~doDivides0(xr,xn),inference(fof_simplification,status(thm),[m__2487])).
+cnf(c16,plain,~doDivides0(xr,xn),inference(split_conjunct,status(thm),[c15])).
+fof(m__2449,plain,(doDivides0(xr,xn)|doDivides0(xr,xm)),input).
+cnf(c17,plain,doDivides0(xr,xn)|doDivides0(xr,xm),inference(split_conjunct,status(thm),[m__2449])).
+cnf(c303,plain,doDivides0(xr,xm),inference(resolution,status(thm),[c17, c16])).
+cnf(c307,plain,$false,inference(resolution,status(thm),[c303, c14])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 111
+# Processed clauses  : 60
+# Factors computed   : 0
+# Resolvents computed: 91
+# Tautologies deleted: 3
+# Forward subsumed   : 4
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.323 s
+# System time        : 0.366 s
+# Total time         : 0.689 s

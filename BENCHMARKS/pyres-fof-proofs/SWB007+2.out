@@ -1,0 +1,95 @@
+# cnf(reflexivity,axiom,X6=X6).
+# cnf(symmetry,axiom,X8!=X7|X7=X8).
+# cnf(c1,axiom,iext(uri_owl_sameAs,uri_ex_c1,uri_ex_c2)).
+# cnf(c2,axiom,iext(uri_rdf_type,uri_ex_w,uri_ex_c1)).
+# cnf(transitivity,axiom,X12!=X10|X10!=X11|X12=X11).
+# cnf(c3,axiom,iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c1)).
+# cnf(c4,axiom,iext(uri_rdfs_range,uri_ex_p,uri_ex_c1)).
+# cnf(c12,axiom,~iext(uri_owl_sameAs,X16,X15)|X16=X15).
+# cnf(c16,plain,uri_ex_c1=uri_ex_c2).
+# cnf(c0,plain,X22!=X17|X21!=X20|X19!=X18|~iext(X22,X21,X19)|iext(X17,X20,X18)).
+# cnf(c18,plain,uri_ex_c2=uri_ex_c1).
+# cnf(c13,axiom,X24!=X23|iext(uri_owl_sameAs,X24,X23)).
+# cnf(c25,plain,iext(uri_owl_sameAs,X25,X25)).
+# cnf(c7,negated_conjecture,~iext(uri_rdf_type,uri_ex_w,uri_ex_c2)|~iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2)|~iext(uri_rdfs_range,uri_ex_p,uri_ex_c2)).
+# cnf(c27,plain,iext(uri_owl_sameAs,uri_ex_c2,uri_ex_c1)).
+# cnf(c17,plain,X27!=uri_ex_c1|X27=uri_ex_c2).
+# cnf(c19,plain,uri_rdf_type!=X29|uri_ex_w!=X30|uri_ex_c1!=X28|iext(X29,X30,X28)).
+# cnf(c23,plain,X31!=uri_ex_c2|X31=uri_ex_c1).
+# cnf(c34,plain,uri_rdf_type!=X33|uri_ex_w!=X32|iext(X33,X32,uri_ex_c1)).
+# cnf(c20,plain,uri_rdfs_range!=X35|uri_ex_p!=X36|uri_ex_c1!=X34|iext(X35,X36,X34)).
+# cnf(c38,plain,uri_rdf_type!=X37|iext(X37,uri_ex_w,uri_ex_c1)).
+# cnf(c35,plain,uri_rdf_type!=X39|uri_ex_w!=X38|iext(X39,X38,uri_ex_c2)).
+# cnf(c42,plain,uri_rdf_type!=X40|iext(X40,uri_ex_w,uri_ex_c2)).
+# cnf(c43,plain,iext(uri_rdf_type,uri_ex_w,uri_ex_c2)).
+# cnf(c21,plain,uri_rdfs_subClassOf!=X42|uri_ex_c!=X43|uri_ex_c1!=X41|iext(X42,X43,X41)).
+# cnf(c39,plain,uri_rdfs_range!=X45|uri_ex_p!=X44|iext(X45,X44,uri_ex_c1)).
+# cnf(c47,plain,uri_rdfs_range!=X46|iext(X46,uri_ex_p,uri_ex_c1)).
+# cnf(c40,plain,uri_rdfs_range!=X48|uri_ex_p!=X47|iext(X48,X47,uri_ex_c2)).
+# cnf(c49,plain,uri_rdfs_range!=X49|iext(X49,uri_ex_p,uri_ex_c2)).
+# cnf(c22,plain,uri_owl_sameAs!=X51|uri_ex_c1!=X52|uri_ex_c2!=X50|iext(X51,X52,X50)).
+# cnf(c50,plain,iext(uri_rdfs_range,uri_ex_p,uri_ex_c2)).
+# cnf(c45,plain,uri_rdfs_subClassOf!=X54|uri_ex_c!=X53|iext(X54,X53,uri_ex_c1)).
+# cnf(c55,plain,uri_rdfs_subClassOf!=X55|iext(X55,uri_ex_c,uri_ex_c1)).
+# cnf(c46,plain,uri_rdfs_subClassOf!=X57|uri_ex_c!=X56|iext(X57,X56,uri_ex_c2)).
+# cnf(c28,plain,uri_owl_sameAs!=X59|X61!=X60|X61!=X58|iext(X59,X60,X58)).
+# cnf(c57,plain,uri_rdfs_subClassOf!=X62|iext(X62,uri_ex_c,uri_ex_c2)).
+# cnf(c61,plain,iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2)).
+# cnf(c58,plain,uri_owl_sameAs!=X64|X63!=X65|iext(X64,X65,X63)).
+# cnf(c63,plain,uri_owl_sameAs!=X67|iext(X67,X66,X66)).
+# cnf(c30,plain,uri_owl_sameAs!=X70|uri_ex_c2!=X71|uri_ex_c1!=X69|iext(X70,X71,X69)).
+# cnf(c64,plain,uri_owl_sameAs!=X72|iext(X72,uri_ex_c2,uri_ex_c1)).
+# cnf(c65,plain,uri_owl_sameAs!=X73|iext(X73,uri_ex_c1,uri_ex_c2)).
+# cnf(c51,plain,uri_owl_sameAs!=X74|uri_ex_c1!=X75|iext(X74,X75,uri_ex_c2)).
+# cnf(c44,plain,uri_rdf_type!=X77|uri_ex_w!=X78|uri_ex_c2!=X76|iext(X77,X78,X76)).
+# cnf(c53,plain,~iext(uri_rdf_type,uri_ex_w,uri_ex_c2)|~iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2)).
+# cnf(c75,plain,~iext(uri_rdf_type,uri_ex_w,uri_ex_c2)).
+# cnf(c54,plain,uri_rdfs_range!=X84|uri_ex_p!=X85|uri_ex_c2!=X83|iext(X84,X85,X83)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+cnf(reflexivity,axiom,X6=X6,eq_axiom).
+fof(testcase_premise_fullish_007_Equal_Classes,axiom,(((iext(uri_owl_sameAs,uri_ex_c1,uri_ex_c2)&iext(uri_rdf_type,uri_ex_w,uri_ex_c1))&iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c1))&iext(uri_rdfs_range,uri_ex_p,uri_ex_c1)),input).
+cnf(c1,axiom,iext(uri_owl_sameAs,uri_ex_c1,uri_ex_c2),inference(split_conjunct,status(thm),[testcase_premise_fullish_007_Equal_Classes])).
+fof(owl_eqdis_sameas,axiom,(![X]:(![Y]:(iext(uri_owl_sameAs,X,Y)<=>X=Y))),input).
+fof(c8,axiom,(![X]:(![Y]:((~iext(uri_owl_sameAs,X,Y)|X=Y)&(X!=Y|iext(uri_owl_sameAs,X,Y))))),inference(fof_nnf,status(thm),[owl_eqdis_sameas])).
+fof(c9,axiom,((![X]:(![Y]:(~iext(uri_owl_sameAs,X,Y)|X=Y)))&(![X]:(![Y]:(X!=Y|iext(uri_owl_sameAs,X,Y))))),inference(shift_quantors,status(thm),[c8])).
+fof(c11,axiom,(![X2]:(![X3]:(![X4]:(![X5]:((~iext(uri_owl_sameAs,X2,X3)|X2=X3)&(X4!=X5|iext(uri_owl_sameAs,X4,X5))))))),inference(shift_quantors,status(thm),[fof(c10,axiom,((![X2]:(![X3]:(~iext(uri_owl_sameAs,X2,X3)|X2=X3)))&(![X4]:(![X5]:(X4!=X5|iext(uri_owl_sameAs,X4,X5))))),inference(variable_rename,status(thm),[c9])).])).
+cnf(c12,axiom,~iext(uri_owl_sameAs,X16,X15)|X16=X15,inference(split_conjunct,status(thm),[c11])).
+cnf(c16,plain,uri_ex_c1=uri_ex_c2,inference(resolution,status(thm),[c12, c1])).
+cnf(c2,axiom,iext(uri_rdf_type,uri_ex_w,uri_ex_c1),inference(split_conjunct,status(thm),[testcase_premise_fullish_007_Equal_Classes])).
+cnf(c0,plain,X22!=X17|X21!=X20|X19!=X18|~iext(X22,X21,X19)|iext(X17,X20,X18),eq_axiom).
+cnf(c19,plain,uri_rdf_type!=X29|uri_ex_w!=X30|uri_ex_c1!=X28|iext(X29,X30,X28),inference(resolution,status(thm),[c0, c2])).
+cnf(c35,plain,uri_rdf_type!=X39|uri_ex_w!=X38|iext(X39,X38,uri_ex_c2),inference(resolution,status(thm),[c19, c16])).
+cnf(c42,plain,uri_rdf_type!=X40|iext(X40,uri_ex_w,uri_ex_c2),inference(resolution,status(thm),[c35, reflexivity])).
+cnf(c43,plain,iext(uri_rdf_type,uri_ex_w,uri_ex_c2),inference(resolution,status(thm),[c42, reflexivity])).
+cnf(c3,axiom,iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c1),inference(split_conjunct,status(thm),[testcase_premise_fullish_007_Equal_Classes])).
+cnf(c21,plain,uri_rdfs_subClassOf!=X42|uri_ex_c!=X43|uri_ex_c1!=X41|iext(X42,X43,X41),inference(resolution,status(thm),[c0, c3])).
+cnf(c46,plain,uri_rdfs_subClassOf!=X57|uri_ex_c!=X56|iext(X57,X56,uri_ex_c2),inference(resolution,status(thm),[c21, c16])).
+cnf(c57,plain,uri_rdfs_subClassOf!=X62|iext(X62,uri_ex_c,uri_ex_c2),inference(resolution,status(thm),[c46, reflexivity])).
+cnf(c61,plain,iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2),inference(resolution,status(thm),[c57, reflexivity])).
+fof(testcase_conclusion_fullish_007_Equal_Classes,conjecture,((iext(uri_rdf_type,uri_ex_w,uri_ex_c2)&iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2))&iext(uri_rdfs_range,uri_ex_p,uri_ex_c2)),input).
+fof(c5,negated_conjecture,(~((iext(uri_rdf_type,uri_ex_w,uri_ex_c2)&iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2))&iext(uri_rdfs_range,uri_ex_p,uri_ex_c2))),inference(assume_negation,status(cth),[testcase_conclusion_fullish_007_Equal_Classes])).
+fof(c6,negated_conjecture,((~iext(uri_rdf_type,uri_ex_w,uri_ex_c2)|~iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2))|~iext(uri_rdfs_range,uri_ex_p,uri_ex_c2)),inference(fof_nnf,status(thm),[c5])).
+cnf(c7,negated_conjecture,~iext(uri_rdf_type,uri_ex_w,uri_ex_c2)|~iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2)|~iext(uri_rdfs_range,uri_ex_p,uri_ex_c2),inference(split_conjunct,status(thm),[c6])).
+cnf(c4,axiom,iext(uri_rdfs_range,uri_ex_p,uri_ex_c1),inference(split_conjunct,status(thm),[testcase_premise_fullish_007_Equal_Classes])).
+cnf(c20,plain,uri_rdfs_range!=X35|uri_ex_p!=X36|uri_ex_c1!=X34|iext(X35,X36,X34),inference(resolution,status(thm),[c0, c4])).
+cnf(c40,plain,uri_rdfs_range!=X48|uri_ex_p!=X47|iext(X48,X47,uri_ex_c2),inference(resolution,status(thm),[c20, c16])).
+cnf(c49,plain,uri_rdfs_range!=X49|iext(X49,uri_ex_p,uri_ex_c2),inference(resolution,status(thm),[c40, reflexivity])).
+cnf(c50,plain,iext(uri_rdfs_range,uri_ex_p,uri_ex_c2),inference(resolution,status(thm),[c49, reflexivity])).
+cnf(c53,plain,~iext(uri_rdf_type,uri_ex_w,uri_ex_c2)|~iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_c2),inference(resolution,status(thm),[c50, c7])).
+cnf(c75,plain,~iext(uri_rdf_type,uri_ex_w,uri_ex_c2),inference(resolution,status(thm),[c53, c61])).
+cnf(c76,plain,$false,inference(resolution,status(thm),[c75, c43])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 11
+# Processed clauses  : 47
+# Factors computed   : 0
+# Resolvents computed: 65
+# Tautologies deleted: 1
+# Forward subsumed   : 18
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.348 s
+# System time        : 0.334 s
+# Total time         : 0.682 s

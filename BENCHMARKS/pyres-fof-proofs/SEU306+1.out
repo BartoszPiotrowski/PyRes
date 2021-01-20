@@ -1,0 +1,230 @@
+# cnf(c27,axiom,$true).
+# cnf(reflexivity,axiom,X61=X61).
+# cnf(c22,negated_conjecture,one_sorted_str(skolem0001)).
+# cnf(c34,axiom,one_sorted_str(skolem0002)).
+# cnf(c82,axiom,subset(X62,X62)).
+# cnf(c126,axiom,empty(empty_set)).
+# cnf(c127,axiom,v1_membered(empty_set)).
+# cnf(symmetry,axiom,X64!=X63|X63=X64).
+# cnf(c128,axiom,v2_membered(empty_set)).
+# cnf(c129,axiom,v3_membered(empty_set)).
+# cnf(c130,axiom,v4_membered(empty_set)).
+# cnf(c131,axiom,v5_membered(empty_set)).
+# cnf(c169,axiom,~empty(skolem0006)).
+# cnf(transitivity,axiom,X67!=X65|X65!=X66|X67=X66).
+# cnf(c170,axiom,v1_membered(skolem0006)).
+# cnf(c171,axiom,v2_membered(skolem0006)).
+# cnf(c172,axiom,v3_membered(skolem0006)).
+# cnf(c173,axiom,v4_membered(skolem0006)).
+# cnf(c174,axiom,v5_membered(skolem0006)).
+# cnf(c0,plain,X69!=X68|powerset(X69)=powerset(X68)).
+# cnf(c43,axiom,~empty(powerset(X71))).
+# cnf(c72,axiom,empty(skolem0004(X72))).
+# cnf(c48,axiom,element(skolem0003(X73),X73)).
+# cnf(c64,axiom,~empty(X74)|v1_membered(X74)).
+# cnf(c1,plain,X76!=X75|cast_as_carrier_subset(X76)=cast_as_carrier_subset(X75)).
+# cnf(c196,plain,v1_membered(skolem0004(X77))).
+# cnf(c65,axiom,~empty(X78)|v2_membered(X78)).
+# cnf(c199,plain,v2_membered(skolem0004(X79))).
+# cnf(c2,plain,X81!=X80|the_carrier(X81)=the_carrier(X80)).
+# cnf(c66,axiom,~empty(X82)|v3_membered(X82)).
+# cnf(c202,plain,v3_membered(skolem0004(X83))).
+# cnf(c67,axiom,~empty(X84)|v4_membered(X84)).
+# cnf(c3,plain,X87!=X86|X85!=X88|~in(X87,X85)|in(X86,X88)).
+# cnf(c204,plain,v4_membered(skolem0004(X89))).
+# cnf(c68,axiom,~empty(X90)|v5_membered(X90)).
+# cnf(c206,plain,v5_membered(skolem0004(X91))).
+# cnf(c177,axiom,~v2_membered(X92)|v1_membered(X92)).
+# cnf(c4,plain,X94!=X93|~v5_membered(X94)|v5_membered(X93)).
+# cnf(c180,axiom,~v3_membered(X96)|v2_membered(X96)).
+# cnf(c5,plain,X98!=X97|~v4_membered(X98)|v4_membered(X97)).
+# cnf(c183,axiom,~v4_membered(X100)|v3_membered(X100)).
+# cnf(c6,plain,X102!=X101|~v3_membered(X102)|v3_membered(X101)).
+# cnf(c186,axiom,~v5_membered(X104)|v4_membered(X104)).
+# cnf(c7,plain,X107!=X106|~v2_membered(X107)|v2_membered(X106)).
+# cnf(c54,axiom,~in(X113,X112)|~empty(X112)).
+# cnf(c8,plain,X115!=X114|~v1_membered(X115)|v1_membered(X114)).
+# cnf(c57,axiom,~empty(X117)|X117=empty_set).
+# cnf(c225,plain,skolem0004(X118)=empty_set).
+# cnf(c229,plain,empty_set=skolem0004(X119)).
+# cnf(c9,plain,X121!=X120|~empty(X121)|empty(X120)).
+# cnf(c71,axiom,element(skolem0004(X124),powerset(X124))).
+# cnf(c79,axiom,empty(X125)|~empty(skolem0005(X125))).
+# cnf(c91,axiom,~in(X126,X127)|element(X126,X127)).
+# cnf(c10,plain,X130!=X129|X128!=X131|~element(X130,X128)|element(X129,X131)).
+# cnf(c191,axiom,~in(X133,X132)|~in(X132,X133)).
+# cnf(c11,plain,X140!=X139|~v1_xcmplx_0(X140)|v1_xcmplx_0(X139)).
+# cnf(c12,plain,X147!=X146|~v1_xreal_0(X147)|v1_xreal_0(X146)).
+# cnf(c13,plain,X154!=X153|~v1_rat_1(X154)|v1_rat_1(X153)).
+# cnf(c14,plain,X161!=X160|~v1_int_1(X161)|v1_int_1(X160)).
+# cnf(c251,plain,~v1_xcmplx_0(empty_set)|v1_xcmplx_0(skolem0004(X163))).
+# cnf(c252,plain,~v1_xcmplx_0(skolem0004(X164))|v1_xcmplx_0(empty_set)).
+# cnf(c254,plain,~v1_xreal_0(empty_set)|v1_xreal_0(skolem0004(X165))).
+# cnf(c255,plain,~v1_xreal_0(skolem0004(X166))|v1_xreal_0(empty_set)).
+# cnf(c15,plain,X168!=X167|~natural(X168)|natural(X167)).
+# cnf(c257,plain,~v1_rat_1(empty_set)|v1_rat_1(skolem0004(X170))).
+# cnf(c258,plain,~v1_rat_1(skolem0004(X171))|v1_rat_1(empty_set)).
+# cnf(c260,plain,~v1_int_1(empty_set)|v1_int_1(skolem0004(X172))).
+# cnf(c261,plain,~v1_int_1(skolem0004(X173))|v1_int_1(empty_set)).
+# cnf(c16,plain,X176!=X175|X174!=X177|~subset(X176,X174)|subset(X175,X177)).
+# cnf(c263,plain,~natural(empty_set)|natural(skolem0004(X178))).
+# cnf(c264,plain,~natural(skolem0004(X179))|natural(empty_set)).
+# cnf(c17,plain,X181!=X180|~one_sorted_str(X181)|one_sorted_str(X180)).
+# cnf(c267,plain,~one_sorted_str(empty_set)|one_sorted_str(skolem0004(X183))).
+# cnf(c23,negated_conjecture,cast_as_carrier_subset(skolem0001)!=the_carrier(skolem0001)).
+# cnf(c268,plain,~one_sorted_str(skolem0004(X184))|one_sorted_str(empty_set)).
+# cnf(c39,axiom,~element(X185,powerset(X186))|subset(X185,X186)).
+# cnf(c271,plain,subset(skolem0004(X187),X187)).
+# cnf(c270,plain,subset(skolem0003(powerset(X188)),X188)).
+# cnf(c40,axiom,~subset(X189,X190)|element(X189,powerset(X190))).
+# cnf(c26,axiom,~one_sorted_str(X191)|cast_as_carrier_subset(X191)=the_carrier(X191)).
+# cnf(c274,plain,element(X192,powerset(X192))).
+# cnf(c51,axiom,~empty(X196)|X196=X195|~empty(X195)).
+# cnf(c31,axiom,~one_sorted_str(X198)|element(cast_as_carrier_subset(X198),powerset(the_carrier(X198)))).
+# cnf(c282,plain,~empty(X199)|X199=skolem0004(X200)).
+# cnf(c286,plain,skolem0004(X203)=skolem0004(X202)).
+# cnf(c136,axiom,~v5_membered(X207)|~element(X206,X207)|v1_xcmplx_0(X206)).
+# cnf(c60,axiom,~element(X208,X209)|empty(X209)|in(X208,X209)).
+# cnf(c304,plain,~v5_membered(X210)|v1_xcmplx_0(skolem0003(X210))).
+# cnf(c310,plain,v1_xcmplx_0(skolem0003(skolem0006))).
+# cnf(c312,plain,v1_xcmplx_0(skolem0003(empty_set))).
+# cnf(c311,plain,v1_xcmplx_0(skolem0003(skolem0004(X211)))).
+# cnf(c306,plain,~v5_membered(powerset(X212))|v1_xcmplx_0(X212)).
+# cnf(c78,axiom,empty(X213)|element(skolem0005(X213),powerset(X213))).
+# cnf(c307,plain,empty(X214)|in(skolem0003(X214),X214)).
+# cnf(c328,plain,in(skolem0003(skolem0006),skolem0006)).
+# cnf(c85,axiom,~in(X216,X217)|~element(X217,powerset(X218))|~empty(X218)).
+# cnf(c345,plain,~in(skolem0006,skolem0003(skolem0006))).
+# cnf(c324,plain,empty(X221)|subset(skolem0005(X221),X221)).
+# cnf(c351,plain,subset(skolem0005(skolem0006),skolem0006)).
+# cnf(c329,plain,in(skolem0003(X222),X222)|v2_membered(X222)).
+# cnf(c88,axiom,~in(X223,X224)|~element(X224,powerset(X225))|element(X223,X225)).
+# cnf(c330,plain,in(skolem0003(X229),X229)|v5_membered(X229)).
+# cnf(c331,plain,in(skolem0003(X231),X231)|v1_membered(X231)).
+# cnf(c96,axiom,~v5_membered(X232)|~element(X233,powerset(X232))|v1_membered(X233)).
+# cnf(c389,plain,~v5_membered(X235)|v1_membered(X235)).
+# cnf(c97,axiom,~v5_membered(X237)|~element(X238,powerset(X237))|v2_membered(X238)).
+# cnf(c397,plain,~v5_membered(X239)|v2_membered(X239)).
+# cnf(c98,axiom,~v5_membered(X242)|~element(X243,powerset(X242))|v3_membered(X243)).
+# cnf(c405,plain,~v5_membered(X244)|v3_membered(X244)).
+# cnf(c99,axiom,~v5_membered(X247)|~element(X248,powerset(X247))|v4_membered(X248)).
+# cnf(c336,plain,in(skolem0003(X252),X252)|v4_membered(X252)).
+# cnf(c100,axiom,~v5_membered(X254)|~element(X255,powerset(X254))|v5_membered(X255)).
+# cnf(c338,plain,in(skolem0003(X258),X258)|v3_membered(X258)).
+# cnf(c105,axiom,~v4_membered(X261)|~element(X262,powerset(X261))|v1_membered(X262)).
+# cnf(c431,plain,~v4_membered(X263)|v1_membered(X263)).
+# cnf(c106,axiom,~v4_membered(X266)|~element(X267,powerset(X266))|v2_membered(X267)).
+# cnf(c439,plain,~v4_membered(X268)|v2_membered(X268)).
+# cnf(c107,axiom,~v4_membered(X271)|~element(X272,powerset(X271))|v3_membered(X272)).
+# cnf(c341,plain,empty(X275)|~in(X275,skolem0003(X275))).
+# cnf(c349,plain,~in(X276,skolem0004(X277))|~empty(X277)).
+# cnf(c108,axiom,~v4_membered(X279)|~element(X280,powerset(X279))|v4_membered(X280)).
+# cnf(c113,axiom,~v3_membered(X287)|~element(X286,powerset(X287))|v1_membered(X286)).
+# cnf(c461,plain,~v3_membered(X288)|v1_membered(X288)).
+# cnf(c114,axiom,~v3_membered(X292)|~element(X291,powerset(X292))|v2_membered(X291)).
+# cnf(c352,plain,subset(skolem0005(X297),X297)|v2_membered(X297)).
+# cnf(c115,axiom,~v3_membered(X299)|~element(X298,powerset(X299))|v3_membered(X298)).
+# cnf(c353,plain,subset(skolem0005(X302),X302)|v5_membered(X302)).
+# cnf(c354,plain,subset(skolem0005(X303),X303)|v1_membered(X303)).
+# cnf(c359,plain,subset(skolem0005(X304),X304)|v4_membered(X304)).
+# cnf(c120,axiom,~v2_membered(X305)|~element(X306,powerset(X305))|v1_membered(X306)).
+# cnf(c361,plain,subset(skolem0005(X309),X309)|v3_membered(X309)).
+# cnf(c369,plain,v2_membered(X311)|~in(X311,skolem0003(X311))).
+# cnf(c121,axiom,~v2_membered(X312)|~element(X313,powerset(X312))|v2_membered(X313)).
+# cnf(c378,plain,v5_membered(X318)|~in(X318,skolem0003(X318))).
+# cnf(c125,axiom,~v1_membered(X320)|~element(X319,powerset(X320))|v1_membered(X319)).
+# cnf(c385,plain,v1_membered(X325)|~in(X325,skolem0003(X325))).
+# cnf(c137,axiom,~v5_membered(X327)|~element(X326,X327)|natural(X326)).
+# cnf(c509,plain,~v5_membered(X328)|natural(skolem0003(X328))).
+# cnf(c512,plain,natural(skolem0003(skolem0006))).
+# cnf(c514,plain,natural(skolem0003(empty_set))).
+# cnf(c513,plain,natural(skolem0003(skolem0004(X329)))).
+# cnf(c511,plain,~v5_membered(powerset(X330))|natural(X330)).
+# cnf(c138,axiom,~v5_membered(X332)|~element(X331,X332)|v1_xreal_0(X331)).
+# cnf(c520,plain,~v5_membered(X333)|v1_xreal_0(skolem0003(X333))).
+# cnf(c523,plain,v1_xreal_0(skolem0003(skolem0006))).
+# cnf(c525,plain,v1_xreal_0(skolem0003(empty_set))).
+# cnf(c524,plain,v1_xreal_0(skolem0003(skolem0004(X334)))).
+# cnf(c522,plain,~v5_membered(powerset(X335))|v1_xreal_0(X335)).
+# cnf(c139,axiom,~v5_membered(X337)|~element(X336,X337)|v1_int_1(X336)).
+# cnf(c531,plain,~v5_membered(X338)|v1_int_1(skolem0003(X338))).
+# cnf(c534,plain,v1_int_1(skolem0003(skolem0006))).
+# cnf(c536,plain,v1_int_1(skolem0003(empty_set))).
+# cnf(c535,plain,v1_int_1(skolem0003(skolem0004(X339)))).
+# cnf(c533,plain,~v5_membered(powerset(X340))|v1_int_1(X340)).
+# cnf(c140,axiom,~v5_membered(X342)|~element(X341,X342)|v1_rat_1(X341)).
+# cnf(c542,plain,~v5_membered(X343)|v1_rat_1(skolem0003(X343))).
+# cnf(c545,plain,v1_rat_1(skolem0003(skolem0006))).
+# cnf(c547,plain,v1_rat_1(skolem0003(empty_set))).
+# cnf(c546,plain,v1_rat_1(skolem0003(skolem0004(X344)))).
+# cnf(c544,plain,~v5_membered(powerset(X345))|v1_rat_1(X345)).
+# cnf(c145,axiom,~v4_membered(X346)|~element(X347,X346)|v1_xcmplx_0(X347)).
+# cnf(c553,plain,~v4_membered(X348)|v1_xcmplx_0(skolem0003(X348))).
+# cnf(c555,plain,~v4_membered(powerset(X350))|v1_xcmplx_0(X350)).
+# cnf(c146,axiom,~v4_membered(X351)|~element(X352,X351)|v1_xreal_0(X352)).
+# cnf(c564,plain,~v4_membered(X353)|v1_xreal_0(skolem0003(X353))).
+# cnf(c566,plain,~v4_membered(powerset(X355))|v1_xreal_0(X355)).
+# cnf(c147,axiom,~v4_membered(X356)|~element(X357,X356)|v1_int_1(X357)).
+# cnf(c575,plain,~v4_membered(X358)|v1_int_1(skolem0003(X358))).
+# cnf(c577,plain,~v4_membered(powerset(X360))|v1_int_1(X360)).
+# cnf(c148,axiom,~v4_membered(X361)|~element(X362,X361)|v1_rat_1(X362)).
+# cnf(c586,plain,~v4_membered(X363)|v1_rat_1(skolem0003(X363))).
+# cnf(c588,plain,~v4_membered(powerset(X365))|v1_rat_1(X365)).
+# cnf(c153,axiom,~v3_membered(X367)|~element(X366,X367)|v1_xcmplx_0(X366)).
+# cnf(c597,plain,~v3_membered(X368)|v1_xcmplx_0(skolem0003(X368))).
+# cnf(c599,plain,~v3_membered(powerset(X370))|v1_xcmplx_0(X370)).
+# cnf(c154,axiom,~v3_membered(X372)|~element(X371,X372)|v1_xreal_0(X371)).
+# cnf(c608,plain,~v3_membered(X373)|v1_xreal_0(skolem0003(X373))).
+# cnf(c610,plain,~v3_membered(powerset(X375))|v1_xreal_0(X375)).
+# cnf(c155,axiom,~v3_membered(X377)|~element(X376,X377)|v1_rat_1(X376)).
+# cnf(c619,plain,~v3_membered(X378)|v1_rat_1(skolem0003(X378))).
+# cnf(c621,plain,~v3_membered(powerset(X380))|v1_rat_1(X380)).
+# cnf(c160,axiom,~v2_membered(X381)|~element(X382,X381)|v1_xcmplx_0(X382)).
+# cnf(c630,plain,~v2_membered(X383)|v1_xcmplx_0(skolem0003(X383))).
+# cnf(c632,plain,~v2_membered(powerset(X385))|v1_xcmplx_0(X385)).
+# cnf(c161,axiom,~v2_membered(X386)|~element(X387,X386)|v1_xreal_0(X387)).
+# cnf(c641,plain,~v2_membered(X388)|v1_xreal_0(skolem0003(X388))).
+# cnf(c643,plain,~v2_membered(powerset(X390))|v1_xreal_0(X390)).
+# cnf(c165,axiom,~v1_membered(X392)|~element(X391,X392)|v1_xcmplx_0(X391)).
+# cnf(c652,plain,~v1_membered(X393)|v1_xcmplx_0(skolem0003(X393))).
+# cnf(c654,plain,~v1_membered(powerset(X395))|v1_xcmplx_0(X395)).
+# cnf(c226,plain,X397!=skolem0004(X396)|X397=empty_set).
+# cnf(c227,plain,powerset(skolem0004(X402))=powerset(empty_set)).
+# cnf(c417,plain,v4_membered(X405)|~in(X405,skolem0003(X405))).
+# cnf(c228,plain,the_carrier(skolem0004(X408))=the_carrier(empty_set)).
+# cnf(c426,plain,v3_membered(X409)|~in(X409,skolem0003(X409))).
+# cnf(c235,plain,cast_as_carrier_subset(skolem0004(X414))=cast_as_carrier_subset(empty_set)).
+# cnf(c236,plain,X421!=empty_set|X421=skolem0004(X420)).
+# cnf(c237,plain,powerset(empty_set)=powerset(skolem0004(X428))).
+# cnf(c277,plain,cast_as_carrier_subset(skolem0002)=the_carrier(skolem0002)).
+# cnf(c278,plain,cast_as_carrier_subset(skolem0001)=the_carrier(skolem0001)).
+# cnf(c238,plain,the_carrier(empty_set)=the_carrier(skolem0004(X432))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t12_pre_topc,conjecture,(![A]:(one_sorted_str(A)=>cast_as_carrier_subset(A)=the_carrier(A))),input).
+fof(c18,negated_conjecture,(~(![A]:(one_sorted_str(A)=>cast_as_carrier_subset(A)=the_carrier(A)))),inference(assume_negation,status(cth),[t12_pre_topc])).
+fof(c19,negated_conjecture,(?[A]:(one_sorted_str(A)&cast_as_carrier_subset(A)!=the_carrier(A))),inference(fof_nnf,status(thm),[c18])).
+fof(c20,negated_conjecture,(?[X2]:(one_sorted_str(X2)&cast_as_carrier_subset(X2)!=the_carrier(X2))),inference(variable_rename,status(thm),[c19])).
+fof(c21,negated_conjecture,(one_sorted_str(skolem0001)&cast_as_carrier_subset(skolem0001)!=the_carrier(skolem0001)),inference(skolemize,status(esa),[c20])).
+cnf(c23,negated_conjecture,cast_as_carrier_subset(skolem0001)!=the_carrier(skolem0001),inference(split_conjunct,status(thm),[c21])).
+cnf(c22,negated_conjecture,one_sorted_str(skolem0001),inference(split_conjunct,status(thm),[c21])).
+fof(d3_pre_topc,axiom,(![A]:(one_sorted_str(A)=>cast_as_carrier_subset(A)=the_carrier(A))),input).
+fof(c24,axiom,(![A]:(~one_sorted_str(A)|cast_as_carrier_subset(A)=the_carrier(A))),inference(fof_nnf,status(thm),[d3_pre_topc])).
+fof(c25,axiom,(![X3]:(~one_sorted_str(X3)|cast_as_carrier_subset(X3)=the_carrier(X3))),inference(variable_rename,status(thm),[c24])).
+cnf(c26,axiom,~one_sorted_str(X191)|cast_as_carrier_subset(X191)=the_carrier(X191),inference(split_conjunct,status(thm),[c25])).
+cnf(c278,plain,cast_as_carrier_subset(skolem0001)=the_carrier(skolem0001),inference(resolution,status(thm),[c26, c22])).
+cnf(c756,plain,$false,inference(resolution,status(thm),[c278, c23])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 99
+# Processed clauses  : 201
+# Factors computed   : 0
+# Resolvents computed: 595
+# Tautologies deleted: 19
+# Forward subsumed   : 158
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.461 s
+# System time        : 0.321 s
+# Total time         : 0.782 s

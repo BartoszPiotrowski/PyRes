@@ -1,0 +1,160 @@
+# cnf(c4,negated_conjecture,relation(skolem0001)).
+# cnf(c5,negated_conjecture,relation(skolem0002)).
+# cnf(c6,negated_conjecture,relation(skolem0003)).
+# cnf(c7,negated_conjecture,function(skolem0003)).
+# cnf(c8,negated_conjecture,well_ordering(skolem0001)).
+# cnf(c9,negated_conjecture,relation_isomorphism(skolem0001,skolem0002,skolem0003)).
+# cnf(c10,negated_conjecture,~well_ordering(skolem0002)).
+# cnf(c22,axiom,relation(skolem0004)).
+# cnf(c23,axiom,function(skolem0004)).
+# cnf(c27,axiom,~relation(X10)|~well_ordering(X10)|reflexive(X10)).
+# cnf(c33,plain,~relation(skolem0001)|reflexive(skolem0001)).
+# cnf(c15,axiom,~relation(X13)|~relation(X12)|~relation(X11)|~function(X11)|~relation_isomorphism(X13,X12,X11)|~reflexive(X13)|reflexive(X12)).
+# cnf(c34,plain,reflexive(skolem0001)).
+# cnf(c28,axiom,~relation(X14)|~well_ordering(X14)|transitive(X14)).
+# cnf(c36,plain,~relation(skolem0001)|transitive(skolem0001)).
+# cnf(c37,plain,transitive(skolem0001)).
+# cnf(c29,axiom,~relation(X15)|~well_ordering(X15)|antisymmetric(X15)).
+# cnf(c16,axiom,~relation(X18)|~relation(X17)|~relation(X16)|~function(X16)|~relation_isomorphism(X18,X17,X16)|~transitive(X18)|transitive(X17)).
+# cnf(c38,plain,~relation(skolem0001)|antisymmetric(skolem0001)).
+# cnf(c40,plain,antisymmetric(skolem0001)).
+# cnf(c30,axiom,~relation(X19)|~well_ordering(X19)|connected(X19)).
+# cnf(c41,plain,~relation(skolem0001)|connected(skolem0001)).
+# cnf(c42,plain,connected(skolem0001)).
+# cnf(c17,axiom,~relation(X22)|~relation(X21)|~relation(X20)|~function(X20)|~relation_isomorphism(X22,X21,X20)|~connected(X22)|connected(X21)).
+# cnf(c31,axiom,~relation(X23)|~well_ordering(X23)|well_founded_relation(X23)).
+# cnf(c44,plain,~relation(skolem0001)|well_founded_relation(skolem0001)).
+# cnf(c45,plain,well_founded_relation(skolem0001)).
+# cnf(c32,axiom,~relation(X24)|~reflexive(X24)|~transitive(X24)|~antisymmetric(X24)|~connected(X24)|~well_founded_relation(X24)|well_ordering(X24)).
+# cnf(c18,axiom,~relation(X27)|~relation(X26)|~relation(X25)|~function(X25)|~relation_isomorphism(X27,X26,X25)|~antisymmetric(X27)|antisymmetric(X26)).
+# cnf(c19,axiom,~relation(X30)|~relation(X29)|~relation(X28)|~function(X28)|~relation_isomorphism(X30,X29,X28)|~well_founded_relation(X30)|well_founded_relation(X29)).
+# cnf(c35,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~reflexive(skolem0001)|reflexive(skolem0002)).
+# cnf(c49,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|reflexive(skolem0002)).
+# cnf(c50,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|reflexive(skolem0002)).
+# cnf(c51,plain,~relation(skolem0001)|~relation(skolem0002)|reflexive(skolem0002)).
+# cnf(c52,plain,~relation(skolem0001)|reflexive(skolem0002)).
+# cnf(c39,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~transitive(skolem0001)|transitive(skolem0002)).
+# cnf(c53,plain,reflexive(skolem0002)).
+# cnf(c54,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|transitive(skolem0002)).
+# cnf(c55,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|transitive(skolem0002)).
+# cnf(c56,plain,~relation(skolem0001)|~relation(skolem0002)|transitive(skolem0002)).
+# cnf(c57,plain,~relation(skolem0001)|transitive(skolem0002)).
+# cnf(c43,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~connected(skolem0001)|connected(skolem0002)).
+# cnf(c58,plain,transitive(skolem0002)).
+# cnf(c59,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|connected(skolem0002)).
+# cnf(c60,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|connected(skolem0002)).
+# cnf(c61,plain,~relation(skolem0001)|~relation(skolem0002)|connected(skolem0002)).
+# cnf(c62,plain,~relation(skolem0001)|connected(skolem0002)).
+# cnf(c63,plain,connected(skolem0002)).
+# cnf(c47,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~antisymmetric(skolem0001)|antisymmetric(skolem0002)).
+# cnf(c64,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|antisymmetric(skolem0002)).
+# cnf(c65,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|antisymmetric(skolem0002)).
+# cnf(c66,plain,~relation(skolem0001)|~relation(skolem0002)|antisymmetric(skolem0002)).
+# cnf(c48,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~well_founded_relation(skolem0001)|well_founded_relation(skolem0002)).
+# cnf(c67,plain,~relation(skolem0001)|antisymmetric(skolem0002)).
+# cnf(c69,plain,antisymmetric(skolem0002)).
+# cnf(c68,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|well_founded_relation(skolem0002)).
+# cnf(c70,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|well_founded_relation(skolem0002)).
+# cnf(c71,plain,~relation(skolem0001)|~relation(skolem0002)|well_founded_relation(skolem0002)).
+# cnf(c72,plain,~relation(skolem0001)|well_founded_relation(skolem0002)).
+# cnf(c73,plain,well_founded_relation(skolem0002)).
+# cnf(c74,plain,~relation(skolem0002)|~reflexive(skolem0002)|~transitive(skolem0002)|~antisymmetric(skolem0002)|~connected(skolem0002)|well_ordering(skolem0002)).
+# cnf(c75,plain,~relation(skolem0002)|~reflexive(skolem0002)|~transitive(skolem0002)|~antisymmetric(skolem0002)|well_ordering(skolem0002)).
+# cnf(c76,plain,~relation(skolem0002)|~reflexive(skolem0002)|~transitive(skolem0002)|well_ordering(skolem0002)).
+# cnf(c77,plain,~relation(skolem0002)|~reflexive(skolem0002)|well_ordering(skolem0002)).
+# cnf(c78,plain,~relation(skolem0002)|well_ordering(skolem0002)).
+# cnf(c79,plain,well_ordering(skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t54_wellord1,conjecture,(![A]:(relation(A)=>(![B]:(relation(B)=>(![C]:((relation(C)&function(C))=>((well_ordering(A)&relation_isomorphism(A,B,C))=>well_ordering(B)))))))),input).
+fof(c0,negated_conjecture,(~(![A]:(relation(A)=>(![B]:(relation(B)=>(![C]:((relation(C)&function(C))=>((well_ordering(A)&relation_isomorphism(A,B,C))=>well_ordering(B))))))))),inference(assume_negation,status(cth),[t54_wellord1])).
+fof(c1,negated_conjecture,(?[A]:(relation(A)&(?[B]:(relation(B)&(?[C]:((relation(C)&function(C))&((well_ordering(A)&relation_isomorphism(A,B,C))&~well_ordering(B)))))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X2]:(relation(X2)&(?[X3]:(relation(X3)&(?[X4]:((relation(X4)&function(X4))&((well_ordering(X2)&relation_isomorphism(X2,X3,X4))&~well_ordering(X3)))))))),inference(variable_rename,status(thm),[c1])).
+fof(c3,negated_conjecture,(relation(skolem0001)&(relation(skolem0002)&((relation(skolem0003)&function(skolem0003))&((well_ordering(skolem0001)&relation_isomorphism(skolem0001,skolem0002,skolem0003))&~well_ordering(skolem0002))))),inference(skolemize,status(esa),[c2])).
+cnf(c10,negated_conjecture,~well_ordering(skolem0002),inference(split_conjunct,status(thm),[c3])).
+cnf(c5,negated_conjecture,relation(skolem0002),inference(split_conjunct,status(thm),[c3])).
+cnf(c4,negated_conjecture,relation(skolem0001),inference(split_conjunct,status(thm),[c3])).
+cnf(c6,negated_conjecture,relation(skolem0003),inference(split_conjunct,status(thm),[c3])).
+cnf(c7,negated_conjecture,function(skolem0003),inference(split_conjunct,status(thm),[c3])).
+cnf(c8,negated_conjecture,well_ordering(skolem0001),inference(split_conjunct,status(thm),[c3])).
+fof(d4_wellord1,axiom,(![A]:(relation(A)=>(well_ordering(A)<=>((((reflexive(A)&transitive(A))&antisymmetric(A))&connected(A))&well_founded_relation(A))))),input).
+fof(c24,axiom,(![A]:(~relation(A)|((~well_ordering(A)|((((reflexive(A)&transitive(A))&antisymmetric(A))&connected(A))&well_founded_relation(A)))&(((((~reflexive(A)|~transitive(A))|~antisymmetric(A))|~connected(A))|~well_founded_relation(A))|well_ordering(A))))),inference(fof_nnf,status(thm),[d4_wellord1])).
+fof(c25,axiom,(![X9]:(~relation(X9)|((~well_ordering(X9)|((((reflexive(X9)&transitive(X9))&antisymmetric(X9))&connected(X9))&well_founded_relation(X9)))&(((((~reflexive(X9)|~transitive(X9))|~antisymmetric(X9))|~connected(X9))|~well_founded_relation(X9))|well_ordering(X9))))),inference(variable_rename,status(thm),[c24])).
+fof(c26,axiom,(![X9]:((((((~relation(X9)|(~well_ordering(X9)|reflexive(X9)))&(~relation(X9)|(~well_ordering(X9)|transitive(X9))))&(~relation(X9)|(~well_ordering(X9)|antisymmetric(X9))))&(~relation(X9)|(~well_ordering(X9)|connected(X9))))&(~relation(X9)|(~well_ordering(X9)|well_founded_relation(X9))))&(~relation(X9)|(((((~reflexive(X9)|~transitive(X9))|~antisymmetric(X9))|~connected(X9))|~well_founded_relation(X9))|well_ordering(X9))))),inference(distribute,status(thm),[c25])).
+cnf(c27,axiom,~relation(X10)|~well_ordering(X10)|reflexive(X10),inference(split_conjunct,status(thm),[c26])).
+cnf(c33,plain,~relation(skolem0001)|reflexive(skolem0001),inference(resolution,status(thm),[c27, c8])).
+cnf(c34,plain,reflexive(skolem0001),inference(resolution,status(thm),[c33, c4])).
+cnf(c9,negated_conjecture,relation_isomorphism(skolem0001,skolem0002,skolem0003),inference(split_conjunct,status(thm),[c3])).
+fof(t53_wellord1,axiom,(![A]:(relation(A)=>(![B]:(relation(B)=>(![C]:((relation(C)&function(C))=>(relation_isomorphism(A,B,C)=>(((((reflexive(A)=>reflexive(B))&(transitive(A)=>transitive(B)))&(connected(A)=>connected(B)))&(antisymmetric(A)=>antisymmetric(B)))&(well_founded_relation(A)=>well_founded_relation(B)))))))))),input).
+fof(c11,axiom,(![A]:(~relation(A)|(![B]:(~relation(B)|(![C]:((~relation(C)|~function(C))|(~relation_isomorphism(A,B,C)|(((((~reflexive(A)|reflexive(B))&(~transitive(A)|transitive(B)))&(~connected(A)|connected(B)))&(~antisymmetric(A)|antisymmetric(B)))&(~well_founded_relation(A)|well_founded_relation(B)))))))))),inference(fof_nnf,status(thm),[t53_wellord1])).
+fof(c13,axiom,(![X5]:(![X6]:(![X7]:(~relation(X5)|(~relation(X6)|((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(((((~reflexive(X5)|reflexive(X6))&(~transitive(X5)|transitive(X6)))&(~connected(X5)|connected(X6)))&(~antisymmetric(X5)|antisymmetric(X6)))&(~well_founded_relation(X5)|well_founded_relation(X6)))))))))),inference(shift_quantors,status(thm),[fof(c12,axiom,(![X5]:(~relation(X5)|(![X6]:(~relation(X6)|(![X7]:((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(((((~reflexive(X5)|reflexive(X6))&(~transitive(X5)|transitive(X6)))&(~connected(X5)|connected(X6)))&(~antisymmetric(X5)|antisymmetric(X6)))&(~well_founded_relation(X5)|well_founded_relation(X6)))))))))),inference(variable_rename,status(thm),[c11])).])).
+fof(c14,axiom,(![X5]:(![X6]:(![X7]:(((((~relation(X5)|(~relation(X6)|((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(~reflexive(X5)|reflexive(X6))))))&(~relation(X5)|(~relation(X6)|((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(~transitive(X5)|transitive(X6)))))))&(~relation(X5)|(~relation(X6)|((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(~connected(X5)|connected(X6)))))))&(~relation(X5)|(~relation(X6)|((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(~antisymmetric(X5)|antisymmetric(X6)))))))&(~relation(X5)|(~relation(X6)|((~relation(X7)|~function(X7))|(~relation_isomorphism(X5,X6,X7)|(~well_founded_relation(X5)|well_founded_relation(X6)))))))))),inference(distribute,status(thm),[c13])).
+cnf(c15,axiom,~relation(X13)|~relation(X12)|~relation(X11)|~function(X11)|~relation_isomorphism(X13,X12,X11)|~reflexive(X13)|reflexive(X12),inference(split_conjunct,status(thm),[c14])).
+cnf(c35,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~reflexive(skolem0001)|reflexive(skolem0002),inference(resolution,status(thm),[c15, c9])).
+cnf(c49,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|reflexive(skolem0002),inference(resolution,status(thm),[c35, c34])).
+cnf(c50,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|reflexive(skolem0002),inference(resolution,status(thm),[c49, c7])).
+cnf(c51,plain,~relation(skolem0001)|~relation(skolem0002)|reflexive(skolem0002),inference(resolution,status(thm),[c50, c6])).
+cnf(c52,plain,~relation(skolem0001)|reflexive(skolem0002),inference(resolution,status(thm),[c51, c5])).
+cnf(c53,plain,reflexive(skolem0002),inference(resolution,status(thm),[c52, c4])).
+cnf(c28,axiom,~relation(X14)|~well_ordering(X14)|transitive(X14),inference(split_conjunct,status(thm),[c26])).
+cnf(c36,plain,~relation(skolem0001)|transitive(skolem0001),inference(resolution,status(thm),[c28, c8])).
+cnf(c37,plain,transitive(skolem0001),inference(resolution,status(thm),[c36, c4])).
+cnf(c16,axiom,~relation(X18)|~relation(X17)|~relation(X16)|~function(X16)|~relation_isomorphism(X18,X17,X16)|~transitive(X18)|transitive(X17),inference(split_conjunct,status(thm),[c14])).
+cnf(c39,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~transitive(skolem0001)|transitive(skolem0002),inference(resolution,status(thm),[c16, c9])).
+cnf(c54,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|transitive(skolem0002),inference(resolution,status(thm),[c39, c37])).
+cnf(c55,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|transitive(skolem0002),inference(resolution,status(thm),[c54, c7])).
+cnf(c56,plain,~relation(skolem0001)|~relation(skolem0002)|transitive(skolem0002),inference(resolution,status(thm),[c55, c6])).
+cnf(c57,plain,~relation(skolem0001)|transitive(skolem0002),inference(resolution,status(thm),[c56, c5])).
+cnf(c58,plain,transitive(skolem0002),inference(resolution,status(thm),[c57, c4])).
+cnf(c29,axiom,~relation(X15)|~well_ordering(X15)|antisymmetric(X15),inference(split_conjunct,status(thm),[c26])).
+cnf(c38,plain,~relation(skolem0001)|antisymmetric(skolem0001),inference(resolution,status(thm),[c29, c8])).
+cnf(c40,plain,antisymmetric(skolem0001),inference(resolution,status(thm),[c38, c4])).
+cnf(c18,axiom,~relation(X27)|~relation(X26)|~relation(X25)|~function(X25)|~relation_isomorphism(X27,X26,X25)|~antisymmetric(X27)|antisymmetric(X26),inference(split_conjunct,status(thm),[c14])).
+cnf(c47,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~antisymmetric(skolem0001)|antisymmetric(skolem0002),inference(resolution,status(thm),[c18, c9])).
+cnf(c64,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|antisymmetric(skolem0002),inference(resolution,status(thm),[c47, c40])).
+cnf(c65,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|antisymmetric(skolem0002),inference(resolution,status(thm),[c64, c7])).
+cnf(c66,plain,~relation(skolem0001)|~relation(skolem0002)|antisymmetric(skolem0002),inference(resolution,status(thm),[c65, c6])).
+cnf(c67,plain,~relation(skolem0001)|antisymmetric(skolem0002),inference(resolution,status(thm),[c66, c5])).
+cnf(c69,plain,antisymmetric(skolem0002),inference(resolution,status(thm),[c67, c4])).
+cnf(c30,axiom,~relation(X19)|~well_ordering(X19)|connected(X19),inference(split_conjunct,status(thm),[c26])).
+cnf(c41,plain,~relation(skolem0001)|connected(skolem0001),inference(resolution,status(thm),[c30, c8])).
+cnf(c42,plain,connected(skolem0001),inference(resolution,status(thm),[c41, c4])).
+cnf(c17,axiom,~relation(X22)|~relation(X21)|~relation(X20)|~function(X20)|~relation_isomorphism(X22,X21,X20)|~connected(X22)|connected(X21),inference(split_conjunct,status(thm),[c14])).
+cnf(c43,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~connected(skolem0001)|connected(skolem0002),inference(resolution,status(thm),[c17, c9])).
+cnf(c59,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|connected(skolem0002),inference(resolution,status(thm),[c43, c42])).
+cnf(c60,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|connected(skolem0002),inference(resolution,status(thm),[c59, c7])).
+cnf(c61,plain,~relation(skolem0001)|~relation(skolem0002)|connected(skolem0002),inference(resolution,status(thm),[c60, c6])).
+cnf(c62,plain,~relation(skolem0001)|connected(skolem0002),inference(resolution,status(thm),[c61, c5])).
+cnf(c63,plain,connected(skolem0002),inference(resolution,status(thm),[c62, c4])).
+cnf(c32,axiom,~relation(X24)|~reflexive(X24)|~transitive(X24)|~antisymmetric(X24)|~connected(X24)|~well_founded_relation(X24)|well_ordering(X24),inference(split_conjunct,status(thm),[c26])).
+cnf(c31,axiom,~relation(X23)|~well_ordering(X23)|well_founded_relation(X23),inference(split_conjunct,status(thm),[c26])).
+cnf(c44,plain,~relation(skolem0001)|well_founded_relation(skolem0001),inference(resolution,status(thm),[c31, c8])).
+cnf(c45,plain,well_founded_relation(skolem0001),inference(resolution,status(thm),[c44, c4])).
+cnf(c19,axiom,~relation(X30)|~relation(X29)|~relation(X28)|~function(X28)|~relation_isomorphism(X30,X29,X28)|~well_founded_relation(X30)|well_founded_relation(X29),inference(split_conjunct,status(thm),[c14])).
+cnf(c48,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|~well_founded_relation(skolem0001)|well_founded_relation(skolem0002),inference(resolution,status(thm),[c19, c9])).
+cnf(c68,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|~function(skolem0003)|well_founded_relation(skolem0002),inference(resolution,status(thm),[c48, c45])).
+cnf(c70,plain,~relation(skolem0001)|~relation(skolem0002)|~relation(skolem0003)|well_founded_relation(skolem0002),inference(resolution,status(thm),[c68, c7])).
+cnf(c71,plain,~relation(skolem0001)|~relation(skolem0002)|well_founded_relation(skolem0002),inference(resolution,status(thm),[c70, c6])).
+cnf(c72,plain,~relation(skolem0001)|well_founded_relation(skolem0002),inference(resolution,status(thm),[c71, c5])).
+cnf(c73,plain,well_founded_relation(skolem0002),inference(resolution,status(thm),[c72, c4])).
+cnf(c74,plain,~relation(skolem0002)|~reflexive(skolem0002)|~transitive(skolem0002)|~antisymmetric(skolem0002)|~connected(skolem0002)|well_ordering(skolem0002),inference(resolution,status(thm),[c73, c32])).
+cnf(c75,plain,~relation(skolem0002)|~reflexive(skolem0002)|~transitive(skolem0002)|~antisymmetric(skolem0002)|well_ordering(skolem0002),inference(resolution,status(thm),[c74, c63])).
+cnf(c76,plain,~relation(skolem0002)|~reflexive(skolem0002)|~transitive(skolem0002)|well_ordering(skolem0002),inference(resolution,status(thm),[c75, c69])).
+cnf(c77,plain,~relation(skolem0002)|~reflexive(skolem0002)|well_ordering(skolem0002),inference(resolution,status(thm),[c76, c58])).
+cnf(c78,plain,~relation(skolem0002)|well_ordering(skolem0002),inference(resolution,status(thm),[c77, c53])).
+cnf(c79,plain,well_ordering(skolem0002),inference(resolution,status(thm),[c78, c5])).
+cnf(c83,plain,$false,inference(resolution,status(thm),[c79, c10])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 20
+# Processed clauses  : 66
+# Factors computed   : 0
+# Resolvents computed: 53
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 35
+
+# -------- CPU Time ---------
+# User time          : 0.392 s
+# System time        : 0.303 s
+# Total time         : 0.695 s

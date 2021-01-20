@@ -134,7 +134,7 @@ def processOptions(opts):
             params.delete_tautologies = True
         elif opt=="-f" or opt == "--forward-subsumption":
             params.forward_subsumption = True
-        elif opt=="-b" or opt == "--backward_subsumption":
+        elif opt=="-b" or opt == "--backward-subsumption":
             params.backward_subsumption = True
         elif opt=="-H" or opt == "--given-clause-heuristic":
             try:
@@ -143,6 +143,8 @@ def processOptions(opts):
                 print("Unknown clause evaluation function", optarg)
                 print("Supported:", GivenClauseHeuristics.keys())
                 sys.exit(1)
+        elif opt=="-a" or opt == "--age-queue-probability":
+            ageQueueProbability = float(optarg)
         elif opt=="-n" or opt == "--neg-lit-selection":
             try:
                 params.literal_selection = LiteralSelectors[optarg]
@@ -163,6 +165,9 @@ def processOptions(opts):
         if policy_model_path:
             params.heuristics = PolicyModelHeuristic(
                 policy_model_path, policy_eval_mode)
+    if params.heuristics == GivenClauseHeuristics['PickGivenRandom']:
+        params.heuristics = params.heuristics(ageQueueProbability)
+
     return params
 
 def timeoutHandler(sign, frame):
@@ -195,21 +200,27 @@ if __name__ == '__main__':
                                         "policy-model=",
                                         "policy-eval-mode=",
                                         "random-heuristic=",
+                                        "age-queue-probability=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])
     except getopt.GetoptError as err:
         print(sys.argv[0],":", err)
         sys.exit(1)
-
     params = processOptions(opts)
 
     problem = FOFSpec()
-    for file in args:
-        problem.parse(file)
+    assert len(args) == 1
+    file = args[0]
+    problem.parse(file)
+    print(problem.conj.formula)
 
     if not suppressEqAxioms:
         problem.addEqAxioms()
     cnf = problem.clausify()
+    print(problem.conj_cnfs)
+    print(problem.conj_cnfs[0])
+    if params.heuristics == GivenClauseHeuristics['ThreeQueues']:
+        params.heuristics = params.heuristics(problem.conj_cnfs)
 
     state = ProofState(params, cnf, silent, indexed)
     res = state.saturate()

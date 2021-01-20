@@ -1,0 +1,234 @@
+# cnf(c97,axiom,$true).
+# cnf(reflexivity,axiom,X53=X53).
+# cnf(c37,plain,aSet0(xS)).
+# cnf(symmetry,axiom,X54!=X55|X55=X54).
+# cnf(c40,plain,aSet0(xT)).
+# cnf(c12,negated_conjecture,xu!=xv).
+# cnf(c19,plain,aElementOf0(xu,xT)).
+# cnf(c26,plain,aElementOf0(xv,xT)).
+# cnf(transitivity,axiom,X57!=X58|X58!=X59|X57=X59).
+# cnf(c39,plain,aSubsetOf0(xS,xT)).
+# cnf(c95,axiom,~aElement0(X60)|sdtlseqdt0(X60,X60)).
+# cnf(c21,plain,aLowerBoundOfIn0(xu,xS,xT)).
+# cnf(c25,plain,aInfimumOfIn0(xu,xS,xT)).
+# cnf(c0,plain,X62!=X61|~aSet0(X62)|aSet0(X61)).
+# cnf(c29,plain,aLowerBoundOfIn0(xv,xS,xT)).
+# cnf(c33,plain,aInfimumOfIn0(xv,xS,xT)).
+# cnf(c1,plain,X67!=X66|~aElement0(X67)|aElement0(X66)).
+# cnf(c2,plain,X69!=X68|X71!=X70|~aElementOf0(X69,X71)|aElementOf0(X68,X70)).
+# cnf(c3,plain,X74!=X73|~isEmpty0(X74)|isEmpty0(X73)).
+# cnf(c20,plain,~aElementOf0(X76,xS)|sdtlseqdt0(xu,X76)).
+# cnf(c28,plain,~aElementOf0(X77,xS)|sdtlseqdt0(xv,X77)).
+# cnf(c4,plain,X79!=X78|X81!=X80|~aSubsetOf0(X79,X81)|aSubsetOf0(X78,X80)).
+# cnf(c38,plain,~aElementOf0(X82,xS)|aElementOf0(X82,xT)).
+# cnf(c104,plain,~aSet0(X83)|~aSubsetOf0(X84,X83)|aSet0(X84)).
+# cnf(c113,plain,~aSet0(X85)|~isEmpty0(X85)|~aElementOf0(X86,X85)).
+# cnf(c132,plain,~aSet0(xT)|~isEmpty0(xT)).
+# cnf(c5,plain,X88!=X87|X90!=X89|~sdtlseqdt0(X88,X90)|sdtlseqdt0(X87,X89)).
+# cnf(c118,axiom,~aSet0(X91)|~aElementOf0(X92,X91)|aElement0(X92)).
+# cnf(c134,plain,~aSet0(xT)|aElement0(xv)).
+# cnf(c136,plain,aElement0(xv)).
+# cnf(c137,plain,sdtlseqdt0(xv,xv)).
+# cnf(c6,plain,X98!=X95|X93!=X96|X94!=X97|~aLowerBoundOfIn0(X98,X93,X94)|aLowerBoundOfIn0(X95,X96,X97)).
+# cnf(c135,plain,~aSet0(xT)|aElement0(xu)).
+# cnf(c141,plain,aElement0(xu)).
+# cnf(c142,plain,sdtlseqdt0(xu,xu)).
+# cnf(c24,plain,~aLowerBoundOfIn0(X99,xS,xT)|sdtlseqdt0(X99,xu)).
+# cnf(c144,plain,sdtlseqdt0(xv,xu)).
+# cnf(c7,plain,X105!=X102|X100!=X103|X101!=X104|~aUpperBoundOfIn0(X105,X100,X101)|aUpperBoundOfIn0(X102,X103,X104)).
+# cnf(c32,plain,~aLowerBoundOfIn0(X106,xS,xT)|sdtlseqdt0(X106,xv)).
+# cnf(c148,plain,sdtlseqdt0(xu,xv)).
+# cnf(c114,plain,~aSet0(X107)|aElementOf0(skolem0008(X107),X107)|isEmpty0(X107)).
+# cnf(c8,plain,X113!=X110|X108!=X111|X109!=X112|~aInfimumOfIn0(X113,X108,X109)|aInfimumOfIn0(X110,X111,X112)).
+# cnf(c150,plain,aElementOf0(skolem0008(xS),xS)|isEmpty0(xS)).
+# cnf(c151,plain,aElementOf0(skolem0008(xT),xT)|isEmpty0(xT)).
+# cnf(c155,plain,isEmpty0(xS)|aElementOf0(skolem0008(xS),xT)).
+# cnf(c156,plain,isEmpty0(xS)|sdtlseqdt0(xv,skolem0008(xS))).
+# cnf(c157,plain,isEmpty0(xS)|sdtlseqdt0(xu,skolem0008(xS))).
+# cnf(c9,plain,X119!=X116|X114!=X117|X115!=X118|~aSupremumOfIn0(X119,X114,X115)|aSupremumOfIn0(X116,X117,X118)).
+# cnf(c163,plain,aElementOf0(skolem0008(xT),xT)|~aSet0(xT)).
+# cnf(c169,plain,aElementOf0(skolem0008(xT),xT)).
+# cnf(c22,plain,~aElementOf0(X120,xT)|aElementOf0(skolem0001(X120),xS)|sdtlseqdt0(X120,xu)).
+# cnf(c172,plain,~aSet0(xT)|aElement0(skolem0008(xT))).
+# cnf(c177,plain,aElement0(skolem0008(xT))).
+# cnf(c178,plain,sdtlseqdt0(skolem0008(xT),skolem0008(xT))).
+# cnf(c127,plain,xv!=X121|xT!=X122|aElementOf0(X121,X122)).
+# cnf(c23,plain,~aElementOf0(X123,xT)|~sdtlseqdt0(X123,skolem0001(X123))|sdtlseqdt0(X123,xu)).
+# cnf(c180,plain,xv!=X124|aElementOf0(X124,xT)).
+# cnf(c128,plain,xu!=X125|xT!=X126|aElementOf0(X125,X126)).
+# cnf(c182,plain,xu!=X127|aElementOf0(X127,xT)).
+# cnf(c30,plain,~aElementOf0(X128,xT)|aElementOf0(skolem0002(X128),xS)|sdtlseqdt0(X128,xv)).
+# cnf(c130,plain,xS!=X130|xT!=X129|aSubsetOf0(X130,X129)).
+# cnf(c188,plain,xS!=X131|aSubsetOf0(X131,xT)).
+# cnf(c138,plain,xv!=X132|xv!=X133|sdtlseqdt0(X132,X133)).
+# cnf(c190,plain,xv!=X134|sdtlseqdt0(X134,xv)).
+# cnf(c31,plain,~aElementOf0(X135,xT)|~sdtlseqdt0(X135,skolem0002(X135))|sdtlseqdt0(X135,xv)).
+# cnf(c143,plain,xu!=X136|xu!=X137|sdtlseqdt0(X136,X137)).
+# cnf(c192,plain,xu!=X138|sdtlseqdt0(X138,xu)).
+# cnf(c146,plain,xv!=X139|xu!=X140|sdtlseqdt0(X139,X140)).
+# cnf(c44,axiom,~aSet0(X143)|~aSubsetOf0(X141,X143)|~aSupremumOfIn0(X144,X141,X143)|~aSupremumOfIn0(X142,X141,X143)|X144=X142).
+# cnf(c194,plain,xv!=X145|sdtlseqdt0(X145,xu)).
+# cnf(c149,plain,xu!=X146|xv!=X147|sdtlseqdt0(X146,X147)).
+# cnf(c196,plain,xu!=X148|sdtlseqdt0(X148,xv)).
+# cnf(c51,plain,~aSet0(X151)|~aSubsetOf0(X149,X151)|~aSupremumOfIn0(X150,X149,X151)|aElementOf0(X150,X151)).
+# cnf(c159,plain,isEmpty0(xS)|~aSet0(xS)|aElement0(skolem0008(xS))).
+# cnf(c198,plain,isEmpty0(xS)|aElement0(skolem0008(xS))).
+# cnf(c52,plain,~aSet0(X154)|~aSubsetOf0(X152,X154)|~aSupremumOfIn0(X153,X152,X154)|aUpperBoundOfIn0(X153,X152,X154)).
+# cnf(c199,plain,isEmpty0(xS)|sdtlseqdt0(skolem0008(xS),skolem0008(xS))).
+# cnf(c105,plain,~aSet0(X156)|~aSubsetOf0(X157,X156)|~aElementOf0(X155,X157)|aElementOf0(X155,X156)).
+# cnf(c53,plain,~aSet0(X161)|~aSubsetOf0(X159,X161)|~aSupremumOfIn0(X160,X159,X161)|~aUpperBoundOfIn0(X158,X159,X161)|sdtlseqdt0(X160,X158)).
+# cnf(c204,plain,~aSet0(X162)|~aSubsetOf0(xT,X162)|aElementOf0(xv,X162)).
+# cnf(c205,plain,~aSet0(X163)|~aSubsetOf0(xT,X163)|aElementOf0(xu,X163)).
+# cnf(c201,plain,~aSet0(X164)|~aSubsetOf0(xT,X164)|aElementOf0(skolem0008(xT),X164)).
+# cnf(c62,plain,~aSet0(X166)|~aSubsetOf0(X165,X166)|~aInfimumOfIn0(X167,X165,X166)|aElementOf0(X167,X166)).
+# cnf(c73,plain,~aSet0(X170)|~aSubsetOf0(X169,X170)|~aUpperBoundOfIn0(X168,X169,X170)|aElementOf0(X168,X170)).
+# cnf(c54,plain,~aSet0(X173)|~aSubsetOf0(X171,X173)|~aElementOf0(X172,X173)|~aUpperBoundOfIn0(X172,X171,X173)|aUpperBoundOfIn0(skolem0003(X173,X171,X172),X171,X173)|aSupremumOfIn0(X172,X171,X173)).
+# cnf(c83,plain,~aSet0(X176)|~aSubsetOf0(X175,X176)|~aLowerBoundOfIn0(X174,X175,X176)|aElementOf0(X174,X176)).
+# cnf(c170,plain,skolem0008(xT)!=X177|xT!=X178|aElementOf0(X177,X178)).
+# cnf(c210,plain,xT!=X179|aElementOf0(skolem0008(xT),X179)).
+# cnf(c55,plain,~aSet0(X182)|~aSubsetOf0(X180,X182)|~aElementOf0(X181,X182)|~aUpperBoundOfIn0(X181,X180,X182)|~sdtlseqdt0(X181,skolem0003(X182,X180,X181))|aSupremumOfIn0(X181,X180,X182)).
+# cnf(c63,plain,~aSet0(X184)|~aSubsetOf0(X183,X184)|~aInfimumOfIn0(X185,X183,X184)|aLowerBoundOfIn0(X185,X183,X184)).
+# cnf(c106,plain,~aSet0(X186)|~aSet0(X187)|aElementOf0(skolem0007(X186,X187),X187)|aSubsetOf0(X187,X186)).
+# cnf(c64,plain,~aSet0(X190)|~aSubsetOf0(X189,X190)|~aInfimumOfIn0(X191,X189,X190)|~aLowerBoundOfIn0(X188,X189,X190)|sdtlseqdt0(X188,X191)).
+# cnf(c107,plain,~aSet0(X192)|~aSet0(X193)|~aElementOf0(skolem0007(X192,X193),X192)|aSubsetOf0(X193,X192)).
+# cnf(c214,plain,~aSet0(X194)|aElementOf0(skolem0007(X194,xS),xS)|aSubsetOf0(xS,X194)).
+# cnf(c218,plain,aElementOf0(skolem0007(xS,xS),xS)|aSubsetOf0(xS,xS)).
+# cnf(c226,plain,aSubsetOf0(xS,xS)|~aSet0(xS)).
+# cnf(c230,plain,aSubsetOf0(xS,xS)).
+# cnf(c65,plain,~aSet0(X197)|~aSubsetOf0(X196,X197)|~aElementOf0(X195,X197)|~aLowerBoundOfIn0(X195,X196,X197)|aLowerBoundOfIn0(skolem0004(X197,X196,X195),X196,X197)|aInfimumOfIn0(X195,X196,X197)).
+# cnf(c231,plain,xS!=X199|xS!=X198|aSubsetOf0(X199,X198)).
+# cnf(c235,plain,xS!=X200|aSubsetOf0(X200,xS)).
+# cnf(c66,plain,~aSet0(X203)|~aSubsetOf0(X202,X203)|~aElementOf0(X201,X203)|~aLowerBoundOfIn0(X201,X202,X203)|~sdtlseqdt0(skolem0004(X203,X202,X201),X201)|aInfimumOfIn0(X201,X202,X203)).
+# cnf(c215,plain,~aSet0(X204)|aElementOf0(skolem0007(X204,xT),xT)|aSubsetOf0(xT,X204)).
+# cnf(c74,plain,~aSet0(X208)|~aSubsetOf0(X207,X208)|~aUpperBoundOfIn0(X205,X207,X208)|~aElementOf0(X206,X207)|sdtlseqdt0(X206,X205)).
+# cnf(c237,plain,aElementOf0(skolem0007(xS,xT),xT)|aSubsetOf0(xT,xS)).
+# cnf(c238,plain,aElementOf0(skolem0007(xT,xT),xT)|aSubsetOf0(xT,xT)).
+# cnf(c255,plain,aSubsetOf0(xT,xT)|~aSet0(xT)).
+# cnf(c262,plain,aSubsetOf0(xT,xT)).
+# cnf(c75,plain,~aSet0(X211)|~aSubsetOf0(X210,X211)|~aElementOf0(X209,X211)|aElementOf0(skolem0005(X211,X210,X209),X210)|aUpperBoundOfIn0(X209,X210,X211)).
+# cnf(c76,plain,~aSet0(X214)|~aSubsetOf0(X213,X214)|~aElementOf0(X212,X214)|~sdtlseqdt0(skolem0005(X214,X213,X212),X212)|aUpperBoundOfIn0(X212,X213,X214)).
+# cnf(c266,plain,xT!=X216|xT!=X215|aSubsetOf0(X216,X215)).
+# cnf(c274,plain,xT!=X217|aSubsetOf0(X217,xT)).
+# cnf(c92,axiom,~aElement0(X218)|~aElement0(X219)|~sdtlseqdt0(X218,X219)|~sdtlseqdt0(X219,X218)|X218=X219).
+# cnf(c84,plain,~aSet0(X223)|~aSubsetOf0(X222,X223)|~aLowerBoundOfIn0(X221,X222,X223)|~aElementOf0(X220,X222)|sdtlseqdt0(X221,X220)).
+# cnf(c173,plain,aElementOf0(skolem0001(skolem0008(xT)),xS)|sdtlseqdt0(skolem0008(xT),xu)).
+# cnf(c291,plain,sdtlseqdt0(skolem0008(xT),xu)|~aSet0(xS)|~isEmpty0(xS)).
+# cnf(c179,plain,skolem0008(xT)!=X224|skolem0008(xT)!=X225|sdtlseqdt0(X224,X225)).
+# cnf(c302,plain,skolem0008(xT)!=X226|sdtlseqdt0(X226,skolem0008(xT))).
+# cnf(c85,plain,~aSet0(X229)|~aSubsetOf0(X228,X229)|~aElementOf0(X227,X229)|aElementOf0(skolem0006(X229,X228,X227),X228)|aLowerBoundOfIn0(X227,X228,X229)).
+# cnf(c184,plain,aElementOf0(skolem0002(skolem0008(xT)),xS)|sdtlseqdt0(skolem0008(xT),xv)).
+# cnf(c316,plain,sdtlseqdt0(skolem0008(xT),xv)|~aSet0(xS)|~isEmpty0(xS)).
+# cnf(c86,plain,~aSet0(X232)|~aSubsetOf0(X231,X232)|~aElementOf0(X230,X232)|~sdtlseqdt0(X230,skolem0006(X232,X231,X230))|aLowerBoundOfIn0(X230,X231,X232)).
+# cnf(c243,plain,aSubsetOf0(xT,xS)|~aSet0(xT)|aElement0(skolem0007(xS,xT))).
+# cnf(c328,plain,aSubsetOf0(xT,xS)|aElement0(skolem0007(xS,xT))).
+# cnf(c89,axiom,~aElement0(X235)|~aElement0(X234)|~aElement0(X233)|~sdtlseqdt0(X235,X234)|~sdtlseqdt0(X234,X233)|sdtlseqdt0(X235,X233)).
+# cnf(c139,plain,xv!=X239|xS!=X238|xT!=X240|aLowerBoundOfIn0(X239,X238,X240)).
+# cnf(c345,plain,xv!=X242|xS!=X241|aLowerBoundOfIn0(X242,X241,xT)).
+# cnf(c346,plain,xv!=X243|aLowerBoundOfIn0(X243,xS,xT)).
+# cnf(c288,plain,sdtlseqdt0(skolem0008(xT),xu)|aElementOf0(skolem0001(skolem0008(xT)),xT)).
+# cnf(c140,plain,xu!=X245|xS!=X244|xT!=X246|aLowerBoundOfIn0(X245,X244,X246)).
+# cnf(c359,plain,xu!=X247|xS!=X248|aLowerBoundOfIn0(X247,X248,xT)).
+# cnf(c360,plain,xu!=X249|aLowerBoundOfIn0(X249,xS,xT)).
+# cnf(c289,plain,sdtlseqdt0(skolem0008(xT),xu)|sdtlseqdt0(xv,skolem0001(skolem0008(xT)))).
+# cnf(c290,plain,sdtlseqdt0(skolem0008(xT),xu)|sdtlseqdt0(xu,skolem0001(skolem0008(xT)))).
+# cnf(c152,plain,xv!=X250|xS!=X252|xT!=X251|aInfimumOfIn0(X250,X252,X251)).
+# cnf(c374,plain,xv!=X254|xS!=X253|aInfimumOfIn0(X254,X253,xT)).
+# cnf(c375,plain,xv!=X255|aInfimumOfIn0(X255,xS,xT)).
+# cnf(c299,plain,sdtlseqdt0(skolem0008(xT),xu)|~aSet0(xS)|aElement0(skolem0008(xS))).
+# cnf(c377,plain,sdtlseqdt0(skolem0008(xT),xu)|aElement0(skolem0008(xS))).
+# cnf(c153,plain,xu!=X256|xS!=X258|xT!=X257|aInfimumOfIn0(X256,X258,X257)).
+# cnf(c382,plain,xu!=X260|xS!=X259|aInfimumOfIn0(X260,X259,xT)).
+# cnf(c383,plain,xu!=X261|aInfimumOfIn0(X261,xS,xT)).
+# cnf(c313,plain,sdtlseqdt0(skolem0008(xT),xv)|aElementOf0(skolem0002(skolem0008(xT)),xT)).
+# cnf(c154,plain,isEmpty0(xS)|skolem0008(xS)!=X262|xS!=X263|aElementOf0(X262,X263)).
+# cnf(c396,plain,isEmpty0(xS)|xS!=X264|aElementOf0(skolem0008(xS),X264)).
+# cnf(c314,plain,sdtlseqdt0(skolem0008(xT),xv)|sdtlseqdt0(xv,skolem0002(skolem0008(xT)))).
+# cnf(c315,plain,sdtlseqdt0(skolem0008(xT),xv)|sdtlseqdt0(xu,skolem0002(skolem0008(xT)))).
+# cnf(c325,plain,sdtlseqdt0(skolem0008(xT),xv)|~aSet0(xS)|aElement0(skolem0008(xS))).
+# cnf(c410,plain,sdtlseqdt0(skolem0008(xT),xv)|aElement0(skolem0008(xS))).
+# cnf(c330,plain,aElement0(skolem0007(xS,xT))|~aSet0(xS)|aElementOf0(xv,xS)).
+# cnf(c415,plain,aElement0(skolem0007(xS,xT))|aElementOf0(xv,xS)).
+# cnf(c164,plain,isEmpty0(xS)|skolem0008(xS)!=X267|xT!=X268|aElementOf0(X267,X268)).
+# cnf(c422,plain,aElement0(skolem0007(xS,xT))|~aSet0(xS)|~isEmpty0(xS)).
+# cnf(c426,plain,isEmpty0(xS)|xT!=X269|aElementOf0(skolem0008(xS),X269)).
+# cnf(c167,plain,isEmpty0(xS)|xv!=X270|skolem0008(xS)!=X271|sdtlseqdt0(X270,X271)).
+# cnf(c434,plain,isEmpty0(xS)|xv!=X272|sdtlseqdt0(X272,skolem0008(xS))).
+# cnf(c331,plain,aElement0(skolem0007(xS,xT))|~aSet0(xS)|aElementOf0(xu,xS)).
+# cnf(c436,plain,aElement0(skolem0007(xS,xT))|aElementOf0(xu,xS)).
+# cnf(c168,plain,isEmpty0(xS)|xu!=X273|skolem0008(xS)!=X274|sdtlseqdt0(X273,X274)).
+# cnf(c447,plain,isEmpty0(xS)|xu!=X275|sdtlseqdt0(X275,skolem0008(xS))).
+# cnf(c174,plain,aElementOf0(skolem0001(skolem0008(xS)),xS)|sdtlseqdt0(skolem0008(xS),xu)|isEmpty0(xS)).
+# cnf(c381,plain,sdtlseqdt0(skolem0008(xT),xu)|sdtlseqdt0(skolem0008(xS),skolem0008(xS))).
+# cnf(c414,plain,sdtlseqdt0(skolem0008(xT),xv)|sdtlseqdt0(skolem0008(xS),skolem0008(xS))).
+# cnf(c430,plain,aElement0(skolem0007(xS,xT))|~aSet0(xS)|aElement0(skolem0008(xS))).
+# cnf(c476,plain,aElement0(skolem0007(xS,xT))|aElement0(skolem0008(xS))).
+# cnf(c185,plain,aElementOf0(skolem0002(skolem0008(xS)),xS)|sdtlseqdt0(skolem0008(xS),xv)|isEmpty0(xS)).
+# cnf(c478,plain,aElement0(skolem0007(xS,xT))|sdtlseqdt0(skolem0008(xS),skolem0008(xS))).
+# cnf(c202,plain,~aSet0(X276)|~aSubsetOf0(xT,X276)|aElementOf0(skolem0008(xS),X276)|isEmpty0(xS)).
+# cnf(c203,plain,~aSet0(X277)|~aSubsetOf0(xS,X277)|aElementOf0(skolem0008(xS),X277)|isEmpty0(xS)).
+# cnf(c200,plain,isEmpty0(xS)|skolem0008(xS)!=X278|skolem0008(xS)!=X279|sdtlseqdt0(X278,X279)).
+# cnf(c503,plain,isEmpty0(xS)|skolem0008(xS)!=X280|sdtlseqdt0(X280,skolem0008(xS))).
+# cnf(c246,plain,aElementOf0(skolem0007(xS,xT),xT)|~aSet0(xS)|aElementOf0(xv,xS)).
+# cnf(c505,plain,aElementOf0(skolem0007(xS,xT),xT)|aElementOf0(xv,xS)).
+# cnf(c216,plain,~aSet0(xT)|~aSubsetOf0(xS,xT)|~aInfimumOfIn0(X281,xS,xT)|sdtlseqdt0(xv,X281)).
+# cnf(c217,plain,~aSet0(xT)|~aSubsetOf0(xS,xT)|~aInfimumOfIn0(X282,xS,xT)|sdtlseqdt0(xu,X282)).
+# cnf(c519,plain,aElementOf0(skolem0007(xS,xT),xT)|~aSet0(xS)|~isEmpty0(xS)).
+# cnf(c247,plain,aElementOf0(skolem0007(xS,xT),xT)|~aSet0(xS)|aElementOf0(xu,xS)).
+# cnf(c535,plain,aElementOf0(skolem0007(xS,xT),xT)|aElementOf0(xu,xS)).
+# cnf(c282,plain,~aElement0(xu)|~aElement0(xv)|~sdtlseqdt0(xu,xv)|xu=xv).
+# cnf(c553,plain,~aElement0(xu)|~aElement0(xv)|xu=xv).
+# cnf(c554,plain,~aElement0(xu)|xu=xv).
+# cnf(c555,plain,xu=xv).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__,conjecture,xu=xv,input).
+fof(c10,negated_conjecture,(~xu=xv),inference(assume_negation,status(cth),[m__])).
+fof(c11,negated_conjecture,xu!=xv,inference(fof_simplification,status(thm),[c10])).
+cnf(c12,negated_conjecture,xu!=xv,inference(split_conjunct,status(thm),[c11])).
+fof(m__773,plain,aSet0(xT),input).
+cnf(c40,plain,aSet0(xT),inference(split_conjunct,status(thm),[m__773])).
+fof(m__792,plain,(((((((((((aElementOf0(xu,xT)&aElementOf0(xu,xT))&(![W0]:(aElementOf0(W0,xS)=>sdtlseqdt0(xu,W0))))&aLowerBoundOfIn0(xu,xS,xT))&(![W0]:(((aElementOf0(W0,xT)&(![W1]:(aElementOf0(W1,xS)=>sdtlseqdt0(W0,W1))))|aLowerBoundOfIn0(W0,xS,xT))=>sdtlseqdt0(W0,xu))))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(![W0]:(aElementOf0(W0,xS)=>sdtlseqdt0(xv,W0))))&aLowerBoundOfIn0(xv,xS,xT))&(![W0]:(((aElementOf0(W0,xT)&(![W1]:(aElementOf0(W1,xS)=>sdtlseqdt0(W0,W1))))|aLowerBoundOfIn0(W0,xS,xT))=>sdtlseqdt0(W0,xv))))&aInfimumOfIn0(xv,xS,xT)),input).
+fof(c13,plain,((((((((((aElementOf0(xu,xT)&(![W0]:(aElementOf0(W0,xS)=>sdtlseqdt0(xu,W0))))&aLowerBoundOfIn0(xu,xS,xT))&(![W0]:(((aElementOf0(W0,xT)&(![W1]:(aElementOf0(W1,xS)=>sdtlseqdt0(W0,W1))))|aLowerBoundOfIn0(W0,xS,xT))=>sdtlseqdt0(W0,xu))))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(![W0]:(aElementOf0(W0,xS)=>sdtlseqdt0(xv,W0))))&aLowerBoundOfIn0(xv,xS,xT))&(![W0]:(((aElementOf0(W0,xT)&(![W1]:(aElementOf0(W1,xS)=>sdtlseqdt0(W0,W1))))|aLowerBoundOfIn0(W0,xS,xT))=>sdtlseqdt0(W0,xv))))&aInfimumOfIn0(xv,xS,xT)),inference(fof_simplification,status(thm),[m__792])).
+fof(c14,plain,((((((((((aElementOf0(xu,xT)&(![W0]:(~aElementOf0(W0,xS)|sdtlseqdt0(xu,W0))))&aLowerBoundOfIn0(xu,xS,xT))&(![W0]:(((~aElementOf0(W0,xT)|(?[W1]:(aElementOf0(W1,xS)&~sdtlseqdt0(W0,W1))))&~aLowerBoundOfIn0(W0,xS,xT))|sdtlseqdt0(W0,xu))))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(![W0]:(~aElementOf0(W0,xS)|sdtlseqdt0(xv,W0))))&aLowerBoundOfIn0(xv,xS,xT))&(![W0]:(((~aElementOf0(W0,xT)|(?[W1]:(aElementOf0(W1,xS)&~sdtlseqdt0(W0,W1))))&~aLowerBoundOfIn0(W0,xS,xT))|sdtlseqdt0(W0,xv))))&aInfimumOfIn0(xv,xS,xT)),inference(fof_nnf,status(thm),[c13])).
+fof(c15,plain,((((((((((aElementOf0(xu,xT)&(![X2]:(~aElementOf0(X2,xS)|sdtlseqdt0(xu,X2))))&aLowerBoundOfIn0(xu,xS,xT))&(![X3]:(((~aElementOf0(X3,xT)|(?[X4]:(aElementOf0(X4,xS)&~sdtlseqdt0(X3,X4))))&~aLowerBoundOfIn0(X3,xS,xT))|sdtlseqdt0(X3,xu))))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(![X5]:(~aElementOf0(X5,xS)|sdtlseqdt0(xv,X5))))&aLowerBoundOfIn0(xv,xS,xT))&(![X6]:(((~aElementOf0(X6,xT)|(?[X7]:(aElementOf0(X7,xS)&~sdtlseqdt0(X6,X7))))&~aLowerBoundOfIn0(X6,xS,xT))|sdtlseqdt0(X6,xv))))&aInfimumOfIn0(xv,xS,xT)),inference(variable_rename,status(thm),[c14])).
+fof(c17,plain,(![X2]:(![X3]:(![X5]:(![X6]:((((((((((aElementOf0(xu,xT)&(~aElementOf0(X2,xS)|sdtlseqdt0(xu,X2)))&aLowerBoundOfIn0(xu,xS,xT))&(((~aElementOf0(X3,xT)|(aElementOf0(skolem0001(X3),xS)&~sdtlseqdt0(X3,skolem0001(X3))))&~aLowerBoundOfIn0(X3,xS,xT))|sdtlseqdt0(X3,xu)))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(~aElementOf0(X5,xS)|sdtlseqdt0(xv,X5)))&aLowerBoundOfIn0(xv,xS,xT))&(((~aElementOf0(X6,xT)|(aElementOf0(skolem0002(X6),xS)&~sdtlseqdt0(X6,skolem0002(X6))))&~aLowerBoundOfIn0(X6,xS,xT))|sdtlseqdt0(X6,xv)))&aInfimumOfIn0(xv,xS,xT)))))),inference(shift_quantors,status(thm),[fof(c16,plain,((((((((((aElementOf0(xu,xT)&(![X2]:(~aElementOf0(X2,xS)|sdtlseqdt0(xu,X2))))&aLowerBoundOfIn0(xu,xS,xT))&(![X3]:(((~aElementOf0(X3,xT)|(aElementOf0(skolem0001(X3),xS)&~sdtlseqdt0(X3,skolem0001(X3))))&~aLowerBoundOfIn0(X3,xS,xT))|sdtlseqdt0(X3,xu))))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(![X5]:(~aElementOf0(X5,xS)|sdtlseqdt0(xv,X5))))&aLowerBoundOfIn0(xv,xS,xT))&(![X6]:(((~aElementOf0(X6,xT)|(aElementOf0(skolem0002(X6),xS)&~sdtlseqdt0(X6,skolem0002(X6))))&~aLowerBoundOfIn0(X6,xS,xT))|sdtlseqdt0(X6,xv))))&aInfimumOfIn0(xv,xS,xT)),inference(skolemize,status(esa),[c15])).])).
+fof(c18,plain,(![X2]:(![X3]:(![X5]:(![X6]:((((((((((aElementOf0(xu,xT)&(~aElementOf0(X2,xS)|sdtlseqdt0(xu,X2)))&aLowerBoundOfIn0(xu,xS,xT))&((((~aElementOf0(X3,xT)|aElementOf0(skolem0001(X3),xS))|sdtlseqdt0(X3,xu))&((~aElementOf0(X3,xT)|~sdtlseqdt0(X3,skolem0001(X3)))|sdtlseqdt0(X3,xu)))&(~aLowerBoundOfIn0(X3,xS,xT)|sdtlseqdt0(X3,xu))))&aInfimumOfIn0(xu,xS,xT))&aElementOf0(xv,xT))&aElementOf0(xv,xT))&(~aElementOf0(X5,xS)|sdtlseqdt0(xv,X5)))&aLowerBoundOfIn0(xv,xS,xT))&((((~aElementOf0(X6,xT)|aElementOf0(skolem0002(X6),xS))|sdtlseqdt0(X6,xv))&((~aElementOf0(X6,xT)|~sdtlseqdt0(X6,skolem0002(X6)))|sdtlseqdt0(X6,xv)))&(~aLowerBoundOfIn0(X6,xS,xT)|sdtlseqdt0(X6,xv))))&aInfimumOfIn0(xv,xS,xT)))))),inference(distribute,status(thm),[c17])).
+cnf(c19,plain,aElementOf0(xu,xT),inference(split_conjunct,status(thm),[c18])).
+fof(mEOfElem,axiom,(![W0]:(aSet0(W0)=>(![W1]:(aElementOf0(W1,W0)=>aElement0(W1))))),input).
+fof(c115,axiom,(![W0]:(~aSet0(W0)|(![W1]:(~aElementOf0(W1,W0)|aElement0(W1))))),inference(fof_nnf,status(thm),[mEOfElem])).
+fof(c117,axiom,(![X51]:(![X52]:(~aSet0(X51)|(~aElementOf0(X52,X51)|aElement0(X52))))),inference(shift_quantors,status(thm),[fof(c116,axiom,(![X51]:(~aSet0(X51)|(![X52]:(~aElementOf0(X52,X51)|aElement0(X52))))),inference(variable_rename,status(thm),[c115])).])).
+cnf(c118,axiom,~aSet0(X91)|~aElementOf0(X92,X91)|aElement0(X92),inference(split_conjunct,status(thm),[c117])).
+cnf(c135,plain,~aSet0(xT)|aElement0(xu),inference(resolution,status(thm),[c118, c19])).
+cnf(c141,plain,aElement0(xu),inference(resolution,status(thm),[c135, c40])).
+cnf(c26,plain,aElementOf0(xv,xT),inference(split_conjunct,status(thm),[c18])).
+cnf(c134,plain,~aSet0(xT)|aElement0(xv),inference(resolution,status(thm),[c118, c26])).
+cnf(c136,plain,aElement0(xv),inference(resolution,status(thm),[c134, c40])).
+cnf(c21,plain,aLowerBoundOfIn0(xu,xS,xT),inference(split_conjunct,status(thm),[c18])).
+cnf(c32,plain,~aLowerBoundOfIn0(X106,xS,xT)|sdtlseqdt0(X106,xv),inference(split_conjunct,status(thm),[c18])).
+cnf(c148,plain,sdtlseqdt0(xu,xv),inference(resolution,status(thm),[c32, c21])).
+cnf(c29,plain,aLowerBoundOfIn0(xv,xS,xT),inference(split_conjunct,status(thm),[c18])).
+cnf(c24,plain,~aLowerBoundOfIn0(X99,xS,xT)|sdtlseqdt0(X99,xu),inference(split_conjunct,status(thm),[c18])).
+cnf(c144,plain,sdtlseqdt0(xv,xu),inference(resolution,status(thm),[c24, c29])).
+fof(mASymm,axiom,(![W0]:(![W1]:((aElement0(W0)&aElement0(W1))=>((sdtlseqdt0(W0,W1)&sdtlseqdt0(W1,W0))=>W0=W1)))),input).
+fof(c90,axiom,(![W0]:(![W1]:((~aElement0(W0)|~aElement0(W1))|((~sdtlseqdt0(W0,W1)|~sdtlseqdt0(W1,W0))|W0=W1)))),inference(fof_nnf,status(thm),[mASymm])).
+fof(c91,axiom,(![X40]:(![X41]:((~aElement0(X40)|~aElement0(X41))|((~sdtlseqdt0(X40,X41)|~sdtlseqdt0(X41,X40))|X40=X41)))),inference(variable_rename,status(thm),[c90])).
+cnf(c92,axiom,~aElement0(X218)|~aElement0(X219)|~sdtlseqdt0(X218,X219)|~sdtlseqdt0(X219,X218)|X218=X219,inference(split_conjunct,status(thm),[c91])).
+cnf(c282,plain,~aElement0(xu)|~aElement0(xv)|~sdtlseqdt0(xu,xv)|xu=xv,inference(resolution,status(thm),[c92, c144])).
+cnf(c553,plain,~aElement0(xu)|~aElement0(xv)|xu=xv,inference(resolution,status(thm),[c282, c148])).
+cnf(c554,plain,~aElement0(xu)|xu=xv,inference(resolution,status(thm),[c553, c136])).
+cnf(c555,plain,xu=xv,inference(resolution,status(thm),[c554, c141])).
+cnf(c557,plain,$false,inference(resolution,status(thm),[c555, c12])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 65
+# Processed clauses  : 181
+# Factors computed   : 0
+# Resolvents computed: 447
+# Tautologies deleted: 12
+# Forward subsumed   : 96
+# Backward subsumed  : 21
+
+# -------- CPU Time ---------
+# User time          : 0.431 s
+# System time        : 0.216 s
+# Total time         : 0.647 s

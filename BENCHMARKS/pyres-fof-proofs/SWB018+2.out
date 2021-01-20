@@ -1,0 +1,66 @@
+# cnf(reflexivity,axiom,X14=X14).
+# cnf(symmetry,axiom,X15!=X16|X16=X15).
+# cnf(c2,axiom,iext(uri_rdfs_domain,uri_owl_sameAs,uri_ex_Person)).
+# cnf(c3,axiom,iext(uri_owl_sameAs,uri_ex_w,uri_ex_u)).
+# cnf(transitivity,axiom,X18!=X19|X19!=X20|X18=X20).
+# cnf(c6,negated_conjecture,~iext(uri_rdf_type,uri_ex_u,uri_ex_Person)).
+# cnf(c11,axiom,~iext(uri_owl_sameAs,X24,X23)|X24=X23).
+# cnf(c26,plain,uri_ex_w=uri_ex_u).
+# cnf(c27,plain,uri_ex_u=uri_ex_w).
+# cnf(c0,plain,X28!=X26|X30!=X25|X29!=X27|~iext(X28,X30,X29)|iext(X26,X25,X27)).
+# cnf(c12,axiom,X31!=X32|iext(uri_owl_sameAs,X31,X32)).
+# cnf(c35,plain,iext(uri_owl_sameAs,X33,X33)).
+# cnf(c1,plain,X38!=X35|X37!=X36|~icext(X38,X37)|icext(X35,X36)).
+# cnf(c34,plain,iext(uri_owl_sameAs,uri_ex_u,uri_ex_w)).
+# cnf(c22,axiom,~iext(uri_rdf_type,X40,X39)|icext(X39,X40)).
+# cnf(c23,axiom,~icext(X41,X42)|iext(uri_rdf_type,X42,X41)).
+# cnf(c28,plain,X43!=uri_ex_w|X43=uri_ex_u).
+# cnf(c17,axiom,~iext(uri_rdfs_domain,X47,X45)|~iext(X47,X46,X44)|icext(X45,X46)).
+# cnf(c30,plain,X48!=uri_ex_u|X48=uri_ex_w).
+# cnf(c31,plain,uri_owl_sameAs!=X49|uri_ex_w!=X50|uri_ex_u!=X51|iext(X49,X50,X51)).
+# cnf(c42,plain,~iext(uri_rdfs_domain,uri_owl_sameAs,X53)|icext(X53,X52)).
+# cnf(c50,plain,icext(uri_ex_Person,X54)).
+# cnf(c51,plain,iext(uri_rdf_type,X55,uri_ex_Person)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(testcase_conclusion_fullish_018_Modified_Logical_Vocabulary_Semantics,conjecture,iext(uri_rdf_type,uri_ex_u,uri_ex_Person),input).
+fof(c4,negated_conjecture,(~iext(uri_rdf_type,uri_ex_u,uri_ex_Person)),inference(assume_negation,status(cth),[testcase_conclusion_fullish_018_Modified_Logical_Vocabulary_Semantics])).
+fof(c5,negated_conjecture,~iext(uri_rdf_type,uri_ex_u,uri_ex_Person),inference(fof_simplification,status(thm),[c4])).
+cnf(c6,negated_conjecture,~iext(uri_rdf_type,uri_ex_u,uri_ex_Person),inference(split_conjunct,status(thm),[c5])).
+fof(rdfs_cext_def,axiom,(![X]:(![C]:(iext(uri_rdf_type,X,C)<=>icext(C,X)))),input).
+fof(c18,axiom,(![X]:(![C]:((~iext(uri_rdf_type,X,C)|icext(C,X))&(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(fof_nnf,status(thm),[rdfs_cext_def])).
+fof(c19,axiom,((![X]:(![C]:(~iext(uri_rdf_type,X,C)|icext(C,X))))&(![X]:(![C]:(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(shift_quantors,status(thm),[c18])).
+fof(c21,axiom,(![X10]:(![X11]:(![X12]:(![X13]:((~iext(uri_rdf_type,X10,X11)|icext(X11,X10))&(~icext(X13,X12)|iext(uri_rdf_type,X12,X13))))))),inference(shift_quantors,status(thm),[fof(c20,axiom,((![X10]:(![X11]:(~iext(uri_rdf_type,X10,X11)|icext(X11,X10))))&(![X12]:(![X13]:(~icext(X13,X12)|iext(uri_rdf_type,X12,X13))))),inference(variable_rename,status(thm),[c19])).])).
+cnf(c23,axiom,~icext(X41,X42)|iext(uri_rdf_type,X42,X41),inference(split_conjunct,status(thm),[c21])).
+fof(testcase_premise_fullish_018_Modified_Logical_Vocabulary_Semantics,axiom,(iext(uri_rdfs_domain,uri_owl_sameAs,uri_ex_Person)&iext(uri_owl_sameAs,uri_ex_w,uri_ex_u)),input).
+cnf(c2,axiom,iext(uri_rdfs_domain,uri_owl_sameAs,uri_ex_Person),inference(split_conjunct,status(thm),[testcase_premise_fullish_018_Modified_Logical_Vocabulary_Semantics])).
+cnf(reflexivity,axiom,X14=X14,eq_axiom).
+fof(owl_eqdis_sameas,axiom,(![X]:(![Y]:(iext(uri_owl_sameAs,X,Y)<=>X=Y))),input).
+fof(c7,axiom,(![X]:(![Y]:((~iext(uri_owl_sameAs,X,Y)|X=Y)&(X!=Y|iext(uri_owl_sameAs,X,Y))))),inference(fof_nnf,status(thm),[owl_eqdis_sameas])).
+fof(c8,axiom,((![X]:(![Y]:(~iext(uri_owl_sameAs,X,Y)|X=Y)))&(![X]:(![Y]:(X!=Y|iext(uri_owl_sameAs,X,Y))))),inference(shift_quantors,status(thm),[c7])).
+fof(c10,axiom,(![X2]:(![X3]:(![X4]:(![X5]:((~iext(uri_owl_sameAs,X2,X3)|X2=X3)&(X4!=X5|iext(uri_owl_sameAs,X4,X5))))))),inference(shift_quantors,status(thm),[fof(c9,axiom,((![X2]:(![X3]:(~iext(uri_owl_sameAs,X2,X3)|X2=X3)))&(![X4]:(![X5]:(X4!=X5|iext(uri_owl_sameAs,X4,X5))))),inference(variable_rename,status(thm),[c8])).])).
+cnf(c12,axiom,X31!=X32|iext(uri_owl_sameAs,X31,X32),inference(split_conjunct,status(thm),[c10])).
+cnf(c35,plain,iext(uri_owl_sameAs,X33,X33),inference(resolution,status(thm),[c12, reflexivity])).
+fof(rdfs_domain_main,axiom,(![P]:(![C]:(![X]:(![Y]:((iext(uri_rdfs_domain,P,C)&iext(P,X,Y))=>icext(C,X)))))),input).
+fof(c13,axiom,(![P]:(![C]:(![X]:(![Y]:((~iext(uri_rdfs_domain,P,C)|~iext(P,X,Y))|icext(C,X)))))),inference(fof_nnf,status(thm),[rdfs_domain_main])).
+fof(c14,axiom,(![P]:(![C]:(![X]:((~iext(uri_rdfs_domain,P,C)|(![Y]:~iext(P,X,Y)))|icext(C,X))))),inference(shift_quantors,status(thm),[c13])).
+fof(c16,axiom,(![X6]:(![X7]:(![X8]:(![X9]:((~iext(uri_rdfs_domain,X6,X7)|~iext(X6,X8,X9))|icext(X7,X8)))))),inference(shift_quantors,status(thm),[fof(c15,axiom,(![X6]:(![X7]:(![X8]:((~iext(uri_rdfs_domain,X6,X7)|(![X9]:~iext(X6,X8,X9)))|icext(X7,X8))))),inference(variable_rename,status(thm),[c14])).])).
+cnf(c17,axiom,~iext(uri_rdfs_domain,X47,X45)|~iext(X47,X46,X44)|icext(X45,X46),inference(split_conjunct,status(thm),[c16])).
+cnf(c42,plain,~iext(uri_rdfs_domain,uri_owl_sameAs,X53)|icext(X53,X52),inference(resolution,status(thm),[c17, c35])).
+cnf(c50,plain,icext(uri_ex_Person,X54),inference(resolution,status(thm),[c42, c2])).
+cnf(c51,plain,iext(uri_rdf_type,X55,uri_ex_Person),inference(resolution,status(thm),[c50, c23])).
+cnf(c56,plain,$false,inference(resolution,status(thm),[c51, c6])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 13
+# Processed clauses  : 23
+# Factors computed   : 0
+# Resolvents computed: 33
+# Tautologies deleted: 1
+# Forward subsumed   : 9
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.278 s
+# System time        : 0.185 s
+# Total time         : 0.464 s

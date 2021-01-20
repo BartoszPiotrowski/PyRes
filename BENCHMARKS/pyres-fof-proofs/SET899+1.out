@@ -1,0 +1,46 @@
+# cnf(c16,axiom,~empty(skolem0004)).
+# cnf(c19,axiom,empty(skolem0005)).
+# cnf(c26,axiom,subset(X13,X13)).
+# cnf(c10,negated_conjecture,subset(skolem0001,skolem0002)).
+# cnf(c11,negated_conjecture,~in(skolem0003,skolem0001)).
+# cnf(c4,axiom,~subset(X16,X14)|in(X15,X16)|subset(X16,set_difference(X14,singleton(X15)))).
+# cnf(c23,axiom,~in(X17,X18)|~in(X18,X17)).
+# cnf(c12,negated_conjecture,~subset(skolem0001,set_difference(skolem0002,singleton(skolem0003)))).
+# cnf(c28,plain,in(X19,X20)|subset(X20,set_difference(X20,singleton(X19)))).
+# cnf(c30,plain,subset(skolem0001,set_difference(skolem0001,singleton(skolem0003)))).
+# cnf(c29,plain,subset(X22,set_difference(X22,singleton(X21)))|~in(X22,X21)).
+# cnf(c27,plain,in(X23,skolem0001)|subset(skolem0001,set_difference(skolem0002,singleton(X23)))).
+# cnf(c38,plain,in(skolem0003,skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t40_zfmisc_1,conjecture,(![A]:(![B]:(![C]:(subset(A,B)=>(in(C,A)|subset(A,set_difference(B,singleton(C)))))))),input).
+fof(c5,negated_conjecture,(~(![A]:(![B]:(![C]:(subset(A,B)=>(in(C,A)|subset(A,set_difference(B,singleton(C))))))))),inference(assume_negation,status(cth),[t40_zfmisc_1])).
+fof(c6,negated_conjecture,(?[A]:(?[B]:(?[C]:(subset(A,B)&(~in(C,A)&~subset(A,set_difference(B,singleton(C)))))))),inference(fof_nnf,status(thm),[c5])).
+fof(c7,negated_conjecture,(?[A]:(?[B]:(subset(A,B)&(?[C]:(~in(C,A)&~subset(A,set_difference(B,singleton(C)))))))),inference(shift_quantors,status(thm),[c6])).
+fof(c8,negated_conjecture,(?[X5]:(?[X6]:(subset(X5,X6)&(?[X7]:(~in(X7,X5)&~subset(X5,set_difference(X6,singleton(X7)))))))),inference(variable_rename,status(thm),[c7])).
+fof(c9,negated_conjecture,(subset(skolem0001,skolem0002)&(~in(skolem0003,skolem0001)&~subset(skolem0001,set_difference(skolem0002,singleton(skolem0003))))),inference(skolemize,status(esa),[c8])).
+cnf(c11,negated_conjecture,~in(skolem0003,skolem0001),inference(split_conjunct,status(thm),[c9])).
+cnf(c12,negated_conjecture,~subset(skolem0001,set_difference(skolem0002,singleton(skolem0003))),inference(split_conjunct,status(thm),[c9])).
+cnf(c10,negated_conjecture,subset(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c9])).
+fof(l3_zfmisc_1,axiom,(![A]:(![B]:(![C]:(subset(A,B)=>(in(C,A)|subset(A,set_difference(B,singleton(C)))))))),input).
+fof(c0,axiom,(![A]:(![B]:(![C]:(~subset(A,B)|(in(C,A)|subset(A,set_difference(B,singleton(C)))))))),inference(fof_nnf,status(thm),[l3_zfmisc_1])).
+fof(c1,axiom,(![A]:(![B]:(~subset(A,B)|(![C]:(in(C,A)|subset(A,set_difference(B,singleton(C)))))))),inference(shift_quantors,status(thm),[c0])).
+fof(c3,axiom,(![X2]:(![X3]:(![X4]:(~subset(X2,X3)|(in(X4,X2)|subset(X2,set_difference(X3,singleton(X4)))))))),inference(shift_quantors,status(thm),[fof(c2,axiom,(![X2]:(![X3]:(~subset(X2,X3)|(![X4]:(in(X4,X2)|subset(X2,set_difference(X3,singleton(X4)))))))),inference(variable_rename,status(thm),[c1])).])).
+cnf(c4,axiom,~subset(X16,X14)|in(X15,X16)|subset(X16,set_difference(X14,singleton(X15))),inference(split_conjunct,status(thm),[c3])).
+cnf(c27,plain,in(X23,skolem0001)|subset(skolem0001,set_difference(skolem0002,singleton(X23))),inference(resolution,status(thm),[c4, c10])).
+cnf(c38,plain,in(skolem0003,skolem0001),inference(resolution,status(thm),[c27, c12])).
+cnf(c41,plain,$false,inference(resolution,status(thm),[c38, c11])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 8
+# Processed clauses  : 13
+# Factors computed   : 0
+# Resolvents computed: 15
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.279 s
+# System time        : 0.309 s
+# Total time         : 0.588 s

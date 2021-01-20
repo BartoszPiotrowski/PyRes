@@ -1,0 +1,68 @@
+# cnf(c31,axiom,$true).
+# cnf(reflexivity,axiom,X18=X18).
+# cnf(c22,axiom,subset(X19,X19)).
+# cnf(c26,axiom,~empty(skolem0002)).
+# cnf(c29,axiom,empty(skolem0003)).
+# cnf(symmetry,axiom,X21!=X20|X20=X21).
+# cnf(c30,axiom,empty(empty_set)).
+# cnf(c19,axiom,subset(empty_set,X23)).
+# cnf(c16,negated_conjecture,subset(skolem0001,empty_set)).
+# cnf(c17,negated_conjecture,skolem0001!=empty_set).
+# cnf(transitivity,axiom,X26!=X24|X24!=X25|X26=X25).
+# cnf(c8,axiom,~in(X27,X28)|~empty(X28)).
+# cnf(c11,axiom,~empty(X29)|X29=empty_set).
+# cnf(c47,plain,skolem0003=empty_set).
+# cnf(c48,plain,empty_set=skolem0003).
+# cnf(c0,plain,X30!=X31|X33!=X32|~in(X30,X33)|in(X31,X32)).
+# cnf(c37,axiom,X35!=X34|subset(X35,X34)).
+# cnf(c52,plain,subset(skolem0003,empty_set)).
+# cnf(c1,plain,X37!=X38|X40!=X39|~subset(X37,X40)|subset(X38,X39)).
+# cnf(c38,axiom,X42!=X41|subset(X41,X42)).
+# cnf(c43,axiom,~in(X45,X44)|~in(X44,X45)).
+# cnf(c2,plain,X46!=X47|~empty(X46)|empty(X47)).
+# cnf(c5,axiom,~empty(X52)|X52=X51|~empty(X51)).
+# cnf(c39,axiom,~subset(X53,X54)|~subset(X54,X53)|X53=X54).
+# cnf(c66,plain,~empty(X56)|X56=skolem0003).
+# cnf(c49,plain,X58!=skolem0003|X58=empty_set).
+# cnf(c51,plain,X59!=empty_set|X59=skolem0003).
+# cnf(c55,plain,empty_set!=X61|X60!=X62|subset(X61,X62)).
+# cnf(c78,plain,empty_set!=X64|subset(X64,X63)).
+# cnf(c81,plain,subset(skolem0003,X66)).
+# cnf(c67,plain,~subset(X67,empty_set)|X67=empty_set).
+# cnf(c56,plain,skolem0001!=X68|empty_set!=X69|subset(X68,X69)).
+# cnf(c85,plain,skolem0001=empty_set).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t3_xboole_1,conjecture,(![A]:(subset(A,empty_set)=>A=empty_set)),input).
+fof(c12,negated_conjecture,(~(![A]:(subset(A,empty_set)=>A=empty_set))),inference(assume_negation,status(cth),[t3_xboole_1])).
+fof(c13,negated_conjecture,(?[A]:(subset(A,empty_set)&A!=empty_set)),inference(fof_nnf,status(thm),[c12])).
+fof(c14,negated_conjecture,(?[X7]:(subset(X7,empty_set)&X7!=empty_set)),inference(variable_rename,status(thm),[c13])).
+fof(c15,negated_conjecture,(subset(skolem0001,empty_set)&skolem0001!=empty_set),inference(skolemize,status(esa),[c14])).
+cnf(c17,negated_conjecture,skolem0001!=empty_set,inference(split_conjunct,status(thm),[c15])).
+cnf(c16,negated_conjecture,subset(skolem0001,empty_set),inference(split_conjunct,status(thm),[c15])).
+fof(t2_xboole_1,axiom,(![A]:subset(empty_set,A)),input).
+fof(c18,axiom,(![X8]:subset(empty_set,X8)),inference(variable_rename,status(thm),[t2_xboole_1])).
+cnf(c19,axiom,subset(empty_set,X23),inference(split_conjunct,status(thm),[c18])).
+fof(d10_xboole_0,axiom,(![A]:(![B]:(A=B<=>(subset(A,B)&subset(B,A))))),input).
+fof(c32,axiom,(![A]:(![B]:((A!=B|(subset(A,B)&subset(B,A)))&((~subset(A,B)|~subset(B,A))|A=B)))),inference(fof_nnf,status(thm),[d10_xboole_0])).
+fof(c33,axiom,((![A]:(![B]:(A!=B|(subset(A,B)&subset(B,A)))))&(![A]:(![B]:((~subset(A,B)|~subset(B,A))|A=B)))),inference(shift_quantors,status(thm),[c32])).
+fof(c35,axiom,(![X12]:(![X13]:(![X14]:(![X15]:((X12!=X13|(subset(X12,X13)&subset(X13,X12)))&((~subset(X14,X15)|~subset(X15,X14))|X14=X15)))))),inference(shift_quantors,status(thm),[fof(c34,axiom,((![X12]:(![X13]:(X12!=X13|(subset(X12,X13)&subset(X13,X12)))))&(![X14]:(![X15]:((~subset(X14,X15)|~subset(X15,X14))|X14=X15)))),inference(variable_rename,status(thm),[c33])).])).
+fof(c36,axiom,(![X12]:(![X13]:(![X14]:(![X15]:(((X12!=X13|subset(X12,X13))&(X12!=X13|subset(X13,X12)))&((~subset(X14,X15)|~subset(X15,X14))|X14=X15)))))),inference(distribute,status(thm),[c35])).
+cnf(c39,axiom,~subset(X53,X54)|~subset(X54,X53)|X53=X54,inference(split_conjunct,status(thm),[c36])).
+cnf(c67,plain,~subset(X67,empty_set)|X67=empty_set,inference(resolution,status(thm),[c39, c19])).
+cnf(c85,plain,skolem0001=empty_set,inference(resolution,status(thm),[c67, c16])).
+cnf(c93,plain,$false,inference(resolution,status(thm),[c85, c17])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 21
+# Processed clauses  : 33
+# Factors computed   : 0
+# Resolvents computed: 53
+# Tautologies deleted: 2
+# Forward subsumed   : 20
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.255 s
+# System time        : 0.206 s
+# Total time         : 0.461 s

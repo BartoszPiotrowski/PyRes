@@ -1,0 +1,37 @@
+# cnf(c4,negated_conjecture,~big_f(X5)|big_f(f(X5))).
+# cnf(c10,axiom,~big_f(X6)|~big_f(f(X6))).
+# cnf(c11,axiom,big_f(f(X7))|big_f(X7)).
+# cnf(c14,plain,big_f(f(X8))).
+# cnf(c16,plain,~big_f(X9)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(pel59,conjecture,(?[X]:(big_f(X)&(~big_f(f(X))))),input).
+fof(c0,negated_conjecture,(~(?[X]:(big_f(X)&(~big_f(f(X)))))),inference(assume_negation,status(cth),[pel59])).
+fof(c1,negated_conjecture,(~(?[X]:(big_f(X)&~big_f(f(X))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(![X]:(~big_f(X)|big_f(f(X)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(![X2]:(~big_f(X2)|big_f(f(X2)))),inference(variable_rename,status(thm),[c2])).
+cnf(c4,negated_conjecture,~big_f(X5)|big_f(f(X5)),inference(split_conjunct,status(thm),[c3])).
+fof(pel59_1,axiom,(![X]:(big_f(X)<=>(~big_f(f(X))))),input).
+fof(c5,axiom,(![X]:(big_f(X)<=>~big_f(f(X)))),inference(fof_simplification,status(thm),[pel59_1])).
+fof(c6,axiom,(![X]:((~big_f(X)|~big_f(f(X)))&(big_f(f(X))|big_f(X)))),inference(fof_nnf,status(thm),[c5])).
+fof(c7,axiom,((![X]:(~big_f(X)|~big_f(f(X))))&(![X]:(big_f(f(X))|big_f(X)))),inference(shift_quantors,status(thm),[c6])).
+fof(c9,axiom,(![X3]:(![X4]:((~big_f(X3)|~big_f(f(X3)))&(big_f(f(X4))|big_f(X4))))),inference(shift_quantors,status(thm),[fof(c8,axiom,((![X3]:(~big_f(X3)|~big_f(f(X3))))&(![X4]:(big_f(f(X4))|big_f(X4)))),inference(variable_rename,status(thm),[c7])).])).
+cnf(c11,axiom,big_f(f(X7))|big_f(X7),inference(split_conjunct,status(thm),[c9])).
+cnf(c14,plain,big_f(f(X8)),inference(resolution,status(thm),[c11, c4])).
+cnf(c10,axiom,~big_f(X6)|~big_f(f(X6)),inference(split_conjunct,status(thm),[c9])).
+cnf(c16,plain,~big_f(X9),inference(resolution,status(thm),[c14, c10])).
+cnf(c17,plain,$false,inference(resolution,status(thm),[c16, c14])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 3
+# Processed clauses  : 5
+# Factors computed   : 0
+# Resolvents computed: 6
+# Tautologies deleted: 0
+# Forward subsumed   : 1
+# Backward subsumed  : 3
+
+# -------- CPU Time ---------
+# User time          : 0.275 s
+# System time        : 0.296 s
+# Total time         : 0.571 s

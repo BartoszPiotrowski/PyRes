@@ -1,0 +1,433 @@
+# cnf(c164,axiom,cowlThing(X119)).
+# cnf(c165,axiom,~cowlNothing(X120)).
+# cnf(reflexivity,axiom,X121=X121).
+# cnf(c44,axiom,cUnsatisfiable(i2003_11_14_17_20_25524)).
+# cnf(c37,axiom,~ce(X122)|~cd(X122)).
+# cnf(symmetry,axiom,X124!=X123|X123=X124).
+# cnf(c40,axiom,~ce(X126)|~cc(X126)).
+# cnf(c43,axiom,~cc(X127)|~cd(X127)).
+# cnf(c51,axiom,~cc(X128)|ca(X128)).
+# cnf(c52,axiom,~cd(X129)|ca(X129)).
+# cnf(transitivity,axiom,X131!=X130|X130!=X132|X131=X132).
+# cnf(c158,axiom,~xsd_string(X133)|~xsd_integer(X133)).
+# cnf(c159,axiom,xsd_integer(X134)|xsd_string(X134)).
+# cnf(c19,axiom,~rt3(X136,X137)|rtt(X136,X137)).
+# cnf(c22,axiom,~rr3(X139,X138)|rr(X139,X138)).
+# cnf(c0,plain,X140!=X141|~cUnsatisfiable(X140)|cUnsatisfiable(X141)).
+# cnf(c25,axiom,~rt2(X144,X143)|rtt(X144,X143)).
+# cnf(c28,axiom,~rt1(X145,X146)|rtt(X145,X146)).
+# cnf(c31,axiom,~rr2(X148,X147)|rr(X148,X147)).
+# cnf(c34,axiom,~rr1(X150,X149)|rr(X150,X149)).
+# cnf(c1,plain,X151!=X152|~ca(X151)|ca(X152)).
+# cnf(c61,axiom,~cUnsatisfiable(X154)|ce(skolem0002(X154))).
+# cnf(c246,plain,ce(skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c66,axiom,~cUnsatisfiable(X155)|cd(skolem0004(X155))).
+# cnf(c247,plain,cd(skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c2,plain,X156!=X157|~cc(X156)|cc(X157)).
+# cnf(c248,plain,~ce(skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c249,plain,ca(skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c250,plain,~cc(skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c71,axiom,~cUnsatisfiable(X159)|cc(skolem0006(X159))).
+# cnf(c3,plain,X160!=X161|~cd(X160)|cd(X161)).
+# cnf(c252,plain,cc(skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c254,plain,~ce(skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c255,plain,ca(skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c4,plain,X165!=X166|~ce(X165)|ce(X166)).
+# cnf(c50,axiom,~ca(X168)|cc(X168)|cd(X168)).
+# cnf(c59,axiom,~cUnsatisfiable(X169)|rr3(X169,skolem0001(X169))).
+# cnf(c259,plain,rr3(i2003_11_14_17_20_25524,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c260,plain,rr(i2003_11_14_17_20_25524,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c63,axiom,~cUnsatisfiable(X172)|rr2(X172,skolem0003(X172))).
+# cnf(c261,plain,rr2(i2003_11_14_17_20_25524,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c262,plain,rr(i2003_11_14_17_20_25524,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c68,axiom,~cUnsatisfiable(X173)|rr1(X173,skolem0005(X173))).
+# cnf(c263,plain,rr1(i2003_11_14_17_20_25524,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c264,plain,rr(i2003_11_14_17_20_25524,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c15,plain,X176!=X177|~xsd_integer(X176)|xsd_integer(X177)).
+# cnf(c16,plain,X179!=X180|~xsd_string(X179)|xsd_string(X180)).
+# cnf(c7,plain,X182!=X184|X183!=X185|~rr(X182,X183)|rr(X184,X185)).
+# cnf(c8,plain,X196!=X198|X197!=X199|~rr1(X196,X197)|rr1(X198,X199)).
+# cnf(c60,axiom,~cUnsatisfiable(X208)|rt3(skolem0001(X208),skolem0002(X208))).
+# cnf(c9,plain,X209!=X211|X210!=X212|~rr2(X209,X210)|rr2(X211,X212)).
+# cnf(c271,plain,rt3(skolem0001(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c273,plain,rtt(skolem0001(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c65,axiom,~cUnsatisfiable(X213)|rt2(skolem0003(X213),skolem0004(X213))).
+# cnf(c274,plain,rt2(skolem0003(i2003_11_14_17_20_25524),skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c275,plain,rtt(skolem0003(i2003_11_14_17_20_25524),skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c10,plain,X214!=X216|X215!=X217|~rr3(X214,X215)|rr3(X216,X217)).
+# cnf(c70,axiom,~cUnsatisfiable(X218)|rt1(skolem0005(X218),skolem0006(X218))).
+# cnf(c277,plain,rt1(skolem0005(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c278,plain,rtt(skolem0005(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c174,axiom,X219!=X221|~rtt(X220,X219)|rtt(X220,X221)).
+# cnf(c177,axiom,X222!=X224|~rtt(X222,X223)|rtt(X224,X223)).
+# cnf(c11,plain,X225!=X227|X226!=X228|~rt1(X225,X226)|rt1(X227,X228)).
+# cnf(c180,axiom,X229!=X230|~rt3(X231,X229)|rt3(X231,X230)).
+# cnf(c183,axiom,X233!=X232|~rt3(X233,X234)|rt3(X232,X234)).
+# cnf(c186,axiom,X236!=X237|~rt2(X235,X236)|rt2(X235,X237)).
+# cnf(c189,axiom,X238!=X239|~rt2(X238,X240)|rt2(X239,X240)).
+# cnf(c192,axiom,X241!=X243|~rt1(X242,X241)|rt1(X242,X243)).
+# cnf(c12,plain,X244!=X246|X245!=X247|~rt2(X244,X245)|rt2(X246,X247)).
+# cnf(c195,axiom,X248!=X250|~rt1(X248,X249)|rt1(X250,X249)).
+# cnf(c198,axiom,X253!=X252|~rr3(X251,X253)|rr3(X251,X252)).
+# cnf(c201,axiom,X254!=X255|~rr3(X254,X256)|rr3(X255,X256)).
+# cnf(c204,axiom,X257!=X259|~rr2(X258,X257)|rr2(X258,X259)).
+# cnf(c207,axiom,X260!=X261|~rr2(X260,X262)|rr2(X261,X262)).
+# cnf(c13,plain,X263!=X265|X264!=X266|~rt3(X263,X264)|rt3(X265,X266)).
+# cnf(c210,axiom,X267!=X268|~rr1(X269,X267)|rr1(X269,X268)).
+# cnf(c213,axiom,X270!=X272|~rr1(X270,X271)|rr1(X272,X271)).
+# cnf(c216,axiom,X275!=X274|~rr(X273,X275)|rr(X273,X274)).
+# cnf(c219,axiom,X276!=X277|~rr(X276,X278)|rr(X277,X278)).
+# cnf(c14,plain,X279!=X281|X280!=X282|~rtt(X279,X280)|rtt(X281,X282)).
+# cnf(c293,plain,skolem0001(i2003_11_14_17_20_25524)!=X283|rr3(i2003_11_14_17_20_25524,X283)).
+# cnf(c294,plain,i2003_11_14_17_20_25524!=X284|rr3(X284,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c62,axiom,~cUnsatisfiable(X287)|~rtt(skolem0001(X287),X285)|~rtt(skolem0001(X287),X286)|X285=X286).
+# cnf(c295,plain,skolem0003(i2003_11_14_17_20_25524)!=X288|rr2(i2003_11_14_17_20_25524,X288)).
+# cnf(c296,plain,i2003_11_14_17_20_25524!=X289|rr2(X289,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c298,plain,skolem0005(i2003_11_14_17_20_25524)!=X290|rr1(i2003_11_14_17_20_25524,X290)).
+# cnf(c64,axiom,~cUnsatisfiable(X293)|~rtt(skolem0003(X293),X292)|~rtt(skolem0003(X293),X291)|X292=X291).
+# cnf(c299,plain,i2003_11_14_17_20_25524!=X294|rr1(X294,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c300,plain,skolem0003(i2003_11_14_17_20_25524)!=X295|rr(i2003_11_14_17_20_25524,X295)).
+# cnf(c67,axiom,~cUnsatisfiable(X298)|~rr(X298,X297)|~rr(X298,X296)|X297=X296).
+# cnf(c301,plain,skolem0005(i2003_11_14_17_20_25524)!=X299|rr(i2003_11_14_17_20_25524,X299)).
+# cnf(c302,plain,skolem0001(i2003_11_14_17_20_25524)!=X300|rr(i2003_11_14_17_20_25524,X300)).
+# cnf(c303,plain,i2003_11_14_17_20_25524!=X301|rr(X301,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c69,axiom,~cUnsatisfiable(X304)|~rtt(skolem0005(X304),X303)|~rtt(skolem0005(X304),X302)|X303=X302).
+# cnf(c304,plain,i2003_11_14_17_20_25524!=X305|rr(X305,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c305,plain,i2003_11_14_17_20_25524!=X306|rr(X306,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c72,axiom,~rr3(X313,X307)|~rt3(X307,X308)|~ce(X308)|rtt(X307,skolem0007(X313,X307))|~rr2(X313,X312)|rtt(X312,skolem0009(X313,X312))|~rt2(X312,X309)|~cd(X309)|rr(X313,skolem0011(X313))|~rr1(X313,X310)|rtt(X310,skolem0013(X313,X310))|~rt1(X310,X311)|~cc(X311)|cUnsatisfiable(X313)).
+# cnf(c279,plain,skolem0002(i2003_11_14_17_20_25524)!=X314|rtt(skolem0001(i2003_11_14_17_20_25524),X314)).
+# cnf(c280,plain,skolem0004(i2003_11_14_17_20_25524)!=X315|rtt(skolem0003(i2003_11_14_17_20_25524),X315)).
+# cnf(c281,plain,skolem0006(i2003_11_14_17_20_25524)!=X316|rtt(skolem0005(i2003_11_14_17_20_25524),X316)).
+# cnf(c73,axiom,~rr3(X323,X317)|~rt3(X317,X318)|~ce(X318)|rtt(X317,skolem0007(X323,X317))|~rr2(X323,X322)|rtt(X322,skolem0009(X323,X322))|~rt2(X322,X319)|~cd(X319)|rr(X323,skolem0011(X323))|~rr1(X323,X320)|rtt(X320,skolem0014(X323,X320))|~rt1(X320,X321)|~cc(X321)|cUnsatisfiable(X323)).
+# cnf(c282,plain,skolem0001(i2003_11_14_17_20_25524)!=X324|rtt(X324,skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c283,plain,skolem0003(i2003_11_14_17_20_25524)!=X325|rtt(X325,skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c74,axiom,~rr3(X332,X326)|~rt3(X326,X327)|~ce(X327)|rtt(X326,skolem0007(X332,X326))|~rr2(X332,X331)|rtt(X331,skolem0009(X332,X331))|~rt2(X331,X328)|~cd(X328)|rr(X332,skolem0011(X332))|~rr1(X332,X329)|skolem0013(X332,X329)!=skolem0014(X332,X329)|~rt1(X329,X330)|~cc(X330)|cUnsatisfiable(X332)).
+# cnf(c284,plain,skolem0005(i2003_11_14_17_20_25524)!=X333|rtt(X333,skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c286,plain,skolem0002(i2003_11_14_17_20_25524)!=X334|rt3(skolem0001(i2003_11_14_17_20_25524),X334)).
+# cnf(c287,plain,skolem0001(i2003_11_14_17_20_25524)!=X335|rt3(X335,skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c75,axiom,~rr3(X342,X336)|~rt3(X336,X337)|~ce(X337)|rtt(X336,skolem0007(X342,X336))|~rr2(X342,X341)|rtt(X341,skolem0009(X342,X341))|~rt2(X341,X338)|~cd(X338)|rr(X342,skolem0012(X342))|~rr1(X342,X339)|rtt(X339,skolem0013(X342,X339))|~rt1(X339,X340)|~cc(X340)|cUnsatisfiable(X342)).
+# cnf(c288,plain,skolem0004(i2003_11_14_17_20_25524)!=X343|rt2(skolem0003(i2003_11_14_17_20_25524),X343)).
+# cnf(c289,plain,skolem0003(i2003_11_14_17_20_25524)!=X344|rt2(X344,skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c76,axiom,~rr3(X351,X345)|~rt3(X345,X346)|~ce(X346)|rtt(X345,skolem0007(X351,X345))|~rr2(X351,X350)|rtt(X350,skolem0009(X351,X350))|~rt2(X350,X347)|~cd(X347)|rr(X351,skolem0012(X351))|~rr1(X351,X348)|rtt(X348,skolem0014(X351,X348))|~rt1(X348,X349)|~cc(X349)|cUnsatisfiable(X351)).
+# cnf(c290,plain,skolem0006(i2003_11_14_17_20_25524)!=X352|rt1(skolem0005(i2003_11_14_17_20_25524),X352)).
+# cnf(c292,plain,skolem0005(i2003_11_14_17_20_25524)!=X353|rt1(X353,skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c267,plain,i2003_11_14_17_20_25524!=X354|skolem0003(i2003_11_14_17_20_25524)!=X355|rr(X354,X355)).
+# cnf(c77,axiom,~rr3(X362,X356)|~rt3(X356,X357)|~ce(X357)|rtt(X356,skolem0007(X362,X356))|~rr2(X362,X361)|rtt(X361,skolem0009(X362,X361))|~rt2(X361,X358)|~cd(X358)|rr(X362,skolem0012(X362))|~rr1(X362,X359)|skolem0013(X362,X359)!=skolem0014(X362,X359)|~rt1(X359,X360)|~cc(X360)|cUnsatisfiable(X362)).
+# cnf(c268,plain,i2003_11_14_17_20_25524!=X364|skolem0005(i2003_11_14_17_20_25524)!=X365|rr(X364,X365)).
+# cnf(c269,plain,i2003_11_14_17_20_25524!=X367|skolem0001(i2003_11_14_17_20_25524)!=X368|rr(X367,X368)).
+# cnf(c78,axiom,~rr3(X376,X370)|~rt3(X370,X371)|~ce(X371)|rtt(X370,skolem0007(X376,X370))|~rr2(X376,X375)|rtt(X375,skolem0009(X376,X375))|~rt2(X375,X372)|~cd(X372)|skolem0011(X376)!=skolem0012(X376)|~rr1(X376,X373)|rtt(X373,skolem0013(X376,X373))|~rt1(X373,X374)|~cc(X374)|cUnsatisfiable(X376)).
+# cnf(c270,plain,i2003_11_14_17_20_25524!=X378|skolem0005(i2003_11_14_17_20_25524)!=X377|rr1(X378,X377)).
+# cnf(c272,plain,i2003_11_14_17_20_25524!=X380|skolem0003(i2003_11_14_17_20_25524)!=X381|rr2(X380,X381)).
+# cnf(c276,plain,i2003_11_14_17_20_25524!=X384|skolem0001(i2003_11_14_17_20_25524)!=X383|rr3(X384,X383)).
+# cnf(c79,axiom,~rr3(X391,X385)|~rt3(X385,X386)|~ce(X386)|rtt(X385,skolem0007(X391,X385))|~rr2(X391,X390)|rtt(X390,skolem0009(X391,X390))|~rt2(X390,X387)|~cd(X387)|skolem0011(X391)!=skolem0012(X391)|~rr1(X391,X388)|rtt(X388,skolem0014(X391,X388))|~rt1(X388,X389)|~cc(X389)|cUnsatisfiable(X391)).
+# cnf(c318,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|~rr(i2003_11_14_17_20_25524,X393)|X393=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c350,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|skolem0005(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c352,plain,skolem0005(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c80,axiom,~rr3(X400,X394)|~rt3(X394,X395)|~ce(X395)|rtt(X394,skolem0007(X400,X394))|~rr2(X400,X399)|rtt(X399,skolem0009(X400,X399))|~rt2(X399,X396)|~cd(X396)|skolem0011(X400)!=skolem0012(X400)|~rr1(X400,X397)|skolem0013(X400,X397)!=skolem0014(X400,X397)|~rt1(X397,X398)|~cc(X398)|cUnsatisfiable(X400)).
+# cnf(c361,plain,rr1(i2003_11_14_17_20_25524,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c353,plain,skolem0003(i2003_11_14_17_20_25524)=skolem0005(i2003_11_14_17_20_25524)).
+# cnf(c376,plain,rr2(i2003_11_14_17_20_25524,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c81,axiom,~rr3(X407,X401)|~rt3(X401,X402)|~ce(X402)|rtt(X401,skolem0007(X407,X401))|~rr2(X407,X406)|rtt(X406,skolem0010(X407,X406))|~rt2(X406,X403)|~cd(X403)|rr(X407,skolem0011(X407))|~rr1(X407,X404)|rtt(X404,skolem0013(X407,X404))|~rt1(X404,X405)|~cc(X405)|cUnsatisfiable(X407)).
+# cnf(c356,plain,rtt(skolem0003(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c364,plain,rt1(skolem0003(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c82,axiom,~rr3(X414,X408)|~rt3(X408,X409)|~ce(X409)|rtt(X408,skolem0007(X414,X408))|~rr2(X414,X413)|rtt(X413,skolem0010(X414,X413))|~rt2(X413,X410)|~cd(X410)|rr(X414,skolem0011(X414))|~rr1(X414,X411)|rtt(X411,skolem0014(X414,X411))|~rt1(X411,X412)|~cc(X412)|cUnsatisfiable(X414)).
+# cnf(c379,plain,rtt(skolem0005(i2003_11_14_17_20_25524),skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c382,plain,rt2(skolem0005(i2003_11_14_17_20_25524),skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c354,plain,~cc(skolem0005(i2003_11_14_17_20_25524))|cc(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c83,axiom,~rr3(X421,X415)|~rt3(X415,X416)|~ce(X416)|rtt(X415,skolem0007(X421,X415))|~rr2(X421,X420)|rtt(X420,skolem0010(X421,X420))|~rt2(X420,X417)|~cd(X417)|rr(X421,skolem0011(X421))|~rr1(X421,X418)|skolem0013(X421,X418)!=skolem0014(X421,X418)|~rt1(X418,X419)|~cc(X419)|cUnsatisfiable(X421)).
+# cnf(c355,plain,~xsd_string(skolem0005(i2003_11_14_17_20_25524))|xsd_string(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c357,plain,i2003_11_14_17_20_25524!=X422|rr1(X422,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c359,plain,~xsd_integer(skolem0005(i2003_11_14_17_20_25524))|xsd_integer(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c84,axiom,~rr3(X430,X424)|~rt3(X424,X425)|~ce(X425)|rtt(X424,skolem0007(X430,X424))|~rr2(X430,X429)|rtt(X429,skolem0010(X430,X429))|~rt2(X429,X426)|~cd(X426)|rr(X430,skolem0012(X430))|~rr1(X430,X427)|rtt(X427,skolem0013(X430,X427))|~rt1(X427,X428)|~cc(X428)|cUnsatisfiable(X430)).
+# cnf(c362,plain,~ca(skolem0005(i2003_11_14_17_20_25524))|ca(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c363,plain,~ce(skolem0005(i2003_11_14_17_20_25524))|ce(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c366,plain,~cd(skolem0005(i2003_11_14_17_20_25524))|cd(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c367,plain,~cUnsatisfiable(skolem0005(i2003_11_14_17_20_25524))|cUnsatisfiable(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c85,axiom,~rr3(X438,X432)|~rt3(X432,X433)|~ce(X433)|rtt(X432,skolem0007(X438,X432))|~rr2(X438,X437)|rtt(X437,skolem0010(X438,X437))|~rt2(X437,X434)|~cd(X434)|rr(X438,skolem0012(X438))|~rr1(X438,X435)|rtt(X435,skolem0014(X438,X435))|~rt1(X435,X436)|~cc(X436)|cUnsatisfiable(X438)).
+# cnf(c369,plain,skolem0003(i2003_11_14_17_20_25524)!=X439|rr1(i2003_11_14_17_20_25524,X439)).
+# cnf(c373,plain,~cc(skolem0003(i2003_11_14_17_20_25524))|cc(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c374,plain,~xsd_string(skolem0003(i2003_11_14_17_20_25524))|xsd_string(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c86,axiom,~rr3(X446,X440)|~rt3(X440,X441)|~ce(X441)|rtt(X440,skolem0007(X446,X440))|~rr2(X446,X445)|rtt(X445,skolem0010(X446,X445))|~rt2(X445,X442)|~cd(X442)|rr(X446,skolem0012(X446))|~rr1(X446,X443)|skolem0013(X446,X443)!=skolem0014(X446,X443)|~rt1(X443,X444)|~cc(X444)|cUnsatisfiable(X446)).
+# cnf(c377,plain,i2003_11_14_17_20_25524!=X448|rr2(X448,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c378,plain,~xsd_integer(skolem0003(i2003_11_14_17_20_25524))|xsd_integer(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c380,plain,~ca(skolem0003(i2003_11_14_17_20_25524))|ca(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c87,axiom,~rr3(X455,X449)|~rt3(X449,X450)|~ce(X450)|rtt(X449,skolem0007(X455,X449))|~rr2(X455,X454)|rtt(X454,skolem0010(X455,X454))|~rt2(X454,X451)|~cd(X451)|skolem0011(X455)!=skolem0012(X455)|~rr1(X455,X452)|rtt(X452,skolem0013(X455,X452))|~rt1(X452,X453)|~cc(X453)|cUnsatisfiable(X455)).
+# cnf(c381,plain,~ce(skolem0003(i2003_11_14_17_20_25524))|ce(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c385,plain,~cd(skolem0003(i2003_11_14_17_20_25524))|cd(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c386,plain,~cUnsatisfiable(skolem0003(i2003_11_14_17_20_25524))|cUnsatisfiable(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c390,plain,skolem0005(i2003_11_14_17_20_25524)!=X457|rr2(i2003_11_14_17_20_25524,X457)).
+# cnf(c88,axiom,~rr3(X464,X458)|~rt3(X458,X459)|~ce(X459)|rtt(X458,skolem0007(X464,X458))|~rr2(X464,X463)|rtt(X463,skolem0010(X464,X463))|~rt2(X463,X460)|~cd(X460)|skolem0011(X464)!=skolem0012(X464)|~rr1(X464,X461)|rtt(X461,skolem0014(X464,X461))|~rt1(X461,X462)|~cc(X462)|cUnsatisfiable(X464)).
+# cnf(c415,plain,xsd_string(skolem0003(i2003_11_14_17_20_25524))|xsd_integer(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c417,plain,xsd_integer(skolem0003(i2003_11_14_17_20_25524))|xsd_string(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c89,axiom,~rr3(X471,X465)|~rt3(X465,X466)|~ce(X466)|rtt(X465,skolem0007(X471,X465))|~rr2(X471,X470)|rtt(X470,skolem0010(X471,X470))|~rt2(X470,X467)|~cd(X467)|skolem0011(X471)!=skolem0012(X471)|~rr1(X471,X468)|skolem0013(X471,X468)!=skolem0014(X471,X468)|~rt1(X468,X469)|~cc(X469)|cUnsatisfiable(X471)).
+# cnf(c90,axiom,~rr3(X478,X472)|~rt3(X472,X473)|~ce(X473)|rtt(X472,skolem0007(X478,X472))|~rr2(X478,X477)|skolem0009(X478,X477)!=skolem0010(X478,X477)|~rt2(X477,X474)|~cd(X474)|rr(X478,skolem0011(X478))|~rr1(X478,X475)|rtt(X475,skolem0013(X478,X475))|~rt1(X475,X476)|~cc(X476)|cUnsatisfiable(X478)).
+# cnf(c351,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|skolem0001(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c435,plain,skolem0001(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c91,axiom,~rr3(X485,X479)|~rt3(X479,X480)|~ce(X480)|rtt(X479,skolem0007(X485,X479))|~rr2(X485,X484)|skolem0009(X485,X484)!=skolem0010(X485,X484)|~rt2(X484,X481)|~cd(X481)|rr(X485,skolem0011(X485))|~rr1(X485,X482)|rtt(X482,skolem0014(X485,X482))|~rt1(X482,X483)|~cc(X483)|cUnsatisfiable(X485)).
+# cnf(c447,plain,rr3(i2003_11_14_17_20_25524,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c436,plain,skolem0003(i2003_11_14_17_20_25524)=skolem0001(i2003_11_14_17_20_25524)).
+# cnf(c459,plain,rr2(i2003_11_14_17_20_25524,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c92,axiom,~rr3(X492,X486)|~rt3(X486,X487)|~ce(X487)|rtt(X486,skolem0007(X492,X486))|~rr2(X492,X491)|skolem0009(X492,X491)!=skolem0010(X492,X491)|~rt2(X491,X488)|~cd(X488)|rr(X492,skolem0011(X492))|~rr1(X492,X489)|skolem0013(X492,X489)!=skolem0014(X492,X489)|~rt1(X489,X490)|~cc(X490)|cUnsatisfiable(X492)).
+# cnf(c468,plain,rr1(i2003_11_14_17_20_25524,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c442,plain,rt3(skolem0003(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c446,plain,rtt(skolem0003(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c93,axiom,~rr3(X499,X493)|~rt3(X493,X494)|~ce(X494)|rtt(X493,skolem0007(X499,X493))|~rr2(X499,X498)|skolem0009(X499,X498)!=skolem0010(X499,X498)|~rt2(X498,X495)|~cd(X495)|rr(X499,skolem0012(X499))|~rr1(X499,X496)|rtt(X496,skolem0013(X499,X496))|~rt1(X496,X497)|~cc(X497)|cUnsatisfiable(X499)).
+# cnf(c462,plain,rtt(skolem0001(i2003_11_14_17_20_25524),skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c465,plain,rt2(skolem0001(i2003_11_14_17_20_25524),skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c94,axiom,~rr3(X506,X500)|~rt3(X500,X501)|~ce(X501)|rtt(X500,skolem0007(X506,X500))|~rr2(X506,X505)|skolem0009(X506,X505)!=skolem0010(X506,X505)|~rt2(X505,X502)|~cd(X502)|rr(X506,skolem0012(X506))|~rr1(X506,X503)|rtt(X503,skolem0014(X506,X503))|~rt1(X503,X504)|~cc(X504)|cUnsatisfiable(X506)).
+# cnf(c437,plain,~cc(skolem0001(i2003_11_14_17_20_25524))|cc(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c438,plain,~xsd_string(skolem0001(i2003_11_14_17_20_25524))|xsd_string(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c440,plain,~xsd_integer(skolem0001(i2003_11_14_17_20_25524))|xsd_integer(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c441,plain,~ca(skolem0001(i2003_11_14_17_20_25524))|ca(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c443,plain,~ce(skolem0001(i2003_11_14_17_20_25524))|ce(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c95,axiom,~rr3(X513,X507)|~rt3(X507,X508)|~ce(X508)|rtt(X507,skolem0007(X513,X507))|~rr2(X513,X512)|skolem0009(X513,X512)!=skolem0010(X513,X512)|~rt2(X512,X509)|~cd(X509)|rr(X513,skolem0012(X513))|~rr1(X513,X510)|skolem0013(X513,X510)!=skolem0014(X513,X510)|~rt1(X510,X511)|~cc(X511)|cUnsatisfiable(X513)).
+# cnf(c445,plain,i2003_11_14_17_20_25524!=X515|rr3(X515,skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c449,plain,~cd(skolem0001(i2003_11_14_17_20_25524))|cd(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c450,plain,~cUnsatisfiable(skolem0001(i2003_11_14_17_20_25524))|cUnsatisfiable(skolem0003(i2003_11_14_17_20_25524))).
+# cnf(c96,axiom,~rr3(X522,X516)|~rt3(X516,X517)|~ce(X517)|rtt(X516,skolem0007(X522,X516))|~rr2(X522,X521)|skolem0009(X522,X521)!=skolem0010(X522,X521)|~rt2(X521,X518)|~cd(X518)|skolem0011(X522)!=skolem0012(X522)|~rr1(X522,X519)|rtt(X519,skolem0013(X522,X519))|~rt1(X519,X520)|~cc(X520)|cUnsatisfiable(X522)).
+# cnf(c451,plain,skolem0003(i2003_11_14_17_20_25524)!=X523|rr3(i2003_11_14_17_20_25524,X523)).
+# cnf(c498,plain,rr3(i2003_11_14_17_20_25524,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c97,axiom,~rr3(X530,X524)|~rt3(X524,X525)|~ce(X525)|rtt(X524,skolem0007(X530,X524))|~rr2(X530,X529)|skolem0009(X530,X529)!=skolem0010(X530,X529)|~rt2(X529,X526)|~cd(X526)|skolem0011(X530)!=skolem0012(X530)|~rr1(X530,X527)|rtt(X527,skolem0014(X530,X527))|~rt1(X527,X528)|~cc(X528)|cUnsatisfiable(X530)).
+# cnf(c456,plain,~cc(skolem0003(i2003_11_14_17_20_25524))|cc(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c457,plain,~xsd_string(skolem0003(i2003_11_14_17_20_25524))|xsd_string(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c460,plain,i2003_11_14_17_20_25524!=X533|rr2(X533,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c98,axiom,~rr3(X540,X534)|~rt3(X534,X535)|~ce(X535)|rtt(X534,skolem0007(X540,X534))|~rr2(X540,X539)|skolem0009(X540,X539)!=skolem0010(X540,X539)|~rt2(X539,X536)|~cd(X536)|skolem0011(X540)!=skolem0012(X540)|~rr1(X540,X537)|skolem0013(X540,X537)!=skolem0014(X540,X537)|~rt1(X537,X538)|~cc(X538)|cUnsatisfiable(X540)).
+# cnf(c461,plain,~xsd_integer(skolem0003(i2003_11_14_17_20_25524))|xsd_integer(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c463,plain,~ca(skolem0003(i2003_11_14_17_20_25524))|ca(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c464,plain,~ce(skolem0003(i2003_11_14_17_20_25524))|ce(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c469,plain,~cd(skolem0003(i2003_11_14_17_20_25524))|cd(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c99,axiom,~rr3(X547,X541)|~rt3(X541,X542)|~ce(X542)|rtt(X541,skolem0008(X547,X541))|~rr2(X547,X546)|rtt(X546,skolem0009(X547,X546))|~rt2(X546,X543)|~cd(X543)|rr(X547,skolem0011(X547))|~rr1(X547,X544)|rtt(X544,skolem0013(X547,X544))|~rt1(X544,X545)|~cc(X545)|cUnsatisfiable(X547)).
+# cnf(c470,plain,~cUnsatisfiable(skolem0003(i2003_11_14_17_20_25524))|cUnsatisfiable(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c474,plain,skolem0001(i2003_11_14_17_20_25524)!=X549|rr2(i2003_11_14_17_20_25524,X549)).
+# cnf(c100,axiom,~rr3(X556,X550)|~rt3(X550,X551)|~ce(X551)|rtt(X550,skolem0008(X556,X550))|~rr2(X556,X555)|rtt(X555,skolem0009(X556,X555))|~rt2(X555,X552)|~cd(X552)|rr(X556,skolem0011(X556))|~rr1(X556,X553)|rtt(X553,skolem0014(X556,X553))|~rt1(X553,X554)|~cc(X554)|cUnsatisfiable(X556)).
+# cnf(c475,plain,i2003_11_14_17_20_25524!=X557|rr1(X557,skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c476,plain,skolem0001(i2003_11_14_17_20_25524)!=X558|rr1(i2003_11_14_17_20_25524,X558)).
+# cnf(c101,axiom,~rr3(X565,X559)|~rt3(X559,X560)|~ce(X560)|rtt(X559,skolem0008(X565,X559))|~rr2(X565,X564)|rtt(X564,skolem0009(X565,X564))|~rt2(X564,X561)|~cd(X561)|rr(X565,skolem0011(X565))|~rr1(X565,X562)|skolem0013(X565,X562)!=skolem0014(X565,X562)|~rt1(X562,X563)|~cc(X563)|cUnsatisfiable(X565)).
+# cnf(c495,plain,xsd_string(skolem0003(i2003_11_14_17_20_25524))|xsd_integer(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c496,plain,xsd_integer(skolem0003(i2003_11_14_17_20_25524))|xsd_string(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c501,plain,skolem0005(i2003_11_14_17_20_25524)!=X566|rr3(i2003_11_14_17_20_25524,X566)).
+# cnf(c102,axiom,~rr3(X573,X567)|~rt3(X567,X568)|~ce(X568)|rtt(X567,skolem0008(X573,X567))|~rr2(X573,X572)|rtt(X572,skolem0009(X573,X572))|~rt2(X572,X569)|~cd(X569)|rr(X573,skolem0012(X573))|~rr1(X573,X570)|rtt(X570,skolem0013(X573,X570))|~rt1(X570,X571)|~cc(X571)|cUnsatisfiable(X573)).
+# cnf(c504,plain,i2003_11_14_17_20_25524!=X574|rr3(X574,skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c506,plain,xsd_string(skolem0001(i2003_11_14_17_20_25524))|xsd_integer(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c508,plain,xsd_integer(skolem0001(i2003_11_14_17_20_25524))|xsd_string(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c103,axiom,~rr3(X581,X575)|~rt3(X575,X576)|~ce(X576)|rtt(X575,skolem0008(X581,X575))|~rr2(X581,X580)|rtt(X580,skolem0009(X581,X580))|~rt2(X580,X577)|~cd(X577)|rr(X581,skolem0012(X581))|~rr1(X581,X578)|rtt(X578,skolem0014(X581,X578))|~rt1(X578,X579)|~cc(X579)|cUnsatisfiable(X581)).
+# cnf(c104,axiom,~rr3(X588,X582)|~rt3(X582,X583)|~ce(X583)|rtt(X582,skolem0008(X588,X582))|~rr2(X588,X587)|rtt(X587,skolem0009(X588,X587))|~rt2(X587,X584)|~cd(X584)|rr(X588,skolem0012(X588))|~rr1(X588,X585)|skolem0013(X588,X585)!=skolem0014(X588,X585)|~rt1(X585,X586)|~cc(X586)|cUnsatisfiable(X588)).
+# cnf(c105,axiom,~rr3(X595,X589)|~rt3(X589,X590)|~ce(X590)|rtt(X589,skolem0008(X595,X589))|~rr2(X595,X594)|rtt(X594,skolem0009(X595,X594))|~rt2(X594,X591)|~cd(X591)|skolem0011(X595)!=skolem0012(X595)|~rr1(X595,X592)|rtt(X592,skolem0013(X595,X592))|~rt1(X592,X593)|~cc(X593)|cUnsatisfiable(X595)).
+# cnf(c533,plain,xsd_string(skolem0001(i2003_11_14_17_20_25524))|~xsd_string(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c535,plain,xsd_string(skolem0005(i2003_11_14_17_20_25524))|~xsd_string(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c106,axiom,~rr3(X602,X596)|~rt3(X596,X597)|~ce(X597)|rtt(X596,skolem0008(X602,X596))|~rr2(X602,X601)|rtt(X601,skolem0009(X602,X601))|~rt2(X601,X598)|~cd(X598)|skolem0011(X602)!=skolem0012(X602)|~rr1(X602,X599)|rtt(X599,skolem0014(X602,X599))|~rt1(X599,X600)|~cc(X600)|cUnsatisfiable(X602)).
+# cnf(c107,axiom,~rr3(X609,X603)|~rt3(X603,X604)|~ce(X604)|rtt(X603,skolem0008(X609,X603))|~rr2(X609,X608)|rtt(X608,skolem0009(X609,X608))|~rt2(X608,X605)|~cd(X605)|skolem0011(X609)!=skolem0012(X609)|~rr1(X609,X606)|skolem0013(X609,X606)!=skolem0014(X609,X606)|~rt1(X606,X607)|~cc(X607)|cUnsatisfiable(X609)).
+# cnf(c365,plain,X610!=skolem0005(i2003_11_14_17_20_25524)|X610=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c383,plain,X611!=skolem0003(i2003_11_14_17_20_25524)|X611=skolem0005(i2003_11_14_17_20_25524)).
+# cnf(c108,axiom,~rr3(X618,X612)|~rt3(X612,X613)|~ce(X613)|rtt(X612,skolem0008(X618,X612))|~rr2(X618,X617)|rtt(X617,skolem0010(X618,X617))|~rt2(X617,X614)|~cd(X614)|rr(X618,skolem0011(X618))|~rr1(X618,X615)|rtt(X615,skolem0013(X618,X615))|~rt1(X615,X616)|~cc(X616)|cUnsatisfiable(X618)).
+# cnf(c550,plain,skolem0001(i2003_11_14_17_20_25524)=skolem0005(i2003_11_14_17_20_25524)).
+# cnf(c109,axiom,~rr3(X625,X619)|~rt3(X619,X620)|~ce(X620)|rtt(X619,skolem0008(X625,X619))|~rr2(X625,X624)|rtt(X624,skolem0010(X625,X624))|~rt2(X624,X621)|~cd(X621)|rr(X625,skolem0011(X625))|~rr1(X625,X622)|rtt(X622,skolem0014(X625,X622))|~rt1(X622,X623)|~cc(X623)|cUnsatisfiable(X625)).
+# cnf(c554,plain,rt3(skolem0005(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c566,plain,skolem0005(i2003_11_14_17_20_25524)=skolem0001(i2003_11_14_17_20_25524)).
+# cnf(c110,axiom,~rr3(X632,X626)|~rt3(X626,X627)|~ce(X627)|rtt(X626,skolem0008(X632,X626))|~rr2(X632,X631)|rtt(X631,skolem0010(X632,X631))|~rt2(X631,X628)|~cd(X628)|rr(X632,skolem0011(X632))|~rr1(X632,X629)|skolem0013(X632,X629)!=skolem0014(X632,X629)|~rt1(X629,X630)|~cc(X630)|cUnsatisfiable(X632)).
+# cnf(c570,plain,rtt(skolem0005(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c111,axiom,~rr3(X639,X633)|~rt3(X633,X634)|~ce(X634)|rtt(X633,skolem0008(X639,X633))|~rr2(X639,X638)|rtt(X638,skolem0010(X639,X638))|~rt2(X638,X635)|~cd(X635)|rr(X639,skolem0012(X639))|~rr1(X639,X636)|rtt(X636,skolem0013(X639,X636))|~rt1(X636,X637)|~cc(X637)|cUnsatisfiable(X639)).
+# cnf(c577,plain,rt1(skolem0001(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c584,plain,rtt(skolem0001(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c112,axiom,~rr3(X646,X640)|~rt3(X640,X641)|~ce(X641)|rtt(X640,skolem0008(X646,X640))|~rr2(X646,X645)|rtt(X645,skolem0010(X646,X645))|~rt2(X645,X642)|~cd(X642)|rr(X646,skolem0012(X646))|~rr1(X646,X643)|rtt(X643,skolem0014(X646,X643))|~rt1(X643,X644)|~cc(X644)|cUnsatisfiable(X646)).
+# cnf(c558,plain,~xsd_integer(skolem0001(i2003_11_14_17_20_25524))|xsd_integer(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c559,plain,~ca(skolem0001(i2003_11_14_17_20_25524))|ca(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c562,plain,~cc(skolem0001(i2003_11_14_17_20_25524))|cc(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c113,axiom,~rr3(X655,X649)|~rt3(X649,X650)|~ce(X650)|rtt(X649,skolem0008(X655,X649))|~rr2(X655,X654)|rtt(X654,skolem0010(X655,X654))|~rt2(X654,X651)|~cd(X651)|rr(X655,skolem0012(X655))|~rr1(X655,X652)|skolem0013(X655,X652)!=skolem0014(X655,X652)|~rt1(X652,X653)|~cc(X653)|cUnsatisfiable(X655)).
+# cnf(c564,plain,~cd(skolem0001(i2003_11_14_17_20_25524))|cd(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c565,plain,~cUnsatisfiable(skolem0001(i2003_11_14_17_20_25524))|cUnsatisfiable(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c569,plain,~ce(skolem0001(i2003_11_14_17_20_25524))|ce(skolem0005(i2003_11_14_17_20_25524))).
+# cnf(c114,axiom,~rr3(X663,X657)|~rt3(X657,X658)|~ce(X658)|rtt(X657,skolem0008(X663,X657))|~rr2(X663,X662)|rtt(X662,skolem0010(X663,X662))|~rt2(X662,X659)|~cd(X659)|skolem0011(X663)!=skolem0012(X663)|~rr1(X663,X660)|rtt(X660,skolem0013(X663,X660))|~rt1(X660,X661)|~cc(X661)|cUnsatisfiable(X663)).
+# cnf(c580,plain,~xsd_integer(skolem0005(i2003_11_14_17_20_25524))|xsd_integer(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c581,plain,~ca(skolem0005(i2003_11_14_17_20_25524))|ca(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c582,plain,~cc(skolem0005(i2003_11_14_17_20_25524))|cc(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c587,plain,~cd(skolem0005(i2003_11_14_17_20_25524))|cd(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c588,plain,~cUnsatisfiable(skolem0005(i2003_11_14_17_20_25524))|cUnsatisfiable(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c115,axiom,~rr3(X670,X664)|~rt3(X664,X665)|~ce(X665)|rtt(X664,skolem0008(X670,X664))|~rr2(X670,X669)|rtt(X669,skolem0010(X670,X669))|~rt2(X669,X666)|~cd(X666)|skolem0011(X670)!=skolem0012(X670)|~rr1(X670,X667)|rtt(X667,skolem0014(X670,X667))|~rt1(X667,X668)|~cc(X668)|cUnsatisfiable(X670)).
+# cnf(c592,plain,~ce(skolem0005(i2003_11_14_17_20_25524))|ce(skolem0001(i2003_11_14_17_20_25524))).
+# cnf(c116,axiom,~rr3(X678,X672)|~rt3(X672,X673)|~ce(X673)|rtt(X672,skolem0008(X678,X672))|~rr2(X678,X677)|rtt(X677,skolem0010(X678,X677))|~rt2(X677,X674)|~cd(X674)|skolem0011(X678)!=skolem0012(X678)|~rr1(X678,X675)|skolem0013(X678,X675)!=skolem0014(X678,X675)|~rt1(X675,X676)|~cc(X676)|cUnsatisfiable(X678)).
+# cnf(c393,plain,skolem0006(i2003_11_14_17_20_25524)!=X679|rtt(skolem0003(i2003_11_14_17_20_25524),X679)).
+# cnf(c117,axiom,~rr3(X686,X680)|~rt3(X680,X681)|~ce(X681)|rtt(X680,skolem0008(X686,X680))|~rr2(X686,X685)|skolem0009(X686,X685)!=skolem0010(X686,X685)|~rt2(X685,X682)|~cd(X682)|rr(X686,skolem0011(X686))|~rr1(X686,X683)|rtt(X683,skolem0013(X686,X683))|~rt1(X683,X684)|~cc(X684)|cUnsatisfiable(X686)).
+# cnf(c394,plain,skolem0003(i2003_11_14_17_20_25524)!=X687|rtt(X687,skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c118,axiom,~rr3(X694,X688)|~rt3(X688,X689)|~ce(X689)|rtt(X688,skolem0008(X694,X688))|~rr2(X694,X693)|skolem0009(X694,X693)!=skolem0010(X694,X693)|~rt2(X693,X690)|~cd(X690)|rr(X694,skolem0011(X694))|~rr1(X694,X691)|rtt(X691,skolem0014(X694,X691))|~rt1(X691,X692)|~cc(X692)|cUnsatisfiable(X694)).
+# cnf(c398,plain,skolem0006(i2003_11_14_17_20_25524)!=X695|rt1(skolem0003(i2003_11_14_17_20_25524),X695)).
+# cnf(c402,plain,skolem0003(i2003_11_14_17_20_25524)!=X696|rt1(X696,skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c119,axiom,~rr3(X703,X697)|~rt3(X697,X698)|~ce(X698)|rtt(X697,skolem0008(X703,X697))|~rr2(X703,X702)|skolem0009(X703,X702)!=skolem0010(X703,X702)|~rt2(X702,X699)|~cd(X699)|rr(X703,skolem0011(X703))|~rr1(X703,X700)|skolem0013(X703,X700)!=skolem0014(X703,X700)|~rt1(X700,X701)|~cc(X701)|cUnsatisfiable(X703)).
+# cnf(c409,plain,skolem0004(i2003_11_14_17_20_25524)!=X704|rtt(skolem0005(i2003_11_14_17_20_25524),X704)).
+# cnf(c410,plain,skolem0005(i2003_11_14_17_20_25524)!=X705|rtt(X705,skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c120,axiom,~rr3(X712,X706)|~rt3(X706,X707)|~ce(X707)|rtt(X706,skolem0008(X712,X706))|~rr2(X712,X711)|skolem0009(X712,X711)!=skolem0010(X712,X711)|~rt2(X711,X708)|~cd(X708)|rr(X712,skolem0012(X712))|~rr1(X712,X709)|rtt(X709,skolem0013(X712,X709))|~rt1(X709,X710)|~cc(X710)|cUnsatisfiable(X712)).
+# cnf(c411,plain,skolem0004(i2003_11_14_17_20_25524)!=X713|rt2(skolem0005(i2003_11_14_17_20_25524),X713)).
+# cnf(c414,plain,skolem0005(i2003_11_14_17_20_25524)!=X714|rt2(X714,skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c121,axiom,~rr3(X721,X715)|~rt3(X715,X716)|~ce(X716)|rtt(X715,skolem0008(X721,X715))|~rr2(X721,X720)|skolem0009(X721,X720)!=skolem0010(X721,X720)|~rt2(X720,X717)|~cd(X717)|rr(X721,skolem0012(X721))|~rr1(X721,X718)|rtt(X718,skolem0014(X721,X718))|~rt1(X718,X719)|~cc(X719)|cUnsatisfiable(X721)).
+# cnf(c448,plain,X722!=skolem0001(i2003_11_14_17_20_25524)|X722=skolem0003(i2003_11_14_17_20_25524)).
+# cnf(c122,axiom,~rr3(X729,X723)|~rt3(X723,X724)|~ce(X724)|rtt(X723,skolem0008(X729,X723))|~rr2(X729,X728)|skolem0009(X729,X728)!=skolem0010(X729,X728)|~rt2(X728,X725)|~cd(X725)|rr(X729,skolem0012(X729))|~rr1(X729,X726)|skolem0013(X729,X726)!=skolem0014(X729,X726)|~rt1(X726,X727)|~cc(X727)|cUnsatisfiable(X729)).
+# cnf(c466,plain,X730!=skolem0003(i2003_11_14_17_20_25524)|X730=skolem0001(i2003_11_14_17_20_25524)).
+# cnf(c123,axiom,~rr3(X737,X731)|~rt3(X731,X732)|~ce(X732)|rtt(X731,skolem0008(X737,X731))|~rr2(X737,X736)|skolem0009(X737,X736)!=skolem0010(X737,X736)|~rt2(X736,X733)|~cd(X733)|skolem0011(X737)!=skolem0012(X737)|~rr1(X737,X734)|rtt(X734,skolem0013(X737,X734))|~rt1(X734,X735)|~cc(X735)|cUnsatisfiable(X737)).
+# cnf(c480,plain,skolem0002(i2003_11_14_17_20_25524)!=X738|rt3(skolem0003(i2003_11_14_17_20_25524),X738)).
+# cnf(c481,plain,skolem0003(i2003_11_14_17_20_25524)!=X739|rt3(X739,skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c124,axiom,~rr3(X746,X740)|~rt3(X740,X741)|~ce(X741)|rtt(X740,skolem0008(X746,X740))|~rr2(X746,X745)|skolem0009(X746,X745)!=skolem0010(X746,X745)|~rt2(X745,X742)|~cd(X742)|skolem0011(X746)!=skolem0012(X746)|~rr1(X746,X743)|rtt(X743,skolem0014(X746,X743))|~rt1(X743,X744)|~cc(X744)|cUnsatisfiable(X746)).
+# cnf(c484,plain,skolem0002(i2003_11_14_17_20_25524)!=X747|rtt(skolem0003(i2003_11_14_17_20_25524),X747)).
+# cnf(c485,plain,skolem0003(i2003_11_14_17_20_25524)!=X748|rtt(X748,skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c125,axiom,~rr3(X755,X749)|~rt3(X749,X750)|~ce(X750)|rtt(X749,skolem0008(X755,X749))|~rr2(X755,X754)|skolem0009(X755,X754)!=skolem0010(X755,X754)|~rt2(X754,X751)|~cd(X751)|skolem0011(X755)!=skolem0012(X755)|~rr1(X755,X752)|skolem0013(X755,X752)!=skolem0014(X755,X752)|~rt1(X752,X753)|~cc(X753)|cUnsatisfiable(X755)).
+# cnf(c489,plain,skolem0004(i2003_11_14_17_20_25524)!=X756|rtt(skolem0001(i2003_11_14_17_20_25524),X756)).
+# cnf(c126,axiom,~rr3(X763,X757)|~rt3(X757,X758)|~ce(X758)|skolem0007(X763,X757)!=skolem0008(X763,X757)|~rr2(X763,X762)|rtt(X762,skolem0009(X763,X762))|~rt2(X762,X759)|~cd(X759)|rr(X763,skolem0011(X763))|~rr1(X763,X760)|rtt(X760,skolem0013(X763,X760))|~rt1(X760,X761)|~cc(X761)|cUnsatisfiable(X763)).
+# cnf(c490,plain,skolem0001(i2003_11_14_17_20_25524)!=X764|rtt(X764,skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c491,plain,skolem0004(i2003_11_14_17_20_25524)!=X765|rt2(skolem0001(i2003_11_14_17_20_25524),X765)).
+# cnf(c127,axiom,~rr3(X772,X766)|~rt3(X766,X767)|~ce(X767)|skolem0007(X772,X766)!=skolem0008(X772,X766)|~rr2(X772,X771)|rtt(X771,skolem0009(X772,X771))|~rt2(X771,X768)|~cd(X768)|rr(X772,skolem0011(X772))|~rr1(X772,X769)|rtt(X769,skolem0014(X772,X769))|~rt1(X769,X770)|~cc(X770)|cUnsatisfiable(X772)).
+# cnf(c494,plain,skolem0001(i2003_11_14_17_20_25524)!=X773|rt2(X773,skolem0004(i2003_11_14_17_20_25524))).
+# cnf(c128,axiom,~rr3(X780,X774)|~rt3(X774,X775)|~ce(X775)|skolem0007(X780,X774)!=skolem0008(X780,X774)|~rr2(X780,X779)|rtt(X779,skolem0009(X780,X779))|~rt2(X779,X776)|~cd(X776)|rr(X780,skolem0011(X780))|~rr1(X780,X777)|skolem0013(X780,X777)!=skolem0014(X780,X777)|~rt1(X777,X778)|~cc(X778)|cUnsatisfiable(X780)).
+# cnf(c556,plain,X781!=skolem0001(i2003_11_14_17_20_25524)|X781=skolem0005(i2003_11_14_17_20_25524)).
+# cnf(c574,plain,skolem0002(i2003_11_14_17_20_25524)!=X782|rt3(skolem0005(i2003_11_14_17_20_25524),X782)).
+# cnf(c129,axiom,~rr3(X789,X783)|~rt3(X783,X784)|~ce(X784)|skolem0007(X789,X783)!=skolem0008(X789,X783)|~rr2(X789,X788)|rtt(X788,skolem0009(X789,X788))|~rt2(X788,X785)|~cd(X785)|rr(X789,skolem0012(X789))|~rr1(X789,X786)|rtt(X786,skolem0013(X789,X786))|~rt1(X786,X787)|~cc(X787)|cUnsatisfiable(X789)).
+# cnf(c575,plain,skolem0005(i2003_11_14_17_20_25524)!=X790|rt3(X790,skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c130,axiom,~rr3(X797,X791)|~rt3(X791,X792)|~ce(X792)|skolem0007(X797,X791)!=skolem0008(X797,X791)|~rr2(X797,X796)|rtt(X796,skolem0009(X797,X796))|~rt2(X796,X793)|~cd(X793)|rr(X797,skolem0012(X797))|~rr1(X797,X794)|rtt(X794,skolem0014(X797,X794))|~rt1(X794,X795)|~cc(X795)|cUnsatisfiable(X797)).
+# cnf(c578,plain,X798!=skolem0005(i2003_11_14_17_20_25524)|X798=skolem0001(i2003_11_14_17_20_25524)).
+# cnf(c596,plain,skolem0002(i2003_11_14_17_20_25524)!=X799|rtt(skolem0005(i2003_11_14_17_20_25524),X799)).
+# cnf(c131,axiom,~rr3(X806,X800)|~rt3(X800,X801)|~ce(X801)|skolem0007(X806,X800)!=skolem0008(X806,X800)|~rr2(X806,X805)|rtt(X805,skolem0009(X806,X805))|~rt2(X805,X802)|~cd(X802)|rr(X806,skolem0012(X806))|~rr1(X806,X803)|skolem0013(X806,X803)!=skolem0014(X806,X803)|~rt1(X803,X804)|~cc(X804)|cUnsatisfiable(X806)).
+# cnf(c597,plain,skolem0005(i2003_11_14_17_20_25524)!=X807|rtt(X807,skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c132,axiom,~rr3(X814,X808)|~rt3(X808,X809)|~ce(X809)|skolem0007(X814,X808)!=skolem0008(X814,X808)|~rr2(X814,X813)|rtt(X813,skolem0009(X814,X813))|~rt2(X813,X810)|~cd(X810)|skolem0011(X814)!=skolem0012(X814)|~rr1(X814,X811)|rtt(X811,skolem0013(X814,X811))|~rt1(X811,X812)|~cc(X812)|cUnsatisfiable(X814)).
+# cnf(c605,plain,skolem0001(i2003_11_14_17_20_25524)!=X815|rt1(X815,skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c614,plain,skolem0006(i2003_11_14_17_20_25524)!=X816|rt1(skolem0001(i2003_11_14_17_20_25524),X816)).
+# cnf(c133,axiom,~rr3(X823,X817)|~rt3(X817,X818)|~ce(X818)|skolem0007(X823,X817)!=skolem0008(X823,X817)|~rr2(X823,X822)|rtt(X822,skolem0009(X823,X822))|~rt2(X822,X819)|~cd(X819)|skolem0011(X823)!=skolem0012(X823)|~rr1(X823,X820)|rtt(X820,skolem0014(X823,X820))|~rt1(X820,X821)|~cc(X821)|cUnsatisfiable(X823)).
+# cnf(c621,plain,skolem0006(i2003_11_14_17_20_25524)!=X824|rtt(skolem0001(i2003_11_14_17_20_25524),X824)).
+# cnf(c622,plain,skolem0001(i2003_11_14_17_20_25524)!=X825|rtt(X825,skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c134,axiom,~rr3(X832,X826)|~rt3(X826,X827)|~ce(X827)|skolem0007(X832,X826)!=skolem0008(X832,X826)|~rr2(X832,X831)|rtt(X831,skolem0009(X832,X831))|~rt2(X831,X828)|~cd(X828)|skolem0011(X832)!=skolem0012(X832)|~rr1(X832,X829)|skolem0013(X832,X829)!=skolem0014(X832,X829)|~rt1(X829,X830)|~cc(X830)|cUnsatisfiable(X832)).
+# cnf(c319,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|~rr(i2003_11_14_17_20_25524,X833)|X833=skolem0005(i2003_11_14_17_20_25524)).
+# cnf(c135,axiom,~rr3(X840,X834)|~rt3(X834,X835)|~ce(X835)|skolem0007(X840,X834)!=skolem0008(X840,X834)|~rr2(X840,X839)|rtt(X839,skolem0010(X840,X839))|~rt2(X839,X836)|~cd(X836)|rr(X840,skolem0011(X840))|~rr1(X840,X837)|rtt(X837,skolem0013(X840,X837))|~rt1(X837,X838)|~cc(X838)|cUnsatisfiable(X840)).
+# cnf(c320,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|~rr(i2003_11_14_17_20_25524,X841)|X841=skolem0001(i2003_11_14_17_20_25524)).
+# cnf(c136,axiom,~rr3(X848,X842)|~rt3(X842,X843)|~ce(X843)|skolem0007(X848,X842)!=skolem0008(X848,X842)|~rr2(X848,X847)|rtt(X847,skolem0010(X848,X847))|~rt2(X847,X844)|~cd(X844)|rr(X848,skolem0011(X848))|~rr1(X848,X845)|rtt(X845,skolem0014(X848,X845))|~rt1(X845,X846)|~cc(X846)|cUnsatisfiable(X848)).
+# cnf(c370,plain,i2003_11_14_17_20_25524!=X850|skolem0003(i2003_11_14_17_20_25524)!=X849|rr1(X850,X849)).
+# cnf(c388,plain,i2003_11_14_17_20_25524!=X854|skolem0005(i2003_11_14_17_20_25524)!=X855|rr2(X854,X855)).
+# cnf(c137,axiom,~rr3(X862,X856)|~rt3(X856,X857)|~ce(X857)|skolem0007(X862,X856)!=skolem0008(X862,X856)|~rr2(X862,X861)|rtt(X861,skolem0010(X862,X861))|~rt2(X861,X858)|~cd(X858)|rr(X862,skolem0011(X862))|~rr1(X862,X859)|skolem0013(X862,X859)!=skolem0014(X862,X859)|~rt1(X859,X860)|~cc(X860)|cUnsatisfiable(X862)).
+# cnf(c452,plain,i2003_11_14_17_20_25524!=X867|skolem0003(i2003_11_14_17_20_25524)!=X866|rr3(X867,X866)).
+# cnf(c138,axiom,~rr3(X875,X869)|~rt3(X869,X870)|~ce(X870)|skolem0007(X875,X869)!=skolem0008(X875,X869)|~rr2(X875,X874)|rtt(X874,skolem0010(X875,X874))|~rt2(X874,X871)|~cd(X871)|rr(X875,skolem0012(X875))|~rr1(X875,X872)|rtt(X872,skolem0013(X875,X872))|~rt1(X872,X873)|~cc(X873)|cUnsatisfiable(X875)).
+# cnf(c472,plain,i2003_11_14_17_20_25524!=X878|skolem0001(i2003_11_14_17_20_25524)!=X879|rr2(X878,X879)).
+# cnf(c139,axiom,~rr3(X888,X882)|~rt3(X882,X883)|~ce(X883)|skolem0007(X888,X882)!=skolem0008(X888,X882)|~rr2(X888,X887)|rtt(X887,skolem0010(X888,X887))|~rt2(X887,X884)|~cd(X884)|rr(X888,skolem0012(X888))|~rr1(X888,X885)|rtt(X885,skolem0014(X888,X885))|~rt1(X885,X886)|~cc(X886)|cUnsatisfiable(X888)).
+# cnf(c477,plain,i2003_11_14_17_20_25524!=X891|skolem0001(i2003_11_14_17_20_25524)!=X890|rr1(X891,X890)).
+# cnf(c140,axiom,~rr3(X901,X895)|~rt3(X895,X896)|~ce(X896)|skolem0007(X901,X895)!=skolem0008(X901,X895)|~rr2(X901,X900)|rtt(X900,skolem0010(X901,X900))|~rt2(X900,X897)|~cd(X897)|rr(X901,skolem0012(X901))|~rr1(X901,X898)|skolem0013(X901,X898)!=skolem0014(X901,X898)|~rt1(X898,X899)|~cc(X899)|cUnsatisfiable(X901)).
+# cnf(c502,plain,i2003_11_14_17_20_25524!=X903|skolem0005(i2003_11_14_17_20_25524)!=X902|rr3(X903,X902)).
+# cnf(c285,plain,skolem0005(i2003_11_14_17_20_25524)!=X908|skolem0006(i2003_11_14_17_20_25524)!=X907|rt1(X908,X907)).
+# cnf(c141,axiom,~rr3(X915,X909)|~rt3(X909,X910)|~ce(X910)|skolem0007(X915,X909)!=skolem0008(X915,X909)|~rr2(X915,X914)|rtt(X914,skolem0010(X915,X914))|~rt2(X914,X911)|~cd(X911)|skolem0011(X915)!=skolem0012(X915)|~rr1(X915,X912)|rtt(X912,skolem0013(X915,X912))|~rt1(X912,X913)|~cc(X913)|cUnsatisfiable(X915)).
+# cnf(c291,plain,skolem0003(i2003_11_14_17_20_25524)!=X918|skolem0004(i2003_11_14_17_20_25524)!=X917|rt2(X918,X917)).
+# cnf(c297,plain,skolem0001(i2003_11_14_17_20_25524)!=X920|skolem0002(i2003_11_14_17_20_25524)!=X921|rt3(X920,X921)).
+# cnf(c142,axiom,~rr3(X929,X923)|~rt3(X923,X924)|~ce(X924)|skolem0007(X929,X923)!=skolem0008(X929,X923)|~rr2(X929,X928)|rtt(X928,skolem0010(X929,X928))|~rt2(X928,X925)|~cd(X925)|skolem0011(X929)!=skolem0012(X929)|~rr1(X929,X926)|rtt(X926,skolem0014(X929,X926))|~rt1(X926,X927)|~cc(X927)|cUnsatisfiable(X929)).
+# cnf(c306,plain,skolem0001(i2003_11_14_17_20_25524)!=X930|skolem0002(i2003_11_14_17_20_25524)!=X931|rtt(X930,X931)).
+# cnf(c307,plain,skolem0003(i2003_11_14_17_20_25524)!=X933|skolem0004(i2003_11_14_17_20_25524)!=X934|rtt(X933,X934)).
+# cnf(c308,plain,skolem0005(i2003_11_14_17_20_25524)!=X936|skolem0006(i2003_11_14_17_20_25524)!=X937|rtt(X936,X937)).
+# cnf(c143,axiom,~rr3(X944,X938)|~rt3(X938,X939)|~ce(X939)|skolem0007(X944,X938)!=skolem0008(X944,X938)|~rr2(X944,X943)|rtt(X943,skolem0010(X944,X943))|~rt2(X943,X940)|~cd(X940)|skolem0011(X944)!=skolem0012(X944)|~rr1(X944,X941)|skolem0013(X944,X941)!=skolem0014(X944,X941)|~rt1(X941,X942)|~cc(X942)|cUnsatisfiable(X944)).
+# cnf(c311,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|~rtt(skolem0001(i2003_11_14_17_20_25524),X946)|X946=skolem0002(i2003_11_14_17_20_25524)).
+# cnf(c722,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|skolem0006(i2003_11_14_17_20_25524)=skolem0002(i2003_11_14_17_20_25524)).
+# cnf(c725,plain,skolem0006(i2003_11_14_17_20_25524)=skolem0002(i2003_11_14_17_20_25524)).
+# cnf(c144,axiom,~rr3(X953,X947)|~rt3(X947,X948)|~ce(X948)|skolem0007(X953,X947)!=skolem0008(X953,X947)|~rr2(X953,X952)|skolem0009(X953,X952)!=skolem0010(X953,X952)|~rt2(X952,X949)|~cd(X949)|rr(X953,skolem0011(X953))|~rr1(X953,X950)|rtt(X950,skolem0013(X953,X950))|~rt1(X950,X951)|~cc(X951)|cUnsatisfiable(X953)).
+# cnf(c727,plain,rt1(skolem0003(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c730,plain,rt1(skolem0005(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c736,plain,rt1(skolem0001(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c739,plain,skolem0002(i2003_11_14_17_20_25524)=skolem0006(i2003_11_14_17_20_25524)).
+# cnf(c145,axiom,~rr3(X960,X954)|~rt3(X954,X955)|~ce(X955)|skolem0007(X960,X954)!=skolem0008(X960,X954)|~rr2(X960,X959)|skolem0009(X960,X959)!=skolem0010(X960,X959)|~rt2(X959,X956)|~cd(X956)|rr(X960,skolem0011(X960))|~rr1(X960,X957)|rtt(X957,skolem0014(X960,X957))|~rt1(X957,X958)|~cc(X958)|cUnsatisfiable(X960)).
+# cnf(c804,plain,rt3(skolem0005(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c146,axiom,~rr3(X967,X961)|~rt3(X961,X962)|~ce(X962)|skolem0007(X967,X961)!=skolem0008(X967,X961)|~rr2(X967,X966)|skolem0009(X967,X966)!=skolem0010(X967,X966)|~rt2(X966,X963)|~cd(X963)|rr(X967,skolem0011(X967))|~rr1(X967,X964)|skolem0013(X967,X964)!=skolem0014(X967,X964)|~rt1(X964,X965)|~cc(X965)|cUnsatisfiable(X967)).
+# cnf(c816,plain,rt3(skolem0003(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c147,axiom,~rr3(X974,X968)|~rt3(X968,X969)|~ce(X969)|skolem0007(X974,X968)!=skolem0008(X974,X968)|~rr2(X974,X973)|skolem0009(X974,X973)!=skolem0010(X974,X973)|~rt2(X973,X970)|~cd(X970)|rr(X974,skolem0012(X974))|~rr1(X974,X971)|rtt(X971,skolem0013(X974,X971))|~rt1(X971,X972)|~cc(X972)|cUnsatisfiable(X974)).
+# cnf(c817,plain,rt3(skolem0001(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524))).
+# cnf(c729,plain,~xsd_integer(skolem0006(i2003_11_14_17_20_25524))|xsd_integer(skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c148,axiom,~rr3(X981,X975)|~rt3(X975,X976)|~ce(X976)|skolem0007(X981,X975)!=skolem0008(X981,X975)|~rr2(X981,X980)|skolem0009(X981,X980)!=skolem0010(X981,X980)|~rt2(X980,X977)|~cd(X977)|rr(X981,skolem0012(X981))|~rr1(X981,X978)|rtt(X978,skolem0014(X981,X978))|~rt1(X978,X979)|~cc(X979)|cUnsatisfiable(X981)).
+# cnf(c732,plain,~ca(skolem0006(i2003_11_14_17_20_25524))|ca(skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c833,plain,ca(skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c735,plain,~cc(skolem0006(i2003_11_14_17_20_25524))|cc(skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c835,plain,cc(skolem0002(i2003_11_14_17_20_25524))).
+# cnf(c149,axiom,~rr3(X988,X982)|~rt3(X982,X983)|~ce(X983)|skolem0007(X988,X982)!=skolem0008(X988,X982)|~rr2(X988,X987)|skolem0009(X988,X987)!=skolem0010(X988,X987)|~rt2(X987,X984)|~cd(X984)|rr(X988,skolem0012(X988))|~rr1(X988,X985)|skolem0013(X988,X985)!=skolem0014(X988,X985)|~rt1(X985,X986)|~cc(X986)|cUnsatisfiable(X988)).
+# cnf(c837,plain,~ce(skolem0002(i2003_11_14_17_20_25524))).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_4,axiom,cUnsatisfiable(i2003_11_14_17_20_25524),input).
+cnf(c44,axiom,cUnsatisfiable(i2003_11_14_17_20_25524),inference(split_conjunct,status(thm),[axiom_4])).
+fof(axiom_2,axiom,(![X]:(cUnsatisfiable(X)<=>((((?[Y]:((rr3(X,Y)&(?[Z]:(rt3(Y,Z)&ce(Z))))&(![Z0]:(![Z1]:((rtt(Y,Z0)&rtt(Y,Z1))=>Z0=Z1)))))&(?[Y]:((rr2(X,Y)&(![Z0]:(![Z1]:((rtt(Y,Z0)&rtt(Y,Z1))=>Z0=Z1))))&(?[Z]:(rt2(Y,Z)&cd(Z))))))&(~(?[Y0]:(?[Y1]:((rr(X,Y0)&rr(X,Y1))&Y0!=Y1)))))&(?[Y]:((rr1(X,Y)&(![Z0]:(![Z1]:((rtt(Y,Z0)&rtt(Y,Z1))=>Z0=Z1))))&(?[Z]:(rt1(Y,Z)&cc(Z)))))))),input).
+fof(c53,axiom,(![X]:((~cUnsatisfiable(X)|((((?[Y]:((rr3(X,Y)&(?[Z]:(rt3(Y,Z)&ce(Z))))&(![Z0]:(![Z1]:((~rtt(Y,Z0)|~rtt(Y,Z1))|Z0=Z1)))))&(?[Y]:((rr2(X,Y)&(![Z0]:(![Z1]:((~rtt(Y,Z0)|~rtt(Y,Z1))|Z0=Z1))))&(?[Z]:(rt2(Y,Z)&cd(Z))))))&(![Y0]:(![Y1]:((~rr(X,Y0)|~rr(X,Y1))|Y0=Y1))))&(?[Y]:((rr1(X,Y)&(![Z0]:(![Z1]:((~rtt(Y,Z0)|~rtt(Y,Z1))|Z0=Z1))))&(?[Z]:(rt1(Y,Z)&cc(Z)))))))&(((((![Y]:((~rr3(X,Y)|(![Z]:(~rt3(Y,Z)|~ce(Z))))|(?[Z0]:(?[Z1]:((rtt(Y,Z0)&rtt(Y,Z1))&Z0!=Z1)))))|(![Y]:((~rr2(X,Y)|(?[Z0]:(?[Z1]:((rtt(Y,Z0)&rtt(Y,Z1))&Z0!=Z1))))|(![Z]:(~rt2(Y,Z)|~cd(Z))))))|(?[Y0]:(?[Y1]:((rr(X,Y0)&rr(X,Y1))&Y0!=Y1))))|(![Y]:((~rr1(X,Y)|(?[Z0]:(?[Z1]:((rtt(Y,Z0)&rtt(Y,Z1))&Z0!=Z1))))|(![Z]:(~rt1(Y,Z)|~cc(Z))))))|cUnsatisfiable(X)))),inference(fof_nnf,status(thm),[axiom_2])).
+fof(c54,axiom,((![X]:(~cUnsatisfiable(X)|((((?[Y]:((rr3(X,Y)&(?[Z]:(rt3(Y,Z)&ce(Z))))&(![Z0]:(![Z1]:((~rtt(Y,Z0)|~rtt(Y,Z1))|Z0=Z1)))))&(?[Y]:((rr2(X,Y)&(![Z0]:(![Z1]:((~rtt(Y,Z0)|~rtt(Y,Z1))|Z0=Z1))))&(?[Z]:(rt2(Y,Z)&cd(Z))))))&(![Y0]:(![Y1]:((~rr(X,Y0)|~rr(X,Y1))|Y0=Y1))))&(?[Y]:((rr1(X,Y)&(![Z0]:(![Z1]:((~rtt(Y,Z0)|~rtt(Y,Z1))|Z0=Z1))))&(?[Z]:(rt1(Y,Z)&cc(Z))))))))&(![X]:(((((![Y]:((~rr3(X,Y)|(![Z]:(~rt3(Y,Z)|~ce(Z))))|(?[Z0]:(?[Z1]:((rtt(Y,Z0)&rtt(Y,Z1))&Z0!=Z1)))))|(![Y]:((~rr2(X,Y)|(?[Z0]:(?[Z1]:((rtt(Y,Z0)&rtt(Y,Z1))&Z0!=Z1))))|(![Z]:(~rt2(Y,Z)|~cd(Z))))))|(?[Y0]:(?[Y1]:((rr(X,Y0)&rr(X,Y1))&Y0!=Y1))))|(![Y]:((~rr1(X,Y)|(?[Z0]:(?[Z1]:((rtt(Y,Z0)&rtt(Y,Z1))&Z0!=Z1))))|(![Z]:(~rt1(Y,Z)|~cc(Z))))))|cUnsatisfiable(X)))),inference(shift_quantors,status(thm),[c53])).
+fof(c55,axiom,((![X19]:(~cUnsatisfiable(X19)|((((?[X20]:((rr3(X19,X20)&(?[X21]:(rt3(X20,X21)&ce(X21))))&(![X22]:(![X23]:((~rtt(X20,X22)|~rtt(X20,X23))|X22=X23)))))&(?[X24]:((rr2(X19,X24)&(![X25]:(![X26]:((~rtt(X24,X25)|~rtt(X24,X26))|X25=X26))))&(?[X27]:(rt2(X24,X27)&cd(X27))))))&(![X28]:(![X29]:((~rr(X19,X28)|~rr(X19,X29))|X28=X29))))&(?[X30]:((rr1(X19,X30)&(![X31]:(![X32]:((~rtt(X30,X31)|~rtt(X30,X32))|X31=X32))))&(?[X33]:(rt1(X30,X33)&cc(X33))))))))&(![X34]:(((((![X35]:((~rr3(X34,X35)|(![X36]:(~rt3(X35,X36)|~ce(X36))))|(?[X37]:(?[X38]:((rtt(X35,X37)&rtt(X35,X38))&X37!=X38)))))|(![X39]:((~rr2(X34,X39)|(?[X40]:(?[X41]:((rtt(X39,X40)&rtt(X39,X41))&X40!=X41))))|(![X42]:(~rt2(X39,X42)|~cd(X42))))))|(?[X43]:(?[X44]:((rr(X34,X43)&rr(X34,X44))&X43!=X44))))|(![X45]:((~rr1(X34,X45)|(?[X46]:(?[X47]:((rtt(X45,X46)&rtt(X45,X47))&X46!=X47))))|(![X48]:(~rt1(X45,X48)|~cc(X48))))))|cUnsatisfiable(X34)))),inference(variable_rename,status(thm),[c54])).
+fof(c57,axiom,(![X19]:(![X22]:(![X23]:(![X25]:(![X26]:(![X28]:(![X29]:(![X31]:(![X32]:(![X34]:(![X35]:(![X36]:(![X39]:(![X42]:(![X45]:(![X48]:((~cUnsatisfiable(X19)|(((((rr3(X19,skolem0001(X19))&(rt3(skolem0001(X19),skolem0002(X19))&ce(skolem0002(X19))))&((~rtt(skolem0001(X19),X22)|~rtt(skolem0001(X19),X23))|X22=X23))&((rr2(X19,skolem0003(X19))&((~rtt(skolem0003(X19),X25)|~rtt(skolem0003(X19),X26))|X25=X26))&(rt2(skolem0003(X19),skolem0004(X19))&cd(skolem0004(X19)))))&((~rr(X19,X28)|~rr(X19,X29))|X28=X29))&((rr1(X19,skolem0005(X19))&((~rtt(skolem0005(X19),X31)|~rtt(skolem0005(X19),X32))|X31=X32))&(rt1(skolem0005(X19),skolem0006(X19))&cc(skolem0006(X19))))))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|((rtt(X35,skolem0007(X34,X35))&rtt(X35,skolem0008(X34,X35)))&skolem0007(X34,X35)!=skolem0008(X34,X35)))|((~rr2(X34,X39)|((rtt(X39,skolem0009(X34,X39))&rtt(X39,skolem0010(X34,X39)))&skolem0009(X34,X39)!=skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|((rr(X34,skolem0011(X34))&rr(X34,skolem0012(X34)))&skolem0011(X34)!=skolem0012(X34)))|((~rr1(X34,X45)|((rtt(X45,skolem0013(X34,X45))&rtt(X45,skolem0014(X34,X45)))&skolem0013(X34,X45)!=skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))))))))))))))))),inference(shift_quantors,status(thm),[fof(c56,axiom,((![X19]:(~cUnsatisfiable(X19)|(((((rr3(X19,skolem0001(X19))&(rt3(skolem0001(X19),skolem0002(X19))&ce(skolem0002(X19))))&(![X22]:(![X23]:((~rtt(skolem0001(X19),X22)|~rtt(skolem0001(X19),X23))|X22=X23))))&((rr2(X19,skolem0003(X19))&(![X25]:(![X26]:((~rtt(skolem0003(X19),X25)|~rtt(skolem0003(X19),X26))|X25=X26))))&(rt2(skolem0003(X19),skolem0004(X19))&cd(skolem0004(X19)))))&(![X28]:(![X29]:((~rr(X19,X28)|~rr(X19,X29))|X28=X29))))&((rr1(X19,skolem0005(X19))&(![X31]:(![X32]:((~rtt(skolem0005(X19),X31)|~rtt(skolem0005(X19),X32))|X31=X32))))&(rt1(skolem0005(X19),skolem0006(X19))&cc(skolem0006(X19)))))))&(![X34]:(((((![X35]:((~rr3(X34,X35)|(![X36]:(~rt3(X35,X36)|~ce(X36))))|((rtt(X35,skolem0007(X34,X35))&rtt(X35,skolem0008(X34,X35)))&skolem0007(X34,X35)!=skolem0008(X34,X35))))|(![X39]:((~rr2(X34,X39)|((rtt(X39,skolem0009(X34,X39))&rtt(X39,skolem0010(X34,X39)))&skolem0009(X34,X39)!=skolem0010(X34,X39)))|(![X42]:(~rt2(X39,X42)|~cd(X42))))))|((rr(X34,skolem0011(X34))&rr(X34,skolem0012(X34)))&skolem0011(X34)!=skolem0012(X34)))|(![X45]:((~rr1(X34,X45)|((rtt(X45,skolem0013(X34,X45))&rtt(X45,skolem0014(X34,X45)))&skolem0013(X34,X45)!=skolem0014(X34,X45)))|(![X48]:(~rt1(X45,X48)|~cc(X48))))))|cUnsatisfiable(X34)))),inference(skolemize,status(esa),[c55])).])).
+fof(c58,axiom,(![X19]:(![X22]:(![X23]:(![X25]:(![X26]:(![X28]:(![X29]:(![X31]:(![X32]:(![X34]:(![X35]:(![X36]:(![X39]:(![X42]:(![X45]:(![X48]:(((((((~cUnsatisfiable(X19)|rr3(X19,skolem0001(X19)))&((~cUnsatisfiable(X19)|rt3(skolem0001(X19),skolem0002(X19)))&(~cUnsatisfiable(X19)|ce(skolem0002(X19)))))&(~cUnsatisfiable(X19)|((~rtt(skolem0001(X19),X22)|~rtt(skolem0001(X19),X23))|X22=X23)))&(((~cUnsatisfiable(X19)|rr2(X19,skolem0003(X19)))&(~cUnsatisfiable(X19)|((~rtt(skolem0003(X19),X25)|~rtt(skolem0003(X19),X26))|X25=X26)))&((~cUnsatisfiable(X19)|rt2(skolem0003(X19),skolem0004(X19)))&(~cUnsatisfiable(X19)|cd(skolem0004(X19))))))&(~cUnsatisfiable(X19)|((~rr(X19,X28)|~rr(X19,X29))|X28=X29)))&(((~cUnsatisfiable(X19)|rr1(X19,skolem0005(X19)))&(~cUnsatisfiable(X19)|((~rtt(skolem0005(X19),X31)|~rtt(skolem0005(X19),X32))|X31=X32)))&((~cUnsatisfiable(X19)|rt1(skolem0005(X19),skolem0006(X19)))&(~cUnsatisfiable(X19)|cc(skolem0006(X19))))))&((((((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))))&((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0007(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))))&((((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))))&((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|rtt(X35,skolem0008(X34,X35)))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))))&((((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0009(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|rtt(X39,skolem0010(X34,X39)))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))))&((((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0011(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|rr(X34,skolem0012(X34)))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))&((((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0013(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|rtt(X45,skolem0014(X34,X45)))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34)))&((((((~rr3(X34,X35)|(~rt3(X35,X36)|~ce(X36)))|skolem0007(X34,X35)!=skolem0008(X34,X35))|((~rr2(X34,X39)|skolem0009(X34,X39)!=skolem0010(X34,X39))|(~rt2(X39,X42)|~cd(X42))))|skolem0011(X34)!=skolem0012(X34))|((~rr1(X34,X45)|skolem0013(X34,X45)!=skolem0014(X34,X45))|(~rt1(X45,X48)|~cc(X48))))|cUnsatisfiable(X34))))))))))))))))))))))),inference(distribute,status(thm),[c57])).
+cnf(c61,axiom,~cUnsatisfiable(X154)|ce(skolem0002(X154)),inference(split_conjunct,status(thm),[c58])).
+cnf(c246,plain,ce(skolem0002(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c61, c44])).
+fof(axiom_6,axiom,(![X]:(~(ce(X)&cc(X)))),input).
+fof(c38,axiom,(![X]:(~ce(X)|~cc(X))),inference(fof_nnf,status(thm),[axiom_6])).
+fof(c39,axiom,(![X15]:(~ce(X15)|~cc(X15))),inference(variable_rename,status(thm),[c38])).
+cnf(c40,axiom,~ce(X126)|~cc(X126),inference(split_conjunct,status(thm),[c39])).
+cnf(c71,axiom,~cUnsatisfiable(X159)|cc(skolem0006(X159)),inference(split_conjunct,status(thm),[c58])).
+cnf(c252,plain,cc(skolem0006(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c71, c44])).
+cnf(c2,plain,X156!=X157|~cc(X156)|cc(X157),eq_axiom).
+fof(axiom_10,axiom,(![X]:(![Y]:(rt1(X,Y)=>rtt(X,Y)))),input).
+fof(c26,axiom,(![X]:(![Y]:(~rt1(X,Y)|rtt(X,Y)))),inference(fof_nnf,status(thm),[axiom_10])).
+fof(c27,axiom,(![X8]:(![X9]:(~rt1(X8,X9)|rtt(X8,X9)))),inference(variable_rename,status(thm),[c26])).
+cnf(c28,axiom,~rt1(X145,X146)|rtt(X145,X146),inference(split_conjunct,status(thm),[c27])).
+cnf(c70,axiom,~cUnsatisfiable(X218)|rt1(skolem0005(X218),skolem0006(X218)),inference(split_conjunct,status(thm),[c58])).
+cnf(c277,plain,rt1(skolem0005(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c70, c44])).
+cnf(c278,plain,rtt(skolem0005(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c277, c28])).
+fof(rtt_substitution_1,axiom,(![A]:(![B]:(![C]:((A=B&rtt(A,C))=>rtt(B,C))))),input).
+fof(c175,axiom,(![A]:(![B]:(![C]:((A!=B|~rtt(A,C))|rtt(B,C))))),inference(fof_nnf,status(thm),[rtt_substitution_1])).
+fof(c176,axiom,(![X60]:(![X61]:(![X62]:((X60!=X61|~rtt(X60,X62))|rtt(X61,X62))))),inference(variable_rename,status(thm),[c175])).
+cnf(c177,axiom,X222!=X224|~rtt(X222,X223)|rtt(X224,X223),inference(split_conjunct,status(thm),[c176])).
+cnf(c284,plain,skolem0005(i2003_11_14_17_20_25524)!=X333|rtt(X333,skolem0006(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c177, c278])).
+cnf(symmetry,axiom,X124!=X123|X123=X124,eq_axiom).
+fof(axiom_12,axiom,(![X]:(![Y]:(rr3(X,Y)=>rr(X,Y)))),input).
+fof(c20,axiom,(![X]:(![Y]:(~rr3(X,Y)|rr(X,Y)))),inference(fof_nnf,status(thm),[axiom_12])).
+fof(c21,axiom,(![X4]:(![X5]:(~rr3(X4,X5)|rr(X4,X5)))),inference(variable_rename,status(thm),[c20])).
+cnf(c22,axiom,~rr3(X139,X138)|rr(X139,X138),inference(split_conjunct,status(thm),[c21])).
+cnf(c59,axiom,~cUnsatisfiable(X169)|rr3(X169,skolem0001(X169)),inference(split_conjunct,status(thm),[c58])).
+cnf(c259,plain,rr3(i2003_11_14_17_20_25524,skolem0001(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c59, c44])).
+cnf(c260,plain,rr(i2003_11_14_17_20_25524,skolem0001(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c259, c22])).
+fof(axiom_9,axiom,(![X]:(![Y]:(rr2(X,Y)=>rr(X,Y)))),input).
+fof(c29,axiom,(![X]:(![Y]:(~rr2(X,Y)|rr(X,Y)))),inference(fof_nnf,status(thm),[axiom_9])).
+fof(c30,axiom,(![X10]:(![X11]:(~rr2(X10,X11)|rr(X10,X11)))),inference(variable_rename,status(thm),[c29])).
+cnf(c31,axiom,~rr2(X148,X147)|rr(X148,X147),inference(split_conjunct,status(thm),[c30])).
+cnf(c63,axiom,~cUnsatisfiable(X172)|rr2(X172,skolem0003(X172)),inference(split_conjunct,status(thm),[c58])).
+cnf(c261,plain,rr2(i2003_11_14_17_20_25524,skolem0003(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c63, c44])).
+cnf(c262,plain,rr(i2003_11_14_17_20_25524,skolem0003(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c261, c31])).
+cnf(c67,axiom,~cUnsatisfiable(X298)|~rr(X298,X297)|~rr(X298,X296)|X297=X296,inference(split_conjunct,status(thm),[c58])).
+cnf(c318,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|~rr(i2003_11_14_17_20_25524,X393)|X393=skolem0003(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c67, c262])).
+cnf(c351,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|skolem0001(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c318, c260])).
+cnf(c435,plain,skolem0001(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c351, c44])).
+cnf(transitivity,axiom,X131!=X130|X130!=X132|X131=X132,eq_axiom).
+fof(axiom_8,axiom,(![X]:(![Y]:(rr1(X,Y)=>rr(X,Y)))),input).
+fof(c32,axiom,(![X]:(![Y]:(~rr1(X,Y)|rr(X,Y)))),inference(fof_nnf,status(thm),[axiom_8])).
+fof(c33,axiom,(![X12]:(![X13]:(~rr1(X12,X13)|rr(X12,X13)))),inference(variable_rename,status(thm),[c32])).
+cnf(c34,axiom,~rr1(X150,X149)|rr(X150,X149),inference(split_conjunct,status(thm),[c33])).
+cnf(c68,axiom,~cUnsatisfiable(X173)|rr1(X173,skolem0005(X173)),inference(split_conjunct,status(thm),[c58])).
+cnf(c263,plain,rr1(i2003_11_14_17_20_25524,skolem0005(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c68, c44])).
+cnf(c264,plain,rr(i2003_11_14_17_20_25524,skolem0005(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c263, c34])).
+cnf(c350,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|skolem0005(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c318, c264])).
+cnf(c352,plain,skolem0005(i2003_11_14_17_20_25524)=skolem0003(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c350, c44])).
+cnf(c353,plain,skolem0003(i2003_11_14_17_20_25524)=skolem0005(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c352, symmetry])).
+cnf(c383,plain,X611!=skolem0003(i2003_11_14_17_20_25524)|X611=skolem0005(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c353, transitivity])).
+cnf(c550,plain,skolem0001(i2003_11_14_17_20_25524)=skolem0005(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c383, c435])).
+cnf(c566,plain,skolem0005(i2003_11_14_17_20_25524)=skolem0001(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c550, symmetry])).
+cnf(c584,plain,rtt(skolem0001(i2003_11_14_17_20_25524),skolem0006(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c566, c284])).
+fof(axiom_13,axiom,(![X]:(![Y]:(rt3(X,Y)=>rtt(X,Y)))),input).
+fof(c17,axiom,(![X]:(![Y]:(~rt3(X,Y)|rtt(X,Y)))),inference(fof_nnf,status(thm),[axiom_13])).
+fof(c18,axiom,(![X2]:(![X3]:(~rt3(X2,X3)|rtt(X2,X3)))),inference(variable_rename,status(thm),[c17])).
+cnf(c19,axiom,~rt3(X136,X137)|rtt(X136,X137),inference(split_conjunct,status(thm),[c18])).
+cnf(c60,axiom,~cUnsatisfiable(X208)|rt3(skolem0001(X208),skolem0002(X208)),inference(split_conjunct,status(thm),[c58])).
+cnf(c271,plain,rt3(skolem0001(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c60, c44])).
+cnf(c273,plain,rtt(skolem0001(i2003_11_14_17_20_25524),skolem0002(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c271, c19])).
+cnf(c62,axiom,~cUnsatisfiable(X287)|~rtt(skolem0001(X287),X285)|~rtt(skolem0001(X287),X286)|X285=X286,inference(split_conjunct,status(thm),[c58])).
+cnf(c311,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|~rtt(skolem0001(i2003_11_14_17_20_25524),X946)|X946=skolem0002(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c62, c273])).
+cnf(c722,plain,~cUnsatisfiable(i2003_11_14_17_20_25524)|skolem0006(i2003_11_14_17_20_25524)=skolem0002(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c311, c584])).
+cnf(c725,plain,skolem0006(i2003_11_14_17_20_25524)=skolem0002(i2003_11_14_17_20_25524),inference(resolution,status(thm),[c722, c44])).
+cnf(c735,plain,~cc(skolem0006(i2003_11_14_17_20_25524))|cc(skolem0002(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c725, c2])).
+cnf(c835,plain,cc(skolem0002(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c735, c252])).
+cnf(c837,plain,~ce(skolem0002(i2003_11_14_17_20_25524)),inference(resolution,status(thm),[c835, c40])).
+cnf(c838,plain,$false,inference(resolution,status(thm),[c837, c246])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 156
+# Processed clauses  : 339
+# Factors computed   : 0
+# Resolvents computed: 598
+# Tautologies deleted: 9
+# Forward subsumed   : 247
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 0.758 s
+# System time        : 0.259 s
+# Total time         : 1.017 s

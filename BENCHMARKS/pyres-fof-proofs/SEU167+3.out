@@ -1,0 +1,59 @@
+# cnf(c19,axiom,subset(X16,X16)).
+# cnf(c23,axiom,~empty(skolem0005)).
+# cnf(c26,axiom,empty(skolem0006)).
+# cnf(c7,negated_conjecture,subset(skolem0001,skolem0002)).
+# cnf(c8,negated_conjecture,subset(skolem0003,skolem0004)).
+# cnf(c2,axiom,~subset(X18,X17)|~subset(X17,X19)|subset(X18,X19)).
+# cnf(c27,plain,~subset(X22,skolem0001)|subset(X22,skolem0002)).
+# cnf(c28,plain,~subset(X23,skolem0003)|subset(X23,skolem0004)).
+# cnf(c9,negated_conjecture,~subset(cartesian_product2(skolem0001,skolem0003),cartesian_product2(skolem0002,skolem0004))).
+# cnf(c15,axiom,~subset(X26,X24)|subset(cartesian_product2(X26,X25),cartesian_product2(X24,X25))).
+# cnf(c32,plain,subset(cartesian_product2(skolem0001,X29),cartesian_product2(skolem0002,X29))).
+# cnf(c33,plain,subset(cartesian_product2(skolem0003,X30),cartesian_product2(skolem0004,X30))).
+# cnf(c16,axiom,~subset(X33,X31)|subset(cartesian_product2(X32,X33),cartesian_product2(X32,X31))).
+# cnf(c35,plain,~subset(X34,cartesian_product2(skolem0001,X35))|subset(X34,cartesian_product2(skolem0002,X35))).
+# cnf(c40,plain,subset(cartesian_product2(X38,skolem0001),cartesian_product2(X38,skolem0002))).
+# cnf(c42,plain,subset(cartesian_product2(X39,skolem0003),cartesian_product2(X39,skolem0004))).
+# cnf(c47,plain,subset(cartesian_product2(skolem0001,skolem0001),cartesian_product2(skolem0002,skolem0002))).
+# cnf(c36,plain,subset(cartesian_product2(cartesian_product2(skolem0001,X41),X42),cartesian_product2(cartesian_product2(skolem0002,X41),X42))).
+# cnf(c51,plain,subset(cartesian_product2(skolem0001,skolem0003),cartesian_product2(skolem0002,skolem0004))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t119_zfmisc_1,conjecture,(![A]:(![B]:(![C]:(![D]:((subset(A,B)&subset(C,D))=>subset(cartesian_product2(A,C),cartesian_product2(B,D))))))),input).
+fof(c3,negated_conjecture,(~(![A]:(![B]:(![C]:(![D]:((subset(A,B)&subset(C,D))=>subset(cartesian_product2(A,C),cartesian_product2(B,D)))))))),inference(assume_negation,status(cth),[t119_zfmisc_1])).
+fof(c4,negated_conjecture,(?[A]:(?[B]:(?[C]:(?[D]:((subset(A,B)&subset(C,D))&~subset(cartesian_product2(A,C),cartesian_product2(B,D))))))),inference(fof_nnf,status(thm),[c3])).
+fof(c5,negated_conjecture,(?[X5]:(?[X6]:(?[X7]:(?[X8]:((subset(X5,X6)&subset(X7,X8))&~subset(cartesian_product2(X5,X7),cartesian_product2(X6,X8))))))),inference(variable_rename,status(thm),[c4])).
+fof(c6,negated_conjecture,((subset(skolem0001,skolem0002)&subset(skolem0003,skolem0004))&~subset(cartesian_product2(skolem0001,skolem0003),cartesian_product2(skolem0002,skolem0004))),inference(skolemize,status(esa),[c5])).
+cnf(c9,negated_conjecture,~subset(cartesian_product2(skolem0001,skolem0003),cartesian_product2(skolem0002,skolem0004)),inference(split_conjunct,status(thm),[c6])).
+fof(t1_xboole_1,axiom,(![A]:(![B]:(![C]:((subset(A,B)&subset(B,C))=>subset(A,C))))),input).
+fof(c0,axiom,(![A]:(![B]:(![C]:((~subset(A,B)|~subset(B,C))|subset(A,C))))),inference(fof_nnf,status(thm),[t1_xboole_1])).
+fof(c1,axiom,(![X2]:(![X3]:(![X4]:((~subset(X2,X3)|~subset(X3,X4))|subset(X2,X4))))),inference(variable_rename,status(thm),[c0])).
+cnf(c2,axiom,~subset(X18,X17)|~subset(X17,X19)|subset(X18,X19),inference(split_conjunct,status(thm),[c1])).
+cnf(c7,negated_conjecture,subset(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c6])).
+fof(t118_zfmisc_1,axiom,(![A]:(![B]:(![C]:(subset(A,B)=>(subset(cartesian_product2(A,C),cartesian_product2(B,C))&subset(cartesian_product2(C,A),cartesian_product2(C,B))))))),input).
+fof(c10,axiom,(![A]:(![B]:(![C]:(~subset(A,B)|(subset(cartesian_product2(A,C),cartesian_product2(B,C))&subset(cartesian_product2(C,A),cartesian_product2(C,B))))))),inference(fof_nnf,status(thm),[t118_zfmisc_1])).
+fof(c11,axiom,(![A]:(![B]:(~subset(A,B)|((![C]:subset(cartesian_product2(A,C),cartesian_product2(B,C)))&(![C]:subset(cartesian_product2(C,A),cartesian_product2(C,B))))))),inference(shift_quantors,status(thm),[c10])).
+fof(c13,axiom,(![X9]:(![X10]:(![X11]:(![X12]:(~subset(X9,X10)|(subset(cartesian_product2(X9,X11),cartesian_product2(X10,X11))&subset(cartesian_product2(X12,X9),cartesian_product2(X12,X10)))))))),inference(shift_quantors,status(thm),[fof(c12,axiom,(![X9]:(![X10]:(~subset(X9,X10)|((![X11]:subset(cartesian_product2(X9,X11),cartesian_product2(X10,X11)))&(![X12]:subset(cartesian_product2(X12,X9),cartesian_product2(X12,X10))))))),inference(variable_rename,status(thm),[c11])).])).
+fof(c14,axiom,(![X9]:(![X10]:(![X11]:(![X12]:((~subset(X9,X10)|subset(cartesian_product2(X9,X11),cartesian_product2(X10,X11)))&(~subset(X9,X10)|subset(cartesian_product2(X12,X9),cartesian_product2(X12,X10)))))))),inference(distribute,status(thm),[c13])).
+cnf(c15,axiom,~subset(X26,X24)|subset(cartesian_product2(X26,X25),cartesian_product2(X24,X25)),inference(split_conjunct,status(thm),[c14])).
+cnf(c32,plain,subset(cartesian_product2(skolem0001,X29),cartesian_product2(skolem0002,X29)),inference(resolution,status(thm),[c15, c7])).
+cnf(c35,plain,~subset(X34,cartesian_product2(skolem0001,X35))|subset(X34,cartesian_product2(skolem0002,X35)),inference(resolution,status(thm),[c32, c2])).
+cnf(c8,negated_conjecture,subset(skolem0003,skolem0004),inference(split_conjunct,status(thm),[c6])).
+cnf(c16,axiom,~subset(X33,X31)|subset(cartesian_product2(X32,X33),cartesian_product2(X32,X31)),inference(split_conjunct,status(thm),[c14])).
+cnf(c42,plain,subset(cartesian_product2(X39,skolem0003),cartesian_product2(X39,skolem0004)),inference(resolution,status(thm),[c16, c8])).
+cnf(c51,plain,subset(cartesian_product2(skolem0001,skolem0003),cartesian_product2(skolem0002,skolem0004)),inference(resolution,status(thm),[c42, c35])).
+cnf(c60,plain,$false,inference(resolution,status(thm),[c51, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 9
+# Processed clauses  : 19
+# Factors computed   : 0
+# Resolvents computed: 36
+# Tautologies deleted: 1
+# Forward subsumed   : 5
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.287 s
+# System time        : 0.149 s
+# Total time         : 0.436 s

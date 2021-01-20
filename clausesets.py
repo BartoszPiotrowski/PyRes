@@ -200,6 +200,15 @@ class HeuristicClauseSet(ClauseSet):
             self.eval_functions.nextEval(proof_state_vector))
 
 
+    def extractBest2(self):
+        """
+        Extract and return the next "best" clause according to the
+        evaluation scheme.
+        """
+        eval_fun = self.eval_functions.nextEval()
+        return self.extractBestByEval(eval_fun), eval_fun
+
+
 
 class IndexedClauseSet(ClauseSet):
     """

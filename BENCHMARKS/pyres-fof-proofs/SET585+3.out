@@ -1,0 +1,63 @@
+# cnf(reflexivity,axiom,X42=X42).
+# cnf(c20,axiom,subset(X43,X43)).
+# cnf(c51,axiom,subset(intersection(X45,X44),X45)).
+# cnf(c53,axiom,subset(X47,union(X47,X46))).
+# cnf(symmetry,axiom,X48!=X49|X49=X48).
+# cnf(transitivity,axiom,X50!=X51|X51!=X52|X50=X52).
+# cnf(c22,axiom,intersection(X56,X57)=intersection(X57,X56)).
+# cnf(c24,axiom,union(X58,X59)=union(X59,X58)).
+# cnf(c0,plain,X64!=X62|X63!=X65|union(X64,X63)=union(X62,X65)).
+# cnf(c32,axiom,member(skolem0005(X68,X69),X68)|subset(X68,X69)).
+# cnf(c33,axiom,~member(skolem0005(X70,X71),X71)|subset(X70,X71)).
+# cnf(c39,axiom,~member(X73,intersection(X74,X75))|member(X73,X74)).
+# cnf(c1,plain,X78!=X76|X77!=X79|intersection(X78,X77)=intersection(X76,X79)).
+# cnf(c40,axiom,~member(X80,intersection(X81,X82))|member(X80,X82)).
+# cnf(c48,axiom,~member(X84,X85)|member(X84,union(X85,X83))).
+# cnf(c49,axiom,~member(X87,X86)|member(X87,union(X88,X86))).
+# cnf(c15,axiom,X89!=X90|~member(X91,X89)|member(X91,X90)).
+# cnf(c16,axiom,X92!=X94|~member(X93,X94)|member(X93,X92)).
+# cnf(c2,plain,X97!=X95|X96!=X98|~subset(X97,X96)|subset(X95,X98)).
+# cnf(c31,axiom,~subset(X100,X99)|~member(X101,X100)|member(X101,X99)).
+# cnf(c56,axiom,~subset(X104,X103)|~subset(X103,X102)|subset(X104,X102)).
+# cnf(c81,plain,~subset(X107,intersection(X109,X108))|subset(X107,X109)).
+# cnf(c3,plain,X114!=X112|X113!=X115|~member(X114,X113)|member(X112,X115)).
+# cnf(c85,plain,subset(intersection(intersection(X116,X118),X117),X116)).
+# cnf(c82,plain,~subset(X119,X120)|subset(X119,union(X120,X121))).
+# cnf(c94,plain,subset(intersection(X124,X125),union(X124,X126))).
+# cnf(c96,plain,subset(X128,union(union(X128,X129),X127))).
+# cnf(c8,negated_conjecture,~subset(intersection(skolem0001,skolem0002),union(skolem0001,skolem0003))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(intersection_is_subset,axiom,(![B]:(![C]:subset(intersection(B,C),B))),input).
+fof(c50,axiom,(![X35]:(![X36]:subset(intersection(X35,X36),X35))),inference(variable_rename,status(thm),[intersection_is_subset])).
+cnf(c51,axiom,subset(intersection(X45,X44),X45),inference(split_conjunct,status(thm),[c50])).
+fof(subset_of_union,axiom,(![B]:(![C]:subset(B,union(B,C)))),input).
+fof(c52,axiom,(![X37]:(![X38]:subset(X37,union(X37,X38)))),inference(variable_rename,status(thm),[subset_of_union])).
+cnf(c53,axiom,subset(X47,union(X47,X46)),inference(split_conjunct,status(thm),[c52])).
+fof(transitivity_of_subset,axiom,(![B]:(![C]:(![D]:((subset(B,C)&subset(C,D))=>subset(B,D))))),input).
+fof(c54,axiom,(![B]:(![C]:(![D]:((~subset(B,C)|~subset(C,D))|subset(B,D))))),inference(fof_nnf,status(thm),[transitivity_of_subset])).
+fof(c55,axiom,(![X39]:(![X40]:(![X41]:((~subset(X39,X40)|~subset(X40,X41))|subset(X39,X41))))),inference(variable_rename,status(thm),[c54])).
+cnf(c56,axiom,~subset(X104,X103)|~subset(X103,X102)|subset(X104,X102),inference(split_conjunct,status(thm),[c55])).
+cnf(c82,plain,~subset(X119,X120)|subset(X119,union(X120,X121)),inference(resolution,status(thm),[c56, c53])).
+cnf(c94,plain,subset(intersection(X124,X125),union(X124,X126)),inference(resolution,status(thm),[c82, c51])).
+fof(prove_intersection_subset_of_union,conjecture,(![B]:(![C]:(![D]:subset(intersection(B,C),union(B,D))))),input).
+fof(c4,negated_conjecture,(~(![B]:(![C]:(![D]:subset(intersection(B,C),union(B,D)))))),inference(assume_negation,status(cth),[prove_intersection_subset_of_union])).
+fof(c5,negated_conjecture,(?[B]:(?[C]:(?[D]:~subset(intersection(B,C),union(B,D))))),inference(fof_nnf,status(thm),[c4])).
+fof(c6,negated_conjecture,(?[X2]:(?[X3]:(?[X4]:~subset(intersection(X2,X3),union(X2,X4))))),inference(variable_rename,status(thm),[c5])).
+fof(c7,negated_conjecture,~subset(intersection(skolem0001,skolem0002),union(skolem0001,skolem0003)),inference(skolemize,status(esa),[c6])).
+cnf(c8,negated_conjecture,~subset(intersection(skolem0001,skolem0002),union(skolem0001,skolem0003)),inference(split_conjunct,status(thm),[c7])).
+cnf(c104,plain,$false,inference(resolution,status(thm),[c8, c94])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 27
+# Processed clauses  : 28
+# Factors computed   : 0
+# Resolvents computed: 48
+# Tautologies deleted: 2
+# Forward subsumed   : 6
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.341 s
+# System time        : 0.231 s
+# Total time         : 0.571 s

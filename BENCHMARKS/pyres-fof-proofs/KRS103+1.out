@@ -1,0 +1,479 @@
+# cnf(c174,axiom,cowlThing(X60)).
+# cnf(c175,axiom,~cowlNothing(X61)).
+# cnf(c27,axiom,cTest(i2003_11_14_17_20_46476)).
+# cnf(c2,axiom,~cplus6(X62)|~cminus6(X62)).
+# cnf(c5,axiom,~cminus1(X63)|~cplus1(X63)).
+# cnf(c8,axiom,~cminus2(X64)|~cplus2(X64)).
+# cnf(c11,axiom,~cplus5(X65)|~cminus5(X65)).
+# cnf(c14,axiom,~cplus3(X66)|~cminus3(X66)).
+# cnf(c17,axiom,~cminus7(X67)|~cplus7(X67)).
+# cnf(c20,axiom,~cplus4(X68)|~cminus4(X68)).
+# cnf(c23,axiom,~cminus9(X69)|~cplus9(X69)).
+# cnf(c26,axiom,~cminus8(X70)|~cplus8(X70)).
+# cnf(c168,axiom,~xsd_string(X71)|~xsd_integer(X71)).
+# cnf(c169,axiom,xsd_integer(X72)|xsd_string(X72)).
+# cnf(c30,axiom,~cTest(X74)|cminus5(X74)|cplus7(X74)|cplus8(X74)).
+# cnf(c33,axiom,~cTest(X75)|cminus4(X75)|cplus2(X75)|cplus8(X75)).
+# cnf(c36,axiom,~cTest(X76)|cminus4(X76)|cplus1(X76)|cminus6(X76)).
+# cnf(c39,axiom,~cTest(X77)|cminus9(X77)|cplus1(X77)|cminus6(X77)).
+# cnf(c42,axiom,~cTest(X78)|cminus4(X78)|cminus3(X78)|cplus6(X78)).
+# cnf(c45,axiom,~cTest(X79)|cplus4(X79)|cplus1(X79)|cplus7(X79)).
+# cnf(c48,axiom,~cTest(X80)|cminus9(X80)|cplus3(X80)|cminus5(X80)).
+# cnf(c51,axiom,~cTest(X81)|cminus2(X81)|cplus3(X81)|cminus8(X81)).
+# cnf(c54,axiom,~cTest(X82)|cplus3(X82)|cplus4(X82)|cplus6(X82)).
+# cnf(c57,axiom,~cTest(X83)|cminus2(X83)|cminus3(X83)|cplus1(X83)).
+# cnf(c60,axiom,~cTest(X84)|cminus1(X84)|cplus4(X84)|cplus2(X84)).
+# cnf(c63,axiom,~cTest(X85)|cminus9(X85)|cminus2(X85)|cplus3(X85)).
+# cnf(c66,axiom,~cTest(X86)|cminus4(X86)|cplus9(X86)|cplus7(X86)).
+# cnf(c69,axiom,~cTest(X87)|cminus9(X87)|cminus2(X87)|cplus7(X87)).
+# cnf(c72,axiom,~cTest(X88)|cplus3(X88)|cminus8(X88)|cplus9(X88)).
+# cnf(c75,axiom,~cTest(X89)|cminus4(X89)|cminus8(X89)|cplus9(X89)).
+# cnf(c78,axiom,~cTest(X90)|cminus4(X90)|cplus1(X90)|cplus9(X90)).
+# cnf(c81,axiom,~cTest(X91)|cminus4(X91)|cminus3(X91)|cminus7(X91)).
+# cnf(c84,axiom,~cTest(X92)|cminus9(X92)|cplus3(X92)|cplus4(X92)).
+# cnf(c87,axiom,~cTest(X93)|cplus4(X93)|cminus5(X93)|cplus6(X93)).
+# cnf(c90,axiom,~cTest(X94)|cplus2(X94)|cminus5(X94)|cminus7(X94)).
+# cnf(c93,axiom,~cTest(X95)|cplus3(X95)|cplus4(X95)|cplus9(X95)).
+# cnf(c96,axiom,~cTest(X96)|cminus9(X96)|cminus2(X96)|cminus5(X96)).
+# cnf(c99,axiom,~cTest(X97)|cplus5(X97)|cminus7(X97)|cplus9(X97)).
+# cnf(c102,axiom,~cTest(X98)|cminus2(X98)|cplus6(X98)|cminus7(X98)).
+# cnf(c105,axiom,~cTest(X99)|cminus2(X99)|cplus4(X99)|cminus6(X99)).
+# cnf(c108,axiom,~cTest(X100)|cminus3(X100)|cplus2(X100)|cplus8(X100)).
+# cnf(c111,axiom,~cTest(X101)|cplus2(X101)|cplus1(X101)|cminus6(X101)).
+# cnf(c114,axiom,~cTest(X102)|cminus2(X102)|cplus6(X102)|cplus9(X102)).
+# cnf(c117,axiom,~cTest(X103)|cplus3(X103)|cplus4(X103)|cplus1(X103)).
+# cnf(c120,axiom,~cTest(X104)|cplus6(X104)|cminus8(X104)|cminus7(X104)).
+# cnf(c123,axiom,~cTest(X105)|cminus3(X105)|cplus5(X105)|cminus8(X105)).
+# cnf(c126,axiom,~cTest(X106)|cminus4(X106)|cplus2(X106)|cplus1(X106)).
+# cnf(c129,axiom,~cTest(X107)|cplus2(X107)|cplus5(X107)|cplus9(X107)).
+# cnf(c132,axiom,~cTest(X108)|cminus1(X108)|cminus4(X108)|cplus6(X108)).
+# cnf(c135,axiom,~cTest(X109)|cplus4(X109)|cplus6(X109)|cminus8(X109)).
+# cnf(c138,axiom,~cTest(X110)|cplus3(X110)|cminus4(X110)|cplus6(X110)).
+# cnf(c141,axiom,~cTest(X111)|cminus9(X111)|cminus4(X111)|cminus8(X111)).
+# cnf(c144,axiom,~cTest(X112)|cminus7(X112)|cplus9(X112)|cminus6(X112)).
+# cnf(c147,axiom,~cTest(X113)|cminus4(X113)|cplus5(X113)|cplus9(X113)).
+# cnf(c150,axiom,~cTest(X114)|cplus3(X114)|cminus7(X114)|cplus8(X114)).
+# cnf(c153,axiom,~cTest(X115)|cminus4(X115)|cplus6(X115)|cplus8(X115)).
+# cnf(c156,axiom,~cTest(X116)|cminus3(X116)|cplus7(X116)|cplus8(X116)).
+# cnf(c159,axiom,~cTest(X117)|cminus3(X117)|cminus5(X117)|cminus8(X117)).
+# cnf(c162,axiom,~cTest(X118)|cplus1(X118)|cplus9(X118)|cminus6(X118)).
+# cnf(c177,plain,cminus5(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c178,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c179,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c180,plain,cminus9(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c181,plain,cminus4(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c182,plain,cplus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c183,plain,cminus9(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)).
+# cnf(c184,plain,cminus2(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c185,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c186,plain,cminus2(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c187,plain,cminus1(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)).
+# cnf(c188,plain,cminus9(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)).
+# cnf(c189,plain,cminus4(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c190,plain,cminus9(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c191,plain,cplus3(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c192,plain,cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c193,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c194,plain,cminus4(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)).
+# cnf(c195,plain,cminus9(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)).
+# cnf(c196,plain,cplus4(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c197,plain,cplus2(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)).
+# cnf(c198,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c199,plain,cminus9(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)).
+# cnf(c200,plain,cplus5(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c201,plain,cminus2(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)).
+# cnf(c202,plain,cminus2(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c203,plain,cminus3(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c204,plain,cplus2(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c205,plain,cminus2(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c206,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c207,plain,cplus6(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)).
+# cnf(c208,plain,cminus3(i2003_11_14_17_20_46476)|cplus5(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c209,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c210,plain,cplus2(i2003_11_14_17_20_46476)|cplus5(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c211,plain,cminus1(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c212,plain,cplus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c213,plain,cplus3(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c214,plain,cminus9(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c215,plain,cminus7(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c216,plain,cminus4(i2003_11_14_17_20_46476)|cplus5(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c217,plain,cplus3(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c218,plain,cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c219,plain,cminus3(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c220,plain,cminus3(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c221,plain,cplus1(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c222,plain,cplus7(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c223,plain,cminus5(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c224,plain,cminus5(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476)).
+# cnf(c225,plain,cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c226,plain,cminus4(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c227,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476)).
+# cnf(c228,plain,cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c229,plain,cminus4(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c230,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c231,plain,cminus9(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c232,plain,cminus9(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c233,plain,cminus3(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c234,plain,cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476)).
+# cnf(c382,plain,cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c235,plain,cplus4(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c388,plain,cplus6(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c390,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c394,plain,cplus6(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)).
+# cnf(c399,plain,cplus6(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c400,plain,cplus6(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)).
+# cnf(c236,plain,cplus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c401,plain,cplus1(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c402,plain,cminus4(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c408,plain,cplus6(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c418,plain,cplus1(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c419,plain,cplus1(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)).
+# cnf(c237,plain,cminus9(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c426,plain,cplus7(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c427,plain,cplus1(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c428,plain,cplus3(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c238,plain,cminus2(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476)).
+# cnf(c445,plain,cminus2(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c239,plain,cminus2(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c451,plain,cminus2(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c240,plain,cminus1(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c241,plain,cplus9(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c242,plain,cminus4(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c243,plain,cminus4(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c244,plain,cminus9(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c245,plain,cplus3(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c246,plain,cminus8(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c247,plain,cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c499,plain,cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c503,plain,cminus8(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c505,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)).
+# cnf(c510,plain,cplus2(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c511,plain,cminus4(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c512,plain,cplus2(i2003_11_14_17_20_46476)|cminus1(i2003_11_14_17_20_46476)).
+# cnf(c524,plain,cminus1(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c527,plain,cplus2(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c528,plain,cplus2(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)).
+# cnf(c529,plain,cplus2(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)).
+# cnf(c533,plain,cminus1(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c538,plain,cplus7(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c539,plain,cplus2(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c540,plain,cplus3(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c251,plain,cminus3(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c252,plain,cminus4(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476)).
+# cnf(c552,plain,cplus7(i2003_11_14_17_20_46476)|cminus9(i2003_11_14_17_20_46476)).
+# cnf(c561,plain,cplus2(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)).
+# cnf(c565,plain,cplus3(i2003_11_14_17_20_46476)|cminus9(i2003_11_14_17_20_46476)).
+# cnf(c570,plain,cplus3(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c254,plain,cminus5(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c587,plain,cminus9(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c588,plain,cplus7(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)).
+# cnf(c590,plain,cminus5(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c591,plain,cplus2(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c608,plain,cminus4(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c609,plain,cplus7(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c612,plain,cminus5(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c613,plain,cminus5(i2003_11_14_17_20_46476)|cminus9(i2003_11_14_17_20_46476)).
+# cnf(c256,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c619,plain,cplus2(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)).
+# cnf(c622,plain,cminus4(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)).
+# cnf(c627,plain,cplus1(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c628,plain,cminus5(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c629,plain,cminus9(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c633,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)).
+# cnf(c634,plain,cplus9(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c635,plain,cplus2(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c636,plain,cminus3(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c637,plain,cminus4(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476)).
+# cnf(c258,plain,cplus5(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c259,plain,cminus2(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c652,plain,cplus3(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c654,plain,cplus9(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c655,plain,cplus9(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c260,plain,cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476)).
+# cnf(c663,plain,cminus3(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)).
+# cnf(c664,plain,cminus4(i2003_11_14_17_20_46476)|cminus9(i2003_11_14_17_20_46476)).
+# cnf(c261,plain,cminus3(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c665,plain,cminus4(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)).
+# cnf(c262,plain,cminus3(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476)).
+# cnf(c682,plain,cplus3(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c683,plain,cplus6(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c686,plain,cplus1(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c687,plain,cplus9(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c263,plain,cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c693,plain,cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c699,plain,cminus9(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c264,plain,cplus2(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c265,plain,cplus2(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c721,plain,cplus3(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)).
+# cnf(c723,plain,cplus6(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)).
+# cnf(c730,plain,cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c268,plain,cplus5(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476)).
+# cnf(c738,plain,cplus8(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c739,plain,cplus2(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476)).
+# cnf(c744,plain,cplus2(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c751,plain,cplus8(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)).
+# cnf(c752,plain,cplus3(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476)).
+# cnf(c782,plain,cplus3(i2003_11_14_17_20_46476)).
+# cnf(c787,plain,cminus4(i2003_11_14_17_20_46476)).
+# cnf(c788,plain,~cplus4(i2003_11_14_17_20_46476)).
+# cnf(c756,plain,cplus6(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c757,plain,cminus6(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c758,plain,cplus1(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c767,plain,cplus5(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)).
+# cnf(c769,plain,cplus8(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)).
+# cnf(c772,plain,cplus2(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)).
+# cnf(c777,plain,cminus6(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c778,plain,cplus2(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c821,plain,cplus2(i2003_11_14_17_20_46476)).
+# cnf(c822,plain,~cminus2(i2003_11_14_17_20_46476)).
+# cnf(c823,plain,cplus1(i2003_11_14_17_20_46476)).
+# cnf(c826,plain,~cminus1(i2003_11_14_17_20_46476)).
+# cnf(c789,plain,cminus2(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)).
+# cnf(c827,plain,cminus6(i2003_11_14_17_20_46476)).
+# cnf(c829,plain,~cplus6(i2003_11_14_17_20_46476)).
+# cnf(c830,plain,cplus7(i2003_11_14_17_20_46476)).
+# cnf(c831,plain,cplus9(i2003_11_14_17_20_46476)).
+# cnf(c832,plain,cminus8(i2003_11_14_17_20_46476)).
+# cnf(c833,plain,cminus5(i2003_11_14_17_20_46476)).
+# cnf(c835,plain,~cminus7(i2003_11_14_17_20_46476)).
+# cnf(c836,plain,~cminus9(i2003_11_14_17_20_46476)).
+# cnf(c837,plain,~cplus5(i2003_11_14_17_20_46476)).
+# cnf(c791,plain,cplus6(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)).
+# cnf(c839,plain,cminus2(i2003_11_14_17_20_46476)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(axiom_54,axiom,(![X]:(~(cminus2(X)&cplus2(X)))),input).
+fof(c6,axiom,(![X]:(~cminus2(X)|~cplus2(X))),inference(fof_nnf,status(thm),[axiom_54])).
+fof(c7,axiom,(![X4]:(~cminus2(X4)|~cplus2(X4))),inference(variable_rename,status(thm),[c6])).
+cnf(c8,axiom,~cminus2(X64)|~cplus2(X64),inference(split_conjunct,status(thm),[c7])).
+fof(axiom_47,axiom,cTest(i2003_11_14_17_20_46476),input).
+cnf(c27,axiom,cTest(i2003_11_14_17_20_46476),inference(split_conjunct,status(thm),[axiom_47])).
+fof(axiom_11,axiom,(![X]:(cTest(X)=>((cplus4(X)|cplus6(X))|cminus8(X)))),input).
+fof(c133,axiom,(![X]:(~cTest(X)|((cplus4(X)|cplus6(X))|cminus8(X)))),inference(fof_nnf,status(thm),[axiom_11])).
+fof(c134,axiom,(![X46]:(~cTest(X46)|((cplus4(X46)|cplus6(X46))|cminus8(X46)))),inference(variable_rename,status(thm),[c133])).
+cnf(c135,axiom,~cTest(X109)|cplus4(X109)|cplus6(X109)|cminus8(X109),inference(split_conjunct,status(thm),[c134])).
+cnf(c212,plain,cplus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c135, c27])).
+fof(axiom_50,axiom,(![X]:(~(cplus4(X)&cminus4(X)))),input).
+fof(c18,axiom,(![X]:(~cplus4(X)|~cminus4(X))),inference(fof_nnf,status(thm),[axiom_50])).
+fof(c19,axiom,(![X8]:(~cplus4(X8)|~cminus4(X8))),inference(variable_rename,status(thm),[c18])).
+cnf(c20,axiom,~cplus4(X68)|~cminus4(X68),inference(split_conjunct,status(thm),[c19])).
+fof(axiom_10,axiom,(![X]:(cTest(X)=>((cplus3(X)|cminus4(X))|cplus6(X)))),input).
+fof(c136,axiom,(![X]:(~cTest(X)|((cplus3(X)|cminus4(X))|cplus6(X)))),inference(fof_nnf,status(thm),[axiom_10])).
+fof(c137,axiom,(![X47]:(~cTest(X47)|((cplus3(X47)|cminus4(X47))|cplus6(X47)))),inference(variable_rename,status(thm),[c136])).
+cnf(c138,axiom,~cTest(X110)|cplus3(X110)|cminus4(X110)|cplus6(X110),inference(split_conjunct,status(thm),[c137])).
+cnf(c213,plain,cplus3(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c138, c27])).
+fof(axiom_52,axiom,(![X]:(~(cplus3(X)&cminus3(X)))),input).
+fof(c12,axiom,(![X]:(~cplus3(X)|~cminus3(X))),inference(fof_nnf,status(thm),[axiom_52])).
+fof(c13,axiom,(![X6]:(~cplus3(X6)|~cminus3(X6))),inference(variable_rename,status(thm),[c12])).
+cnf(c14,axiom,~cplus3(X66)|~cminus3(X66),inference(split_conjunct,status(thm),[c13])).
+fof(axiom_42,axiom,(![X]:(cTest(X)=>((cminus4(X)|cminus3(X))|cplus6(X)))),input).
+fof(c40,axiom,(![X]:(~cTest(X)|((cminus4(X)|cminus3(X))|cplus6(X)))),inference(fof_nnf,status(thm),[axiom_42])).
+fof(c41,axiom,(![X15]:(~cTest(X15)|((cminus4(X15)|cminus3(X15))|cplus6(X15)))),inference(variable_rename,status(thm),[c40])).
+cnf(c42,axiom,~cTest(X78)|cminus4(X78)|cminus3(X78)|cplus6(X78),inference(split_conjunct,status(thm),[c41])).
+cnf(c181,plain,cminus4(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c42, c27])).
+cnf(c234,plain,cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c181, c14])).
+cnf(c382,plain,cminus4(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c234, c213])).
+cnf(c388,plain,cplus6(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c382, c20])).
+cnf(c399,plain,cplus6(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c388, c212])).
+fof(axiom_48,axiom,(![X]:(~(cminus8(X)&cplus8(X)))),input).
+fof(c24,axiom,(![X]:(~cminus8(X)|~cplus8(X))),inference(fof_nnf,status(thm),[axiom_48])).
+fof(c25,axiom,(![X10]:(~cminus8(X10)|~cplus8(X10))),inference(variable_rename,status(thm),[c24])).
+cnf(c26,axiom,~cminus8(X70)|~cplus8(X70),inference(split_conjunct,status(thm),[c25])).
+fof(axiom_55,axiom,(![X]:(~(cminus1(X)&cplus1(X)))),input).
+fof(c3,axiom,(![X]:(~cminus1(X)|~cplus1(X))),inference(fof_nnf,status(thm),[axiom_55])).
+fof(c4,axiom,(![X3]:(~cminus1(X3)|~cplus1(X3))),inference(variable_rename,status(thm),[c3])).
+cnf(c5,axiom,~cminus1(X63)|~cplus1(X63),inference(split_conjunct,status(thm),[c4])).
+fof(axiom_17,axiom,(![X]:(cTest(X)=>((cplus3(X)|cplus4(X))|cplus1(X)))),input).
+fof(c115,axiom,(![X]:(~cTest(X)|((cplus3(X)|cplus4(X))|cplus1(X)))),inference(fof_nnf,status(thm),[axiom_17])).
+fof(c116,axiom,(![X40]:(~cTest(X40)|((cplus3(X40)|cplus4(X40))|cplus1(X40)))),inference(variable_rename,status(thm),[c115])).
+cnf(c117,axiom,~cTest(X103)|cplus3(X103)|cplus4(X103)|cplus1(X103),inference(split_conjunct,status(thm),[c116])).
+cnf(c206,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c117, c27])).
+fof(axiom_56,axiom,(![X]:(~(cplus6(X)&cminus6(X)))),input).
+fof(c0,axiom,(![X]:(~cplus6(X)|~cminus6(X))),inference(fof_nnf,status(thm),[axiom_56])).
+fof(c1,axiom,(![X2]:(~cplus6(X2)|~cminus6(X2))),inference(variable_rename,status(thm),[c0])).
+cnf(c2,axiom,~cplus6(X62)|~cminus6(X62),inference(split_conjunct,status(thm),[c1])).
+fof(axiom_44,axiom,(![X]:(cTest(X)=>((cminus4(X)|cplus1(X))|cminus6(X)))),input).
+fof(c34,axiom,(![X]:(~cTest(X)|((cminus4(X)|cplus1(X))|cminus6(X)))),inference(fof_nnf,status(thm),[axiom_44])).
+fof(c35,axiom,(![X13]:(~cTest(X13)|((cminus4(X13)|cplus1(X13))|cminus6(X13)))),inference(variable_rename,status(thm),[c34])).
+cnf(c36,axiom,~cTest(X76)|cminus4(X76)|cplus1(X76)|cminus6(X76),inference(split_conjunct,status(thm),[c35])).
+cnf(c179,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c36, c27])).
+cnf(c230,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c179, c2])).
+cnf(c390,plain,cminus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c382, c230])).
+cnf(c401,plain,cplus1(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c390, c20])).
+cnf(c419,plain,cplus1(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c401, c206])).
+cnf(c428,plain,cplus3(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c419, c5])).
+fof(axiom_36,axiom,(![X]:(cTest(X)=>((cminus1(X)|cplus4(X))|cplus2(X)))),input).
+fof(c58,axiom,(![X]:(~cTest(X)|((cminus1(X)|cplus4(X))|cplus2(X)))),inference(fof_nnf,status(thm),[axiom_36])).
+fof(c59,axiom,(![X21]:(~cTest(X21)|((cminus1(X21)|cplus4(X21))|cplus2(X21)))),inference(variable_rename,status(thm),[c58])).
+cnf(c60,axiom,~cTest(X84)|cminus1(X84)|cplus4(X84)|cplus2(X84),inference(split_conjunct,status(thm),[c59])).
+cnf(c187,plain,cminus1(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c60, c27])).
+fof(axiom_45,axiom,(![X]:(cTest(X)=>((cminus4(X)|cplus2(X))|cplus8(X)))),input).
+fof(c31,axiom,(![X]:(~cTest(X)|((cminus4(X)|cplus2(X))|cplus8(X)))),inference(fof_nnf,status(thm),[axiom_45])).
+fof(c32,axiom,(![X12]:(~cTest(X12)|((cminus4(X12)|cplus2(X12))|cplus8(X12)))),inference(variable_rename,status(thm),[c31])).
+cnf(c33,axiom,~cTest(X75)|cminus4(X75)|cplus2(X75)|cplus8(X75),inference(split_conjunct,status(thm),[c32])).
+cnf(c178,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c33, c27])).
+cnf(c227,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c178, c26])).
+fof(axiom_9,axiom,(![X]:(cTest(X)=>((cminus9(X)|cminus4(X))|cminus8(X)))),input).
+fof(c139,axiom,(![X]:(~cTest(X)|((cminus9(X)|cminus4(X))|cminus8(X)))),inference(fof_nnf,status(thm),[axiom_9])).
+fof(c140,axiom,(![X48]:(~cTest(X48)|((cminus9(X48)|cminus4(X48))|cminus8(X48)))),inference(variable_rename,status(thm),[c139])).
+cnf(c141,axiom,~cTest(X111)|cminus9(X111)|cminus4(X111)|cminus8(X111),inference(split_conjunct,status(thm),[c140])).
+cnf(c214,plain,cminus9(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c141, c27])).
+fof(axiom_49,axiom,(![X]:(~(cminus9(X)&cplus9(X)))),input).
+fof(c21,axiom,(![X]:(~cminus9(X)|~cplus9(X))),inference(fof_nnf,status(thm),[axiom_49])).
+fof(c22,axiom,(![X9]:(~cminus9(X9)|~cplus9(X9))),inference(variable_rename,status(thm),[c21])).
+cnf(c23,axiom,~cminus9(X69)|~cplus9(X69),inference(split_conjunct,status(thm),[c22])).
+fof(axiom_31,axiom,(![X]:(cTest(X)=>((cminus4(X)|cminus8(X))|cplus9(X)))),input).
+fof(c73,axiom,(![X]:(~cTest(X)|((cminus4(X)|cminus8(X))|cplus9(X)))),inference(fof_nnf,status(thm),[axiom_31])).
+fof(c74,axiom,(![X26]:(~cTest(X26)|((cminus4(X26)|cminus8(X26))|cplus9(X26)))),inference(variable_rename,status(thm),[c73])).
+cnf(c75,axiom,~cTest(X89)|cminus4(X89)|cminus8(X89)|cplus9(X89),inference(split_conjunct,status(thm),[c74])).
+cnf(c192,plain,cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c75, c27])).
+cnf(c247,plain,cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c192, c23])).
+cnf(c499,plain,cminus4(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c247, c214])).
+cnf(c505,plain,cminus4(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c499, c227])).
+cnf(c510,plain,cplus2(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c505, c20])).
+cnf(c512,plain,cplus2(i2003_11_14_17_20_46476)|cminus1(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c510, c187])).
+cnf(c528,plain,cplus2(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c512, c428])).
+fof(axiom_20,axiom,(![X]:(cTest(X)=>((cminus3(X)|cplus2(X))|cplus8(X)))),input).
+fof(c106,axiom,(![X]:(~cTest(X)|((cminus3(X)|cplus2(X))|cplus8(X)))),inference(fof_nnf,status(thm),[axiom_20])).
+fof(c107,axiom,(![X37]:(~cTest(X37)|((cminus3(X37)|cplus2(X37))|cplus8(X37)))),inference(variable_rename,status(thm),[c106])).
+cnf(c108,axiom,~cTest(X100)|cminus3(X100)|cplus2(X100)|cplus8(X100),inference(split_conjunct,status(thm),[c107])).
+cnf(c203,plain,cminus3(i2003_11_14_17_20_46476)|cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c108, c27])).
+cnf(c260,plain,cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c203, c14])).
+cnf(c693,plain,cplus2(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c260, c528])).
+cnf(c739,plain,cplus2(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c693, c26])).
+cnf(c772,plain,cplus2(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c739, c399])).
+fof(axiom_19,axiom,(![X]:(cTest(X)=>((cplus2(X)|cplus1(X))|cminus6(X)))),input).
+fof(c109,axiom,(![X]:(~cTest(X)|((cplus2(X)|cplus1(X))|cminus6(X)))),inference(fof_nnf,status(thm),[axiom_19])).
+fof(c110,axiom,(![X38]:(~cTest(X38)|((cplus2(X38)|cplus1(X38))|cminus6(X38)))),inference(variable_rename,status(thm),[c109])).
+cnf(c111,axiom,~cTest(X101)|cplus2(X101)|cplus1(X101)|cminus6(X101),inference(split_conjunct,status(thm),[c110])).
+cnf(c204,plain,cplus2(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c111, c27])).
+cnf(c264,plain,cplus2(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c204, c5])).
+cnf(c744,plain,cplus2(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c264, c512])).
+cnf(c778,plain,cplus2(i2003_11_14_17_20_46476)|~cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c744, c2])).
+cnf(c821,plain,cplus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c778, c772])).
+cnf(c822,plain,~cminus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c821, c8])).
+fof(axiom_21,axiom,(![X]:(cTest(X)=>((cminus2(X)|cplus4(X))|cminus6(X)))),input).
+fof(c103,axiom,(![X]:(~cTest(X)|((cminus2(X)|cplus4(X))|cminus6(X)))),inference(fof_nnf,status(thm),[axiom_21])).
+fof(c104,axiom,(![X36]:(~cTest(X36)|((cminus2(X36)|cplus4(X36))|cminus6(X36)))),inference(variable_rename,status(thm),[c103])).
+cnf(c105,axiom,~cTest(X99)|cminus2(X99)|cplus4(X99)|cminus6(X99),inference(split_conjunct,status(thm),[c104])).
+cnf(c202,plain,cminus2(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c105, c27])).
+fof(axiom_29,axiom,(![X]:(cTest(X)=>((cminus4(X)|cminus3(X))|cminus7(X)))),input).
+fof(c79,axiom,(![X]:(~cTest(X)|((cminus4(X)|cminus3(X))|cminus7(X)))),inference(fof_nnf,status(thm),[axiom_29])).
+fof(c80,axiom,(![X28]:(~cTest(X28)|((cminus4(X28)|cminus3(X28))|cminus7(X28)))),inference(variable_rename,status(thm),[c79])).
+cnf(c81,axiom,~cTest(X91)|cminus4(X91)|cminus3(X91)|cminus7(X91),inference(split_conjunct,status(thm),[c80])).
+cnf(c194,plain,cminus4(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c81, c27])).
+fof(axiom_51,axiom,(![X]:(~(cminus7(X)&cplus7(X)))),input).
+fof(c15,axiom,(![X]:(~cminus7(X)|~cplus7(X))),inference(fof_nnf,status(thm),[axiom_51])).
+fof(c16,axiom,(![X7]:(~cminus7(X7)|~cplus7(X7))),inference(variable_rename,status(thm),[c15])).
+cnf(c17,axiom,~cminus7(X67)|~cplus7(X67),inference(split_conjunct,status(thm),[c16])).
+fof(axiom_34,axiom,(![X]:(cTest(X)=>((cminus4(X)|cplus9(X))|cplus7(X)))),input).
+fof(c64,axiom,(![X]:(~cTest(X)|((cminus4(X)|cplus9(X))|cplus7(X)))),inference(fof_nnf,status(thm),[axiom_34])).
+fof(c65,axiom,(![X23]:(~cTest(X23)|((cminus4(X23)|cplus9(X23))|cplus7(X23)))),inference(variable_rename,status(thm),[c64])).
+cnf(c66,axiom,~cTest(X86)|cminus4(X86)|cplus9(X86)|cplus7(X86),inference(split_conjunct,status(thm),[c65])).
+cnf(c189,plain,cminus4(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c66, c27])).
+cnf(c242,plain,cminus4(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c189, c23])).
+fof(axiom_33,axiom,(![X]:(cTest(X)=>((cminus9(X)|cminus2(X))|cplus7(X)))),input).
+fof(c67,axiom,(![X]:(~cTest(X)|((cminus9(X)|cminus2(X))|cplus7(X)))),inference(fof_nnf,status(thm),[axiom_33])).
+fof(c68,axiom,(![X24]:(~cTest(X24)|((cminus9(X24)|cminus2(X24))|cplus7(X24)))),inference(variable_rename,status(thm),[c67])).
+cnf(c69,axiom,~cTest(X87)|cminus9(X87)|cminus2(X87)|cplus7(X87),inference(split_conjunct,status(thm),[c68])).
+cnf(c190,plain,cminus9(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c69, c27])).
+fof(axiom_41,axiom,(![X]:(cTest(X)=>((cplus4(X)|cplus1(X))|cplus7(X)))),input).
+fof(c43,axiom,(![X]:(~cTest(X)|((cplus4(X)|cplus1(X))|cplus7(X)))),inference(fof_nnf,status(thm),[axiom_41])).
+fof(c44,axiom,(![X16]:(~cTest(X16)|((cplus4(X16)|cplus1(X16))|cplus7(X16)))),inference(variable_rename,status(thm),[c43])).
+cnf(c45,axiom,~cTest(X79)|cplus4(X79)|cplus1(X79)|cplus7(X79),inference(split_conjunct,status(thm),[c44])).
+cnf(c182,plain,cplus4(i2003_11_14_17_20_46476)|cplus1(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c45, c27])).
+cnf(c418,plain,cplus1(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c401, c182])).
+cnf(c426,plain,cplus7(i2003_11_14_17_20_46476)|~cminus1(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c418, c5])).
+cnf(c527,plain,cplus2(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c512, c426])).
+cnf(c538,plain,cplus7(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c527, c8])).
+cnf(c552,plain,cplus7(i2003_11_14_17_20_46476)|cminus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c538, c190])).
+cnf(c588,plain,cplus7(i2003_11_14_17_20_46476)|cminus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c552, c242])).
+cnf(c608,plain,cminus4(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c588, c17])).
+cnf(c622,plain,cminus4(i2003_11_14_17_20_46476)|cminus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c608, c194])).
+cnf(c637,plain,cminus4(i2003_11_14_17_20_46476)|~cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c622, c14])).
+fof(axiom_39,axiom,(![X]:(cTest(X)=>((cminus2(X)|cplus3(X))|cminus8(X)))),input).
+fof(c49,axiom,(![X]:(~cTest(X)|((cminus2(X)|cplus3(X))|cminus8(X)))),inference(fof_nnf,status(thm),[axiom_39])).
+fof(c50,axiom,(![X18]:(~cTest(X18)|((cminus2(X18)|cplus3(X18))|cminus8(X18)))),inference(variable_rename,status(thm),[c49])).
+cnf(c51,axiom,~cTest(X81)|cminus2(X81)|cplus3(X81)|cminus8(X81),inference(split_conjunct,status(thm),[c50])).
+cnf(c184,plain,cminus2(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c51, c27])).
+cnf(c540,plain,cplus3(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c528, c8])).
+cnf(c570,plain,cplus3(i2003_11_14_17_20_46476)|cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c540, c184])).
+fof(axiom_6,axiom,(![X]:(cTest(X)=>((cplus3(X)|cminus7(X))|cplus8(X)))),input).
+fof(c148,axiom,(![X]:(~cTest(X)|((cplus3(X)|cminus7(X))|cplus8(X)))),inference(fof_nnf,status(thm),[axiom_6])).
+fof(c149,axiom,(![X51]:(~cTest(X51)|((cplus3(X51)|cminus7(X51))|cplus8(X51)))),inference(variable_rename,status(thm),[c148])).
+cnf(c150,axiom,~cTest(X114)|cplus3(X114)|cminus7(X114)|cplus8(X114),inference(split_conjunct,status(thm),[c149])).
+cnf(c217,plain,cplus3(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c150, c27])).
+cnf(c609,plain,cplus7(i2003_11_14_17_20_46476)|~cplus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c588, c20])).
+fof(axiom_35,axiom,(![X]:(cTest(X)=>((cminus9(X)|cminus2(X))|cplus3(X)))),input).
+fof(c61,axiom,(![X]:(~cTest(X)|((cminus9(X)|cminus2(X))|cplus3(X)))),inference(fof_nnf,status(thm),[axiom_35])).
+fof(c62,axiom,(![X22]:(~cTest(X22)|((cminus9(X22)|cminus2(X22))|cplus3(X22)))),inference(variable_rename,status(thm),[c61])).
+cnf(c63,axiom,~cTest(X85)|cminus9(X85)|cminus2(X85)|cplus3(X85),inference(split_conjunct,status(thm),[c62])).
+cnf(c188,plain,cminus9(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476)|cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c63, c27])).
+cnf(c565,plain,cplus3(i2003_11_14_17_20_46476)|cminus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c540, c188])).
+fof(axiom_25,axiom,(![X]:(cTest(X)=>((cplus3(X)|cplus4(X))|cplus9(X)))),input).
+fof(c91,axiom,(![X]:(~cTest(X)|((cplus3(X)|cplus4(X))|cplus9(X)))),inference(fof_nnf,status(thm),[axiom_25])).
+fof(c92,axiom,(![X32]:(~cTest(X32)|((cplus3(X32)|cplus4(X32))|cplus9(X32)))),inference(variable_rename,status(thm),[c91])).
+cnf(c93,axiom,~cTest(X95)|cplus3(X95)|cplus4(X95)|cplus9(X95),inference(split_conjunct,status(thm),[c92])).
+cnf(c198,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c93, c27])).
+cnf(c256,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c198, c23])).
+cnf(c633,plain,cplus3(i2003_11_14_17_20_46476)|cplus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c256, c565])).
+cnf(c652,plain,cplus3(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c633, c609])).
+cnf(c682,plain,cplus3(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c652, c17])).
+cnf(c721,plain,cplus3(i2003_11_14_17_20_46476)|cplus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c682, c217])).
+cnf(c752,plain,cplus3(i2003_11_14_17_20_46476)|~cminus8(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c721, c26])).
+cnf(c782,plain,cplus3(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c752, c570])).
+cnf(c787,plain,cminus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c782, c637])).
+cnf(c788,plain,~cplus4(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c787, c20])).
+cnf(c789,plain,cminus2(i2003_11_14_17_20_46476)|cminus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c788, c202])).
+cnf(c827,plain,cminus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c789, c822])).
+cnf(c829,plain,~cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c827, c2])).
+fof(axiom_22,axiom,(![X]:(cTest(X)=>((cminus2(X)|cplus6(X))|cminus7(X)))),input).
+fof(c100,axiom,(![X]:(~cTest(X)|((cminus2(X)|cplus6(X))|cminus7(X)))),inference(fof_nnf,status(thm),[axiom_22])).
+fof(c101,axiom,(![X35]:(~cTest(X35)|((cminus2(X35)|cplus6(X35))|cminus7(X35)))),inference(variable_rename,status(thm),[c100])).
+cnf(c102,axiom,~cTest(X98)|cminus2(X98)|cplus6(X98)|cminus7(X98),inference(split_conjunct,status(thm),[c101])).
+cnf(c201,plain,cminus2(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c102, c27])).
+fof(axiom_18,axiom,(![X]:(cTest(X)=>((cminus2(X)|cplus6(X))|cplus9(X)))),input).
+fof(c112,axiom,(![X]:(~cTest(X)|((cminus2(X)|cplus6(X))|cplus9(X)))),inference(fof_nnf,status(thm),[axiom_18])).
+fof(c113,axiom,(![X39]:(~cTest(X39)|((cminus2(X39)|cplus6(X39))|cplus9(X39)))),inference(variable_rename,status(thm),[c112])).
+cnf(c114,axiom,~cTest(X102)|cminus2(X102)|cplus6(X102)|cplus9(X102),inference(split_conjunct,status(thm),[c113])).
+cnf(c205,plain,cminus2(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c114, c27])).
+fof(axiom_13,axiom,(![X]:(cTest(X)=>((cplus2(X)|cplus5(X))|cplus9(X)))),input).
+fof(c127,axiom,(![X]:(~cTest(X)|((cplus2(X)|cplus5(X))|cplus9(X)))),inference(fof_nnf,status(thm),[axiom_13])).
+fof(c128,axiom,(![X44]:(~cTest(X44)|((cplus2(X44)|cplus5(X44))|cplus9(X44)))),inference(variable_rename,status(thm),[c127])).
+cnf(c129,axiom,~cTest(X107)|cplus2(X107)|cplus5(X107)|cplus9(X107),inference(split_conjunct,status(thm),[c128])).
+cnf(c210,plain,cplus2(i2003_11_14_17_20_46476)|cplus5(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c129, c27])).
+fof(axiom_53,axiom,(![X]:(~(cplus5(X)&cminus5(X)))),input).
+fof(c9,axiom,(![X]:(~cplus5(X)|~cminus5(X))),inference(fof_nnf,status(thm),[axiom_53])).
+fof(c10,axiom,(![X5]:(~cplus5(X5)|~cminus5(X5))),inference(variable_rename,status(thm),[c9])).
+cnf(c11,axiom,~cplus5(X65)|~cminus5(X65),inference(split_conjunct,status(thm),[c10])).
+fof(axiom_26,axiom,(![X]:(cTest(X)=>((cplus2(X)|cminus5(X))|cminus7(X)))),input).
+fof(c88,axiom,(![X]:(~cTest(X)|((cplus2(X)|cminus5(X))|cminus7(X)))),inference(fof_nnf,status(thm),[axiom_26])).
+fof(c89,axiom,(![X31]:(~cTest(X31)|((cplus2(X31)|cminus5(X31))|cminus7(X31)))),inference(variable_rename,status(thm),[c88])).
+cnf(c90,axiom,~cTest(X94)|cplus2(X94)|cminus5(X94)|cminus7(X94),inference(split_conjunct,status(thm),[c89])).
+cnf(c197,plain,cplus2(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476)|cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c90, c27])).
+cnf(c539,plain,cplus2(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c527, c17])).
+cnf(c561,plain,cplus2(i2003_11_14_17_20_46476)|cminus5(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c539, c197])).
+cnf(c591,plain,cplus2(i2003_11_14_17_20_46476)|~cplus5(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c561, c11])).
+cnf(c619,plain,cplus2(i2003_11_14_17_20_46476)|cplus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c591, c210])).
+cnf(c634,plain,cplus9(i2003_11_14_17_20_46476)|~cminus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c619, c8])).
+cnf(c654,plain,cplus9(i2003_11_14_17_20_46476)|cplus6(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c634, c205])).
+cnf(c683,plain,cplus6(i2003_11_14_17_20_46476)|~cminus9(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c654, c23])).
+cnf(c723,plain,cplus6(i2003_11_14_17_20_46476)|cplus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c683, c552])).
+cnf(c756,plain,cplus6(i2003_11_14_17_20_46476)|~cminus7(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c723, c17])).
+cnf(c791,plain,cplus6(i2003_11_14_17_20_46476)|cminus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c756, c201])).
+cnf(c839,plain,cminus2(i2003_11_14_17_20_46476),inference(resolution,status(thm),[c791, c829])).
+cnf(c841,plain,$false,inference(resolution,status(thm),[c839, c822])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 59
+# Processed clauses  : 242
+# Factors computed   : 0
+# Resolvents computed: 666
+# Tautologies deleted: 5
+# Forward subsumed   : 73
+# Backward subsumed  : 166
+
+# -------- CPU Time ---------
+# User time          : 0.441 s
+# System time        : 0.127 s
+# Total time         : 0.568 s

@@ -1,0 +1,66 @@
+# cnf(c7,negated_conjecture,~disjoint(skolem0001,skolem0002)).
+# cnf(c10,axiom,~intersect(X17,X18)|intersect(X18,X17)).
+# cnf(c16,axiom,~disjoint(X19,X20)|~intersect(X19,X20)).
+# cnf(c17,axiom,intersect(X21,X22)|disjoint(X21,X22)).
+# cnf(c29,plain,intersect(skolem0001,skolem0002)).
+# cnf(c6,negated_conjecture,~member(X23,skolem0001)|~member(X23,skolem0002)).
+# cnf(c30,plain,intersect(skolem0002,skolem0001)).
+# cnf(c33,plain,~disjoint(skolem0002,skolem0001)).
+# cnf(c24,axiom,~intersect(X25,X24)|member(skolem0003(X25,X24),X25)).
+# cnf(c27,plain,disjoint(X26,X27)|intersect(X27,X26)).
+# cnf(c25,axiom,~intersect(X33,X32)|member(skolem0003(X33,X32),X32)).
+# cnf(c41,plain,disjoint(X35,X34)|~disjoint(X34,X35)).
+# cnf(c35,plain,member(skolem0003(skolem0002,skolem0001),skolem0002)).
+# cnf(c37,plain,member(skolem0003(skolem0001,skolem0002),skolem0001)).
+# cnf(c26,axiom,~member(X41,X40)|~member(X41,X42)|intersect(X40,X42)).
+# cnf(c43,plain,member(skolem0003(skolem0002,skolem0001),skolem0001)).
+# cnf(c46,plain,member(skolem0003(skolem0001,skolem0002),skolem0002)).
+# cnf(c49,plain,~member(skolem0003(skolem0002,skolem0001),skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(symmetry_of_intersect,axiom,(![B]:(![C]:(intersect(B,C)=>intersect(C,B)))),input).
+fof(c8,axiom,(![B]:(![C]:(~intersect(B,C)|intersect(C,B)))),inference(fof_nnf,status(thm),[symmetry_of_intersect])).
+fof(c9,axiom,(![X5]:(![X6]:(~intersect(X5,X6)|intersect(X6,X5)))),inference(variable_rename,status(thm),[c8])).
+cnf(c10,axiom,~intersect(X17,X18)|intersect(X18,X17),inference(split_conjunct,status(thm),[c9])).
+fof(prove_th17,conjecture,(![B]:(![C]:((![D]:(member(D,B)=>(~member(D,C))))=>disjoint(B,C)))),input).
+fof(c0,negated_conjecture,(~(![B]:(![C]:((![D]:(member(D,B)=>(~member(D,C))))=>disjoint(B,C))))),inference(assume_negation,status(cth),[prove_th17])).
+fof(c1,negated_conjecture,(~(![B]:(![C]:((![D]:(member(D,B)=>~member(D,C)))=>disjoint(B,C))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[B]:(?[C]:((![D]:(~member(D,B)|~member(D,C)))&~disjoint(B,C)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:((![X4]:(~member(X4,X2)|~member(X4,X3)))&~disjoint(X2,X3)))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X4]:((~member(X4,skolem0001)|~member(X4,skolem0002))&~disjoint(skolem0001,skolem0002))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((![X4]:(~member(X4,skolem0001)|~member(X4,skolem0002)))&~disjoint(skolem0001,skolem0002)),inference(skolemize,status(esa),[c3])).])).
+cnf(c7,negated_conjecture,~disjoint(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+fof(disjoint_defn,axiom,(![B]:(![C]:(disjoint(B,C)<=>(~intersect(B,C))))),input).
+fof(c11,axiom,(![B]:(![C]:(disjoint(B,C)<=>~intersect(B,C)))),inference(fof_simplification,status(thm),[disjoint_defn])).
+fof(c12,axiom,(![B]:(![C]:((~disjoint(B,C)|~intersect(B,C))&(intersect(B,C)|disjoint(B,C))))),inference(fof_nnf,status(thm),[c11])).
+fof(c13,axiom,((![B]:(![C]:(~disjoint(B,C)|~intersect(B,C))))&(![B]:(![C]:(intersect(B,C)|disjoint(B,C))))),inference(shift_quantors,status(thm),[c12])).
+fof(c15,axiom,(![X7]:(![X8]:(![X9]:(![X10]:((~disjoint(X7,X8)|~intersect(X7,X8))&(intersect(X9,X10)|disjoint(X9,X10))))))),inference(shift_quantors,status(thm),[fof(c14,axiom,((![X7]:(![X8]:(~disjoint(X7,X8)|~intersect(X7,X8))))&(![X9]:(![X10]:(intersect(X9,X10)|disjoint(X9,X10))))),inference(variable_rename,status(thm),[c13])).])).
+cnf(c17,axiom,intersect(X21,X22)|disjoint(X21,X22),inference(split_conjunct,status(thm),[c15])).
+cnf(c29,plain,intersect(skolem0001,skolem0002),inference(resolution,status(thm),[c17, c7])).
+cnf(c30,plain,intersect(skolem0002,skolem0001),inference(resolution,status(thm),[c29, c10])).
+fof(intersect_defn,axiom,(![B]:(![C]:(intersect(B,C)<=>(?[D]:(member(D,B)&member(D,C)))))),input).
+fof(c18,axiom,(![B]:(![C]:((~intersect(B,C)|(?[D]:(member(D,B)&member(D,C))))&((![D]:(~member(D,B)|~member(D,C)))|intersect(B,C))))),inference(fof_nnf,status(thm),[intersect_defn])).
+fof(c19,axiom,((![B]:(![C]:(~intersect(B,C)|(?[D]:(member(D,B)&member(D,C))))))&(![B]:(![C]:((![D]:(~member(D,B)|~member(D,C)))|intersect(B,C))))),inference(shift_quantors,status(thm),[c18])).
+fof(c20,axiom,((![X11]:(![X12]:(~intersect(X11,X12)|(?[X13]:(member(X13,X11)&member(X13,X12))))))&(![X14]:(![X15]:((![X16]:(~member(X16,X14)|~member(X16,X15)))|intersect(X14,X15))))),inference(variable_rename,status(thm),[c19])).
+fof(c22,axiom,(![X11]:(![X12]:(![X14]:(![X15]:(![X16]:((~intersect(X11,X12)|(member(skolem0003(X11,X12),X11)&member(skolem0003(X11,X12),X12)))&((~member(X16,X14)|~member(X16,X15))|intersect(X14,X15)))))))),inference(shift_quantors,status(thm),[fof(c21,axiom,((![X11]:(![X12]:(~intersect(X11,X12)|(member(skolem0003(X11,X12),X11)&member(skolem0003(X11,X12),X12)))))&(![X14]:(![X15]:((![X16]:(~member(X16,X14)|~member(X16,X15)))|intersect(X14,X15))))),inference(skolemize,status(esa),[c20])).])).
+fof(c23,axiom,(![X11]:(![X12]:(![X14]:(![X15]:(![X16]:(((~intersect(X11,X12)|member(skolem0003(X11,X12),X11))&(~intersect(X11,X12)|member(skolem0003(X11,X12),X12)))&((~member(X16,X14)|~member(X16,X15))|intersect(X14,X15)))))))),inference(distribute,status(thm),[c22])).
+cnf(c25,axiom,~intersect(X33,X32)|member(skolem0003(X33,X32),X32),inference(split_conjunct,status(thm),[c23])).
+cnf(c43,plain,member(skolem0003(skolem0002,skolem0001),skolem0001),inference(resolution,status(thm),[c25, c30])).
+cnf(c6,negated_conjecture,~member(X23,skolem0001)|~member(X23,skolem0002),inference(split_conjunct,status(thm),[c5])).
+cnf(c24,axiom,~intersect(X25,X24)|member(skolem0003(X25,X24),X25),inference(split_conjunct,status(thm),[c23])).
+cnf(c35,plain,member(skolem0003(skolem0002,skolem0001),skolem0002),inference(resolution,status(thm),[c24, c30])).
+cnf(c49,plain,~member(skolem0003(skolem0002,skolem0001),skolem0001),inference(resolution,status(thm),[c35, c6])).
+cnf(c55,plain,$false,inference(resolution,status(thm),[c49, c43])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 8
+# Processed clauses  : 18
+# Factors computed   : 0
+# Resolvents computed: 29
+# Tautologies deleted: 1
+# Forward subsumed   : 8
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.296 s
+# System time        : 0.271 s
+# Total time         : 0.567 s

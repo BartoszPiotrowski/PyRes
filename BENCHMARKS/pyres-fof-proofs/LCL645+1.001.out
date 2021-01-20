@@ -1,0 +1,28 @@
+# cnf(c7,negated_conjecture,~p1(skolem0002)).
+# cnf(c6,negated_conjecture,r1(skolem0001,skolem0002)).
+# cnf(c8,negated_conjecture,~r1(skolem0002,X5)|p1(X5)).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+fof(main,conjecture,(~(?[X]:(~((![Y]:(((~r1(X,Y))|p1(Y))|(~(![X]:((~r1(Y,X))|p1(X))))))|(![Y]:(((~r1(X,Y))|p1(Y))|(~(![X]:((~r1(Y,X))|p1(X)))))))))),input).
+fof(c0,negated_conjecture,(~(~(?[X]:(~((![Y]:(((~r1(X,Y))|p1(Y))|(~(![X]:((~r1(Y,X))|p1(X))))))|(![Y]:(((~r1(X,Y))|p1(Y))|(~(![X]:((~r1(Y,X))|p1(X))))))))))),inference(assume_negation,status(cth),[main])).
+fof(c1,negated_conjecture,(~(~(?[X]:(~(![Y]:((~r1(X,Y)|p1(Y))|(~(![X]:(~r1(Y,X)|p1(X)))))))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:(?[Y]:((r1(X,Y)&~p1(Y))&(![X]:(~r1(Y,X)|p1(X)))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:((r1(X2,X3)&~p1(X3))&(![X4]:(~r1(X3,X4)|p1(X4)))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X4]:((r1(skolem0001,skolem0002)&~p1(skolem0002))&(~r1(skolem0002,X4)|p1(X4)))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((r1(skolem0001,skolem0002)&~p1(skolem0002))&(![X4]:(~r1(skolem0002,X4)|p1(X4)))),inference(skolemize,status(esa),[c3])).])).
+cnf(c8,negated_conjecture,~r1(skolem0002,X5)|p1(X5),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,r1(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,negated_conjecture,~p1(skolem0002),inference(split_conjunct,status(thm),[c5])).
+# SZS output end Saturation
+
+# Initial clauses    : 3
+# Processed clauses  : 3
+# Factors computed   : 0
+# Resolvents computed: 0
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.324 s
+# System time        : 0.231 s
+# Total time         : 0.556 s

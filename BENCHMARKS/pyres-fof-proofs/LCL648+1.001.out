@@ -1,0 +1,35 @@
+# cnf(c8,negated_conjecture,p201(skolem0002)).
+# cnf(c9,negated_conjecture,p101(skolem0002)).
+# cnf(c7,negated_conjecture,r1(skolem0001,skolem0002)).
+# cnf(c6,negated_conjecture,~r1(skolem0001,X5)|~p201(X5)|~p101(X5)).
+# cnf(c10,plain,~p201(skolem0002)|~p101(skolem0002)).
+# cnf(c11,plain,~p201(skolem0002)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(main,conjecture,(~(?[X]:(~((~(![Y]:((~r1(X,Y))|(~(p201(Y)&p101(Y))))))|(![Y]:((~r1(X,Y))|(~(p201(Y)&p101(Y))))))))),input).
+fof(c0,negated_conjecture,(~(~(?[X]:(~((~(![Y]:((~r1(X,Y))|(~(p201(Y)&p101(Y))))))|(![Y]:((~r1(X,Y))|(~(p201(Y)&p101(Y)))))))))),inference(assume_negation,status(cth),[main])).
+fof(c1,negated_conjecture,(~(~(?[X]:(~((~(![Y]:(~r1(X,Y)|(~(p201(Y)&p101(Y))))))|(![Y]:(~r1(X,Y)|(~(p201(Y)&p101(Y)))))))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:((![Y]:(~r1(X,Y)|(~p201(Y)|~p101(Y))))&(?[Y]:(r1(X,Y)&(p201(Y)&p101(Y)))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:((![X3]:(~r1(X2,X3)|(~p201(X3)|~p101(X3))))&(?[X4]:(r1(X2,X4)&(p201(X4)&p101(X4)))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X3]:((~r1(skolem0001,X3)|(~p201(X3)|~p101(X3)))&(r1(skolem0001,skolem0002)&(p201(skolem0002)&p101(skolem0002))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((![X3]:(~r1(skolem0001,X3)|(~p201(X3)|~p101(X3))))&(r1(skolem0001,skolem0002)&(p201(skolem0002)&p101(skolem0002)))),inference(skolemize,status(esa),[c3])).])).
+cnf(c8,negated_conjecture,p201(skolem0002),inference(split_conjunct,status(thm),[c5])).
+cnf(c9,negated_conjecture,p101(skolem0002),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,negated_conjecture,r1(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,~r1(skolem0001,X5)|~p201(X5)|~p101(X5),inference(split_conjunct,status(thm),[c5])).
+cnf(c10,plain,~p201(skolem0002)|~p101(skolem0002),inference(resolution,status(thm),[c6, c7])).
+cnf(c11,plain,~p201(skolem0002),inference(resolution,status(thm),[c10, c9])).
+cnf(c12,plain,$false,inference(resolution,status(thm),[c11, c8])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 6
+# Factors computed   : 0
+# Resolvents computed: 3
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.389 s
+# System time        : 0.276 s
+# Total time         : 0.665 s

@@ -1,0 +1,51 @@
+# cnf(c0,axiom,iext(uri_owl_disjointWith,uri_owl_Class,uri_owl_ObjectProperty)).
+# cnf(c1,axiom,iext(uri_rdf_type,uri_ex_x,uri_owl_Class)).
+# cnf(c2,axiom,iext(uri_rdf_type,uri_ex_x,uri_owl_ObjectProperty)).
+# cnf(c9,axiom,~iext(uri_owl_disjointWith,X12,X13)|ic(X12)).
+# cnf(c20,plain,ic(uri_owl_Class)).
+# cnf(c10,axiom,~iext(uri_owl_disjointWith,X14,X15)|ic(X15)).
+# cnf(c21,plain,ic(uri_owl_ObjectProperty)).
+# cnf(c18,axiom,~iext(uri_rdf_type,X16,X17)|icext(X17,X16)).
+# cnf(c22,plain,icext(uri_owl_Class,uri_ex_x)).
+# cnf(c23,plain,icext(uri_owl_ObjectProperty,uri_ex_x)).
+# cnf(c19,axiom,~icext(X19,X18)|iext(uri_rdf_type,X18,X19)).
+# cnf(c11,axiom,~iext(uri_owl_disjointWith,X21,X22)|~icext(X21,X20)|~icext(X22,X20)).
+# cnf(c26,plain,~icext(uri_owl_Class,X23)|~icext(uri_owl_ObjectProperty,X23)).
+# cnf(c27,plain,~icext(uri_owl_Class,uri_ex_x)).
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation
+fof(testcase_premise_fullish_011_Entity_Types_as_Classes,axiom,((iext(uri_owl_disjointWith,uri_owl_Class,uri_owl_ObjectProperty)&iext(uri_rdf_type,uri_ex_x,uri_owl_Class))&iext(uri_rdf_type,uri_ex_x,uri_owl_ObjectProperty)),input).
+cnf(c1,axiom,iext(uri_rdf_type,uri_ex_x,uri_owl_Class),inference(split_conjunct,status(thm),[testcase_premise_fullish_011_Entity_Types_as_Classes])).
+fof(rdfs_cext_def,axiom,(![X]:(![C]:(iext(uri_rdf_type,X,C)<=>icext(C,X)))),input).
+fof(c14,axiom,(![X]:(![C]:((~iext(uri_rdf_type,X,C)|icext(C,X))&(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(fof_nnf,status(thm),[rdfs_cext_def])).
+fof(c15,axiom,((![X]:(![C]:(~iext(uri_rdf_type,X,C)|icext(C,X))))&(![X]:(![C]:(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(shift_quantors,status(thm),[c14])).
+fof(c17,axiom,(![X8]:(![X9]:(![X10]:(![X11]:((~iext(uri_rdf_type,X8,X9)|icext(X9,X8))&(~icext(X11,X10)|iext(uri_rdf_type,X10,X11))))))),inference(shift_quantors,status(thm),[fof(c16,axiom,((![X8]:(![X9]:(~iext(uri_rdf_type,X8,X9)|icext(X9,X8))))&(![X10]:(![X11]:(~icext(X11,X10)|iext(uri_rdf_type,X10,X11))))),inference(variable_rename,status(thm),[c15])).])).
+cnf(c18,axiom,~iext(uri_rdf_type,X16,X17)|icext(X17,X16),inference(split_conjunct,status(thm),[c17])).
+cnf(c22,plain,icext(uri_owl_Class,uri_ex_x),inference(resolution,status(thm),[c18, c1])).
+cnf(c2,axiom,iext(uri_rdf_type,uri_ex_x,uri_owl_ObjectProperty),inference(split_conjunct,status(thm),[testcase_premise_fullish_011_Entity_Types_as_Classes])).
+cnf(c23,plain,icext(uri_owl_ObjectProperty,uri_ex_x),inference(resolution,status(thm),[c18, c2])).
+cnf(c0,axiom,iext(uri_owl_disjointWith,uri_owl_Class,uri_owl_ObjectProperty),inference(split_conjunct,status(thm),[testcase_premise_fullish_011_Entity_Types_as_Classes])).
+fof(owl_eqdis_disjointwith,axiom,(![C1]:(![C2]:(iext(uri_owl_disjointWith,C1,C2)<=>((ic(C1)&ic(C2))&(![X]:(~(icext(C1,X)&icext(C2,X)))))))),input).
+fof(c3,axiom,(![C1]:(![C2]:((~iext(uri_owl_disjointWith,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|~icext(C2,X)))))&(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&icext(C2,X))))|iext(uri_owl_disjointWith,C1,C2))))),inference(fof_nnf,status(thm),[owl_eqdis_disjointwith])).
+fof(c4,axiom,((![C1]:(![C2]:(~iext(uri_owl_disjointWith,C1,C2)|((ic(C1)&ic(C2))&(![X]:(~icext(C1,X)|~icext(C2,X)))))))&(![C1]:(![C2]:(((~ic(C1)|~ic(C2))|(?[X]:(icext(C1,X)&icext(C2,X))))|iext(uri_owl_disjointWith,C1,C2))))),inference(shift_quantors,status(thm),[c3])).
+fof(c5,axiom,((![X2]:(![X3]:(~iext(uri_owl_disjointWith,X2,X3)|((ic(X2)&ic(X3))&(![X4]:(~icext(X2,X4)|~icext(X3,X4)))))))&(![X5]:(![X6]:(((~ic(X5)|~ic(X6))|(?[X7]:(icext(X5,X7)&icext(X6,X7))))|iext(uri_owl_disjointWith,X5,X6))))),inference(variable_rename,status(thm),[c4])).
+fof(c7,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:((~iext(uri_owl_disjointWith,X2,X3)|((ic(X2)&ic(X3))&(~icext(X2,X4)|~icext(X3,X4))))&(((~ic(X5)|~ic(X6))|(icext(X5,skolem0001(X5,X6))&icext(X6,skolem0001(X5,X6))))|iext(uri_owl_disjointWith,X5,X6)))))))),inference(shift_quantors,status(thm),[fof(c6,axiom,((![X2]:(![X3]:(~iext(uri_owl_disjointWith,X2,X3)|((ic(X2)&ic(X3))&(![X4]:(~icext(X2,X4)|~icext(X3,X4)))))))&(![X5]:(![X6]:(((~ic(X5)|~ic(X6))|(icext(X5,skolem0001(X5,X6))&icext(X6,skolem0001(X5,X6))))|iext(uri_owl_disjointWith,X5,X6))))),inference(skolemize,status(esa),[c5])).])).
+fof(c8,axiom,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:((((~iext(uri_owl_disjointWith,X2,X3)|ic(X2))&(~iext(uri_owl_disjointWith,X2,X3)|ic(X3)))&(~iext(uri_owl_disjointWith,X2,X3)|(~icext(X2,X4)|~icext(X3,X4))))&((((~ic(X5)|~ic(X6))|icext(X5,skolem0001(X5,X6)))|iext(uri_owl_disjointWith,X5,X6))&(((~ic(X5)|~ic(X6))|icext(X6,skolem0001(X5,X6)))|iext(uri_owl_disjointWith,X5,X6))))))))),inference(distribute,status(thm),[c7])).
+cnf(c11,axiom,~iext(uri_owl_disjointWith,X21,X22)|~icext(X21,X20)|~icext(X22,X20),inference(split_conjunct,status(thm),[c8])).
+cnf(c26,plain,~icext(uri_owl_Class,X23)|~icext(uri_owl_ObjectProperty,X23),inference(resolution,status(thm),[c11, c0])).
+cnf(c27,plain,~icext(uri_owl_Class,uri_ex_x),inference(resolution,status(thm),[c26, c23])).
+cnf(c28,plain,$false,inference(resolution,status(thm),[c27, c22])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 10
+# Processed clauses  : 14
+# Factors computed   : 0
+# Resolvents computed: 9
+# Tautologies deleted: 0
+# Forward subsumed   : 2
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.243 s
+# System time        : 0.414 s
+# Total time         : 0.656 s

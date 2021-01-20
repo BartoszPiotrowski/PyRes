@@ -1,0 +1,104 @@
+# cnf(c40,axiom,ir(X18)).
+# cnf(c0,axiom,iext(uri_ex_p,uri_ex_s,uri_ex_o)).
+# cnf(c8,axiom,~icext(uri_owl_ObjectProperty,X19)|ip(X19)).
+# cnf(c9,axiom,~ip(X20)|icext(uri_owl_ObjectProperty,X20)).
+# cnf(c3,negated_conjecture,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)|~iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_o,uri_owl_Thing)).
+# cnf(c15,axiom,~ir(X22)|icext(uri_owl_Thing,X22)).
+# cnf(c41,plain,icext(uri_owl_Thing,X23)).
+# cnf(c20,axiom,~ir(X24)|icext(uri_rdfs_Resource,X24)).
+# cnf(c42,plain,icext(uri_rdfs_Resource,X25)).
+# cnf(c26,axiom,~iext(uri_rdf_type,X27,X28)|icext(X28,X27)).
+# cnf(c38,axiom,~iext(X30,X31,X29)|ip(X30)).
+# cnf(c43,plain,ip(uri_ex_p)).
+# cnf(c44,plain,icext(uri_owl_ObjectProperty,uri_ex_p)).
+# cnf(c27,axiom,~icext(X32,X33)|iext(uri_rdf_type,X33,X32)).
+# cnf(c32,axiom,~iext(uri_rdf_type,X34,uri_rdf_Property)|ip(X34)).
+# cnf(c47,plain,iext(uri_rdf_type,X35,uri_rdfs_Resource)).
+# cnf(c49,plain,ip(uri_rdf_type)).
+# cnf(c51,plain,icext(uri_owl_ObjectProperty,uri_rdf_type)).
+# cnf(c33,axiom,~ip(X37)|iext(uri_rdf_type,X37,uri_rdf_Property)).
+# cnf(c48,plain,iext(uri_rdf_type,X38,uri_owl_Thing)).
+# cnf(c46,plain,iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)).
+# cnf(c52,plain,iext(uri_rdf_type,uri_rdf_type,uri_owl_ObjectProperty)).
+# cnf(c54,plain,iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)).
+# cnf(c55,plain,iext(uri_rdf_type,uri_rdf_type,uri_rdf_Property)).
+# cnf(c64,plain,icext(uri_rdf_Property,uri_ex_p)).
+# cnf(c67,plain,icext(uri_rdf_Property,uri_rdf_type)).
+# cnf(c57,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)|~iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource)).
+# cnf(c71,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)).
+# cnf(c72,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)).
+# cnf(c73,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)).
+# cnf(c74,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)).
+# cnf(c75,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)).
+# cnf(c76,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(simple_ir,axiom,(![X]:ir(X)),input).
+fof(c39,axiom,(![X17]:ir(X17)),inference(variable_rename,status(thm),[simple_ir])).
+cnf(c40,axiom,ir(X18),inference(split_conjunct,status(thm),[c39])).
+fof(rdfs_ir_def,axiom,(![X]:(ir(X)<=>icext(uri_rdfs_Resource,X))),input).
+fof(c16,axiom,(![X]:((~ir(X)|icext(uri_rdfs_Resource,X))&(~icext(uri_rdfs_Resource,X)|ir(X)))),inference(fof_nnf,status(thm),[rdfs_ir_def])).
+fof(c17,axiom,((![X]:(~ir(X)|icext(uri_rdfs_Resource,X)))&(![X]:(~icext(uri_rdfs_Resource,X)|ir(X)))),inference(shift_quantors,status(thm),[c16])).
+fof(c19,axiom,(![X6]:(![X7]:((~ir(X6)|icext(uri_rdfs_Resource,X6))&(~icext(uri_rdfs_Resource,X7)|ir(X7))))),inference(shift_quantors,status(thm),[fof(c18,axiom,((![X6]:(~ir(X6)|icext(uri_rdfs_Resource,X6)))&(![X7]:(~icext(uri_rdfs_Resource,X7)|ir(X7)))),inference(variable_rename,status(thm),[c17])).])).
+cnf(c20,axiom,~ir(X24)|icext(uri_rdfs_Resource,X24),inference(split_conjunct,status(thm),[c19])).
+cnf(c42,plain,icext(uri_rdfs_Resource,X25),inference(resolution,status(thm),[c20, c40])).
+fof(rdfs_cext_def,axiom,(![X]:(![C]:(iext(uri_rdf_type,X,C)<=>icext(C,X)))),input).
+fof(c22,axiom,(![X]:(![C]:((~iext(uri_rdf_type,X,C)|icext(C,X))&(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(fof_nnf,status(thm),[rdfs_cext_def])).
+fof(c23,axiom,((![X]:(![C]:(~iext(uri_rdf_type,X,C)|icext(C,X))))&(![X]:(![C]:(~icext(C,X)|iext(uri_rdf_type,X,C))))),inference(shift_quantors,status(thm),[c22])).
+fof(c25,axiom,(![X8]:(![X9]:(![X10]:(![X11]:((~iext(uri_rdf_type,X8,X9)|icext(X9,X8))&(~icext(X11,X10)|iext(uri_rdf_type,X10,X11))))))),inference(shift_quantors,status(thm),[fof(c24,axiom,((![X8]:(![X9]:(~iext(uri_rdf_type,X8,X9)|icext(X9,X8))))&(![X10]:(![X11]:(~icext(X11,X10)|iext(uri_rdf_type,X10,X11))))),inference(variable_rename,status(thm),[c23])).])).
+cnf(c27,axiom,~icext(X32,X33)|iext(uri_rdf_type,X33,X32),inference(split_conjunct,status(thm),[c25])).
+cnf(c47,plain,iext(uri_rdf_type,X35,uri_rdfs_Resource),inference(resolution,status(thm),[c27, c42])).
+fof(owl_class_thing_ext,axiom,(![X]:(icext(uri_owl_Thing,X)<=>ir(X))),input).
+fof(c10,axiom,(![X]:((~icext(uri_owl_Thing,X)|ir(X))&(~ir(X)|icext(uri_owl_Thing,X)))),inference(fof_nnf,status(thm),[owl_class_thing_ext])).
+fof(c11,axiom,((![X]:(~icext(uri_owl_Thing,X)|ir(X)))&(![X]:(~ir(X)|icext(uri_owl_Thing,X)))),inference(shift_quantors,status(thm),[c10])).
+fof(c13,axiom,(![X4]:(![X5]:((~icext(uri_owl_Thing,X4)|ir(X4))&(~ir(X5)|icext(uri_owl_Thing,X5))))),inference(shift_quantors,status(thm),[fof(c12,axiom,((![X4]:(~icext(uri_owl_Thing,X4)|ir(X4)))&(![X5]:(~ir(X5)|icext(uri_owl_Thing,X5)))),inference(variable_rename,status(thm),[c11])).])).
+cnf(c15,axiom,~ir(X22)|icext(uri_owl_Thing,X22),inference(split_conjunct,status(thm),[c13])).
+cnf(c41,plain,icext(uri_owl_Thing,X23),inference(resolution,status(thm),[c15, c40])).
+cnf(c48,plain,iext(uri_rdf_type,X38,uri_owl_Thing),inference(resolution,status(thm),[c27, c41])).
+fof(testcase_premise_fullish_005_Everything_is_a_Resource,axiom,iext(uri_ex_p,uri_ex_s,uri_ex_o),input).
+cnf(c0,axiom,iext(uri_ex_p,uri_ex_s,uri_ex_o),inference(split_conjunct,status(thm),[testcase_premise_fullish_005_Everything_is_a_Resource])).
+fof(simple_iext_property,axiom,(![S]:(![P]:(![O]:(iext(P,S,O)=>ip(P))))),input).
+fof(c34,axiom,(![S]:(![P]:(![O]:(~iext(P,S,O)|ip(P))))),inference(fof_nnf,status(thm),[simple_iext_property])).
+fof(c35,axiom,(![S]:(![P]:((![O]:~iext(P,S,O))|ip(P)))),inference(shift_quantors,status(thm),[c34])).
+fof(c37,axiom,(![X14]:(![X15]:(![X16]:(~iext(X15,X14,X16)|ip(X15))))),inference(shift_quantors,status(thm),[fof(c36,axiom,(![X14]:(![X15]:((![X16]:~iext(X15,X14,X16))|ip(X15)))),inference(variable_rename,status(thm),[c35])).])).
+cnf(c38,axiom,~iext(X30,X31,X29)|ip(X30),inference(split_conjunct,status(thm),[c37])).
+cnf(c43,plain,ip(uri_ex_p),inference(resolution,status(thm),[c38, c0])).
+fof(rdf_type_ip,axiom,(![P]:(iext(uri_rdf_type,P,uri_rdf_Property)<=>ip(P))),input).
+fof(c28,axiom,(![P]:((~iext(uri_rdf_type,P,uri_rdf_Property)|ip(P))&(~ip(P)|iext(uri_rdf_type,P,uri_rdf_Property)))),inference(fof_nnf,status(thm),[rdf_type_ip])).
+fof(c29,axiom,((![P]:(~iext(uri_rdf_type,P,uri_rdf_Property)|ip(P)))&(![P]:(~ip(P)|iext(uri_rdf_type,P,uri_rdf_Property)))),inference(shift_quantors,status(thm),[c28])).
+fof(c31,axiom,(![X12]:(![X13]:((~iext(uri_rdf_type,X12,uri_rdf_Property)|ip(X12))&(~ip(X13)|iext(uri_rdf_type,X13,uri_rdf_Property))))),inference(shift_quantors,status(thm),[fof(c30,axiom,((![X12]:(~iext(uri_rdf_type,X12,uri_rdf_Property)|ip(X12)))&(![X13]:(~ip(X13)|iext(uri_rdf_type,X13,uri_rdf_Property)))),inference(variable_rename,status(thm),[c29])).])).
+cnf(c33,axiom,~ip(X37)|iext(uri_rdf_type,X37,uri_rdf_Property),inference(split_conjunct,status(thm),[c31])).
+cnf(c54,plain,iext(uri_rdf_type,uri_ex_p,uri_rdf_Property),inference(resolution,status(thm),[c33, c43])).
+fof(owl_class_objectproperty_ext,axiom,(![X]:(icext(uri_owl_ObjectProperty,X)<=>ip(X))),input).
+fof(c4,axiom,(![X]:((~icext(uri_owl_ObjectProperty,X)|ip(X))&(~ip(X)|icext(uri_owl_ObjectProperty,X)))),inference(fof_nnf,status(thm),[owl_class_objectproperty_ext])).
+fof(c5,axiom,((![X]:(~icext(uri_owl_ObjectProperty,X)|ip(X)))&(![X]:(~ip(X)|icext(uri_owl_ObjectProperty,X)))),inference(shift_quantors,status(thm),[c4])).
+fof(c7,axiom,(![X2]:(![X3]:((~icext(uri_owl_ObjectProperty,X2)|ip(X2))&(~ip(X3)|icext(uri_owl_ObjectProperty,X3))))),inference(shift_quantors,status(thm),[fof(c6,axiom,((![X2]:(~icext(uri_owl_ObjectProperty,X2)|ip(X2)))&(![X3]:(~ip(X3)|icext(uri_owl_ObjectProperty,X3)))),inference(variable_rename,status(thm),[c5])).])).
+cnf(c9,axiom,~ip(X20)|icext(uri_owl_ObjectProperty,X20),inference(split_conjunct,status(thm),[c7])).
+cnf(c44,plain,icext(uri_owl_ObjectProperty,uri_ex_p),inference(resolution,status(thm),[c43, c9])).
+cnf(c46,plain,iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty),inference(resolution,status(thm),[c27, c44])).
+fof(testcase_conclusion_fullish_005_Everything_is_a_Resource,conjecture,(((((((iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)&iext(uri_rdf_type,uri_ex_s,uri_owl_Thing))&iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource))&iext(uri_rdf_type,uri_ex_p,uri_owl_Thing))&iext(uri_rdf_type,uri_ex_p,uri_rdf_Property))&iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty))&iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource))&iext(uri_rdf_type,uri_ex_o,uri_owl_Thing)),input).
+fof(c1,negated_conjecture,(~(((((((iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)&iext(uri_rdf_type,uri_ex_s,uri_owl_Thing))&iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource))&iext(uri_rdf_type,uri_ex_p,uri_owl_Thing))&iext(uri_rdf_type,uri_ex_p,uri_rdf_Property))&iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty))&iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource))&iext(uri_rdf_type,uri_ex_o,uri_owl_Thing))),inference(assume_negation,status(cth),[testcase_conclusion_fullish_005_Everything_is_a_Resource])).
+fof(c2,negated_conjecture,(((((((~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing))|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource))|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing))|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property))|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty))|~iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource))|~iext(uri_rdf_type,uri_ex_o,uri_owl_Thing)),inference(fof_nnf,status(thm),[c1])).
+cnf(c3,negated_conjecture,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)|~iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_o,uri_owl_Thing),inference(split_conjunct,status(thm),[c2])).
+cnf(c57,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty)|~iext(uri_rdf_type,uri_ex_o,uri_rdfs_Resource),inference(resolution,status(thm),[c48, c3])).
+cnf(c71,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property)|~iext(uri_rdf_type,uri_ex_p,uri_owl_ObjectProperty),inference(resolution,status(thm),[c57, c47])).
+cnf(c72,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdf_Property),inference(resolution,status(thm),[c71, c46])).
+cnf(c73,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_p,uri_owl_Thing),inference(resolution,status(thm),[c72, c54])).
+cnf(c74,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing)|~iext(uri_rdf_type,uri_ex_p,uri_rdfs_Resource),inference(resolution,status(thm),[c73, c48])).
+cnf(c75,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource)|~iext(uri_rdf_type,uri_ex_s,uri_owl_Thing),inference(resolution,status(thm),[c74, c47])).
+cnf(c76,plain,~iext(uri_rdf_type,uri_ex_s,uri_rdfs_Resource),inference(resolution,status(thm),[c75, c48])).
+cnf(c77,plain,$false,inference(resolution,status(thm),[c76, c47])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 14
+# Processed clauses  : 33
+# Factors computed   : 0
+# Resolvents computed: 37
+# Tautologies deleted: 0
+# Forward subsumed   : 17
+# Backward subsumed  : 9
+
+# -------- CPU Time ---------
+# User time          : 0.297 s
+# System time        : 0.365 s
+# Total time         : 0.662 s

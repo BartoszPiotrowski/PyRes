@@ -1,0 +1,34 @@
+# cnf(c7,negated_conjecture,p).
+# cnf(c9,negated_conjecture,~big_g(X6)).
+# cnf(c8,negated_conjecture,big_f(skolem0001)).
+# cnf(c6,negated_conjecture,~big_f(X8)|~big_f(X7)|big_g(X8)).
+# cnf(c10,plain,~big_f(X9)|big_g(X9)).
+# cnf(c11,plain,big_g(skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(church_46_2_4,conjecture,(?[Y]:((![X]:(big_f(X)=>(big_f(Y)=>big_g(X))))=>(p=>(![X]:(big_f(X)=>big_g(Y)))))),input).
+fof(c0,negated_conjecture,(~(?[Y]:((![X]:(big_f(X)=>(big_f(Y)=>big_g(X))))=>(p=>(![X]:(big_f(X)=>big_g(Y))))))),inference(assume_negation,status(cth),[church_46_2_4])).
+fof(c1,negated_conjecture,(![Y]:((![X]:(~big_f(X)|(~big_f(Y)|big_g(X))))&(p&(?[X]:(big_f(X)&~big_g(Y)))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,((![Y]:(![X]:(~big_f(X)|(~big_f(Y)|big_g(X)))))&(p&((?[X]:big_f(X))&(![Y]:~big_g(Y))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,((![X2]:(![X3]:(~big_f(X3)|(~big_f(X2)|big_g(X3)))))&(p&((?[X4]:big_f(X4))&(![X5]:~big_g(X5))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X5]:((~big_f(X3)|(~big_f(X2)|big_g(X3)))&(p&(big_f(skolem0001)&~big_g(X5))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((![X2]:(![X3]:(~big_f(X3)|(~big_f(X2)|big_g(X3)))))&(p&(big_f(skolem0001)&(![X5]:~big_g(X5))))),inference(skolemize,status(esa),[c3])).])).
+cnf(c9,negated_conjecture,~big_g(X6),inference(split_conjunct,status(thm),[c5])).
+cnf(c8,negated_conjecture,big_f(skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,~big_f(X8)|~big_f(X7)|big_g(X8),inference(split_conjunct,status(thm),[c5])).
+cnf(c10,plain,~big_f(X9)|big_g(X9),inference(resolution,status(thm),[c6, c8])).
+cnf(c11,plain,big_g(skolem0001),inference(resolution,status(thm),[c10, c8])).
+cnf(c12,plain,$false,inference(resolution,status(thm),[c11, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 6
+# Factors computed   : 0
+# Resolvents computed: 3
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.333 s
+# System time        : 0.225 s
+# Total time         : 0.558 s

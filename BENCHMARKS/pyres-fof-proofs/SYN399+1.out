@@ -1,0 +1,37 @@
+# cnf(c6,negated_conjecture,~f(X6)|p).
+# cnf(c7,negated_conjecture,~p|f(X7)).
+# cnf(c9,negated_conjecture,f(X8)|p).
+# cnf(c10,plain,p).
+# cnf(c12,plain,f(X9)).
+# cnf(c8,negated_conjecture,~f(skolem0001)|~p).
+# cnf(c13,plain,~p).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(kalish223,conjecture,((![X]:(f(X)<=>p))=>((![Y]:f(Y))<=>p)),input).
+fof(c0,negated_conjecture,(~((![X]:(f(X)<=>p))=>((![Y]:f(Y))<=>p))),inference(assume_negation,status(cth),[kalish223])).
+fof(c1,negated_conjecture,((![X]:((~f(X)|p)&(~p|f(X))))&(((?[Y]:~f(Y))|~p)&((![Y]:f(Y))|p))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,((((![X]:~f(X))|p)&(~p|(![X]:f(X))))&(((?[Y]:~f(Y))|~p)&((![Y]:f(Y))|p))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,((((![X2]:~f(X2))|p)&(~p|(![X3]:f(X3))))&(((?[X4]:~f(X4))|~p)&((![X5]:f(X5))|p))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X5]:(((~f(X2)|p)&(~p|f(X3)))&((~f(skolem0001)|~p)&(f(X5)|p)))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((((![X2]:~f(X2))|p)&(~p|(![X3]:f(X3))))&((~f(skolem0001)|~p)&((![X5]:f(X5))|p))),inference(skolemize,status(esa),[c3])).])).
+cnf(c6,negated_conjecture,~f(X6)|p,inference(split_conjunct,status(thm),[c5])).
+cnf(c9,negated_conjecture,f(X8)|p,inference(split_conjunct,status(thm),[c5])).
+cnf(c10,plain,p,inference(resolution,status(thm),[c9, c6])).
+cnf(c7,negated_conjecture,~p|f(X7),inference(split_conjunct,status(thm),[c5])).
+cnf(c12,plain,f(X9),inference(resolution,status(thm),[c10, c7])).
+cnf(c8,negated_conjecture,~f(skolem0001)|~p,inference(split_conjunct,status(thm),[c5])).
+cnf(c13,plain,~p,inference(resolution,status(thm),[c8, c12])).
+cnf(c14,plain,$false,inference(resolution,status(thm),[c13, c10])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 7
+# Factors computed   : 0
+# Resolvents computed: 5
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 4
+
+# -------- CPU Time ---------
+# User time          : 0.316 s
+# System time        : 0.164 s
+# Total time         : 0.480 s

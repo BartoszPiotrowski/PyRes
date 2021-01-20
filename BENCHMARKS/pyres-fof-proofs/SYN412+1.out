@@ -1,0 +1,32 @@
+# cnf(c7,negated_conjecture,~f(skolem0001,X5)|~f(skolem0001,skolem0001)).
+# cnf(c8,negated_conjecture,f(skolem0001,skolem0001)|f(skolem0001,X6)).
+# cnf(c9,plain,f(skolem0001,skolem0001)).
+# cnf(c12,plain,~f(skolem0001,X7)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(kalish255,conjecture,(~(?[X]:(![Y]:(f(X,Y)<=>(~f(X,X)))))),input).
+fof(c0,negated_conjecture,(~(~(?[X]:(![Y]:(f(X,Y)<=>(~f(X,X))))))),inference(assume_negation,status(cth),[kalish255])).
+fof(c1,negated_conjecture,(~(~(?[X]:(![Y]:(f(X,Y)<=>~f(X,X)))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:(![Y]:((~f(X,Y)|~f(X,X))&(f(X,X)|f(X,Y))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X]:(((![Y]:~f(X,Y))|~f(X,X))&(f(X,X)|(![Y]:f(X,Y))))),inference(shift_quantors,status(thm),[c2])).
+fof(c4,negated_conjecture,(?[X2]:(((![X3]:~f(X2,X3))|~f(X2,X2))&(f(X2,X2)|(![X4]:f(X2,X4))))),inference(variable_rename,status(thm),[c3])).
+fof(c6,negated_conjecture,(![X3]:(![X4]:((~f(skolem0001,X3)|~f(skolem0001,skolem0001))&(f(skolem0001,skolem0001)|f(skolem0001,X4))))),inference(shift_quantors,status(thm),[fof(c5,negated_conjecture,(((![X3]:~f(skolem0001,X3))|~f(skolem0001,skolem0001))&(f(skolem0001,skolem0001)|(![X4]:f(skolem0001,X4)))),inference(skolemize,status(esa),[c4])).])).
+cnf(c8,negated_conjecture,f(skolem0001,skolem0001)|f(skolem0001,X6),inference(split_conjunct,status(thm),[c6])).
+cnf(c9,plain,f(skolem0001,skolem0001),inference(factor,status(thm),[c8])).
+cnf(c7,negated_conjecture,~f(skolem0001,X5)|~f(skolem0001,skolem0001),inference(split_conjunct,status(thm),[c6])).
+cnf(c12,plain,~f(skolem0001,X7),inference(resolution,status(thm),[c9, c7])).
+cnf(c13,plain,$false,inference(resolution,status(thm),[c12, c9])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 2
+# Processed clauses  : 4
+# Factors computed   : 1
+# Resolvents computed: 4
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.298 s
+# System time        : 0.188 s
+# Total time         : 0.486 s

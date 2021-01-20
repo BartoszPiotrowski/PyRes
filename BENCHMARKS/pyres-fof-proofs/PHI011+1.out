@@ -1,0 +1,63 @@
+# cnf(reflexivity,axiom,X13=X13).
+# cnf(c8,negated_conjecture,property(skolem0001)).
+# cnf(c9,negated_conjecture,object(skolem0002)).
+# cnf(c11,negated_conjecture,object(skolem0003)).
+# cnf(c10,negated_conjecture,is_the(skolem0002,skolem0001)).
+# cnf(symmetry,axiom,X14!=X15|X15=X14).
+# cnf(c12,negated_conjecture,is_the(skolem0003,skolem0001)).
+# cnf(c13,negated_conjecture,~exemplifies_property(skolem0001,skolem0003)).
+# cnf(c30,axiom,~object(X17)|~property(X17)).
+# cnf(c32,plain,~object(skolem0001)).
+# cnf(transitivity,axiom,X19!=X20|X20!=X18|X19=X18).
+# cnf(c20,axiom,~is_the(X21,X22)|property(X22)).
+# cnf(c21,axiom,~is_the(X23,X24)|object(X23)).
+# cnf(c0,plain,X26!=X25|~object(X26)|object(X25)).
+# cnf(c25,axiom,~exemplifies_property(X28,X29)|property(X28)).
+# cnf(c26,axiom,~exemplifies_property(X30,X31)|object(X31)).
+# cnf(c1,plain,X35!=X34|~property(X35)|property(X34)).
+# cnf(c2,plain,X40!=X38|X39!=X37|~exemplifies_property(X40,X39)|exemplifies_property(X38,X37)).
+# cnf(c3,plain,X44!=X42|X43!=X41|~is_the(X44,X43)|is_the(X42,X41)).
+# cnf(c40,plain,skolem0003!=X45|skolem0001!=X46|is_the(X45,X46)).
+# cnf(c42,plain,skolem0003!=X47|is_the(X47,skolem0001)).
+# cnf(c16,axiom,~object(X50)|~property(X49)|~object(X48)|~is_the(X50,X49)|X50!=X48|exemplifies_property(X49,X48)).
+# cnf(c41,plain,skolem0002!=X51|skolem0001!=X52|is_the(X51,X52)).
+# cnf(c45,plain,skolem0002!=X53|is_the(X53,skolem0001)).
+# cnf(c44,plain,~object(X55)|~property(X54)|~is_the(X55,X54)|exemplifies_property(X54,X55)).
+# cnf(c47,plain,~object(skolem0003)|~property(skolem0001)|exemplifies_property(skolem0001,skolem0003)).
+# cnf(c49,plain,~object(skolem0003)|exemplifies_property(skolem0001,skolem0003)).
+# cnf(c50,plain,exemplifies_property(skolem0001,skolem0003)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(description_theorem_2,conjecture,(![F]:(property(F)=>((?[Y]:(object(Y)&is_the(Y,F)))=>(![Z]:(object(Z)=>(is_the(Z,F)=>exemplifies_property(F,Z))))))),input).
+fof(c4,negated_conjecture,(~(![F]:(property(F)=>((?[Y]:(object(Y)&is_the(Y,F)))=>(![Z]:(object(Z)=>(is_the(Z,F)=>exemplifies_property(F,Z)))))))),inference(assume_negation,status(cth),[description_theorem_2])).
+fof(c5,negated_conjecture,(?[F]:(property(F)&((?[Y]:(object(Y)&is_the(Y,F)))&(?[Z]:(object(Z)&(is_the(Z,F)&~exemplifies_property(F,Z))))))),inference(fof_nnf,status(thm),[c4])).
+fof(c6,negated_conjecture,(?[X2]:(property(X2)&((?[X3]:(object(X3)&is_the(X3,X2)))&(?[X4]:(object(X4)&(is_the(X4,X2)&~exemplifies_property(X2,X4))))))),inference(variable_rename,status(thm),[c5])).
+fof(c7,negated_conjecture,(property(skolem0001)&((object(skolem0002)&is_the(skolem0002,skolem0001))&(object(skolem0003)&(is_the(skolem0003,skolem0001)&~exemplifies_property(skolem0001,skolem0003))))),inference(skolemize,status(esa),[c6])).
+cnf(c13,negated_conjecture,~exemplifies_property(skolem0001,skolem0003),inference(split_conjunct,status(thm),[c7])).
+cnf(c11,negated_conjecture,object(skolem0003),inference(split_conjunct,status(thm),[c7])).
+cnf(c8,negated_conjecture,property(skolem0001),inference(split_conjunct,status(thm),[c7])).
+cnf(c12,negated_conjecture,is_the(skolem0003,skolem0001),inference(split_conjunct,status(thm),[c7])).
+cnf(reflexivity,axiom,X13=X13,eq_axiom).
+fof(lemma_1,axiom,(![X]:(![F]:(![Y]:(((object(X)&property(F))&object(Y))=>((is_the(X,F)&X=Y)=>exemplifies_property(F,Y)))))),input).
+fof(c14,axiom,(![X]:(![F]:(![Y]:(((~object(X)|~property(F))|~object(Y))|((~is_the(X,F)|X!=Y)|exemplifies_property(F,Y)))))),inference(fof_nnf,status(thm),[lemma_1])).
+fof(c15,axiom,(![X5]:(![X6]:(![X7]:(((~object(X5)|~property(X6))|~object(X7))|((~is_the(X5,X6)|X5!=X7)|exemplifies_property(X6,X7)))))),inference(variable_rename,status(thm),[c14])).
+cnf(c16,axiom,~object(X50)|~property(X49)|~object(X48)|~is_the(X50,X49)|X50!=X48|exemplifies_property(X49,X48),inference(split_conjunct,status(thm),[c15])).
+cnf(c44,plain,~object(X55)|~property(X54)|~is_the(X55,X54)|exemplifies_property(X54,X55),inference(resolution,status(thm),[c16, reflexivity])).
+cnf(c47,plain,~object(skolem0003)|~property(skolem0001)|exemplifies_property(skolem0001,skolem0003),inference(resolution,status(thm),[c44, c12])).
+cnf(c49,plain,~object(skolem0003)|exemplifies_property(skolem0001,skolem0003),inference(resolution,status(thm),[c47, c8])).
+cnf(c50,plain,exemplifies_property(skolem0001,skolem0003),inference(resolution,status(thm),[c49, c11])).
+cnf(c53,plain,$false,inference(resolution,status(thm),[c50, c13])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 19
+# Processed clauses  : 28
+# Factors computed   : 0
+# Resolvents computed: 24
+# Tautologies deleted: 3
+# Forward subsumed   : 7
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.388 s
+# System time        : 0.316 s
+# Total time         : 0.704 s

@@ -1,0 +1,206 @@
+# cnf(c199,axiom,$true).
+# cnf(reflexivity,axiom,X77=X77).
+# cnf(symmetry,axiom,X78!=X79|X79=X78).
+# cnf(c51,negated_conjecture,finite(skolem0001)).
+# cnf(c60,axiom,subset(X80,X80)).
+# cnf(c63,axiom,relation(skolem0003)).
+# cnf(c64,axiom,relation_empty_yielding(skolem0003)).
+# cnf(c65,axiom,function(skolem0003)).
+# cnf(transitivity,axiom,X82!=X83|X83!=X81|X82=X81).
+# cnf(c68,axiom,relation(skolem0004)).
+# cnf(c69,axiom,relation_empty_yielding(skolem0004)).
+# cnf(c73,axiom,~empty(skolem0005)).
+# cnf(c74,axiom,epsilon_transitive(skolem0005)).
+# cnf(c75,axiom,epsilon_connected(skolem0005)).
+# cnf(c0,plain,X85!=X84|powerset(X85)=powerset(X84)).
+# cnf(c76,axiom,ordinal(skolem0005)).
+# cnf(c79,axiom,relation(skolem0006)).
+# cnf(c80,axiom,function(skolem0006)).
+# cnf(c81,axiom,one_to_one(skolem0006)).
+# cnf(c93,axiom,~empty(skolem0008)).
+# cnf(c1,plain,X89!=X88|X86!=X87|set_intersection2(X89,X86)=set_intersection2(X88,X87)).
+# cnf(c101,axiom,~empty(skolem0010)).
+# cnf(c102,axiom,relation(skolem0010)).
+# cnf(c105,axiom,relation(skolem0011)).
+# cnf(c106,axiom,function(skolem0011)).
+# cnf(c107,axiom,one_to_one(skolem0011)).
+# cnf(c2,plain,X93!=X92|X90!=X91|~in(X93,X90)|in(X92,X91)).
+# cnf(c108,axiom,empty(skolem0011)).
+# cnf(c109,axiom,epsilon_transitive(skolem0011)).
+# cnf(c110,axiom,epsilon_connected(skolem0011)).
+# cnf(c111,axiom,ordinal(skolem0011)).
+# cnf(c114,axiom,relation(skolem0012)).
+# cnf(c3,plain,X95!=X94|~ordinal(X95)|ordinal(X94)).
+# cnf(c115,axiom,empty(skolem0012)).
+# cnf(c116,axiom,function(skolem0012)).
+# cnf(c131,axiom,empty(skolem0014)).
+# cnf(c141,axiom,empty(skolem0016)).
+# cnf(c142,axiom,relation(skolem0016)).
+# cnf(c4,plain,X99!=X98|X96!=X97|~element(X99,X96)|element(X98,X97)).
+# cnf(c145,axiom,epsilon_transitive(skolem0017)).
+# cnf(c146,axiom,epsilon_connected(skolem0017)).
+# cnf(c147,axiom,ordinal(skolem0017)).
+# cnf(c150,axiom,relation(skolem0018)).
+# cnf(c151,axiom,function(skolem0018)).
+# cnf(c5,plain,X101!=X100|~epsilon_transitive(X101)|epsilon_transitive(X100)).
+# cnf(c155,axiom,~empty(skolem0019)).
+# cnf(c156,axiom,finite(skolem0019)).
+# cnf(c160,axiom,~empty(skolem0020)).
+# cnf(c161,axiom,epsilon_transitive(skolem0020)).
+# cnf(c162,axiom,epsilon_connected(skolem0020)).
+# cnf(c6,plain,X103!=X102|~epsilon_connected(X103)|epsilon_connected(X102)).
+# cnf(c163,axiom,ordinal(skolem0020)).
+# cnf(c164,axiom,natural(skolem0020)).
+# cnf(c168,axiom,empty(empty_set)).
+# cnf(c169,axiom,relation(empty_set)).
+# cnf(c7,plain,X105!=X104|~empty(X105)|empty(X104)).
+# cnf(c171,axiom,relation_empty_yielding(empty_set)).
+# cnf(c172,axiom,function(empty_set)).
+# cnf(c173,axiom,one_to_one(empty_set)).
+# cnf(c175,axiom,epsilon_transitive(empty_set)).
+# cnf(c8,plain,X107!=X106|~finite(X107)|finite(X106)).
+# cnf(c176,axiom,epsilon_connected(empty_set)).
+# cnf(c177,axiom,ordinal(empty_set)).
+# cnf(c9,plain,X109!=X108|~function(X109)|function(X108)).
+# cnf(c97,axiom,empty(skolem0009(X111))).
+# cnf(c120,axiom,empty(skolem0013(X112))).
+# cnf(c121,axiom,relation(skolem0013(X113))).
+# cnf(c10,plain,X115!=X114|~relation(X115)|relation(X114)).
+# cnf(c122,axiom,function(skolem0013(X116))).
+# cnf(c123,axiom,one_to_one(skolem0013(X117))).
+# cnf(c124,axiom,epsilon_transitive(skolem0013(X118))).
+# cnf(c125,axiom,epsilon_connected(skolem0013(X119))).
+# cnf(c126,axiom,ordinal(skolem0013(X120))).
+# cnf(c11,plain,X122!=X121|~natural(X122)|natural(X121)).
+# cnf(c127,axiom,natural(skolem0013(X123))).
+# cnf(c128,axiom,finite(skolem0013(X124))).
+# cnf(c181,axiom,~empty(powerset(X125))).
+# cnf(c198,axiom,element(skolem0021(X126),X126)).
+# cnf(c208,axiom,~empty(X127)|epsilon_transitive(X127)).
+# cnf(c12,plain,X129!=X128|~one_to_one(X129)|one_to_one(X128)).
+# cnf(c270,plain,epsilon_transitive(skolem0016)).
+# cnf(c274,plain,epsilon_transitive(skolem0012)).
+# cnf(c275,plain,epsilon_transitive(skolem0014)).
+# cnf(c13,plain,X131!=X130|~relation_empty_yielding(X131)|relation_empty_yielding(X130)).
+# cnf(c272,plain,epsilon_transitive(skolem0009(X133))).
+# cnf(c209,axiom,~empty(X134)|epsilon_connected(X134)).
+# cnf(c279,plain,epsilon_connected(skolem0016)).
+# cnf(c14,plain,X138!=X137|X135!=X136|~subset(X138,X135)|subset(X137,X136)).
+# cnf(c283,plain,epsilon_connected(skolem0012)).
+# cnf(c284,plain,epsilon_connected(skolem0014)).
+# cnf(c281,plain,epsilon_connected(skolem0009(X140))).
+# cnf(c17,axiom,~empty(X141)|X141=X142|~empty(X142)).
+# cnf(c210,axiom,~empty(X143)|ordinal(X143)).
+# cnf(c294,plain,ordinal(skolem0016)).
+# cnf(c298,plain,ordinal(skolem0012)).
+# cnf(c20,axiom,~in(X145,X144)|~empty(X144)).
+# cnf(c299,plain,ordinal(skolem0014)).
+# cnf(c296,plain,ordinal(skolem0009(X147))).
+# cnf(c233,axiom,~empty(X148)|relation(X148)).
+# cnf(c23,axiom,~empty(X149)|X149=empty_set).
+# cnf(c306,plain,relation(skolem0014)).
+# cnf(c26,axiom,~in(X151,X152)|~element(X152,powerset(X153))|~empty(X153)).
+# cnf(c303,plain,relation(skolem0009(X154))).
+# cnf(c237,axiom,~ordinal(X155)|epsilon_transitive(X155)).
+# cnf(c29,axiom,~in(X157,X156)|~element(X156,powerset(X158))|element(X157,X158)).
+# cnf(c34,axiom,~element(X160,powerset(X159))|subset(X160,X159)).
+# cnf(c238,axiom,~ordinal(X163)|epsilon_connected(X163)).
+# cnf(c35,axiom,~subset(X165,X164)|element(X165,powerset(X164))).
+# cnf(c38,axiom,~element(X166,X167)|empty(X167)|in(X166,X167)).
+# cnf(c241,axiom,~empty(X170)|function(X170)).
+# cnf(c40,axiom,set_intersection2(X171,empty_set)=empty_set).
+# cnf(c340,plain,function(skolem0016)).
+# cnf(c345,plain,function(skolem0014)).
+# cnf(c43,axiom,~in(X174,X173)|element(X174,X173)).
+# cnf(c342,plain,function(skolem0009(X175))).
+# cnf(c244,axiom,~empty(X176)|finite(X176)).
+# cnf(c360,plain,finite(skolem0011)).
+# cnf(c361,plain,finite(skolem0016)).
+# cnf(c364,plain,finite(empty_set)).
+# cnf(c45,axiom,subset(set_intersection2(X177,X178),X177)).
+# cnf(c365,plain,finite(skolem0012)).
+# cnf(c366,plain,finite(skolem0014)).
+# cnf(c363,plain,finite(skolem0009(X180))).
+# cnf(c52,negated_conjecture,~finite(set_intersection2(skolem0001,skolem0002))).
+# cnf(c57,axiom,~subset(X188,X187)|~finite(X187)|finite(X188)).
+# cnf(c307,plain,skolem0011=empty_set).
+# cnf(c87,axiom,empty(X193)|element(skolem0007(X193),powerset(X193))).
+# cnf(c308,plain,skolem0016=empty_set).
+# cnf(c312,plain,skolem0012=empty_set).
+# cnf(c313,plain,skolem0014=empty_set).
+# cnf(c337,plain,element(X194,powerset(X194))).
+# cnf(c88,axiom,empty(X195)|~empty(skolem0007(X195))).
+# cnf(c371,plain,empty_set=skolem0011).
+# cnf(c404,plain,empty_set=skolem0016).
+# cnf(c418,plain,empty_set=skolem0012).
+# cnf(c89,axiom,empty(X198)|finite(skolem0007(X198))).
+# cnf(c432,plain,empty_set=skolem0014).
+# cnf(c494,plain,finite(skolem0007(skolem0020))).
+# cnf(c96,axiom,element(skolem0009(X199),powerset(X199))).
+# cnf(c497,plain,finite(skolem0007(skolem0010))).
+# cnf(c498,plain,finite(skolem0007(skolem0008))).
+# cnf(c502,plain,finite(skolem0007(skolem0005))).
+# cnf(c507,plain,finite(skolem0007(skolem0019))).
+# cnf(c119,axiom,element(skolem0013(X200),powerset(X200))).
+# cnf(c525,plain,subset(skolem0009(X201),X201)).
+# cnf(c530,plain,subset(skolem0013(X202),X202)).
+# cnf(c167,axiom,set_intersection2(X203,X203)=X203).
+# cnf(c309,plain,skolem0013(X204)=empty_set).
+# cnf(c310,plain,skolem0009(X205)=empty_set).
+# cnf(c137,axiom,empty(X206)|element(skolem0015(X206),powerset(X206))).
+# cnf(c500,plain,finite(skolem0007(powerset(X209)))).
+# cnf(c539,plain,X210=set_intersection2(X210,X210)).
+# cnf(c553,plain,empty_set=skolem0013(X211)).
+# cnf(c567,plain,empty_set=skolem0009(X212)).
+# cnf(c138,axiom,empty(X213)|~empty(skolem0015(X213))).
+# cnf(c255,axiom,~in(X217,X218)|~in(X218,X217)).
+# cnf(c184,axiom,~relation(X221)|~relation(X222)|relation(set_intersection2(X221,X222))).
+# cnf(c286,plain,~empty(X224)|X224=skolem0011).
+# cnf(c660,plain,skolem0016=skolem0011).
+# cnf(c192,axiom,~finite(X225)|finite(set_intersection2(X225,X226))).
+# cnf(c666,plain,skolem0012=skolem0011).
+# cnf(c667,plain,skolem0014=skolem0011).
+# cnf(c668,plain,skolem0011=skolem0016).
+# cnf(c698,plain,skolem0011=skolem0012).
+# cnf(c712,plain,skolem0011=skolem0014).
+# cnf(c195,axiom,~finite(X227)|finite(set_intersection2(X228,X227))).
+# cnf(c662,plain,skolem0013(X229)=skolem0011).
+# cnf(c664,plain,skolem0009(X230)=skolem0011).
+# cnf(c204,axiom,set_intersection2(X231,X232)=set_intersection2(X232,X231)).
+# cnf(c682,plain,finite(set_intersection2(skolem0014,X233))).
+# cnf(c684,plain,finite(set_intersection2(empty_set,X234))).
+# cnf(c686,plain,finite(set_intersection2(skolem0016,X235))).
+# cnf(c688,plain,finite(set_intersection2(skolem0011,X236))).
+# cnf(c689,plain,finite(set_intersection2(skolem0001,X237))).
+# cnf(c213,axiom,~epsilon_transitive(X238)|~epsilon_connected(X238)|ordinal(X238)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(t15_finset_1,conjecture,(![A]:(![B]:(finite(A)=>finite(set_intersection2(A,B))))),input).
+fof(c46,negated_conjecture,(~(![A]:(![B]:(finite(A)=>finite(set_intersection2(A,B)))))),inference(assume_negation,status(cth),[t15_finset_1])).
+fof(c47,negated_conjecture,(?[A]:(?[B]:(finite(A)&~finite(set_intersection2(A,B))))),inference(fof_nnf,status(thm),[c46])).
+fof(c48,negated_conjecture,(?[A]:(finite(A)&(?[B]:~finite(set_intersection2(A,B))))),inference(shift_quantors,status(thm),[c47])).
+fof(c49,negated_conjecture,(?[X24]:(finite(X24)&(?[X25]:~finite(set_intersection2(X24,X25))))),inference(variable_rename,status(thm),[c48])).
+fof(c50,negated_conjecture,(finite(skolem0001)&~finite(set_intersection2(skolem0001,skolem0002))),inference(skolemize,status(esa),[c49])).
+cnf(c52,negated_conjecture,~finite(set_intersection2(skolem0001,skolem0002)),inference(split_conjunct,status(thm),[c50])).
+cnf(c51,negated_conjecture,finite(skolem0001),inference(split_conjunct,status(thm),[c50])).
+fof(fc11_finset_1,axiom,(![A]:(![B]:(finite(A)=>finite(set_intersection2(A,B))))),input).
+fof(c188,axiom,(![A]:(![B]:(~finite(A)|finite(set_intersection2(A,B))))),inference(fof_nnf,status(thm),[fc11_finset_1])).
+fof(c189,axiom,(![A]:(~finite(A)|(![B]:finite(set_intersection2(A,B))))),inference(shift_quantors,status(thm),[c188])).
+fof(c191,axiom,(![X55]:(![X56]:(~finite(X55)|finite(set_intersection2(X55,X56))))),inference(shift_quantors,status(thm),[fof(c190,axiom,(![X55]:(~finite(X55)|(![X56]:finite(set_intersection2(X55,X56))))),inference(variable_rename,status(thm),[c189])).])).
+cnf(c192,axiom,~finite(X225)|finite(set_intersection2(X225,X226)),inference(split_conjunct,status(thm),[c191])).
+cnf(c689,plain,finite(set_intersection2(skolem0001,X237)),inference(resolution,status(thm),[c192, c51])).
+cnf(c835,plain,$false,inference(resolution,status(thm),[c689, c52])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 136
+# Processed clauses  : 175
+# Factors computed   : 0
+# Resolvents computed: 591
+# Tautologies deleted: 12
+# Forward subsumed   : 65
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.492 s
+# System time        : 0.240 s
+# Total time         : 0.731 s

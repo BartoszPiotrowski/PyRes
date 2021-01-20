@@ -1,0 +1,77 @@
+# cnf(c6,negated_conjecture,environment(skolem0001)).
+# cnf(c21,axiom,~constant(X9)|~decreases(X9)).
+# cnf(c7,negated_conjecture,subpopulations(first_movers,efficient_producers,skolem0001,skolem0002)).
+# cnf(c12,plain,greater(resilience(efficient_producers),resilience(first_movers))).
+# cnf(c8,negated_conjecture,decreases(resources(skolem0001,skolem0002))|constant(resources(skolem0001,skolem0002))).
+# cnf(c9,negated_conjecture,decreases(resources(skolem0001,skolem0002))|decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c10,negated_conjecture,~increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002))).
+# cnf(c23,plain,decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|~constant(resources(skolem0001,skolem0002))).
+# cnf(c24,plain,decreases(resources(skolem0001,skolem0002))|~constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c11,negated_conjecture,~increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c16,plain,~environment(X13)|~subpopulations(X11,X12,X13,X10)|~greater(resilience(X12),resilience(X11))|~decreases(resources(X13,X10))|increases(difference(disbanding_rate(X11,X10),disbanding_rate(X12,X10)))).
+# cnf(c26,plain,~environment(X14)|~subpopulations(first_movers,efficient_producers,X14,X15)|~decreases(resources(X14,X15))|increases(difference(disbanding_rate(first_movers,X15),disbanding_rate(efficient_producers,X15)))).
+# cnf(c27,plain,~environment(skolem0001)|~decreases(resources(skolem0001,skolem0002))|increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c28,plain,~environment(skolem0001)|increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002))).
+# cnf(c30,plain,increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002))).
+# cnf(c17,plain,~environment(X19)|~subpopulations(X17,X18,X19,X16)|~greater(resilience(X18),resilience(X17))|~constant(resources(X19,X16))|constant(difference(disbanding_rate(X17,X16),disbanding_rate(X18,X16)))).
+# cnf(c32,plain,constant(resources(skolem0001,skolem0002))).
+# cnf(c35,plain,decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c36,plain,~constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c34,plain,~environment(X21)|~subpopulations(first_movers,efficient_producers,X21,X20)|~constant(resources(X21,X20))|constant(difference(disbanding_rate(first_movers,X20),disbanding_rate(efficient_producers,X20)))).
+# cnf(c37,plain,~environment(skolem0001)|~constant(resources(skolem0001,skolem0002))|constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c38,plain,~environment(skolem0001)|constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# cnf(c39,plain,constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(mp_constant_not_decrease,axiom,(![X]:(constant(X)=>(~decreases(X)))),input).
+fof(c18,axiom,(![X]:(constant(X)=>~decreases(X))),inference(fof_simplification,status(thm),[mp_constant_not_decrease])).
+fof(c19,axiom,(![X]:(~constant(X)|~decreases(X))),inference(fof_nnf,status(thm),[c18])).
+fof(c20,axiom,(![X8]:(~constant(X8)|~decreases(X8))),inference(variable_rename,status(thm),[c19])).
+cnf(c21,axiom,~constant(X9)|~decreases(X9),inference(split_conjunct,status(thm),[c20])).
+fof(prove_l4,conjecture,(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>((decreases(resources(E,T))=>increases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T))))&(constant(resources(E,T))=>(~decreases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T))))))))),input).
+fof(c0,negated_conjecture,(~(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>((decreases(resources(E,T))=>increases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T))))&(constant(resources(E,T))=>(~decreases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T)))))))))),inference(assume_negation,status(cth),[prove_l4])).
+fof(c1,negated_conjecture,(~(![E]:(![T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))=>((decreases(resources(E,T))=>increases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T))))&(constant(resources(E,T))=>~decreases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T))))))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[E]:(?[T]:((environment(E)&subpopulations(first_movers,efficient_producers,E,T))&((decreases(resources(E,T))&~increases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T))))|(constant(resources(E,T))&decreases(difference(disbanding_rate(first_movers,T),disbanding_rate(efficient_producers,T)))))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:(?[X3]:((environment(X2)&subpopulations(first_movers,efficient_producers,X2,X3))&((decreases(resources(X2,X3))&~increases(difference(disbanding_rate(first_movers,X3),disbanding_rate(efficient_producers,X3))))|(constant(resources(X2,X3))&decreases(difference(disbanding_rate(first_movers,X3),disbanding_rate(efficient_producers,X3)))))))),inference(variable_rename,status(thm),[c2])).
+fof(c4,negated_conjecture,((environment(skolem0001)&subpopulations(first_movers,efficient_producers,skolem0001,skolem0002))&((decreases(resources(skolem0001,skolem0002))&~increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))))|(constant(resources(skolem0001,skolem0002))&decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))))),inference(skolemize,status(esa),[c3])).
+fof(c5,negated_conjecture,((environment(skolem0001)&subpopulations(first_movers,efficient_producers,skolem0001,skolem0002))&(((decreases(resources(skolem0001,skolem0002))|constant(resources(skolem0001,skolem0002)))&(decreases(resources(skolem0001,skolem0002))|decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))))&((~increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002)))&(~increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))))))),inference(distribute,status(thm),[c4])).
+cnf(c9,negated_conjecture,decreases(resources(skolem0001,skolem0002))|decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(split_conjunct,status(thm),[c5])).
+cnf(c23,plain,decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|~constant(resources(skolem0001,skolem0002)),inference(resolution,status(thm),[c9, c21])).
+cnf(c10,negated_conjecture,~increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002)),inference(split_conjunct,status(thm),[c5])).
+cnf(c6,negated_conjecture,environment(skolem0001),inference(split_conjunct,status(thm),[c5])).
+cnf(c8,negated_conjecture,decreases(resources(skolem0001,skolem0002))|constant(resources(skolem0001,skolem0002)),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,negated_conjecture,subpopulations(first_movers,efficient_producers,skolem0001,skolem0002),inference(split_conjunct,status(thm),[c5])).
+fof(a2,plain,greater(resilience(efficient_producers),resilience(first_movers)),input).
+cnf(c12,plain,greater(resilience(efficient_producers),resilience(first_movers)),inference(split_conjunct,status(thm),[a2])).
+fof(a6,plain,(![E]:(![S1]:(![S2]:(![T]:(((environment(E)&subpopulations(S1,S2,E,T))&greater(resilience(S2),resilience(S1)))=>((decreases(resources(E,T))=>increases(difference(disbanding_rate(S1,T),disbanding_rate(S2,T))))&(constant(resources(E,T))=>constant(difference(disbanding_rate(S1,T),disbanding_rate(S2,T)))))))))),input).
+fof(c13,plain,(![E]:(![S1]:(![S2]:(![T]:(((~environment(E)|~subpopulations(S1,S2,E,T))|~greater(resilience(S2),resilience(S1)))|((~decreases(resources(E,T))|increases(difference(disbanding_rate(S1,T),disbanding_rate(S2,T))))&(~constant(resources(E,T))|constant(difference(disbanding_rate(S1,T),disbanding_rate(S2,T)))))))))),inference(fof_nnf,status(thm),[a6])).
+fof(c14,plain,(![X4]:(![X5]:(![X6]:(![X7]:(((~environment(X4)|~subpopulations(X5,X6,X4,X7))|~greater(resilience(X6),resilience(X5)))|((~decreases(resources(X4,X7))|increases(difference(disbanding_rate(X5,X7),disbanding_rate(X6,X7))))&(~constant(resources(X4,X7))|constant(difference(disbanding_rate(X5,X7),disbanding_rate(X6,X7)))))))))),inference(variable_rename,status(thm),[c13])).
+fof(c15,plain,(![X4]:(![X5]:(![X6]:(![X7]:((((~environment(X4)|~subpopulations(X5,X6,X4,X7))|~greater(resilience(X6),resilience(X5)))|(~decreases(resources(X4,X7))|increases(difference(disbanding_rate(X5,X7),disbanding_rate(X6,X7)))))&(((~environment(X4)|~subpopulations(X5,X6,X4,X7))|~greater(resilience(X6),resilience(X5)))|(~constant(resources(X4,X7))|constant(difference(disbanding_rate(X5,X7),disbanding_rate(X6,X7)))))))))),inference(distribute,status(thm),[c14])).
+cnf(c16,plain,~environment(X13)|~subpopulations(X11,X12,X13,X10)|~greater(resilience(X12),resilience(X11))|~decreases(resources(X13,X10))|increases(difference(disbanding_rate(X11,X10),disbanding_rate(X12,X10))),inference(split_conjunct,status(thm),[c15])).
+cnf(c26,plain,~environment(X14)|~subpopulations(first_movers,efficient_producers,X14,X15)|~decreases(resources(X14,X15))|increases(difference(disbanding_rate(first_movers,X15),disbanding_rate(efficient_producers,X15))),inference(resolution,status(thm),[c16, c12])).
+cnf(c27,plain,~environment(skolem0001)|~decreases(resources(skolem0001,skolem0002))|increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(resolution,status(thm),[c26, c7])).
+cnf(c28,plain,~environment(skolem0001)|increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002)),inference(resolution,status(thm),[c27, c8])).
+cnf(c30,plain,increases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002)))|constant(resources(skolem0001,skolem0002)),inference(resolution,status(thm),[c28, c6])).
+cnf(c32,plain,constant(resources(skolem0001,skolem0002)),inference(resolution,status(thm),[c30, c10])).
+cnf(c35,plain,decreases(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(resolution,status(thm),[c32, c23])).
+cnf(c36,plain,~constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(resolution,status(thm),[c35, c21])).
+cnf(c17,plain,~environment(X19)|~subpopulations(X17,X18,X19,X16)|~greater(resilience(X18),resilience(X17))|~constant(resources(X19,X16))|constant(difference(disbanding_rate(X17,X16),disbanding_rate(X18,X16))),inference(split_conjunct,status(thm),[c15])).
+cnf(c34,plain,~environment(X21)|~subpopulations(first_movers,efficient_producers,X21,X20)|~constant(resources(X21,X20))|constant(difference(disbanding_rate(first_movers,X20),disbanding_rate(efficient_producers,X20))),inference(resolution,status(thm),[c17, c12])).
+cnf(c37,plain,~environment(skolem0001)|~constant(resources(skolem0001,skolem0002))|constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(resolution,status(thm),[c34, c7])).
+cnf(c38,plain,~environment(skolem0001)|constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(resolution,status(thm),[c37, c32])).
+cnf(c39,plain,constant(difference(disbanding_rate(first_movers,skolem0002),disbanding_rate(efficient_producers,skolem0002))),inference(resolution,status(thm),[c38, c6])).
+cnf(c40,plain,$false,inference(resolution,status(thm),[c39, c36])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 10
+# Processed clauses  : 23
+# Factors computed   : 0
+# Resolvents computed: 19
+# Tautologies deleted: 1
+# Forward subsumed   : 3
+# Backward subsumed  : 10
+
+# -------- CPU Time ---------
+# User time          : 0.242 s
+# System time        : 0.265 s
+# Total time         : 0.507 s

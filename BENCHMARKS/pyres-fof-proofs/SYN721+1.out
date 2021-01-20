@@ -1,0 +1,39 @@
+# cnf(c4,negated_conjecture,r(a,b)).
+# cnf(c5,negated_conjecture,~r(X8,X9)|q(X8,X8)).
+# cnf(c8,plain,q(a,a)).
+# cnf(c6,negated_conjecture,~q(X11,X12)|r(X10,X12)).
+# cnf(c9,plain,r(X13,a)).
+# cnf(c7,negated_conjecture,~r(b,X14)|~q(X14,a)).
+# cnf(c10,plain,q(X15,X15)).
+# cnf(c13,plain,r(X17,X16)).
+# cnf(c11,plain,~r(b,a)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(lx1,conjecture,(((r(a,b)&(![X]:((?[Y]:r(X,Y))=>q(X,X))))&(![U]:(![V]:(q(U,V)=>(![Z]:r(Z,V))))))=>(?[W]:(r(b,W)&q(W,a)))),input).
+fof(c0,negated_conjecture,(~(((r(a,b)&(![X]:((?[Y]:r(X,Y))=>q(X,X))))&(![U]:(![V]:(q(U,V)=>(![Z]:r(Z,V))))))=>(?[W]:(r(b,W)&q(W,a))))),inference(assume_negation,status(cth),[lx1])).
+fof(c1,negated_conjecture,(((r(a,b)&(![X]:((![Y]:~r(X,Y))|q(X,X))))&(![U]:(![V]:(~q(U,V)|(![Z]:r(Z,V))))))&(![W]:(~r(b,W)|~q(W,a)))),inference(fof_nnf,status(thm),[c0])).
+fof(c3,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(((r(a,b)&(~r(X2,X3)|q(X2,X2)))&(~q(X4,X5)|r(X6,X5)))&(~r(b,X7)|~q(X7,a))))))))),inference(shift_quantors,status(thm),[fof(c2,negated_conjecture,(((r(a,b)&(![X2]:((![X3]:~r(X2,X3))|q(X2,X2))))&(![X4]:(![X5]:(~q(X4,X5)|(![X6]:r(X6,X5))))))&(![X7]:(~r(b,X7)|~q(X7,a)))),inference(variable_rename,status(thm),[c1])).])).
+cnf(c6,negated_conjecture,~q(X11,X12)|r(X10,X12),inference(split_conjunct,status(thm),[c3])).
+cnf(c5,negated_conjecture,~r(X8,X9)|q(X8,X8),inference(split_conjunct,status(thm),[c3])).
+cnf(c4,negated_conjecture,r(a,b),inference(split_conjunct,status(thm),[c3])).
+cnf(c8,plain,q(a,a),inference(resolution,status(thm),[c5, c4])).
+cnf(c9,plain,r(X13,a),inference(resolution,status(thm),[c6, c8])).
+cnf(c10,plain,q(X15,X15),inference(resolution,status(thm),[c9, c5])).
+cnf(c13,plain,r(X17,X16),inference(resolution,status(thm),[c10, c6])).
+cnf(c7,negated_conjecture,~r(b,X14)|~q(X14,a),inference(split_conjunct,status(thm),[c3])).
+cnf(c11,plain,~r(b,a),inference(resolution,status(thm),[c7, c8])).
+cnf(c14,plain,$false,inference(resolution,status(thm),[c11, c13])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 4
+# Processed clauses  : 9
+# Factors computed   : 0
+# Resolvents computed: 7
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 0.343 s
+# System time        : 0.300 s
+# Total time         : 0.643 s

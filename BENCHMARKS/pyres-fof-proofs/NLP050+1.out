@@ -1,0 +1,1603 @@
+# cnf(reflexivity,axiom,X141=X141).
+# cnf(c55,negated_conjecture,actual_world(skolem0001)).
+# cnf(c79,axiom,~member(X142,X143,X143)).
+# cnf(c56,negated_conjecture,nonhuman(skolem0001,skolem0005)).
+# cnf(c58,negated_conjecture,woman(skolem0001,skolem0002)).
+# cnf(symmetry,axiom,X145!=X144|X144=X145).
+# cnf(c59,negated_conjecture,mia_forename(skolem0001,skolem0003)).
+# cnf(c60,negated_conjecture,forename(skolem0001,skolem0003)).
+# cnf(c61,negated_conjecture,shake_beverage(skolem0001,skolem0004)).
+# cnf(c62,negated_conjecture,event(skolem0001,skolem0005)).
+# cnf(transitivity,axiom,X149!=X147|X147!=X148|X149=X148).
+# cnf(c65,negated_conjecture,past(skolem0001,skolem0005)).
+# cnf(c66,negated_conjecture,nonreflexive(skolem0001,skolem0005)).
+# cnf(c67,negated_conjecture,order(skolem0001,skolem0005)).
+# cnf(c74,negated_conjecture,five(skolem0001,skolem0006)).
+# cnf(c75,negated_conjecture,group(skolem0001,skolem0006)).
+# cnf(c0,plain,X150!=X152|X151!=X153|~woman(X150,X151)|woman(X152,X153)).
+# cnf(c57,negated_conjecture,of(skolem0001,skolem0003,skolem0002)).
+# cnf(c63,negated_conjecture,agent(skolem0001,skolem0005,skolem0002)).
+# cnf(c64,negated_conjecture,patient(skolem0001,skolem0005,skolem0004)).
+# cnf(c118,axiom,~unisex(X155,X154)|~female(X155,X154)).
+# cnf(c122,axiom,~specific(X157,X156)|~general(X157,X156)).
+# cnf(c1,plain,X158!=X160|X159!=X161|~female(X158,X159)|female(X160,X161)).
+# cnf(c126,axiom,~singleton(X163,X162)|~multiple(X163,X162)).
+# cnf(c130,axiom,~present(X165,X164)|~past(X165,X164)).
+# cnf(c282,plain,~present(skolem0001,skolem0005)).
+# cnf(c134,axiom,~nonliving(X167,X166)|~living(X167,X166)).
+# cnf(c138,axiom,~nonhuman(X168,X169)|~human(X168,X169)).
+# cnf(c2,plain,X170!=X172|X171!=X173|~human_person(X170,X171)|human_person(X172,X173)).
+# cnf(c142,axiom,~existent(X175,X174)|~nonexistent(X175,X174)).
+# cnf(c146,axiom,~animate(X177,X176)|~nonliving(X177,X176)).
+# cnf(c149,axiom,~dollar(X179,X178)|cash(X179,X178)).
+# cnf(c152,axiom,~cash(X180,X181)|currency(X180,X181)).
+# cnf(c155,axiom,~currency(X182,X183)|possession(X182,X183)).
+# cnf(c3,plain,X184!=X186|X185!=X187|~animate(X184,X185)|animate(X186,X187)).
+# cnf(c158,axiom,~possession(X188,X189)|abstraction(X188,X189)).
+# cnf(c161,axiom,~abstraction(X190,X191)|thing(X190,X191)).
+# cnf(c164,axiom,~thing(X193,X192)|singleton(X193,X192)).
+# cnf(c167,axiom,~abstraction(X195,X194)|nonhuman(X195,X194)).
+# cnf(c170,axiom,~abstraction(X196,X197)|general(X196,X197)).
+# cnf(c4,plain,X198!=X200|X199!=X201|~human(X198,X199)|human(X200,X201)).
+# cnf(c173,axiom,~abstraction(X202,X203)|unisex(X202,X203)).
+# cnf(c176,axiom,~group(X205,X204)|set(X205,X204)).
+# cnf(c283,plain,set(skolem0001,skolem0006)).
+# cnf(c179,axiom,~set(X207,X206)|multiple(X207,X206)).
+# cnf(c284,plain,multiple(skolem0001,skolem0006)).
+# cnf(c5,plain,X208!=X210|X209!=X211|~organism(X208,X209)|organism(X210,X211)).
+# cnf(c285,plain,~singleton(skolem0001,skolem0006)).
+# cnf(c182,axiom,~five(X213,X212)|group(X213,X212)).
+# cnf(c185,axiom,~cost(X214,X215)|event(X214,X215)).
+# cnf(c188,axiom,~event(X216,X217)|eventuality(X216,X217)).
+# cnf(c6,plain,X218!=X220|X219!=X221|~living(X218,X219)|living(X220,X221)).
+# cnf(c287,plain,eventuality(skolem0001,skolem0005)).
+# cnf(c191,axiom,~eventuality(X222,X223)|thing(X222,X223)).
+# cnf(c288,plain,thing(skolem0001,skolem0005)).
+# cnf(c289,plain,singleton(skolem0001,skolem0005)).
+# cnf(c194,axiom,~eventuality(X225,X224)|specific(X225,X224)).
+# cnf(c7,plain,X226!=X228|X227!=X229|~impartial(X226,X227)|impartial(X228,X229)).
+# cnf(c290,plain,specific(skolem0001,skolem0005)).
+# cnf(c197,axiom,~eventuality(X230,X231)|nonexistent(X230,X231)).
+# cnf(c291,plain,nonexistent(skolem0001,skolem0005)).
+# cnf(c292,plain,~existent(skolem0001,skolem0005)).
+# cnf(c200,axiom,~eventuality(X232,X233)|unisex(X232,X233)).
+# cnf(c8,plain,X234!=X236|X235!=X237|~entity(X234,X235)|entity(X236,X237)).
+# cnf(c293,plain,unisex(skolem0001,skolem0005)).
+# cnf(c203,axiom,~order(X239,X238)|act(X239,X238)).
+# cnf(c294,plain,act(skolem0001,skolem0005)).
+# cnf(c206,axiom,~act(X240,X241)|event(X240,X241)).
+# cnf(c9,plain,X242!=X244|X243!=X245|~mia_forename(X242,X243)|mia_forename(X244,X245)).
+# cnf(c209,axiom,~order(X247,X246)|event(X247,X246)).
+# cnf(c212,axiom,~shake_beverage(X249,X248)|beverage(X249,X248)).
+# cnf(c298,plain,beverage(skolem0001,skolem0004)).
+# cnf(c215,axiom,~beverage(X250,X251)|food(X250,X251)).
+# cnf(c10,plain,X252!=X254|X253!=X255|~forename(X252,X253)|forename(X254,X255)).
+# cnf(c299,plain,food(skolem0001,skolem0004)).
+# cnf(c218,axiom,~food(X256,X257)|substance_matter(X256,X257)).
+# cnf(c301,plain,substance_matter(skolem0001,skolem0004)).
+# cnf(c221,axiom,~substance_matter(X259,X258)|object(X259,X258)).
+# cnf(c302,plain,object(skolem0001,skolem0004)).
+# cnf(c11,plain,X260!=X262|X261!=X263|~relation(X260,X261)|relation(X262,X263)).
+# cnf(c224,axiom,~object(X265,X264)|entity(X265,X264)).
+# cnf(c303,plain,entity(skolem0001,skolem0004)).
+# cnf(c227,axiom,~entity(X266,X267)|thing(X266,X267)).
+# cnf(c305,plain,thing(skolem0001,skolem0004)).
+# cnf(c306,plain,singleton(skolem0001,skolem0004)).
+# cnf(c12,plain,X268!=X270|X269!=X271|~abstraction(X268,X269)|abstraction(X270,X271)).
+# cnf(c230,axiom,~entity(X272,X273)|specific(X272,X273)).
+# cnf(c307,plain,specific(skolem0001,skolem0004)).
+# cnf(c233,axiom,~entity(X275,X274)|existent(X275,X274)).
+# cnf(c308,plain,existent(skolem0001,skolem0004)).
+# cnf(c236,axiom,~object(X276,X277)|nonliving(X276,X277)).
+# cnf(c13,plain,X278!=X280|X279!=X281|~relname(X278,X279)|relname(X280,X281)).
+# cnf(c309,plain,nonliving(skolem0001,skolem0004)).
+# cnf(c310,plain,~animate(skolem0001,skolem0004)).
+# cnf(c239,axiom,~object(X282,X283)|impartial(X282,X283)).
+# cnf(c311,plain,impartial(skolem0001,skolem0004)).
+# cnf(c242,axiom,~object(X285,X284)|unisex(X285,X284)).
+# cnf(c14,plain,X286!=X288|X287!=X289|~object(X286,X287)|object(X288,X289)).
+# cnf(c313,plain,unisex(skolem0001,skolem0004)).
+# cnf(c245,axiom,~forename(X290,X291)|relname(X290,X291)).
+# cnf(c315,plain,relname(skolem0001,skolem0003)).
+# cnf(c248,axiom,~relname(X292,X293)|relation(X292,X293)).
+# cnf(c317,plain,relation(skolem0001,skolem0003)).
+# cnf(c15,plain,X294!=X296|X295!=X297|~unisex(X294,X295)|unisex(X296,X297)).
+# cnf(c251,axiom,~relation(X298,X299)|abstraction(X298,X299)).
+# cnf(c321,plain,abstraction(skolem0001,skolem0003)).
+# cnf(c323,plain,nonhuman(skolem0001,skolem0003)).
+# cnf(c324,plain,general(skolem0001,skolem0003)).
+# cnf(c325,plain,thing(skolem0001,skolem0003)).
+# cnf(c16,plain,X300!=X302|X301!=X303|~nonliving(X300,X301)|nonliving(X302,X303)).
+# cnf(c326,plain,unisex(skolem0001,skolem0003)).
+# cnf(c327,plain,~specific(skolem0001,skolem0003)).
+# cnf(c328,plain,singleton(skolem0001,skolem0003)).
+# cnf(c254,axiom,~mia_forename(X304,X305)|forename(X304,X305)).
+# cnf(c17,plain,X306!=X308|X307!=X309|~existent(X306,X307)|existent(X308,X309)).
+# cnf(c257,axiom,~woman(X310,X311)|human_person(X310,X311)).
+# cnf(c333,plain,human_person(skolem0001,skolem0002)).
+# cnf(c260,axiom,~human_person(X312,X313)|organism(X312,X313)).
+# cnf(c335,plain,organism(skolem0001,skolem0002)).
+# cnf(c263,axiom,~organism(X315,X314)|entity(X315,X314)).
+# cnf(c18,plain,X316!=X318|X317!=X319|~specific(X316,X317)|specific(X318,X319)).
+# cnf(c337,plain,entity(skolem0001,skolem0002)).
+# cnf(c340,plain,specific(skolem0001,skolem0002)).
+# cnf(c341,plain,existent(skolem0001,skolem0002)).
+# cnf(c343,plain,thing(skolem0001,skolem0002)).
+# cnf(c346,plain,singleton(skolem0001,skolem0002)).
+# cnf(c19,plain,X320!=X322|X321!=X323|~thing(X320,X321)|thing(X322,X323)).
+# cnf(c266,axiom,~organism(X325,X324)|impartial(X325,X324)).
+# cnf(c351,plain,impartial(skolem0001,skolem0002)).
+# cnf(c269,axiom,~organism(X327,X326)|living(X327,X326)).
+# cnf(c353,plain,living(skolem0001,skolem0002)).
+# cnf(c354,plain,~nonliving(skolem0001,skolem0002)).
+# cnf(c20,plain,X328!=X330|X329!=X331|~substance_matter(X328,X329)|substance_matter(X330,X331)).
+# cnf(c272,axiom,~human_person(X333,X332)|human(X333,X332)).
+# cnf(c357,plain,human(skolem0001,skolem0002)).
+# cnf(c359,plain,~nonhuman(skolem0001,skolem0002)).
+# cnf(c275,axiom,~human_person(X335,X334)|animate(X335,X334)).
+# cnf(c360,plain,animate(skolem0001,skolem0002)).
+# cnf(c21,plain,X336!=X338|X337!=X339|~food(X336,X337)|food(X338,X339)).
+# cnf(c278,axiom,~woman(X340,X341)|female(X340,X341)).
+# cnf(c363,plain,female(skolem0001,skolem0002)).
+# cnf(c365,plain,~unisex(skolem0001,skolem0002)).
+# cnf(c48,plain,X344!=X345|~actual_world(X344)|actual_world(X345)).
+# cnf(c22,plain,X346!=X348|X347!=X349|~beverage(X346,X347)|beverage(X348,X349)).
+# cnf(c76,negated_conjecture,~member(skolem0001,X351,skolem0006)|dollar(skolem0001,X351)).
+# cnf(c86,axiom,~five(X353,X352)|member(X353,skolem0008(X353,X352),X352)).
+# cnf(c87,axiom,~five(X355,X354)|member(X355,skolem0009(X355,X354),X354)).
+# cnf(c89,axiom,~five(X357,X356)|member(X357,skolem0010(X357,X356),X356)).
+# cnf(c23,plain,X358!=X360|X359!=X361|~shake_beverage(X358,X359)|shake_beverage(X360,X361)).
+# cnf(c92,axiom,~five(X363,X362)|member(X363,skolem0011(X363,X362),X362)).
+# cnf(c96,axiom,~five(X365,X364)|member(X365,skolem0012(X365,X364),X364)).
+# cnf(c368,plain,member(skolem0001,skolem0008(skolem0001,skolem0006),skolem0006)).
+# cnf(c374,plain,dollar(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c375,plain,cash(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c24,plain,X366!=X368|X367!=X369|~order(X366,X367)|order(X368,X369)).
+# cnf(c376,plain,currency(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c378,plain,possession(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c379,plain,abstraction(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c381,plain,nonhuman(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c382,plain,general(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c25,plain,X370!=X372|X371!=X373|~event(X370,X371)|event(X372,X373)).
+# cnf(c383,plain,thing(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c384,plain,unisex(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c385,plain,~specific(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c388,plain,singleton(skolem0001,skolem0008(skolem0001,skolem0006))).
+# cnf(c369,plain,member(skolem0001,skolem0009(skolem0001,skolem0006),skolem0006)).
+# cnf(c26,plain,X374!=X376|X375!=X377|~act(X374,X375)|act(X376,X377)).
+# cnf(c390,plain,dollar(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c392,plain,cash(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c393,plain,currency(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c394,plain,possession(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c395,plain,abstraction(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c27,plain,X378!=X380|X379!=X381|~eventuality(X378,X379)|eventuality(X380,X381)).
+# cnf(c397,plain,nonhuman(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c398,plain,general(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c399,plain,thing(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c400,plain,unisex(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c402,plain,~specific(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c28,plain,X382!=X384|X383!=X385|~nonexistent(X382,X383)|nonexistent(X384,X385)).
+# cnf(c404,plain,singleton(skolem0001,skolem0009(skolem0001,skolem0006))).
+# cnf(c370,plain,member(skolem0001,skolem0010(skolem0001,skolem0006),skolem0006)).
+# cnf(c407,plain,dollar(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c408,plain,cash(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c409,plain,currency(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c29,plain,X386!=X388|X387!=X389|~cost(X386,X387)|cost(X388,X389)).
+# cnf(c410,plain,possession(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c411,plain,abstraction(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c413,plain,nonhuman(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c414,plain,general(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c415,plain,thing(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c30,plain,X390!=X392|X391!=X393|~five(X390,X391)|five(X392,X393)).
+# cnf(c416,plain,unisex(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c417,plain,~specific(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c419,plain,singleton(skolem0001,skolem0010(skolem0001,skolem0006))).
+# cnf(c372,plain,member(skolem0001,skolem0011(skolem0001,skolem0006),skolem0006)).
+# cnf(c422,plain,dollar(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c31,plain,X394!=X396|X395!=X397|~group(X394,X395)|group(X396,X397)).
+# cnf(c423,plain,cash(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c425,plain,currency(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c426,plain,possession(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c427,plain,abstraction(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c429,plain,nonhuman(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c32,plain,X398!=X400|X399!=X401|~set(X398,X399)|set(X400,X401)).
+# cnf(c430,plain,general(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c431,plain,thing(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c432,plain,unisex(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c434,plain,~specific(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c436,plain,singleton(skolem0001,skolem0011(skolem0001,skolem0006))).
+# cnf(c33,plain,X402!=X404|X403!=X405|~multiple(X402,X403)|multiple(X404,X405)).
+# cnf(c373,plain,member(skolem0001,skolem0012(skolem0001,skolem0006),skolem0006)).
+# cnf(c439,plain,dollar(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c440,plain,cash(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c441,plain,currency(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c442,plain,possession(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c34,plain,X406!=X408|X407!=X409|~general(X406,X407)|general(X408,X409)).
+# cnf(c443,plain,abstraction(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c450,plain,nonhuman(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c451,plain,general(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c452,plain,thing(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c453,plain,unisex(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c35,plain,X410!=X412|X411!=X413|~nonhuman(X410,X411)|nonhuman(X412,X413)).
+# cnf(c454,plain,~specific(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c457,plain,singleton(skolem0001,skolem0012(skolem0001,skolem0006))).
+# cnf(c68,negated_conjecture,~member(skolem0001,X414,skolem0006)|event(skolem0001,skolem0007(X414))).
+# cnf(c466,plain,event(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c467,plain,event(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c36,plain,X415!=X417|X416!=X418|~singleton(X415,X416)|singleton(X417,X418)).
+# cnf(c468,plain,event(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c469,plain,event(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c470,plain,event(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c472,plain,eventuality(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c474,plain,eventuality(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c37,plain,X419!=X421|X420!=X422|~possession(X419,X420)|possession(X421,X422)).
+# cnf(c485,plain,eventuality(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c487,plain,eventuality(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c489,plain,eventuality(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c490,plain,unisex(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c491,plain,nonexistent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c38,plain,X423!=X425|X424!=X426|~currency(X423,X424)|currency(X425,X426)).
+# cnf(c492,plain,specific(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c493,plain,thing(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c495,plain,unisex(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c496,plain,nonexistent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c497,plain,specific(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c39,plain,X427!=X429|X428!=X430|~cash(X427,X428)|cash(X429,X430)).
+# cnf(c498,plain,thing(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c505,plain,unisex(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c506,plain,nonexistent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c507,plain,specific(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c508,plain,thing(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c40,plain,X431!=X433|X432!=X434|~dollar(X431,X432)|dollar(X433,X434)).
+# cnf(c510,plain,unisex(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c511,plain,nonexistent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c512,plain,specific(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c513,plain,thing(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c515,plain,unisex(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c41,plain,X435!=X437|X436!=X438|~present(X435,X436)|present(X437,X438)).
+# cnf(c516,plain,nonexistent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c517,plain,specific(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c518,plain,thing(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c521,plain,~existent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c530,plain,singleton(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c42,plain,X439!=X441|X440!=X442|~past(X439,X440)|past(X441,X442)).
+# cnf(c532,plain,~existent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c541,plain,singleton(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c543,plain,~existent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c547,plain,singleton(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c554,plain,~existent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c43,plain,X447!=X446|X444!=X443|X445!=X448|~of(X447,X444,X445)|of(X446,X443,X448)).
+# cnf(c558,plain,singleton(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c560,plain,~existent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c564,plain,singleton(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c71,negated_conjecture,~member(skolem0001,X449,skolem0006)|present(skolem0001,skolem0007(X449))).
+# cnf(c572,plain,present(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c44,plain,X450!=X452|X451!=X453|~nonreflexive(X450,X451)|nonreflexive(X452,X453)).
+# cnf(c573,plain,present(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c574,plain,present(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c575,plain,present(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c576,plain,present(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c72,negated_conjecture,~member(skolem0001,X454,skolem0006)|nonreflexive(skolem0001,skolem0007(X454))).
+# cnf(c45,plain,X459!=X458|X456!=X455|X457!=X460|~agent(X459,X456,X457)|agent(X458,X455,X460)).
+# cnf(c583,plain,nonreflexive(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c584,plain,nonreflexive(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c585,plain,nonreflexive(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c586,plain,nonreflexive(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c587,plain,nonreflexive(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c46,plain,X465!=X464|X462!=X461|X463!=X466|~patient(X465,X462,X463)|patient(X464,X461,X466)).
+# cnf(c73,negated_conjecture,~member(skolem0001,X467,skolem0006)|cost(skolem0001,skolem0007(X467))).
+# cnf(c595,plain,cost(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c596,plain,cost(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c597,plain,cost(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c598,plain,cost(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c47,plain,X472!=X471|X469!=X468|X470!=X473|~member(X472,X469,X470)|member(X471,X468,X473)).
+# cnf(c599,plain,cost(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c69,negated_conjecture,~member(skolem0001,X474,skolem0006)|agent(skolem0001,skolem0007(X474),skolem0005)).
+# cnf(c88,axiom,~five(X476,X475)|skolem0009(X476,X475)!=skolem0008(X476,X475)).
+# cnf(c90,axiom,~five(X478,X477)|skolem0010(X478,X477)!=skolem0009(X478,X477)).
+# cnf(c91,axiom,~five(X480,X479)|skolem0010(X480,X479)!=skolem0008(X480,X479)).
+# cnf(c93,axiom,~five(X482,X481)|skolem0011(X482,X481)!=skolem0010(X482,X481)).
+# cnf(c70,negated_conjecture,~member(skolem0001,X483,skolem0006)|patient(skolem0001,skolem0007(X483),X483)).
+# cnf(c94,axiom,~five(X485,X484)|skolem0011(X485,X484)!=skolem0009(X485,X484)).
+# cnf(c95,axiom,~five(X487,X486)|skolem0011(X487,X486)!=skolem0008(X487,X486)).
+# cnf(c97,axiom,~five(X489,X488)|skolem0012(X489,X488)!=skolem0011(X489,X488)).
+# cnf(c98,axiom,~five(X491,X490)|skolem0012(X491,X490)!=skolem0010(X491,X490)).
+# cnf(c99,axiom,~five(X493,X492)|skolem0012(X493,X492)!=skolem0009(X493,X492)).
+# cnf(c100,axiom,~five(X495,X494)|skolem0012(X495,X494)!=skolem0008(X495,X494)).
+# cnf(c281,plain,skolem0001!=X496|skolem0002!=X497|woman(X496,X497)).
+# cnf(c625,plain,skolem0001!=X498|woman(X498,skolem0002)).
+# cnf(c296,plain,skolem0001!=X500|skolem0003!=X499|mia_forename(X500,X499)).
+# cnf(c627,plain,skolem0001!=X501|mia_forename(X501,skolem0003)).
+# cnf(c101,axiom,~five(X504,X503)|~member(X504,X502,X503)|X502=skolem0012(X504,X503)|X502=skolem0011(X504,X503)|X502=skolem0010(X504,X503)|X502=skolem0009(X504,X503)|X502=skolem0008(X504,X503)).
+# cnf(c300,plain,skolem0001!=X505|skolem0003!=X506|forename(X505,X506)).
+# cnf(c634,plain,skolem0001!=X507|forename(X507,skolem0003)).
+# cnf(c304,plain,skolem0001!=X508|skolem0004!=X509|entity(X508,X509)).
+# cnf(c102,axiom,~member(X511,X513,X516)|~member(X511,X515,X516)|X515=X513|~member(X511,X510,X516)|X510=X515|X510=X513|~member(X511,X512,X516)|X512=X510|X512=X515|X512=X513|~member(X511,X514,X516)|X514=X512|X514=X510|X514=X515|X514=X513|member(X511,skolem0013(X511,X516,X513,X515,X510,X512,X514),X516)|five(X511,X516)).
+# cnf(c636,plain,skolem0001!=X517|entity(X517,skolem0004)).
+# cnf(c312,plain,skolem0001!=X519|skolem0004!=X518|impartial(X519,X518)).
+# cnf(c643,plain,skolem0001!=X520|impartial(X520,skolem0004)).
+# cnf(c103,axiom,~member(X522,X524,X527)|~member(X522,X526,X527)|X526=X524|~member(X522,X521,X527)|X521=X526|X521=X524|~member(X522,X523,X527)|X523=X521|X523=X526|X523=X524|~member(X522,X525,X527)|X525=X523|X525=X521|X525=X526|X525=X524|skolem0013(X522,X527,X524,X526,X521,X523,X525)!=X525|five(X522,X527)).
+# cnf(c314,plain,skolem0001!=X529|skolem0004!=X528|object(X529,X528)).
+# cnf(c645,plain,skolem0001!=X530|object(X530,skolem0004)).
+# cnf(c316,plain,skolem0001!=X532|skolem0003!=X531|relname(X532,X531)).
+# cnf(c647,plain,skolem0001!=X533|relname(X533,skolem0003)).
+# cnf(c104,axiom,~member(X535,X537,X540)|~member(X535,X539,X540)|X539=X537|~member(X535,X534,X540)|X534=X539|X534=X537|~member(X535,X536,X540)|X536=X534|X536=X539|X536=X537|~member(X535,X538,X540)|X538=X536|X538=X534|X538=X539|X538=X537|skolem0013(X535,X540,X537,X539,X534,X536,X538)!=X536|five(X535,X540)).
+# cnf(c318,plain,skolem0001!=X542|skolem0003!=X541|relation(X542,X541)).
+# cnf(c649,plain,skolem0001!=X543|relation(X543,skolem0003)).
+# cnf(c319,plain,skolem0001!=X545|skolem0005!=X544|unisex(X545,X544)).
+# cnf(c105,axiom,~member(X547,X549,X552)|~member(X547,X551,X552)|X551=X549|~member(X547,X546,X552)|X546=X551|X546=X549|~member(X547,X548,X552)|X548=X546|X548=X551|X548=X549|~member(X547,X550,X552)|X550=X548|X550=X546|X550=X551|X550=X549|skolem0013(X547,X552,X549,X551,X546,X548,X550)!=X546|five(X547,X552)).
+# cnf(c651,plain,skolem0001!=X553|unisex(X553,skolem0005)).
+# cnf(c320,plain,skolem0001!=X555|skolem0004!=X554|unisex(X555,X554)).
+# cnf(c653,plain,skolem0001!=X556|unisex(X556,skolem0004)).
+# cnf(c106,axiom,~member(X558,X560,X563)|~member(X558,X562,X563)|X562=X560|~member(X558,X557,X563)|X557=X562|X557=X560|~member(X558,X559,X563)|X559=X557|X559=X562|X559=X560|~member(X558,X561,X563)|X561=X559|X561=X557|X561=X562|X561=X560|skolem0013(X558,X563,X560,X562,X557,X559,X561)!=X562|five(X558,X563)).
+# cnf(c322,plain,skolem0001!=X564|skolem0003!=X565|abstraction(X564,X565)).
+# cnf(c655,plain,skolem0001!=X566|abstraction(X566,skolem0003)).
+# cnf(c329,plain,skolem0001!=X568|skolem0004!=X567|nonliving(X568,X567)).
+# cnf(c657,plain,skolem0001!=X569|nonliving(X569,skolem0004)).
+# cnf(c107,axiom,~member(X571,X573,X576)|~member(X571,X575,X576)|X575=X573|~member(X571,X570,X576)|X570=X575|X570=X573|~member(X571,X572,X576)|X572=X570|X572=X575|X572=X573|~member(X571,X574,X576)|X574=X572|X574=X570|X574=X575|X574=X573|skolem0013(X571,X576,X573,X575,X570,X572,X574)!=X573|five(X571,X576)).
+# cnf(c330,plain,skolem0001!=X578|skolem0003!=X577|unisex(X578,X577)).
+# cnf(c659,plain,skolem0001!=X579|unisex(X579,skolem0003)).
+# cnf(c332,plain,skolem0001!=X581|skolem0004!=X580|existent(X581,X580)).
+# cnf(c110,axiom,~nonreflexive(X584,X583)|~agent(X584,X583,X585)|~patient(X584,X583,X582)|X585!=X582).
+# cnf(c661,plain,skolem0001!=X586|existent(X586,skolem0004)).
+# cnf(c334,plain,skolem0001!=X588|skolem0002!=X587|human_person(X588,X587)).
+# cnf(c664,plain,skolem0001!=X589|human_person(X589,skolem0002)).
+# cnf(c114,axiom,~entity(X593,X590)|~forename(X593,X592)|~of(X593,X592,X590)|~forename(X593,X591)|X591=X592|~of(X593,X591,X590)).
+# cnf(c336,plain,skolem0001!=X595|skolem0002!=X594|organism(X595,X594)).
+# cnf(c667,plain,skolem0001!=X596|organism(X596,skolem0002)).
+# cnf(c338,plain,skolem0001!=X597|skolem0005!=X598|specific(X597,X598)).
+# cnf(c669,plain,skolem0001!=X599|specific(X599,skolem0005)).
+# cnf(c339,plain,skolem0001!=X600|skolem0004!=X601|specific(X600,X601)).
+# cnf(c671,plain,skolem0001!=X602|specific(X602,skolem0004)).
+# cnf(c342,plain,skolem0001!=X603|skolem0002!=X604|entity(X603,X604)).
+# cnf(c673,plain,skolem0001!=X605|entity(X605,skolem0002)).
+# cnf(c344,plain,skolem0001!=X606|skolem0002!=X607|specific(X606,X607)).
+# cnf(c675,plain,skolem0001!=X608|specific(X608,skolem0002)).
+# cnf(c345,plain,skolem0001!=X610|skolem0002!=X609|existent(X610,X609)).
+# cnf(c677,plain,skolem0001!=X611|existent(X611,skolem0002)).
+# cnf(c347,plain,skolem0001!=X612|skolem0002!=X613|thing(X612,X613)).
+# cnf(c679,plain,skolem0001!=X614|thing(X614,skolem0002)).
+# cnf(c348,plain,skolem0001!=X615|skolem0005!=X616|thing(X615,X616)).
+# cnf(c681,plain,skolem0001!=X617|thing(X617,skolem0005)).
+# cnf(c349,plain,skolem0001!=X618|skolem0003!=X619|thing(X618,X619)).
+# cnf(c683,plain,skolem0001!=X620|thing(X620,skolem0003)).
+# cnf(c350,plain,skolem0001!=X621|skolem0004!=X622|thing(X621,X622)).
+# cnf(c685,plain,skolem0001!=X623|thing(X623,skolem0004)).
+# cnf(c352,plain,skolem0001!=X625|skolem0002!=X624|impartial(X625,X624)).
+# cnf(c687,plain,skolem0001!=X626|impartial(X626,skolem0002)).
+# cnf(c355,plain,skolem0001!=X628|skolem0002!=X627|living(X628,X627)).
+# cnf(c689,plain,skolem0001!=X629|living(X629,skolem0002)).
+# cnf(c356,plain,skolem0001!=X630|skolem0004!=X631|substance_matter(X630,X631)).
+# cnf(c691,plain,skolem0001!=X632|substance_matter(X632,skolem0004)).
+# cnf(c358,plain,skolem0001!=X634|skolem0002!=X633|human(X634,X633)).
+# cnf(c693,plain,skolem0001!=X635|human(X635,skolem0002)).
+# cnf(c361,plain,skolem0001!=X636|skolem0002!=X637|animate(X636,X637)).
+# cnf(c695,plain,skolem0001!=X638|animate(X638,skolem0002)).
+# cnf(c362,plain,skolem0001!=X640|skolem0004!=X639|food(X640,X639)).
+# cnf(c697,plain,skolem0001!=X641|food(X641,skolem0004)).
+# cnf(c364,plain,skolem0001!=X642|skolem0002!=X643|female(X642,X643)).
+# cnf(c699,plain,skolem0001!=X644|female(X644,skolem0002)).
+# cnf(c367,plain,skolem0001!=X646|skolem0004!=X645|beverage(X646,X645)).
+# cnf(c701,plain,skolem0001!=X647|beverage(X647,skolem0004)).
+# cnf(c371,plain,skolem0001!=X649|skolem0004!=X648|shake_beverage(X649,X648)).
+# cnf(c703,plain,skolem0001!=X650|shake_beverage(X650,skolem0004)).
+# cnf(c377,plain,skolem0001!=X652|skolem0005!=X651|order(X652,X651)).
+# cnf(c705,plain,skolem0001!=X653|order(X653,skolem0005)).
+# cnf(c380,plain,skolem0001!=X654|skolem0008(skolem0001,skolem0006)!=X655|abstraction(X654,X655)).
+# cnf(c386,plain,skolem0001!=X656|skolem0005!=X657|event(X656,X657)).
+# cnf(c708,plain,skolem0001!=X658|event(X658,skolem0005)).
+# cnf(c391,plain,skolem0001!=X660|skolem0005!=X659|act(X660,X659)).
+# cnf(c387,plain,skolem0001!=X661|skolem0008(skolem0001,skolem0006)!=X662|thing(X661,X662)).
+# cnf(c710,plain,skolem0001!=X663|act(X663,skolem0005)).
+# cnf(c401,plain,skolem0001!=X665|skolem0005!=X664|eventuality(X665,X664)).
+# cnf(c713,plain,skolem0001!=X666|eventuality(X666,skolem0005)).
+# cnf(c389,plain,skolem0001!=X668|skolem0008(skolem0001,skolem0006)!=X667|unisex(X668,X667)).
+# cnf(c406,plain,skolem0001!=X669|skolem0005!=X670|nonexistent(X669,X670)).
+# cnf(c716,plain,skolem0001!=X671|nonexistent(X671,skolem0005)).
+# cnf(c420,plain,skolem0001!=X672|skolem0006!=X673|five(X672,X673)).
+# cnf(c718,plain,skolem0001!=X674|five(X674,skolem0006)).
+# cnf(c396,plain,skolem0001!=X675|skolem0009(skolem0001,skolem0006)!=X676|abstraction(X675,X676)).
+# cnf(c424,plain,skolem0001!=X678|skolem0006!=X677|group(X678,X677)).
+# cnf(c721,plain,skolem0001!=X679|group(X679,skolem0006)).
+# cnf(c433,plain,skolem0001!=X680|skolem0006!=X681|set(X680,X681)).
+# cnf(c403,plain,skolem0001!=X682|skolem0009(skolem0001,skolem0006)!=X683|thing(X682,X683)).
+# cnf(c723,plain,skolem0001!=X684|set(X684,skolem0006)).
+# cnf(c438,plain,skolem0001!=X686|skolem0006!=X685|multiple(X686,X685)).
+# cnf(c726,plain,skolem0001!=X687|multiple(X687,skolem0006)).
+# cnf(c405,plain,skolem0001!=X689|skolem0009(skolem0001,skolem0006)!=X688|unisex(X689,X688)).
+# cnf(c444,plain,skolem0001!=X690|skolem0003!=X691|general(X690,X691)).
+# cnf(c729,plain,skolem0001!=X692|general(X692,skolem0003)).
+# cnf(c461,plain,skolem0001!=X694|skolem0003!=X693|nonhuman(X694,X693)).
+# cnf(c731,plain,skolem0001!=X695|nonhuman(X695,skolem0003)).
+# cnf(c412,plain,skolem0001!=X696|skolem0010(skolem0001,skolem0006)!=X697|abstraction(X696,X697)).
+# cnf(c464,plain,skolem0001!=X699|skolem0005!=X698|nonhuman(X699,X698)).
+# cnf(c734,plain,skolem0001!=X700|nonhuman(X700,skolem0005)).
+# cnf(c475,plain,skolem0001!=X701|skolem0005!=X702|singleton(X701,X702)).
+# cnf(c418,plain,skolem0001!=X703|skolem0010(skolem0001,skolem0006)!=X704|thing(X703,X704)).
+# cnf(c736,plain,skolem0001!=X705|singleton(X705,skolem0005)).
+# cnf(c477,plain,skolem0001!=X706|skolem0003!=X707|singleton(X706,X707)).
+# cnf(c739,plain,skolem0001!=X708|singleton(X708,skolem0003)).
+# cnf(c421,plain,skolem0001!=X710|skolem0010(skolem0001,skolem0006)!=X709|unisex(X710,X709)).
+# cnf(c480,plain,skolem0001!=X711|skolem0004!=X712|singleton(X711,X712)).
+# cnf(c742,plain,skolem0001!=X713|singleton(X713,skolem0004)).
+# cnf(c482,plain,skolem0001!=X714|skolem0002!=X715|singleton(X714,X715)).
+# cnf(c744,plain,skolem0001!=X716|singleton(X716,skolem0002)).
+# cnf(c428,plain,skolem0001!=X717|skolem0011(skolem0001,skolem0006)!=X718|abstraction(X717,X718)).
+# cnf(c566,plain,skolem0001!=X719|skolem0005!=X720|past(X719,X720)).
+# cnf(c747,plain,skolem0001!=X721|past(X721,skolem0005)).
+# cnf(c578,plain,skolem0001!=X722|skolem0005!=X723|nonreflexive(X722,X723)).
+# cnf(c435,plain,skolem0001!=X724|skolem0011(skolem0001,skolem0006)!=X725|thing(X724,X725)).
+# cnf(c749,plain,skolem0001!=X726|nonreflexive(X726,skolem0005)).
+# cnf(c615,plain,agent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0005)).
+# cnf(c616,plain,agent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0005)).
+# cnf(c617,plain,agent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0005)).
+# cnf(c437,plain,skolem0001!=X728|skolem0011(skolem0001,skolem0006)!=X727|unisex(X728,X727)).
+# cnf(c618,plain,agent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0005)).
+# cnf(c619,plain,agent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0005)).
+# cnf(c707,plain,skolem0001!=X729|abstraction(X729,skolem0008(skolem0001,skolem0006))).
+# cnf(c711,plain,skolem0001!=X730|thing(X730,skolem0008(skolem0001,skolem0006))).
+# cnf(c445,plain,skolem0001!=X731|skolem0008(skolem0001,skolem0006)!=X732|general(X731,X732)).
+# cnf(c715,plain,skolem0001!=X733|unisex(X733,skolem0008(skolem0001,skolem0006))).
+# cnf(c720,plain,skolem0001!=X734|abstraction(X734,skolem0009(skolem0001,skolem0006))).
+# cnf(c446,plain,skolem0001!=X735|skolem0010(skolem0001,skolem0006)!=X736|general(X735,X736)).
+# cnf(c724,plain,skolem0001!=X737|thing(X737,skolem0009(skolem0001,skolem0006))).
+# cnf(c728,plain,skolem0001!=X738|unisex(X738,skolem0009(skolem0001,skolem0006))).
+# cnf(c733,plain,skolem0001!=X739|abstraction(X739,skolem0010(skolem0001,skolem0006))).
+# cnf(c447,plain,skolem0001!=X740|skolem0009(skolem0001,skolem0006)!=X741|general(X740,X741)).
+# cnf(c737,plain,skolem0001!=X742|thing(X742,skolem0010(skolem0001,skolem0006))).
+# cnf(c741,plain,skolem0001!=X743|unisex(X743,skolem0010(skolem0001,skolem0006))).
+# cnf(c448,plain,skolem0001!=X744|skolem0011(skolem0001,skolem0006)!=X745|general(X744,X745)).
+# cnf(c746,plain,skolem0001!=X746|abstraction(X746,skolem0011(skolem0001,skolem0006))).
+# cnf(c750,plain,skolem0001!=X747|thing(X747,skolem0011(skolem0001,skolem0006))).
+# cnf(c755,plain,skolem0001!=X748|unisex(X748,skolem0011(skolem0001,skolem0006))).
+# cnf(c449,plain,skolem0001!=X749|skolem0012(skolem0001,skolem0006)!=X750|abstraction(X749,X750)).
+# cnf(c760,plain,skolem0001!=X751|general(X751,skolem0008(skolem0001,skolem0006))).
+# cnf(c763,plain,skolem0001!=X752|general(X752,skolem0010(skolem0001,skolem0006))).
+# cnf(c455,plain,skolem0001!=X753|skolem0012(skolem0001,skolem0006)!=X754|general(X753,X754)).
+# cnf(c767,plain,skolem0001!=X755|general(X755,skolem0009(skolem0001,skolem0006))).
+# cnf(c770,plain,skolem0001!=X756|general(X756,skolem0011(skolem0001,skolem0006))).
+# cnf(c774,plain,skolem0001!=X757|abstraction(X757,skolem0012(skolem0001,skolem0006))).
+# cnf(c456,plain,skolem0001!=X758|skolem0012(skolem0001,skolem0006)!=X759|thing(X758,X759)).
+# cnf(c777,plain,skolem0001!=X760|general(X760,skolem0012(skolem0001,skolem0006))).
+# cnf(c781,plain,skolem0001!=X761|thing(X761,skolem0012(skolem0001,skolem0006))).
+# cnf(c458,plain,skolem0001!=X763|skolem0012(skolem0001,skolem0006)!=X762|unisex(X763,X762)).
+# cnf(c784,plain,skolem0001!=X764|unisex(X764,skolem0012(skolem0001,skolem0006))).
+# cnf(c459,plain,skolem0001!=X766|skolem0010(skolem0001,skolem0006)!=X765|nonhuman(X766,X765)).
+# cnf(c786,plain,skolem0001!=X767|nonhuman(X767,skolem0010(skolem0001,skolem0006))).
+# cnf(c460,plain,skolem0001!=X769|skolem0009(skolem0001,skolem0006)!=X768|nonhuman(X769,X768)).
+# cnf(c788,plain,skolem0001!=X770|nonhuman(X770,skolem0009(skolem0001,skolem0006))).
+# cnf(c462,plain,skolem0001!=X772|skolem0012(skolem0001,skolem0006)!=X771|nonhuman(X772,X771)).
+# cnf(c790,plain,skolem0001!=X773|nonhuman(X773,skolem0012(skolem0001,skolem0006))).
+# cnf(c463,plain,skolem0001!=X775|skolem0008(skolem0001,skolem0006)!=X774|nonhuman(X775,X774)).
+# cnf(c792,plain,skolem0001!=X776|nonhuman(X776,skolem0008(skolem0001,skolem0006))).
+# cnf(c465,plain,skolem0001!=X778|skolem0011(skolem0001,skolem0006)!=X777|nonhuman(X778,X777)).
+# cnf(c794,plain,skolem0001!=X779|nonhuman(X779,skolem0011(skolem0001,skolem0006))).
+# cnf(c471,plain,skolem0001!=X780|skolem0007(skolem0008(skolem0001,skolem0006))!=X781|event(X780,X781)).
+# cnf(c796,plain,skolem0001!=X782|event(X782,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c476,plain,skolem0001!=X783|skolem0010(skolem0001,skolem0006)!=X784|singleton(X783,X784)).
+# cnf(c798,plain,skolem0001!=X785|singleton(X785,skolem0010(skolem0001,skolem0006))).
+# cnf(c473,plain,skolem0001!=X786|skolem0007(skolem0011(skolem0001,skolem0006))!=X787|event(X786,X787)).
+# cnf(c800,plain,skolem0001!=X788|event(X788,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c478,plain,skolem0001!=X789|skolem0008(skolem0001,skolem0006)!=X790|singleton(X789,X790)).
+# cnf(c802,plain,skolem0001!=X791|singleton(X791,skolem0008(skolem0001,skolem0006))).
+# cnf(c479,plain,skolem0001!=X792|skolem0009(skolem0001,skolem0006)!=X793|singleton(X792,X793)).
+# cnf(c804,plain,skolem0001!=X794|singleton(X794,skolem0009(skolem0001,skolem0006))).
+# cnf(c481,plain,skolem0001!=X795|skolem0011(skolem0001,skolem0006)!=X796|singleton(X795,X796)).
+# cnf(c806,plain,skolem0001!=X797|singleton(X797,skolem0011(skolem0001,skolem0006))).
+# cnf(c483,plain,skolem0001!=X798|skolem0012(skolem0001,skolem0006)!=X799|singleton(X798,X799)).
+# cnf(c808,plain,skolem0001!=X800|singleton(X800,skolem0012(skolem0001,skolem0006))).
+# cnf(c500,plain,skolem0001!=X802|skolem0010(skolem0001,skolem0006)!=X801|possession(X802,X801)).
+# cnf(c810,plain,skolem0001!=X803|possession(X803,skolem0010(skolem0001,skolem0006))).
+# cnf(c484,plain,skolem0001!=X804|skolem0007(skolem0010(skolem0001,skolem0006))!=X805|event(X804,X805)).
+# cnf(c812,plain,skolem0001!=X806|event(X806,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c501,plain,skolem0001!=X808|skolem0012(skolem0001,skolem0006)!=X807|possession(X808,X807)).
+# cnf(c814,plain,skolem0001!=X809|possession(X809,skolem0012(skolem0001,skolem0006))).
+# cnf(c486,plain,skolem0001!=X810|skolem0007(skolem0009(skolem0001,skolem0006))!=X811|event(X810,X811)).
+# cnf(c816,plain,skolem0001!=X812|event(X812,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c502,plain,skolem0001!=X814|skolem0011(skolem0001,skolem0006)!=X813|possession(X814,X813)).
+# cnf(c818,plain,skolem0001!=X815|possession(X815,skolem0011(skolem0001,skolem0006))).
+# cnf(c488,plain,skolem0001!=X816|skolem0007(skolem0012(skolem0001,skolem0006))!=X817|event(X816,X817)).
+# cnf(c820,plain,skolem0001!=X818|event(X818,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c503,plain,skolem0001!=X820|skolem0009(skolem0001,skolem0006)!=X819|possession(X820,X819)).
+# cnf(c822,plain,skolem0001!=X821|possession(X821,skolem0009(skolem0001,skolem0006))).
+# cnf(c494,plain,skolem0001!=X823|skolem0007(skolem0008(skolem0001,skolem0006))!=X822|eventuality(X823,X822)).
+# cnf(c824,plain,skolem0001!=X824|eventuality(X824,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c504,plain,skolem0001!=X826|skolem0008(skolem0001,skolem0006)!=X825|possession(X826,X825)).
+# cnf(c826,plain,skolem0001!=X827|possession(X827,skolem0008(skolem0001,skolem0006))).
+# cnf(c499,plain,skolem0001!=X829|skolem0007(skolem0011(skolem0001,skolem0006))!=X828|eventuality(X829,X828)).
+# cnf(c828,plain,skolem0001!=X830|eventuality(X830,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c523,plain,skolem0001!=X831|skolem0011(skolem0001,skolem0006)!=X832|currency(X831,X832)).
+# cnf(c830,plain,skolem0001!=X833|currency(X833,skolem0011(skolem0001,skolem0006))).
+# cnf(c509,plain,skolem0001!=X835|skolem0007(skolem0010(skolem0001,skolem0006))!=X834|eventuality(X835,X834)).
+# cnf(c832,plain,skolem0001!=X836|eventuality(X836,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c524,plain,skolem0001!=X837|skolem0009(skolem0001,skolem0006)!=X838|currency(X837,X838)).
+# cnf(c834,plain,skolem0001!=X839|currency(X839,skolem0009(skolem0001,skolem0006))).
+# cnf(c514,plain,skolem0001!=X841|skolem0007(skolem0009(skolem0001,skolem0006))!=X840|eventuality(X841,X840)).
+# cnf(c836,plain,skolem0001!=X842|eventuality(X842,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c525,plain,skolem0001!=X843|skolem0010(skolem0001,skolem0006)!=X844|currency(X843,X844)).
+# cnf(c838,plain,skolem0001!=X845|currency(X845,skolem0010(skolem0001,skolem0006))).
+# cnf(c519,plain,skolem0001!=X847|skolem0007(skolem0012(skolem0001,skolem0006))!=X846|eventuality(X847,X846)).
+# cnf(c840,plain,skolem0001!=X848|eventuality(X848,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c526,plain,skolem0001!=X849|skolem0012(skolem0001,skolem0006)!=X850|currency(X849,X850)).
+# cnf(c842,plain,skolem0001!=X851|currency(X851,skolem0012(skolem0001,skolem0006))).
+# cnf(c520,plain,skolem0001!=X853|skolem0007(skolem0008(skolem0001,skolem0006))!=X852|unisex(X853,X852)).
+# cnf(c844,plain,skolem0001!=X854|unisex(X854,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c527,plain,skolem0001!=X855|skolem0008(skolem0001,skolem0006)!=X856|currency(X855,X856)).
+# cnf(c846,plain,skolem0001!=X857|currency(X857,skolem0008(skolem0001,skolem0006))).
+# cnf(c522,plain,skolem0001!=X858|skolem0007(skolem0008(skolem0001,skolem0006))!=X859|nonexistent(X858,X859)).
+# cnf(c848,plain,skolem0001!=X860|nonexistent(X860,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c535,plain,skolem0001!=X861|skolem0008(skolem0001,skolem0006)!=X862|cash(X861,X862)).
+# cnf(c850,plain,skolem0001!=X863|cash(X863,skolem0008(skolem0001,skolem0006))).
+# cnf(c528,plain,skolem0001!=X864|skolem0007(skolem0008(skolem0001,skolem0006))!=X865|specific(X864,X865)).
+# cnf(c852,plain,skolem0001!=X866|specific(X866,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c536,plain,skolem0001!=X867|skolem0012(skolem0001,skolem0006)!=X868|cash(X867,X868)).
+# cnf(c854,plain,skolem0001!=X869|cash(X869,skolem0012(skolem0001,skolem0006))).
+# cnf(c529,plain,skolem0001!=X870|skolem0007(skolem0008(skolem0001,skolem0006))!=X871|thing(X870,X871)).
+# cnf(c856,plain,skolem0001!=X872|thing(X872,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c537,plain,skolem0001!=X873|skolem0010(skolem0001,skolem0006)!=X874|cash(X873,X874)).
+# cnf(c858,plain,skolem0001!=X875|cash(X875,skolem0010(skolem0001,skolem0006))).
+# cnf(c531,plain,skolem0001!=X877|skolem0007(skolem0011(skolem0001,skolem0006))!=X876|unisex(X877,X876)).
+# cnf(c860,plain,skolem0001!=X878|unisex(X878,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c538,plain,skolem0001!=X879|skolem0009(skolem0001,skolem0006)!=X880|cash(X879,X880)).
+# cnf(c862,plain,skolem0001!=X881|cash(X881,skolem0009(skolem0001,skolem0006))).
+# cnf(c533,plain,skolem0001!=X882|skolem0007(skolem0011(skolem0001,skolem0006))!=X883|nonexistent(X882,X883)).
+# cnf(c864,plain,skolem0001!=X884|nonexistent(X884,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c539,plain,skolem0001!=X885|skolem0011(skolem0001,skolem0006)!=X886|cash(X885,X886)).
+# cnf(c866,plain,skolem0001!=X887|cash(X887,skolem0011(skolem0001,skolem0006))).
+# cnf(c534,plain,skolem0001!=X888|skolem0007(skolem0011(skolem0001,skolem0006))!=X889|specific(X888,X889)).
+# cnf(c868,plain,skolem0001!=X890|specific(X890,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c548,plain,skolem0001!=X891|skolem0011(skolem0001,skolem0006)!=X892|dollar(X891,X892)).
+# cnf(c870,plain,skolem0001!=X893|dollar(X893,skolem0011(skolem0001,skolem0006))).
+# cnf(c540,plain,skolem0001!=X894|skolem0007(skolem0011(skolem0001,skolem0006))!=X895|thing(X894,X895)).
+# cnf(c872,plain,skolem0001!=X896|thing(X896,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c549,plain,skolem0001!=X897|skolem0009(skolem0001,skolem0006)!=X898|dollar(X897,X898)).
+# cnf(c874,plain,skolem0001!=X899|dollar(X899,skolem0009(skolem0001,skolem0006))).
+# cnf(c542,plain,skolem0001!=X901|skolem0007(skolem0010(skolem0001,skolem0006))!=X900|unisex(X901,X900)).
+# cnf(c876,plain,skolem0001!=X902|unisex(X902,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c550,plain,skolem0001!=X903|skolem0010(skolem0001,skolem0006)!=X904|dollar(X903,X904)).
+# cnf(c878,plain,skolem0001!=X905|dollar(X905,skolem0010(skolem0001,skolem0006))).
+# cnf(c544,plain,skolem0001!=X906|skolem0007(skolem0010(skolem0001,skolem0006))!=X907|nonexistent(X906,X907)).
+# cnf(c880,plain,skolem0001!=X908|nonexistent(X908,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c551,plain,skolem0001!=X909|skolem0008(skolem0001,skolem0006)!=X910|dollar(X909,X910)).
+# cnf(c882,plain,skolem0001!=X911|dollar(X911,skolem0008(skolem0001,skolem0006))).
+# cnf(c545,plain,skolem0001!=X912|skolem0007(skolem0010(skolem0001,skolem0006))!=X913|specific(X912,X913)).
+# cnf(c884,plain,skolem0001!=X914|specific(X914,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c552,plain,skolem0001!=X915|skolem0012(skolem0001,skolem0006)!=X916|dollar(X915,X916)).
+# cnf(c886,plain,skolem0001!=X917|dollar(X917,skolem0012(skolem0001,skolem0006))).
+# cnf(c546,plain,skolem0001!=X918|skolem0007(skolem0010(skolem0001,skolem0006))!=X919|thing(X918,X919)).
+# cnf(c888,plain,skolem0001!=X920|thing(X920,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c620,plain,patient(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0008(skolem0001,skolem0006))).
+# cnf(c621,plain,patient(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0011(skolem0001,skolem0006))).
+# cnf(c622,plain,patient(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0010(skolem0001,skolem0006))).
+# cnf(c553,plain,skolem0001!=X922|skolem0007(skolem0009(skolem0001,skolem0006))!=X921|unisex(X922,X921)).
+# cnf(c896,plain,skolem0001!=X923|unisex(X923,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c623,plain,patient(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0009(skolem0001,skolem0006))).
+# cnf(c624,plain,patient(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0012(skolem0001,skolem0006))).
+# cnf(c662,plain,~nonreflexive(skolem0001,skolem0005)|~agent(skolem0001,skolem0005,X924)|X924!=skolem0004).
+# cnf(c555,plain,skolem0001!=X925|skolem0007(skolem0009(skolem0001,skolem0006))!=X926|nonexistent(X925,X926)).
+# cnf(c902,plain,~nonreflexive(skolem0001,skolem0005)|skolem0002!=skolem0004).
+# cnf(c903,plain,skolem0001!=X927|nonexistent(X927,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c556,plain,skolem0001!=X928|skolem0007(skolem0009(skolem0001,skolem0006))!=X929|specific(X928,X929)).
+# cnf(c905,plain,skolem0001!=X930|specific(X930,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c557,plain,skolem0001!=X931|skolem0007(skolem0009(skolem0001,skolem0006))!=X932|thing(X931,X932)).
+# cnf(c907,plain,skolem0001!=X933|thing(X933,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c559,plain,skolem0001!=X935|skolem0007(skolem0012(skolem0001,skolem0006))!=X934|unisex(X935,X934)).
+# cnf(c909,plain,skolem0001!=X936|unisex(X936,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c561,plain,skolem0001!=X937|skolem0007(skolem0012(skolem0001,skolem0006))!=X938|nonexistent(X937,X938)).
+# cnf(c911,plain,skolem0001!=X939|nonexistent(X939,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c562,plain,skolem0001!=X940|skolem0007(skolem0012(skolem0001,skolem0006))!=X941|specific(X940,X941)).
+# cnf(c913,plain,skolem0001!=X942|specific(X942,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c563,plain,skolem0001!=X943|skolem0007(skolem0012(skolem0001,skolem0006))!=X944|thing(X943,X944)).
+# cnf(c915,plain,skolem0001!=X945|thing(X945,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c565,plain,skolem0001!=X946|skolem0007(skolem0008(skolem0001,skolem0006))!=X947|singleton(X946,X947)).
+# cnf(c917,plain,skolem0001!=X948|singleton(X948,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c567,plain,skolem0001!=X949|skolem0007(skolem0011(skolem0001,skolem0006))!=X950|singleton(X949,X950)).
+# cnf(c919,plain,skolem0001!=X951|singleton(X951,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c568,plain,skolem0001!=X952|skolem0007(skolem0010(skolem0001,skolem0006))!=X953|singleton(X952,X953)).
+# cnf(c921,plain,skolem0001!=X954|singleton(X954,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c569,plain,skolem0001!=X955|skolem0003!=X956|skolem0002!=X957|of(X955,X956,X957)).
+# cnf(c923,plain,skolem0001!=X959|skolem0003!=X958|of(X959,X958,skolem0002)).
+# cnf(c924,plain,skolem0001!=X960|of(X960,skolem0003,skolem0002)).
+# cnf(c570,plain,skolem0001!=X961|skolem0007(skolem0009(skolem0001,skolem0006))!=X962|singleton(X961,X962)).
+# cnf(c571,plain,skolem0001!=X963|skolem0007(skolem0012(skolem0001,skolem0006))!=X964|singleton(X963,X964)).
+# cnf(c926,plain,skolem0001!=X965|singleton(X965,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c927,plain,skolem0001!=X966|singleton(X966,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c577,plain,skolem0001!=X968|skolem0007(skolem0008(skolem0001,skolem0006))!=X967|present(X968,X967)).
+# cnf(c579,plain,skolem0001!=X970|skolem0007(skolem0011(skolem0001,skolem0006))!=X969|present(X970,X969)).
+# cnf(c930,plain,skolem0001!=X971|present(X971,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c931,plain,skolem0001!=X972|present(X972,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c580,plain,skolem0001!=X974|skolem0007(skolem0010(skolem0001,skolem0006))!=X973|present(X974,X973)).
+# cnf(c581,plain,skolem0001!=X976|skolem0007(skolem0009(skolem0001,skolem0006))!=X975|present(X976,X975)).
+# cnf(c934,plain,skolem0001!=X977|present(X977,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c935,plain,skolem0001!=X978|present(X978,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c582,plain,skolem0001!=X980|skolem0007(skolem0012(skolem0001,skolem0006))!=X979|present(X980,X979)).
+# cnf(c588,plain,skolem0001!=X981|skolem0005!=X982|skolem0002!=X983|agent(X981,X982,X983)).
+# cnf(c938,plain,skolem0001!=X984|present(X984,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c939,plain,skolem0001!=X985|skolem0005!=X986|agent(X985,X986,skolem0002)).
+# cnf(c941,plain,skolem0001!=X987|agent(X987,skolem0005,skolem0002)).
+# cnf(c589,plain,skolem0001!=X988|skolem0007(skolem0008(skolem0001,skolem0006))!=X989|nonreflexive(X988,X989)).
+# cnf(c943,plain,skolem0001!=X990|nonreflexive(X990,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c590,plain,skolem0001!=X991|skolem0007(skolem0011(skolem0001,skolem0006))!=X992|nonreflexive(X991,X992)).
+# cnf(c945,plain,skolem0001!=X993|nonreflexive(X993,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c591,plain,skolem0001!=X994|skolem0007(skolem0010(skolem0001,skolem0006))!=X995|nonreflexive(X994,X995)).
+# cnf(c947,plain,skolem0001!=X996|nonreflexive(X996,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c592,plain,skolem0001!=X997|skolem0007(skolem0009(skolem0001,skolem0006))!=X998|nonreflexive(X997,X998)).
+# cnf(c949,plain,skolem0001!=X999|nonreflexive(X999,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c593,plain,skolem0001!=X1000|skolem0007(skolem0012(skolem0001,skolem0006))!=X1001|nonreflexive(X1000,X1001)).
+# cnf(c951,plain,skolem0001!=X1002|nonreflexive(X1002,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c594,plain,skolem0001!=X1003|skolem0005!=X1004|skolem0004!=X1005|patient(X1003,X1004,X1005)).
+# cnf(c953,plain,skolem0001!=X1007|skolem0005!=X1006|patient(X1007,X1006,skolem0004)).
+# cnf(c954,plain,skolem0001!=X1008|patient(X1008,skolem0005,skolem0004)).
+# cnf(c600,plain,skolem0001!=X1010|skolem0007(skolem0008(skolem0001,skolem0006))!=X1009|cost(X1010,X1009)).
+# cnf(c956,plain,skolem0001!=X1011|cost(X1011,skolem0007(skolem0008(skolem0001,skolem0006)))).
+# cnf(c602,plain,skolem0001!=X1013|skolem0007(skolem0011(skolem0001,skolem0006))!=X1012|cost(X1013,X1012)).
+# cnf(c958,plain,skolem0001!=X1014|cost(X1014,skolem0007(skolem0011(skolem0001,skolem0006)))).
+# cnf(c604,plain,skolem0001!=X1016|skolem0007(skolem0010(skolem0001,skolem0006))!=X1015|cost(X1016,X1015)).
+# cnf(c960,plain,skolem0001!=X1017|cost(X1017,skolem0007(skolem0010(skolem0001,skolem0006)))).
+# cnf(c606,plain,skolem0001!=X1019|skolem0007(skolem0009(skolem0001,skolem0006))!=X1018|cost(X1019,X1018)).
+# cnf(c962,plain,skolem0001!=X1020|cost(X1020,skolem0007(skolem0009(skolem0001,skolem0006)))).
+# cnf(c608,plain,skolem0001!=X1023|skolem0008(skolem0001,skolem0006)!=X1022|skolem0006!=X1021|member(X1023,X1022,X1021)).
+# cnf(c613,plain,skolem0001!=X1025|skolem0007(skolem0012(skolem0001,skolem0006))!=X1024|cost(X1025,X1024)).
+# cnf(c965,plain,skolem0001!=X1026|cost(X1026,skolem0007(skolem0012(skolem0001,skolem0006)))).
+# cnf(c964,plain,skolem0001!=X1028|skolem0006!=X1027|member(X1028,skolem0008(skolem0001,skolem0006),X1027)).
+# cnf(c609,plain,skolem0001!=X1031|skolem0011(skolem0001,skolem0006)!=X1030|skolem0006!=X1029|member(X1031,X1030,X1029)).
+# cnf(c967,plain,skolem0001!=X1032|member(X1032,skolem0008(skolem0001,skolem0006),skolem0006)).
+# cnf(c968,plain,skolem0001!=X1034|skolem0006!=X1033|member(X1034,skolem0011(skolem0001,skolem0006),X1033)).
+# cnf(c970,plain,skolem0001!=X1035|member(X1035,skolem0011(skolem0001,skolem0006),skolem0006)).
+# cnf(c610,plain,skolem0001!=X1038|skolem0010(skolem0001,skolem0006)!=X1037|skolem0006!=X1036|member(X1038,X1037,X1036)).
+# cnf(c972,plain,skolem0001!=X1039|skolem0006!=X1040|member(X1039,skolem0010(skolem0001,skolem0006),X1040)).
+# cnf(c973,plain,skolem0001!=X1041|member(X1041,skolem0010(skolem0001,skolem0006),skolem0006)).
+# cnf(c611,plain,skolem0001!=X1044|skolem0009(skolem0001,skolem0006)!=X1043|skolem0006!=X1042|member(X1044,X1043,X1042)).
+# cnf(c975,plain,skolem0001!=X1045|skolem0006!=X1046|member(X1045,skolem0009(skolem0001,skolem0006),X1046)).
+# cnf(c612,plain,skolem0001!=X1049|skolem0012(skolem0001,skolem0006)!=X1048|skolem0006!=X1047|member(X1049,X1048,X1047)).
+# cnf(c976,plain,skolem0001!=X1050|member(X1050,skolem0009(skolem0001,skolem0006),skolem0006)).
+# cnf(c977,plain,skolem0001!=X1052|skolem0006!=X1051|member(X1052,skolem0012(skolem0001,skolem0006),X1051)).
+# cnf(c979,plain,skolem0001!=X1053|member(X1053,skolem0012(skolem0001,skolem0006),skolem0006)).
+# cnf(c752,plain,skolem0001!=X1054|skolem0007(skolem0008(skolem0001,skolem0006))!=X1055|skolem0005!=X1056|agent(X1054,X1055,X1056)).
+# cnf(c981,plain,skolem0001!=X1058|skolem0005!=X1057|agent(X1058,skolem0007(skolem0008(skolem0001,skolem0006)),X1057)).
+# cnf(c982,plain,skolem0001!=X1059|agent(X1059,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0005)).
+# cnf(c753,plain,skolem0001!=X1060|skolem0007(skolem0011(skolem0001,skolem0006))!=X1061|skolem0005!=X1062|agent(X1060,X1061,X1062)).
+# cnf(c984,plain,skolem0001!=X1064|skolem0005!=X1063|agent(X1064,skolem0007(skolem0011(skolem0001,skolem0006)),X1063)).
+# cnf(c985,plain,skolem0001!=X1065|agent(X1065,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0005)).
+# cnf(c754,plain,skolem0001!=X1066|skolem0007(skolem0010(skolem0001,skolem0006))!=X1067|skolem0005!=X1068|agent(X1066,X1067,X1068)).
+# cnf(c987,plain,skolem0001!=X1069|skolem0005!=X1070|agent(X1069,skolem0007(skolem0010(skolem0001,skolem0006)),X1070)).
+# cnf(c988,plain,skolem0001!=X1071|agent(X1071,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0005)).
+# cnf(c756,plain,skolem0001!=X1072|skolem0007(skolem0009(skolem0001,skolem0006))!=X1073|skolem0005!=X1074|agent(X1072,X1073,X1074)).
+# cnf(c990,plain,skolem0001!=X1076|skolem0005!=X1075|agent(X1076,skolem0007(skolem0009(skolem0001,skolem0006)),X1075)).
+# cnf(c991,plain,skolem0001!=X1077|agent(X1077,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0005)).
+# cnf(c757,plain,skolem0001!=X1078|skolem0007(skolem0012(skolem0001,skolem0006))!=X1079|skolem0005!=X1080|agent(X1078,X1079,X1080)).
+# cnf(c993,plain,skolem0001!=X1081|skolem0005!=X1082|agent(X1081,skolem0007(skolem0012(skolem0001,skolem0006)),X1082)).
+# cnf(c994,plain,skolem0001!=X1083|agent(X1083,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0005)).
+# cnf(c666,plain,~entity(skolem0001,skolem0002)|~forename(skolem0001,X1084)|~of(skolem0001,X1084,skolem0002)|~forename(skolem0001,skolem0003)|skolem0003=X1084).
+# cnf(c890,plain,skolem0001!=X1085|skolem0007(skolem0008(skolem0001,skolem0006))!=X1086|skolem0008(skolem0001,skolem0006)!=X1087|patient(X1085,X1086,X1087)).
+# cnf(c997,plain,skolem0001!=X1089|skolem0008(skolem0001,skolem0006)!=X1088|patient(X1089,skolem0007(skolem0008(skolem0001,skolem0006)),X1088)).
+# cnf(c998,plain,skolem0001!=X1090|patient(X1090,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0008(skolem0001,skolem0006))).
+# cnf(c892,plain,skolem0001!=X1095|skolem0007(skolem0011(skolem0001,skolem0006))!=X1096|skolem0011(skolem0001,skolem0006)!=X1097|patient(X1095,X1096,X1097)).
+# cnf(c1000,plain,skolem0001!=X1099|skolem0011(skolem0001,skolem0006)!=X1098|patient(X1099,skolem0007(skolem0011(skolem0001,skolem0006)),X1098)).
+# cnf(c1001,plain,skolem0001!=X1100|patient(X1100,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0011(skolem0001,skolem0006))).
+# cnf(c894,plain,skolem0001!=X1105|skolem0007(skolem0010(skolem0001,skolem0006))!=X1106|skolem0010(skolem0001,skolem0006)!=X1107|patient(X1105,X1106,X1107)).
+# cnf(c1003,plain,skolem0001!=X1109|skolem0010(skolem0001,skolem0006)!=X1108|patient(X1109,skolem0007(skolem0010(skolem0001,skolem0006)),X1108)).
+# cnf(c1004,plain,skolem0001!=X1110|patient(X1110,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0010(skolem0001,skolem0006))).
+# cnf(c898,plain,skolem0001!=X1111|skolem0007(skolem0009(skolem0001,skolem0006))!=X1112|skolem0009(skolem0001,skolem0006)!=X1113|patient(X1111,X1112,X1113)).
+# cnf(c1006,plain,skolem0001!=X1118|skolem0009(skolem0001,skolem0006)!=X1119|patient(X1118,skolem0007(skolem0009(skolem0001,skolem0006)),X1119)).
+# cnf(c1007,plain,skolem0001!=X1120|patient(X1120,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0009(skolem0001,skolem0006))).
+# cnf(c900,plain,skolem0001!=X1121|skolem0007(skolem0012(skolem0001,skolem0006))!=X1122|skolem0012(skolem0001,skolem0006)!=X1123|patient(X1121,X1122,X1123)).
+# cnf(c1009,plain,skolem0001!=X1124|skolem0012(skolem0001,skolem0006)!=X1125|patient(X1124,skolem0007(skolem0012(skolem0001,skolem0006)),X1125)).
+# cnf(c1010,plain,skolem0001!=X1130|patient(X1130,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0012(skolem0001,skolem0006))).
+# cnf(c891,plain,~nonreflexive(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)),X1131)|X1131!=skolem0008(skolem0001,skolem0006)).
+# cnf(c1012,plain,~nonreflexive(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))|skolem0005!=skolem0008(skolem0001,skolem0006)).
+# cnf(c1013,plain,skolem0005!=skolem0008(skolem0001,skolem0006)).
+# cnf(c893,plain,~nonreflexive(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)),X1136)|X1136!=skolem0011(skolem0001,skolem0006)).
+# cnf(c1014,plain,~nonreflexive(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))|skolem0005!=skolem0011(skolem0001,skolem0006)).
+# cnf(c1015,plain,skolem0005!=skolem0011(skolem0001,skolem0006)).
+# cnf(c895,plain,~nonreflexive(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)),X1137)|X1137!=skolem0010(skolem0001,skolem0006)).
+# cnf(c1016,plain,~nonreflexive(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))|skolem0005!=skolem0010(skolem0001,skolem0006)).
+# cnf(c899,plain,~nonreflexive(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)),X1138)|X1138!=skolem0009(skolem0001,skolem0006)).
+# cnf(c1017,plain,skolem0005!=skolem0010(skolem0001,skolem0006)).
+# cnf(c1018,plain,~nonreflexive(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))|skolem0005!=skolem0009(skolem0001,skolem0006)).
+# cnf(c1019,plain,skolem0005!=skolem0009(skolem0001,skolem0006)).
+# cnf(c901,plain,~nonreflexive(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)),X1139)|X1139!=skolem0012(skolem0001,skolem0006)).
+# cnf(c1020,plain,~nonreflexive(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))|skolem0005!=skolem0012(skolem0001,skolem0006)).
+# cnf(c1021,plain,skolem0005!=skolem0012(skolem0001,skolem0006)).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+fof(co1,conjecture,(~(?[U]:(actual_world(U)&(?[V]:(?[W]:(?[X]:(?[Y]:(?[Z]:(((((((((((((((nonhuman(U,Y)&of(U,W,V))&woman(U,V))&mia_forename(U,W))&forename(U,W))&shake_beverage(U,X))&event(U,Y))&agent(U,Y,V))&patient(U,Y,X))&past(U,Y))&nonreflexive(U,Y))&order(U,Y))&(![X1]:(member(U,X1,Z)=>(?[X2]:(((((event(U,X2)&agent(U,X2,Y))&patient(U,X2,X1))&present(U,X2))&nonreflexive(U,X2))&cost(U,X2))))))&five(U,Z))&group(U,Z))&(![X3]:(member(U,X3,Z)=>dollar(U,X3)))))))))))),input).
+fof(c49,negated_conjecture,(~(~(?[U]:(actual_world(U)&(?[V]:(?[W]:(?[X]:(?[Y]:(?[Z]:(((((((((((((((nonhuman(U,Y)&of(U,W,V))&woman(U,V))&mia_forename(U,W))&forename(U,W))&shake_beverage(U,X))&event(U,Y))&agent(U,Y,V))&patient(U,Y,X))&past(U,Y))&nonreflexive(U,Y))&order(U,Y))&(![X1]:(member(U,X1,Z)=>(?[X2]:(((((event(U,X2)&agent(U,X2,Y))&patient(U,X2,X1))&present(U,X2))&nonreflexive(U,X2))&cost(U,X2))))))&five(U,Z))&group(U,Z))&(![X3]:(member(U,X3,Z)=>dollar(U,X3))))))))))))),inference(assume_negation,status(cth),[co1])).
+fof(c50,negated_conjecture,(?[U]:(actual_world(U)&(?[V]:(?[W]:(?[X]:(?[Y]:(?[Z]:(((((((((((((((nonhuman(U,Y)&of(U,W,V))&woman(U,V))&mia_forename(U,W))&forename(U,W))&shake_beverage(U,X))&event(U,Y))&agent(U,Y,V))&patient(U,Y,X))&past(U,Y))&nonreflexive(U,Y))&order(U,Y))&(![X1]:(~member(U,X1,Z)|(?[X2]:(((((event(U,X2)&agent(U,X2,Y))&patient(U,X2,X1))&present(U,X2))&nonreflexive(U,X2))&cost(U,X2))))))&five(U,Z))&group(U,Z))&(![X3]:(~member(U,X3,Z)|dollar(U,X3))))))))))),inference(fof_nnf,status(thm),[c49])).
+fof(c51,negated_conjecture,(?[X2]:(actual_world(X2)&(?[X3]:(?[X4]:(?[X5]:(?[X6]:(?[X7]:(((((((((((((((nonhuman(X2,X6)&of(X2,X4,X3))&woman(X2,X3))&mia_forename(X2,X4))&forename(X2,X4))&shake_beverage(X2,X5))&event(X2,X6))&agent(X2,X6,X3))&patient(X2,X6,X5))&past(X2,X6))&nonreflexive(X2,X6))&order(X2,X6))&(![X8]:(~member(X2,X8,X7)|(?[X9]:(((((event(X2,X9)&agent(X2,X9,X6))&patient(X2,X9,X8))&present(X2,X9))&nonreflexive(X2,X9))&cost(X2,X9))))))&five(X2,X7))&group(X2,X7))&(![X10]:(~member(X2,X10,X7)|dollar(X2,X10))))))))))),inference(variable_rename,status(thm),[c50])).
+fof(c53,negated_conjecture,(![X8]:(![X10]:(actual_world(skolem0001)&(((((((((((((((nonhuman(skolem0001,skolem0005)&of(skolem0001,skolem0003,skolem0002))&woman(skolem0001,skolem0002))&mia_forename(skolem0001,skolem0003))&forename(skolem0001,skolem0003))&shake_beverage(skolem0001,skolem0004))&event(skolem0001,skolem0005))&agent(skolem0001,skolem0005,skolem0002))&patient(skolem0001,skolem0005,skolem0004))&past(skolem0001,skolem0005))&nonreflexive(skolem0001,skolem0005))&order(skolem0001,skolem0005))&(~member(skolem0001,X8,skolem0006)|(((((event(skolem0001,skolem0007(X8))&agent(skolem0001,skolem0007(X8),skolem0005))&patient(skolem0001,skolem0007(X8),X8))&present(skolem0001,skolem0007(X8)))&nonreflexive(skolem0001,skolem0007(X8)))&cost(skolem0001,skolem0007(X8)))))&five(skolem0001,skolem0006))&group(skolem0001,skolem0006))&(~member(skolem0001,X10,skolem0006)|dollar(skolem0001,X10)))))),inference(shift_quantors,status(thm),[fof(c52,negated_conjecture,(actual_world(skolem0001)&(((((((((((((((nonhuman(skolem0001,skolem0005)&of(skolem0001,skolem0003,skolem0002))&woman(skolem0001,skolem0002))&mia_forename(skolem0001,skolem0003))&forename(skolem0001,skolem0003))&shake_beverage(skolem0001,skolem0004))&event(skolem0001,skolem0005))&agent(skolem0001,skolem0005,skolem0002))&patient(skolem0001,skolem0005,skolem0004))&past(skolem0001,skolem0005))&nonreflexive(skolem0001,skolem0005))&order(skolem0001,skolem0005))&(![X8]:(~member(skolem0001,X8,skolem0006)|(((((event(skolem0001,skolem0007(X8))&agent(skolem0001,skolem0007(X8),skolem0005))&patient(skolem0001,skolem0007(X8),X8))&present(skolem0001,skolem0007(X8)))&nonreflexive(skolem0001,skolem0007(X8)))&cost(skolem0001,skolem0007(X8))))))&five(skolem0001,skolem0006))&group(skolem0001,skolem0006))&(![X10]:(~member(skolem0001,X10,skolem0006)|dollar(skolem0001,X10))))),inference(skolemize,status(esa),[c51])).])).
+fof(c54,negated_conjecture,(![X8]:(![X10]:(actual_world(skolem0001)&(((((((((((((((nonhuman(skolem0001,skolem0005)&of(skolem0001,skolem0003,skolem0002))&woman(skolem0001,skolem0002))&mia_forename(skolem0001,skolem0003))&forename(skolem0001,skolem0003))&shake_beverage(skolem0001,skolem0004))&event(skolem0001,skolem0005))&agent(skolem0001,skolem0005,skolem0002))&patient(skolem0001,skolem0005,skolem0004))&past(skolem0001,skolem0005))&nonreflexive(skolem0001,skolem0005))&order(skolem0001,skolem0005))&((((((~member(skolem0001,X8,skolem0006)|event(skolem0001,skolem0007(X8)))&(~member(skolem0001,X8,skolem0006)|agent(skolem0001,skolem0007(X8),skolem0005)))&(~member(skolem0001,X8,skolem0006)|patient(skolem0001,skolem0007(X8),X8)))&(~member(skolem0001,X8,skolem0006)|present(skolem0001,skolem0007(X8))))&(~member(skolem0001,X8,skolem0006)|nonreflexive(skolem0001,skolem0007(X8))))&(~member(skolem0001,X8,skolem0006)|cost(skolem0001,skolem0007(X8)))))&five(skolem0001,skolem0006))&group(skolem0001,skolem0006))&(~member(skolem0001,X10,skolem0006)|dollar(skolem0001,X10)))))),inference(distribute,status(thm),[c53])).
+cnf(c74,negated_conjecture,five(skolem0001,skolem0006),inference(split_conjunct,status(thm),[c54])).
+fof(ax55,axiom,(![U]:(![V]:(five(U,V)<=>(?[W]:(member(U,W,V)&(?[X]:((member(U,X,V)&X!=W)&(?[Y]:(((member(U,Y,V)&Y!=X)&Y!=W)&(?[Z]:((((member(U,Z,V)&Z!=Y)&Z!=X)&Z!=W)&(?[X1]:(((((member(U,X1,V)&X1!=Z)&X1!=Y)&X1!=X)&X1!=W)&(![X2]:(member(U,X2,V)=>((((X2=X1|X2=Z)|X2=Y)|X2=X)|X2=W)))))))))))))))),input).
+fof(c80,axiom,(![U]:(![V]:((~five(U,V)|(?[W]:(member(U,W,V)&(?[X]:((member(U,X,V)&X!=W)&(?[Y]:(((member(U,Y,V)&Y!=X)&Y!=W)&(?[Z]:((((member(U,Z,V)&Z!=Y)&Z!=X)&Z!=W)&(?[X1]:(((((member(U,X1,V)&X1!=Z)&X1!=Y)&X1!=X)&X1!=W)&(![X2]:(~member(U,X2,V)|((((X2=X1|X2=Z)|X2=Y)|X2=X)|X2=W))))))))))))))&((![W]:(~member(U,W,V)|(![X]:((~member(U,X,V)|X=W)|(![Y]:(((~member(U,Y,V)|Y=X)|Y=W)|(![Z]:((((~member(U,Z,V)|Z=Y)|Z=X)|Z=W)|(![X1]:(((((~member(U,X1,V)|X1=Z)|X1=Y)|X1=X)|X1=W)|(?[X2]:(member(U,X2,V)&((((X2!=X1&X2!=Z)&X2!=Y)&X2!=X)&X2!=W)))))))))))))|five(U,V))))),inference(fof_nnf,status(thm),[ax55])).
+fof(c81,axiom,((![U]:(![V]:(~five(U,V)|(?[W]:(member(U,W,V)&(?[X]:((member(U,X,V)&X!=W)&(?[Y]:(((member(U,Y,V)&Y!=X)&Y!=W)&(?[Z]:((((member(U,Z,V)&Z!=Y)&Z!=X)&Z!=W)&(?[X1]:(((((member(U,X1,V)&X1!=Z)&X1!=Y)&X1!=X)&X1!=W)&(![X2]:(~member(U,X2,V)|((((X2=X1|X2=Z)|X2=Y)|X2=X)|X2=W))))))))))))))))&(![U]:(![V]:((![W]:(~member(U,W,V)|(![X]:((~member(U,X,V)|X=W)|(![Y]:(((~member(U,Y,V)|Y=X)|Y=W)|(![Z]:((((~member(U,Z,V)|Z=Y)|Z=X)|Z=W)|(![X1]:(((((~member(U,X1,V)|X1=Z)|X1=Y)|X1=X)|X1=W)|(?[X2]:(member(U,X2,V)&((((X2!=X1&X2!=Z)&X2!=Y)&X2!=X)&X2!=W)))))))))))))|five(U,V))))),inference(shift_quantors,status(thm),[c80])).
+fof(c82,axiom,((![X13]:(![X14]:(~five(X13,X14)|(?[X15]:(member(X13,X15,X14)&(?[X16]:((member(X13,X16,X14)&X16!=X15)&(?[X17]:(((member(X13,X17,X14)&X17!=X16)&X17!=X15)&(?[X18]:((((member(X13,X18,X14)&X18!=X17)&X18!=X16)&X18!=X15)&(?[X19]:(((((member(X13,X19,X14)&X19!=X18)&X19!=X17)&X19!=X16)&X19!=X15)&(![X20]:(~member(X13,X20,X14)|((((X20=X19|X20=X18)|X20=X17)|X20=X16)|X20=X15))))))))))))))))&(![X21]:(![X22]:((![X23]:(~member(X21,X23,X22)|(![X24]:((~member(X21,X24,X22)|X24=X23)|(![X25]:(((~member(X21,X25,X22)|X25=X24)|X25=X23)|(![X26]:((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(![X27]:(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|(?[X28]:(member(X21,X28,X22)&((((X28!=X27&X28!=X26)&X28!=X25)&X28!=X24)&X28!=X23)))))))))))))|five(X21,X22))))),inference(variable_rename,status(thm),[c81])).
+fof(c84,axiom,(![X13]:(![X14]:(![X20]:(![X21]:(![X22]:(![X23]:(![X24]:(![X25]:(![X26]:(![X27]:((~five(X13,X14)|(member(X13,skolem0008(X13,X14),X14)&((member(X13,skolem0009(X13,X14),X14)&skolem0009(X13,X14)!=skolem0008(X13,X14))&(((member(X13,skolem0010(X13,X14),X14)&skolem0010(X13,X14)!=skolem0009(X13,X14))&skolem0010(X13,X14)!=skolem0008(X13,X14))&((((member(X13,skolem0011(X13,X14),X14)&skolem0011(X13,X14)!=skolem0010(X13,X14))&skolem0011(X13,X14)!=skolem0009(X13,X14))&skolem0011(X13,X14)!=skolem0008(X13,X14))&(((((member(X13,skolem0012(X13,X14),X14)&skolem0012(X13,X14)!=skolem0011(X13,X14))&skolem0012(X13,X14)!=skolem0010(X13,X14))&skolem0012(X13,X14)!=skolem0009(X13,X14))&skolem0012(X13,X14)!=skolem0008(X13,X14))&(~member(X13,X20,X14)|((((X20=skolem0012(X13,X14)|X20=skolem0011(X13,X14))|X20=skolem0010(X13,X14))|X20=skolem0009(X13,X14))|X20=skolem0008(X13,X14)))))))))&((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|(member(X21,skolem0013(X21,X22,X23,X24,X25,X26,X27),X22)&((((skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X27&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X26)&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X25)&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X24)&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X23)))))))|five(X21,X22))))))))))))),inference(shift_quantors,status(thm),[fof(c83,axiom,((![X13]:(![X14]:(~five(X13,X14)|(member(X13,skolem0008(X13,X14),X14)&((member(X13,skolem0009(X13,X14),X14)&skolem0009(X13,X14)!=skolem0008(X13,X14))&(((member(X13,skolem0010(X13,X14),X14)&skolem0010(X13,X14)!=skolem0009(X13,X14))&skolem0010(X13,X14)!=skolem0008(X13,X14))&((((member(X13,skolem0011(X13,X14),X14)&skolem0011(X13,X14)!=skolem0010(X13,X14))&skolem0011(X13,X14)!=skolem0009(X13,X14))&skolem0011(X13,X14)!=skolem0008(X13,X14))&(((((member(X13,skolem0012(X13,X14),X14)&skolem0012(X13,X14)!=skolem0011(X13,X14))&skolem0012(X13,X14)!=skolem0010(X13,X14))&skolem0012(X13,X14)!=skolem0009(X13,X14))&skolem0012(X13,X14)!=skolem0008(X13,X14))&(![X20]:(~member(X13,X20,X14)|((((X20=skolem0012(X13,X14)|X20=skolem0011(X13,X14))|X20=skolem0010(X13,X14))|X20=skolem0009(X13,X14))|X20=skolem0008(X13,X14))))))))))))&(![X21]:(![X22]:((![X23]:(~member(X21,X23,X22)|(![X24]:((~member(X21,X24,X22)|X24=X23)|(![X25]:(((~member(X21,X25,X22)|X25=X24)|X25=X23)|(![X26]:((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(![X27]:(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|(member(X21,skolem0013(X21,X22,X23,X24,X25,X26,X27),X22)&((((skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X27&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X26)&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X25)&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X24)&skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X23))))))))))))|five(X21,X22))))),inference(skolemize,status(esa),[c82])).])).
+fof(c85,axiom,(![X13]:(![X14]:(![X20]:(![X21]:(![X22]:(![X23]:(![X24]:(![X25]:(![X26]:(![X27]:(((~five(X13,X14)|member(X13,skolem0008(X13,X14),X14))&(((~five(X13,X14)|member(X13,skolem0009(X13,X14),X14))&(~five(X13,X14)|skolem0009(X13,X14)!=skolem0008(X13,X14)))&((((~five(X13,X14)|member(X13,skolem0010(X13,X14),X14))&(~five(X13,X14)|skolem0010(X13,X14)!=skolem0009(X13,X14)))&(~five(X13,X14)|skolem0010(X13,X14)!=skolem0008(X13,X14)))&(((((~five(X13,X14)|member(X13,skolem0011(X13,X14),X14))&(~five(X13,X14)|skolem0011(X13,X14)!=skolem0010(X13,X14)))&(~five(X13,X14)|skolem0011(X13,X14)!=skolem0009(X13,X14)))&(~five(X13,X14)|skolem0011(X13,X14)!=skolem0008(X13,X14)))&((((((~five(X13,X14)|member(X13,skolem0012(X13,X14),X14))&(~five(X13,X14)|skolem0012(X13,X14)!=skolem0011(X13,X14)))&(~five(X13,X14)|skolem0012(X13,X14)!=skolem0010(X13,X14)))&(~five(X13,X14)|skolem0012(X13,X14)!=skolem0009(X13,X14)))&(~five(X13,X14)|skolem0012(X13,X14)!=skolem0008(X13,X14)))&(~five(X13,X14)|(~member(X13,X20,X14)|((((X20=skolem0012(X13,X14)|X20=skolem0011(X13,X14))|X20=skolem0010(X13,X14))|X20=skolem0009(X13,X14))|X20=skolem0008(X13,X14)))))))))&(((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|member(X21,skolem0013(X21,X22,X23,X24,X25,X26,X27),X22))))))|five(X21,X22))&((((((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X27)))))|five(X21,X22))&((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X26)))))|five(X21,X22)))&((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X25)))))|five(X21,X22)))&((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X24)))))|five(X21,X22)))&((~member(X21,X23,X22)|((~member(X21,X24,X22)|X24=X23)|(((~member(X21,X25,X22)|X25=X24)|X25=X23)|((((~member(X21,X26,X22)|X26=X25)|X26=X24)|X26=X23)|(((((~member(X21,X27,X22)|X27=X26)|X27=X25)|X27=X24)|X27=X23)|skolem0013(X21,X22,X23,X24,X25,X26,X27)!=X23)))))|five(X21,X22))))))))))))))),inference(distribute,status(thm),[c84])).
+cnf(c96,axiom,~five(X365,X364)|member(X365,skolem0012(X365,X364),X364),inference(split_conjunct,status(thm),[c85])).
+cnf(c373,plain,member(skolem0001,skolem0012(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c96, c74])).
+cnf(c72,negated_conjecture,~member(skolem0001,X454,skolem0006)|nonreflexive(skolem0001,skolem0007(X454)),inference(split_conjunct,status(thm),[c54])).
+cnf(c587,plain,nonreflexive(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c72, c373])).
+cnf(c69,negated_conjecture,~member(skolem0001,X474,skolem0006)|agent(skolem0001,skolem0007(X474),skolem0005),inference(split_conjunct,status(thm),[c54])).
+cnf(c619,plain,agent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c69, c373])).
+fof(ax54,axiom,(![U]:(![V]:(![W]:(![X]:(((nonreflexive(U,V)&agent(U,V,W))&patient(U,V,X))=>W!=X))))),input).
+fof(c108,axiom,(![U]:(![V]:(![W]:(![X]:(((~nonreflexive(U,V)|~agent(U,V,W))|~patient(U,V,X))|W!=X))))),inference(fof_nnf,status(thm),[ax54])).
+fof(c109,axiom,(![X29]:(![X30]:(![X31]:(![X32]:(((~nonreflexive(X29,X30)|~agent(X29,X30,X31))|~patient(X29,X30,X32))|X31!=X32))))),inference(variable_rename,status(thm),[c108])).
+cnf(c110,axiom,~nonreflexive(X584,X583)|~agent(X584,X583,X585)|~patient(X584,X583,X582)|X585!=X582,inference(split_conjunct,status(thm),[c109])).
+cnf(c70,negated_conjecture,~member(skolem0001,X483,skolem0006)|patient(skolem0001,skolem0007(X483),X483),inference(split_conjunct,status(thm),[c54])).
+cnf(c624,plain,patient(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c70, c373])).
+cnf(c901,plain,~nonreflexive(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)),X1139)|X1139!=skolem0012(skolem0001,skolem0006),inference(resolution,status(thm),[c624, c110])).
+cnf(c1020,plain,~nonreflexive(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006)))|skolem0005!=skolem0012(skolem0001,skolem0006),inference(resolution,status(thm),[c901, c619])).
+cnf(c1021,plain,skolem0005!=skolem0012(skolem0001,skolem0006),inference(resolution,status(thm),[c1020, c587])).
+cnf(c87,axiom,~five(X355,X354)|member(X355,skolem0009(X355,X354),X354),inference(split_conjunct,status(thm),[c85])).
+cnf(c369,plain,member(skolem0001,skolem0009(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c87, c74])).
+cnf(c586,plain,nonreflexive(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c72, c369])).
+cnf(c618,plain,agent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c69, c369])).
+cnf(c623,plain,patient(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c70, c369])).
+cnf(c899,plain,~nonreflexive(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)),X1138)|X1138!=skolem0009(skolem0001,skolem0006),inference(resolution,status(thm),[c623, c110])).
+cnf(c1018,plain,~nonreflexive(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006)))|skolem0005!=skolem0009(skolem0001,skolem0006),inference(resolution,status(thm),[c899, c618])).
+cnf(c1019,plain,skolem0005!=skolem0009(skolem0001,skolem0006),inference(resolution,status(thm),[c1018, c586])).
+cnf(c89,axiom,~five(X357,X356)|member(X357,skolem0010(X357,X356),X356),inference(split_conjunct,status(thm),[c85])).
+cnf(c370,plain,member(skolem0001,skolem0010(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c89, c74])).
+cnf(c585,plain,nonreflexive(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c72, c370])).
+cnf(c617,plain,agent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c69, c370])).
+cnf(c622,plain,patient(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c70, c370])).
+cnf(c895,plain,~nonreflexive(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)),X1137)|X1137!=skolem0010(skolem0001,skolem0006),inference(resolution,status(thm),[c622, c110])).
+cnf(c1016,plain,~nonreflexive(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006)))|skolem0005!=skolem0010(skolem0001,skolem0006),inference(resolution,status(thm),[c895, c617])).
+cnf(c1017,plain,skolem0005!=skolem0010(skolem0001,skolem0006),inference(resolution,status(thm),[c1016, c585])).
+cnf(c92,axiom,~five(X363,X362)|member(X363,skolem0011(X363,X362),X362),inference(split_conjunct,status(thm),[c85])).
+cnf(c372,plain,member(skolem0001,skolem0011(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c92, c74])).
+cnf(c584,plain,nonreflexive(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c72, c372])).
+cnf(c616,plain,agent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c69, c372])).
+cnf(c621,plain,patient(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c70, c372])).
+cnf(c893,plain,~nonreflexive(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)),X1136)|X1136!=skolem0011(skolem0001,skolem0006),inference(resolution,status(thm),[c621, c110])).
+cnf(c1014,plain,~nonreflexive(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006)))|skolem0005!=skolem0011(skolem0001,skolem0006),inference(resolution,status(thm),[c893, c616])).
+cnf(c1015,plain,skolem0005!=skolem0011(skolem0001,skolem0006),inference(resolution,status(thm),[c1014, c584])).
+cnf(c86,axiom,~five(X353,X352)|member(X353,skolem0008(X353,X352),X352),inference(split_conjunct,status(thm),[c85])).
+cnf(c368,plain,member(skolem0001,skolem0008(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c86, c74])).
+cnf(c583,plain,nonreflexive(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c72, c368])).
+cnf(c615,plain,agent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c69, c368])).
+cnf(c620,plain,patient(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c70, c368])).
+cnf(c891,plain,~nonreflexive(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))|~agent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)),X1131)|X1131!=skolem0008(skolem0001,skolem0006),inference(resolution,status(thm),[c620, c110])).
+cnf(c1012,plain,~nonreflexive(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006)))|skolem0005!=skolem0008(skolem0001,skolem0006),inference(resolution,status(thm),[c891, c615])).
+cnf(c1013,plain,skolem0005!=skolem0008(skolem0001,skolem0006),inference(resolution,status(thm),[c1012, c583])).
+cnf(reflexivity,axiom,X141=X141,eq_axiom).
+cnf(c46,plain,X465!=X464|X462!=X461|X463!=X466|~patient(X465,X462,X463)|patient(X464,X461,X466),eq_axiom).
+cnf(c900,plain,skolem0001!=X1121|skolem0007(skolem0012(skolem0001,skolem0006))!=X1122|skolem0012(skolem0001,skolem0006)!=X1123|patient(X1121,X1122,X1123),inference(resolution,status(thm),[c624, c46])).
+cnf(c1009,plain,skolem0001!=X1124|skolem0012(skolem0001,skolem0006)!=X1125|patient(X1124,skolem0007(skolem0012(skolem0001,skolem0006)),X1125),inference(resolution,status(thm),[c900, reflexivity])).
+cnf(c1010,plain,skolem0001!=X1130|patient(X1130,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c1009, reflexivity])).
+cnf(c898,plain,skolem0001!=X1111|skolem0007(skolem0009(skolem0001,skolem0006))!=X1112|skolem0009(skolem0001,skolem0006)!=X1113|patient(X1111,X1112,X1113),inference(resolution,status(thm),[c623, c46])).
+cnf(c1006,plain,skolem0001!=X1118|skolem0009(skolem0001,skolem0006)!=X1119|patient(X1118,skolem0007(skolem0009(skolem0001,skolem0006)),X1119),inference(resolution,status(thm),[c898, reflexivity])).
+cnf(c1007,plain,skolem0001!=X1120|patient(X1120,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c1006, reflexivity])).
+cnf(c894,plain,skolem0001!=X1105|skolem0007(skolem0010(skolem0001,skolem0006))!=X1106|skolem0010(skolem0001,skolem0006)!=X1107|patient(X1105,X1106,X1107),inference(resolution,status(thm),[c622, c46])).
+cnf(c1003,plain,skolem0001!=X1109|skolem0010(skolem0001,skolem0006)!=X1108|patient(X1109,skolem0007(skolem0010(skolem0001,skolem0006)),X1108),inference(resolution,status(thm),[c894, reflexivity])).
+cnf(c1004,plain,skolem0001!=X1110|patient(X1110,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c1003, reflexivity])).
+cnf(c892,plain,skolem0001!=X1095|skolem0007(skolem0011(skolem0001,skolem0006))!=X1096|skolem0011(skolem0001,skolem0006)!=X1097|patient(X1095,X1096,X1097),inference(resolution,status(thm),[c621, c46])).
+cnf(c1000,plain,skolem0001!=X1099|skolem0011(skolem0001,skolem0006)!=X1098|patient(X1099,skolem0007(skolem0011(skolem0001,skolem0006)),X1098),inference(resolution,status(thm),[c892, reflexivity])).
+cnf(c1001,plain,skolem0001!=X1100|patient(X1100,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c1000, reflexivity])).
+cnf(c890,plain,skolem0001!=X1085|skolem0007(skolem0008(skolem0001,skolem0006))!=X1086|skolem0008(skolem0001,skolem0006)!=X1087|patient(X1085,X1086,X1087),inference(resolution,status(thm),[c620, c46])).
+cnf(c997,plain,skolem0001!=X1089|skolem0008(skolem0001,skolem0006)!=X1088|patient(X1089,skolem0007(skolem0008(skolem0001,skolem0006)),X1088),inference(resolution,status(thm),[c890, reflexivity])).
+cnf(c998,plain,skolem0001!=X1090|patient(X1090,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c997, reflexivity])).
+cnf(c57,negated_conjecture,of(skolem0001,skolem0003,skolem0002),inference(split_conjunct,status(thm),[c54])).
+fof(ax53,axiom,(![U]:(![V]:(![W]:(((entity(U,V)&forename(U,W))&of(U,W,V))=>(~(?[X]:((forename(U,X)&X!=W)&of(U,X,V)))))))),input).
+fof(c111,axiom,(![U]:(![V]:(![W]:(((~entity(U,V)|~forename(U,W))|~of(U,W,V))|(![X]:((~forename(U,X)|X=W)|~of(U,X,V))))))),inference(fof_nnf,status(thm),[ax53])).
+fof(c113,axiom,(![X33]:(![X34]:(![X35]:(![X36]:(((~entity(X33,X34)|~forename(X33,X35))|~of(X33,X35,X34))|((~forename(X33,X36)|X36=X35)|~of(X33,X36,X34))))))),inference(shift_quantors,status(thm),[fof(c112,axiom,(![X33]:(![X34]:(![X35]:(((~entity(X33,X34)|~forename(X33,X35))|~of(X33,X35,X34))|(![X36]:((~forename(X33,X36)|X36=X35)|~of(X33,X36,X34))))))),inference(variable_rename,status(thm),[c111])).])).
+cnf(c114,axiom,~entity(X593,X590)|~forename(X593,X592)|~of(X593,X592,X590)|~forename(X593,X591)|X591=X592|~of(X593,X591,X590),inference(split_conjunct,status(thm),[c113])).
+cnf(c666,plain,~entity(skolem0001,skolem0002)|~forename(skolem0001,X1084)|~of(skolem0001,X1084,skolem0002)|~forename(skolem0001,skolem0003)|skolem0003=X1084,inference(resolution,status(thm),[c114, c57])).
+cnf(c45,plain,X459!=X458|X456!=X455|X457!=X460|~agent(X459,X456,X457)|agent(X458,X455,X460),eq_axiom).
+cnf(c757,plain,skolem0001!=X1078|skolem0007(skolem0012(skolem0001,skolem0006))!=X1079|skolem0005!=X1080|agent(X1078,X1079,X1080),inference(resolution,status(thm),[c619, c45])).
+cnf(c993,plain,skolem0001!=X1081|skolem0005!=X1082|agent(X1081,skolem0007(skolem0012(skolem0001,skolem0006)),X1082),inference(resolution,status(thm),[c757, reflexivity])).
+cnf(c994,plain,skolem0001!=X1083|agent(X1083,skolem0007(skolem0012(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c993, reflexivity])).
+cnf(c756,plain,skolem0001!=X1072|skolem0007(skolem0009(skolem0001,skolem0006))!=X1073|skolem0005!=X1074|agent(X1072,X1073,X1074),inference(resolution,status(thm),[c618, c45])).
+cnf(c990,plain,skolem0001!=X1076|skolem0005!=X1075|agent(X1076,skolem0007(skolem0009(skolem0001,skolem0006)),X1075),inference(resolution,status(thm),[c756, reflexivity])).
+cnf(c991,plain,skolem0001!=X1077|agent(X1077,skolem0007(skolem0009(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c990, reflexivity])).
+cnf(c754,plain,skolem0001!=X1066|skolem0007(skolem0010(skolem0001,skolem0006))!=X1067|skolem0005!=X1068|agent(X1066,X1067,X1068),inference(resolution,status(thm),[c617, c45])).
+cnf(c987,plain,skolem0001!=X1069|skolem0005!=X1070|agent(X1069,skolem0007(skolem0010(skolem0001,skolem0006)),X1070),inference(resolution,status(thm),[c754, reflexivity])).
+cnf(c988,plain,skolem0001!=X1071|agent(X1071,skolem0007(skolem0010(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c987, reflexivity])).
+cnf(c753,plain,skolem0001!=X1060|skolem0007(skolem0011(skolem0001,skolem0006))!=X1061|skolem0005!=X1062|agent(X1060,X1061,X1062),inference(resolution,status(thm),[c616, c45])).
+cnf(c984,plain,skolem0001!=X1064|skolem0005!=X1063|agent(X1064,skolem0007(skolem0011(skolem0001,skolem0006)),X1063),inference(resolution,status(thm),[c753, reflexivity])).
+cnf(c985,plain,skolem0001!=X1065|agent(X1065,skolem0007(skolem0011(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c984, reflexivity])).
+cnf(c752,plain,skolem0001!=X1054|skolem0007(skolem0008(skolem0001,skolem0006))!=X1055|skolem0005!=X1056|agent(X1054,X1055,X1056),inference(resolution,status(thm),[c615, c45])).
+cnf(c981,plain,skolem0001!=X1058|skolem0005!=X1057|agent(X1058,skolem0007(skolem0008(skolem0001,skolem0006)),X1057),inference(resolution,status(thm),[c752, reflexivity])).
+cnf(c982,plain,skolem0001!=X1059|agent(X1059,skolem0007(skolem0008(skolem0001,skolem0006)),skolem0005),inference(resolution,status(thm),[c981, reflexivity])).
+cnf(c47,plain,X472!=X471|X469!=X468|X470!=X473|~member(X472,X469,X470)|member(X471,X468,X473),eq_axiom).
+cnf(c612,plain,skolem0001!=X1049|skolem0012(skolem0001,skolem0006)!=X1048|skolem0006!=X1047|member(X1049,X1048,X1047),inference(resolution,status(thm),[c47, c373])).
+cnf(c977,plain,skolem0001!=X1052|skolem0006!=X1051|member(X1052,skolem0012(skolem0001,skolem0006),X1051),inference(resolution,status(thm),[c612, reflexivity])).
+cnf(c979,plain,skolem0001!=X1053|member(X1053,skolem0012(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c977, reflexivity])).
+cnf(c611,plain,skolem0001!=X1044|skolem0009(skolem0001,skolem0006)!=X1043|skolem0006!=X1042|member(X1044,X1043,X1042),inference(resolution,status(thm),[c47, c369])).
+cnf(c975,plain,skolem0001!=X1045|skolem0006!=X1046|member(X1045,skolem0009(skolem0001,skolem0006),X1046),inference(resolution,status(thm),[c611, reflexivity])).
+cnf(c976,plain,skolem0001!=X1050|member(X1050,skolem0009(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c975, reflexivity])).
+cnf(c610,plain,skolem0001!=X1038|skolem0010(skolem0001,skolem0006)!=X1037|skolem0006!=X1036|member(X1038,X1037,X1036),inference(resolution,status(thm),[c47, c370])).
+cnf(c972,plain,skolem0001!=X1039|skolem0006!=X1040|member(X1039,skolem0010(skolem0001,skolem0006),X1040),inference(resolution,status(thm),[c610, reflexivity])).
+cnf(c973,plain,skolem0001!=X1041|member(X1041,skolem0010(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c972, reflexivity])).
+cnf(c609,plain,skolem0001!=X1031|skolem0011(skolem0001,skolem0006)!=X1030|skolem0006!=X1029|member(X1031,X1030,X1029),inference(resolution,status(thm),[c47, c372])).
+cnf(c968,plain,skolem0001!=X1034|skolem0006!=X1033|member(X1034,skolem0011(skolem0001,skolem0006),X1033),inference(resolution,status(thm),[c609, reflexivity])).
+cnf(c970,plain,skolem0001!=X1035|member(X1035,skolem0011(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c968, reflexivity])).
+cnf(c608,plain,skolem0001!=X1023|skolem0008(skolem0001,skolem0006)!=X1022|skolem0006!=X1021|member(X1023,X1022,X1021),inference(resolution,status(thm),[c47, c368])).
+cnf(c964,plain,skolem0001!=X1028|skolem0006!=X1027|member(X1028,skolem0008(skolem0001,skolem0006),X1027),inference(resolution,status(thm),[c608, reflexivity])).
+cnf(c967,plain,skolem0001!=X1032|member(X1032,skolem0008(skolem0001,skolem0006),skolem0006),inference(resolution,status(thm),[c964, reflexivity])).
+cnf(c29,plain,X386!=X388|X387!=X389|~cost(X386,X387)|cost(X388,X389),eq_axiom).
+cnf(c73,negated_conjecture,~member(skolem0001,X467,skolem0006)|cost(skolem0001,skolem0007(X467)),inference(split_conjunct,status(thm),[c54])).
+cnf(c599,plain,cost(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c73, c373])).
+cnf(c613,plain,skolem0001!=X1025|skolem0007(skolem0012(skolem0001,skolem0006))!=X1024|cost(X1025,X1024),inference(resolution,status(thm),[c599, c29])).
+cnf(c965,plain,skolem0001!=X1026|cost(X1026,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c613, reflexivity])).
+cnf(c598,plain,cost(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c73, c369])).
+cnf(c606,plain,skolem0001!=X1019|skolem0007(skolem0009(skolem0001,skolem0006))!=X1018|cost(X1019,X1018),inference(resolution,status(thm),[c598, c29])).
+cnf(c962,plain,skolem0001!=X1020|cost(X1020,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c606, reflexivity])).
+cnf(c597,plain,cost(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c73, c370])).
+cnf(c604,plain,skolem0001!=X1016|skolem0007(skolem0010(skolem0001,skolem0006))!=X1015|cost(X1016,X1015),inference(resolution,status(thm),[c597, c29])).
+cnf(c960,plain,skolem0001!=X1017|cost(X1017,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c604, reflexivity])).
+cnf(c596,plain,cost(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c73, c372])).
+cnf(c602,plain,skolem0001!=X1013|skolem0007(skolem0011(skolem0001,skolem0006))!=X1012|cost(X1013,X1012),inference(resolution,status(thm),[c596, c29])).
+cnf(c958,plain,skolem0001!=X1014|cost(X1014,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c602, reflexivity])).
+cnf(c595,plain,cost(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c73, c368])).
+cnf(c600,plain,skolem0001!=X1010|skolem0007(skolem0008(skolem0001,skolem0006))!=X1009|cost(X1010,X1009),inference(resolution,status(thm),[c595, c29])).
+cnf(c956,plain,skolem0001!=X1011|cost(X1011,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c600, reflexivity])).
+cnf(c64,negated_conjecture,patient(skolem0001,skolem0005,skolem0004),inference(split_conjunct,status(thm),[c54])).
+cnf(c594,plain,skolem0001!=X1003|skolem0005!=X1004|skolem0004!=X1005|patient(X1003,X1004,X1005),inference(resolution,status(thm),[c46, c64])).
+cnf(c953,plain,skolem0001!=X1007|skolem0005!=X1006|patient(X1007,X1006,skolem0004),inference(resolution,status(thm),[c594, reflexivity])).
+cnf(c954,plain,skolem0001!=X1008|patient(X1008,skolem0005,skolem0004),inference(resolution,status(thm),[c953, reflexivity])).
+cnf(c44,plain,X450!=X452|X451!=X453|~nonreflexive(X450,X451)|nonreflexive(X452,X453),eq_axiom).
+cnf(c593,plain,skolem0001!=X1000|skolem0007(skolem0012(skolem0001,skolem0006))!=X1001|nonreflexive(X1000,X1001),inference(resolution,status(thm),[c587, c44])).
+cnf(c951,plain,skolem0001!=X1002|nonreflexive(X1002,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c593, reflexivity])).
+cnf(c592,plain,skolem0001!=X997|skolem0007(skolem0009(skolem0001,skolem0006))!=X998|nonreflexive(X997,X998),inference(resolution,status(thm),[c586, c44])).
+cnf(c949,plain,skolem0001!=X999|nonreflexive(X999,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c592, reflexivity])).
+cnf(c591,plain,skolem0001!=X994|skolem0007(skolem0010(skolem0001,skolem0006))!=X995|nonreflexive(X994,X995),inference(resolution,status(thm),[c585, c44])).
+cnf(c947,plain,skolem0001!=X996|nonreflexive(X996,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c591, reflexivity])).
+cnf(c590,plain,skolem0001!=X991|skolem0007(skolem0011(skolem0001,skolem0006))!=X992|nonreflexive(X991,X992),inference(resolution,status(thm),[c584, c44])).
+cnf(c945,plain,skolem0001!=X993|nonreflexive(X993,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c590, reflexivity])).
+cnf(c589,plain,skolem0001!=X988|skolem0007(skolem0008(skolem0001,skolem0006))!=X989|nonreflexive(X988,X989),inference(resolution,status(thm),[c583, c44])).
+cnf(c943,plain,skolem0001!=X990|nonreflexive(X990,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c589, reflexivity])).
+cnf(c63,negated_conjecture,agent(skolem0001,skolem0005,skolem0002),inference(split_conjunct,status(thm),[c54])).
+cnf(c588,plain,skolem0001!=X981|skolem0005!=X982|skolem0002!=X983|agent(X981,X982,X983),inference(resolution,status(thm),[c45, c63])).
+cnf(c939,plain,skolem0001!=X985|skolem0005!=X986|agent(X985,X986,skolem0002),inference(resolution,status(thm),[c588, reflexivity])).
+cnf(c941,plain,skolem0001!=X987|agent(X987,skolem0005,skolem0002),inference(resolution,status(thm),[c939, reflexivity])).
+cnf(c41,plain,X435!=X437|X436!=X438|~present(X435,X436)|present(X437,X438),eq_axiom).
+cnf(c71,negated_conjecture,~member(skolem0001,X449,skolem0006)|present(skolem0001,skolem0007(X449)),inference(split_conjunct,status(thm),[c54])).
+cnf(c576,plain,present(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c71, c373])).
+cnf(c582,plain,skolem0001!=X980|skolem0007(skolem0012(skolem0001,skolem0006))!=X979|present(X980,X979),inference(resolution,status(thm),[c576, c41])).
+cnf(c938,plain,skolem0001!=X984|present(X984,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c582, reflexivity])).
+cnf(c575,plain,present(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c71, c369])).
+cnf(c581,plain,skolem0001!=X976|skolem0007(skolem0009(skolem0001,skolem0006))!=X975|present(X976,X975),inference(resolution,status(thm),[c575, c41])).
+cnf(c935,plain,skolem0001!=X978|present(X978,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c581, reflexivity])).
+cnf(c574,plain,present(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c71, c370])).
+cnf(c580,plain,skolem0001!=X974|skolem0007(skolem0010(skolem0001,skolem0006))!=X973|present(X974,X973),inference(resolution,status(thm),[c574, c41])).
+cnf(c934,plain,skolem0001!=X977|present(X977,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c580, reflexivity])).
+cnf(c573,plain,present(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c71, c372])).
+cnf(c579,plain,skolem0001!=X970|skolem0007(skolem0011(skolem0001,skolem0006))!=X969|present(X970,X969),inference(resolution,status(thm),[c573, c41])).
+cnf(c931,plain,skolem0001!=X972|present(X972,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c579, reflexivity])).
+cnf(c572,plain,present(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c71, c368])).
+cnf(c577,plain,skolem0001!=X968|skolem0007(skolem0008(skolem0001,skolem0006))!=X967|present(X968,X967),inference(resolution,status(thm),[c572, c41])).
+cnf(c930,plain,skolem0001!=X971|present(X971,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c577, reflexivity])).
+cnf(c36,plain,X415!=X417|X416!=X418|~singleton(X415,X416)|singleton(X417,X418),eq_axiom).
+fof(ax39,axiom,(![U]:(![V]:(thing(U,V)=>singleton(U,V)))),input).
+fof(c162,axiom,(![U]:(![V]:(~thing(U,V)|singleton(U,V)))),inference(fof_nnf,status(thm),[ax39])).
+fof(c163,axiom,(![X63]:(![X64]:(~thing(X63,X64)|singleton(X63,X64)))),inference(variable_rename,status(thm),[c162])).
+cnf(c164,axiom,~thing(X193,X192)|singleton(X193,X192),inference(split_conjunct,status(thm),[c163])).
+fof(ax30,axiom,(![U]:(![V]:(eventuality(U,V)=>thing(U,V)))),input).
+fof(c189,axiom,(![U]:(![V]:(~eventuality(U,V)|thing(U,V)))),inference(fof_nnf,status(thm),[ax30])).
+fof(c190,axiom,(![X81]:(![X82]:(~eventuality(X81,X82)|thing(X81,X82)))),inference(variable_rename,status(thm),[c189])).
+cnf(c191,axiom,~eventuality(X222,X223)|thing(X222,X223),inference(split_conjunct,status(thm),[c190])).
+fof(ax31,axiom,(![U]:(![V]:(event(U,V)=>eventuality(U,V)))),input).
+fof(c186,axiom,(![U]:(![V]:(~event(U,V)|eventuality(U,V)))),inference(fof_nnf,status(thm),[ax31])).
+fof(c187,axiom,(![X79]:(![X80]:(~event(X79,X80)|eventuality(X79,X80)))),inference(variable_rename,status(thm),[c186])).
+cnf(c188,axiom,~event(X216,X217)|eventuality(X216,X217),inference(split_conjunct,status(thm),[c187])).
+cnf(c68,negated_conjecture,~member(skolem0001,X414,skolem0006)|event(skolem0001,skolem0007(X414)),inference(split_conjunct,status(thm),[c54])).
+cnf(c470,plain,event(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c68, c373])).
+cnf(c489,plain,eventuality(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c470, c188])).
+cnf(c518,plain,thing(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c489, c191])).
+cnf(c564,plain,singleton(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c518, c164])).
+cnf(c571,plain,skolem0001!=X963|skolem0007(skolem0012(skolem0001,skolem0006))!=X964|singleton(X963,X964),inference(resolution,status(thm),[c564, c36])).
+cnf(c927,plain,skolem0001!=X966|singleton(X966,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c571, reflexivity])).
+cnf(c469,plain,event(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c68, c369])).
+cnf(c487,plain,eventuality(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c469, c188])).
+cnf(c513,plain,thing(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c487, c191])).
+cnf(c558,plain,singleton(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c513, c164])).
+cnf(c570,plain,skolem0001!=X961|skolem0007(skolem0009(skolem0001,skolem0006))!=X962|singleton(X961,X962),inference(resolution,status(thm),[c558, c36])).
+cnf(c926,plain,skolem0001!=X965|singleton(X965,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c570, reflexivity])).
+cnf(c43,plain,X447!=X446|X444!=X443|X445!=X448|~of(X447,X444,X445)|of(X446,X443,X448),eq_axiom).
+cnf(c569,plain,skolem0001!=X955|skolem0003!=X956|skolem0002!=X957|of(X955,X956,X957),inference(resolution,status(thm),[c43, c57])).
+cnf(c923,plain,skolem0001!=X959|skolem0003!=X958|of(X959,X958,skolem0002),inference(resolution,status(thm),[c569, reflexivity])).
+cnf(c924,plain,skolem0001!=X960|of(X960,skolem0003,skolem0002),inference(resolution,status(thm),[c923, reflexivity])).
+cnf(c468,plain,event(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c68, c370])).
+cnf(c485,plain,eventuality(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c468, c188])).
+cnf(c508,plain,thing(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c485, c191])).
+cnf(c547,plain,singleton(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c508, c164])).
+cnf(c568,plain,skolem0001!=X952|skolem0007(skolem0010(skolem0001,skolem0006))!=X953|singleton(X952,X953),inference(resolution,status(thm),[c547, c36])).
+cnf(c921,plain,skolem0001!=X954|singleton(X954,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c568, reflexivity])).
+cnf(c467,plain,event(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c68, c372])).
+cnf(c474,plain,eventuality(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c467, c188])).
+cnf(c498,plain,thing(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c474, c191])).
+cnf(c541,plain,singleton(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c498, c164])).
+cnf(c567,plain,skolem0001!=X949|skolem0007(skolem0011(skolem0001,skolem0006))!=X950|singleton(X949,X950),inference(resolution,status(thm),[c541, c36])).
+cnf(c919,plain,skolem0001!=X951|singleton(X951,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c567, reflexivity])).
+cnf(c466,plain,event(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c68, c368])).
+cnf(c472,plain,eventuality(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c466, c188])).
+cnf(c493,plain,thing(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c472, c191])).
+cnf(c530,plain,singleton(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c493, c164])).
+cnf(c565,plain,skolem0001!=X946|skolem0007(skolem0008(skolem0001,skolem0006))!=X947|singleton(X946,X947),inference(resolution,status(thm),[c530, c36])).
+cnf(c917,plain,skolem0001!=X948|singleton(X948,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c565, reflexivity])).
+cnf(c19,plain,X320!=X322|X321!=X323|~thing(X320,X321)|thing(X322,X323),eq_axiom).
+cnf(c563,plain,skolem0001!=X943|skolem0007(skolem0012(skolem0001,skolem0006))!=X944|thing(X943,X944),inference(resolution,status(thm),[c518, c19])).
+cnf(c915,plain,skolem0001!=X945|thing(X945,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c563, reflexivity])).
+cnf(c18,plain,X316!=X318|X317!=X319|~specific(X316,X317)|specific(X318,X319),eq_axiom).
+fof(ax29,axiom,(![U]:(![V]:(eventuality(U,V)=>specific(U,V)))),input).
+fof(c192,axiom,(![U]:(![V]:(~eventuality(U,V)|specific(U,V)))),inference(fof_nnf,status(thm),[ax29])).
+fof(c193,axiom,(![X83]:(![X84]:(~eventuality(X83,X84)|specific(X83,X84)))),inference(variable_rename,status(thm),[c192])).
+cnf(c194,axiom,~eventuality(X225,X224)|specific(X225,X224),inference(split_conjunct,status(thm),[c193])).
+cnf(c517,plain,specific(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c489, c194])).
+cnf(c562,plain,skolem0001!=X940|skolem0007(skolem0012(skolem0001,skolem0006))!=X941|specific(X940,X941),inference(resolution,status(thm),[c517, c18])).
+cnf(c913,plain,skolem0001!=X942|specific(X942,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c562, reflexivity])).
+cnf(c28,plain,X382!=X384|X383!=X385|~nonexistent(X382,X383)|nonexistent(X384,X385),eq_axiom).
+fof(ax28,axiom,(![U]:(![V]:(eventuality(U,V)=>nonexistent(U,V)))),input).
+fof(c195,axiom,(![U]:(![V]:(~eventuality(U,V)|nonexistent(U,V)))),inference(fof_nnf,status(thm),[ax28])).
+fof(c196,axiom,(![X85]:(![X86]:(~eventuality(X85,X86)|nonexistent(X85,X86)))),inference(variable_rename,status(thm),[c195])).
+cnf(c197,axiom,~eventuality(X230,X231)|nonexistent(X230,X231),inference(split_conjunct,status(thm),[c196])).
+cnf(c516,plain,nonexistent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c489, c197])).
+cnf(c561,plain,skolem0001!=X937|skolem0007(skolem0012(skolem0001,skolem0006))!=X938|nonexistent(X937,X938),inference(resolution,status(thm),[c516, c28])).
+cnf(c911,plain,skolem0001!=X939|nonexistent(X939,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c561, reflexivity])).
+cnf(c15,plain,X294!=X296|X295!=X297|~unisex(X294,X295)|unisex(X296,X297),eq_axiom).
+fof(ax27,axiom,(![U]:(![V]:(eventuality(U,V)=>unisex(U,V)))),input).
+fof(c198,axiom,(![U]:(![V]:(~eventuality(U,V)|unisex(U,V)))),inference(fof_nnf,status(thm),[ax27])).
+fof(c199,axiom,(![X87]:(![X88]:(~eventuality(X87,X88)|unisex(X87,X88)))),inference(variable_rename,status(thm),[c198])).
+cnf(c200,axiom,~eventuality(X232,X233)|unisex(X232,X233),inference(split_conjunct,status(thm),[c199])).
+cnf(c515,plain,unisex(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c489, c200])).
+cnf(c559,plain,skolem0001!=X935|skolem0007(skolem0012(skolem0001,skolem0006))!=X934|unisex(X935,X934),inference(resolution,status(thm),[c515, c15])).
+cnf(c909,plain,skolem0001!=X936|unisex(X936,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c559, reflexivity])).
+cnf(c557,plain,skolem0001!=X931|skolem0007(skolem0009(skolem0001,skolem0006))!=X932|thing(X931,X932),inference(resolution,status(thm),[c513, c19])).
+cnf(c907,plain,skolem0001!=X933|thing(X933,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c557, reflexivity])).
+cnf(c512,plain,specific(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c487, c194])).
+cnf(c556,plain,skolem0001!=X928|skolem0007(skolem0009(skolem0001,skolem0006))!=X929|specific(X928,X929),inference(resolution,status(thm),[c512, c18])).
+cnf(c905,plain,skolem0001!=X930|specific(X930,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c556, reflexivity])).
+cnf(c511,plain,nonexistent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c487, c197])).
+cnf(c555,plain,skolem0001!=X925|skolem0007(skolem0009(skolem0001,skolem0006))!=X926|nonexistent(X925,X926),inference(resolution,status(thm),[c511, c28])).
+cnf(c903,plain,skolem0001!=X927|nonexistent(X927,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c555, reflexivity])).
+cnf(c662,plain,~nonreflexive(skolem0001,skolem0005)|~agent(skolem0001,skolem0005,X924)|X924!=skolem0004,inference(resolution,status(thm),[c110, c64])).
+cnf(c902,plain,~nonreflexive(skolem0001,skolem0005)|skolem0002!=skolem0004,inference(resolution,status(thm),[c662, c63])).
+cnf(c510,plain,unisex(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c487, c200])).
+cnf(c553,plain,skolem0001!=X922|skolem0007(skolem0009(skolem0001,skolem0006))!=X921|unisex(X922,X921),inference(resolution,status(thm),[c510, c15])).
+cnf(c896,plain,skolem0001!=X923|unisex(X923,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c553, reflexivity])).
+cnf(c546,plain,skolem0001!=X918|skolem0007(skolem0010(skolem0001,skolem0006))!=X919|thing(X918,X919),inference(resolution,status(thm),[c508, c19])).
+cnf(c888,plain,skolem0001!=X920|thing(X920,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c546, reflexivity])).
+cnf(c76,negated_conjecture,~member(skolem0001,X351,skolem0006)|dollar(skolem0001,X351),inference(split_conjunct,status(thm),[c54])).
+cnf(c439,plain,dollar(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c373, c76])).
+cnf(c40,plain,X431!=X433|X432!=X434|~dollar(X431,X432)|dollar(X433,X434),eq_axiom).
+cnf(c552,plain,skolem0001!=X915|skolem0012(skolem0001,skolem0006)!=X916|dollar(X915,X916),inference(resolution,status(thm),[c40, c439])).
+cnf(c886,plain,skolem0001!=X917|dollar(X917,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c552, reflexivity])).
+cnf(c507,plain,specific(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c485, c194])).
+cnf(c545,plain,skolem0001!=X912|skolem0007(skolem0010(skolem0001,skolem0006))!=X913|specific(X912,X913),inference(resolution,status(thm),[c507, c18])).
+cnf(c884,plain,skolem0001!=X914|specific(X914,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c545, reflexivity])).
+cnf(c374,plain,dollar(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c368, c76])).
+cnf(c551,plain,skolem0001!=X909|skolem0008(skolem0001,skolem0006)!=X910|dollar(X909,X910),inference(resolution,status(thm),[c40, c374])).
+cnf(c882,plain,skolem0001!=X911|dollar(X911,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c551, reflexivity])).
+cnf(c506,plain,nonexistent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c485, c197])).
+cnf(c544,plain,skolem0001!=X906|skolem0007(skolem0010(skolem0001,skolem0006))!=X907|nonexistent(X906,X907),inference(resolution,status(thm),[c506, c28])).
+cnf(c880,plain,skolem0001!=X908|nonexistent(X908,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c544, reflexivity])).
+cnf(c407,plain,dollar(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c370, c76])).
+cnf(c550,plain,skolem0001!=X903|skolem0010(skolem0001,skolem0006)!=X904|dollar(X903,X904),inference(resolution,status(thm),[c40, c407])).
+cnf(c878,plain,skolem0001!=X905|dollar(X905,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c550, reflexivity])).
+cnf(c505,plain,unisex(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c485, c200])).
+cnf(c542,plain,skolem0001!=X901|skolem0007(skolem0010(skolem0001,skolem0006))!=X900|unisex(X901,X900),inference(resolution,status(thm),[c505, c15])).
+cnf(c876,plain,skolem0001!=X902|unisex(X902,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c542, reflexivity])).
+cnf(c390,plain,dollar(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c369, c76])).
+cnf(c549,plain,skolem0001!=X897|skolem0009(skolem0001,skolem0006)!=X898|dollar(X897,X898),inference(resolution,status(thm),[c40, c390])).
+cnf(c874,plain,skolem0001!=X899|dollar(X899,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c549, reflexivity])).
+cnf(c540,plain,skolem0001!=X894|skolem0007(skolem0011(skolem0001,skolem0006))!=X895|thing(X894,X895),inference(resolution,status(thm),[c498, c19])).
+cnf(c872,plain,skolem0001!=X896|thing(X896,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c540, reflexivity])).
+cnf(c422,plain,dollar(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c372, c76])).
+cnf(c548,plain,skolem0001!=X891|skolem0011(skolem0001,skolem0006)!=X892|dollar(X891,X892),inference(resolution,status(thm),[c40, c422])).
+cnf(c870,plain,skolem0001!=X893|dollar(X893,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c548, reflexivity])).
+cnf(c497,plain,specific(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c474, c194])).
+cnf(c534,plain,skolem0001!=X888|skolem0007(skolem0011(skolem0001,skolem0006))!=X889|specific(X888,X889),inference(resolution,status(thm),[c497, c18])).
+cnf(c868,plain,skolem0001!=X890|specific(X890,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c534, reflexivity])).
+fof(ax44,axiom,(![U]:(![V]:(dollar(U,V)=>cash(U,V)))),input).
+fof(c147,axiom,(![U]:(![V]:(~dollar(U,V)|cash(U,V)))),inference(fof_nnf,status(thm),[ax44])).
+fof(c148,axiom,(![X53]:(![X54]:(~dollar(X53,X54)|cash(X53,X54)))),inference(variable_rename,status(thm),[c147])).
+cnf(c149,axiom,~dollar(X179,X178)|cash(X179,X178),inference(split_conjunct,status(thm),[c148])).
+cnf(c423,plain,cash(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c422, c149])).
+cnf(c39,plain,X427!=X429|X428!=X430|~cash(X427,X428)|cash(X429,X430),eq_axiom).
+cnf(c539,plain,skolem0001!=X885|skolem0011(skolem0001,skolem0006)!=X886|cash(X885,X886),inference(resolution,status(thm),[c39, c423])).
+cnf(c866,plain,skolem0001!=X887|cash(X887,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c539, reflexivity])).
+cnf(c496,plain,nonexistent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c474, c197])).
+cnf(c533,plain,skolem0001!=X882|skolem0007(skolem0011(skolem0001,skolem0006))!=X883|nonexistent(X882,X883),inference(resolution,status(thm),[c496, c28])).
+cnf(c864,plain,skolem0001!=X884|nonexistent(X884,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c533, reflexivity])).
+cnf(c392,plain,cash(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c390, c149])).
+cnf(c538,plain,skolem0001!=X879|skolem0009(skolem0001,skolem0006)!=X880|cash(X879,X880),inference(resolution,status(thm),[c39, c392])).
+cnf(c862,plain,skolem0001!=X881|cash(X881,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c538, reflexivity])).
+cnf(c495,plain,unisex(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c474, c200])).
+cnf(c531,plain,skolem0001!=X877|skolem0007(skolem0011(skolem0001,skolem0006))!=X876|unisex(X877,X876),inference(resolution,status(thm),[c495, c15])).
+cnf(c860,plain,skolem0001!=X878|unisex(X878,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c531, reflexivity])).
+cnf(c408,plain,cash(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c407, c149])).
+cnf(c537,plain,skolem0001!=X873|skolem0010(skolem0001,skolem0006)!=X874|cash(X873,X874),inference(resolution,status(thm),[c39, c408])).
+cnf(c858,plain,skolem0001!=X875|cash(X875,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c537, reflexivity])).
+cnf(c529,plain,skolem0001!=X870|skolem0007(skolem0008(skolem0001,skolem0006))!=X871|thing(X870,X871),inference(resolution,status(thm),[c493, c19])).
+cnf(c856,plain,skolem0001!=X872|thing(X872,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c529, reflexivity])).
+cnf(c440,plain,cash(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c439, c149])).
+cnf(c536,plain,skolem0001!=X867|skolem0012(skolem0001,skolem0006)!=X868|cash(X867,X868),inference(resolution,status(thm),[c39, c440])).
+cnf(c854,plain,skolem0001!=X869|cash(X869,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c536, reflexivity])).
+cnf(c492,plain,specific(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c472, c194])).
+cnf(c528,plain,skolem0001!=X864|skolem0007(skolem0008(skolem0001,skolem0006))!=X865|specific(X864,X865),inference(resolution,status(thm),[c492, c18])).
+cnf(c852,plain,skolem0001!=X866|specific(X866,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c528, reflexivity])).
+cnf(c375,plain,cash(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c374, c149])).
+cnf(c535,plain,skolem0001!=X861|skolem0008(skolem0001,skolem0006)!=X862|cash(X861,X862),inference(resolution,status(thm),[c39, c375])).
+cnf(c850,plain,skolem0001!=X863|cash(X863,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c535, reflexivity])).
+cnf(c491,plain,nonexistent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c472, c197])).
+cnf(c522,plain,skolem0001!=X858|skolem0007(skolem0008(skolem0001,skolem0006))!=X859|nonexistent(X858,X859),inference(resolution,status(thm),[c491, c28])).
+cnf(c848,plain,skolem0001!=X860|nonexistent(X860,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c522, reflexivity])).
+fof(ax43,axiom,(![U]:(![V]:(cash(U,V)=>currency(U,V)))),input).
+fof(c150,axiom,(![U]:(![V]:(~cash(U,V)|currency(U,V)))),inference(fof_nnf,status(thm),[ax43])).
+fof(c151,axiom,(![X55]:(![X56]:(~cash(X55,X56)|currency(X55,X56)))),inference(variable_rename,status(thm),[c150])).
+cnf(c152,axiom,~cash(X180,X181)|currency(X180,X181),inference(split_conjunct,status(thm),[c151])).
+cnf(c376,plain,currency(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c375, c152])).
+cnf(c38,plain,X423!=X425|X424!=X426|~currency(X423,X424)|currency(X425,X426),eq_axiom).
+cnf(c527,plain,skolem0001!=X855|skolem0008(skolem0001,skolem0006)!=X856|currency(X855,X856),inference(resolution,status(thm),[c38, c376])).
+cnf(c846,plain,skolem0001!=X857|currency(X857,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c527, reflexivity])).
+cnf(c490,plain,unisex(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c472, c200])).
+cnf(c520,plain,skolem0001!=X853|skolem0007(skolem0008(skolem0001,skolem0006))!=X852|unisex(X853,X852),inference(resolution,status(thm),[c490, c15])).
+cnf(c844,plain,skolem0001!=X854|unisex(X854,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c520, reflexivity])).
+cnf(c441,plain,currency(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c440, c152])).
+cnf(c526,plain,skolem0001!=X849|skolem0012(skolem0001,skolem0006)!=X850|currency(X849,X850),inference(resolution,status(thm),[c38, c441])).
+cnf(c842,plain,skolem0001!=X851|currency(X851,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c526, reflexivity])).
+cnf(c27,plain,X378!=X380|X379!=X381|~eventuality(X378,X379)|eventuality(X380,X381),eq_axiom).
+cnf(c519,plain,skolem0001!=X847|skolem0007(skolem0012(skolem0001,skolem0006))!=X846|eventuality(X847,X846),inference(resolution,status(thm),[c489, c27])).
+cnf(c840,plain,skolem0001!=X848|eventuality(X848,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c519, reflexivity])).
+cnf(c409,plain,currency(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c408, c152])).
+cnf(c525,plain,skolem0001!=X843|skolem0010(skolem0001,skolem0006)!=X844|currency(X843,X844),inference(resolution,status(thm),[c38, c409])).
+cnf(c838,plain,skolem0001!=X845|currency(X845,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c525, reflexivity])).
+cnf(c514,plain,skolem0001!=X841|skolem0007(skolem0009(skolem0001,skolem0006))!=X840|eventuality(X841,X840),inference(resolution,status(thm),[c487, c27])).
+cnf(c836,plain,skolem0001!=X842|eventuality(X842,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c514, reflexivity])).
+cnf(c393,plain,currency(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c392, c152])).
+cnf(c524,plain,skolem0001!=X837|skolem0009(skolem0001,skolem0006)!=X838|currency(X837,X838),inference(resolution,status(thm),[c38, c393])).
+cnf(c834,plain,skolem0001!=X839|currency(X839,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c524, reflexivity])).
+cnf(c509,plain,skolem0001!=X835|skolem0007(skolem0010(skolem0001,skolem0006))!=X834|eventuality(X835,X834),inference(resolution,status(thm),[c485, c27])).
+cnf(c832,plain,skolem0001!=X836|eventuality(X836,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c509, reflexivity])).
+cnf(c425,plain,currency(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c423, c152])).
+cnf(c523,plain,skolem0001!=X831|skolem0011(skolem0001,skolem0006)!=X832|currency(X831,X832),inference(resolution,status(thm),[c38, c425])).
+cnf(c830,plain,skolem0001!=X833|currency(X833,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c523, reflexivity])).
+cnf(c499,plain,skolem0001!=X829|skolem0007(skolem0011(skolem0001,skolem0006))!=X828|eventuality(X829,X828),inference(resolution,status(thm),[c474, c27])).
+cnf(c828,plain,skolem0001!=X830|eventuality(X830,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c499, reflexivity])).
+fof(ax42,axiom,(![U]:(![V]:(currency(U,V)=>possession(U,V)))),input).
+fof(c153,axiom,(![U]:(![V]:(~currency(U,V)|possession(U,V)))),inference(fof_nnf,status(thm),[ax42])).
+fof(c154,axiom,(![X57]:(![X58]:(~currency(X57,X58)|possession(X57,X58)))),inference(variable_rename,status(thm),[c153])).
+cnf(c155,axiom,~currency(X182,X183)|possession(X182,X183),inference(split_conjunct,status(thm),[c154])).
+cnf(c378,plain,possession(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c376, c155])).
+cnf(c37,plain,X419!=X421|X420!=X422|~possession(X419,X420)|possession(X421,X422),eq_axiom).
+cnf(c504,plain,skolem0001!=X826|skolem0008(skolem0001,skolem0006)!=X825|possession(X826,X825),inference(resolution,status(thm),[c37, c378])).
+cnf(c826,plain,skolem0001!=X827|possession(X827,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c504, reflexivity])).
+cnf(c494,plain,skolem0001!=X823|skolem0007(skolem0008(skolem0001,skolem0006))!=X822|eventuality(X823,X822),inference(resolution,status(thm),[c472, c27])).
+cnf(c824,plain,skolem0001!=X824|eventuality(X824,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c494, reflexivity])).
+cnf(c394,plain,possession(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c393, c155])).
+cnf(c503,plain,skolem0001!=X820|skolem0009(skolem0001,skolem0006)!=X819|possession(X820,X819),inference(resolution,status(thm),[c37, c394])).
+cnf(c822,plain,skolem0001!=X821|possession(X821,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c503, reflexivity])).
+cnf(c25,plain,X370!=X372|X371!=X373|~event(X370,X371)|event(X372,X373),eq_axiom).
+cnf(c488,plain,skolem0001!=X816|skolem0007(skolem0012(skolem0001,skolem0006))!=X817|event(X816,X817),inference(resolution,status(thm),[c470, c25])).
+cnf(c820,plain,skolem0001!=X818|event(X818,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c488, reflexivity])).
+cnf(c426,plain,possession(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c425, c155])).
+cnf(c502,plain,skolem0001!=X814|skolem0011(skolem0001,skolem0006)!=X813|possession(X814,X813),inference(resolution,status(thm),[c37, c426])).
+cnf(c818,plain,skolem0001!=X815|possession(X815,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c502, reflexivity])).
+cnf(c486,plain,skolem0001!=X810|skolem0007(skolem0009(skolem0001,skolem0006))!=X811|event(X810,X811),inference(resolution,status(thm),[c469, c25])).
+cnf(c816,plain,skolem0001!=X812|event(X812,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c486, reflexivity])).
+cnf(c442,plain,possession(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c441, c155])).
+cnf(c501,plain,skolem0001!=X808|skolem0012(skolem0001,skolem0006)!=X807|possession(X808,X807),inference(resolution,status(thm),[c37, c442])).
+cnf(c814,plain,skolem0001!=X809|possession(X809,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c501, reflexivity])).
+cnf(c484,plain,skolem0001!=X804|skolem0007(skolem0010(skolem0001,skolem0006))!=X805|event(X804,X805),inference(resolution,status(thm),[c468, c25])).
+cnf(c812,plain,skolem0001!=X806|event(X806,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c484, reflexivity])).
+cnf(c410,plain,possession(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c409, c155])).
+cnf(c500,plain,skolem0001!=X802|skolem0010(skolem0001,skolem0006)!=X801|possession(X802,X801),inference(resolution,status(thm),[c37, c410])).
+cnf(c810,plain,skolem0001!=X803|possession(X803,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c500, reflexivity])).
+fof(ax40,axiom,(![U]:(![V]:(abstraction(U,V)=>thing(U,V)))),input).
+fof(c159,axiom,(![U]:(![V]:(~abstraction(U,V)|thing(U,V)))),inference(fof_nnf,status(thm),[ax40])).
+fof(c160,axiom,(![X61]:(![X62]:(~abstraction(X61,X62)|thing(X61,X62)))),inference(variable_rename,status(thm),[c159])).
+cnf(c161,axiom,~abstraction(X190,X191)|thing(X190,X191),inference(split_conjunct,status(thm),[c160])).
+fof(ax41,axiom,(![U]:(![V]:(possession(U,V)=>abstraction(U,V)))),input).
+fof(c156,axiom,(![U]:(![V]:(~possession(U,V)|abstraction(U,V)))),inference(fof_nnf,status(thm),[ax41])).
+fof(c157,axiom,(![X59]:(![X60]:(~possession(X59,X60)|abstraction(X59,X60)))),inference(variable_rename,status(thm),[c156])).
+cnf(c158,axiom,~possession(X188,X189)|abstraction(X188,X189),inference(split_conjunct,status(thm),[c157])).
+cnf(c443,plain,abstraction(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c442, c158])).
+cnf(c452,plain,thing(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c443, c161])).
+cnf(c457,plain,singleton(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c452, c164])).
+cnf(c483,plain,skolem0001!=X798|skolem0012(skolem0001,skolem0006)!=X799|singleton(X798,X799),inference(resolution,status(thm),[c36, c457])).
+cnf(c808,plain,skolem0001!=X800|singleton(X800,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c483, reflexivity])).
+cnf(c427,plain,abstraction(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c426, c158])).
+cnf(c431,plain,thing(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c427, c161])).
+cnf(c436,plain,singleton(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c431, c164])).
+cnf(c481,plain,skolem0001!=X795|skolem0011(skolem0001,skolem0006)!=X796|singleton(X795,X796),inference(resolution,status(thm),[c36, c436])).
+cnf(c806,plain,skolem0001!=X797|singleton(X797,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c481, reflexivity])).
+cnf(c395,plain,abstraction(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c394, c158])).
+cnf(c399,plain,thing(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c395, c161])).
+cnf(c404,plain,singleton(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c399, c164])).
+cnf(c479,plain,skolem0001!=X792|skolem0009(skolem0001,skolem0006)!=X793|singleton(X792,X793),inference(resolution,status(thm),[c36, c404])).
+cnf(c804,plain,skolem0001!=X794|singleton(X794,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c479, reflexivity])).
+cnf(c379,plain,abstraction(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c378, c158])).
+cnf(c383,plain,thing(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c379, c161])).
+cnf(c388,plain,singleton(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c383, c164])).
+cnf(c478,plain,skolem0001!=X789|skolem0008(skolem0001,skolem0006)!=X790|singleton(X789,X790),inference(resolution,status(thm),[c36, c388])).
+cnf(c802,plain,skolem0001!=X791|singleton(X791,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c478, reflexivity])).
+cnf(c473,plain,skolem0001!=X786|skolem0007(skolem0011(skolem0001,skolem0006))!=X787|event(X786,X787),inference(resolution,status(thm),[c467, c25])).
+cnf(c800,plain,skolem0001!=X788|event(X788,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c473, reflexivity])).
+cnf(c411,plain,abstraction(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c410, c158])).
+cnf(c415,plain,thing(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c411, c161])).
+cnf(c419,plain,singleton(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c415, c164])).
+cnf(c476,plain,skolem0001!=X783|skolem0010(skolem0001,skolem0006)!=X784|singleton(X783,X784),inference(resolution,status(thm),[c36, c419])).
+cnf(c798,plain,skolem0001!=X785|singleton(X785,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c476, reflexivity])).
+cnf(c471,plain,skolem0001!=X780|skolem0007(skolem0008(skolem0001,skolem0006))!=X781|event(X780,X781),inference(resolution,status(thm),[c466, c25])).
+cnf(c796,plain,skolem0001!=X782|event(X782,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c471, reflexivity])).
+fof(ax38,axiom,(![U]:(![V]:(abstraction(U,V)=>nonhuman(U,V)))),input).
+fof(c165,axiom,(![U]:(![V]:(~abstraction(U,V)|nonhuman(U,V)))),inference(fof_nnf,status(thm),[ax38])).
+fof(c166,axiom,(![X65]:(![X66]:(~abstraction(X65,X66)|nonhuman(X65,X66)))),inference(variable_rename,status(thm),[c165])).
+cnf(c167,axiom,~abstraction(X195,X194)|nonhuman(X195,X194),inference(split_conjunct,status(thm),[c166])).
+cnf(c429,plain,nonhuman(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c427, c167])).
+cnf(c35,plain,X410!=X412|X411!=X413|~nonhuman(X410,X411)|nonhuman(X412,X413),eq_axiom).
+cnf(c465,plain,skolem0001!=X778|skolem0011(skolem0001,skolem0006)!=X777|nonhuman(X778,X777),inference(resolution,status(thm),[c35, c429])).
+cnf(c794,plain,skolem0001!=X779|nonhuman(X779,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c465, reflexivity])).
+cnf(c381,plain,nonhuman(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c379, c167])).
+cnf(c463,plain,skolem0001!=X775|skolem0008(skolem0001,skolem0006)!=X774|nonhuman(X775,X774),inference(resolution,status(thm),[c35, c381])).
+cnf(c792,plain,skolem0001!=X776|nonhuman(X776,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c463, reflexivity])).
+cnf(c450,plain,nonhuman(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c443, c167])).
+cnf(c462,plain,skolem0001!=X772|skolem0012(skolem0001,skolem0006)!=X771|nonhuman(X772,X771),inference(resolution,status(thm),[c35, c450])).
+cnf(c790,plain,skolem0001!=X773|nonhuman(X773,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c462, reflexivity])).
+cnf(c397,plain,nonhuman(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c395, c167])).
+cnf(c460,plain,skolem0001!=X769|skolem0009(skolem0001,skolem0006)!=X768|nonhuman(X769,X768),inference(resolution,status(thm),[c35, c397])).
+cnf(c788,plain,skolem0001!=X770|nonhuman(X770,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c460, reflexivity])).
+cnf(c413,plain,nonhuman(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c411, c167])).
+cnf(c459,plain,skolem0001!=X766|skolem0010(skolem0001,skolem0006)!=X765|nonhuman(X766,X765),inference(resolution,status(thm),[c35, c413])).
+cnf(c786,plain,skolem0001!=X767|nonhuman(X767,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c459, reflexivity])).
+fof(ax36,axiom,(![U]:(![V]:(abstraction(U,V)=>unisex(U,V)))),input).
+fof(c171,axiom,(![U]:(![V]:(~abstraction(U,V)|unisex(U,V)))),inference(fof_nnf,status(thm),[ax36])).
+fof(c172,axiom,(![X69]:(![X70]:(~abstraction(X69,X70)|unisex(X69,X70)))),inference(variable_rename,status(thm),[c171])).
+cnf(c173,axiom,~abstraction(X202,X203)|unisex(X202,X203),inference(split_conjunct,status(thm),[c172])).
+cnf(c453,plain,unisex(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c443, c173])).
+cnf(c458,plain,skolem0001!=X763|skolem0012(skolem0001,skolem0006)!=X762|unisex(X763,X762),inference(resolution,status(thm),[c453, c15])).
+cnf(c784,plain,skolem0001!=X764|unisex(X764,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c458, reflexivity])).
+cnf(c456,plain,skolem0001!=X758|skolem0012(skolem0001,skolem0006)!=X759|thing(X758,X759),inference(resolution,status(thm),[c452, c19])).
+cnf(c781,plain,skolem0001!=X761|thing(X761,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c456, reflexivity])).
+cnf(c34,plain,X406!=X408|X407!=X409|~general(X406,X407)|general(X408,X409),eq_axiom).
+fof(ax37,axiom,(![U]:(![V]:(abstraction(U,V)=>general(U,V)))),input).
+fof(c168,axiom,(![U]:(![V]:(~abstraction(U,V)|general(U,V)))),inference(fof_nnf,status(thm),[ax37])).
+fof(c169,axiom,(![X67]:(![X68]:(~abstraction(X67,X68)|general(X67,X68)))),inference(variable_rename,status(thm),[c168])).
+cnf(c170,axiom,~abstraction(X196,X197)|general(X196,X197),inference(split_conjunct,status(thm),[c169])).
+cnf(c451,plain,general(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c443, c170])).
+cnf(c455,plain,skolem0001!=X753|skolem0012(skolem0001,skolem0006)!=X754|general(X753,X754),inference(resolution,status(thm),[c451, c34])).
+cnf(c777,plain,skolem0001!=X760|general(X760,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c455, reflexivity])).
+cnf(c12,plain,X268!=X270|X269!=X271|~abstraction(X268,X269)|abstraction(X270,X271),eq_axiom).
+cnf(c449,plain,skolem0001!=X749|skolem0012(skolem0001,skolem0006)!=X750|abstraction(X749,X750),inference(resolution,status(thm),[c443, c12])).
+cnf(c774,plain,skolem0001!=X757|abstraction(X757,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c449, reflexivity])).
+cnf(c430,plain,general(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c427, c170])).
+cnf(c448,plain,skolem0001!=X744|skolem0011(skolem0001,skolem0006)!=X745|general(X744,X745),inference(resolution,status(thm),[c34, c430])).
+cnf(c770,plain,skolem0001!=X756|general(X756,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c448, reflexivity])).
+cnf(c398,plain,general(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c395, c170])).
+cnf(c447,plain,skolem0001!=X740|skolem0009(skolem0001,skolem0006)!=X741|general(X740,X741),inference(resolution,status(thm),[c34, c398])).
+cnf(c767,plain,skolem0001!=X755|general(X755,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c447, reflexivity])).
+cnf(c414,plain,general(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c411, c170])).
+cnf(c446,plain,skolem0001!=X735|skolem0010(skolem0001,skolem0006)!=X736|general(X735,X736),inference(resolution,status(thm),[c34, c414])).
+cnf(c763,plain,skolem0001!=X752|general(X752,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c446, reflexivity])).
+cnf(c382,plain,general(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c379, c170])).
+cnf(c445,plain,skolem0001!=X731|skolem0008(skolem0001,skolem0006)!=X732|general(X731,X732),inference(resolution,status(thm),[c34, c382])).
+cnf(c760,plain,skolem0001!=X751|general(X751,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c445, reflexivity])).
+cnf(c432,plain,unisex(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c427, c173])).
+cnf(c437,plain,skolem0001!=X728|skolem0011(skolem0001,skolem0006)!=X727|unisex(X728,X727),inference(resolution,status(thm),[c432, c15])).
+cnf(c755,plain,skolem0001!=X748|unisex(X748,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c437, reflexivity])).
+cnf(c435,plain,skolem0001!=X724|skolem0011(skolem0001,skolem0006)!=X725|thing(X724,X725),inference(resolution,status(thm),[c431, c19])).
+cnf(c750,plain,skolem0001!=X747|thing(X747,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c435, reflexivity])).
+cnf(c428,plain,skolem0001!=X717|skolem0011(skolem0001,skolem0006)!=X718|abstraction(X717,X718),inference(resolution,status(thm),[c427, c12])).
+cnf(c746,plain,skolem0001!=X746|abstraction(X746,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c428, reflexivity])).
+cnf(c416,plain,unisex(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c411, c173])).
+cnf(c421,plain,skolem0001!=X710|skolem0010(skolem0001,skolem0006)!=X709|unisex(X710,X709),inference(resolution,status(thm),[c416, c15])).
+cnf(c741,plain,skolem0001!=X743|unisex(X743,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c421, reflexivity])).
+cnf(c418,plain,skolem0001!=X703|skolem0010(skolem0001,skolem0006)!=X704|thing(X703,X704),inference(resolution,status(thm),[c415, c19])).
+cnf(c737,plain,skolem0001!=X742|thing(X742,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c418, reflexivity])).
+cnf(c412,plain,skolem0001!=X696|skolem0010(skolem0001,skolem0006)!=X697|abstraction(X696,X697),inference(resolution,status(thm),[c411, c12])).
+cnf(c733,plain,skolem0001!=X739|abstraction(X739,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c412, reflexivity])).
+cnf(c400,plain,unisex(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c395, c173])).
+cnf(c405,plain,skolem0001!=X689|skolem0009(skolem0001,skolem0006)!=X688|unisex(X689,X688),inference(resolution,status(thm),[c400, c15])).
+cnf(c728,plain,skolem0001!=X738|unisex(X738,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c405, reflexivity])).
+cnf(c403,plain,skolem0001!=X682|skolem0009(skolem0001,skolem0006)!=X683|thing(X682,X683),inference(resolution,status(thm),[c399, c19])).
+cnf(c724,plain,skolem0001!=X737|thing(X737,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c403, reflexivity])).
+cnf(c396,plain,skolem0001!=X675|skolem0009(skolem0001,skolem0006)!=X676|abstraction(X675,X676),inference(resolution,status(thm),[c395, c12])).
+cnf(c720,plain,skolem0001!=X734|abstraction(X734,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c396, reflexivity])).
+cnf(c384,plain,unisex(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c379, c173])).
+cnf(c389,plain,skolem0001!=X668|skolem0008(skolem0001,skolem0006)!=X667|unisex(X668,X667),inference(resolution,status(thm),[c384, c15])).
+cnf(c715,plain,skolem0001!=X733|unisex(X733,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c389, reflexivity])).
+cnf(c387,plain,skolem0001!=X661|skolem0008(skolem0001,skolem0006)!=X662|thing(X661,X662),inference(resolution,status(thm),[c383, c19])).
+cnf(c711,plain,skolem0001!=X730|thing(X730,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c387, reflexivity])).
+cnf(c380,plain,skolem0001!=X654|skolem0008(skolem0001,skolem0006)!=X655|abstraction(X654,X655),inference(resolution,status(thm),[c379, c12])).
+cnf(c707,plain,skolem0001!=X729|abstraction(X729,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c380, reflexivity])).
+cnf(c66,negated_conjecture,nonreflexive(skolem0001,skolem0005),inference(split_conjunct,status(thm),[c54])).
+cnf(c578,plain,skolem0001!=X722|skolem0005!=X723|nonreflexive(X722,X723),inference(resolution,status(thm),[c44, c66])).
+cnf(c749,plain,skolem0001!=X726|nonreflexive(X726,skolem0005),inference(resolution,status(thm),[c578, reflexivity])).
+cnf(c65,negated_conjecture,past(skolem0001,skolem0005),inference(split_conjunct,status(thm),[c54])).
+cnf(c42,plain,X439!=X441|X440!=X442|~past(X439,X440)|past(X441,X442),eq_axiom).
+cnf(c566,plain,skolem0001!=X719|skolem0005!=X720|past(X719,X720),inference(resolution,status(thm),[c42, c65])).
+cnf(c747,plain,skolem0001!=X721|past(X721,skolem0005),inference(resolution,status(thm),[c566, reflexivity])).
+fof(ax18,axiom,(![U]:(![V]:(entity(U,V)=>thing(U,V)))),input).
+fof(c225,axiom,(![U]:(![V]:(~entity(U,V)|thing(U,V)))),inference(fof_nnf,status(thm),[ax18])).
+fof(c226,axiom,(![X105]:(![X106]:(~entity(X105,X106)|thing(X105,X106)))),inference(variable_rename,status(thm),[c225])).
+cnf(c227,axiom,~entity(X266,X267)|thing(X266,X267),inference(split_conjunct,status(thm),[c226])).
+cnf(c58,negated_conjecture,woman(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c54])).
+fof(ax8,axiom,(![U]:(![V]:(woman(U,V)=>human_person(U,V)))),input).
+fof(c255,axiom,(![U]:(![V]:(~woman(U,V)|human_person(U,V)))),inference(fof_nnf,status(thm),[ax8])).
+fof(c256,axiom,(![X125]:(![X126]:(~woman(X125,X126)|human_person(X125,X126)))),inference(variable_rename,status(thm),[c255])).
+cnf(c257,axiom,~woman(X310,X311)|human_person(X310,X311),inference(split_conjunct,status(thm),[c256])).
+cnf(c333,plain,human_person(skolem0001,skolem0002),inference(resolution,status(thm),[c257, c58])).
+fof(ax7,axiom,(![U]:(![V]:(human_person(U,V)=>organism(U,V)))),input).
+fof(c258,axiom,(![U]:(![V]:(~human_person(U,V)|organism(U,V)))),inference(fof_nnf,status(thm),[ax7])).
+fof(c259,axiom,(![X127]:(![X128]:(~human_person(X127,X128)|organism(X127,X128)))),inference(variable_rename,status(thm),[c258])).
+cnf(c260,axiom,~human_person(X312,X313)|organism(X312,X313),inference(split_conjunct,status(thm),[c259])).
+cnf(c335,plain,organism(skolem0001,skolem0002),inference(resolution,status(thm),[c260, c333])).
+fof(ax6,axiom,(![U]:(![V]:(organism(U,V)=>entity(U,V)))),input).
+fof(c261,axiom,(![U]:(![V]:(~organism(U,V)|entity(U,V)))),inference(fof_nnf,status(thm),[ax6])).
+fof(c262,axiom,(![X129]:(![X130]:(~organism(X129,X130)|entity(X129,X130)))),inference(variable_rename,status(thm),[c261])).
+cnf(c263,axiom,~organism(X315,X314)|entity(X315,X314),inference(split_conjunct,status(thm),[c262])).
+cnf(c337,plain,entity(skolem0001,skolem0002),inference(resolution,status(thm),[c263, c335])).
+cnf(c343,plain,thing(skolem0001,skolem0002),inference(resolution,status(thm),[c337, c227])).
+cnf(c346,plain,singleton(skolem0001,skolem0002),inference(resolution,status(thm),[c343, c164])).
+cnf(c482,plain,skolem0001!=X714|skolem0002!=X715|singleton(X714,X715),inference(resolution,status(thm),[c36, c346])).
+cnf(c744,plain,skolem0001!=X716|singleton(X716,skolem0002),inference(resolution,status(thm),[c482, reflexivity])).
+cnf(c61,negated_conjecture,shake_beverage(skolem0001,skolem0004),inference(split_conjunct,status(thm),[c54])).
+fof(ax23,axiom,(![U]:(![V]:(shake_beverage(U,V)=>beverage(U,V)))),input).
+fof(c210,axiom,(![U]:(![V]:(~shake_beverage(U,V)|beverage(U,V)))),inference(fof_nnf,status(thm),[ax23])).
+fof(c211,axiom,(![X95]:(![X96]:(~shake_beverage(X95,X96)|beverage(X95,X96)))),inference(variable_rename,status(thm),[c210])).
+cnf(c212,axiom,~shake_beverage(X249,X248)|beverage(X249,X248),inference(split_conjunct,status(thm),[c211])).
+cnf(c298,plain,beverage(skolem0001,skolem0004),inference(resolution,status(thm),[c212, c61])).
+fof(ax22,axiom,(![U]:(![V]:(beverage(U,V)=>food(U,V)))),input).
+fof(c213,axiom,(![U]:(![V]:(~beverage(U,V)|food(U,V)))),inference(fof_nnf,status(thm),[ax22])).
+fof(c214,axiom,(![X97]:(![X98]:(~beverage(X97,X98)|food(X97,X98)))),inference(variable_rename,status(thm),[c213])).
+cnf(c215,axiom,~beverage(X250,X251)|food(X250,X251),inference(split_conjunct,status(thm),[c214])).
+cnf(c299,plain,food(skolem0001,skolem0004),inference(resolution,status(thm),[c215, c298])).
+fof(ax21,axiom,(![U]:(![V]:(food(U,V)=>substance_matter(U,V)))),input).
+fof(c216,axiom,(![U]:(![V]:(~food(U,V)|substance_matter(U,V)))),inference(fof_nnf,status(thm),[ax21])).
+fof(c217,axiom,(![X99]:(![X100]:(~food(X99,X100)|substance_matter(X99,X100)))),inference(variable_rename,status(thm),[c216])).
+cnf(c218,axiom,~food(X256,X257)|substance_matter(X256,X257),inference(split_conjunct,status(thm),[c217])).
+cnf(c301,plain,substance_matter(skolem0001,skolem0004),inference(resolution,status(thm),[c218, c299])).
+fof(ax20,axiom,(![U]:(![V]:(substance_matter(U,V)=>object(U,V)))),input).
+fof(c219,axiom,(![U]:(![V]:(~substance_matter(U,V)|object(U,V)))),inference(fof_nnf,status(thm),[ax20])).
+fof(c220,axiom,(![X101]:(![X102]:(~substance_matter(X101,X102)|object(X101,X102)))),inference(variable_rename,status(thm),[c219])).
+cnf(c221,axiom,~substance_matter(X259,X258)|object(X259,X258),inference(split_conjunct,status(thm),[c220])).
+cnf(c302,plain,object(skolem0001,skolem0004),inference(resolution,status(thm),[c221, c301])).
+fof(ax19,axiom,(![U]:(![V]:(object(U,V)=>entity(U,V)))),input).
+fof(c222,axiom,(![U]:(![V]:(~object(U,V)|entity(U,V)))),inference(fof_nnf,status(thm),[ax19])).
+fof(c223,axiom,(![X103]:(![X104]:(~object(X103,X104)|entity(X103,X104)))),inference(variable_rename,status(thm),[c222])).
+cnf(c224,axiom,~object(X265,X264)|entity(X265,X264),inference(split_conjunct,status(thm),[c223])).
+cnf(c303,plain,entity(skolem0001,skolem0004),inference(resolution,status(thm),[c224, c302])).
+cnf(c305,plain,thing(skolem0001,skolem0004),inference(resolution,status(thm),[c227, c303])).
+cnf(c306,plain,singleton(skolem0001,skolem0004),inference(resolution,status(thm),[c305, c164])).
+cnf(c480,plain,skolem0001!=X711|skolem0004!=X712|singleton(X711,X712),inference(resolution,status(thm),[c36, c306])).
+cnf(c742,plain,skolem0001!=X713|singleton(X713,skolem0004),inference(resolution,status(thm),[c480, reflexivity])).
+cnf(c60,negated_conjecture,forename(skolem0001,skolem0003),inference(split_conjunct,status(thm),[c54])).
+fof(ax12,axiom,(![U]:(![V]:(forename(U,V)=>relname(U,V)))),input).
+fof(c243,axiom,(![U]:(![V]:(~forename(U,V)|relname(U,V)))),inference(fof_nnf,status(thm),[ax12])).
+fof(c244,axiom,(![X117]:(![X118]:(~forename(X117,X118)|relname(X117,X118)))),inference(variable_rename,status(thm),[c243])).
+cnf(c245,axiom,~forename(X290,X291)|relname(X290,X291),inference(split_conjunct,status(thm),[c244])).
+cnf(c315,plain,relname(skolem0001,skolem0003),inference(resolution,status(thm),[c245, c60])).
+fof(ax11,axiom,(![U]:(![V]:(relname(U,V)=>relation(U,V)))),input).
+fof(c246,axiom,(![U]:(![V]:(~relname(U,V)|relation(U,V)))),inference(fof_nnf,status(thm),[ax11])).
+fof(c247,axiom,(![X119]:(![X120]:(~relname(X119,X120)|relation(X119,X120)))),inference(variable_rename,status(thm),[c246])).
+cnf(c248,axiom,~relname(X292,X293)|relation(X292,X293),inference(split_conjunct,status(thm),[c247])).
+cnf(c317,plain,relation(skolem0001,skolem0003),inference(resolution,status(thm),[c248, c315])).
+fof(ax10,axiom,(![U]:(![V]:(relation(U,V)=>abstraction(U,V)))),input).
+fof(c249,axiom,(![U]:(![V]:(~relation(U,V)|abstraction(U,V)))),inference(fof_nnf,status(thm),[ax10])).
+fof(c250,axiom,(![X121]:(![X122]:(~relation(X121,X122)|abstraction(X121,X122)))),inference(variable_rename,status(thm),[c249])).
+cnf(c251,axiom,~relation(X298,X299)|abstraction(X298,X299),inference(split_conjunct,status(thm),[c250])).
+cnf(c321,plain,abstraction(skolem0001,skolem0003),inference(resolution,status(thm),[c251, c317])).
+cnf(c325,plain,thing(skolem0001,skolem0003),inference(resolution,status(thm),[c321, c161])).
+cnf(c328,plain,singleton(skolem0001,skolem0003),inference(resolution,status(thm),[c325, c164])).
+cnf(c477,plain,skolem0001!=X706|skolem0003!=X707|singleton(X706,X707),inference(resolution,status(thm),[c36, c328])).
+cnf(c739,plain,skolem0001!=X708|singleton(X708,skolem0003),inference(resolution,status(thm),[c477, reflexivity])).
+cnf(c62,negated_conjecture,event(skolem0001,skolem0005),inference(split_conjunct,status(thm),[c54])).
+cnf(c287,plain,eventuality(skolem0001,skolem0005),inference(resolution,status(thm),[c188, c62])).
+cnf(c288,plain,thing(skolem0001,skolem0005),inference(resolution,status(thm),[c191, c287])).
+cnf(c289,plain,singleton(skolem0001,skolem0005),inference(resolution,status(thm),[c288, c164])).
+cnf(c475,plain,skolem0001!=X701|skolem0005!=X702|singleton(X701,X702),inference(resolution,status(thm),[c36, c289])).
+cnf(c736,plain,skolem0001!=X705|singleton(X705,skolem0005),inference(resolution,status(thm),[c475, reflexivity])).
+cnf(c56,negated_conjecture,nonhuman(skolem0001,skolem0005),inference(split_conjunct,status(thm),[c54])).
+cnf(c464,plain,skolem0001!=X699|skolem0005!=X698|nonhuman(X699,X698),inference(resolution,status(thm),[c35, c56])).
+cnf(c734,plain,skolem0001!=X700|nonhuman(X700,skolem0005),inference(resolution,status(thm),[c464, reflexivity])).
+cnf(c323,plain,nonhuman(skolem0001,skolem0003),inference(resolution,status(thm),[c321, c167])).
+cnf(c461,plain,skolem0001!=X694|skolem0003!=X693|nonhuman(X694,X693),inference(resolution,status(thm),[c35, c323])).
+cnf(c731,plain,skolem0001!=X695|nonhuman(X695,skolem0003),inference(resolution,status(thm),[c461, reflexivity])).
+cnf(c324,plain,general(skolem0001,skolem0003),inference(resolution,status(thm),[c321, c170])).
+cnf(c444,plain,skolem0001!=X690|skolem0003!=X691|general(X690,X691),inference(resolution,status(thm),[c34, c324])).
+cnf(c729,plain,skolem0001!=X692|general(X692,skolem0003),inference(resolution,status(thm),[c444, reflexivity])).
+cnf(c75,negated_conjecture,group(skolem0001,skolem0006),inference(split_conjunct,status(thm),[c54])).
+fof(ax35,axiom,(![U]:(![V]:(group(U,V)=>set(U,V)))),input).
+fof(c174,axiom,(![U]:(![V]:(~group(U,V)|set(U,V)))),inference(fof_nnf,status(thm),[ax35])).
+fof(c175,axiom,(![X71]:(![X72]:(~group(X71,X72)|set(X71,X72)))),inference(variable_rename,status(thm),[c174])).
+cnf(c176,axiom,~group(X205,X204)|set(X205,X204),inference(split_conjunct,status(thm),[c175])).
+cnf(c283,plain,set(skolem0001,skolem0006),inference(resolution,status(thm),[c176, c75])).
+fof(ax34,axiom,(![U]:(![V]:(set(U,V)=>multiple(U,V)))),input).
+fof(c177,axiom,(![U]:(![V]:(~set(U,V)|multiple(U,V)))),inference(fof_nnf,status(thm),[ax34])).
+fof(c178,axiom,(![X73]:(![X74]:(~set(X73,X74)|multiple(X73,X74)))),inference(variable_rename,status(thm),[c177])).
+cnf(c179,axiom,~set(X207,X206)|multiple(X207,X206),inference(split_conjunct,status(thm),[c178])).
+cnf(c284,plain,multiple(skolem0001,skolem0006),inference(resolution,status(thm),[c179, c283])).
+cnf(c33,plain,X402!=X404|X403!=X405|~multiple(X402,X403)|multiple(X404,X405),eq_axiom).
+cnf(c438,plain,skolem0001!=X686|skolem0006!=X685|multiple(X686,X685),inference(resolution,status(thm),[c33, c284])).
+cnf(c726,plain,skolem0001!=X687|multiple(X687,skolem0006),inference(resolution,status(thm),[c438, reflexivity])).
+cnf(c32,plain,X398!=X400|X399!=X401|~set(X398,X399)|set(X400,X401),eq_axiom).
+cnf(c433,plain,skolem0001!=X680|skolem0006!=X681|set(X680,X681),inference(resolution,status(thm),[c32, c283])).
+cnf(c723,plain,skolem0001!=X684|set(X684,skolem0006),inference(resolution,status(thm),[c433, reflexivity])).
+cnf(c31,plain,X394!=X396|X395!=X397|~group(X394,X395)|group(X396,X397),eq_axiom).
+cnf(c424,plain,skolem0001!=X678|skolem0006!=X677|group(X678,X677),inference(resolution,status(thm),[c31, c75])).
+cnf(c721,plain,skolem0001!=X679|group(X679,skolem0006),inference(resolution,status(thm),[c424, reflexivity])).
+cnf(c30,plain,X390!=X392|X391!=X393|~five(X390,X391)|five(X392,X393),eq_axiom).
+cnf(c420,plain,skolem0001!=X672|skolem0006!=X673|five(X672,X673),inference(resolution,status(thm),[c30, c74])).
+cnf(c718,plain,skolem0001!=X674|five(X674,skolem0006),inference(resolution,status(thm),[c420, reflexivity])).
+cnf(c291,plain,nonexistent(skolem0001,skolem0005),inference(resolution,status(thm),[c197, c287])).
+cnf(c406,plain,skolem0001!=X669|skolem0005!=X670|nonexistent(X669,X670),inference(resolution,status(thm),[c28, c291])).
+cnf(c716,plain,skolem0001!=X671|nonexistent(X671,skolem0005),inference(resolution,status(thm),[c406, reflexivity])).
+cnf(c401,plain,skolem0001!=X665|skolem0005!=X664|eventuality(X665,X664),inference(resolution,status(thm),[c27, c287])).
+cnf(c713,plain,skolem0001!=X666|eventuality(X666,skolem0005),inference(resolution,status(thm),[c401, reflexivity])).
+cnf(c67,negated_conjecture,order(skolem0001,skolem0005),inference(split_conjunct,status(thm),[c54])).
+fof(ax26,axiom,(![U]:(![V]:(order(U,V)=>act(U,V)))),input).
+fof(c201,axiom,(![U]:(![V]:(~order(U,V)|act(U,V)))),inference(fof_nnf,status(thm),[ax26])).
+fof(c202,axiom,(![X89]:(![X90]:(~order(X89,X90)|act(X89,X90)))),inference(variable_rename,status(thm),[c201])).
+cnf(c203,axiom,~order(X239,X238)|act(X239,X238),inference(split_conjunct,status(thm),[c202])).
+cnf(c294,plain,act(skolem0001,skolem0005),inference(resolution,status(thm),[c203, c67])).
+cnf(c26,plain,X374!=X376|X375!=X377|~act(X374,X375)|act(X376,X377),eq_axiom).
+cnf(c391,plain,skolem0001!=X660|skolem0005!=X659|act(X660,X659),inference(resolution,status(thm),[c26, c294])).
+cnf(c710,plain,skolem0001!=X663|act(X663,skolem0005),inference(resolution,status(thm),[c391, reflexivity])).
+cnf(c386,plain,skolem0001!=X656|skolem0005!=X657|event(X656,X657),inference(resolution,status(thm),[c25, c62])).
+cnf(c708,plain,skolem0001!=X658|event(X658,skolem0005),inference(resolution,status(thm),[c386, reflexivity])).
+cnf(c24,plain,X366!=X368|X367!=X369|~order(X366,X367)|order(X368,X369),eq_axiom).
+cnf(c377,plain,skolem0001!=X652|skolem0005!=X651|order(X652,X651),inference(resolution,status(thm),[c24, c67])).
+cnf(c705,plain,skolem0001!=X653|order(X653,skolem0005),inference(resolution,status(thm),[c377, reflexivity])).
+cnf(c23,plain,X358!=X360|X359!=X361|~shake_beverage(X358,X359)|shake_beverage(X360,X361),eq_axiom).
+cnf(c371,plain,skolem0001!=X649|skolem0004!=X648|shake_beverage(X649,X648),inference(resolution,status(thm),[c23, c61])).
+cnf(c703,plain,skolem0001!=X650|shake_beverage(X650,skolem0004),inference(resolution,status(thm),[c371, reflexivity])).
+cnf(c22,plain,X346!=X348|X347!=X349|~beverage(X346,X347)|beverage(X348,X349),eq_axiom).
+cnf(c367,plain,skolem0001!=X646|skolem0004!=X645|beverage(X646,X645),inference(resolution,status(thm),[c22, c298])).
+cnf(c701,plain,skolem0001!=X647|beverage(X647,skolem0004),inference(resolution,status(thm),[c367, reflexivity])).
+cnf(c1,plain,X158!=X160|X159!=X161|~female(X158,X159)|female(X160,X161),eq_axiom).
+fof(ax1,axiom,(![U]:(![V]:(woman(U,V)=>female(U,V)))),input).
+fof(c276,axiom,(![U]:(![V]:(~woman(U,V)|female(U,V)))),inference(fof_nnf,status(thm),[ax1])).
+fof(c277,axiom,(![X139]:(![X140]:(~woman(X139,X140)|female(X139,X140)))),inference(variable_rename,status(thm),[c276])).
+cnf(c278,axiom,~woman(X340,X341)|female(X340,X341),inference(split_conjunct,status(thm),[c277])).
+cnf(c363,plain,female(skolem0001,skolem0002),inference(resolution,status(thm),[c278, c58])).
+cnf(c364,plain,skolem0001!=X642|skolem0002!=X643|female(X642,X643),inference(resolution,status(thm),[c363, c1])).
+cnf(c699,plain,skolem0001!=X644|female(X644,skolem0002),inference(resolution,status(thm),[c364, reflexivity])).
+cnf(c21,plain,X336!=X338|X337!=X339|~food(X336,X337)|food(X338,X339),eq_axiom).
+cnf(c362,plain,skolem0001!=X640|skolem0004!=X639|food(X640,X639),inference(resolution,status(thm),[c21, c299])).
+cnf(c697,plain,skolem0001!=X641|food(X641,skolem0004),inference(resolution,status(thm),[c362, reflexivity])).
+cnf(c3,plain,X184!=X186|X185!=X187|~animate(X184,X185)|animate(X186,X187),eq_axiom).
+fof(ax2,axiom,(![U]:(![V]:(human_person(U,V)=>animate(U,V)))),input).
+fof(c273,axiom,(![U]:(![V]:(~human_person(U,V)|animate(U,V)))),inference(fof_nnf,status(thm),[ax2])).
+fof(c274,axiom,(![X137]:(![X138]:(~human_person(X137,X138)|animate(X137,X138)))),inference(variable_rename,status(thm),[c273])).
+cnf(c275,axiom,~human_person(X335,X334)|animate(X335,X334),inference(split_conjunct,status(thm),[c274])).
+cnf(c360,plain,animate(skolem0001,skolem0002),inference(resolution,status(thm),[c275, c333])).
+cnf(c361,plain,skolem0001!=X636|skolem0002!=X637|animate(X636,X637),inference(resolution,status(thm),[c360, c3])).
+cnf(c695,plain,skolem0001!=X638|animate(X638,skolem0002),inference(resolution,status(thm),[c361, reflexivity])).
+cnf(c4,plain,X198!=X200|X199!=X201|~human(X198,X199)|human(X200,X201),eq_axiom).
+fof(ax3,axiom,(![U]:(![V]:(human_person(U,V)=>human(U,V)))),input).
+fof(c270,axiom,(![U]:(![V]:(~human_person(U,V)|human(U,V)))),inference(fof_nnf,status(thm),[ax3])).
+fof(c271,axiom,(![X135]:(![X136]:(~human_person(X135,X136)|human(X135,X136)))),inference(variable_rename,status(thm),[c270])).
+cnf(c272,axiom,~human_person(X333,X332)|human(X333,X332),inference(split_conjunct,status(thm),[c271])).
+cnf(c357,plain,human(skolem0001,skolem0002),inference(resolution,status(thm),[c272, c333])).
+cnf(c358,plain,skolem0001!=X634|skolem0002!=X633|human(X634,X633),inference(resolution,status(thm),[c357, c4])).
+cnf(c693,plain,skolem0001!=X635|human(X635,skolem0002),inference(resolution,status(thm),[c358, reflexivity])).
+cnf(c20,plain,X328!=X330|X329!=X331|~substance_matter(X328,X329)|substance_matter(X330,X331),eq_axiom).
+cnf(c356,plain,skolem0001!=X630|skolem0004!=X631|substance_matter(X630,X631),inference(resolution,status(thm),[c20, c301])).
+cnf(c691,plain,skolem0001!=X632|substance_matter(X632,skolem0004),inference(resolution,status(thm),[c356, reflexivity])).
+cnf(c6,plain,X218!=X220|X219!=X221|~living(X218,X219)|living(X220,X221),eq_axiom).
+fof(ax4,axiom,(![U]:(![V]:(organism(U,V)=>living(U,V)))),input).
+fof(c267,axiom,(![U]:(![V]:(~organism(U,V)|living(U,V)))),inference(fof_nnf,status(thm),[ax4])).
+fof(c268,axiom,(![X133]:(![X134]:(~organism(X133,X134)|living(X133,X134)))),inference(variable_rename,status(thm),[c267])).
+cnf(c269,axiom,~organism(X327,X326)|living(X327,X326),inference(split_conjunct,status(thm),[c268])).
+cnf(c353,plain,living(skolem0001,skolem0002),inference(resolution,status(thm),[c269, c335])).
+cnf(c355,plain,skolem0001!=X628|skolem0002!=X627|living(X628,X627),inference(resolution,status(thm),[c353, c6])).
+cnf(c689,plain,skolem0001!=X629|living(X629,skolem0002),inference(resolution,status(thm),[c355, reflexivity])).
+cnf(c7,plain,X226!=X228|X227!=X229|~impartial(X226,X227)|impartial(X228,X229),eq_axiom).
+fof(ax5,axiom,(![U]:(![V]:(organism(U,V)=>impartial(U,V)))),input).
+fof(c264,axiom,(![U]:(![V]:(~organism(U,V)|impartial(U,V)))),inference(fof_nnf,status(thm),[ax5])).
+fof(c265,axiom,(![X131]:(![X132]:(~organism(X131,X132)|impartial(X131,X132)))),inference(variable_rename,status(thm),[c264])).
+cnf(c266,axiom,~organism(X325,X324)|impartial(X325,X324),inference(split_conjunct,status(thm),[c265])).
+cnf(c351,plain,impartial(skolem0001,skolem0002),inference(resolution,status(thm),[c266, c335])).
+cnf(c352,plain,skolem0001!=X625|skolem0002!=X624|impartial(X625,X624),inference(resolution,status(thm),[c351, c7])).
+cnf(c687,plain,skolem0001!=X626|impartial(X626,skolem0002),inference(resolution,status(thm),[c352, reflexivity])).
+cnf(c350,plain,skolem0001!=X621|skolem0004!=X622|thing(X621,X622),inference(resolution,status(thm),[c19, c305])).
+cnf(c685,plain,skolem0001!=X623|thing(X623,skolem0004),inference(resolution,status(thm),[c350, reflexivity])).
+cnf(c349,plain,skolem0001!=X618|skolem0003!=X619|thing(X618,X619),inference(resolution,status(thm),[c19, c325])).
+cnf(c683,plain,skolem0001!=X620|thing(X620,skolem0003),inference(resolution,status(thm),[c349, reflexivity])).
+cnf(c348,plain,skolem0001!=X615|skolem0005!=X616|thing(X615,X616),inference(resolution,status(thm),[c19, c288])).
+cnf(c681,plain,skolem0001!=X617|thing(X617,skolem0005),inference(resolution,status(thm),[c348, reflexivity])).
+cnf(c347,plain,skolem0001!=X612|skolem0002!=X613|thing(X612,X613),inference(resolution,status(thm),[c19, c343])).
+cnf(c679,plain,skolem0001!=X614|thing(X614,skolem0002),inference(resolution,status(thm),[c347, reflexivity])).
+cnf(c17,plain,X306!=X308|X307!=X309|~existent(X306,X307)|existent(X308,X309),eq_axiom).
+fof(ax16,axiom,(![U]:(![V]:(entity(U,V)=>existent(U,V)))),input).
+fof(c231,axiom,(![U]:(![V]:(~entity(U,V)|existent(U,V)))),inference(fof_nnf,status(thm),[ax16])).
+fof(c232,axiom,(![X109]:(![X110]:(~entity(X109,X110)|existent(X109,X110)))),inference(variable_rename,status(thm),[c231])).
+cnf(c233,axiom,~entity(X275,X274)|existent(X275,X274),inference(split_conjunct,status(thm),[c232])).
+cnf(c341,plain,existent(skolem0001,skolem0002),inference(resolution,status(thm),[c337, c233])).
+cnf(c345,plain,skolem0001!=X610|skolem0002!=X609|existent(X610,X609),inference(resolution,status(thm),[c341, c17])).
+cnf(c677,plain,skolem0001!=X611|existent(X611,skolem0002),inference(resolution,status(thm),[c345, reflexivity])).
+fof(ax17,axiom,(![U]:(![V]:(entity(U,V)=>specific(U,V)))),input).
+fof(c228,axiom,(![U]:(![V]:(~entity(U,V)|specific(U,V)))),inference(fof_nnf,status(thm),[ax17])).
+fof(c229,axiom,(![X107]:(![X108]:(~entity(X107,X108)|specific(X107,X108)))),inference(variable_rename,status(thm),[c228])).
+cnf(c230,axiom,~entity(X272,X273)|specific(X272,X273),inference(split_conjunct,status(thm),[c229])).
+cnf(c340,plain,specific(skolem0001,skolem0002),inference(resolution,status(thm),[c337, c230])).
+cnf(c344,plain,skolem0001!=X606|skolem0002!=X607|specific(X606,X607),inference(resolution,status(thm),[c340, c18])).
+cnf(c675,plain,skolem0001!=X608|specific(X608,skolem0002),inference(resolution,status(thm),[c344, reflexivity])).
+cnf(c8,plain,X234!=X236|X235!=X237|~entity(X234,X235)|entity(X236,X237),eq_axiom).
+cnf(c342,plain,skolem0001!=X603|skolem0002!=X604|entity(X603,X604),inference(resolution,status(thm),[c337, c8])).
+cnf(c673,plain,skolem0001!=X605|entity(X605,skolem0002),inference(resolution,status(thm),[c342, reflexivity])).
+cnf(c307,plain,specific(skolem0001,skolem0004),inference(resolution,status(thm),[c230, c303])).
+cnf(c339,plain,skolem0001!=X600|skolem0004!=X601|specific(X600,X601),inference(resolution,status(thm),[c18, c307])).
+cnf(c671,plain,skolem0001!=X602|specific(X602,skolem0004),inference(resolution,status(thm),[c339, reflexivity])).
+cnf(c290,plain,specific(skolem0001,skolem0005),inference(resolution,status(thm),[c194, c287])).
+cnf(c338,plain,skolem0001!=X597|skolem0005!=X598|specific(X597,X598),inference(resolution,status(thm),[c18, c290])).
+cnf(c669,plain,skolem0001!=X599|specific(X599,skolem0005),inference(resolution,status(thm),[c338, reflexivity])).
+cnf(c5,plain,X208!=X210|X209!=X211|~organism(X208,X209)|organism(X210,X211),eq_axiom).
+cnf(c336,plain,skolem0001!=X595|skolem0002!=X594|organism(X595,X594),inference(resolution,status(thm),[c335, c5])).
+cnf(c667,plain,skolem0001!=X596|organism(X596,skolem0002),inference(resolution,status(thm),[c336, reflexivity])).
+cnf(c2,plain,X170!=X172|X171!=X173|~human_person(X170,X171)|human_person(X172,X173),eq_axiom).
+cnf(c334,plain,skolem0001!=X588|skolem0002!=X587|human_person(X588,X587),inference(resolution,status(thm),[c333, c2])).
+cnf(c664,plain,skolem0001!=X589|human_person(X589,skolem0002),inference(resolution,status(thm),[c334, reflexivity])).
+cnf(c308,plain,existent(skolem0001,skolem0004),inference(resolution,status(thm),[c233, c303])).
+cnf(c332,plain,skolem0001!=X581|skolem0004!=X580|existent(X581,X580),inference(resolution,status(thm),[c17, c308])).
+cnf(c661,plain,skolem0001!=X586|existent(X586,skolem0004),inference(resolution,status(thm),[c332, reflexivity])).
+cnf(c326,plain,unisex(skolem0001,skolem0003),inference(resolution,status(thm),[c321, c173])).
+cnf(c330,plain,skolem0001!=X578|skolem0003!=X577|unisex(X578,X577),inference(resolution,status(thm),[c326, c15])).
+cnf(c659,plain,skolem0001!=X579|unisex(X579,skolem0003),inference(resolution,status(thm),[c330, reflexivity])).
+cnf(c107,axiom,~member(X571,X573,X576)|~member(X571,X575,X576)|X575=X573|~member(X571,X570,X576)|X570=X575|X570=X573|~member(X571,X572,X576)|X572=X570|X572=X575|X572=X573|~member(X571,X574,X576)|X574=X572|X574=X570|X574=X575|X574=X573|skolem0013(X571,X576,X573,X575,X570,X572,X574)!=X573|five(X571,X576),inference(split_conjunct,status(thm),[c85])).
+fof(ax15,axiom,(![U]:(![V]:(object(U,V)=>nonliving(U,V)))),input).
+fof(c234,axiom,(![U]:(![V]:(~object(U,V)|nonliving(U,V)))),inference(fof_nnf,status(thm),[ax15])).
+fof(c235,axiom,(![X111]:(![X112]:(~object(X111,X112)|nonliving(X111,X112)))),inference(variable_rename,status(thm),[c234])).
+cnf(c236,axiom,~object(X276,X277)|nonliving(X276,X277),inference(split_conjunct,status(thm),[c235])).
+cnf(c309,plain,nonliving(skolem0001,skolem0004),inference(resolution,status(thm),[c236, c302])).
+cnf(c16,plain,X300!=X302|X301!=X303|~nonliving(X300,X301)|nonliving(X302,X303),eq_axiom).
+cnf(c329,plain,skolem0001!=X568|skolem0004!=X567|nonliving(X568,X567),inference(resolution,status(thm),[c16, c309])).
+cnf(c657,plain,skolem0001!=X569|nonliving(X569,skolem0004),inference(resolution,status(thm),[c329, reflexivity])).
+cnf(c322,plain,skolem0001!=X564|skolem0003!=X565|abstraction(X564,X565),inference(resolution,status(thm),[c321, c12])).
+cnf(c655,plain,skolem0001!=X566|abstraction(X566,skolem0003),inference(resolution,status(thm),[c322, reflexivity])).
+cnf(c106,axiom,~member(X558,X560,X563)|~member(X558,X562,X563)|X562=X560|~member(X558,X557,X563)|X557=X562|X557=X560|~member(X558,X559,X563)|X559=X557|X559=X562|X559=X560|~member(X558,X561,X563)|X561=X559|X561=X557|X561=X562|X561=X560|skolem0013(X558,X563,X560,X562,X557,X559,X561)!=X562|five(X558,X563),inference(split_conjunct,status(thm),[c85])).
+fof(ax13,axiom,(![U]:(![V]:(object(U,V)=>unisex(U,V)))),input).
+fof(c240,axiom,(![U]:(![V]:(~object(U,V)|unisex(U,V)))),inference(fof_nnf,status(thm),[ax13])).
+fof(c241,axiom,(![X115]:(![X116]:(~object(X115,X116)|unisex(X115,X116)))),inference(variable_rename,status(thm),[c240])).
+cnf(c242,axiom,~object(X285,X284)|unisex(X285,X284),inference(split_conjunct,status(thm),[c241])).
+cnf(c313,plain,unisex(skolem0001,skolem0004),inference(resolution,status(thm),[c242, c302])).
+cnf(c320,plain,skolem0001!=X555|skolem0004!=X554|unisex(X555,X554),inference(resolution,status(thm),[c15, c313])).
+cnf(c653,plain,skolem0001!=X556|unisex(X556,skolem0004),inference(resolution,status(thm),[c320, reflexivity])).
+cnf(c293,plain,unisex(skolem0001,skolem0005),inference(resolution,status(thm),[c200, c287])).
+cnf(c319,plain,skolem0001!=X545|skolem0005!=X544|unisex(X545,X544),inference(resolution,status(thm),[c15, c293])).
+cnf(c651,plain,skolem0001!=X553|unisex(X553,skolem0005),inference(resolution,status(thm),[c319, reflexivity])).
+cnf(c105,axiom,~member(X547,X549,X552)|~member(X547,X551,X552)|X551=X549|~member(X547,X546,X552)|X546=X551|X546=X549|~member(X547,X548,X552)|X548=X546|X548=X551|X548=X549|~member(X547,X550,X552)|X550=X548|X550=X546|X550=X551|X550=X549|skolem0013(X547,X552,X549,X551,X546,X548,X550)!=X546|five(X547,X552),inference(split_conjunct,status(thm),[c85])).
+cnf(c11,plain,X260!=X262|X261!=X263|~relation(X260,X261)|relation(X262,X263),eq_axiom).
+cnf(c318,plain,skolem0001!=X542|skolem0003!=X541|relation(X542,X541),inference(resolution,status(thm),[c317, c11])).
+cnf(c649,plain,skolem0001!=X543|relation(X543,skolem0003),inference(resolution,status(thm),[c318, reflexivity])).
+cnf(c104,axiom,~member(X535,X537,X540)|~member(X535,X539,X540)|X539=X537|~member(X535,X534,X540)|X534=X539|X534=X537|~member(X535,X536,X540)|X536=X534|X536=X539|X536=X537|~member(X535,X538,X540)|X538=X536|X538=X534|X538=X539|X538=X537|skolem0013(X535,X540,X537,X539,X534,X536,X538)!=X536|five(X535,X540),inference(split_conjunct,status(thm),[c85])).
+cnf(c13,plain,X278!=X280|X279!=X281|~relname(X278,X279)|relname(X280,X281),eq_axiom).
+cnf(c316,plain,skolem0001!=X532|skolem0003!=X531|relname(X532,X531),inference(resolution,status(thm),[c315, c13])).
+cnf(c647,plain,skolem0001!=X533|relname(X533,skolem0003),inference(resolution,status(thm),[c316, reflexivity])).
+cnf(c14,plain,X286!=X288|X287!=X289|~object(X286,X287)|object(X288,X289),eq_axiom).
+cnf(c314,plain,skolem0001!=X529|skolem0004!=X528|object(X529,X528),inference(resolution,status(thm),[c14, c302])).
+cnf(c645,plain,skolem0001!=X530|object(X530,skolem0004),inference(resolution,status(thm),[c314, reflexivity])).
+cnf(c103,axiom,~member(X522,X524,X527)|~member(X522,X526,X527)|X526=X524|~member(X522,X521,X527)|X521=X526|X521=X524|~member(X522,X523,X527)|X523=X521|X523=X526|X523=X524|~member(X522,X525,X527)|X525=X523|X525=X521|X525=X526|X525=X524|skolem0013(X522,X527,X524,X526,X521,X523,X525)!=X525|five(X522,X527),inference(split_conjunct,status(thm),[c85])).
+fof(ax14,axiom,(![U]:(![V]:(object(U,V)=>impartial(U,V)))),input).
+fof(c237,axiom,(![U]:(![V]:(~object(U,V)|impartial(U,V)))),inference(fof_nnf,status(thm),[ax14])).
+fof(c238,axiom,(![X113]:(![X114]:(~object(X113,X114)|impartial(X113,X114)))),inference(variable_rename,status(thm),[c237])).
+cnf(c239,axiom,~object(X282,X283)|impartial(X282,X283),inference(split_conjunct,status(thm),[c238])).
+cnf(c311,plain,impartial(skolem0001,skolem0004),inference(resolution,status(thm),[c239, c302])).
+cnf(c312,plain,skolem0001!=X519|skolem0004!=X518|impartial(X519,X518),inference(resolution,status(thm),[c311, c7])).
+cnf(c643,plain,skolem0001!=X520|impartial(X520,skolem0004),inference(resolution,status(thm),[c312, reflexivity])).
+cnf(c304,plain,skolem0001!=X508|skolem0004!=X509|entity(X508,X509),inference(resolution,status(thm),[c303, c8])).
+cnf(c636,plain,skolem0001!=X517|entity(X517,skolem0004),inference(resolution,status(thm),[c304, reflexivity])).
+cnf(c102,axiom,~member(X511,X513,X516)|~member(X511,X515,X516)|X515=X513|~member(X511,X510,X516)|X510=X515|X510=X513|~member(X511,X512,X516)|X512=X510|X512=X515|X512=X513|~member(X511,X514,X516)|X514=X512|X514=X510|X514=X515|X514=X513|member(X511,skolem0013(X511,X516,X513,X515,X510,X512,X514),X516)|five(X511,X516),inference(split_conjunct,status(thm),[c85])).
+cnf(c10,plain,X252!=X254|X253!=X255|~forename(X252,X253)|forename(X254,X255),eq_axiom).
+cnf(c300,plain,skolem0001!=X505|skolem0003!=X506|forename(X505,X506),inference(resolution,status(thm),[c10, c60])).
+cnf(c634,plain,skolem0001!=X507|forename(X507,skolem0003),inference(resolution,status(thm),[c300, reflexivity])).
+cnf(c101,axiom,~five(X504,X503)|~member(X504,X502,X503)|X502=skolem0012(X504,X503)|X502=skolem0011(X504,X503)|X502=skolem0010(X504,X503)|X502=skolem0009(X504,X503)|X502=skolem0008(X504,X503),inference(split_conjunct,status(thm),[c85])).
+cnf(c59,negated_conjecture,mia_forename(skolem0001,skolem0003),inference(split_conjunct,status(thm),[c54])).
+cnf(c9,plain,X242!=X244|X243!=X245|~mia_forename(X242,X243)|mia_forename(X244,X245),eq_axiom).
+cnf(c296,plain,skolem0001!=X500|skolem0003!=X499|mia_forename(X500,X499),inference(resolution,status(thm),[c9, c59])).
+cnf(c627,plain,skolem0001!=X501|mia_forename(X501,skolem0003),inference(resolution,status(thm),[c296, reflexivity])).
+cnf(c0,plain,X150!=X152|X151!=X153|~woman(X150,X151)|woman(X152,X153),eq_axiom).
+cnf(c281,plain,skolem0001!=X496|skolem0002!=X497|woman(X496,X497),inference(resolution,status(thm),[c0, c58])).
+cnf(c625,plain,skolem0001!=X498|woman(X498,skolem0002),inference(resolution,status(thm),[c281, reflexivity])).
+cnf(c100,axiom,~five(X495,X494)|skolem0012(X495,X494)!=skolem0008(X495,X494),inference(split_conjunct,status(thm),[c85])).
+cnf(c99,axiom,~five(X493,X492)|skolem0012(X493,X492)!=skolem0009(X493,X492),inference(split_conjunct,status(thm),[c85])).
+cnf(c98,axiom,~five(X491,X490)|skolem0012(X491,X490)!=skolem0010(X491,X490),inference(split_conjunct,status(thm),[c85])).
+cnf(c97,axiom,~five(X489,X488)|skolem0012(X489,X488)!=skolem0011(X489,X488),inference(split_conjunct,status(thm),[c85])).
+cnf(c95,axiom,~five(X487,X486)|skolem0011(X487,X486)!=skolem0008(X487,X486),inference(split_conjunct,status(thm),[c85])).
+cnf(c94,axiom,~five(X485,X484)|skolem0011(X485,X484)!=skolem0009(X485,X484),inference(split_conjunct,status(thm),[c85])).
+cnf(c93,axiom,~five(X482,X481)|skolem0011(X482,X481)!=skolem0010(X482,X481),inference(split_conjunct,status(thm),[c85])).
+cnf(c91,axiom,~five(X480,X479)|skolem0010(X480,X479)!=skolem0008(X480,X479),inference(split_conjunct,status(thm),[c85])).
+cnf(c90,axiom,~five(X478,X477)|skolem0010(X478,X477)!=skolem0009(X478,X477),inference(split_conjunct,status(thm),[c85])).
+cnf(c88,axiom,~five(X476,X475)|skolem0009(X476,X475)!=skolem0008(X476,X475),inference(split_conjunct,status(thm),[c85])).
+fof(ax46,axiom,(![U]:(![V]:(existent(U,V)=>(~nonexistent(U,V))))),input).
+fof(c139,axiom,(![U]:(![V]:(existent(U,V)=>~nonexistent(U,V)))),inference(fof_simplification,status(thm),[ax46])).
+fof(c140,axiom,(![U]:(![V]:(~existent(U,V)|~nonexistent(U,V)))),inference(fof_nnf,status(thm),[c139])).
+fof(c141,axiom,(![X49]:(![X50]:(~existent(X49,X50)|~nonexistent(X49,X50)))),inference(variable_rename,status(thm),[c140])).
+cnf(c142,axiom,~existent(X175,X174)|~nonexistent(X175,X174),inference(split_conjunct,status(thm),[c141])).
+cnf(c560,plain,~existent(skolem0001,skolem0007(skolem0012(skolem0001,skolem0006))),inference(resolution,status(thm),[c516, c142])).
+cnf(c554,plain,~existent(skolem0001,skolem0007(skolem0009(skolem0001,skolem0006))),inference(resolution,status(thm),[c511, c142])).
+cnf(c543,plain,~existent(skolem0001,skolem0007(skolem0010(skolem0001,skolem0006))),inference(resolution,status(thm),[c506, c142])).
+cnf(c532,plain,~existent(skolem0001,skolem0007(skolem0011(skolem0001,skolem0006))),inference(resolution,status(thm),[c496, c142])).
+cnf(c521,plain,~existent(skolem0001,skolem0007(skolem0008(skolem0001,skolem0006))),inference(resolution,status(thm),[c491, c142])).
+fof(ax51,axiom,(![U]:(![V]:(specific(U,V)=>(~general(U,V))))),input).
+fof(c119,axiom,(![U]:(![V]:(specific(U,V)=>~general(U,V)))),inference(fof_simplification,status(thm),[ax51])).
+fof(c120,axiom,(![U]:(![V]:(~specific(U,V)|~general(U,V)))),inference(fof_nnf,status(thm),[c119])).
+fof(c121,axiom,(![X39]:(![X40]:(~specific(X39,X40)|~general(X39,X40)))),inference(variable_rename,status(thm),[c120])).
+cnf(c122,axiom,~specific(X157,X156)|~general(X157,X156),inference(split_conjunct,status(thm),[c121])).
+cnf(c454,plain,~specific(skolem0001,skolem0012(skolem0001,skolem0006)),inference(resolution,status(thm),[c451, c122])).
+cnf(c434,plain,~specific(skolem0001,skolem0011(skolem0001,skolem0006)),inference(resolution,status(thm),[c430, c122])).
+cnf(c417,plain,~specific(skolem0001,skolem0010(skolem0001,skolem0006)),inference(resolution,status(thm),[c414, c122])).
+cnf(c402,plain,~specific(skolem0001,skolem0009(skolem0001,skolem0006)),inference(resolution,status(thm),[c398, c122])).
+cnf(c385,plain,~specific(skolem0001,skolem0008(skolem0001,skolem0006)),inference(resolution,status(thm),[c382, c122])).
+cnf(c48,plain,X344!=X345|~actual_world(X344)|actual_world(X345),eq_axiom).
+fof(ax52,axiom,(![U]:(![V]:(unisex(U,V)=>(~female(U,V))))),input).
+fof(c115,axiom,(![U]:(![V]:(unisex(U,V)=>~female(U,V)))),inference(fof_simplification,status(thm),[ax52])).
+fof(c116,axiom,(![U]:(![V]:(~unisex(U,V)|~female(U,V)))),inference(fof_nnf,status(thm),[c115])).
+fof(c117,axiom,(![X37]:(![X38]:(~unisex(X37,X38)|~female(X37,X38)))),inference(variable_rename,status(thm),[c116])).
+cnf(c118,axiom,~unisex(X155,X154)|~female(X155,X154),inference(split_conjunct,status(thm),[c117])).
+cnf(c365,plain,~unisex(skolem0001,skolem0002),inference(resolution,status(thm),[c363, c118])).
+fof(ax47,axiom,(![U]:(![V]:(nonhuman(U,V)=>(~human(U,V))))),input).
+fof(c135,axiom,(![U]:(![V]:(nonhuman(U,V)=>~human(U,V)))),inference(fof_simplification,status(thm),[ax47])).
+fof(c136,axiom,(![U]:(![V]:(~nonhuman(U,V)|~human(U,V)))),inference(fof_nnf,status(thm),[c135])).
+fof(c137,axiom,(![X47]:(![X48]:(~nonhuman(X47,X48)|~human(X47,X48)))),inference(variable_rename,status(thm),[c136])).
+cnf(c138,axiom,~nonhuman(X168,X169)|~human(X168,X169),inference(split_conjunct,status(thm),[c137])).
+cnf(c359,plain,~nonhuman(skolem0001,skolem0002),inference(resolution,status(thm),[c357, c138])).
+fof(ax48,axiom,(![U]:(![V]:(nonliving(U,V)=>(~living(U,V))))),input).
+fof(c131,axiom,(![U]:(![V]:(nonliving(U,V)=>~living(U,V)))),inference(fof_simplification,status(thm),[ax48])).
+fof(c132,axiom,(![U]:(![V]:(~nonliving(U,V)|~living(U,V)))),inference(fof_nnf,status(thm),[c131])).
+fof(c133,axiom,(![X45]:(![X46]:(~nonliving(X45,X46)|~living(X45,X46)))),inference(variable_rename,status(thm),[c132])).
+cnf(c134,axiom,~nonliving(X167,X166)|~living(X167,X166),inference(split_conjunct,status(thm),[c133])).
+cnf(c354,plain,~nonliving(skolem0001,skolem0002),inference(resolution,status(thm),[c353, c134])).
+fof(ax9,axiom,(![U]:(![V]:(mia_forename(U,V)=>forename(U,V)))),input).
+fof(c252,axiom,(![U]:(![V]:(~mia_forename(U,V)|forename(U,V)))),inference(fof_nnf,status(thm),[ax9])).
+fof(c253,axiom,(![X123]:(![X124]:(~mia_forename(X123,X124)|forename(X123,X124)))),inference(variable_rename,status(thm),[c252])).
+cnf(c254,axiom,~mia_forename(X304,X305)|forename(X304,X305),inference(split_conjunct,status(thm),[c253])).
+cnf(c327,plain,~specific(skolem0001,skolem0003),inference(resolution,status(thm),[c324, c122])).
+fof(ax45,axiom,(![U]:(![V]:(animate(U,V)=>(~nonliving(U,V))))),input).
+fof(c143,axiom,(![U]:(![V]:(animate(U,V)=>~nonliving(U,V)))),inference(fof_simplification,status(thm),[ax45])).
+fof(c144,axiom,(![U]:(![V]:(~animate(U,V)|~nonliving(U,V)))),inference(fof_nnf,status(thm),[c143])).
+fof(c145,axiom,(![X51]:(![X52]:(~animate(X51,X52)|~nonliving(X51,X52)))),inference(variable_rename,status(thm),[c144])).
+cnf(c146,axiom,~animate(X177,X176)|~nonliving(X177,X176),inference(split_conjunct,status(thm),[c145])).
+cnf(c310,plain,~animate(skolem0001,skolem0004),inference(resolution,status(thm),[c309, c146])).
+fof(ax24,axiom,(![U]:(![V]:(order(U,V)=>event(U,V)))),input).
+fof(c207,axiom,(![U]:(![V]:(~order(U,V)|event(U,V)))),inference(fof_nnf,status(thm),[ax24])).
+fof(c208,axiom,(![X93]:(![X94]:(~order(X93,X94)|event(X93,X94)))),inference(variable_rename,status(thm),[c207])).
+cnf(c209,axiom,~order(X247,X246)|event(X247,X246),inference(split_conjunct,status(thm),[c208])).
+fof(ax25,axiom,(![U]:(![V]:(act(U,V)=>event(U,V)))),input).
+fof(c204,axiom,(![U]:(![V]:(~act(U,V)|event(U,V)))),inference(fof_nnf,status(thm),[ax25])).
+fof(c205,axiom,(![X91]:(![X92]:(~act(X91,X92)|event(X91,X92)))),inference(variable_rename,status(thm),[c204])).
+cnf(c206,axiom,~act(X240,X241)|event(X240,X241),inference(split_conjunct,status(thm),[c205])).
+cnf(c292,plain,~existent(skolem0001,skolem0005),inference(resolution,status(thm),[c291, c142])).
+fof(ax32,axiom,(![U]:(![V]:(cost(U,V)=>event(U,V)))),input).
+fof(c183,axiom,(![U]:(![V]:(~cost(U,V)|event(U,V)))),inference(fof_nnf,status(thm),[ax32])).
+fof(c184,axiom,(![X77]:(![X78]:(~cost(X77,X78)|event(X77,X78)))),inference(variable_rename,status(thm),[c183])).
+cnf(c185,axiom,~cost(X214,X215)|event(X214,X215),inference(split_conjunct,status(thm),[c184])).
+fof(ax33,axiom,(![U]:(![V]:(five(U,V)=>group(U,V)))),input).
+fof(c180,axiom,(![U]:(![V]:(~five(U,V)|group(U,V)))),inference(fof_nnf,status(thm),[ax33])).
+fof(c181,axiom,(![X75]:(![X76]:(~five(X75,X76)|group(X75,X76)))),inference(variable_rename,status(thm),[c180])).
+cnf(c182,axiom,~five(X213,X212)|group(X213,X212),inference(split_conjunct,status(thm),[c181])).
+fof(ax50,axiom,(![U]:(![V]:(singleton(U,V)=>(~multiple(U,V))))),input).
+fof(c123,axiom,(![U]:(![V]:(singleton(U,V)=>~multiple(U,V)))),inference(fof_simplification,status(thm),[ax50])).
+fof(c124,axiom,(![U]:(![V]:(~singleton(U,V)|~multiple(U,V)))),inference(fof_nnf,status(thm),[c123])).
+fof(c125,axiom,(![X41]:(![X42]:(~singleton(X41,X42)|~multiple(X41,X42)))),inference(variable_rename,status(thm),[c124])).
+cnf(c126,axiom,~singleton(X163,X162)|~multiple(X163,X162),inference(split_conjunct,status(thm),[c125])).
+cnf(c285,plain,~singleton(skolem0001,skolem0006),inference(resolution,status(thm),[c284, c126])).
+fof(ax49,axiom,(![U]:(![V]:(present(U,V)=>(~past(U,V))))),input).
+fof(c127,axiom,(![U]:(![V]:(present(U,V)=>~past(U,V)))),inference(fof_simplification,status(thm),[ax49])).
+fof(c128,axiom,(![U]:(![V]:(~present(U,V)|~past(U,V)))),inference(fof_nnf,status(thm),[c127])).
+fof(c129,axiom,(![X43]:(![X44]:(~present(X43,X44)|~past(X43,X44)))),inference(variable_rename,status(thm),[c128])).
+cnf(c130,axiom,~present(X165,X164)|~past(X165,X164),inference(split_conjunct,status(thm),[c129])).
+cnf(c282,plain,~present(skolem0001,skolem0005),inference(resolution,status(thm),[c130, c65])).
+cnf(transitivity,axiom,X149!=X147|X147!=X148|X149=X148,eq_axiom).
+cnf(symmetry,axiom,X145!=X144|X144=X145,eq_axiom).
+fof(ax56,axiom,(![U]:(~(?[V]:member(U,V,V)))),input).
+fof(c77,axiom,(![U]:(![V]:~member(U,V,V))),inference(fof_nnf,status(thm),[ax56])).
+fof(c78,axiom,(![X11]:(![X12]:~member(X11,X12,X12))),inference(variable_rename,status(thm),[c77])).
+cnf(c79,axiom,~member(X142,X143,X143),inference(split_conjunct,status(thm),[c78])).
+cnf(c55,negated_conjecture,actual_world(skolem0001),inference(split_conjunct,status(thm),[c54])).
+# SZS output end Saturation
+
+# Initial clauses    : 151
+# Processed clauses  : 701
+# Factors computed   : 0
+# Resolvents computed: 743
+# Tautologies deleted: 2
+# Forward subsumed   : 191
+# Backward subsumed  : 5
+
+# -------- CPU Time ---------
+# User time          : 1.094 s
+# System time        : 0.165 s
+# Total time         : 1.259 s

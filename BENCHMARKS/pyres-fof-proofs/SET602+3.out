@@ -1,0 +1,65 @@
+# cnf(reflexivity,axiom,X29=X29).
+# cnf(c18,axiom,subset(X30,X30)).
+# cnf(c47,axiom,~member(X31,empty_set)).
+# cnf(c15,axiom,~empty(X33)|~member(X32,X33)).
+# cnf(symmetry,axiom,X34!=X35|X35=X34).
+# cnf(transitivity,axiom,X37!=X38|X38!=X36|X37=X36).
+# cnf(c33,axiom,X40!=X41|subset(X40,X41)).
+# cnf(c34,axiom,X43!=X44|subset(X44,X43)).
+# cnf(c0,plain,X48!=X47|X49!=X46|difference(X48,X49)=difference(X47,X46)).
+# cnf(c16,axiom,member(skolem0002(X52),X52)|empty(X52)).
+# cnf(c60,plain,empty(empty_set)).
+# cnf(c3,plain,X55!=X54|~empty(X55)|empty(X54)).
+# cnf(c1,plain,X58!=X57|X59!=X56|~subset(X58,X59)|subset(X57,X56)).
+# cnf(c8,negated_conjecture,difference(skolem0001,skolem0001)!=empty_set).
+# cnf(c26,axiom,member(skolem0003(X62,X61),X62)|subset(X62,X61)).
+# cnf(c64,plain,subset(empty_set,X63)).
+# cnf(c63,plain,subset(X64,X65)|~empty(X64)).
+# cnf(c2,plain,X68!=X67|X69!=X66|~member(X68,X69)|member(X67,X66)).
+# cnf(c67,plain,subset(X71,X72)|member(skolem0002(X71),X71)).
+# cnf(c27,axiom,~member(skolem0003(X77,X76),X76)|subset(X77,X76)).
+# cnf(c25,axiom,~subset(X80,X78)|~member(X79,X80)|member(X79,X78)).
+# cnf(c42,axiom,~member(X82,difference(X83,X84))|member(X82,X83)).
+# cnf(c43,axiom,~member(X85,difference(X86,X87))|~member(X85,X87)).
+# cnf(c35,axiom,~subset(X89,X88)|~subset(X88,X89)|X89=X88).
+# cnf(c44,axiom,~member(X91,X93)|member(X91,X92)|member(X91,difference(X93,X92))).
+# cnf(c85,plain,~subset(X94,empty_set)|X94=empty_set).
+# cnf(c94,plain,X95=empty_set|member(skolem0002(X95),X95)).
+# cnf(c52,axiom,difference(X96,X97)!=empty_set|subset(X96,X97)).
+# cnf(c106,plain,X98=empty_set|~empty(X98)).
+# cnf(c102,plain,member(skolem0002(X101),X101)|empty_set=X101).
+# cnf(c53,axiom,~subset(X102,X103)|difference(X102,X103)=empty_set).
+# cnf(c116,plain,empty_set=X104|~empty(X104)).
+# cnf(c129,plain,difference(X105,X105)=empty_set).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_self_difference_is_empty_set,conjecture,(![B]:difference(B,B)=empty_set),input).
+fof(c4,negated_conjecture,(~(![B]:difference(B,B)=empty_set)),inference(assume_negation,status(cth),[prove_self_difference_is_empty_set])).
+fof(c5,negated_conjecture,(?[B]:difference(B,B)!=empty_set),inference(fof_nnf,status(thm),[c4])).
+fof(c6,negated_conjecture,(?[X2]:difference(X2,X2)!=empty_set),inference(variable_rename,status(thm),[c5])).
+fof(c7,negated_conjecture,difference(skolem0001,skolem0001)!=empty_set,inference(skolemize,status(esa),[c6])).
+cnf(c8,negated_conjecture,difference(skolem0001,skolem0001)!=empty_set,inference(split_conjunct,status(thm),[c7])).
+fof(reflexivity_of_subset,axiom,(![B]:subset(B,B)),input).
+fof(c17,axiom,(![X7]:subset(X7,X7)),inference(variable_rename,status(thm),[reflexivity_of_subset])).
+cnf(c18,axiom,subset(X30,X30),inference(split_conjunct,status(thm),[c17])).
+fof(difference_empty_set,axiom,(![B]:(![C]:(difference(B,C)=empty_set<=>subset(B,C)))),input).
+fof(c48,axiom,(![B]:(![C]:((difference(B,C)!=empty_set|subset(B,C))&(~subset(B,C)|difference(B,C)=empty_set)))),inference(fof_nnf,status(thm),[difference_empty_set])).
+fof(c49,axiom,((![B]:(![C]:(difference(B,C)!=empty_set|subset(B,C))))&(![B]:(![C]:(~subset(B,C)|difference(B,C)=empty_set)))),inference(shift_quantors,status(thm),[c48])).
+fof(c51,axiom,(![X25]:(![X26]:(![X27]:(![X28]:((difference(X25,X26)!=empty_set|subset(X25,X26))&(~subset(X27,X28)|difference(X27,X28)=empty_set)))))),inference(shift_quantors,status(thm),[fof(c50,axiom,((![X25]:(![X26]:(difference(X25,X26)!=empty_set|subset(X25,X26))))&(![X27]:(![X28]:(~subset(X27,X28)|difference(X27,X28)=empty_set)))),inference(variable_rename,status(thm),[c49])).])).
+cnf(c53,axiom,~subset(X102,X103)|difference(X102,X103)=empty_set,inference(split_conjunct,status(thm),[c51])).
+cnf(c129,plain,difference(X105,X105)=empty_set,inference(resolution,status(thm),[c53, c18])).
+cnf(c132,plain,$false,inference(resolution,status(thm),[c129, c8])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 23
+# Processed clauses  : 33
+# Factors computed   : 0
+# Resolvents computed: 86
+# Tautologies deleted: 3
+# Forward subsumed   : 16
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.494 s
+# System time        : 0.226 s
+# Total time         : 0.720 s

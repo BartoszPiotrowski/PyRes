@@ -1,0 +1,47 @@
+# cnf(c8,negated_conjecture,~p(X12,X14)|p(X13,X13)).
+# cnf(c11,negated_conjecture,~q(X15)|~m(g(X15))).
+# cnf(c9,negated_conjecture,p(X16,skolem0001(X16))|m(X16)).
+# cnf(c13,plain,m(X17)|p(X18,X18)).
+# cnf(c15,plain,p(X19,X19)|~q(X20)).
+# cnf(c10,negated_conjecture,p(X21,skolem0001(X21))|q(f(X21,skolem0002(X21)))).
+# cnf(c18,plain,p(X25,skolem0001(X25))|p(X24,X24)).
+# cnf(c19,plain,p(X27,X27)|p(X26,X26)).
+# cnf(c21,plain,p(X28,X28)).
+# cnf(c12,negated_conjecture,~p(g(skolem0003),X31)|~p(skolem0004,skolem0004)).
+# cnf(c26,plain,~p(skolem0004,skolem0004)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(thm69,conjecture,((((![X]:((?[Y]:p(X,Y))=>(![Z]:p(Z,Z))))&(![R]:(?[S]:(p(R,S)|(m(R)&q(f(R,S)))))))&(![W]:(q(W)=>(~m(g(W))))))=>(![U]:(?[V]:(p(g(U),V)&p(U,U))))),input).
+fof(c0,negated_conjecture,(~((((![X]:((?[Y]:p(X,Y))=>(![Z]:p(Z,Z))))&(![R]:(?[S]:(p(R,S)|(m(R)&q(f(R,S)))))))&(![W]:(q(W)=>(~m(g(W))))))=>(![U]:(?[V]:(p(g(U),V)&p(U,U)))))),inference(assume_negation,status(cth),[thm69])).
+fof(c1,negated_conjecture,(~((((![X]:((?[Y]:p(X,Y))=>(![Z]:p(Z,Z))))&(![R]:(?[S]:(p(R,S)|(m(R)&q(f(R,S)))))))&(![W]:(q(W)=>~m(g(W)))))=>(![U]:(?[V]:(p(g(U),V)&p(U,U)))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,((((![X]:((![Y]:~p(X,Y))|(![Z]:p(Z,Z))))&(![R]:(?[S]:(p(R,S)|(m(R)&q(f(R,S)))))))&(![W]:(~q(W)|~m(g(W)))))&(?[U]:(![V]:(~p(g(U),V)|~p(U,U))))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(((((![X]:(![Y]:~p(X,Y)))|(![Z]:p(Z,Z)))&(![R]:((?[S]:p(R,S))|(m(R)&(?[S]:q(f(R,S)))))))&(![W]:(~q(W)|~m(g(W)))))&((?[U]:(![V]:~p(g(U),V)))|(?[U]:~p(U,U)))),inference(shift_quantors,status(thm),[c2])).
+fof(c4,negated_conjecture,(((((![X2]:(![X3]:~p(X2,X3)))|(![X4]:p(X4,X4)))&(![X5]:((?[X6]:p(X5,X6))|(m(X5)&(?[X7]:q(f(X5,X7)))))))&(![X8]:(~q(X8)|~m(g(X8)))))&((?[X9]:(![X10]:~p(g(X9),X10)))|(?[X11]:~p(X11,X11)))),inference(variable_rename,status(thm),[c3])).
+fof(c6,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X8]:(![X10]:((((~p(X2,X3)|p(X4,X4))&(p(X5,skolem0001(X5))|(m(X5)&q(f(X5,skolem0002(X5))))))&(~q(X8)|~m(g(X8))))&(~p(g(skolem0003),X10)|~p(skolem0004,skolem0004))))))))),inference(shift_quantors,status(thm),[fof(c5,negated_conjecture,(((((![X2]:(![X3]:~p(X2,X3)))|(![X4]:p(X4,X4)))&(![X5]:(p(X5,skolem0001(X5))|(m(X5)&q(f(X5,skolem0002(X5)))))))&(![X8]:(~q(X8)|~m(g(X8)))))&((![X10]:~p(g(skolem0003),X10))|~p(skolem0004,skolem0004))),inference(skolemize,status(esa),[c4])).])).
+fof(c7,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X8]:(![X10]:((((~p(X2,X3)|p(X4,X4))&((p(X5,skolem0001(X5))|m(X5))&(p(X5,skolem0001(X5))|q(f(X5,skolem0002(X5))))))&(~q(X8)|~m(g(X8))))&(~p(g(skolem0003),X10)|~p(skolem0004,skolem0004))))))))),inference(distribute,status(thm),[c6])).
+cnf(c8,negated_conjecture,~p(X12,X14)|p(X13,X13),inference(split_conjunct,status(thm),[c7])).
+cnf(c11,negated_conjecture,~q(X15)|~m(g(X15)),inference(split_conjunct,status(thm),[c7])).
+cnf(c9,negated_conjecture,p(X16,skolem0001(X16))|m(X16),inference(split_conjunct,status(thm),[c7])).
+cnf(c13,plain,m(X17)|p(X18,X18),inference(resolution,status(thm),[c9, c8])).
+cnf(c15,plain,p(X19,X19)|~q(X20),inference(resolution,status(thm),[c13, c11])).
+cnf(c10,negated_conjecture,p(X21,skolem0001(X21))|q(f(X21,skolem0002(X21))),inference(split_conjunct,status(thm),[c7])).
+cnf(c18,plain,p(X25,skolem0001(X25))|p(X24,X24),inference(resolution,status(thm),[c10, c15])).
+cnf(c19,plain,p(X27,X27)|p(X26,X26),inference(resolution,status(thm),[c18, c8])).
+cnf(c21,plain,p(X28,X28),inference(factor,status(thm),[c19])).
+cnf(c12,negated_conjecture,~p(g(skolem0003),X31)|~p(skolem0004,skolem0004),inference(split_conjunct,status(thm),[c7])).
+cnf(c26,plain,~p(skolem0004,skolem0004),inference(resolution,status(thm),[c12, c21])).
+cnf(c27,plain,$false,inference(resolution,status(thm),[c26, c21])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 11
+# Factors computed   : 1
+# Resolvents computed: 14
+# Tautologies deleted: 0
+# Forward subsumed   : 2
+# Backward subsumed  : 6
+
+# -------- CPU Time ---------
+# User time          : 0.249 s
+# System time        : 0.259 s
+# Total time         : 0.508 s

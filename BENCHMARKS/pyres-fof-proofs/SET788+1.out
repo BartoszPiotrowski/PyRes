@@ -1,0 +1,80 @@
+# cnf(c7,negated_conjecture,~equalish(X11,X12)|~a_member_of(X13,X11)|a_member_of(X13,X12)).
+# cnf(c8,negated_conjecture,~equalish(X14,X15)|~a_member_of(X16,X15)|a_member_of(X16,X14)).
+# cnf(c11,negated_conjecture,~equalish(skolem0002,skolem0003)|~equalish(skolem0003,skolem0002)).
+# cnf(c12,negated_conjecture,equalish(skolem0002,skolem0003)|equalish(skolem0003,skolem0002)).
+# cnf(c9,negated_conjecture,~a_member_of(skolem0001(X18,X17),X18)|~a_member_of(skolem0001(X18,X17),X17)|equalish(X18,X17)).
+# cnf(c10,negated_conjecture,a_member_of(skolem0001(X20,X19),X20)|a_member_of(skolem0001(X20,X19),X19)|equalish(X20,X19)).
+# cnf(c14,plain,a_member_of(skolem0001(X21,X21),X21)|equalish(X21,X21)).
+# cnf(c22,plain,equalish(X22,X22)|~a_member_of(skolem0001(X22,X22),X22)).
+# cnf(c25,plain,equalish(X23,X23)).
+# cnf(c16,plain,a_member_of(skolem0001(X34,X35),X35)|equalish(X34,X35)|~equalish(X33,X34)|a_member_of(skolem0001(X34,X35),X33)).
+# cnf(c17,plain,a_member_of(skolem0001(X36,X38),X38)|equalish(X36,X38)|~equalish(X36,X37)|a_member_of(skolem0001(X36,X38),X37)).
+# cnf(c19,plain,a_member_of(skolem0001(X43,X44),X43)|equalish(X43,X44)|~equalish(X45,X44)|a_member_of(skolem0001(X43,X44),X45)).
+# cnf(c20,plain,a_member_of(skolem0001(X49,X48),X49)|equalish(X49,X48)|~equalish(X48,X50)|a_member_of(skolem0001(X49,X48),X50)).
+# cnf(c21,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)|a_member_of(skolem0001(skolem0003,skolem0002),skolem0002)|~equalish(skolem0002,skolem0003)).
+# cnf(c29,plain,a_member_of(skolem0001(skolem0003,X53),X53)|equalish(skolem0003,X53)|a_member_of(skolem0001(skolem0003,X53),skolem0002)|equalish(skolem0003,skolem0002)).
+# cnf(c46,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0002)|equalish(skolem0003,skolem0002)).
+# cnf(c30,plain,a_member_of(skolem0001(X56,X54),X54)|equalish(X56,X54)|a_member_of(skolem0001(X56,X54),X55)|a_member_of(skolem0001(X55,X56),X55)|a_member_of(skolem0001(X55,X56),X56)).
+# cnf(c64,plain,equalish(skolem0003,skolem0002)|~a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)).
+# cnf(c31,plain,a_member_of(skolem0001(skolem0002,X61),X61)|equalish(skolem0002,X61)|a_member_of(skolem0001(skolem0002,X61),skolem0003)|equalish(skolem0002,skolem0003)).
+# cnf(c71,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0002)|~equalish(skolem0002,skolem0003)).
+# cnf(c99,plain,a_member_of(skolem0001(skolem0002,skolem0003),skolem0003)|equalish(skolem0002,skolem0003)).
+# cnf(c33,plain,a_member_of(skolem0001(skolem0002,X62),X62)|equalish(skolem0002,X62)|a_member_of(skolem0001(skolem0002,X62),skolem0003)|equalish(skolem0003,skolem0002)).
+# cnf(c124,plain,equalish(skolem0002,skolem0003)|~a_member_of(skolem0001(skolem0002,skolem0003),skolem0002)).
+# cnf(c65,plain,equalish(skolem0003,skolem0002)|~equalish(X63,skolem0002)|a_member_of(skolem0001(skolem0003,skolem0002),X63)).
+# cnf(c66,plain,equalish(skolem0003,skolem0002)|~equalish(skolem0002,X64)|a_member_of(skolem0001(skolem0003,skolem0002),X64)).
+# cnf(c34,plain,a_member_of(skolem0001(X65,X66),X66)|equalish(X65,X66)|a_member_of(skolem0001(X65,X66),X67)|a_member_of(skolem0001(X65,X67),X65)|a_member_of(skolem0001(X65,X67),X67)).
+# cnf(c162,plain,equalish(skolem0003,skolem0002)|a_member_of(skolem0001(skolem0003,skolem0002),skolem0003)).
+# cnf(c205,plain,equalish(skolem0003,skolem0002)).
+# cnf(c35,plain,a_member_of(skolem0001(skolem0003,X70),X70)|equalish(skolem0003,X70)|a_member_of(skolem0001(skolem0003,X70),skolem0002)|equalish(skolem0002,skolem0003)).
+# cnf(c211,plain,~equalish(skolem0002,skolem0003)).
+# cnf(c233,plain,a_member_of(skolem0001(skolem0002,skolem0003),skolem0003)).
+# cnf(c236,plain,~equalish(X71,skolem0003)|a_member_of(skolem0001(skolem0002,skolem0003),X71)).
+# cnf(c237,plain,~equalish(skolem0003,X72)|a_member_of(skolem0001(skolem0002,skolem0003),X72)).
+# cnf(c248,plain,a_member_of(skolem0001(skolem0002,skolem0003),skolem0002)).
+# cnf(c255,plain,equalish(skolem0002,skolem0003)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(prove_this,conjecture,((![X]:(![Y]:(equalish(X,Y)<=>(![Z]:(a_member_of(Z,X)<=>a_member_of(Z,Y))))))=>(![X]:(![Y]:(equalish(X,Y)<=>equalish(Y,X))))),input).
+fof(c0,negated_conjecture,(~((![X]:(![Y]:(equalish(X,Y)<=>(![Z]:(a_member_of(Z,X)<=>a_member_of(Z,Y))))))=>(![X]:(![Y]:(equalish(X,Y)<=>equalish(Y,X)))))),inference(assume_negation,status(cth),[prove_this])).
+fof(c1,negated_conjecture,((![X]:(![Y]:((~equalish(X,Y)|(![Z]:((~a_member_of(Z,X)|a_member_of(Z,Y))&(~a_member_of(Z,Y)|a_member_of(Z,X)))))&((?[Z]:((~a_member_of(Z,X)|~a_member_of(Z,Y))&(a_member_of(Z,X)|a_member_of(Z,Y))))|equalish(X,Y)))))&(?[X]:(?[Y]:((~equalish(X,Y)|~equalish(Y,X))&(equalish(X,Y)|equalish(Y,X)))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(((![X]:(![Y]:(~equalish(X,Y)|((![Z]:(~a_member_of(Z,X)|a_member_of(Z,Y)))&(![Z]:(~a_member_of(Z,Y)|a_member_of(Z,X)))))))&(![X]:(![Y]:((?[Z]:((~a_member_of(Z,X)|~a_member_of(Z,Y))&(a_member_of(Z,X)|a_member_of(Z,Y))))|equalish(X,Y)))))&(?[X]:(?[Y]:((~equalish(X,Y)|~equalish(Y,X))&(equalish(X,Y)|equalish(Y,X)))))),inference(shift_quantors,status(thm),[c1])).
+fof(c3,negated_conjecture,(((![X2]:(![X3]:(~equalish(X2,X3)|((![X4]:(~a_member_of(X4,X2)|a_member_of(X4,X3)))&(![X5]:(~a_member_of(X5,X3)|a_member_of(X5,X2)))))))&(![X6]:(![X7]:((?[X8]:((~a_member_of(X8,X6)|~a_member_of(X8,X7))&(a_member_of(X8,X6)|a_member_of(X8,X7))))|equalish(X6,X7)))))&(?[X9]:(?[X10]:((~equalish(X9,X10)|~equalish(X10,X9))&(equalish(X9,X10)|equalish(X10,X9)))))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:(((~equalish(X2,X3)|((~a_member_of(X4,X2)|a_member_of(X4,X3))&(~a_member_of(X5,X3)|a_member_of(X5,X2))))&(((~a_member_of(skolem0001(X6,X7),X6)|~a_member_of(skolem0001(X6,X7),X7))&(a_member_of(skolem0001(X6,X7),X6)|a_member_of(skolem0001(X6,X7),X7)))|equalish(X6,X7)))&((~equalish(skolem0002,skolem0003)|~equalish(skolem0003,skolem0002))&(equalish(skolem0002,skolem0003)|equalish(skolem0003,skolem0002)))))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,(((![X2]:(![X3]:(~equalish(X2,X3)|((![X4]:(~a_member_of(X4,X2)|a_member_of(X4,X3)))&(![X5]:(~a_member_of(X5,X3)|a_member_of(X5,X2)))))))&(![X6]:(![X7]:(((~a_member_of(skolem0001(X6,X7),X6)|~a_member_of(skolem0001(X6,X7),X7))&(a_member_of(skolem0001(X6,X7),X6)|a_member_of(skolem0001(X6,X7),X7)))|equalish(X6,X7)))))&((~equalish(skolem0002,skolem0003)|~equalish(skolem0003,skolem0002))&(equalish(skolem0002,skolem0003)|equalish(skolem0003,skolem0002)))),inference(skolemize,status(esa),[c3])).])).
+fof(c6,negated_conjecture,(![X2]:(![X3]:(![X4]:(![X5]:(![X6]:(![X7]:((((~equalish(X2,X3)|(~a_member_of(X4,X2)|a_member_of(X4,X3)))&(~equalish(X2,X3)|(~a_member_of(X5,X3)|a_member_of(X5,X2))))&(((~a_member_of(skolem0001(X6,X7),X6)|~a_member_of(skolem0001(X6,X7),X7))|equalish(X6,X7))&((a_member_of(skolem0001(X6,X7),X6)|a_member_of(skolem0001(X6,X7),X7))|equalish(X6,X7))))&((~equalish(skolem0002,skolem0003)|~equalish(skolem0003,skolem0002))&(equalish(skolem0002,skolem0003)|equalish(skolem0003,skolem0002)))))))))),inference(distribute,status(thm),[c5])).
+cnf(c11,negated_conjecture,~equalish(skolem0002,skolem0003)|~equalish(skolem0003,skolem0002),inference(split_conjunct,status(thm),[c6])).
+cnf(c9,negated_conjecture,~a_member_of(skolem0001(X18,X17),X18)|~a_member_of(skolem0001(X18,X17),X17)|equalish(X18,X17),inference(split_conjunct,status(thm),[c6])).
+cnf(c12,negated_conjecture,equalish(skolem0002,skolem0003)|equalish(skolem0003,skolem0002),inference(split_conjunct,status(thm),[c6])).
+cnf(c8,negated_conjecture,~equalish(X14,X15)|~a_member_of(X16,X15)|a_member_of(X16,X14),inference(split_conjunct,status(thm),[c6])).
+cnf(c10,negated_conjecture,a_member_of(skolem0001(X20,X19),X20)|a_member_of(skolem0001(X20,X19),X19)|equalish(X20,X19),inference(split_conjunct,status(thm),[c6])).
+cnf(c16,plain,a_member_of(skolem0001(X34,X35),X35)|equalish(X34,X35)|~equalish(X33,X34)|a_member_of(skolem0001(X34,X35),X33),inference(resolution,status(thm),[c10, c8])).
+cnf(c29,plain,a_member_of(skolem0001(skolem0003,X53),X53)|equalish(skolem0003,X53)|a_member_of(skolem0001(skolem0003,X53),skolem0002)|equalish(skolem0003,skolem0002),inference(resolution,status(thm),[c16, c12])).
+cnf(c46,plain,a_member_of(skolem0001(skolem0003,skolem0002),skolem0002)|equalish(skolem0003,skolem0002),inference(factor,status(thm),[c29])).
+cnf(c64,plain,equalish(skolem0003,skolem0002)|~a_member_of(skolem0001(skolem0003,skolem0002),skolem0003),inference(resolution,status(thm),[c46, c9])).
+cnf(c7,negated_conjecture,~equalish(X11,X12)|~a_member_of(X13,X11)|a_member_of(X13,X12),inference(split_conjunct,status(thm),[c6])).
+cnf(c66,plain,equalish(skolem0003,skolem0002)|~equalish(skolem0002,X64)|a_member_of(skolem0001(skolem0003,skolem0002),X64),inference(resolution,status(thm),[c46, c7])).
+cnf(c162,plain,equalish(skolem0003,skolem0002)|a_member_of(skolem0001(skolem0003,skolem0002),skolem0003),inference(resolution,status(thm),[c66, c12])).
+cnf(c205,plain,equalish(skolem0003,skolem0002),inference(resolution,status(thm),[c162, c64])).
+cnf(c211,plain,~equalish(skolem0002,skolem0003),inference(resolution,status(thm),[c205, c11])).
+cnf(c31,plain,a_member_of(skolem0001(skolem0002,X61),X61)|equalish(skolem0002,X61)|a_member_of(skolem0001(skolem0002,X61),skolem0003)|equalish(skolem0002,skolem0003),inference(resolution,status(thm),[c16, c12])).
+cnf(c99,plain,a_member_of(skolem0001(skolem0002,skolem0003),skolem0003)|equalish(skolem0002,skolem0003),inference(factor,status(thm),[c31])).
+cnf(c124,plain,equalish(skolem0002,skolem0003)|~a_member_of(skolem0001(skolem0002,skolem0003),skolem0002),inference(resolution,status(thm),[c99, c9])).
+cnf(c233,plain,a_member_of(skolem0001(skolem0002,skolem0003),skolem0003),inference(resolution,status(thm),[c211, c99])).
+cnf(c237,plain,~equalish(skolem0003,X72)|a_member_of(skolem0001(skolem0002,skolem0003),X72),inference(resolution,status(thm),[c233, c7])).
+cnf(c248,plain,a_member_of(skolem0001(skolem0002,skolem0003),skolem0002),inference(resolution,status(thm),[c237, c205])).
+cnf(c255,plain,equalish(skolem0002,skolem0003),inference(resolution,status(thm),[c248, c124])).
+cnf(c260,plain,$false,inference(resolution,status(thm),[c255, c211])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 6
+# Processed clauses  : 35
+# Factors computed   : 19
+# Resolvents computed: 230
+# Tautologies deleted: 3
+# Forward subsumed   : 25
+# Backward subsumed  : 17
+
+# -------- CPU Time ---------
+# User time          : 0.318 s
+# System time        : 0.252 s
+# Total time         : 0.570 s

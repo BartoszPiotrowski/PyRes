@@ -1,0 +1,62 @@
+# cnf(c25,axiom,$true).
+# cnf(reflexivity,axiom,X16=X16).
+# cnf(c9,axiom,subset(X17,X17)).
+# cnf(c20,negated_conjecture,in(skolem0001,skolem0002)).
+# cnf(symmetry,axiom,X19!=X18|X18=X19).
+# cnf(c24,axiom,set_union2(X21,X21)=X21).
+# cnf(c34,plain,X22=set_union2(X22,X22)).
+# cnf(c32,axiom,~in(X25,X24)|~in(X24,X25)).
+# cnf(transitivity,axiom,X27!=X26|X26!=X28|X27=X28).
+# cnf(c36,plain,~in(skolem0002,skolem0001)).
+# cnf(c14,axiom,~subset(singleton(X32),X31)|in(X32,X31)).
+# cnf(c40,plain,in(X33,singleton(X33))).
+# cnf(c41,plain,~in(singleton(X34),X34)).
+# cnf(c0,plain,X37!=X36|X38!=X35|set_union2(X37,X38)=set_union2(X36,X35)).
+# cnf(c15,axiom,~in(X40,X39)|subset(singleton(X40),X39)).
+# cnf(c46,plain,subset(singleton(skolem0001),skolem0002)).
+# cnf(c28,axiom,set_union2(X42,X43)=set_union2(X43,X42)).
+# cnf(c1,plain,X45!=X44|singleton(X45)=singleton(X44)).
+# cnf(c6,axiom,~subset(X50,X49)|set_union2(X50,X49)=X49).
+# cnf(c38,plain,X53!=set_union2(X52,X52)|X53=X52).
+# cnf(c2,plain,X56!=X55|X57!=X54|~in(X56,X57)|in(X55,X54)).
+# cnf(c39,plain,X62!=X61|X62=set_union2(X61,X61)).
+# cnf(c3,plain,X66!=X65|X67!=X64|~subset(X66,X67)|subset(X65,X64)).
+# cnf(c53,plain,singleton(set_union2(X69,X69))=singleton(X69)).
+# cnf(c54,plain,singleton(X70)=singleton(set_union2(X70,X70))).
+# cnf(c21,negated_conjecture,set_union2(singleton(skolem0001),skolem0002)!=skolem0002).
+# cnf(c56,plain,set_union2(singleton(skolem0001),skolem0002)=skolem0002).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(l23_zfmisc_1,conjecture,(![A]:(![B]:(in(A,B)=>set_union2(singleton(A),B)=B))),input).
+fof(c16,negated_conjecture,(~(![A]:(![B]:(in(A,B)=>set_union2(singleton(A),B)=B)))),inference(assume_negation,status(cth),[l23_zfmisc_1])).
+fof(c17,negated_conjecture,(?[A]:(?[B]:(in(A,B)&set_union2(singleton(A),B)!=B))),inference(fof_nnf,status(thm),[c16])).
+fof(c18,negated_conjecture,(?[X9]:(?[X10]:(in(X9,X10)&set_union2(singleton(X9),X10)!=X10))),inference(variable_rename,status(thm),[c17])).
+fof(c19,negated_conjecture,(in(skolem0001,skolem0002)&set_union2(singleton(skolem0001),skolem0002)!=skolem0002),inference(skolemize,status(esa),[c18])).
+cnf(c21,negated_conjecture,set_union2(singleton(skolem0001),skolem0002)!=skolem0002,inference(split_conjunct,status(thm),[c19])).
+cnf(c20,negated_conjecture,in(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c19])).
+fof(l2_zfmisc_1,axiom,(![A]:(![B]:(subset(singleton(A),B)<=>in(A,B)))),input).
+fof(c10,axiom,(![A]:(![B]:((~subset(singleton(A),B)|in(A,B))&(~in(A,B)|subset(singleton(A),B))))),inference(fof_nnf,status(thm),[l2_zfmisc_1])).
+fof(c11,axiom,((![A]:(![B]:(~subset(singleton(A),B)|in(A,B))))&(![A]:(![B]:(~in(A,B)|subset(singleton(A),B))))),inference(shift_quantors,status(thm),[c10])).
+fof(c13,axiom,(![X5]:(![X6]:(![X7]:(![X8]:((~subset(singleton(X5),X6)|in(X5,X6))&(~in(X7,X8)|subset(singleton(X7),X8))))))),inference(shift_quantors,status(thm),[fof(c12,axiom,((![X5]:(![X6]:(~subset(singleton(X5),X6)|in(X5,X6))))&(![X7]:(![X8]:(~in(X7,X8)|subset(singleton(X7),X8))))),inference(variable_rename,status(thm),[c11])).])).
+cnf(c15,axiom,~in(X40,X39)|subset(singleton(X40),X39),inference(split_conjunct,status(thm),[c13])).
+cnf(c46,plain,subset(singleton(skolem0001),skolem0002),inference(resolution,status(thm),[c15, c20])).
+fof(t12_xboole_1,axiom,(![A]:(![B]:(subset(A,B)=>set_union2(A,B)=B))),input).
+fof(c4,axiom,(![A]:(![B]:(~subset(A,B)|set_union2(A,B)=B))),inference(fof_nnf,status(thm),[t12_xboole_1])).
+fof(c5,axiom,(![X2]:(![X3]:(~subset(X2,X3)|set_union2(X2,X3)=X3))),inference(variable_rename,status(thm),[c4])).
+cnf(c6,axiom,~subset(X50,X49)|set_union2(X50,X49)=X49,inference(split_conjunct,status(thm),[c5])).
+cnf(c56,plain,set_union2(singleton(skolem0001),skolem0002)=skolem0002,inference(resolution,status(thm),[c6, c46])).
+cnf(c82,plain,$false,inference(resolution,status(thm),[c56, c21])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 18
+# Processed clauses  : 27
+# Factors computed   : 0
+# Resolvents computed: 52
+# Tautologies deleted: 1
+# Forward subsumed   : 15
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.294 s
+# System time        : 0.294 s
+# Total time         : 0.589 s

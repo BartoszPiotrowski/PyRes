@@ -1,0 +1,512 @@
+# cnf(reflexivity,axiom,X81=X81).
+# cnf(c40,negated_conjecture,actual_world(skolem0001)).
+# cnf(c41,negated_conjecture,coffee(skolem0001,skolem0002)).
+# cnf(c42,negated_conjecture,human_person(skolem0001,skolem0003)).
+# cnf(c43,negated_conjecture,event(skolem0001,skolem0004)).
+# cnf(symmetry,axiom,X83!=X82|X82=X83).
+# cnf(c46,negated_conjecture,past(skolem0001,skolem0004)).
+# cnf(c47,negated_conjecture,nonreflexive(skolem0001,skolem0004)).
+# cnf(c48,negated_conjecture,drink(skolem0001,skolem0004)).
+# cnf(c44,negated_conjecture,agent(skolem0001,skolem0004,skolem0003)).
+# cnf(transitivity,axiom,X87!=X85|X85!=X86|X87=X86).
+# cnf(c45,negated_conjecture,patient(skolem0001,skolem0004,skolem0002)).
+# cnf(c64,axiom,~nonliving(X89,X88)|~living(X89,X88)).
+# cnf(c68,axiom,~existent(X90,X91)|~nonexistent(X90,X91)).
+# cnf(c72,axiom,~animate(X92,X93)|~nonliving(X92,X93)).
+# cnf(c75,axiom,~see(X94,X95)|event(X94,X95)).
+# cnf(c0,plain,X99!=X96|X98!=X97|~artifact(X99,X98)|artifact(X96,X97)).
+# cnf(c78,axiom,~event(X101,X100)|eventuality(X101,X100)).
+# cnf(c162,plain,eventuality(skolem0001,skolem0004)).
+# cnf(c81,axiom,~eventuality(X102,X103)|thing(X102,X103)).
+# cnf(c163,plain,thing(skolem0001,skolem0004)).
+# cnf(c84,axiom,~thing(X105,X104)|singleton(X105,X104)).
+# cnf(c1,plain,X109!=X106|X108!=X107|~object(X109,X108)|object(X106,X107)).
+# cnf(c164,plain,singleton(skolem0001,skolem0004)).
+# cnf(c87,axiom,~eventuality(X111,X110)|specific(X111,X110)).
+# cnf(c165,plain,specific(skolem0001,skolem0004)).
+# cnf(c90,axiom,~eventuality(X113,X112)|nonexistent(X113,X112)).
+# cnf(c166,plain,nonexistent(skolem0001,skolem0004)).
+# cnf(c2,plain,X117!=X114|X116!=X115|~building(X117,X116)|building(X114,X115)).
+# cnf(c167,plain,~existent(skolem0001,skolem0004)).
+# cnf(c93,axiom,~eventuality(X119,X118)|unisex(X119,X118)).
+# cnf(c168,plain,unisex(skolem0001,skolem0004)).
+# cnf(c96,axiom,~drink(X120,X121)|event(X120,X121)).
+# cnf(c3,plain,X125!=X122|X124!=X123|~restaurant(X125,X124)|restaurant(X122,X123)).
+# cnf(c99,axiom,~coffee(X126,X127)|beverage(X126,X127)).
+# cnf(c170,plain,beverage(skolem0001,skolem0002)).
+# cnf(c102,axiom,~beverage(X129,X128)|food(X129,X128)).
+# cnf(c171,plain,food(skolem0001,skolem0002)).
+# cnf(c105,axiom,~food(X130,X131)|substance_matter(X130,X131)).
+# cnf(c4,plain,X135!=X132|X134!=X133|~customer(X135,X134)|customer(X132,X133)).
+# cnf(c172,plain,substance_matter(skolem0001,skolem0002)).
+# cnf(c108,axiom,~substance_matter(X137,X136)|object(X137,X136)).
+# cnf(c173,plain,object(skolem0001,skolem0002)).
+# cnf(c111,axiom,~object(X138,X139)|entity(X138,X139)).
+# cnf(c175,plain,entity(skolem0001,skolem0002)).
+# cnf(c5,plain,X143!=X140|X142!=X141|~human_person(X143,X142)|human_person(X140,X141)).
+# cnf(c114,axiom,~entity(X145,X144)|thing(X145,X144)).
+# cnf(c177,plain,thing(skolem0001,skolem0002)).
+# cnf(c178,plain,singleton(skolem0001,skolem0002)).
+# cnf(c117,axiom,~entity(X147,X146)|specific(X147,X146)).
+# cnf(c179,plain,specific(skolem0001,skolem0002)).
+# cnf(c6,plain,X151!=X148|X150!=X149|~animate(X151,X150)|animate(X148,X149)).
+# cnf(c120,axiom,~entity(X152,X153)|existent(X152,X153)).
+# cnf(c180,plain,existent(skolem0001,skolem0002)).
+# cnf(c123,axiom,~object(X154,X155)|nonliving(X154,X155)).
+# cnf(c181,plain,nonliving(skolem0001,skolem0002)).
+# cnf(c182,plain,~animate(skolem0001,skolem0002)).
+# cnf(c7,plain,X159!=X156|X158!=X157|~human(X159,X158)|human(X156,X157)).
+# cnf(c126,axiom,~object(X161,X160)|impartial(X161,X160)).
+# cnf(c183,plain,impartial(skolem0001,skolem0002)).
+# cnf(c129,axiom,~object(X162,X163)|unisex(X162,X163)).
+# cnf(c184,plain,unisex(skolem0001,skolem0002)).
+# cnf(c132,axiom,~human_person(X165,X164)|organism(X165,X164)).
+# cnf(c8,plain,X169!=X166|X168!=X167|~organism(X169,X168)|organism(X166,X167)).
+# cnf(c185,plain,organism(skolem0001,skolem0003)).
+# cnf(c135,axiom,~organism(X170,X171)|entity(X170,X171)).
+# cnf(c187,plain,entity(skolem0001,skolem0003)).
+# cnf(c188,plain,existent(skolem0001,skolem0003)).
+# cnf(c189,plain,thing(skolem0001,skolem0003)).
+# cnf(c9,plain,X175!=X172|X174!=X173|~living(X175,X174)|living(X172,X173)).
+# cnf(c190,plain,specific(skolem0001,skolem0003)).
+# cnf(c191,plain,singleton(skolem0001,skolem0003)).
+# cnf(c138,axiom,~organism(X177,X176)|impartial(X177,X176)).
+# cnf(c192,plain,impartial(skolem0001,skolem0003)).
+# cnf(c141,axiom,~organism(X179,X178)|living(X179,X178)).
+# cnf(c10,plain,X183!=X180|X182!=X181|~impartial(X183,X182)|impartial(X180,X181)).
+# cnf(c193,plain,living(skolem0001,skolem0003)).
+# cnf(c197,plain,~nonliving(skolem0001,skolem0003)).
+# cnf(c144,axiom,~human_person(X184,X185)|human(X184,X185)).
+# cnf(c198,plain,human(skolem0001,skolem0003)).
+# cnf(c147,axiom,~human_person(X186,X187)|animate(X186,X187)).
+# cnf(c11,plain,X191!=X188|X190!=X189|~entity(X191,X190)|entity(X188,X189)).
+# cnf(c200,plain,animate(skolem0001,skolem0003)).
+# cnf(c150,axiom,~customer(X192,X193)|human_person(X192,X193)).
+# cnf(c153,axiom,~restaurant(X194,X195)|building(X194,X195)).
+# cnf(c156,axiom,~building(X196,X197)|artifact(X196,X197)).
+# cnf(c159,axiom,~artifact(X198,X199)|object(X198,X199)).
+# cnf(c12,plain,X203!=X200|X202!=X201|~unisex(X203,X202)|unisex(X200,X201)).
+# cnf(c30,plain,X207!=X206|~actual_world(X207)|actual_world(X206)).
+# cnf(c174,plain,skolem0001!=X209|skolem0002!=X210|object(X209,X210)).
+# cnf(c207,plain,skolem0001!=X211|object(X211,skolem0002)).
+# cnf(c13,plain,X215!=X212|X214!=X213|~nonliving(X215,X214)|nonliving(X212,X213)).
+# cnf(c176,plain,skolem0001!=X216|skolem0003!=X217|human_person(X216,X217)).
+# cnf(c210,plain,skolem0001!=X218|human_person(X218,skolem0003)).
+# cnf(c186,plain,skolem0001!=X219|skolem0003!=X220|organism(X219,X220)).
+# cnf(c14,plain,X224!=X221|X223!=X222|~existent(X224,X223)|existent(X221,X222)).
+# cnf(c212,plain,skolem0001!=X225|organism(X225,skolem0003)).
+# cnf(c194,plain,skolem0001!=X227|skolem0003!=X226|impartial(X227,X226)).
+# cnf(c216,plain,skolem0001!=X228|impartial(X228,skolem0003)).
+# cnf(c15,plain,X232!=X229|X231!=X230|~specific(X232,X231)|specific(X229,X230)).
+# cnf(c195,plain,skolem0001!=X234|skolem0002!=X233|impartial(X234,X233)).
+# cnf(c221,plain,skolem0001!=X235|impartial(X235,skolem0002)).
+# cnf(c196,plain,skolem0001!=X236|skolem0003!=X237|living(X236,X237)).
+# cnf(c223,plain,skolem0001!=X238|living(X238,skolem0003)).
+# cnf(c16,plain,X242!=X239|X241!=X240|~thing(X242,X241)|thing(X239,X240)).
+# cnf(c199,plain,skolem0001!=X244|skolem0003!=X243|human(X244,X243)).
+# cnf(c228,plain,skolem0001!=X245|human(X245,skolem0003)).
+# cnf(c201,plain,skolem0001!=X246|skolem0003!=X247|entity(X246,X247)).
+# cnf(c17,plain,X251!=X248|X250!=X249|~substance_matter(X251,X250)|substance_matter(X248,X249)).
+# cnf(c230,plain,skolem0001!=X252|entity(X252,skolem0003)).
+# cnf(c202,plain,skolem0001!=X253|skolem0002!=X254|entity(X253,X254)).
+# cnf(c233,plain,skolem0001!=X255|entity(X255,skolem0002)).
+# cnf(c18,plain,X259!=X256|X258!=X257|~food(X259,X258)|food(X256,X257)).
+# cnf(c203,plain,skolem0001!=X261|skolem0003!=X260|animate(X261,X260)).
+# cnf(c236,plain,skolem0001!=X262|animate(X262,skolem0003)).
+# cnf(c204,plain,skolem0001!=X263|skolem0004!=X264|unisex(X263,X264)).
+# cnf(c238,plain,skolem0001!=X265|unisex(X265,skolem0004)).
+# cnf(c19,plain,X269!=X266|X268!=X267|~beverage(X269,X268)|beverage(X266,X267)).
+# cnf(c205,plain,skolem0001!=X270|skolem0002!=X271|unisex(X270,X271)).
+# cnf(c241,plain,skolem0001!=X272|unisex(X272,skolem0002)).
+# cnf(c209,plain,skolem0001!=X273|skolem0002!=X274|nonliving(X273,X274)).
+# cnf(c20,plain,X278!=X275|X277!=X276|~coffee(X278,X277)|coffee(X275,X276)).
+# cnf(c243,plain,skolem0001!=X279|nonliving(X279,skolem0002)).
+# cnf(c213,plain,skolem0001!=X280|skolem0002!=X281|existent(X280,X281)).
+# cnf(c246,plain,skolem0001!=X282|existent(X282,skolem0002)).
+# cnf(c21,plain,X286!=X283|X285!=X284|~drink(X286,X285)|drink(X283,X284)).
+# cnf(c214,plain,skolem0001!=X287|skolem0003!=X288|existent(X287,X288)).
+# cnf(c249,plain,skolem0001!=X289|existent(X289,skolem0003)).
+# cnf(c218,plain,skolem0001!=X291|skolem0003!=X290|specific(X291,X290)).
+# cnf(c251,plain,skolem0001!=X292|specific(X292,skolem0003)).
+# cnf(c22,plain,X296!=X293|X295!=X294|~event(X296,X295)|event(X293,X294)).
+# cnf(c219,plain,skolem0001!=X298|skolem0002!=X297|specific(X298,X297)).
+# cnf(c254,plain,skolem0001!=X299|specific(X299,skolem0002)).
+# cnf(c220,plain,skolem0001!=X301|skolem0004!=X300|specific(X301,X300)).
+# cnf(c23,plain,X305!=X302|X304!=X303|~eventuality(X305,X304)|eventuality(X302,X303)).
+# cnf(c256,plain,skolem0001!=X306|specific(X306,skolem0004)).
+# cnf(c225,plain,skolem0001!=X307|skolem0004!=X308|thing(X307,X308)).
+# cnf(c259,plain,skolem0001!=X309|thing(X309,skolem0004)).
+# cnf(c24,plain,X313!=X310|X312!=X311|~nonexistent(X313,X312)|nonexistent(X310,X311)).
+# cnf(c226,plain,skolem0001!=X314|skolem0002!=X315|thing(X314,X315)).
+# cnf(c262,plain,skolem0001!=X316|thing(X316,skolem0002)).
+# cnf(c227,plain,skolem0001!=X317|skolem0003!=X318|thing(X317,X318)).
+# cnf(c264,plain,skolem0001!=X319|thing(X319,skolem0003)).
+# cnf(c25,plain,X323!=X320|X322!=X321|~singleton(X323,X322)|singleton(X320,X321)).
+# cnf(c231,plain,skolem0001!=X325|skolem0002!=X324|substance_matter(X325,X324)).
+# cnf(c269,plain,skolem0001!=X326|substance_matter(X326,skolem0002)).
+# cnf(c235,plain,skolem0001!=X327|skolem0002!=X328|food(X327,X328)).
+# cnf(c26,plain,X332!=X329|X331!=X330|~see(X332,X331)|see(X329,X330)).
+# cnf(c271,plain,skolem0001!=X333|food(X333,skolem0002)).
+# cnf(c240,plain,skolem0001!=X334|skolem0002!=X335|beverage(X334,X335)).
+# cnf(c273,plain,skolem0001!=X336|beverage(X336,skolem0002)).
+# cnf(c27,plain,X340!=X337|X341!=X339|X338!=X342|~agent(X340,X341,X338)|agent(X337,X339,X342)).
+# cnf(c244,plain,skolem0001!=X344|skolem0002!=X343|coffee(X344,X343)).
+# cnf(c276,plain,skolem0001!=X345|coffee(X345,skolem0002)).
+# cnf(c248,plain,skolem0001!=X346|skolem0004!=X347|drink(X346,X347)).
+# cnf(c278,plain,skolem0001!=X348|drink(X348,skolem0004)).
+# cnf(c28,plain,X352!=X349|X353!=X351|X350!=X354|~patient(X352,X353,X350)|patient(X349,X351,X354)).
+# cnf(c253,plain,skolem0001!=X355|skolem0004!=X356|event(X355,X356)).
+# cnf(c281,plain,skolem0001!=X357|event(X357,skolem0004)).
+# cnf(c257,plain,skolem0001!=X358|skolem0004!=X359|eventuality(X358,X359)).
+# cnf(c29,plain,X363!=X360|X362!=X361|~nonreflexive(X363,X362)|nonreflexive(X360,X361)).
+# cnf(c283,plain,skolem0001!=X364|eventuality(X364,skolem0004)).
+# cnf(c261,plain,skolem0001!=X365|skolem0004!=X366|nonexistent(X365,X366)).
+# cnf(c286,plain,skolem0001!=X367|nonexistent(X367,skolem0004)).
+# cnf(c31,plain,X371!=X368|X370!=X369|~past(X371,X370)|past(X368,X369)).
+# cnf(c266,plain,skolem0001!=X373|skolem0004!=X372|singleton(X373,X372)).
+# cnf(c289,plain,skolem0001!=X374|singleton(X374,skolem0004)).
+# cnf(c267,plain,skolem0001!=X376|skolem0002!=X375|singleton(X376,X375)).
+# cnf(c291,plain,skolem0001!=X377|singleton(X377,skolem0002)).
+# cnf(c32,plain,X381!=X378|X382!=X380|X379!=X383|~in(X381,X382,X379)|in(X378,X380,X383)).
+# cnf(c268,plain,skolem0001!=X385|skolem0003!=X384|singleton(X385,X384)).
+# cnf(c293,plain,skolem0001!=X386|singleton(X386,skolem0003)).
+# cnf(c284,plain,skolem0001!=X388|skolem0004!=X387|nonreflexive(X388,X387)).
+# cnf(c49,negated_conjecture,~customer(skolem0001,X390)|~restaurant(skolem0001,X389)|~in(skolem0001,X390,X389)|event(skolem0001,skolem0005(X390))).
+# cnf(c295,plain,skolem0001!=X391|nonreflexive(X391,skolem0004)).
+# cnf(c288,plain,skolem0001!=X392|skolem0004!=X393|past(X392,X393)).
+# cnf(c297,plain,skolem0001!=X394|past(X394,skolem0004)).
+# cnf(c50,negated_conjecture,~customer(skolem0001,X396)|~restaurant(skolem0001,X395)|~in(skolem0001,X396,X395)|agent(skolem0001,skolem0005(X396),X396)).
+# cnf(c57,axiom,~nonreflexive(X397,X399)|~agent(X397,X399,X400)|~patient(X397,X399,X398)|X400!=X398).
+# cnf(c60,axiom,~drink(X402,X404)|~agent(X402,X404,X401)|~patient(X402,X404,X403)|beverage(X402,X403)).
+# cnf(c299,plain,~nonreflexive(skolem0001,skolem0004)|~agent(skolem0001,skolem0004,X405)|X405!=skolem0002).
+# cnf(c301,plain,~nonreflexive(skolem0001,skolem0004)|skolem0003!=skolem0002).
+# cnf(c51,negated_conjecture,~customer(skolem0001,X408)|~restaurant(skolem0001,X407)|~in(skolem0001,X408,X407)|patient(skolem0001,skolem0005(X408),skolem0003)).
+# cnf(c275,plain,skolem0001!=X411|skolem0004!=X409|skolem0003!=X410|agent(X411,X409,X410)).
+# cnf(c302,plain,skolem0001!=X413|skolem0004!=X412|agent(X413,X412,skolem0003)).
+# cnf(c303,plain,skolem0001!=X414|agent(X414,skolem0004,skolem0003)).
+# cnf(c280,plain,skolem0001!=X417|skolem0004!=X416|skolem0002!=X415|patient(X417,X416,X415)).
+# cnf(c52,negated_conjecture,~customer(skolem0001,X419)|~restaurant(skolem0001,X418)|~in(skolem0001,X419,X418)|past(skolem0001,skolem0005(X419))).
+# cnf(c305,plain,skolem0001!=X420|skolem0004!=X421|patient(X420,X421,skolem0002)).
+# cnf(c306,plain,skolem0001!=X422|patient(X422,skolem0004,skolem0002)).
+# cnf(c53,negated_conjecture,~customer(skolem0001,X424)|~restaurant(skolem0001,X423)|~in(skolem0001,X424,X423)|nonreflexive(skolem0001,skolem0005(X424))).
+# cnf(c54,negated_conjecture,~customer(skolem0001,X426)|~restaurant(skolem0001,X425)|~in(skolem0001,X426,X425)|see(skolem0001,skolem0005(X426))).
+# SZS status CounterSatisfiable
+# SZS output start Saturation
+fof(co1,conjecture,(~(?[U]:(actual_world(U)&(?[V]:(?[W]:(?[X]:((((((((coffee(U,V)&human_person(U,W))&event(U,X))&agent(U,X,W))&patient(U,X,V))&past(U,X))&nonreflexive(U,X))&drink(U,X))&(![Y]:(![Z]:(((customer(U,Y)&restaurant(U,Z))&in(U,Y,Z))=>(?[X1]:(((((event(U,X1)&agent(U,X1,Y))&patient(U,X1,W))&past(U,X1))&nonreflexive(U,X1))&see(U,X1))))))))))))),input).
+fof(c33,negated_conjecture,(~(~(?[U]:(actual_world(U)&(?[V]:(?[W]:(?[X]:((((((((coffee(U,V)&human_person(U,W))&event(U,X))&agent(U,X,W))&patient(U,X,V))&past(U,X))&nonreflexive(U,X))&drink(U,X))&(![Y]:(![Z]:(((customer(U,Y)&restaurant(U,Z))&in(U,Y,Z))=>(?[X1]:(((((event(U,X1)&agent(U,X1,Y))&patient(U,X1,W))&past(U,X1))&nonreflexive(U,X1))&see(U,X1)))))))))))))),inference(assume_negation,status(cth),[co1])).
+fof(c34,negated_conjecture,(?[U]:(actual_world(U)&(?[V]:(?[W]:(?[X]:((((((((coffee(U,V)&human_person(U,W))&event(U,X))&agent(U,X,W))&patient(U,X,V))&past(U,X))&nonreflexive(U,X))&drink(U,X))&(![Y]:(![Z]:(((~customer(U,Y)|~restaurant(U,Z))|~in(U,Y,Z))|(?[X1]:(((((event(U,X1)&agent(U,X1,Y))&patient(U,X1,W))&past(U,X1))&nonreflexive(U,X1))&see(U,X1)))))))))))),inference(fof_nnf,status(thm),[c33])).
+fof(c35,negated_conjecture,(?[U]:(actual_world(U)&(?[V]:(?[W]:((?[X]:(((((((coffee(U,V)&human_person(U,W))&event(U,X))&agent(U,X,W))&patient(U,X,V))&past(U,X))&nonreflexive(U,X))&drink(U,X)))&(![Y]:((![Z]:((~customer(U,Y)|~restaurant(U,Z))|~in(U,Y,Z)))|(?[X1]:(((((event(U,X1)&agent(U,X1,Y))&patient(U,X1,W))&past(U,X1))&nonreflexive(U,X1))&see(U,X1)))))))))),inference(shift_quantors,status(thm),[c34])).
+fof(c36,negated_conjecture,(?[X2]:(actual_world(X2)&(?[X3]:(?[X4]:((?[X5]:(((((((coffee(X2,X3)&human_person(X2,X4))&event(X2,X5))&agent(X2,X5,X4))&patient(X2,X5,X3))&past(X2,X5))&nonreflexive(X2,X5))&drink(X2,X5)))&(![X6]:((![X7]:((~customer(X2,X6)|~restaurant(X2,X7))|~in(X2,X6,X7)))|(?[X8]:(((((event(X2,X8)&agent(X2,X8,X6))&patient(X2,X8,X4))&past(X2,X8))&nonreflexive(X2,X8))&see(X2,X8)))))))))),inference(variable_rename,status(thm),[c35])).
+fof(c38,negated_conjecture,(![X6]:(![X7]:(actual_world(skolem0001)&((((((((coffee(skolem0001,skolem0002)&human_person(skolem0001,skolem0003))&event(skolem0001,skolem0004))&agent(skolem0001,skolem0004,skolem0003))&patient(skolem0001,skolem0004,skolem0002))&past(skolem0001,skolem0004))&nonreflexive(skolem0001,skolem0004))&drink(skolem0001,skolem0004))&(((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|(((((event(skolem0001,skolem0005(X6))&agent(skolem0001,skolem0005(X6),X6))&patient(skolem0001,skolem0005(X6),skolem0003))&past(skolem0001,skolem0005(X6)))&nonreflexive(skolem0001,skolem0005(X6)))&see(skolem0001,skolem0005(X6)))))))),inference(shift_quantors,status(thm),[fof(c37,negated_conjecture,(actual_world(skolem0001)&((((((((coffee(skolem0001,skolem0002)&human_person(skolem0001,skolem0003))&event(skolem0001,skolem0004))&agent(skolem0001,skolem0004,skolem0003))&patient(skolem0001,skolem0004,skolem0002))&past(skolem0001,skolem0004))&nonreflexive(skolem0001,skolem0004))&drink(skolem0001,skolem0004))&(![X6]:((![X7]:((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7)))|(((((event(skolem0001,skolem0005(X6))&agent(skolem0001,skolem0005(X6),X6))&patient(skolem0001,skolem0005(X6),skolem0003))&past(skolem0001,skolem0005(X6)))&nonreflexive(skolem0001,skolem0005(X6)))&see(skolem0001,skolem0005(X6))))))),inference(skolemize,status(esa),[c36])).])).
+fof(c39,negated_conjecture,(![X6]:(![X7]:(actual_world(skolem0001)&((((((((coffee(skolem0001,skolem0002)&human_person(skolem0001,skolem0003))&event(skolem0001,skolem0004))&agent(skolem0001,skolem0004,skolem0003))&patient(skolem0001,skolem0004,skolem0002))&past(skolem0001,skolem0004))&nonreflexive(skolem0001,skolem0004))&drink(skolem0001,skolem0004))&((((((((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|event(skolem0001,skolem0005(X6)))&(((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|agent(skolem0001,skolem0005(X6),X6)))&(((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|patient(skolem0001,skolem0005(X6),skolem0003)))&(((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|past(skolem0001,skolem0005(X6))))&(((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|nonreflexive(skolem0001,skolem0005(X6))))&(((~customer(skolem0001,X6)|~restaurant(skolem0001,X7))|~in(skolem0001,X6,X7))|see(skolem0001,skolem0005(X6)))))))),inference(distribute,status(thm),[c38])).
+cnf(c54,negated_conjecture,~customer(skolem0001,X426)|~restaurant(skolem0001,X425)|~in(skolem0001,X426,X425)|see(skolem0001,skolem0005(X426)),inference(split_conjunct,status(thm),[c39])).
+cnf(c53,negated_conjecture,~customer(skolem0001,X424)|~restaurant(skolem0001,X423)|~in(skolem0001,X424,X423)|nonreflexive(skolem0001,skolem0005(X424)),inference(split_conjunct,status(thm),[c39])).
+cnf(reflexivity,axiom,X81=X81,eq_axiom).
+cnf(c45,negated_conjecture,patient(skolem0001,skolem0004,skolem0002),inference(split_conjunct,status(thm),[c39])).
+cnf(c28,plain,X352!=X349|X353!=X351|X350!=X354|~patient(X352,X353,X350)|patient(X349,X351,X354),eq_axiom).
+cnf(c280,plain,skolem0001!=X417|skolem0004!=X416|skolem0002!=X415|patient(X417,X416,X415),inference(resolution,status(thm),[c28, c45])).
+cnf(c305,plain,skolem0001!=X420|skolem0004!=X421|patient(X420,X421,skolem0002),inference(resolution,status(thm),[c280, reflexivity])).
+cnf(c306,plain,skolem0001!=X422|patient(X422,skolem0004,skolem0002),inference(resolution,status(thm),[c305, reflexivity])).
+cnf(c52,negated_conjecture,~customer(skolem0001,X419)|~restaurant(skolem0001,X418)|~in(skolem0001,X419,X418)|past(skolem0001,skolem0005(X419)),inference(split_conjunct,status(thm),[c39])).
+cnf(c44,negated_conjecture,agent(skolem0001,skolem0004,skolem0003),inference(split_conjunct,status(thm),[c39])).
+cnf(c27,plain,X340!=X337|X341!=X339|X338!=X342|~agent(X340,X341,X338)|agent(X337,X339,X342),eq_axiom).
+cnf(c275,plain,skolem0001!=X411|skolem0004!=X409|skolem0003!=X410|agent(X411,X409,X410),inference(resolution,status(thm),[c27, c44])).
+cnf(c302,plain,skolem0001!=X413|skolem0004!=X412|agent(X413,X412,skolem0003),inference(resolution,status(thm),[c275, reflexivity])).
+cnf(c303,plain,skolem0001!=X414|agent(X414,skolem0004,skolem0003),inference(resolution,status(thm),[c302, reflexivity])).
+cnf(c51,negated_conjecture,~customer(skolem0001,X408)|~restaurant(skolem0001,X407)|~in(skolem0001,X408,X407)|patient(skolem0001,skolem0005(X408),skolem0003),inference(split_conjunct,status(thm),[c39])).
+fof(ax34,axiom,(![U]:(![V]:(![W]:(![X]:(((nonreflexive(U,V)&agent(U,V,W))&patient(U,V,X))=>W!=X))))),input).
+fof(c55,axiom,(![U]:(![V]:(![W]:(![X]:(((~nonreflexive(U,V)|~agent(U,V,W))|~patient(U,V,X))|W!=X))))),inference(fof_nnf,status(thm),[ax34])).
+fof(c56,axiom,(![X9]:(![X10]:(![X11]:(![X12]:(((~nonreflexive(X9,X10)|~agent(X9,X10,X11))|~patient(X9,X10,X12))|X11!=X12))))),inference(variable_rename,status(thm),[c55])).
+cnf(c57,axiom,~nonreflexive(X397,X399)|~agent(X397,X399,X400)|~patient(X397,X399,X398)|X400!=X398,inference(split_conjunct,status(thm),[c56])).
+cnf(c299,plain,~nonreflexive(skolem0001,skolem0004)|~agent(skolem0001,skolem0004,X405)|X405!=skolem0002,inference(resolution,status(thm),[c57, c45])).
+cnf(c301,plain,~nonreflexive(skolem0001,skolem0004)|skolem0003!=skolem0002,inference(resolution,status(thm),[c299, c44])).
+fof(ax33,axiom,(![U]:(![V]:(![W]:(![X]:(((drink(U,V)&agent(U,V,W))&patient(U,V,X))=>beverage(U,X)))))),input).
+fof(c58,axiom,(![U]:(![V]:(![W]:(![X]:(((~drink(U,V)|~agent(U,V,W))|~patient(U,V,X))|beverage(U,X)))))),inference(fof_nnf,status(thm),[ax33])).
+fof(c59,axiom,(![X13]:(![X14]:(![X15]:(![X16]:(((~drink(X13,X14)|~agent(X13,X14,X15))|~patient(X13,X14,X16))|beverage(X13,X16)))))),inference(variable_rename,status(thm),[c58])).
+cnf(c60,axiom,~drink(X402,X404)|~agent(X402,X404,X401)|~patient(X402,X404,X403)|beverage(X402,X403),inference(split_conjunct,status(thm),[c59])).
+cnf(c50,negated_conjecture,~customer(skolem0001,X396)|~restaurant(skolem0001,X395)|~in(skolem0001,X396,X395)|agent(skolem0001,skolem0005(X396),X396),inference(split_conjunct,status(thm),[c39])).
+cnf(c46,negated_conjecture,past(skolem0001,skolem0004),inference(split_conjunct,status(thm),[c39])).
+cnf(c31,plain,X371!=X368|X370!=X369|~past(X371,X370)|past(X368,X369),eq_axiom).
+cnf(c288,plain,skolem0001!=X392|skolem0004!=X393|past(X392,X393),inference(resolution,status(thm),[c31, c46])).
+cnf(c297,plain,skolem0001!=X394|past(X394,skolem0004),inference(resolution,status(thm),[c288, reflexivity])).
+cnf(c47,negated_conjecture,nonreflexive(skolem0001,skolem0004),inference(split_conjunct,status(thm),[c39])).
+cnf(c29,plain,X363!=X360|X362!=X361|~nonreflexive(X363,X362)|nonreflexive(X360,X361),eq_axiom).
+cnf(c284,plain,skolem0001!=X388|skolem0004!=X387|nonreflexive(X388,X387),inference(resolution,status(thm),[c29, c47])).
+cnf(c295,plain,skolem0001!=X391|nonreflexive(X391,skolem0004),inference(resolution,status(thm),[c284, reflexivity])).
+cnf(c49,negated_conjecture,~customer(skolem0001,X390)|~restaurant(skolem0001,X389)|~in(skolem0001,X390,X389)|event(skolem0001,skolem0005(X390)),inference(split_conjunct,status(thm),[c39])).
+fof(ax26,axiom,(![U]:(![V]:(thing(U,V)=>singleton(U,V)))),input).
+fof(c82,axiom,(![U]:(![V]:(~thing(U,V)|singleton(U,V)))),inference(fof_nnf,status(thm),[ax26])).
+fof(c83,axiom,(![X29]:(![X30]:(~thing(X29,X30)|singleton(X29,X30)))),inference(variable_rename,status(thm),[c82])).
+cnf(c84,axiom,~thing(X105,X104)|singleton(X105,X104),inference(split_conjunct,status(thm),[c83])).
+fof(ax16,axiom,(![U]:(![V]:(entity(U,V)=>thing(U,V)))),input).
+fof(c112,axiom,(![U]:(![V]:(~entity(U,V)|thing(U,V)))),inference(fof_nnf,status(thm),[ax16])).
+fof(c113,axiom,(![X49]:(![X50]:(~entity(X49,X50)|thing(X49,X50)))),inference(variable_rename,status(thm),[c112])).
+cnf(c114,axiom,~entity(X145,X144)|thing(X145,X144),inference(split_conjunct,status(thm),[c113])).
+cnf(c42,negated_conjecture,human_person(skolem0001,skolem0003),inference(split_conjunct,status(thm),[c39])).
+fof(ax10,axiom,(![U]:(![V]:(human_person(U,V)=>organism(U,V)))),input).
+fof(c130,axiom,(![U]:(![V]:(~human_person(U,V)|organism(U,V)))),inference(fof_nnf,status(thm),[ax10])).
+fof(c131,axiom,(![X61]:(![X62]:(~human_person(X61,X62)|organism(X61,X62)))),inference(variable_rename,status(thm),[c130])).
+cnf(c132,axiom,~human_person(X165,X164)|organism(X165,X164),inference(split_conjunct,status(thm),[c131])).
+cnf(c185,plain,organism(skolem0001,skolem0003),inference(resolution,status(thm),[c132, c42])).
+fof(ax9,axiom,(![U]:(![V]:(organism(U,V)=>entity(U,V)))),input).
+fof(c133,axiom,(![U]:(![V]:(~organism(U,V)|entity(U,V)))),inference(fof_nnf,status(thm),[ax9])).
+fof(c134,axiom,(![X63]:(![X64]:(~organism(X63,X64)|entity(X63,X64)))),inference(variable_rename,status(thm),[c133])).
+cnf(c135,axiom,~organism(X170,X171)|entity(X170,X171),inference(split_conjunct,status(thm),[c134])).
+cnf(c187,plain,entity(skolem0001,skolem0003),inference(resolution,status(thm),[c135, c185])).
+cnf(c189,plain,thing(skolem0001,skolem0003),inference(resolution,status(thm),[c187, c114])).
+cnf(c191,plain,singleton(skolem0001,skolem0003),inference(resolution,status(thm),[c189, c84])).
+cnf(c25,plain,X323!=X320|X322!=X321|~singleton(X323,X322)|singleton(X320,X321),eq_axiom).
+cnf(c268,plain,skolem0001!=X385|skolem0003!=X384|singleton(X385,X384),inference(resolution,status(thm),[c25, c191])).
+cnf(c293,plain,skolem0001!=X386|singleton(X386,skolem0003),inference(resolution,status(thm),[c268, reflexivity])).
+cnf(c32,plain,X381!=X378|X382!=X380|X379!=X383|~in(X381,X382,X379)|in(X378,X380,X383),eq_axiom).
+cnf(c41,negated_conjecture,coffee(skolem0001,skolem0002),inference(split_conjunct,status(thm),[c39])).
+fof(ax21,axiom,(![U]:(![V]:(coffee(U,V)=>beverage(U,V)))),input).
+fof(c97,axiom,(![U]:(![V]:(~coffee(U,V)|beverage(U,V)))),inference(fof_nnf,status(thm),[ax21])).
+fof(c98,axiom,(![X39]:(![X40]:(~coffee(X39,X40)|beverage(X39,X40)))),inference(variable_rename,status(thm),[c97])).
+cnf(c99,axiom,~coffee(X126,X127)|beverage(X126,X127),inference(split_conjunct,status(thm),[c98])).
+cnf(c170,plain,beverage(skolem0001,skolem0002),inference(resolution,status(thm),[c99, c41])).
+fof(ax20,axiom,(![U]:(![V]:(beverage(U,V)=>food(U,V)))),input).
+fof(c100,axiom,(![U]:(![V]:(~beverage(U,V)|food(U,V)))),inference(fof_nnf,status(thm),[ax20])).
+fof(c101,axiom,(![X41]:(![X42]:(~beverage(X41,X42)|food(X41,X42)))),inference(variable_rename,status(thm),[c100])).
+cnf(c102,axiom,~beverage(X129,X128)|food(X129,X128),inference(split_conjunct,status(thm),[c101])).
+cnf(c171,plain,food(skolem0001,skolem0002),inference(resolution,status(thm),[c102, c170])).
+fof(ax19,axiom,(![U]:(![V]:(food(U,V)=>substance_matter(U,V)))),input).
+fof(c103,axiom,(![U]:(![V]:(~food(U,V)|substance_matter(U,V)))),inference(fof_nnf,status(thm),[ax19])).
+fof(c104,axiom,(![X43]:(![X44]:(~food(X43,X44)|substance_matter(X43,X44)))),inference(variable_rename,status(thm),[c103])).
+cnf(c105,axiom,~food(X130,X131)|substance_matter(X130,X131),inference(split_conjunct,status(thm),[c104])).
+cnf(c172,plain,substance_matter(skolem0001,skolem0002),inference(resolution,status(thm),[c105, c171])).
+fof(ax18,axiom,(![U]:(![V]:(substance_matter(U,V)=>object(U,V)))),input).
+fof(c106,axiom,(![U]:(![V]:(~substance_matter(U,V)|object(U,V)))),inference(fof_nnf,status(thm),[ax18])).
+fof(c107,axiom,(![X45]:(![X46]:(~substance_matter(X45,X46)|object(X45,X46)))),inference(variable_rename,status(thm),[c106])).
+cnf(c108,axiom,~substance_matter(X137,X136)|object(X137,X136),inference(split_conjunct,status(thm),[c107])).
+cnf(c173,plain,object(skolem0001,skolem0002),inference(resolution,status(thm),[c108, c172])).
+fof(ax17,axiom,(![U]:(![V]:(object(U,V)=>entity(U,V)))),input).
+fof(c109,axiom,(![U]:(![V]:(~object(U,V)|entity(U,V)))),inference(fof_nnf,status(thm),[ax17])).
+fof(c110,axiom,(![X47]:(![X48]:(~object(X47,X48)|entity(X47,X48)))),inference(variable_rename,status(thm),[c109])).
+cnf(c111,axiom,~object(X138,X139)|entity(X138,X139),inference(split_conjunct,status(thm),[c110])).
+cnf(c175,plain,entity(skolem0001,skolem0002),inference(resolution,status(thm),[c111, c173])).
+cnf(c177,plain,thing(skolem0001,skolem0002),inference(resolution,status(thm),[c114, c175])).
+cnf(c178,plain,singleton(skolem0001,skolem0002),inference(resolution,status(thm),[c177, c84])).
+cnf(c267,plain,skolem0001!=X376|skolem0002!=X375|singleton(X376,X375),inference(resolution,status(thm),[c25, c178])).
+cnf(c291,plain,skolem0001!=X377|singleton(X377,skolem0002),inference(resolution,status(thm),[c267, reflexivity])).
+cnf(c43,negated_conjecture,event(skolem0001,skolem0004),inference(split_conjunct,status(thm),[c39])).
+fof(ax28,axiom,(![U]:(![V]:(event(U,V)=>eventuality(U,V)))),input).
+fof(c76,axiom,(![U]:(![V]:(~event(U,V)|eventuality(U,V)))),inference(fof_nnf,status(thm),[ax28])).
+fof(c77,axiom,(![X25]:(![X26]:(~event(X25,X26)|eventuality(X25,X26)))),inference(variable_rename,status(thm),[c76])).
+cnf(c78,axiom,~event(X101,X100)|eventuality(X101,X100),inference(split_conjunct,status(thm),[c77])).
+cnf(c162,plain,eventuality(skolem0001,skolem0004),inference(resolution,status(thm),[c78, c43])).
+fof(ax27,axiom,(![U]:(![V]:(eventuality(U,V)=>thing(U,V)))),input).
+fof(c79,axiom,(![U]:(![V]:(~eventuality(U,V)|thing(U,V)))),inference(fof_nnf,status(thm),[ax27])).
+fof(c80,axiom,(![X27]:(![X28]:(~eventuality(X27,X28)|thing(X27,X28)))),inference(variable_rename,status(thm),[c79])).
+cnf(c81,axiom,~eventuality(X102,X103)|thing(X102,X103),inference(split_conjunct,status(thm),[c80])).
+cnf(c163,plain,thing(skolem0001,skolem0004),inference(resolution,status(thm),[c81, c162])).
+cnf(c164,plain,singleton(skolem0001,skolem0004),inference(resolution,status(thm),[c84, c163])).
+cnf(c266,plain,skolem0001!=X373|skolem0004!=X372|singleton(X373,X372),inference(resolution,status(thm),[c25, c164])).
+cnf(c289,plain,skolem0001!=X374|singleton(X374,skolem0004),inference(resolution,status(thm),[c266, reflexivity])).
+fof(ax24,axiom,(![U]:(![V]:(eventuality(U,V)=>nonexistent(U,V)))),input).
+fof(c88,axiom,(![U]:(![V]:(~eventuality(U,V)|nonexistent(U,V)))),inference(fof_nnf,status(thm),[ax24])).
+fof(c89,axiom,(![X33]:(![X34]:(~eventuality(X33,X34)|nonexistent(X33,X34)))),inference(variable_rename,status(thm),[c88])).
+cnf(c90,axiom,~eventuality(X113,X112)|nonexistent(X113,X112),inference(split_conjunct,status(thm),[c89])).
+cnf(c166,plain,nonexistent(skolem0001,skolem0004),inference(resolution,status(thm),[c90, c162])).
+cnf(c24,plain,X313!=X310|X312!=X311|~nonexistent(X313,X312)|nonexistent(X310,X311),eq_axiom).
+cnf(c261,plain,skolem0001!=X365|skolem0004!=X366|nonexistent(X365,X366),inference(resolution,status(thm),[c24, c166])).
+cnf(c286,plain,skolem0001!=X367|nonexistent(X367,skolem0004),inference(resolution,status(thm),[c261, reflexivity])).
+cnf(c23,plain,X305!=X302|X304!=X303|~eventuality(X305,X304)|eventuality(X302,X303),eq_axiom).
+cnf(c257,plain,skolem0001!=X358|skolem0004!=X359|eventuality(X358,X359),inference(resolution,status(thm),[c23, c162])).
+cnf(c283,plain,skolem0001!=X364|eventuality(X364,skolem0004),inference(resolution,status(thm),[c257, reflexivity])).
+cnf(c22,plain,X296!=X293|X295!=X294|~event(X296,X295)|event(X293,X294),eq_axiom).
+cnf(c253,plain,skolem0001!=X355|skolem0004!=X356|event(X355,X356),inference(resolution,status(thm),[c22, c43])).
+cnf(c281,plain,skolem0001!=X357|event(X357,skolem0004),inference(resolution,status(thm),[c253, reflexivity])).
+cnf(c48,negated_conjecture,drink(skolem0001,skolem0004),inference(split_conjunct,status(thm),[c39])).
+cnf(c21,plain,X286!=X283|X285!=X284|~drink(X286,X285)|drink(X283,X284),eq_axiom).
+cnf(c248,plain,skolem0001!=X346|skolem0004!=X347|drink(X346,X347),inference(resolution,status(thm),[c21, c48])).
+cnf(c278,plain,skolem0001!=X348|drink(X348,skolem0004),inference(resolution,status(thm),[c248, reflexivity])).
+cnf(c20,plain,X278!=X275|X277!=X276|~coffee(X278,X277)|coffee(X275,X276),eq_axiom).
+cnf(c244,plain,skolem0001!=X344|skolem0002!=X343|coffee(X344,X343),inference(resolution,status(thm),[c20, c41])).
+cnf(c276,plain,skolem0001!=X345|coffee(X345,skolem0002),inference(resolution,status(thm),[c244, reflexivity])).
+cnf(c19,plain,X269!=X266|X268!=X267|~beverage(X269,X268)|beverage(X266,X267),eq_axiom).
+cnf(c240,plain,skolem0001!=X334|skolem0002!=X335|beverage(X334,X335),inference(resolution,status(thm),[c19, c170])).
+cnf(c273,plain,skolem0001!=X336|beverage(X336,skolem0002),inference(resolution,status(thm),[c240, reflexivity])).
+cnf(c18,plain,X259!=X256|X258!=X257|~food(X259,X258)|food(X256,X257),eq_axiom).
+cnf(c235,plain,skolem0001!=X327|skolem0002!=X328|food(X327,X328),inference(resolution,status(thm),[c18, c171])).
+cnf(c271,plain,skolem0001!=X333|food(X333,skolem0002),inference(resolution,status(thm),[c235, reflexivity])).
+cnf(c26,plain,X332!=X329|X331!=X330|~see(X332,X331)|see(X329,X330),eq_axiom).
+cnf(c17,plain,X251!=X248|X250!=X249|~substance_matter(X251,X250)|substance_matter(X248,X249),eq_axiom).
+cnf(c231,plain,skolem0001!=X325|skolem0002!=X324|substance_matter(X325,X324),inference(resolution,status(thm),[c17, c172])).
+cnf(c269,plain,skolem0001!=X326|substance_matter(X326,skolem0002),inference(resolution,status(thm),[c231, reflexivity])).
+cnf(c16,plain,X242!=X239|X241!=X240|~thing(X242,X241)|thing(X239,X240),eq_axiom).
+cnf(c227,plain,skolem0001!=X317|skolem0003!=X318|thing(X317,X318),inference(resolution,status(thm),[c16, c189])).
+cnf(c264,plain,skolem0001!=X319|thing(X319,skolem0003),inference(resolution,status(thm),[c227, reflexivity])).
+cnf(c226,plain,skolem0001!=X314|skolem0002!=X315|thing(X314,X315),inference(resolution,status(thm),[c16, c177])).
+cnf(c262,plain,skolem0001!=X316|thing(X316,skolem0002),inference(resolution,status(thm),[c226, reflexivity])).
+cnf(c225,plain,skolem0001!=X307|skolem0004!=X308|thing(X307,X308),inference(resolution,status(thm),[c16, c163])).
+cnf(c259,plain,skolem0001!=X309|thing(X309,skolem0004),inference(resolution,status(thm),[c225, reflexivity])).
+fof(ax25,axiom,(![U]:(![V]:(eventuality(U,V)=>specific(U,V)))),input).
+fof(c85,axiom,(![U]:(![V]:(~eventuality(U,V)|specific(U,V)))),inference(fof_nnf,status(thm),[ax25])).
+fof(c86,axiom,(![X31]:(![X32]:(~eventuality(X31,X32)|specific(X31,X32)))),inference(variable_rename,status(thm),[c85])).
+cnf(c87,axiom,~eventuality(X111,X110)|specific(X111,X110),inference(split_conjunct,status(thm),[c86])).
+cnf(c165,plain,specific(skolem0001,skolem0004),inference(resolution,status(thm),[c87, c162])).
+cnf(c15,plain,X232!=X229|X231!=X230|~specific(X232,X231)|specific(X229,X230),eq_axiom).
+cnf(c220,plain,skolem0001!=X301|skolem0004!=X300|specific(X301,X300),inference(resolution,status(thm),[c15, c165])).
+cnf(c256,plain,skolem0001!=X306|specific(X306,skolem0004),inference(resolution,status(thm),[c220, reflexivity])).
+fof(ax15,axiom,(![U]:(![V]:(entity(U,V)=>specific(U,V)))),input).
+fof(c115,axiom,(![U]:(![V]:(~entity(U,V)|specific(U,V)))),inference(fof_nnf,status(thm),[ax15])).
+fof(c116,axiom,(![X51]:(![X52]:(~entity(X51,X52)|specific(X51,X52)))),inference(variable_rename,status(thm),[c115])).
+cnf(c117,axiom,~entity(X147,X146)|specific(X147,X146),inference(split_conjunct,status(thm),[c116])).
+cnf(c179,plain,specific(skolem0001,skolem0002),inference(resolution,status(thm),[c117, c175])).
+cnf(c219,plain,skolem0001!=X298|skolem0002!=X297|specific(X298,X297),inference(resolution,status(thm),[c15, c179])).
+cnf(c254,plain,skolem0001!=X299|specific(X299,skolem0002),inference(resolution,status(thm),[c219, reflexivity])).
+cnf(c190,plain,specific(skolem0001,skolem0003),inference(resolution,status(thm),[c187, c117])).
+cnf(c218,plain,skolem0001!=X291|skolem0003!=X290|specific(X291,X290),inference(resolution,status(thm),[c15, c190])).
+cnf(c251,plain,skolem0001!=X292|specific(X292,skolem0003),inference(resolution,status(thm),[c218, reflexivity])).
+fof(ax14,axiom,(![U]:(![V]:(entity(U,V)=>existent(U,V)))),input).
+fof(c118,axiom,(![U]:(![V]:(~entity(U,V)|existent(U,V)))),inference(fof_nnf,status(thm),[ax14])).
+fof(c119,axiom,(![X53]:(![X54]:(~entity(X53,X54)|existent(X53,X54)))),inference(variable_rename,status(thm),[c118])).
+cnf(c120,axiom,~entity(X152,X153)|existent(X152,X153),inference(split_conjunct,status(thm),[c119])).
+cnf(c188,plain,existent(skolem0001,skolem0003),inference(resolution,status(thm),[c187, c120])).
+cnf(c14,plain,X224!=X221|X223!=X222|~existent(X224,X223)|existent(X221,X222),eq_axiom).
+cnf(c214,plain,skolem0001!=X287|skolem0003!=X288|existent(X287,X288),inference(resolution,status(thm),[c14, c188])).
+cnf(c249,plain,skolem0001!=X289|existent(X289,skolem0003),inference(resolution,status(thm),[c214, reflexivity])).
+cnf(c180,plain,existent(skolem0001,skolem0002),inference(resolution,status(thm),[c120, c175])).
+cnf(c213,plain,skolem0001!=X280|skolem0002!=X281|existent(X280,X281),inference(resolution,status(thm),[c14, c180])).
+cnf(c246,plain,skolem0001!=X282|existent(X282,skolem0002),inference(resolution,status(thm),[c213, reflexivity])).
+fof(ax13,axiom,(![U]:(![V]:(object(U,V)=>nonliving(U,V)))),input).
+fof(c121,axiom,(![U]:(![V]:(~object(U,V)|nonliving(U,V)))),inference(fof_nnf,status(thm),[ax13])).
+fof(c122,axiom,(![X55]:(![X56]:(~object(X55,X56)|nonliving(X55,X56)))),inference(variable_rename,status(thm),[c121])).
+cnf(c123,axiom,~object(X154,X155)|nonliving(X154,X155),inference(split_conjunct,status(thm),[c122])).
+cnf(c181,plain,nonliving(skolem0001,skolem0002),inference(resolution,status(thm),[c123, c173])).
+cnf(c13,plain,X215!=X212|X214!=X213|~nonliving(X215,X214)|nonliving(X212,X213),eq_axiom).
+cnf(c209,plain,skolem0001!=X273|skolem0002!=X274|nonliving(X273,X274),inference(resolution,status(thm),[c13, c181])).
+cnf(c243,plain,skolem0001!=X279|nonliving(X279,skolem0002),inference(resolution,status(thm),[c209, reflexivity])).
+fof(ax11,axiom,(![U]:(![V]:(object(U,V)=>unisex(U,V)))),input).
+fof(c127,axiom,(![U]:(![V]:(~object(U,V)|unisex(U,V)))),inference(fof_nnf,status(thm),[ax11])).
+fof(c128,axiom,(![X59]:(![X60]:(~object(X59,X60)|unisex(X59,X60)))),inference(variable_rename,status(thm),[c127])).
+cnf(c129,axiom,~object(X162,X163)|unisex(X162,X163),inference(split_conjunct,status(thm),[c128])).
+cnf(c184,plain,unisex(skolem0001,skolem0002),inference(resolution,status(thm),[c129, c173])).
+cnf(c12,plain,X203!=X200|X202!=X201|~unisex(X203,X202)|unisex(X200,X201),eq_axiom).
+cnf(c205,plain,skolem0001!=X270|skolem0002!=X271|unisex(X270,X271),inference(resolution,status(thm),[c12, c184])).
+cnf(c241,plain,skolem0001!=X272|unisex(X272,skolem0002),inference(resolution,status(thm),[c205, reflexivity])).
+fof(ax23,axiom,(![U]:(![V]:(eventuality(U,V)=>unisex(U,V)))),input).
+fof(c91,axiom,(![U]:(![V]:(~eventuality(U,V)|unisex(U,V)))),inference(fof_nnf,status(thm),[ax23])).
+fof(c92,axiom,(![X35]:(![X36]:(~eventuality(X35,X36)|unisex(X35,X36)))),inference(variable_rename,status(thm),[c91])).
+cnf(c93,axiom,~eventuality(X119,X118)|unisex(X119,X118),inference(split_conjunct,status(thm),[c92])).
+cnf(c168,plain,unisex(skolem0001,skolem0004),inference(resolution,status(thm),[c93, c162])).
+cnf(c204,plain,skolem0001!=X263|skolem0004!=X264|unisex(X263,X264),inference(resolution,status(thm),[c12, c168])).
+cnf(c238,plain,skolem0001!=X265|unisex(X265,skolem0004),inference(resolution,status(thm),[c204, reflexivity])).
+cnf(c6,plain,X151!=X148|X150!=X149|~animate(X151,X150)|animate(X148,X149),eq_axiom).
+fof(ax5,axiom,(![U]:(![V]:(human_person(U,V)=>animate(U,V)))),input).
+fof(c145,axiom,(![U]:(![V]:(~human_person(U,V)|animate(U,V)))),inference(fof_nnf,status(thm),[ax5])).
+fof(c146,axiom,(![X71]:(![X72]:(~human_person(X71,X72)|animate(X71,X72)))),inference(variable_rename,status(thm),[c145])).
+cnf(c147,axiom,~human_person(X186,X187)|animate(X186,X187),inference(split_conjunct,status(thm),[c146])).
+cnf(c200,plain,animate(skolem0001,skolem0003),inference(resolution,status(thm),[c147, c42])).
+cnf(c203,plain,skolem0001!=X261|skolem0003!=X260|animate(X261,X260),inference(resolution,status(thm),[c200, c6])).
+cnf(c236,plain,skolem0001!=X262|animate(X262,skolem0003),inference(resolution,status(thm),[c203, reflexivity])).
+cnf(c11,plain,X191!=X188|X190!=X189|~entity(X191,X190)|entity(X188,X189),eq_axiom).
+cnf(c202,plain,skolem0001!=X253|skolem0002!=X254|entity(X253,X254),inference(resolution,status(thm),[c11, c175])).
+cnf(c233,plain,skolem0001!=X255|entity(X255,skolem0002),inference(resolution,status(thm),[c202, reflexivity])).
+cnf(c201,plain,skolem0001!=X246|skolem0003!=X247|entity(X246,X247),inference(resolution,status(thm),[c11, c187])).
+cnf(c230,plain,skolem0001!=X252|entity(X252,skolem0003),inference(resolution,status(thm),[c201, reflexivity])).
+cnf(c7,plain,X159!=X156|X158!=X157|~human(X159,X158)|human(X156,X157),eq_axiom).
+fof(ax6,axiom,(![U]:(![V]:(human_person(U,V)=>human(U,V)))),input).
+fof(c142,axiom,(![U]:(![V]:(~human_person(U,V)|human(U,V)))),inference(fof_nnf,status(thm),[ax6])).
+fof(c143,axiom,(![X69]:(![X70]:(~human_person(X69,X70)|human(X69,X70)))),inference(variable_rename,status(thm),[c142])).
+cnf(c144,axiom,~human_person(X184,X185)|human(X184,X185),inference(split_conjunct,status(thm),[c143])).
+cnf(c198,plain,human(skolem0001,skolem0003),inference(resolution,status(thm),[c144, c42])).
+cnf(c199,plain,skolem0001!=X244|skolem0003!=X243|human(X244,X243),inference(resolution,status(thm),[c198, c7])).
+cnf(c228,plain,skolem0001!=X245|human(X245,skolem0003),inference(resolution,status(thm),[c199, reflexivity])).
+cnf(c9,plain,X175!=X172|X174!=X173|~living(X175,X174)|living(X172,X173),eq_axiom).
+fof(ax7,axiom,(![U]:(![V]:(organism(U,V)=>living(U,V)))),input).
+fof(c139,axiom,(![U]:(![V]:(~organism(U,V)|living(U,V)))),inference(fof_nnf,status(thm),[ax7])).
+fof(c140,axiom,(![X67]:(![X68]:(~organism(X67,X68)|living(X67,X68)))),inference(variable_rename,status(thm),[c139])).
+cnf(c141,axiom,~organism(X179,X178)|living(X179,X178),inference(split_conjunct,status(thm),[c140])).
+cnf(c193,plain,living(skolem0001,skolem0003),inference(resolution,status(thm),[c141, c185])).
+cnf(c196,plain,skolem0001!=X236|skolem0003!=X237|living(X236,X237),inference(resolution,status(thm),[c193, c9])).
+cnf(c223,plain,skolem0001!=X238|living(X238,skolem0003),inference(resolution,status(thm),[c196, reflexivity])).
+fof(ax12,axiom,(![U]:(![V]:(object(U,V)=>impartial(U,V)))),input).
+fof(c124,axiom,(![U]:(![V]:(~object(U,V)|impartial(U,V)))),inference(fof_nnf,status(thm),[ax12])).
+fof(c125,axiom,(![X57]:(![X58]:(~object(X57,X58)|impartial(X57,X58)))),inference(variable_rename,status(thm),[c124])).
+cnf(c126,axiom,~object(X161,X160)|impartial(X161,X160),inference(split_conjunct,status(thm),[c125])).
+cnf(c183,plain,impartial(skolem0001,skolem0002),inference(resolution,status(thm),[c126, c173])).
+cnf(c10,plain,X183!=X180|X182!=X181|~impartial(X183,X182)|impartial(X180,X181),eq_axiom).
+cnf(c195,plain,skolem0001!=X234|skolem0002!=X233|impartial(X234,X233),inference(resolution,status(thm),[c10, c183])).
+cnf(c221,plain,skolem0001!=X235|impartial(X235,skolem0002),inference(resolution,status(thm),[c195, reflexivity])).
+fof(ax8,axiom,(![U]:(![V]:(organism(U,V)=>impartial(U,V)))),input).
+fof(c136,axiom,(![U]:(![V]:(~organism(U,V)|impartial(U,V)))),inference(fof_nnf,status(thm),[ax8])).
+fof(c137,axiom,(![X65]:(![X66]:(~organism(X65,X66)|impartial(X65,X66)))),inference(variable_rename,status(thm),[c136])).
+cnf(c138,axiom,~organism(X177,X176)|impartial(X177,X176),inference(split_conjunct,status(thm),[c137])).
+cnf(c192,plain,impartial(skolem0001,skolem0003),inference(resolution,status(thm),[c138, c185])).
+cnf(c194,plain,skolem0001!=X227|skolem0003!=X226|impartial(X227,X226),inference(resolution,status(thm),[c10, c192])).
+cnf(c216,plain,skolem0001!=X228|impartial(X228,skolem0003),inference(resolution,status(thm),[c194, reflexivity])).
+cnf(c8,plain,X169!=X166|X168!=X167|~organism(X169,X168)|organism(X166,X167),eq_axiom).
+cnf(c186,plain,skolem0001!=X219|skolem0003!=X220|organism(X219,X220),inference(resolution,status(thm),[c185, c8])).
+cnf(c212,plain,skolem0001!=X225|organism(X225,skolem0003),inference(resolution,status(thm),[c186, reflexivity])).
+cnf(c5,plain,X143!=X140|X142!=X141|~human_person(X143,X142)|human_person(X140,X141),eq_axiom).
+cnf(c176,plain,skolem0001!=X216|skolem0003!=X217|human_person(X216,X217),inference(resolution,status(thm),[c5, c42])).
+cnf(c210,plain,skolem0001!=X218|human_person(X218,skolem0003),inference(resolution,status(thm),[c176, reflexivity])).
+cnf(c1,plain,X109!=X106|X108!=X107|~object(X109,X108)|object(X106,X107),eq_axiom).
+cnf(c174,plain,skolem0001!=X209|skolem0002!=X210|object(X209,X210),inference(resolution,status(thm),[c173, c1])).
+cnf(c207,plain,skolem0001!=X211|object(X211,skolem0002),inference(resolution,status(thm),[c174, reflexivity])).
+cnf(c30,plain,X207!=X206|~actual_world(X207)|actual_world(X206),eq_axiom).
+fof(ax1,axiom,(![U]:(![V]:(artifact(U,V)=>object(U,V)))),input).
+fof(c157,axiom,(![U]:(![V]:(~artifact(U,V)|object(U,V)))),inference(fof_nnf,status(thm),[ax1])).
+fof(c158,axiom,(![X79]:(![X80]:(~artifact(X79,X80)|object(X79,X80)))),inference(variable_rename,status(thm),[c157])).
+cnf(c159,axiom,~artifact(X198,X199)|object(X198,X199),inference(split_conjunct,status(thm),[c158])).
+fof(ax2,axiom,(![U]:(![V]:(building(U,V)=>artifact(U,V)))),input).
+fof(c154,axiom,(![U]:(![V]:(~building(U,V)|artifact(U,V)))),inference(fof_nnf,status(thm),[ax2])).
+fof(c155,axiom,(![X77]:(![X78]:(~building(X77,X78)|artifact(X77,X78)))),inference(variable_rename,status(thm),[c154])).
+cnf(c156,axiom,~building(X196,X197)|artifact(X196,X197),inference(split_conjunct,status(thm),[c155])).
+fof(ax3,axiom,(![U]:(![V]:(restaurant(U,V)=>building(U,V)))),input).
+fof(c151,axiom,(![U]:(![V]:(~restaurant(U,V)|building(U,V)))),inference(fof_nnf,status(thm),[ax3])).
+fof(c152,axiom,(![X75]:(![X76]:(~restaurant(X75,X76)|building(X75,X76)))),inference(variable_rename,status(thm),[c151])).
+cnf(c153,axiom,~restaurant(X194,X195)|building(X194,X195),inference(split_conjunct,status(thm),[c152])).
+fof(ax4,axiom,(![U]:(![V]:(customer(U,V)=>human_person(U,V)))),input).
+fof(c148,axiom,(![U]:(![V]:(~customer(U,V)|human_person(U,V)))),inference(fof_nnf,status(thm),[ax4])).
+fof(c149,axiom,(![X73]:(![X74]:(~customer(X73,X74)|human_person(X73,X74)))),inference(variable_rename,status(thm),[c148])).
+cnf(c150,axiom,~customer(X192,X193)|human_person(X192,X193),inference(split_conjunct,status(thm),[c149])).
+fof(ax32,axiom,(![U]:(![V]:(nonliving(U,V)=>(~living(U,V))))),input).
+fof(c61,axiom,(![U]:(![V]:(nonliving(U,V)=>~living(U,V)))),inference(fof_simplification,status(thm),[ax32])).
+fof(c62,axiom,(![U]:(![V]:(~nonliving(U,V)|~living(U,V)))),inference(fof_nnf,status(thm),[c61])).
+fof(c63,axiom,(![X17]:(![X18]:(~nonliving(X17,X18)|~living(X17,X18)))),inference(variable_rename,status(thm),[c62])).
+cnf(c64,axiom,~nonliving(X89,X88)|~living(X89,X88),inference(split_conjunct,status(thm),[c63])).
+cnf(c197,plain,~nonliving(skolem0001,skolem0003),inference(resolution,status(thm),[c193, c64])).
+fof(ax30,axiom,(![U]:(![V]:(animate(U,V)=>(~nonliving(U,V))))),input).
+fof(c69,axiom,(![U]:(![V]:(animate(U,V)=>~nonliving(U,V)))),inference(fof_simplification,status(thm),[ax30])).
+fof(c70,axiom,(![U]:(![V]:(~animate(U,V)|~nonliving(U,V)))),inference(fof_nnf,status(thm),[c69])).
+fof(c71,axiom,(![X21]:(![X22]:(~animate(X21,X22)|~nonliving(X21,X22)))),inference(variable_rename,status(thm),[c70])).
+cnf(c72,axiom,~animate(X92,X93)|~nonliving(X92,X93),inference(split_conjunct,status(thm),[c71])).
+cnf(c182,plain,~animate(skolem0001,skolem0002),inference(resolution,status(thm),[c181, c72])).
+cnf(c4,plain,X135!=X132|X134!=X133|~customer(X135,X134)|customer(X132,X133),eq_axiom).
+cnf(c3,plain,X125!=X122|X124!=X123|~restaurant(X125,X124)|restaurant(X122,X123),eq_axiom).
+fof(ax22,axiom,(![U]:(![V]:(drink(U,V)=>event(U,V)))),input).
+fof(c94,axiom,(![U]:(![V]:(~drink(U,V)|event(U,V)))),inference(fof_nnf,status(thm),[ax22])).
+fof(c95,axiom,(![X37]:(![X38]:(~drink(X37,X38)|event(X37,X38)))),inference(variable_rename,status(thm),[c94])).
+cnf(c96,axiom,~drink(X120,X121)|event(X120,X121),inference(split_conjunct,status(thm),[c95])).
+fof(ax31,axiom,(![U]:(![V]:(existent(U,V)=>(~nonexistent(U,V))))),input).
+fof(c65,axiom,(![U]:(![V]:(existent(U,V)=>~nonexistent(U,V)))),inference(fof_simplification,status(thm),[ax31])).
+fof(c66,axiom,(![U]:(![V]:(~existent(U,V)|~nonexistent(U,V)))),inference(fof_nnf,status(thm),[c65])).
+fof(c67,axiom,(![X19]:(![X20]:(~existent(X19,X20)|~nonexistent(X19,X20)))),inference(variable_rename,status(thm),[c66])).
+cnf(c68,axiom,~existent(X90,X91)|~nonexistent(X90,X91),inference(split_conjunct,status(thm),[c67])).
+cnf(c167,plain,~existent(skolem0001,skolem0004),inference(resolution,status(thm),[c166, c68])).
+cnf(c2,plain,X117!=X114|X116!=X115|~building(X117,X116)|building(X114,X115),eq_axiom).
+cnf(c0,plain,X99!=X96|X98!=X97|~artifact(X99,X98)|artifact(X96,X97),eq_axiom).
+fof(ax29,axiom,(![U]:(![V]:(see(U,V)=>event(U,V)))),input).
+fof(c73,axiom,(![U]:(![V]:(~see(U,V)|event(U,V)))),inference(fof_nnf,status(thm),[ax29])).
+fof(c74,axiom,(![X23]:(![X24]:(~see(X23,X24)|event(X23,X24)))),inference(variable_rename,status(thm),[c73])).
+cnf(c75,axiom,~see(X94,X95)|event(X94,X95),inference(split_conjunct,status(thm),[c74])).
+cnf(transitivity,axiom,X87!=X85|X85!=X86|X87=X86,eq_axiom).
+cnf(symmetry,axiom,X83!=X82|X82=X83,eq_axiom).
+cnf(c40,negated_conjecture,actual_world(skolem0001),inference(split_conjunct,status(thm),[c39])).
+# SZS output end Saturation
+
+# Initial clauses    : 85
+# Processed clauses  : 192
+# Factors computed   : 0
+# Resolvents computed: 148
+# Tautologies deleted: 2
+# Forward subsumed   : 39
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.312 s
+# System time        : 0.270 s
+# Total time         : 0.582 s

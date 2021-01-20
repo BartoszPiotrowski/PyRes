@@ -1,0 +1,36 @@
+# cnf(c14,axiom,cowlThing(X6)).
+# cnf(c15,axiom,~cowlNothing(X7)).
+# cnf(c0,axiom,rp(i2003_11_14_17_14_42102,i2003_11_14_17_14_42352)).
+# cnf(c8,axiom,~xsd_string(X8)|~xsd_integer(X8)).
+# cnf(c9,axiom,xsd_integer(X9)|xsd_string(X9)).
+# SZS status Satisfiable
+# SZS output start Saturation
+fof(axiom_1,axiom,(![X]:(xsd_string(X)<=>(~xsd_integer(X)))),input).
+fof(c3,axiom,(![X]:(xsd_string(X)<=>~xsd_integer(X))),inference(fof_simplification,status(thm),[axiom_1])).
+fof(c4,axiom,(![X]:((~xsd_string(X)|~xsd_integer(X))&(xsd_integer(X)|xsd_string(X)))),inference(fof_nnf,status(thm),[c3])).
+fof(c5,axiom,((![X]:(~xsd_string(X)|~xsd_integer(X)))&(![X]:(xsd_integer(X)|xsd_string(X)))),inference(shift_quantors,status(thm),[c4])).
+fof(c7,axiom,(![X2]:(![X3]:((~xsd_string(X2)|~xsd_integer(X2))&(xsd_integer(X3)|xsd_string(X3))))),inference(shift_quantors,status(thm),[fof(c6,axiom,((![X2]:(~xsd_string(X2)|~xsd_integer(X2)))&(![X3]:(xsd_integer(X3)|xsd_string(X3)))),inference(variable_rename,status(thm),[c5])).])).
+cnf(c9,axiom,xsd_integer(X9)|xsd_string(X9),inference(split_conjunct,status(thm),[c7])).
+cnf(c8,axiom,~xsd_string(X8)|~xsd_integer(X8),inference(split_conjunct,status(thm),[c7])).
+fof(axiom_4,axiom,rp(i2003_11_14_17_14_42102,i2003_11_14_17_14_42352),input).
+cnf(c0,axiom,rp(i2003_11_14_17_14_42102,i2003_11_14_17_14_42352),inference(split_conjunct,status(thm),[axiom_4])).
+fof(axiom_0,axiom,(![X]:(cowlThing(X)&(~cowlNothing(X)))),input).
+fof(c10,axiom,(![X]:(cowlThing(X)&~cowlNothing(X))),inference(fof_simplification,status(thm),[axiom_0])).
+fof(c11,axiom,((![X]:cowlThing(X))&(![X]:~cowlNothing(X))),inference(shift_quantors,status(thm),[c10])).
+fof(c13,axiom,(![X4]:(![X5]:(cowlThing(X4)&~cowlNothing(X5)))),inference(shift_quantors,status(thm),[fof(c12,axiom,((![X4]:cowlThing(X4))&(![X5]:~cowlNothing(X5))),inference(variable_rename,status(thm),[c11])).])).
+cnf(c15,axiom,~cowlNothing(X7),inference(split_conjunct,status(thm),[c13])).
+cnf(c14,axiom,cowlThing(X6),inference(split_conjunct,status(thm),[c13])).
+# SZS output end Saturation
+
+# Initial clauses    : 7
+# Processed clauses  : 5
+# Factors computed   : 0
+# Resolvents computed: 1
+# Tautologies deleted: 1
+# Forward subsumed   : 2
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.291 s
+# System time        : 0.198 s
+# Total time         : 0.490 s

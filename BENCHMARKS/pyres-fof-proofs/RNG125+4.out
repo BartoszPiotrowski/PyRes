@@ -1,0 +1,194 @@
+# cnf(c20,negated_conjecture,~$false).
+# cnf(c220,axiom,$true).
+# cnf(reflexivity,axiom,X156=X156).
+# cnf(c24,plain,aElement0(skolem0001)).
+# cnf(c30,plain,aElement0(skolem0002)).
+# cnf(c35,plain,aElement0(skolem0003)).
+# cnf(c36,plain,aElement0(skolem0004)).
+# cnf(c83,plain,aElement0(skolem0012)).
+# cnf(symmetry,axiom,X157!=X158|X158=X157).
+# cnf(c86,plain,aElement0(skolem0013)).
+# cnf(c89,plain,aElement0(skolem0014)).
+# cnf(c92,plain,aElement0(skolem0015)).
+# cnf(c101,plain,aSet0(xI)).
+# cnf(c104,plain,aIdeal0(xI)).
+# cnf(transitivity,axiom,X159!=X160|X160!=X161|X159=X161).
+# cnf(c121,plain,aElement0(xc)).
+# cnf(c122,plain,aElement0(skolem0020)).
+# cnf(c127,plain,aElement0(skolem0021)).
+# cnf(c160,plain,aElement0(xa)).
+# cnf(c0,plain,X162!=X163|smndt0(X162)=smndt0(X163)).
+# cnf(c161,plain,aElement0(xb)).
+# cnf(c359,axiom,aElement0(sz10)).
+# cnf(c360,axiom,aElement0(sz00)).
+# cnf(c26,plain,doDivides0(xu,xb)).
+# cnf(c1,plain,X166!=X168|X165!=X167|sdtpldt0(X166,X165)=sdtpldt0(X168,X167)).
+# cnf(c32,plain,doDivides0(xu,xa)).
+# cnf(c60,plain,aElementOf0(xu,xI)).
+# cnf(c61,plain,xu!=sz00).
+# cnf(c80,plain,skolem0007!=sz00).
+# cnf(c124,plain,doDivides0(xc,xa)).
+# cnf(c2,plain,X170!=X172|X169!=X171|sdtasdt0(X170,X169)=sdtasdt0(X172,X171)).
+# cnf(c125,plain,aDivisorOf0(xc,xa)).
+# cnf(c129,plain,doDivides0(xc,xb)).
+# cnf(c130,plain,aDivisorOf0(xc,xb)).
+# cnf(c254,plain,~aIdeal0(X173)|aSet0(X173)).
+# cnf(c3,plain,X175!=X177|X174!=X176|sdtpldt1(X175,X174)=sdtpldt1(X177,X176)).
+# cnf(c304,axiom,sz10!=sz00).
+# cnf(c57,plain,aElementOf0(skolem0005,slsdtgt0(xa))).
+# cnf(c58,plain,aElementOf0(skolem0006,slsdtgt0(xb))).
+# cnf(c76,plain,aElementOf0(skolem0010,slsdtgt0(xa))).
+# cnf(c77,plain,aElementOf0(skolem0011,slsdtgt0(xb))).
+# cnf(c4,plain,X179!=X181|X178!=X180|sdtasasdt0(X179,X178)=sdtasasdt0(X181,X180)).
+# cnf(c85,plain,aElementOf0(sz00,slsdtgt0(xa))).
+# cnf(c88,plain,aElementOf0(xa,slsdtgt0(xa))).
+# cnf(c91,plain,aElementOf0(sz00,slsdtgt0(xb))).
+# cnf(c94,plain,aElementOf0(xb,slsdtgt0(xb))).
+# cnf(c158,plain,aGcdOfAnd0(xc,xa,xb)).
+# cnf(c5,plain,X182!=X183|sbrdtbr0(X182)=sbrdtbr0(X183)).
+# cnf(c164,axiom,~aElement0(X184)|aIdeal0(slsdtgt0(X184))).
+# cnf(c372,plain,aIdeal0(slsdtgt0(xb))).
+# cnf(c373,plain,aIdeal0(slsdtgt0(skolem0021))).
+# cnf(c374,plain,aIdeal0(slsdtgt0(sz10))).
+# cnf(c375,plain,aIdeal0(slsdtgt0(sz00))).
+# cnf(c6,plain,X185!=X186|slsdtgt0(X185)=slsdtgt0(X186)).
+# cnf(c376,plain,aIdeal0(slsdtgt0(skolem0004))).
+# cnf(c377,plain,aIdeal0(slsdtgt0(skolem0014))).
+# cnf(c378,plain,aIdeal0(slsdtgt0(skolem0012))).
+# cnf(c379,plain,aIdeal0(slsdtgt0(skolem0015))).
+# cnf(c380,plain,aIdeal0(slsdtgt0(skolem0020))).
+# cnf(c7,plain,X187!=X188|~aElement0(X187)|aElement0(X188)).
+# cnf(c381,plain,aIdeal0(slsdtgt0(xa))).
+# cnf(c382,plain,aIdeal0(slsdtgt0(xc))).
+# cnf(c383,plain,aIdeal0(slsdtgt0(skolem0003))).
+# cnf(c384,plain,aIdeal0(slsdtgt0(skolem0013))).
+# cnf(c385,plain,aIdeal0(slsdtgt0(skolem0002))).
+# cnf(c8,plain,X189!=X190|~aSet0(X189)|aSet0(X190)).
+# cnf(c386,plain,aIdeal0(slsdtgt0(skolem0001))).
+# cnf(c387,plain,aSet0(slsdtgt0(xb))).
+# cnf(c388,plain,aSet0(slsdtgt0(skolem0021))).
+# cnf(c389,plain,aSet0(slsdtgt0(sz10))).
+# cnf(c390,plain,aSet0(slsdtgt0(sz00))).
+# cnf(c9,plain,X192!=X194|X191!=X193|~aElementOf0(X192,X191)|aElementOf0(X194,X193)).
+# cnf(c392,plain,aSet0(slsdtgt0(skolem0004))).
+# cnf(c393,plain,aSet0(slsdtgt0(skolem0014))).
+# cnf(c394,plain,aSet0(slsdtgt0(skolem0012))).
+# cnf(c395,plain,aSet0(slsdtgt0(skolem0015))).
+# cnf(c396,plain,aSet0(slsdtgt0(skolem0020))).
+# cnf(c10,plain,X195!=X196|~aIdeal0(X195)|aIdeal0(X196)).
+# cnf(c398,plain,aSet0(slsdtgt0(xa))).
+# cnf(c399,plain,aSet0(slsdtgt0(xc))).
+# cnf(c400,plain,aSet0(slsdtgt0(skolem0003))).
+# cnf(c401,plain,aSet0(slsdtgt0(skolem0013))).
+# cnf(c11,plain,X198!=X200|X202!=X199|X203!=X201|~sdteqdtlpzmzozddtrp0(X198,X202,X203)|sdteqdtlpzmzozddtrp0(X200,X199,X201)).
+# cnf(c402,plain,aSet0(slsdtgt0(skolem0002))).
+# cnf(c404,plain,aSet0(slsdtgt0(skolem0001))).
+# cnf(c358,axiom,~aElement0(X206)|aElement0(smndt0(X206))).
+# cnf(c12,plain,X207!=X208|~aNaturalNumber0(X207)|aNaturalNumber0(X208)).
+# cnf(c415,plain,aElement0(smndt0(xb))).
+# cnf(c416,plain,aElement0(smndt0(skolem0021))).
+# cnf(c417,plain,aElement0(smndt0(sz10))).
+# cnf(c418,plain,aElement0(smndt0(sz00))).
+# cnf(c419,plain,aElement0(smndt0(skolem0004))).
+# cnf(c13,plain,X210!=X212|X209!=X211|~iLess0(X210,X209)|iLess0(X212,X211)).
+# cnf(c420,plain,aElement0(smndt0(skolem0014))).
+# cnf(c421,plain,aElement0(smndt0(skolem0012))).
+# cnf(c422,plain,aElement0(smndt0(skolem0015))).
+# cnf(c423,plain,aElement0(smndt0(skolem0020))).
+# cnf(c424,plain,aElement0(smndt0(xa))).
+# cnf(c14,plain,X214!=X216|X213!=X215|~doDivides0(X214,X213)|doDivides0(X216,X215)).
+# cnf(c425,plain,aElement0(smndt0(xc))).
+# cnf(c426,plain,aElement0(smndt0(skolem0003))).
+# cnf(c427,plain,aElement0(smndt0(skolem0013))).
+# cnf(c428,plain,aElement0(smndt0(skolem0002))).
+# cnf(c429,plain,aElement0(smndt0(skolem0001))).
+# cnf(c15,plain,X218!=X220|X217!=X219|~aDivisorOf0(X218,X217)|aDivisorOf0(X220,X219)).
+# cnf(c16,plain,X227!=X229|X231!=X228|X232!=X230|~aGcdOfAnd0(X227,X231,X232)|aGcdOfAnd0(X229,X228,X230)).
+# cnf(c431,plain,aElement0(smndt0(smndt0(xb)))).
+# cnf(c432,plain,aIdeal0(slsdtgt0(smndt0(xb)))).
+# cnf(c433,plain,aElement0(smndt0(smndt0(skolem0021)))).
+# cnf(c434,plain,aIdeal0(slsdtgt0(smndt0(skolem0021)))).
+# cnf(c435,plain,aElement0(smndt0(smndt0(sz10)))).
+# cnf(c17,plain,X234!=X236|X233!=X235|~misRelativelyPrime0(X234,X233)|misRelativelyPrime0(X236,X235)).
+# cnf(c436,plain,aIdeal0(slsdtgt0(smndt0(sz10)))).
+# cnf(c437,plain,aElement0(smndt0(smndt0(sz00)))).
+# cnf(c438,plain,aIdeal0(slsdtgt0(smndt0(sz00)))).
+# cnf(c439,plain,aElement0(smndt0(smndt0(skolem0004)))).
+# cnf(c440,plain,aIdeal0(slsdtgt0(smndt0(skolem0004)))).
+# cnf(c25,plain,sdtasdt0(xu,skolem0001)=xb).
+# cnf(c441,plain,aElement0(smndt0(smndt0(skolem0014)))).
+# cnf(c442,plain,aIdeal0(slsdtgt0(smndt0(skolem0014)))).
+# cnf(c443,plain,aElement0(smndt0(smndt0(skolem0012)))).
+# cnf(c444,plain,aIdeal0(slsdtgt0(smndt0(skolem0012)))).
+# cnf(c445,plain,aElement0(smndt0(smndt0(skolem0015)))).
+# cnf(c31,plain,sdtasdt0(xu,skolem0002)=xa).
+# cnf(c446,plain,aIdeal0(slsdtgt0(smndt0(skolem0015)))).
+# cnf(c447,plain,aElement0(smndt0(smndt0(skolem0020)))).
+# cnf(c448,plain,aIdeal0(slsdtgt0(smndt0(skolem0020)))).
+# cnf(c449,plain,aElement0(smndt0(smndt0(xa)))).
+# cnf(c450,plain,aIdeal0(slsdtgt0(smndt0(xa)))).
+# cnf(c37,plain,xu=sdtpldt0(sdtasdt0(xa,skolem0003),sdtasdt0(xb,skolem0004))).
+# cnf(c455,plain,aElement0(smndt0(smndt0(xc)))).
+# cnf(c456,plain,aIdeal0(slsdtgt0(smndt0(xc)))).
+# cnf(c457,plain,aElement0(smndt0(smndt0(skolem0003)))).
+# cnf(c458,plain,aIdeal0(slsdtgt0(smndt0(skolem0003)))).
+# cnf(c459,plain,aElement0(smndt0(smndt0(skolem0013)))).
+# cnf(c42,plain,~aElement0(X238)|sdtasdt0(xu,X238)!=xa|~aElement0(X237)|sdtasdt0(xu,X237)!=xb).
+# cnf(c460,plain,aIdeal0(slsdtgt0(smndt0(skolem0013)))).
+# cnf(c461,plain,aElement0(smndt0(smndt0(skolem0002)))).
+# cnf(c462,plain,aIdeal0(slsdtgt0(smndt0(skolem0002)))).
+# cnf(c463,plain,aElement0(smndt0(smndt0(skolem0001)))).
+# cnf(c464,plain,aIdeal0(slsdtgt0(smndt0(skolem0001)))).
+# cnf(c43,plain,~aElement0(X239)|sdtasdt0(xu,X239)!=xa|~doDivides0(xu,xb)).
+# cnf(c470,plain,aSet0(slsdtgt0(smndt0(xb)))).
+# cnf(c473,plain,aSet0(slsdtgt0(smndt0(skolem0021)))).
+# cnf(c476,plain,aSet0(slsdtgt0(smndt0(sz10)))).
+# cnf(c479,plain,aSet0(slsdtgt0(smndt0(sz00)))).
+# cnf(c482,plain,aSet0(slsdtgt0(smndt0(skolem0004)))).
+# cnf(c44,plain,~aElement0(X240)|sdtasdt0(xu,X240)!=xa|~aDivisorOf0(xu,xb)).
+# cnf(c498,plain,aSet0(slsdtgt0(smndt0(skolem0014)))).
+# cnf(c501,plain,aSet0(slsdtgt0(smndt0(skolem0012)))).
+# cnf(c517,plain,aSet0(slsdtgt0(smndt0(skolem0015)))).
+# cnf(c520,plain,aSet0(slsdtgt0(smndt0(skolem0020)))).
+# cnf(c523,plain,aSet0(slsdtgt0(smndt0(xa)))).
+# cnf(c45,plain,~doDivides0(xu,xa)|~aElement0(X241)|sdtasdt0(xu,X241)!=xb).
+# cnf(c539,plain,aSet0(slsdtgt0(smndt0(xc)))).
+# cnf(c542,plain,aSet0(slsdtgt0(smndt0(skolem0003)))).
+# cnf(c546,plain,aSet0(slsdtgt0(smndt0(skolem0013)))).
+# cnf(c549,plain,aSet0(slsdtgt0(smndt0(skolem0002)))).
+# cnf(c552,plain,aSet0(slsdtgt0(smndt0(skolem0001)))).
+# cnf(c46,plain,~doDivides0(xu,xa)|~doDivides0(xu,xb)).
+# cnf(c556,plain,~doDivides0(xu,xa)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(m__2479,plain,(~(~((?[W0]:(aElement0(W0)&sdtasdt0(xu,W0)=xa))&doDivides0(xu,xa)))),input).
+fof(c27,plain,((?[W0]:(aElement0(W0)&sdtasdt0(xu,W0)=xa))&doDivides0(xu,xa)),inference(fof_nnf,status(thm),[m__2479])).
+fof(c28,plain,((?[X3]:(aElement0(X3)&sdtasdt0(xu,X3)=xa))&doDivides0(xu,xa)),inference(variable_rename,status(thm),[c27])).
+fof(c29,plain,((aElement0(skolem0002)&sdtasdt0(xu,skolem0002)=xa)&doDivides0(xu,xa)),inference(skolemize,status(esa),[c28])).
+cnf(c32,plain,doDivides0(xu,xa),inference(split_conjunct,status(thm),[c29])).
+fof(m__2612,plain,(~(~((?[W0]:(aElement0(W0)&sdtasdt0(xu,W0)=xb))&doDivides0(xu,xb)))),input).
+fof(c21,plain,((?[W0]:(aElement0(W0)&sdtasdt0(xu,W0)=xb))&doDivides0(xu,xb)),inference(fof_nnf,status(thm),[m__2612])).
+fof(c22,plain,((?[X2]:(aElement0(X2)&sdtasdt0(xu,X2)=xb))&doDivides0(xu,xb)),inference(variable_rename,status(thm),[c21])).
+fof(c23,plain,((aElement0(skolem0001)&sdtasdt0(xu,skolem0001)=xb)&doDivides0(xu,xb)),inference(skolemize,status(esa),[c22])).
+cnf(c26,plain,doDivides0(xu,xb),inference(split_conjunct,status(thm),[c23])).
+fof(m__2383,plain,(~((((?[W0]:(aElement0(W0)&sdtasdt0(xu,W0)=xa))|doDivides0(xu,xa))|aDivisorOf0(xu,xa))&(((?[W0]:(aElement0(W0)&sdtasdt0(xu,W0)=xb))|doDivides0(xu,xb))|aDivisorOf0(xu,xb)))),input).
+fof(c38,plain,((((![W0]:(~aElement0(W0)|sdtasdt0(xu,W0)!=xa))&~doDivides0(xu,xa))&~aDivisorOf0(xu,xa))|(((![W0]:(~aElement0(W0)|sdtasdt0(xu,W0)!=xb))&~doDivides0(xu,xb))&~aDivisorOf0(xu,xb))),inference(fof_nnf,status(thm),[m__2383])).
+fof(c40,plain,(![X6]:(![X7]:((((~aElement0(X6)|sdtasdt0(xu,X6)!=xa)&~doDivides0(xu,xa))&~aDivisorOf0(xu,xa))|(((~aElement0(X7)|sdtasdt0(xu,X7)!=xb)&~doDivides0(xu,xb))&~aDivisorOf0(xu,xb))))),inference(shift_quantors,status(thm),[fof(c39,plain,((((![X6]:(~aElement0(X6)|sdtasdt0(xu,X6)!=xa))&~doDivides0(xu,xa))&~aDivisorOf0(xu,xa))|(((![X7]:(~aElement0(X7)|sdtasdt0(xu,X7)!=xb))&~doDivides0(xu,xb))&~aDivisorOf0(xu,xb))),inference(variable_rename,status(thm),[c38])).])).
+fof(c41,plain,(![X6]:(![X7]:((((((~aElement0(X6)|sdtasdt0(xu,X6)!=xa)|(~aElement0(X7)|sdtasdt0(xu,X7)!=xb))&((~aElement0(X6)|sdtasdt0(xu,X6)!=xa)|~doDivides0(xu,xb)))&((~aElement0(X6)|sdtasdt0(xu,X6)!=xa)|~aDivisorOf0(xu,xb)))&(((~doDivides0(xu,xa)|(~aElement0(X7)|sdtasdt0(xu,X7)!=xb))&(~doDivides0(xu,xa)|~doDivides0(xu,xb)))&(~doDivides0(xu,xa)|~aDivisorOf0(xu,xb))))&(((~aDivisorOf0(xu,xa)|(~aElement0(X7)|sdtasdt0(xu,X7)!=xb))&(~aDivisorOf0(xu,xa)|~doDivides0(xu,xb)))&(~aDivisorOf0(xu,xa)|~aDivisorOf0(xu,xb)))))),inference(distribute,status(thm),[c40])).
+cnf(c46,plain,~doDivides0(xu,xa)|~doDivides0(xu,xb),inference(split_conjunct,status(thm),[c41])).
+cnf(c556,plain,~doDivides0(xu,xa),inference(resolution,status(thm),[c46, c26])).
+cnf(c557,plain,$false,inference(resolution,status(thm),[c556, c32])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 219
+# Processed clauses  : 161
+# Factors computed   : 0
+# Resolvents computed: 195
+# Tautologies deleted: 5
+# Forward subsumed   : 9
+# Backward subsumed  : 2
+
+# -------- CPU Time ---------
+# User time          : 0.473 s
+# System time        : 0.105 s
+# Total time         : 0.578 s

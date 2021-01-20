@@ -1,0 +1,31 @@
+# cnf(c0,axiom,iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_r)).
+# cnf(c1,axiom,iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)).
+# cnf(c2,axiom,iext(uri_owl_onProperty,uri_ex_r,uri_ex_p)).
+# cnf(c3,axiom,iext(uri_owl_someValuesFrom,uri_ex_r,uri_ex_d)).
+# cnf(c6,negated_conjecture,~iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)|~iext(uri_owl_onProperty,uri_ex_r,uri_ex_p)).
+# cnf(c7,plain,~iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(testcase_premise_fullish_001_Subgraph_Entailment,axiom,(((iext(uri_rdfs_subClassOf,uri_ex_c,uri_ex_r)&iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction))&iext(uri_owl_onProperty,uri_ex_r,uri_ex_p))&iext(uri_owl_someValuesFrom,uri_ex_r,uri_ex_d)),input).
+cnf(c1,axiom,iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction),inference(split_conjunct,status(thm),[testcase_premise_fullish_001_Subgraph_Entailment])).
+cnf(c2,axiom,iext(uri_owl_onProperty,uri_ex_r,uri_ex_p),inference(split_conjunct,status(thm),[testcase_premise_fullish_001_Subgraph_Entailment])).
+fof(testcase_conclusion_fullish_001_Subgraph_Entailment,conjecture,(iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)&iext(uri_owl_onProperty,uri_ex_r,uri_ex_p)),input).
+fof(c4,negated_conjecture,(~(iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)&iext(uri_owl_onProperty,uri_ex_r,uri_ex_p))),inference(assume_negation,status(cth),[testcase_conclusion_fullish_001_Subgraph_Entailment])).
+fof(c5,negated_conjecture,(~iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)|~iext(uri_owl_onProperty,uri_ex_r,uri_ex_p)),inference(fof_nnf,status(thm),[c4])).
+cnf(c6,negated_conjecture,~iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction)|~iext(uri_owl_onProperty,uri_ex_r,uri_ex_p),inference(split_conjunct,status(thm),[c5])).
+cnf(c7,plain,~iext(uri_rdf_type,uri_ex_r,uri_owl_Restriction),inference(resolution,status(thm),[c6, c2])).
+cnf(c8,plain,$false,inference(resolution,status(thm),[c7, c1])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 5
+# Processed clauses  : 6
+# Factors computed   : 0
+# Resolvents computed: 2
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 1
+
+# -------- CPU Time ---------
+# User time          : 0.325 s
+# System time        : 0.312 s
+# Total time         : 0.636 s

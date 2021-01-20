@@ -1,0 +1,391 @@
+# cnf(c54,axiom,grain(skolem0003)).
+# cnf(c60,axiom,plant(skolem0004)).
+# cnf(c66,axiom,snail(skolem0005)).
+# cnf(c72,axiom,caterpillar(skolem0006)).
+# cnf(c78,axiom,bird(skolem0007)).
+# cnf(c5,negated_conjecture,~animal(X47)|~animal(X48)|~grain(X46)|~eats(X48,X46)|~eats(X47,X48)).
+# cnf(c84,axiom,fox(skolem0008)).
+# cnf(c90,axiom,wolf(skolem0009)).
+# cnf(c96,axiom,animal(skolem0010)).
+# cnf(c99,axiom,edible(skolem0011)).
+# cnf(c51,axiom,~grain(X49)|plant(X49)).
+# cnf(c10,axiom,~snail(X50)|plant(skolem0001(X50))).
+# cnf(c100,plain,plant(skolem0003)).
+# cnf(c57,axiom,~plant(X51)|edible(X51)).
+# cnf(c102,plain,edible(skolem0004)).
+# cnf(c103,plain,edible(skolem0003)).
+# cnf(c63,axiom,~snail(X52)|animal(X52)).
+# cnf(c11,axiom,~snail(X53)|eats(X53,skolem0001(X53))).
+# cnf(c104,plain,animal(skolem0005)).
+# cnf(c69,axiom,~caterpillar(X54)|animal(X54)).
+# cnf(c106,plain,animal(skolem0006)).
+# cnf(c75,axiom,~bird(X55)|animal(X55)).
+# cnf(c107,plain,animal(skolem0007)).
+# cnf(c16,axiom,~caterpillar(X56)|plant(skolem0002(X56))).
+# cnf(c81,axiom,~fox(X57)|animal(X57)).
+# cnf(c109,plain,animal(skolem0008)).
+# cnf(c87,axiom,~wolf(X58)|animal(X58)).
+# cnf(c110,plain,animal(skolem0009)).
+# cnf(c93,axiom,~animal(X59)|edible(X59)).
+# cnf(c17,axiom,~caterpillar(X60)|eats(X60,skolem0002(X60))).
+# cnf(c111,plain,edible(skolem0010)).
+# cnf(c112,plain,edible(skolem0008)).
+# cnf(c113,plain,edible(skolem0006)).
+# cnf(c114,plain,edible(skolem0009)).
+# cnf(c115,plain,edible(skolem0007)).
+# cnf(c21,axiom,~bird(X62)|~snail(X61)|~eats(X62,X61)).
+# cnf(c116,plain,edible(skolem0005)).
+# cnf(c101,plain,plant(skolem0001(skolem0005))).
+# cnf(c108,plain,plant(skolem0002(skolem0006))).
+# cnf(c118,plain,edible(skolem0001(skolem0005))).
+# cnf(c119,plain,edible(skolem0002(skolem0006))).
+# cnf(c24,axiom,~bird(X64)|~caterpillar(X63)|eats(X64,X63)).
+# cnf(c105,plain,eats(skolem0005,skolem0001(skolem0005))).
+# cnf(c117,plain,eats(skolem0006,skolem0002(skolem0006))).
+# cnf(c120,plain,~bird(X65)|eats(X65,skolem0006)).
+# cnf(c125,plain,eats(skolem0007,skolem0006)).
+# cnf(c126,plain,~bird(skolem0007)|~snail(skolem0006)).
+# cnf(c28,axiom,~wolf(X67)|~grain(X66)|~eats(X67,X66)).
+# cnf(c129,plain,~wolf(skolem0007)|~grain(skolem0006)).
+# cnf(c32,axiom,~wolf(X69)|~fox(X68)|~eats(X69,X68)).
+# cnf(c132,plain,~wolf(skolem0007)|~fox(skolem0006)).
+# cnf(c35,axiom,~fox(X70)|~wolf(X71)|much_smaller(X70,X71)).
+# cnf(c134,plain,~fox(X72)|much_smaller(X72,skolem0009)).
+# cnf(c38,axiom,~bird(X73)|~fox(X74)|much_smaller(X73,X74)).
+# cnf(c135,plain,much_smaller(skolem0008,skolem0009)).
+# cnf(c136,plain,~bird(X75)|much_smaller(X75,skolem0008)).
+# cnf(c137,plain,much_smaller(skolem0007,skolem0008)).
+# cnf(c41,axiom,~bird(X77)|~caterpillar(X76)|much_smaller(X76,X77)).
+# cnf(c138,plain,~bird(X78)|much_smaller(skolem0006,X78)).
+# cnf(c44,axiom,~bird(X80)|~snail(X79)|much_smaller(X79,X80)).
+# cnf(c139,plain,much_smaller(skolem0006,skolem0007)).
+# cnf(c140,plain,~bird(X81)|much_smaller(skolem0005,X81)).
+# cnf(c141,plain,much_smaller(skolem0005,skolem0007)).
+# cnf(c121,plain,~bird(skolem0005)|~snail(skolem0001(skolem0005))).
+# cnf(c123,plain,~bird(skolem0006)|~snail(skolem0002(skolem0006))).
+# cnf(c48,axiom,~animal(X83)|~plant(X85)|eats(X83,X85)|~animal(X84)|~much_smaller(X84,X83)|~plant(X82)|~eats(X84,X82)|eats(X83,X84)).
+# cnf(c128,plain,~wolf(skolem0005)|~grain(skolem0001(skolem0005))).
+# cnf(c130,plain,~wolf(skolem0006)|~grain(skolem0002(skolem0006))).
+# cnf(c131,plain,~wolf(skolem0005)|~fox(skolem0001(skolem0005))).
+# cnf(c133,plain,~wolf(skolem0006)|~fox(skolem0002(skolem0006))).
+# cnf(c127,plain,~animal(skolem0007)|~animal(skolem0006)|~grain(X86)|~eats(skolem0006,X86)).
+# cnf(c122,plain,~animal(skolem0005)|~animal(skolem0001(skolem0005))|~grain(X87)|~eats(skolem0001(skolem0005),X87)).
+# cnf(c145,plain,~animal(skolem0007)|~animal(skolem0006)|~grain(skolem0002(skolem0006))).
+# cnf(c124,plain,~animal(skolem0006)|~animal(skolem0002(skolem0006))|~grain(X88)|~eats(skolem0002(skolem0006),X88)).
+# cnf(c143,plain,~animal(X90)|~plant(X89)|eats(X90,X89)|~animal(skolem0007)|~much_smaller(skolem0007,X90)|~plant(skolem0006)|eats(X90,skolem0007)).
+# cnf(c146,plain,~animal(skolem0008)|~plant(X91)|eats(skolem0008,X91)|~animal(skolem0007)|~plant(skolem0006)|eats(skolem0008,skolem0007)).
+# cnf(c142,plain,~animal(X93)|~plant(X92)|eats(X93,X92)|~animal(skolem0005)|~much_smaller(skolem0005,X93)|~plant(skolem0001(skolem0005))|eats(X93,skolem0005)).
+# cnf(c144,plain,~animal(X95)|~plant(X94)|eats(X95,X94)|~animal(skolem0006)|~much_smaller(skolem0006,X95)|~plant(skolem0002(skolem0006))|eats(X95,skolem0006)).
+# cnf(c147,plain,~animal(X96)|~plant(X97)|eats(X96,X97)|~animal(skolem0005)|~much_smaller(skolem0005,X96)|eats(X96,skolem0005)).
+# cnf(c149,plain,~animal(skolem0007)|~plant(X98)|eats(skolem0007,X98)|~animal(skolem0005)|eats(skolem0007,skolem0005)).
+# cnf(c150,plain,~animal(skolem0007)|~plant(X99)|eats(skolem0007,X99)|eats(skolem0007,skolem0005)).
+# cnf(c151,plain,~animal(skolem0007)|eats(skolem0007,skolem0004)|eats(skolem0007,skolem0005)).
+# cnf(c155,plain,eats(skolem0007,skolem0004)|eats(skolem0007,skolem0005)).
+# cnf(c148,plain,~animal(X101)|~plant(X100)|eats(X101,X100)|~animal(skolem0006)|~much_smaller(skolem0006,X101)|eats(X101,skolem0006)).
+# cnf(c156,plain,eats(skolem0007,skolem0005)|~bird(skolem0007)|~snail(skolem0004)).
+# cnf(c159,plain,eats(skolem0007,skolem0005)|~wolf(skolem0007)|~fox(skolem0004)).
+# cnf(c160,plain,eats(skolem0007,skolem0005)|~wolf(skolem0007)|~grain(skolem0004)).
+# cnf(c161,plain,eats(skolem0007,skolem0004)|~bird(skolem0007)|~snail(skolem0005)).
+# cnf(c167,plain,eats(skolem0007,skolem0004)|~bird(skolem0007)).
+# cnf(c152,plain,~animal(skolem0007)|eats(skolem0007,skolem0003)|eats(skolem0007,skolem0005)).
+# cnf(c168,plain,eats(skolem0007,skolem0004)).
+# cnf(c170,plain,~bird(skolem0007)|~snail(skolem0004)).
+# cnf(c173,plain,~wolf(skolem0007)|~fox(skolem0004)).
+# cnf(c174,plain,~wolf(skolem0007)|~grain(skolem0004)).
+# cnf(c169,plain,eats(skolem0007,skolem0003)|eats(skolem0007,skolem0005)).
+# cnf(c153,plain,~animal(skolem0007)|eats(skolem0007,skolem0002(skolem0006))|eats(skolem0007,skolem0005)).
+# cnf(c175,plain,eats(skolem0007,skolem0005)|~bird(skolem0007)|~snail(skolem0003)).
+# cnf(c178,plain,eats(skolem0007,skolem0005)|~wolf(skolem0007)|~fox(skolem0003)).
+# cnf(c179,plain,eats(skolem0007,skolem0005)|~wolf(skolem0007)|~grain(skolem0003)).
+# cnf(c154,plain,~animal(skolem0007)|eats(skolem0007,skolem0001(skolem0005))|eats(skolem0007,skolem0005)).
+# cnf(c186,plain,eats(skolem0007,skolem0005)|~wolf(skolem0007)).
+# cnf(c180,plain,eats(skolem0007,skolem0003)|~bird(skolem0007)|~snail(skolem0005)).
+# cnf(c188,plain,eats(skolem0007,skolem0003)|~bird(skolem0007)).
+# cnf(c189,plain,eats(skolem0007,skolem0003)).
+# cnf(c190,plain,~bird(skolem0007)|~snail(skolem0003)).
+# cnf(c157,plain,eats(skolem0007,skolem0005)|~animal(skolem0007)|~animal(skolem0004)|~grain(X102)|~eats(skolem0004,X102)).
+# cnf(c193,plain,~wolf(skolem0007)|~fox(skolem0003)).
+# cnf(c194,plain,~wolf(skolem0007)|~grain(skolem0003)).
+# cnf(c195,plain,~wolf(skolem0007)).
+# cnf(c158,plain,eats(skolem0007,skolem0005)|~animal(X104)|~plant(X103)|eats(X104,X103)|~animal(skolem0007)|~much_smaller(skolem0007,X104)|~plant(skolem0004)|eats(X104,skolem0007)).
+# cnf(c185,plain,eats(skolem0007,skolem0002(skolem0006))|eats(skolem0007,skolem0005)).
+# cnf(c187,plain,eats(skolem0007,skolem0001(skolem0005))|eats(skolem0007,skolem0005)).
+# cnf(c171,plain,~animal(skolem0007)|~animal(skolem0004)|~grain(X105)|~eats(skolem0004,X105)).
+# cnf(c191,plain,~animal(skolem0007)|~animal(skolem0003)|~grain(X106)|~eats(skolem0003,X106)).
+# cnf(c197,plain,eats(skolem0007,skolem0005)|~bird(skolem0007)|~snail(skolem0002(skolem0006))).
+# cnf(c202,plain,eats(skolem0007,skolem0002(skolem0006))|~bird(skolem0007)|~snail(skolem0005)).
+# cnf(c217,plain,eats(skolem0007,skolem0002(skolem0006))|~bird(skolem0007)).
+# cnf(c218,plain,eats(skolem0007,skolem0002(skolem0006))).
+# cnf(c219,plain,~bird(skolem0007)|~snail(skolem0002(skolem0006))).
+# cnf(c207,plain,eats(skolem0007,skolem0005)|~bird(skolem0007)|~snail(skolem0001(skolem0005))).
+# cnf(c212,plain,eats(skolem0007,skolem0001(skolem0005))|~bird(skolem0007)|~snail(skolem0005)).
+# cnf(c224,plain,eats(skolem0007,skolem0001(skolem0005))|~bird(skolem0007)).
+# cnf(c172,plain,~animal(X112)|~plant(X111)|eats(X112,X111)|~animal(skolem0007)|~much_smaller(skolem0007,X112)|~plant(skolem0004)|eats(X112,skolem0007)).
+# cnf(c225,plain,eats(skolem0007,skolem0001(skolem0005))).
+# cnf(c227,plain,~bird(skolem0007)|~snail(skolem0001(skolem0005))).
+# cnf(c220,plain,~animal(skolem0007)|~animal(skolem0002(skolem0006))|~grain(X114)|~eats(skolem0002(skolem0006),X114)).
+# cnf(c228,plain,~animal(skolem0007)|~animal(skolem0001(skolem0005))|~grain(X115)|~eats(skolem0001(skolem0005),X115)).
+# cnf(c177,plain,eats(skolem0007,skolem0005)|~animal(X119)|~plant(X118)|eats(X119,X118)|~animal(skolem0007)|~much_smaller(skolem0007,X119)|~plant(skolem0003)|eats(X119,skolem0007)).
+# cnf(c226,plain,~animal(skolem0008)|~plant(X123)|eats(skolem0008,X123)|~animal(skolem0007)|~plant(skolem0004)|eats(skolem0008,skolem0007)).
+# cnf(c233,plain,~animal(skolem0008)|~plant(X124)|eats(skolem0008,X124)|~animal(skolem0007)|eats(skolem0008,skolem0007)).
+# cnf(c234,plain,~animal(skolem0008)|~plant(X127)|eats(skolem0008,X127)|eats(skolem0008,skolem0007)).
+# cnf(c235,plain,~animal(skolem0008)|eats(skolem0008,skolem0004)|eats(skolem0008,skolem0007)).
+# cnf(c239,plain,eats(skolem0008,skolem0004)|eats(skolem0008,skolem0007)).
+# cnf(c240,plain,eats(skolem0008,skolem0007)|~bird(skolem0008)|~snail(skolem0004)).
+# cnf(c243,plain,eats(skolem0008,skolem0007)|~wolf(skolem0008)|~fox(skolem0004)).
+# cnf(c192,plain,~animal(X129)|~plant(X128)|eats(X129,X128)|~animal(skolem0007)|~much_smaller(skolem0007,X129)|~plant(skolem0003)|eats(X129,skolem0007)).
+# cnf(c244,plain,eats(skolem0008,skolem0007)|~wolf(skolem0008)|~grain(skolem0004)).
+# cnf(c245,plain,eats(skolem0008,skolem0004)|~bird(skolem0008)|~snail(skolem0007)).
+# cnf(c248,plain,eats(skolem0008,skolem0004)|~wolf(skolem0008)|~fox(skolem0007)).
+# cnf(c249,plain,eats(skolem0008,skolem0004)|~wolf(skolem0008)|~grain(skolem0007)).
+# cnf(c236,plain,~animal(skolem0008)|eats(skolem0008,skolem0003)|eats(skolem0008,skolem0007)).
+# cnf(c251,plain,eats(skolem0008,skolem0003)|eats(skolem0008,skolem0007)).
+# cnf(c252,plain,eats(skolem0008,skolem0007)|~bird(skolem0008)|~snail(skolem0003)).
+# cnf(c255,plain,eats(skolem0008,skolem0007)|~wolf(skolem0008)|~fox(skolem0003)).
+# cnf(c256,plain,eats(skolem0008,skolem0007)|~wolf(skolem0008)|~grain(skolem0003)).
+# cnf(c262,plain,eats(skolem0008,skolem0007)|~wolf(skolem0008)).
+# cnf(c199,plain,eats(skolem0007,skolem0005)|~animal(X132)|~plant(X131)|eats(X132,X131)|~animal(skolem0007)|~much_smaller(skolem0007,X132)|~plant(skolem0002(skolem0006))|eats(X132,skolem0007)).
+# cnf(c257,plain,eats(skolem0008,skolem0003)|~bird(skolem0008)|~snail(skolem0007)).
+# cnf(c260,plain,eats(skolem0008,skolem0003)|~wolf(skolem0008)|~fox(skolem0007)).
+# cnf(c261,plain,eats(skolem0008,skolem0003)|~wolf(skolem0008)|~grain(skolem0007)).
+# cnf(c237,plain,~animal(skolem0008)|eats(skolem0008,skolem0002(skolem0006))|eats(skolem0008,skolem0007)).
+# cnf(c264,plain,eats(skolem0008,skolem0002(skolem0006))|eats(skolem0008,skolem0007)).
+# cnf(c265,plain,eats(skolem0008,skolem0007)|~bird(skolem0008)|~snail(skolem0002(skolem0006))).
+# cnf(c270,plain,eats(skolem0008,skolem0002(skolem0006))|~bird(skolem0008)|~snail(skolem0007)).
+# cnf(c273,plain,eats(skolem0008,skolem0002(skolem0006))|~wolf(skolem0008)|~fox(skolem0007)).
+# cnf(c209,plain,eats(skolem0007,skolem0005)|~animal(X136)|~plant(X135)|eats(X136,X135)|~animal(skolem0007)|~much_smaller(skolem0007,X136)|~plant(skolem0001(skolem0005))|eats(X136,skolem0007)).
+# cnf(c274,plain,eats(skolem0008,skolem0002(skolem0006))|~wolf(skolem0008)|~grain(skolem0007)).
+# cnf(c238,plain,~animal(skolem0008)|eats(skolem0008,skolem0001(skolem0005))|eats(skolem0008,skolem0007)).
+# cnf(c276,plain,eats(skolem0008,skolem0001(skolem0005))|eats(skolem0008,skolem0007)).
+# cnf(c277,plain,eats(skolem0008,skolem0007)|~bird(skolem0008)|~snail(skolem0001(skolem0005))).
+# cnf(c282,plain,eats(skolem0008,skolem0001(skolem0005))|~bird(skolem0008)|~snail(skolem0007)).
+# cnf(c285,plain,eats(skolem0008,skolem0001(skolem0005))|~wolf(skolem0008)|~fox(skolem0007)).
+# cnf(c286,plain,eats(skolem0008,skolem0001(skolem0005))|~wolf(skolem0008)|~grain(skolem0007)).
+# cnf(c241,plain,eats(skolem0008,skolem0007)|~animal(skolem0008)|~animal(skolem0004)|~grain(X139)|~eats(skolem0004,X139)).
+# cnf(c221,plain,~animal(X141)|~plant(X140)|eats(X141,X140)|~animal(skolem0007)|~much_smaller(skolem0007,X141)|~plant(skolem0002(skolem0006))|eats(X141,skolem0007)).
+# cnf(c246,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007)|~grain(X142)|~eats(skolem0007,X142)).
+# cnf(c288,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0006)).
+# cnf(c289,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0003)).
+# cnf(c293,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007)).
+# cnf(c294,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)).
+# cnf(c229,plain,~animal(X144)|~plant(X143)|eats(X144,X143)|~animal(skolem0007)|~much_smaller(skolem0007,X144)|~plant(skolem0001(skolem0005))|eats(X144,skolem0007)).
+# cnf(c295,plain,eats(skolem0008,skolem0004)).
+# cnf(c297,plain,~bird(skolem0008)|~snail(skolem0004)).
+# cnf(c300,plain,~wolf(skolem0008)|~fox(skolem0004)).
+# cnf(c301,plain,~wolf(skolem0008)|~grain(skolem0004)).
+# cnf(c298,plain,~animal(skolem0008)|~animal(skolem0004)|~grain(X145)|~eats(skolem0004,X145)).
+# cnf(c253,plain,eats(skolem0008,skolem0007)|~animal(skolem0008)|~animal(skolem0003)|~grain(X147)|~eats(skolem0003,X147)).
+# cnf(c258,plain,eats(skolem0008,skolem0003)|~animal(skolem0008)|~animal(skolem0007)|~grain(X148)|~eats(skolem0007,X148)).
+# cnf(c242,plain,eats(skolem0008,skolem0007)|~animal(X150)|~plant(X149)|eats(X150,X149)|~animal(skolem0008)|~much_smaller(skolem0008,X150)|~plant(skolem0004)|eats(X150,skolem0008)).
+# cnf(c302,plain,eats(skolem0008,skolem0003)|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0006)).
+# cnf(c303,plain,eats(skolem0008,skolem0003)|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0003)).
+# cnf(c308,plain,eats(skolem0008,skolem0003)|~animal(skolem0008)|~animal(skolem0007)).
+# cnf(c309,plain,eats(skolem0008,skolem0003)|~animal(skolem0008)).
+# cnf(c310,plain,eats(skolem0008,skolem0003)).
+# cnf(c311,plain,~bird(skolem0008)|~snail(skolem0003)).
+# cnf(c314,plain,~wolf(skolem0008)|~fox(skolem0003)).
+# cnf(c315,plain,~wolf(skolem0008)|~grain(skolem0003)).
+# cnf(c316,plain,~wolf(skolem0008)).
+# cnf(c312,plain,~animal(skolem0008)|~animal(skolem0003)|~grain(X153)|~eats(skolem0003,X153)).
+# cnf(c271,plain,eats(skolem0008,skolem0002(skolem0006))|~animal(skolem0008)|~animal(skolem0007)|~grain(X155)|~eats(skolem0007,X155)).
+# cnf(c317,plain,eats(skolem0008,skolem0002(skolem0006))|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0006)).
+# cnf(c254,plain,eats(skolem0008,skolem0007)|~animal(X157)|~plant(X156)|eats(X157,X156)|~animal(skolem0008)|~much_smaller(skolem0008,X157)|~plant(skolem0003)|eats(X157,skolem0008)).
+# cnf(c318,plain,eats(skolem0008,skolem0002(skolem0006))|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0003)).
+# cnf(c323,plain,eats(skolem0008,skolem0002(skolem0006))|~animal(skolem0008)|~animal(skolem0007)).
+# cnf(c324,plain,eats(skolem0008,skolem0002(skolem0006))|~animal(skolem0008)).
+# cnf(c325,plain,eats(skolem0008,skolem0002(skolem0006))).
+# cnf(c326,plain,~bird(skolem0008)|~snail(skolem0002(skolem0006))).
+# cnf(c327,plain,~animal(skolem0008)|~animal(skolem0002(skolem0006))|~grain(X160)|~eats(skolem0002(skolem0006),X160)).
+# cnf(c263,plain,eats(skolem0007,skolem0005)|~animal(X162)|~plant(X161)|eats(X162,X161)|~animal(skolem0007)|~much_smaller(skolem0007,X162)|eats(X162,skolem0007)).
+# cnf(c283,plain,eats(skolem0008,skolem0001(skolem0005))|~animal(skolem0008)|~animal(skolem0007)|~grain(X163)|~eats(skolem0007,X163)).
+# cnf(c332,plain,eats(skolem0008,skolem0001(skolem0005))|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0006)).
+# cnf(c333,plain,eats(skolem0008,skolem0001(skolem0005))|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0003)).
+# cnf(c337,plain,eats(skolem0008,skolem0001(skolem0005))|~animal(skolem0008)|~animal(skolem0007)).
+# cnf(c338,plain,eats(skolem0008,skolem0001(skolem0005))|~animal(skolem0008)).
+# cnf(c339,plain,eats(skolem0008,skolem0001(skolem0005))).
+# cnf(c340,plain,~bird(skolem0008)|~snail(skolem0001(skolem0005))).
+# cnf(c267,plain,eats(skolem0008,skolem0007)|~animal(X166)|~plant(X165)|eats(X166,X165)|~animal(skolem0008)|~much_smaller(skolem0008,X166)|~plant(skolem0002(skolem0006))|eats(X166,skolem0008)).
+# cnf(c341,plain,~animal(skolem0008)|~animal(skolem0001(skolem0005))|~grain(X167)|~eats(skolem0001(skolem0005),X167)).
+# cnf(c287,plain,~animal(X168)|~plant(X169)|eats(X168,X169)|~animal(skolem0007)|~much_smaller(skolem0007,X168)|eats(X168,skolem0007)).
+# cnf(c299,plain,~animal(X177)|~plant(X176)|eats(X177,X176)|~animal(skolem0008)|~much_smaller(skolem0008,X177)|~plant(skolem0004)|eats(X177,skolem0008)).
+# cnf(c347,plain,~animal(skolem0009)|~plant(X178)|eats(skolem0009,X178)|~animal(skolem0008)|~plant(skolem0004)|eats(skolem0009,skolem0008)).
+# cnf(c348,plain,~animal(skolem0009)|~plant(X181)|eats(skolem0009,X181)|~animal(skolem0008)|eats(skolem0009,skolem0008)).
+# cnf(c349,plain,~animal(skolem0009)|~plant(X182)|eats(skolem0009,X182)|eats(skolem0009,skolem0008)).
+# cnf(c350,plain,~animal(skolem0009)|eats(skolem0009,skolem0004)|eats(skolem0009,skolem0008)).
+# cnf(c354,plain,eats(skolem0009,skolem0004)|eats(skolem0009,skolem0008)).
+# cnf(c355,plain,eats(skolem0009,skolem0008)|~bird(skolem0009)|~snail(skolem0004)).
+# cnf(c279,plain,eats(skolem0008,skolem0007)|~animal(X184)|~plant(X183)|eats(X184,X183)|~animal(skolem0008)|~much_smaller(skolem0008,X184)|~plant(skolem0001(skolem0005))|eats(X184,skolem0008)).
+# cnf(c358,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009)|~fox(skolem0004)).
+# cnf(c359,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009)|~grain(skolem0004)).
+# cnf(c360,plain,eats(skolem0009,skolem0004)|~bird(skolem0009)|~snail(skolem0008)).
+# cnf(c363,plain,eats(skolem0009,skolem0004)|~wolf(skolem0009)|~fox(skolem0008)).
+# cnf(c366,plain,eats(skolem0009,skolem0004)|~wolf(skolem0009)).
+# cnf(c367,plain,eats(skolem0009,skolem0004)).
+# cnf(c368,plain,~bird(skolem0009)|~snail(skolem0004)).
+# cnf(c371,plain,~wolf(skolem0009)|~fox(skolem0004)).
+# cnf(c372,plain,~wolf(skolem0009)|~grain(skolem0004)).
+# cnf(c351,plain,~animal(skolem0009)|eats(skolem0009,skolem0003)|eats(skolem0009,skolem0008)).
+# cnf(c373,plain,eats(skolem0009,skolem0003)|eats(skolem0009,skolem0008)).
+# cnf(c374,plain,eats(skolem0009,skolem0008)|~bird(skolem0009)|~snail(skolem0003)).
+# cnf(c377,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009)|~fox(skolem0003)).
+# cnf(c378,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009)|~grain(skolem0003)).
+# cnf(c313,plain,~animal(X189)|~plant(X188)|eats(X189,X188)|~animal(skolem0008)|~much_smaller(skolem0008,X189)|~plant(skolem0003)|eats(X189,skolem0008)).
+# cnf(c384,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009)).
+# cnf(c386,plain,eats(skolem0009,skolem0008)).
+# cnf(c387,plain,~bird(skolem0009)|~snail(skolem0008)).
+# cnf(c390,plain,~wolf(skolem0009)|~fox(skolem0008)).
+# cnf(c392,plain,~wolf(skolem0009)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(wolf_type,axiom,(?[A]:wolf(A)),input).
+fof(c88,axiom,(?[X42]:wolf(X42)),inference(variable_rename,status(thm),[wolf_type])).
+fof(c89,axiom,wolf(skolem0009),inference(skolemize,status(esa),[c88])).
+cnf(c90,axiom,wolf(skolem0009),inference(split_conjunct,status(thm),[c89])).
+fof(fox_type,axiom,(?[A]:fox(A)),input).
+fof(c82,axiom,(?[X40]:fox(X40)),inference(variable_rename,status(thm),[fox_type])).
+fof(c83,axiom,fox(skolem0008),inference(skolemize,status(esa),[c82])).
+cnf(c84,axiom,fox(skolem0008),inference(split_conjunct,status(thm),[c83])).
+fof(pel47_11,axiom,(![X]:(![Y]:((wolf(X)&fox(Y))=>(~eats(X,Y))))),input).
+fof(c29,axiom,(![X]:(![Y]:((wolf(X)&fox(Y))=>~eats(X,Y)))),inference(fof_simplification,status(thm),[pel47_11])).
+fof(c30,axiom,(![X]:(![Y]:((~wolf(X)|~fox(Y))|~eats(X,Y)))),inference(fof_nnf,status(thm),[c29])).
+fof(c31,axiom,(![X15]:(![X16]:((~wolf(X15)|~fox(X16))|~eats(X15,X16)))),inference(variable_rename,status(thm),[c30])).
+cnf(c32,axiom,~wolf(X69)|~fox(X68)|~eats(X69,X68),inference(split_conjunct,status(thm),[c31])).
+fof(grain_type,axiom,(?[A]:grain(A)),input).
+fof(c52,axiom,(?[X30]:grain(X30)),inference(variable_rename,status(thm),[grain_type])).
+fof(c53,axiom,grain(skolem0003),inference(skolemize,status(esa),[c52])).
+cnf(c54,axiom,grain(skolem0003),inference(split_conjunct,status(thm),[c53])).
+fof(pel47_11a,axiom,(![X]:(![Y]:((wolf(X)&grain(Y))=>(~eats(X,Y))))),input).
+fof(c25,axiom,(![X]:(![Y]:((wolf(X)&grain(Y))=>~eats(X,Y)))),inference(fof_simplification,status(thm),[pel47_11a])).
+fof(c26,axiom,(![X]:(![Y]:((~wolf(X)|~grain(Y))|~eats(X,Y)))),inference(fof_nnf,status(thm),[c25])).
+fof(c27,axiom,(![X13]:(![X14]:((~wolf(X13)|~grain(X14))|~eats(X13,X14)))),inference(variable_rename,status(thm),[c26])).
+cnf(c28,axiom,~wolf(X67)|~grain(X66)|~eats(X67,X66),inference(split_conjunct,status(thm),[c27])).
+fof(wolf_is_animal,axiom,(![A]:(wolf(A)=>animal(A))),input).
+fof(c85,axiom,(![A]:(~wolf(A)|animal(A))),inference(fof_nnf,status(thm),[wolf_is_animal])).
+fof(c86,axiom,(![X41]:(~wolf(X41)|animal(X41))),inference(variable_rename,status(thm),[c85])).
+cnf(c87,axiom,~wolf(X58)|animal(X58),inference(split_conjunct,status(thm),[c86])).
+cnf(c110,plain,animal(skolem0009),inference(resolution,status(thm),[c87, c90])).
+fof(grain_is_plant,axiom,(![A]:(grain(A)=>plant(A))),input).
+fof(c49,axiom,(![A]:(~grain(A)|plant(A))),inference(fof_nnf,status(thm),[grain_is_plant])).
+fof(c50,axiom,(![X29]:(~grain(X29)|plant(X29))),inference(variable_rename,status(thm),[c49])).
+cnf(c51,axiom,~grain(X49)|plant(X49),inference(split_conjunct,status(thm),[c50])).
+cnf(c100,plain,plant(skolem0003),inference(resolution,status(thm),[c51, c54])).
+fof(fox_is_animal,axiom,(![A]:(fox(A)=>animal(A))),input).
+fof(c79,axiom,(![A]:(~fox(A)|animal(A))),inference(fof_nnf,status(thm),[fox_is_animal])).
+fof(c80,axiom,(![X39]:(~fox(X39)|animal(X39))),inference(variable_rename,status(thm),[c79])).
+cnf(c81,axiom,~fox(X57)|animal(X57),inference(split_conjunct,status(thm),[c80])).
+cnf(c109,plain,animal(skolem0008),inference(resolution,status(thm),[c81, c84])).
+fof(plant_type,axiom,(?[A]:plant(A)),input).
+fof(c58,axiom,(?[X32]:plant(X32)),inference(variable_rename,status(thm),[plant_type])).
+fof(c59,axiom,plant(skolem0004),inference(skolemize,status(esa),[c58])).
+cnf(c60,axiom,plant(skolem0004),inference(split_conjunct,status(thm),[c59])).
+fof(pel47_10,axiom,(![X]:(![Y]:((fox(X)&wolf(Y))=>much_smaller(X,Y)))),input).
+fof(c33,axiom,(![X]:(![Y]:((~fox(X)|~wolf(Y))|much_smaller(X,Y)))),inference(fof_nnf,status(thm),[pel47_10])).
+fof(c34,axiom,(![X17]:(![X18]:((~fox(X17)|~wolf(X18))|much_smaller(X17,X18)))),inference(variable_rename,status(thm),[c33])).
+cnf(c35,axiom,~fox(X70)|~wolf(X71)|much_smaller(X70,X71),inference(split_conjunct,status(thm),[c34])).
+cnf(c134,plain,~fox(X72)|much_smaller(X72,skolem0009),inference(resolution,status(thm),[c35, c90])).
+cnf(c135,plain,much_smaller(skolem0008,skolem0009),inference(resolution,status(thm),[c134, c84])).
+fof(pel47_7,axiom,(![X]:(animal(X)=>((![Y]:(plant(Y)=>eats(X,Y)))|(![Y1]:(animal(Y1)=>((much_smaller(Y1,X)&(?[Z]:(plant(Z)&eats(Y1,Z))))=>eats(X,Y1))))))),input).
+fof(c45,axiom,(![X]:(~animal(X)|((![Y]:(~plant(Y)|eats(X,Y)))|(![Y1]:(~animal(Y1)|((~much_smaller(Y1,X)|(![Z]:(~plant(Z)|~eats(Y1,Z))))|eats(X,Y1))))))),inference(fof_nnf,status(thm),[pel47_7])).
+fof(c47,axiom,(![X25]:(![X26]:(![X27]:(![X28]:(~animal(X25)|((~plant(X26)|eats(X25,X26))|(~animal(X27)|((~much_smaller(X27,X25)|(~plant(X28)|~eats(X27,X28)))|eats(X25,X27))))))))),inference(shift_quantors,status(thm),[fof(c46,axiom,(![X25]:(~animal(X25)|((![X26]:(~plant(X26)|eats(X25,X26)))|(![X27]:(~animal(X27)|((~much_smaller(X27,X25)|(![X28]:(~plant(X28)|~eats(X27,X28))))|eats(X25,X27))))))),inference(variable_rename,status(thm),[c45])).])).
+cnf(c48,axiom,~animal(X83)|~plant(X85)|eats(X83,X85)|~animal(X84)|~much_smaller(X84,X83)|~plant(X82)|~eats(X84,X82)|eats(X83,X84),inference(split_conjunct,status(thm),[c47])).
+fof(bird_type,axiom,(?[A]:bird(A)),input).
+fof(c76,axiom,(?[X38]:bird(X38)),inference(variable_rename,status(thm),[bird_type])).
+fof(c77,axiom,bird(skolem0007),inference(skolemize,status(esa),[c76])).
+cnf(c78,axiom,bird(skolem0007),inference(split_conjunct,status(thm),[c77])).
+fof(bird_is_animal,axiom,(![A]:(bird(A)=>animal(A))),input).
+fof(c73,axiom,(![A]:(~bird(A)|animal(A))),inference(fof_nnf,status(thm),[bird_is_animal])).
+fof(c74,axiom,(![X37]:(~bird(X37)|animal(X37))),inference(variable_rename,status(thm),[c73])).
+cnf(c75,axiom,~bird(X55)|animal(X55),inference(split_conjunct,status(thm),[c74])).
+cnf(c107,plain,animal(skolem0007),inference(resolution,status(thm),[c75, c78])).
+fof(snail_type,axiom,(?[A]:snail(A)),input).
+fof(c64,axiom,(?[X34]:snail(X34)),inference(variable_rename,status(thm),[snail_type])).
+fof(c65,axiom,snail(skolem0005),inference(skolemize,status(esa),[c64])).
+cnf(c66,axiom,snail(skolem0005),inference(split_conjunct,status(thm),[c65])).
+fof(pel47_13,axiom,(![X]:(![Y]:((bird(X)&snail(Y))=>(~eats(X,Y))))),input).
+fof(c18,axiom,(![X]:(![Y]:((bird(X)&snail(Y))=>~eats(X,Y)))),inference(fof_simplification,status(thm),[pel47_13])).
+fof(c19,axiom,(![X]:(![Y]:((~bird(X)|~snail(Y))|~eats(X,Y)))),inference(fof_nnf,status(thm),[c18])).
+fof(c20,axiom,(![X9]:(![X10]:((~bird(X9)|~snail(X10))|~eats(X9,X10)))),inference(variable_rename,status(thm),[c19])).
+cnf(c21,axiom,~bird(X62)|~snail(X61)|~eats(X62,X61),inference(split_conjunct,status(thm),[c20])).
+fof(snail_is_animal,axiom,(![A]:(snail(A)=>animal(A))),input).
+fof(c61,axiom,(![A]:(~snail(A)|animal(A))),inference(fof_nnf,status(thm),[snail_is_animal])).
+fof(c62,axiom,(![X33]:(~snail(X33)|animal(X33))),inference(variable_rename,status(thm),[c61])).
+cnf(c63,axiom,~snail(X52)|animal(X52),inference(split_conjunct,status(thm),[c62])).
+cnf(c104,plain,animal(skolem0005),inference(resolution,status(thm),[c63, c66])).
+fof(pel47_8,axiom,(![Y]:(![X]:((bird(Y)&snail(X))=>much_smaller(X,Y)))),input).
+fof(c42,axiom,(![Y]:(![X]:((~bird(Y)|~snail(X))|much_smaller(X,Y)))),inference(fof_nnf,status(thm),[pel47_8])).
+fof(c43,axiom,(![X23]:(![X24]:((~bird(X23)|~snail(X24))|much_smaller(X24,X23)))),inference(variable_rename,status(thm),[c42])).
+cnf(c44,axiom,~bird(X80)|~snail(X79)|much_smaller(X79,X80),inference(split_conjunct,status(thm),[c43])).
+cnf(c140,plain,~bird(X81)|much_smaller(skolem0005,X81),inference(resolution,status(thm),[c44, c66])).
+cnf(c141,plain,much_smaller(skolem0005,skolem0007),inference(resolution,status(thm),[c140, c78])).
+fof(pel47_14a,axiom,(![X]:(snail(X)=>(?[Y]:(plant(Y)&eats(X,Y))))),input).
+fof(c6,axiom,(![X]:(~snail(X)|(?[Y]:(plant(Y)&eats(X,Y))))),inference(fof_nnf,status(thm),[pel47_14a])).
+fof(c7,axiom,(![X5]:(~snail(X5)|(?[X6]:(plant(X6)&eats(X5,X6))))),inference(variable_rename,status(thm),[c6])).
+fof(c8,axiom,(![X5]:(~snail(X5)|(plant(skolem0001(X5))&eats(X5,skolem0001(X5))))),inference(skolemize,status(esa),[c7])).
+fof(c9,axiom,(![X5]:((~snail(X5)|plant(skolem0001(X5)))&(~snail(X5)|eats(X5,skolem0001(X5))))),inference(distribute,status(thm),[c8])).
+cnf(c10,axiom,~snail(X50)|plant(skolem0001(X50)),inference(split_conjunct,status(thm),[c9])).
+cnf(c101,plain,plant(skolem0001(skolem0005)),inference(resolution,status(thm),[c10, c66])).
+cnf(c11,axiom,~snail(X53)|eats(X53,skolem0001(X53)),inference(split_conjunct,status(thm),[c9])).
+cnf(c105,plain,eats(skolem0005,skolem0001(skolem0005)),inference(resolution,status(thm),[c11, c66])).
+cnf(c142,plain,~animal(X93)|~plant(X92)|eats(X93,X92)|~animal(skolem0005)|~much_smaller(skolem0005,X93)|~plant(skolem0001(skolem0005))|eats(X93,skolem0005),inference(resolution,status(thm),[c48, c105])).
+cnf(c147,plain,~animal(X96)|~plant(X97)|eats(X96,X97)|~animal(skolem0005)|~much_smaller(skolem0005,X96)|eats(X96,skolem0005),inference(resolution,status(thm),[c142, c101])).
+cnf(c149,plain,~animal(skolem0007)|~plant(X98)|eats(skolem0007,X98)|~animal(skolem0005)|eats(skolem0007,skolem0005),inference(resolution,status(thm),[c147, c141])).
+cnf(c150,plain,~animal(skolem0007)|~plant(X99)|eats(skolem0007,X99)|eats(skolem0007,skolem0005),inference(resolution,status(thm),[c149, c104])).
+cnf(c152,plain,~animal(skolem0007)|eats(skolem0007,skolem0003)|eats(skolem0007,skolem0005),inference(resolution,status(thm),[c150, c100])).
+cnf(c169,plain,eats(skolem0007,skolem0003)|eats(skolem0007,skolem0005),inference(resolution,status(thm),[c152, c107])).
+cnf(c180,plain,eats(skolem0007,skolem0003)|~bird(skolem0007)|~snail(skolem0005),inference(resolution,status(thm),[c169, c21])).
+cnf(c188,plain,eats(skolem0007,skolem0003)|~bird(skolem0007),inference(resolution,status(thm),[c180, c66])).
+cnf(c189,plain,eats(skolem0007,skolem0003),inference(resolution,status(thm),[c188, c78])).
+fof(pel47,conjecture,(?[X]:(?[Y]:(?[Z]:((((animal(X)&animal(Y))&grain(Z))&eats(Y,Z))&eats(X,Y))))),input).
+fof(c0,negated_conjecture,(~(?[X]:(?[Y]:(?[Z]:((((animal(X)&animal(Y))&grain(Z))&eats(Y,Z))&eats(X,Y)))))),inference(assume_negation,status(cth),[pel47])).
+fof(c1,negated_conjecture,(![X]:(![Y]:(![Z]:((((~animal(X)|~animal(Y))|~grain(Z))|~eats(Y,Z))|~eats(X,Y))))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(![X]:(![Y]:((![Z]:(((~animal(X)|~animal(Y))|~grain(Z))|~eats(Y,Z)))|~eats(X,Y)))),inference(shift_quantors,status(thm),[c1])).
+fof(c4,negated_conjecture,(![X2]:(![X3]:(![X4]:((((~animal(X2)|~animal(X3))|~grain(X4))|~eats(X3,X4))|~eats(X2,X3))))),inference(shift_quantors,status(thm),[fof(c3,negated_conjecture,(![X2]:(![X3]:((![X4]:(((~animal(X2)|~animal(X3))|~grain(X4))|~eats(X3,X4)))|~eats(X2,X3)))),inference(variable_rename,status(thm),[c2])).])).
+cnf(c5,negated_conjecture,~animal(X47)|~animal(X48)|~grain(X46)|~eats(X48,X46)|~eats(X47,X48),inference(split_conjunct,status(thm),[c4])).
+fof(pel47_9,axiom,(![X]:(![Y]:((bird(X)&fox(Y))=>much_smaller(X,Y)))),input).
+fof(c36,axiom,(![X]:(![Y]:((~bird(X)|~fox(Y))|much_smaller(X,Y)))),inference(fof_nnf,status(thm),[pel47_9])).
+fof(c37,axiom,(![X19]:(![X20]:((~bird(X19)|~fox(X20))|much_smaller(X19,X20)))),inference(variable_rename,status(thm),[c36])).
+cnf(c38,axiom,~bird(X73)|~fox(X74)|much_smaller(X73,X74),inference(split_conjunct,status(thm),[c37])).
+cnf(c136,plain,~bird(X75)|much_smaller(X75,skolem0008),inference(resolution,status(thm),[c38, c84])).
+cnf(c137,plain,much_smaller(skolem0007,skolem0008),inference(resolution,status(thm),[c136, c78])).
+cnf(c151,plain,~animal(skolem0007)|eats(skolem0007,skolem0004)|eats(skolem0007,skolem0005),inference(resolution,status(thm),[c150, c60])).
+cnf(c155,plain,eats(skolem0007,skolem0004)|eats(skolem0007,skolem0005),inference(resolution,status(thm),[c151, c107])).
+cnf(c161,plain,eats(skolem0007,skolem0004)|~bird(skolem0007)|~snail(skolem0005),inference(resolution,status(thm),[c155, c21])).
+cnf(c167,plain,eats(skolem0007,skolem0004)|~bird(skolem0007),inference(resolution,status(thm),[c161, c66])).
+cnf(c168,plain,eats(skolem0007,skolem0004),inference(resolution,status(thm),[c167, c78])).
+cnf(c172,plain,~animal(X112)|~plant(X111)|eats(X112,X111)|~animal(skolem0007)|~much_smaller(skolem0007,X112)|~plant(skolem0004)|eats(X112,skolem0007),inference(resolution,status(thm),[c168, c48])).
+cnf(c226,plain,~animal(skolem0008)|~plant(X123)|eats(skolem0008,X123)|~animal(skolem0007)|~plant(skolem0004)|eats(skolem0008,skolem0007),inference(resolution,status(thm),[c172, c137])).
+cnf(c233,plain,~animal(skolem0008)|~plant(X124)|eats(skolem0008,X124)|~animal(skolem0007)|eats(skolem0008,skolem0007),inference(resolution,status(thm),[c226, c60])).
+cnf(c234,plain,~animal(skolem0008)|~plant(X127)|eats(skolem0008,X127)|eats(skolem0008,skolem0007),inference(resolution,status(thm),[c233, c107])).
+cnf(c235,plain,~animal(skolem0008)|eats(skolem0008,skolem0004)|eats(skolem0008,skolem0007),inference(resolution,status(thm),[c234, c60])).
+cnf(c239,plain,eats(skolem0008,skolem0004)|eats(skolem0008,skolem0007),inference(resolution,status(thm),[c235, c109])).
+cnf(c246,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007)|~grain(X142)|~eats(skolem0007,X142),inference(resolution,status(thm),[c239, c5])).
+cnf(c289,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007)|~grain(skolem0003),inference(resolution,status(thm),[c246, c189])).
+cnf(c293,plain,eats(skolem0008,skolem0004)|~animal(skolem0008)|~animal(skolem0007),inference(resolution,status(thm),[c289, c54])).
+cnf(c294,plain,eats(skolem0008,skolem0004)|~animal(skolem0008),inference(resolution,status(thm),[c293, c107])).
+cnf(c295,plain,eats(skolem0008,skolem0004),inference(resolution,status(thm),[c294, c109])).
+cnf(c299,plain,~animal(X177)|~plant(X176)|eats(X177,X176)|~animal(skolem0008)|~much_smaller(skolem0008,X177)|~plant(skolem0004)|eats(X177,skolem0008),inference(resolution,status(thm),[c295, c48])).
+cnf(c347,plain,~animal(skolem0009)|~plant(X178)|eats(skolem0009,X178)|~animal(skolem0008)|~plant(skolem0004)|eats(skolem0009,skolem0008),inference(resolution,status(thm),[c299, c135])).
+cnf(c348,plain,~animal(skolem0009)|~plant(X181)|eats(skolem0009,X181)|~animal(skolem0008)|eats(skolem0009,skolem0008),inference(resolution,status(thm),[c347, c60])).
+cnf(c349,plain,~animal(skolem0009)|~plant(X182)|eats(skolem0009,X182)|eats(skolem0009,skolem0008),inference(resolution,status(thm),[c348, c109])).
+cnf(c351,plain,~animal(skolem0009)|eats(skolem0009,skolem0003)|eats(skolem0009,skolem0008),inference(resolution,status(thm),[c349, c100])).
+cnf(c373,plain,eats(skolem0009,skolem0003)|eats(skolem0009,skolem0008),inference(resolution,status(thm),[c351, c110])).
+cnf(c378,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009)|~grain(skolem0003),inference(resolution,status(thm),[c373, c28])).
+cnf(c384,plain,eats(skolem0009,skolem0008)|~wolf(skolem0009),inference(resolution,status(thm),[c378, c54])).
+cnf(c386,plain,eats(skolem0009,skolem0008),inference(resolution,status(thm),[c384, c90])).
+cnf(c390,plain,~wolf(skolem0009)|~fox(skolem0008),inference(resolution,status(thm),[c386, c32])).
+cnf(c392,plain,~wolf(skolem0009),inference(resolution,status(thm),[c390, c84])).
+cnf(c393,plain,$false,inference(resolution,status(thm),[c392, c90])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 31
+# Processed clauses  : 237
+# Factors computed   : 0
+# Resolvents computed: 294
+# Tautologies deleted: 0
+# Forward subsumed   : 63
+# Backward subsumed  : 125
+
+# -------- CPU Time ---------
+# User time          : 0.590 s
+# System time        : 0.236 s
+# Total time         : 0.826 s

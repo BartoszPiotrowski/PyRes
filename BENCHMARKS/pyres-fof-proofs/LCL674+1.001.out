@@ -1,0 +1,77 @@
+# cnf(c22,negated_conjecture,~p101(skolem0001)).
+# cnf(c23,negated_conjecture,p100(skolem0001)).
+# cnf(c28,axiom,r1(X15,X15)).
+# cnf(c7,negated_conjecture,~r1(skolem0001,X16)|p2(X16)).
+# cnf(c29,plain,p2(skolem0001)).
+# cnf(c8,negated_conjecture,~r1(skolem0001,X17)|r1(X17,skolem0002(X17))|p101(X17)|~p100(X17)).
+# cnf(c20,negated_conjecture,~r1(skolem0001,X18)|p101(X18)|~p102(X18)).
+# cnf(c31,plain,p101(skolem0001)|~p102(skolem0001)).
+# cnf(c21,negated_conjecture,~r1(skolem0001,X19)|p100(X19)|~p101(X19)).
+# cnf(c26,axiom,~r1(X21,X20)|~r1(X20,X22)|r1(X21,X22)).
+# cnf(c9,negated_conjecture,~r1(skolem0001,X23)|~p2(skolem0002(X23))|p101(X23)|~p100(X23)).
+# cnf(c10,negated_conjecture,~r1(skolem0001,X26)|~p102(skolem0002(X26))|p101(X26)|~p100(X26)).
+# cnf(c11,negated_conjecture,~r1(skolem0001,X27)|p101(skolem0002(X27))|p101(X27)|~p100(X27)).
+# cnf(c34,plain,p101(skolem0002(skolem0001))|p101(skolem0001)|~p100(skolem0001)).
+# cnf(c35,plain,p101(skolem0002(skolem0001))|p101(skolem0001)).
+# cnf(c12,negated_conjecture,~r1(skolem0001,X28)|r1(X28,skolem0003(X28))|p101(X28)|~p100(X28)).
+# cnf(c36,plain,p101(skolem0002(skolem0001))).
+# cnf(c13,negated_conjecture,~r1(skolem0001,X29)|p2(skolem0003(X29))|p101(X29)|~p100(X29)).
+# cnf(c38,plain,p2(skolem0003(skolem0001))|p101(skolem0001)|~p100(skolem0001)).
+# cnf(c39,plain,p2(skolem0003(skolem0001))|p101(skolem0001)).
+# cnf(c40,plain,p2(skolem0003(skolem0001))).
+# cnf(c14,negated_conjecture,~r1(skolem0001,X30)|~p102(skolem0003(X30))|p101(X30)|~p100(X30)).
+# cnf(c15,negated_conjecture,~r1(skolem0001,X31)|p101(skolem0003(X31))|p101(X31)|~p100(X31)).
+# cnf(c41,plain,p101(skolem0003(skolem0001))|p101(skolem0001)|~p100(skolem0001)).
+# cnf(c42,plain,p101(skolem0003(skolem0001))|p101(skolem0001)).
+# cnf(c43,plain,p101(skolem0003(skolem0001))).
+# cnf(c30,plain,r1(skolem0001,skolem0002(skolem0001))|p101(skolem0001)|~p100(skolem0001)).
+# cnf(c44,plain,r1(skolem0001,skolem0002(skolem0001))|p101(skolem0001)).
+# cnf(c54,plain,r1(skolem0001,skolem0002(skolem0001))).
+# cnf(c62,plain,p2(skolem0002(skolem0001))).
+# cnf(c17,negated_conjecture,~r1(skolem0001,X34)|~r1(X34,X35)|p2(X35)|~p101(X35)|~p2(X34)|~p101(X34)).
+# cnf(c61,plain,~r1(X36,skolem0001)|r1(X36,skolem0002(skolem0001))).
+# cnf(c63,plain,p100(skolem0002(skolem0001))|~p101(skolem0002(skolem0001))).
+# cnf(c68,plain,p100(skolem0002(skolem0001))).
+# cnf(c64,plain,~r1(skolem0001,skolem0001)|p101(skolem0001)|~p100(skolem0001)).
+# cnf(c18,negated_conjecture,~r1(skolem0001,X37)|~r1(X37,X38)|~p1(X38)|~p100(X38)|p1(X37)|~p100(X37)).
+# cnf(c69,plain,p101(skolem0001)|~p100(skolem0001)).
+# cnf(c72,plain,p101(skolem0001)).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(main,conjecture,(~(?[X]:(~((~(![Y]:((~r1(X,Y))|p2(Y))))|(~(((![Y]:((~r1(X,Y))|(((((((~(![X]:((~r1(Y,X))|(~(((~p2(X))&(~p102(X)))&p101(X))))))&(~(![X]:((~r1(Y,X))|(~((p2(X)&(~p102(X)))&p101(X)))))))|(~((~p101(Y))&p100(Y))))&((((![X]:(((~r1(Y,X))|(~p2(X)))|(~p101(X))))|p2(Y))&((![X]:(((~r1(Y,X))|p2(X))|(~p101(X))))|(~p2(Y))))|(~p101(Y))))&((((![X]:(((~r1(Y,X))|(~p1(X)))|(~p100(X))))|p1(Y))&((![X]:(((~r1(Y,X))|p1(X))|(~p100(X))))|(~p1(Y))))|(~p100(Y))))&(p101(Y)|(~p102(Y))))&(p100(Y)|(~p101(Y))))))&(~p101(X)))&p100(X))))))),input).
+fof(c0,negated_conjecture,(~(~(?[X]:(~((~(![Y]:((~r1(X,Y))|p2(Y))))|(~(((![Y]:((~r1(X,Y))|(((((((~(![X]:((~r1(Y,X))|(~(((~p2(X))&(~p102(X)))&p101(X))))))&(~(![X]:((~r1(Y,X))|(~((p2(X)&(~p102(X)))&p101(X)))))))|(~((~p101(Y))&p100(Y))))&((((![X]:(((~r1(Y,X))|(~p2(X)))|(~p101(X))))|p2(Y))&((![X]:(((~r1(Y,X))|p2(X))|(~p101(X))))|(~p2(Y))))|(~p101(Y))))&((((![X]:(((~r1(Y,X))|(~p1(X)))|(~p100(X))))|p1(Y))&((![X]:(((~r1(Y,X))|p1(X))|(~p100(X))))|(~p1(Y))))|(~p100(Y))))&(p101(Y)|(~p102(Y))))&(p100(Y)|(~p101(Y))))))&(~p101(X)))&p100(X)))))))),inference(assume_negation,status(cth),[main])).
+fof(c1,negated_conjecture,(~(~(?[X]:(~((~(![Y]:(~r1(X,Y)|p2(Y))))|(~(((![Y]:(~r1(X,Y)|(((((((~(![X]:(~r1(Y,X)|(~((~p2(X)&~p102(X))&p101(X))))))&(~(![X]:(~r1(Y,X)|(~((p2(X)&~p102(X))&p101(X)))))))|(~(~p101(Y)&p100(Y))))&((((![X]:((~r1(Y,X)|~p2(X))|~p101(X)))|p2(Y))&((![X]:((~r1(Y,X)|p2(X))|~p101(X)))|~p2(Y)))|~p101(Y)))&((((![X]:((~r1(Y,X)|~p1(X))|~p100(X)))|p1(Y))&((![X]:((~r1(Y,X)|p1(X))|~p100(X)))|~p1(Y)))|~p100(Y)))&(p101(Y)|~p102(Y)))&(p100(Y)|~p101(Y)))))&~p101(X))&p100(X)))))))),inference(fof_simplification,status(thm),[c0])).
+fof(c2,negated_conjecture,(?[X]:((![Y]:(~r1(X,Y)|p2(Y)))&(((![Y]:(~r1(X,Y)|(((((((?[X]:(r1(Y,X)&((~p2(X)&~p102(X))&p101(X))))&(?[X]:(r1(Y,X)&((p2(X)&~p102(X))&p101(X)))))|(p101(Y)|~p100(Y)))&((((![X]:((~r1(Y,X)|~p2(X))|~p101(X)))|p2(Y))&((![X]:((~r1(Y,X)|p2(X))|~p101(X)))|~p2(Y)))|~p101(Y)))&((((![X]:((~r1(Y,X)|~p1(X))|~p100(X)))|p1(Y))&((![X]:((~r1(Y,X)|p1(X))|~p100(X)))|~p1(Y)))|~p100(Y)))&(p101(Y)|~p102(Y)))&(p100(Y)|~p101(Y)))))&~p101(X))&p100(X)))),inference(fof_nnf,status(thm),[c1])).
+fof(c3,negated_conjecture,(?[X2]:((![X3]:(~r1(X2,X3)|p2(X3)))&(((![X4]:(~r1(X2,X4)|(((((((?[X5]:(r1(X4,X5)&((~p2(X5)&~p102(X5))&p101(X5))))&(?[X6]:(r1(X4,X6)&((p2(X6)&~p102(X6))&p101(X6)))))|(p101(X4)|~p100(X4)))&((((![X7]:((~r1(X4,X7)|~p2(X7))|~p101(X7)))|p2(X4))&((![X8]:((~r1(X4,X8)|p2(X8))|~p101(X8)))|~p2(X4)))|~p101(X4)))&((((![X9]:((~r1(X4,X9)|~p1(X9))|~p100(X9)))|p1(X4))&((![X10]:((~r1(X4,X10)|p1(X10))|~p100(X10)))|~p1(X4)))|~p100(X4)))&(p101(X4)|~p102(X4)))&(p100(X4)|~p101(X4)))))&~p101(X2))&p100(X2)))),inference(variable_rename,status(thm),[c2])).
+fof(c5,negated_conjecture,(![X3]:(![X4]:(![X7]:(![X8]:(![X9]:(![X10]:((~r1(skolem0001,X3)|p2(X3))&(((~r1(skolem0001,X4)|(((((((r1(X4,skolem0002(X4))&((~p2(skolem0002(X4))&~p102(skolem0002(X4)))&p101(skolem0002(X4))))&(r1(X4,skolem0003(X4))&((p2(skolem0003(X4))&~p102(skolem0003(X4)))&p101(skolem0003(X4)))))|(p101(X4)|~p100(X4)))&(((((~r1(X4,X7)|~p2(X7))|~p101(X7))|p2(X4))&(((~r1(X4,X8)|p2(X8))|~p101(X8))|~p2(X4)))|~p101(X4)))&(((((~r1(X4,X9)|~p1(X9))|~p100(X9))|p1(X4))&(((~r1(X4,X10)|p1(X10))|~p100(X10))|~p1(X4)))|~p100(X4)))&(p101(X4)|~p102(X4)))&(p100(X4)|~p101(X4))))&~p101(skolem0001))&p100(skolem0001))))))))),inference(shift_quantors,status(thm),[fof(c4,negated_conjecture,((![X3]:(~r1(skolem0001,X3)|p2(X3)))&(((![X4]:(~r1(skolem0001,X4)|(((((((r1(X4,skolem0002(X4))&((~p2(skolem0002(X4))&~p102(skolem0002(X4)))&p101(skolem0002(X4))))&(r1(X4,skolem0003(X4))&((p2(skolem0003(X4))&~p102(skolem0003(X4)))&p101(skolem0003(X4)))))|(p101(X4)|~p100(X4)))&((((![X7]:((~r1(X4,X7)|~p2(X7))|~p101(X7)))|p2(X4))&((![X8]:((~r1(X4,X8)|p2(X8))|~p101(X8)))|~p2(X4)))|~p101(X4)))&((((![X9]:((~r1(X4,X9)|~p1(X9))|~p100(X9)))|p1(X4))&((![X10]:((~r1(X4,X10)|p1(X10))|~p100(X10)))|~p1(X4)))|~p100(X4)))&(p101(X4)|~p102(X4)))&(p100(X4)|~p101(X4)))))&~p101(skolem0001))&p100(skolem0001))),inference(skolemize,status(esa),[c3])).])).
+fof(c6,negated_conjecture,(![X3]:(![X4]:(![X7]:(![X8]:(![X9]:(![X10]:((~r1(skolem0001,X3)|p2(X3))&(((((((((~r1(skolem0001,X4)|(r1(X4,skolem0002(X4))|(p101(X4)|~p100(X4))))&(((~r1(skolem0001,X4)|(~p2(skolem0002(X4))|(p101(X4)|~p100(X4))))&(~r1(skolem0001,X4)|(~p102(skolem0002(X4))|(p101(X4)|~p100(X4)))))&(~r1(skolem0001,X4)|(p101(skolem0002(X4))|(p101(X4)|~p100(X4))))))&((~r1(skolem0001,X4)|(r1(X4,skolem0003(X4))|(p101(X4)|~p100(X4))))&(((~r1(skolem0001,X4)|(p2(skolem0003(X4))|(p101(X4)|~p100(X4))))&(~r1(skolem0001,X4)|(~p102(skolem0003(X4))|(p101(X4)|~p100(X4)))))&(~r1(skolem0001,X4)|(p101(skolem0003(X4))|(p101(X4)|~p100(X4)))))))&((~r1(skolem0001,X4)|((((~r1(X4,X7)|~p2(X7))|~p101(X7))|p2(X4))|~p101(X4)))&(~r1(skolem0001,X4)|((((~r1(X4,X8)|p2(X8))|~p101(X8))|~p2(X4))|~p101(X4)))))&((~r1(skolem0001,X4)|((((~r1(X4,X9)|~p1(X9))|~p100(X9))|p1(X4))|~p100(X4)))&(~r1(skolem0001,X4)|((((~r1(X4,X10)|p1(X10))|~p100(X10))|~p1(X4))|~p100(X4)))))&(~r1(skolem0001,X4)|(p101(X4)|~p102(X4))))&(~r1(skolem0001,X4)|(p100(X4)|~p101(X4))))&~p101(skolem0001))&p100(skolem0001))))))))),inference(distribute,status(thm),[c5])).
+cnf(c22,negated_conjecture,~p101(skolem0001),inference(split_conjunct,status(thm),[c6])).
+cnf(c23,negated_conjecture,p100(skolem0001),inference(split_conjunct,status(thm),[c6])).
+fof(reflexivity,axiom,(![X]:r1(X,X)),input).
+fof(c27,axiom,(![X14]:r1(X14,X14)),inference(variable_rename,status(thm),[reflexivity])).
+cnf(c28,axiom,r1(X15,X15),inference(split_conjunct,status(thm),[c27])).
+cnf(c9,negated_conjecture,~r1(skolem0001,X23)|~p2(skolem0002(X23))|p101(X23)|~p100(X23),inference(split_conjunct,status(thm),[c6])).
+cnf(c7,negated_conjecture,~r1(skolem0001,X16)|p2(X16),inference(split_conjunct,status(thm),[c6])).
+cnf(c8,negated_conjecture,~r1(skolem0001,X17)|r1(X17,skolem0002(X17))|p101(X17)|~p100(X17),inference(split_conjunct,status(thm),[c6])).
+cnf(c30,plain,r1(skolem0001,skolem0002(skolem0001))|p101(skolem0001)|~p100(skolem0001),inference(resolution,status(thm),[c8, c28])).
+cnf(c44,plain,r1(skolem0001,skolem0002(skolem0001))|p101(skolem0001),inference(resolution,status(thm),[c30, c23])).
+cnf(c54,plain,r1(skolem0001,skolem0002(skolem0001)),inference(resolution,status(thm),[c44, c22])).
+cnf(c62,plain,p2(skolem0002(skolem0001)),inference(resolution,status(thm),[c54, c7])).
+cnf(c64,plain,~r1(skolem0001,skolem0001)|p101(skolem0001)|~p100(skolem0001),inference(resolution,status(thm),[c62, c9])).
+cnf(c69,plain,p101(skolem0001)|~p100(skolem0001),inference(resolution,status(thm),[c64, c28])).
+cnf(c72,plain,p101(skolem0001),inference(resolution,status(thm),[c69, c23])).
+cnf(c73,plain,$false,inference(resolution,status(thm),[c72, c22])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 19
+# Processed clauses  : 38
+# Factors computed   : 0
+# Resolvents computed: 45
+# Tautologies deleted: 1
+# Forward subsumed   : 5
+# Backward subsumed  : 12
+
+# -------- CPU Time ---------
+# User time          : 0.323 s
+# System time        : 0.234 s
+# Total time         : 0.557 s

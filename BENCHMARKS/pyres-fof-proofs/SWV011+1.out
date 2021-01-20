@@ -1,0 +1,42 @@
+# cnf(c10,axiom,party_of_protocol(t)).
+# cnf(c13,axiom,fresh_to_b(an_a_nonce)).
+# cnf(c14,axiom,party_of_protocol(b)).
+# cnf(c18,axiom,party_of_protocol(a)).
+# cnf(c4,axiom,b_stored(pair(a,an_a_nonce))).
+# cnf(c3,negated_conjecture,~a_holds(key(X3,b))|~b_holds(key(X3,a))).
+# cnf(c11,axiom,t_holds(key(bt,b))).
+# cnf(c12,axiom,t_holds(key(at,a))).
+# cnf(c15,axiom,b_holds(key(bt,t))).
+# cnf(c16,axiom,a_stored(pair(b,an_a_nonce))).
+# cnf(c19,axiom,a_holds(key(at,t))).
+# cnf(c5,axiom,message(sent(b,t,triple(b,generate_b_nonce(an_a_nonce),encrypt(triple(a,an_a_nonce,generate_expiration_time(an_a_nonce)),bt))))).
+# cnf(c7,axiom,a_holds(key(generate_key(an_a_nonce),b))).
+# cnf(c9,axiom,b_holds(key(generate_key(an_a_nonce),a))).
+# cnf(c20,plain,~a_holds(key(generate_key(an_a_nonce),b))).
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(ax3,axiom,a_holds(key(generate_key(an_a_nonce),b)),input).
+cnf(c7,axiom,a_holds(key(generate_key(an_a_nonce),b)),inference(split_conjunct,status(thm),[ax3])).
+fof(co1,conjecture,(?[U]:(a_holds(key(U,b))&b_holds(key(U,a)))),input).
+fof(c0,negated_conjecture,(~(?[U]:(a_holds(key(U,b))&b_holds(key(U,a))))),inference(assume_negation,status(cth),[co1])).
+fof(c1,negated_conjecture,(![U]:(~a_holds(key(U,b))|~b_holds(key(U,a)))),inference(fof_nnf,status(thm),[c0])).
+fof(c2,negated_conjecture,(![X2]:(~a_holds(key(X2,b))|~b_holds(key(X2,a)))),inference(variable_rename,status(thm),[c1])).
+cnf(c3,negated_conjecture,~a_holds(key(X3,b))|~b_holds(key(X3,a)),inference(split_conjunct,status(thm),[c2])).
+fof(ax1,axiom,b_holds(key(generate_key(an_a_nonce),a)),input).
+cnf(c9,axiom,b_holds(key(generate_key(an_a_nonce),a)),inference(split_conjunct,status(thm),[ax1])).
+cnf(c20,plain,~a_holds(key(generate_key(an_a_nonce),b)),inference(resolution,status(thm),[c9, c3])).
+cnf(c21,plain,$false,inference(resolution,status(thm),[c20, c7])).
+# SZS output end CNFRefutation
+
+# Initial clauses    : 17
+# Processed clauses  : 15
+# Factors computed   : 0
+# Resolvents computed: 2
+# Tautologies deleted: 0
+# Forward subsumed   : 0
+# Backward subsumed  : 0
+
+# -------- CPU Time ---------
+# User time          : 0.226 s
+# System time        : 0.249 s
+# Total time         : 0.475 s
