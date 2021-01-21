@@ -236,6 +236,13 @@ ThreeQueues = lambda conj_cnfs: \
         (ConjectureSimilarityEvaluation(conj_cnfs),1)
     ])
 
+ThreeQueuesRandom = lambda conj_cnfs, probs: \
+    EvalStructure([
+        (SymbolCountEvaluation(2,1),probs[0]),
+        (FIFOEvaluation(),probs[1]),
+        (ConjectureSimilarityEvaluation(conj_cnfs),probs[2])
+    ])
+
 
 GivenClauseHeuristics = {
     "FIFO"       : FIFOEval,
@@ -243,7 +250,8 @@ GivenClauseHeuristics = {
     "PickGiven5" : PickGiven5,
     "PickGiven2" : PickGiven2,
     "PickGivenRandom" : PickGivenRandom,
-    "ThreeQueues" : ThreeQueues}
+    "ThreeQueues" : ThreeQueues,
+    "ThreeQueuesRandom" : ThreeQueuesRandom}
 """
 Table associating name and evaluation function, so that we can select
 the function by name.

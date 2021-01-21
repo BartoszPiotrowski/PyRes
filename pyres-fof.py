@@ -143,6 +143,8 @@ def processOptions(opts):
                 sys.exit(1)
         elif opt=="-a" or opt == "--age-queue-probability":
             ageQueueProbability = float(optarg)
+        elif opt=="-q" or opt == "--queues-probabilities":
+            params.queueProbabilities = [float(i) for i in optarg.split(',')]
         elif opt=="-n" or opt == "--neg-lit-selection":
             try:
                 params.literal_selection = LiteralSelectors[optarg]
@@ -175,7 +177,7 @@ if __name__ == '__main__':
 
     try:
         opts, args = getopt.gnu_getopt(sys.argv[1:],
-                                       "hsVpitfbH:a:n:S",
+                                       "hsVpitfbH:a:q:n:S",
                                        ["help",
                                         "silent",
                                         "version",
@@ -186,6 +188,7 @@ if __name__ == '__main__':
                                         "backward-subsumption"
                                         "given-clause-heuristic=",
                                         "age-queue-probability=",
+                                        "queues-probabilities=",
                                         "neg-lit-selection="
                                         "supress-eq-axioms"])
     except getopt.GetoptError as err:
@@ -197,15 +200,16 @@ if __name__ == '__main__':
     assert len(args) == 1
     file = args[0]
     problem.parse(file)
-    print(problem.conj.formula)
 
     if not suppressEqAxioms:
         problem.addEqAxioms()
     cnf = problem.clausify()
-    print(problem.conj_cnfs)
-    print(problem.conj_cnfs[0])
     if params.heuristics == GivenClauseHeuristics['ThreeQueues']:
         params.heuristics = params.heuristics(problem.conj_cnfs)
+
+    if params.heuristics == GivenClauseHeuristics['ThreeQueuesRandom']:
+        params.heuristics = \
+            params.heuristics(problem.conj_cnfs, params.queueProbabilities)
 
     state = ProofState(params, cnf, silent, indexed)
     res = state.saturate()
