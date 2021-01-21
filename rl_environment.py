@@ -3,6 +3,7 @@ from glob import glob
 from random import shuffle, choice
 from fofspec import FOFSpec
 from saturation import ProofState
+from heuristics import GivenClauseHeuristics
 from process_pyres_options import processPyresOptions
 from utils import read_lines
 #from time import time
@@ -40,6 +41,10 @@ class Environment:
         if not self.pyres_options['suppressEqAxioms']:
             problem.addEqAxioms()
         self.problem = problem.clausify()
+
+        if self.pyres_options['main'].heuristics == GivenClauseHeuristics['ThreeQueues']:
+            self.pyres_options['main'].heuristics = \
+            self.pyres_options['main'].heuristics(self.problem.conj_cnfs)
         self.proof_state = ProofState(self.pyres_options['main'],
                                       self.problem, True,
                                       self.pyres_options['indexed'], True)

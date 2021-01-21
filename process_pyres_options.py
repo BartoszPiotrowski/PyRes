@@ -1,6 +1,7 @@
 import getopt
 from saturation import SearchParams
 from litselection import LiteralSelectors
+from heuristics import GivenClauseHeuristics
 
 
 def processPyresOptions(options):
