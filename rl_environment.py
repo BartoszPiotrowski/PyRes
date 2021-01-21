@@ -40,13 +40,12 @@ class Environment:
         problem.parse(self.problem_path)
         if not self.pyres_options['suppressEqAxioms']:
             problem.addEqAxioms()
-        self.problem = problem.clausify()
-
+        self.cnf = problem.clausify()
         if self.pyres_options['main'].heuristics == GivenClauseHeuristics['ThreeQueues']:
             self.pyres_options['main'].heuristics = \
-            self.pyres_options['main'].heuristics(self.problem.conj_cnfs)
+            self.pyres_options['main'].heuristics(problem.conj_cnfs)
         self.proof_state = ProofState(self.pyres_options['main'],
-                                      self.problem, True,
+                                      self.cnf, True,
                                       self.pyres_options['indexed'], True)
 
 
